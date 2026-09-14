@@ -1,0 +1,66 @@
+{
+  "id": "JR-0002",
+  "title": "Why do we pray?",
+  "character": "girl",
+  "topic": "prayer",
+
+  "bible": {
+    "book": "Matthew",
+    "chapter": 6,
+    "verse": 6,
+    "version": "KJV",
+    "text": "But thou, when thou prayest, enter into thy closet, and when thou hast shut thy door, pray to thy Father which is in secret."
+  },
+
+  "lines": [
+    {
+      "speaker": "person",
+      "text": "Jesus... why do we need to pray?"
+    },
+    {
+      "speaker": "jesus",
+      "text": "Do you think prayer is only about asking Me for things?"
+    },
+    {
+      "speaker": "person",
+      "text": "Then what is prayer really about?"
+    },
+    {
+      "speaker": "jesus",
+      "text": "Prayer is a conversation with your Father. Come to Him honestly, even when you have no words."
+    },
+    {
+      "speaker": "bible_verse"
+    },
+    {
+      "speaker": "engagement",
+      "text": "When do you find it easiest to pray? Share your answer in the comments."
+    }
+  ],
+
+  "styles": {
+    "person": {
+      "color": "#3b2f2f"
+    },
+    "jesus": {
+      "color": "#2f2f4f"
+    },
+    "verse": {
+      "color": "#2f4f3b"
+    },
+    "engagement": {
+      "color": "#3b2f2f"
+    }
+  },
+
+  "music": {
+    "type": "soft_christian_instrumental",
+    "volume": 0.18
+  },
+
+  "finalLogo": {
+    "image": "branding/follow.png",
+    "ctaLabel": "Stay with Jesus",
+    "secondaryCtaLabel": "Carry this with you"
+  }
+}

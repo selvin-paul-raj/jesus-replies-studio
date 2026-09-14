@@ -1,0 +1,43 @@
+{
+  "title": "Career - Why haven't I succeeded yet? (Porch photo)",
+  "video": { "widthPx": 1080, "heightPx": 1920, "fps": 30 },
+  "background": {
+    "image": "backgrounds/boy.png",
+    "zoomEnabled": true,
+    "zoomFromScale": 1,
+    "zoomToScale": 1.12,
+    "overlayEnabled": false,
+    "overlayColor": "#00000000",
+    "bottomLogo": "branding/bottom.png"
+  },
+  "finalLogo": {
+    "image": "branding/follow.png",
+    "durationSeconds": 3,
+    "ctaLabel": "Follow for more"
+  },
+  "audio": {
+    "track": "audio/hallelujah.mp3",
+    "volume": 1,
+    "loopIfShorterThanVideo": true,
+    "fadeInSeconds": 1,
+    "fadeOutSeconds": 1.5
+  },
+  "timing": {
+    "wordsPerSecond": 2.3,
+    "minLineSeconds": 2.2,
+    "gapSeconds": 0.35,
+    "endPaddingSeconds": 2,
+    "revealMode": "cumulative-pairs"
+  },
+  "lines": [
+    { "speaker": "person", "text": "Jesus... why haven't I succeeded yet?" },
+    { "speaker": "person", "text": "I've worked so hard. I did everything right." },
+    { "speaker": "jesus", "text": "Who told you that you're behind?" },
+    { "speaker": "person", "text": "Everyone around me. Their timeline. Their life." },
+    { "speaker": "jesus", "text": "Whose plan are you living \u2014 theirs, or the one made for you?" },
+    { "speaker": "verse", "text": "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future." },
+    { "speaker": "reference", "text": "Jeremiah 29:11" },
+    { "speaker": "person", "text": "So... my timeline isn't late. It's just mine?" },
+    { "speaker": "engagement", "text": "What if you're not behind \u2014 you're just not there yet? Share your answer in the comments." }
+  ]
+}

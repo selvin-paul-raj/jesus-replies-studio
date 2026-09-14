@@ -1,0 +1,36 @@
+{
+  "name": "jesus-replies-remotion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preview": "remotion studio",
+    "render": "remotion render Episode out/episode.mp4",
+    "still": "remotion still",
+    "build-episode": "tsx scripts/build-episode.ts",
+    "jr": "tsx scripts/cli.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@remotion/animated-emoji": "4.0.522",
+    "@remotion/animation-utils": "4.0.522",
+    "@remotion/cli": "^4.0.522",
+    "@remotion/fonts": "4.0.522",
+    "@remotion/google-fonts": "4.0.522",
+    "@remotion/gsap": "4.0.522",
+    "@remotion/media-utils": "^4.0.522",
+    "@remotion/zod-types": "^4.0.522",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "remotion": "^4.0.522",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "@types/react": "^19.2.18",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}

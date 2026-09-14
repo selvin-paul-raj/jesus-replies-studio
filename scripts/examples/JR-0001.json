@@ -1,0 +1,71 @@
+{
+  "id": "JR-0001",
+  "video": {
+    "duration": 60,
+    "language": "English",
+    "character": "boy",
+    "topic": "church",
+    "title": "Why do we go to church?",
+    "scenes": [
+      {
+        "start": 0,
+        "end": 5,
+        "speaker": "person",
+        "text": "Jesus... why do we go to church every Sunday?"
+      },
+      {
+        "start": 5,
+        "end": 10,
+        "speaker": "jesus",
+        "text": "Do you think church is only a building?"
+      },
+      {
+        "start": 10,
+        "end": 17,
+        "speaker": "person",
+        "text": "Then why do we need to gather together?"
+      },
+      {
+        "start": 17,
+        "end": 28,
+        "speaker": "jesus",
+        "text": "Where two or three are gathered in My name, there am I with them."
+      },
+      {
+        "start": 28,
+        "end": 41,
+        "speaker": "bible_verse",
+        "text": "For where two or three are gathered together in my name, there am I in the midst of them."
+      },
+      {
+        "start": 41,
+        "end": 43,
+        "speaker": "reference",
+        "text": "Matthew 18:20 • KJV"
+      },
+      {
+        "start": 43,
+        "end": 52,
+        "speaker": "engagement",
+        "text": "What does church mean to you? Share your answer in the comments."
+      },
+      {
+        "start": 52,
+        "end": 60,
+        "speaker": "brand",
+        "text": "Jesus's Replies"
+      }
+    ],
+    "bible": {
+      "book": "Matthew",
+      "chapter": 18,
+      "verse": 20,
+      "version": "KJV",
+      "text": "For where two or three are gathered together in my name, there am I in the midst of them."
+    },
+    "music": {
+      "type": "soft_christian_instrumental",
+      "volume": 0.18
+    }
+  }
+}
