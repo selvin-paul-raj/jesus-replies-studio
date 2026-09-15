@@ -26,7 +26,7 @@ const episode = EpisodeSchema.parse(scriptToEpisode(script));
 const thumbnail = ThumbnailPropsSchema.parse(scriptToThumbnail(script));
 
 const rootDir = path.join(__dirname, "..");
-const outDir = path.join(rootDir, "out");
+const outDir = path.join(rootDir, "output");
 fs.mkdirSync(outDir, { recursive: true });
 
 const episodePropsPath = path.join(outDir, `${script.id}.episode-props.json`);

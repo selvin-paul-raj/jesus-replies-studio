@@ -35,7 +35,7 @@ error, and Remotion Studio auto-builds a UI control per field.
 | `timing` | `TimingConfig` | `{}` | see below |
 | `styles` | `Styles` | `{}` | per-speaker style, see below |
 | `lines` | `ScriptLine[]` | — required | the actual script, see below |
-| `finalLogo` | `FinalLogoConfig` | *(omit for no end card)* | see below |
+| `finalLogo` | `FinalLogoConfig` | *(omit for no end card — this is the raw schema; the CLI input in §B always defaults one in)* | see below |
 
 `EpisodePropsSchema` extends this with one runtime-only field:
 `audioDurationInFrames: number` (default `0`) — always recomputed from the
@@ -163,8 +163,9 @@ in the `reference` line that follows it.
 ### Full example
 
 See `src/episodes/porch_conversation.json` (every field set explicitly) or
-`out/*.episode-props.json` after any render — both are valid `EpisodeProps`
-you can pass straight back to `remotion render --props=`.
+`output/props/*.episode-props.json` after a `npm run jr` render (`out/*.episode-props.json`
+for `npm run build-episode`) — all are valid `EpisodeProps` you can pass
+straight back to `remotion render --props=`.
 
 ### `ThumbnailPropsSchema` (the `Thumbnail` still)
 
@@ -185,7 +186,7 @@ curated defaults.
 
 | Field | Type | Default | Notes |
 |---|---|---|---|
-| `id` | `string` (non-empty) | — required | used for `out/<id>.*` filenames |
+| `id` | `string` (non-empty) | — required | used for `output/<id>.mp4`/`-thumb.png` + `output/props/<id>.*.json` filenames |
 | `title` | `string` | — required | |
 | `character` | `string` | `"boy"` | background-art lookup key |
 | `topic` | `string` | `"general"` | background-art lookup key |
@@ -194,7 +195,7 @@ curated defaults.
 | `lines` | `EpisodeInputLine[]` (min 1) | — required | see below |
 | `styles` | partial per-speaker overrides (optional) | *(curated A defaults)* | any `SpeakerStyleSchema` field, per speaker (`person`/`jesus`/`verse`/`reference`/`engagement`); merged **on top of** the curated defaults (position/anchor never reset by a partial override) |
 | `music` | `{type?, track?, volume}` (optional) | `hallelujah.mp3` @ volume 1 | `type` resolves via `assetResolver.resolveMusicFile`; `track` is a direct `public/` path and wins if both given |
-| `finalLogo` | full `FinalLogoConfig` (optional) | *(no end card)* | `image` required if present at all |
+| `finalLogo` | partial `FinalLogoConfig` (optional) | `branding/follow.png`, "Stay with Jesus" / "Carry this with you" | any field overrides just that one; unlike A, this level always gets an end card |
 
 ### `lines[]` (`EpisodeInputLineSchema`)
 
@@ -352,7 +353,7 @@ character name as the person-speaker label.
   CSV via `npm run jr`). Least boilerplate, per-episode style overrides,
   batch support.
 - **You already have a full `EpisodeProps` JSON** (e.g. from a previous
-  render's `out/*.episode-props.json`, or hand-tuned in Studio) → format A,
-  render it directly with `remotion render`/`still`.
+  render's `output/props/*.episode-props.json`, or hand-tuned in Studio) →
+  format A, render it directly with `remotion render`/`still`.
 - **Scripts come from an upstream tool with real scene timestamps and you
   need social captions** → format C, `npm run build-episode`.

@@ -70,11 +70,11 @@ export const EpisodeInputSchema = z.object({
       volume: z.number().min(0).max(1).default(1),
     })
     .optional(),
-  // Not .partial(): unlike background.image (auto-resolved from
-  // character/topic), a final-logo image has no sensible fallback -- if
-  // an episode wants an end card, it must supply the image explicitly.
-  // The other fields already have their own per-field defaults.
-  finalLogo: FinalLogoConfigSchema.optional(),
+  // .partial(): every episode gets an end card by default (branding/follow.png,
+  // "Stay with Jesus" / "Carry this with you" -- see buildEpisodeAndThumbnail),
+  // same auto-resolve-then-override pattern as `background`. Any field here
+  // overrides just that one.
+  finalLogo: FinalLogoConfigSchema.partial().optional(),
 });
 export type EpisodeInput = z.infer<typeof EpisodeInputSchema>;
 
@@ -137,7 +137,12 @@ export function buildEpisodeAndThumbnail(input: EpisodeInput) {
     },
     styles: mergeStyles(input.styles),
     lines,
-    finalLogo: input.finalLogo,
+    finalLogo: {
+      image: input.finalLogo?.image ?? BRAND_ASSETS.followLogo,
+      durationSeconds: input.finalLogo?.durationSeconds,
+      ctaLabel: input.finalLogo?.ctaLabel ?? "Stay with Jesus",
+      secondaryCtaLabel: input.finalLogo?.secondaryCtaLabel ?? "Carry this with you",
+    },
   } satisfies z.input<typeof EpisodeSchema>);
 
   const thumbnail = ThumbnailPropsSchema.parse({ title: input.title, image: background.image });

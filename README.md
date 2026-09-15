@@ -201,8 +201,11 @@ scripts/
   check-*.ts                -- self-checks for timeline.ts/episodeInput.ts logic
 public/
   backgrounds/boy.png, audio/hallelujah.mp3, branding/{bottom,follow}.png
-out/                       -- render output (git-ignored): <id>.mp4, <id>-thumb.png,
-                              <id>.episode-props.json, <id>.thumbnail-props.json
+out/                       -- legacy build-episode.ts output (git-ignored): <id>.mp4,
+                              <id>-thumb.png, <id>.episode-props.json, <id>.thumbnail-props.json
+output/                    -- npm run jr render output (git-ignored, default --out-dir):
+                              <id>.mp4, <id>-thumb.png at the top level,
+                              props/<id>.episode-props.json, props/<id>.thumbnail-props.json
 ```
 
 ## Why this approach

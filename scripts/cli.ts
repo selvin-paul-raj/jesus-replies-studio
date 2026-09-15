@@ -11,14 +11,14 @@ import { renderEpisode } from "./lib/renderEpisode";
  * a CSV. Both paths funnel into the same buildEpisodeAndThumbnail/
  * renderEpisode pair, so single vs. batch is purely "how many inputs", not
  * two different pipelines. Usage:
- *   npm run jr -- render <input.json> [--out-dir out]
- *   npm run jr -- batch <input.csv>   [--out-dir out]
+ *   npm run jr -- render <input.json> [--out-dir output]
+ *   npm run jr -- batch <input.csv>   [--out-dir output]
  * ============================================================================
  */
 
 const USAGE = `Usage:
-  npm run jr -- render <input.json> [--out-dir out]
-  npm run jr -- batch <input.csv> [--out-dir out]
+  npm run jr -- render <input.json> [--out-dir output]
+  npm run jr -- batch <input.csv> [--out-dir output]
 
 JSON input shape:
   { "id": "JR-0002", "title": "...", "character": "boy", "topic": "prayer",
@@ -67,7 +67,7 @@ function main(): void {
   const [command, ...rest] = process.argv.slice(2);
   const { values, positionals } = parseArgs({
     args: rest,
-    options: { "out-dir": { type: "string", default: "out" } },
+    options: { "out-dir": { type: "string", default: "output" } },
     allowPositionals: true,
   });
   const outDir = path.resolve(String(values["out-dir"]));

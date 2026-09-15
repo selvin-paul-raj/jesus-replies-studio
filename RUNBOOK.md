@@ -42,7 +42,7 @@ it directly — no CLI wrapper needed.
 ## 3. The new CLI — single episode from JSON
 
 ```bash
-npm run jr -- render <input.json> [--out-dir out]
+npm run jr -- render <input.json> [--out-dir output]
 ```
 
 Minimal input (only `id`, `title`, `lines` are required):
@@ -106,15 +106,16 @@ Field notes:
   `resolveMusicFile` (currently only `"soft_christian_instrumental"` ->
   `audio/hallelujah.mp3`); or set `track` directly to a `public/` path.
   Defaults to `hallelujah.mp3` at volume 1 if omitted.
-- **`finalLogo`** — optional closing card. Omit entirely for no end card.
-  If you include it, `image` is required (no auto-fallback).
+- **`finalLogo`** — defaults to the follow end card (`branding/follow.png`,
+  "Stay with Jesus" / "Carry this with you"). Include a partial `finalLogo`
+  object to override just the fields you name (e.g. `ctaLabel` only).
 
 Run it:
 
 ```bash
 npm run jr -- render my-episode.json
-# -> out/JR-0002.mp4, out/JR-0002-thumb.png,
-#    out/JR-0002.episode-props.json, out/JR-0002.thumbnail-props.json
+# -> output/JR-0002.mp4, output/JR-0002-thumb.png,
+#    output/props/JR-0002.episode-props.json, output/props/JR-0002.thumbnail-props.json
 ```
 
 A full working example matching this shape lives at
@@ -125,7 +126,7 @@ A full working example matching this shape lives at
 > names from `src/schema.ts` (`entrance`/`exit`, not `animation`). Zod
 > silently drops any key it doesn't recognize — no error, no warning — so
 > a typo'd field name just does nothing. If a style override doesn't seem
-> to take effect, check `out/<id>.episode-props.json` after rendering:
+> to take effect, check `output/props/<id>.episode-props.json` after rendering:
 > the field you meant to set should show your value there, not a default.
 >
 > **Known limitation**: this input has no way to override `timing`
@@ -135,12 +136,12 @@ A full working example matching this shape lives at
 > for the person→jesus join specifically (`timeline.ts` always keeps that
 > join gap-free regardless of `gapSeconds`), but if you need a different
 > `revealMode` or timing model, hand-edit the written
-> `out/<id>.episode-props.json` and re-render it directly (§2) instead.
+> `output/props/<id>.episode-props.json` and re-render it directly (§2) instead.
 
 ## 4. The new CLI — batch from CSV
 
 ```bash
-npm run jr -- batch <input.csv> [--out-dir out]
+npm run jr -- batch <input.csv> [--out-dir output]
 ```
 
 Columns:
@@ -258,8 +259,8 @@ npm run preview                                       # Remotion Studio
 npx remotion render src/index.ts Episode out/x.mp4 --props=path.json    # raw render
 npx remotion still  src/index.ts Thumbnail out/x-thumb.png --props=path.json
 
-npm run jr -- render <input.json> [--out-dir out]      # new CLI, single
-npm run jr -- batch  <input.csv>  [--out-dir out]       # new CLI, batch
+npm run jr -- render <input.json> [--out-dir output]      # new CLI, single
+npm run jr -- batch  <input.csv>  [--out-dir output]       # new CLI, batch
 
 npm run build-episode -- <script.json>                  # legacy pipeline (+ social.json)
 

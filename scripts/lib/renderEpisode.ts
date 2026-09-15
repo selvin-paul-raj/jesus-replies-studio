@@ -16,10 +16,11 @@ export function renderEpisode(
   id: string,
   outDir: string
 ): { videoOut: string; thumbOut: string } {
-  fs.mkdirSync(outDir, { recursive: true });
+  const propsDir = path.join(outDir, "props");
+  fs.mkdirSync(propsDir, { recursive: true });
 
-  const episodePropsPath = path.join(outDir, `${id}.episode-props.json`);
-  const thumbnailPropsPath = path.join(outDir, `${id}.thumbnail-props.json`);
+  const episodePropsPath = path.join(propsDir, `${id}.episode-props.json`);
+  const thumbnailPropsPath = path.join(propsDir, `${id}.thumbnail-props.json`);
   fs.writeFileSync(episodePropsPath, JSON.stringify(episode, null, 2));
   fs.writeFileSync(thumbnailPropsPath, JSON.stringify(thumbnail, null, 2));
 
