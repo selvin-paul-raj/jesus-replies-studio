@@ -55,7 +55,7 @@ write here is ignored; never set it yourself.
 | Field | Type | Default |
 |---|---|---|
 | `image` | `string` | — required (a `public/` path, or an `http(s)://` URL) |
-| `zoomEnabled` | `boolean` | `true` |
+| `zoomEnabled` | `boolean` | `false` |
 | `zoomFromScale` | `number` (1–2) | `1` |
 | `zoomToScale` | `number` (1–2) | `1.12` |
 | `overlayEnabled` | `boolean` | `false` |
@@ -186,11 +186,12 @@ curated defaults.
 
 | Field | Type | Default | Notes |
 |---|---|---|---|
-| `id` | `string` (non-empty) | — required | used for `output/<id>.mp4`/`-thumb.png` + `output/props/<id>.*.json` filenames |
+| `id` | `string` (non-empty) | — required | used for `output/videos/<id>.mp4`, `output/thumbnails/<id>-thumb.png` + `output/props/<id>.*.json` filenames |
 | `title` | `string` | — required | |
-| `character` | `string` | `"boy"` | background-art lookup key |
+| `character` | `string` | `"boy"` | background-art lookup key; bare `"boy"`/`"girl"` is variant 1, or name a variant directly (`"boy_2"`, `"girl_2"`, ...) |
 | `topic` | `string` | `"general"` | background-art lookup key |
-| `background` | partial `BackgroundConfig` | *(auto-resolved)* | any field overrides the auto-resolved one; `image` auto-picks `backgrounds/<character>_<topic>.png` → `<character>.png` → `boy.png` |
+| `emotion` | `string` (optional) | *(none)* | mood variant of the resolved character — one of `"neutral"` (no art of its own), `"happy"`, `"sad"`, `"crying"`, `"worried"`, `"angry"`, `"hopeful"` |
+| `background` | partial `BackgroundConfig` | *(auto-resolved)* | any field overrides the auto-resolved one; `image` auto-picks, per character folder `backgrounds/<character>/`: `<character>_<topic>.png` → `<variant>_<emotion>.png` (if `emotion` set) → `<character>.png` → `<variant>.png` → `backgrounds/boy/boy_1.png` |
 | `bible` | `{book, chapter, verse, version?, text}` (optional) | *(none)* | `chapter`/`verse` accept `number` or `string`; `text` is the full verse — the single source of truth |
 | `lines` | `EpisodeInputLine[]` (min 1) | — required | see below |
 | `styles` | partial per-speaker overrides (optional) | *(curated A defaults)* | any `SpeakerStyleSchema` field, per speaker (`person`/`jesus`/`verse`/`reference`/`engagement`); merged **on top of** the curated defaults (position/anchor never reset by a partial override) |
@@ -219,6 +220,7 @@ just never includes a `"bible_verse"` line.
   "title": "Why do we pray?",
   "character": "boy",
   "topic": "prayer",
+  "emotion": "hopeful",
   "bible": {
     "book": "Matthew", "chapter": 6, "verse": 6, "version": "KJV",
     "text": "But thou, when thou prayest, enter into thy closet, and when thou hast shut thy door, pray to thy Father which is in secret."
@@ -243,13 +245,14 @@ just never includes a `"bible_verse"` line.
 One CSV row maps onto the same schema via these columns:
 
 ```
-id, title, character, topic,
+id, title, character, topic, emotion,
 bible_book, bible_chapter, bible_verse, bible_version, bible_text,
 scenes, styles
 ```
 
-- `id`/`title`/`character`/`topic` → same-named fields (empty `character`/
-  `topic` cells fall back to their defaults, same as JSON).
+- `id`/`title`/`character`/`topic`/`emotion` → same-named fields (empty
+  `character`/`topic` cells fall back to their defaults, same as JSON; an
+  empty `emotion` cell leaves it unset, same as omitting the field).
 - `bible_book`..`bible_text` → assembled into the `bible` object; the row
   has no `bible` at all if `bible_book` is empty.
 - `scenes` → **JSON-encoded** cell, same shape as `lines[]` above (including
@@ -257,8 +260,8 @@ scenes, styles
 - `styles` → **JSON-encoded** cell, same shape as `styles` above.
 
 ```csv
-id,title,character,topic,bible_book,bible_chapter,bible_verse,bible_version,bible_text,scenes,styles
-JR-0002,"Why, Lord, do we forgive?",boy,forgiveness,Matthew,6,14,KJV,"For if ye forgive men their trespasses, your heavenly Father will also forgive you.","[{""speaker"":""person"",""text"":""Why do we have to forgive, Lord?""},{""speaker"":""jesus"",""text"":""Because you were forgiven first.""},{""speaker"":""bible_verse""},{""speaker"":""engagement"",""text"":""Who do you need to forgive today?""}]","{""verse"":{""color"":""#4b2f5c""}}"
+id,title,character,topic,emotion,bible_book,bible_chapter,bible_verse,bible_version,bible_text,scenes,styles
+JR-0002,"Why, Lord, do we forgive?",boy,forgiveness,sad,Matthew,6,14,KJV,"For if ye forgive men their trespasses, your heavenly Father will also forgive you.","[{""speaker"":""person"",""text"":""Why do we have to forgive, Lord?""},{""speaker"":""jesus"",""text"":""Because you were forgiven first.""},{""speaker"":""bible_verse""},{""speaker"":""engagement"",""text"":""Who do you need to forgive today?""}]","{""verse"":{""color"":""#4b2f5c""}}"
 ```
 
 Standard CSV quoting: wrap any comma-containing field in `"..."`; a literal

@@ -110,7 +110,7 @@ export type Styles = z.infer<typeof StylesSchema>;
 
 export const BackgroundConfigSchema = z.object({
   image: z.string(),
-  zoomEnabled: z.boolean().default(true),
+  zoomEnabled: z.boolean().default(false),
   zoomFromScale: z.number().min(1).max(2).default(1),
   zoomToScale: z.number().min(1).max(2).default(1.12),
   /** Optional color wash over the whole image -- e.g. a warm cream tint to

@@ -12,18 +12,37 @@ const PUBLIC_DIR = path.join(__dirname, "..", "public");
  * ============================================================================
  */
 
-/** public/backgrounds/<character>_<topic>.png, falling back to
- * public/backgrounds/<character>.png, then the default boy art -- add more
- * files (e.g. girl.png) as new character/topic art is made. */
-export function resolveBackgroundImage(character: string, topic: string): string {
-  const candidates = [`backgrounds/${character}_${topic}.png`, `backgrounds/${character}.png`];
+/** Art lives one folder per base character: public/backgrounds/<folder>/...
+ * (public/backgrounds/boy/boy_1.png, public/backgrounds/girl/girl_2_sad.png,
+ * etc.) -- "folder" is the character with any trailing _<n> stripped, so
+ * "boy" and "boy_2" both resolve into backgrounds/boy/.
+ *
+ * Within that folder: <character>_<topic>.png, falling back to
+ * <character>.png, then <variant>.png (the default numbered variant -- a
+ * bare "boy"/"girl" character picks variant 1, while "boy_2"/"girl_2" etc.
+ * picks that exact variant directly).
+ *
+ * `emotion` (one of "neutral", "happy", "sad", "crying", "worried", "angry",
+ * "hopeful"), when given, is tried first as <variant>_<emotion>.png (e.g.
+ * "sad" -> boy_1_sad.png / girl_1_sad.png); "neutral" has no art of its own
+ * and -- like a missing/unmade emotion file -- falls through silently to
+ * the same plain-variant candidates as no emotion at all. */
+export function resolveBackgroundImage(character: string, topic: string, emotion?: string): string {
+  const folder = character.replace(/_\d+$/, "");
+  const variant = /_\d+$/.test(character) ? character : `${character}_1`;
+  const candidates = [
+    `backgrounds/${folder}/${character}_${topic}.png`,
+    ...(emotion ? [`backgrounds/${folder}/${variant}_${emotion}.png`] : []),
+    `backgrounds/${folder}/${character}.png`,
+    `backgrounds/${folder}/${variant}.png`,
+  ];
   for (const candidate of candidates) {
     if (fs.existsSync(path.join(PUBLIC_DIR, candidate))) return candidate;
   }
   console.warn(
-    `[assetResolver] no background art for character "${character}"/topic "${topic}", falling back to backgrounds/boy.png`
+    `[assetResolver] no background art for character "${character}"/topic "${topic}", falling back to backgrounds/boy/boy_1.png`
   );
-  return "backgrounds/boy.png";
+  return "backgrounds/boy/boy_1.png";
 }
 
 /** music.type -> public/audio/ filename. Extend as more tracks are added. */

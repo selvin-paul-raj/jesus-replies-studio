@@ -2,7 +2,7 @@
  * ============================================================================
  * CHARACTER-SAFE AREA -- measured from the actual background art
  * ============================================================================
- * Measured directly from public/backgrounds/boy.png (941x1672): scanning
+ * Measured directly from public/backgrounds/boy/boy_1.png (941x1672): scanning
  * every column for the first non-sky pixel, the topmost point across both
  * the boy and Jesus is Jesus's hairline at y=927 (55.4% down the image) --
  * see CHARACTER_TOP_PERCENT below.

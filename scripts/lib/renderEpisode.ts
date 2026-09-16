@@ -17,7 +17,11 @@ export function renderEpisode(
   outDir: string
 ): { videoOut: string; thumbOut: string } {
   const propsDir = path.join(outDir, "props");
+  const videosDir = path.join(outDir, "videos");
+  const thumbnailsDir = path.join(outDir, "thumbnails");
   fs.mkdirSync(propsDir, { recursive: true });
+  fs.mkdirSync(videosDir, { recursive: true });
+  fs.mkdirSync(thumbnailsDir, { recursive: true });
 
   const episodePropsPath = path.join(propsDir, `${id}.episode-props.json`);
   const thumbnailPropsPath = path.join(propsDir, `${id}.thumbnail-props.json`);
@@ -25,8 +29,8 @@ export function renderEpisode(
   fs.writeFileSync(thumbnailPropsPath, JSON.stringify(thumbnail, null, 2));
 
   const rootDir = path.join(__dirname, "..", "..");
-  const videoOut = path.join(outDir, `${id}.mp4`);
-  const thumbOut = path.join(outDir, `${id}-thumb.png`);
+  const videoOut = path.join(videosDir, `${id}.mp4`);
+  const thumbOut = path.join(thumbnailsDir, `${id}-thumb.png`);
 
   execSync(`npx remotion render src/index.ts Episode "${videoOut}" --props="${episodePropsPath}"`, {
     cwd: rootDir,

@@ -2,8 +2,8 @@
   "title": "Career - Why haven't I succeeded yet? (Porch photo)",
   "video": { "widthPx": 1080, "heightPx": 1920, "fps": 30 },
   "background": {
-    "image": "backgrounds/boy.png",
-    "zoomEnabled": true,
+    "image": "backgrounds/boy/boy_1.png",
+    "zoomEnabled": false,
     "zoomFromScale": 1,
     "zoomToScale": 1.12,
     "overlayEnabled": false,

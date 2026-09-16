@@ -87,10 +87,17 @@ Full input, showing every optional field:
 ```
 
 Field notes:
-- **`character`/`topic`** — pick background art via
-  `public/backgrounds/<character>_<topic>.png`, falling back to
-  `<character>.png`, then `boy.png` (with a console warning). Default
-  `character: "boy"`, `topic: "general"`.
+- **`character`/`topic`/`emotion`** — pick background art from
+  `public/backgrounds/<character>/` (each base character gets its own
+  folder, e.g. `backgrounds/boy/`, `backgrounds/girl/`). Lookup order:
+  `<character>_<topic>.png`, then `<variant>_<emotion>.png` (if `emotion`
+  is set), then `<character>.png`, then `<variant>.png` — falling back to
+  `backgrounds/boy/boy_1.png` with a console warning if nothing matches.
+  A bare `character: "boy"`/`"girl"` is variant 1 (`boy_1.png`); use
+  `"boy_2"`/`"girl_2"` etc. to pick a different numbered variant.
+  `emotion` is one of `"neutral"` (no art of its own — same as omitting
+  it), `"happy"`, `"sad"`, `"crying"`, `"worried"`, `"angry"`, `"hopeful"`.
+  Defaults: `character: "boy"`, `topic: "general"`, `emotion` unset.
 - **`bible`** — optional. If your script has no verse, omit it and never
   use a `"bible_verse"` line.
 - **`"bible_verse"` line** — a *position marker only*, no `text` field.
@@ -114,7 +121,7 @@ Run it:
 
 ```bash
 npm run jr -- render my-episode.json
-# -> output/JR-0002.mp4, output/JR-0002-thumb.png,
+# -> output/videos/JR-0002.mp4, output/thumbnails/JR-0002-thumb.png,
 #    output/props/JR-0002.episode-props.json, output/props/JR-0002.thumbnail-props.json
 ```
 
@@ -238,10 +245,13 @@ afterward — they're scratch, not deliverables.
 
 ## 7. Adding new assets
 
-- **Background art**: drop `public/backgrounds/<character>.png` (or
-  `<character>_<topic>.png` for a topic-specific variant) at roughly the
+- **Background art**: drop new variants into that character's own folder,
+  `public/backgrounds/<character>/<character>_<n>.png` (e.g.
+  `backgrounds/boy/boy_3.png` for a new numbered variant), or
+  `<character>_<n>_<emotion>.png` (e.g. `backgrounds/girl/girl_1_hopeful.png`)
+  for a mood variant of an existing numbered pose — at roughly the
   1080×1920 aspect ratio. If the composition/character silhouette differs
-  meaningfully from `boy.png`, re-measure `CHARACTER_TOP_PERCENT` in
+  meaningfully from `boy_1.png`, re-measure `CHARACTER_TOP_PERCENT` in
   `src/safeArea.ts` (scan the image for the first non-sky pixel) — every
   text block's growth ceiling derives from that one constant.
 - **Music**: drop the file in `public/audio/`, add a `type -> path` entry

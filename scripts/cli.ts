@@ -21,13 +21,13 @@ const USAGE = `Usage:
   npm run jr -- batch <input.csv> [--out-dir output]
 
 JSON input shape:
-  { "id": "JR-0002", "title": "...", "character": "boy", "topic": "prayer",
+  { "id": "JR-0002", "title": "...", "character": "boy", "topic": "prayer", "emotion": "hopeful",
     "bible": { "book": "Matthew", "chapter": 6, "verse": 6, "version": "KJV", "text": "..." },
     "lines": [ { "speaker": "person", "text": "..." }, { "speaker": "bible_verse" }, ... ],
     "styles": { "verse": { "color": "#3b2f2f" } } }
 
 CSV columns (batch):
-  id,title,character,topic,bible_book,bible_chapter,bible_verse,bible_version,bible_text,scenes,styles
+  id,title,character,topic,emotion,bible_book,bible_chapter,bible_verse,bible_version,bible_text,scenes,styles
   "scenes" and "styles" are JSON-encoded cells (same shapes as above's "lines"/"styles").`;
 
 /** A "bible_verse" line has no text of its own in either input format --
@@ -51,6 +51,7 @@ function csvRowToEpisodeInput(row: Record<string, string>): EpisodeInput {
     title: row.title,
     character: row.character || undefined,
     topic: row.topic || undefined,
+    emotion: row.emotion || undefined,
     bible,
     lines: row.scenes ? JSON.parse(row.scenes) : [],
     styles: row.styles ? JSON.parse(row.styles) : undefined,

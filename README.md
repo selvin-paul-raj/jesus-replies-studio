@@ -157,7 +157,7 @@ All text positioning is anchored off measured constants, not hand-picked
 pixels, so any script's dialogue/verse/citation — however long —
 structurally stops short of the characters:
 
-- `CHARACTER_TOP_PERCENT` (55.4%) — measured from `public/backgrounds/boy.png`
+- `CHARACTER_TOP_PERCENT` (55.4%) — measured from `public/backgrounds/boy/boy_1.png`
 - `SAFE_LINE_PERCENT` (42%) — the dialogue/reference floor, well clear of
   the characters on purpose (a visible gap, not just barely clear)
 - `TOP_MARGIN_PERCENT` (9%) — ceiling for how far bottom-anchored text may
@@ -179,8 +179,8 @@ src/
   timeline.ts             -- script -> timed "reveal frames" (+ per-speaker
                               continuity segments) per revealMode
   fonts.ts               -- Google Fonts (Lora for dialogue, Anton for titles)
-  assetResolver.ts        -- character/topic -> background art, music type -> file
-  Background.tsx          -- Ken Burns zoom + optional overlay + bottom logo
+  assetResolver.ts        -- character/topic/emotion -> background art, music type -> file
+  Background.tsx          -- fixed (opt-in zoom) background + optional overlay + bottom logo
   TextBlock.tsx            -- one speaker's text: typography/position/shadow/anim
   BibleVerseBlock.tsx       -- verse+divider+reference+version as one cohesive card
   EndCard.tsx              -- closing brand card (logo + CTA lines)
@@ -200,11 +200,12 @@ scripts/
   examples/JR-0002.json       -- example new-CLI input (simple lines, bible_verse marker)
   check-*.ts                -- self-checks for timeline.ts/episodeInput.ts logic
 public/
-  backgrounds/boy.png, audio/hallelujah.mp3, branding/{bottom,follow}.png
+  backgrounds/boy/, backgrounds/girl/ (boy_1.png, boy_1_sad.png, ...),
+  audio/hallelujah.mp3, branding/{bottom,follow}.png
 out/                       -- legacy build-episode.ts output (git-ignored): <id>.mp4,
                               <id>-thumb.png, <id>.episode-props.json, <id>.thumbnail-props.json
 output/                    -- npm run jr render output (git-ignored, default --out-dir):
-                              <id>.mp4, <id>-thumb.png at the top level,
+                              videos/<id>.mp4, thumbnails/<id>-thumb.png,
                               props/<id>.episode-props.json, props/<id>.thumbnail-props.json
 ```
 

@@ -47,6 +47,11 @@ export const EpisodeInputSchema = z.object({
   /** Selects background art via assetResolver's character_topic.png lookup. */
   character: z.string().default("boy"),
   topic: z.string().default("general"),
+  /** Optional mood variant of the resolved character/variant art, e.g.
+   * "sad" -> boy_1_sad.png / girl_2_sad.png. One of "neutral" (no art of
+   * its own -- same as omitting it), "happy", "sad", "crying", "worried",
+   * "angry", "hopeful". */
+  emotion: z.string().optional(),
   background: BackgroundConfigSchema.partial().optional(),
   bible: EpisodeInputBibleSchema.optional(),
   lines: z.array(EpisodeInputLineSchema).min(1),
@@ -119,7 +124,7 @@ export function buildEpisodeAndThumbnail(input: EpisodeInput) {
 
   const bg = input.background;
   const background = {
-    image: bg?.image ?? resolveBackgroundImage(input.character, input.topic),
+    image: bg?.image ?? resolveBackgroundImage(input.character, input.topic, input.emotion),
     zoomEnabled: bg?.zoomEnabled,
     zoomFromScale: bg?.zoomFromScale,
     zoomToScale: bg?.zoomToScale,
