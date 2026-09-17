@@ -1,7 +1,7 @@
 import React from "react";
 import { Composition, Still, staticFile } from "remotion";
 import { getAudioDurationInSeconds } from "@remotion/media-utils";
-import { EpisodeComposition } from "./Episode";
+import { EpisodeComposition, THUMBNAIL_LEAD_FRAMES } from "./Episode";
 import { ThumbnailComposition } from "./Thumbnail";
 import { EpisodePropsSchema, ThumbnailPropsSchema } from "./schema";
 import { buildRevealFrames } from "./timeline";
@@ -37,7 +37,7 @@ export const Root: React.FC = () => {
           }
 
           return {
-            durationInFrames: totalFrames + endPaddingFrames,
+            durationInFrames: totalFrames + endPaddingFrames + THUMBNAIL_LEAD_FRAMES,
             fps,
             width: data.video.widthPx,
             height: data.video.heightPx,

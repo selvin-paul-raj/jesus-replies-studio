@@ -4,10 +4,19 @@ import { Background } from "./Background";
 import { TextBlock } from "./TextBlock";
 import { BibleVerseBlock } from "./BibleVerseBlock";
 import { EndCard } from "./EndCard";
+import { ThumbnailComposition } from "./Thumbnail";
 import { EpisodeProps } from "./schema";
 import { buildRevealFrames, toSpeakerSegments } from "./timeline";
 
+/** Frame 0 of the rendered mp4 is the thumbnail card itself (so scrubbing to
+ * 0:00, or any player showing a static "poster" frame, shows the same title
+ * card as the standalone Thumbnail still) -- everything else shifts forward
+ * by this many frames. Root.tsx's calculateMetadata adds this to the total
+ * duration. */
+export const THUMBNAIL_LEAD_FRAMES = 1;
+
 export const EpisodeComposition: React.FC<EpisodeProps> = ({
+  title,
   background,
   audio,
   lines,
@@ -45,6 +54,10 @@ export const EpisodeComposition: React.FC<EpisodeProps> = ({
     <AbsoluteFill>
       <Background config={background} />
 
+      <Sequence from={0} durationInFrames={THUMBNAIL_LEAD_FRAMES} layout="none">
+        <ThumbnailComposition title={title} image={background.image} />
+      </Sequence>
+
       {segments.map((segment, i) => {
         // Reference is folded into its paired verse's BibleVerseBlock below
         // (see timeline.ts -- verse and reference always share the same
@@ -59,7 +72,7 @@ export const EpisodeComposition: React.FC<EpisodeProps> = ({
               s.durationInFrames === segment.durationInFrames
           );
           return (
-            <Sequence key={i} from={segment.startFrame} durationInFrames={segment.durationInFrames} layout="none">
+            <Sequence key={i} from={segment.startFrame + THUMBNAIL_LEAD_FRAMES} durationInFrames={segment.durationInFrames} layout="none">
               <BibleVerseBlock
                 verseText={segment.text}
                 referenceText={reference?.text}
@@ -71,7 +84,7 @@ export const EpisodeComposition: React.FC<EpisodeProps> = ({
         }
 
         return (
-          <Sequence key={i} from={segment.startFrame} durationInFrames={segment.durationInFrames} layout="none">
+          <Sequence key={i} from={segment.startFrame + THUMBNAIL_LEAD_FRAMES} durationInFrames={segment.durationInFrames} layout="none">
             <TextBlock
               speaker={segment.speaker}
               text={segment.text}
@@ -97,13 +110,15 @@ export const EpisodeComposition: React.FC<EpisodeProps> = ({
           ) : null;
         })()}
 
-      {audio.loopIfShorterThanVideo && audioDurationInFrames > 0 && audioDurationInFrames < durationInFrames ? (
-        <Loop durationInFrames={audioDurationInFrames}>
+      <Sequence from={THUMBNAIL_LEAD_FRAMES} layout="none">
+        {audio.loopIfShorterThanVideo && audioDurationInFrames > 0 && audioDurationInFrames < durationInFrames ? (
+          <Loop durationInFrames={audioDurationInFrames}>
+            <Audio src={audioSrc} volume={currentVolume} />
+          </Loop>
+        ) : (
           <Audio src={audioSrc} volume={currentVolume} />
-        </Loop>
-      ) : (
-        <Audio src={audioSrc} volume={currentVolume} />
-      )}
+        )}
+      </Sequence>
     </AbsoluteFill>
   );
 };
