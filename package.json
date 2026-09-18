@@ -9,7 +9,8 @@
     "still": "remotion still",
     "build-episode": "tsx scripts/build-episode.ts",
     "jr": "tsx scripts/cli.ts",
-    "bible-post": "tsx scripts/daily-bible-post.ts"
+    "bible-post": "tsx scripts/daily-bible-post.ts",
+    "build-bible-posts": "tsx scripts/build-all-bible-posts.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,11 +18,13 @@
   "dependencies": {
     "@remotion/animated-emoji": "4.0.522",
     "@remotion/animation-utils": "4.0.522",
+    "@remotion/bundler": "4.0.522",
     "@remotion/cli": "^4.0.522",
     "@remotion/fonts": "4.0.522",
     "@remotion/google-fonts": "4.0.522",
     "@remotion/gsap": "4.0.522",
     "@remotion/media-utils": "^4.0.522",
+    "@remotion/renderer": "4.0.522",
     "@remotion/zod-types": "^4.0.522",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",

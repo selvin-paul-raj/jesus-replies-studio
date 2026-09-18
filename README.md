@@ -232,27 +232,43 @@ when you're ready to wire that up.
 ## Bible Verse Post Tool
 
 A separate, isolated pipeline that posts a daily Bible verse card — it does
-not touch the Episode/Thumbnail rendering above. It picks a verse, renders a
-3:4 still with the same `BibleVerseBlock`/logo/brand look, and publishes it
-to Instagram through Buffer, fully unattended, every day at 6:30 AM IST.
+not touch the Episode/Thumbnail rendering above. It's split into two phases
+so the *daily* job stays fast and cheap:
+
+1. **Build once** (`build-bible-posts.yml`, manual) — bundles Remotion a
+   single time and renders all 365 verse cards, uploading them as assets on
+   one GitHub Release (`bible-posts-v1`). Re-run only when `bible.json`
+   changes. This is the only phase that touches Remotion/headless Chrome.
+2. **Post daily** (`daily-bible-post.yml`, 6:30 AM IST cron) — picks today's
+   verse, looks up its already-built image by day-of-year, and posts it to
+   Instagram through Buffer. No rendering, no bundling, no `gh` calls.
 
 **Pieces:**
 - `scripts/bible.json` — 365 curated promises/blessings (NIV wording), one
   per day of the year — deliberately no narrative/story verses, every entry
   is meant to stand alone and invite a reaction.
 - `scripts/get-bible-verse.ts` — picks that day's entry from `bible.json` by
-  day-of-year (local data, no network call).
+  day-of-year (local data, no network call); returns a `dayIndex` so callers
+  can locate the matching pre-built image.
 - `src/BibleVersePost.tsx` (+ `BibleVersePostPropsSchema` in `src/schema.ts`,
   registered as the `BibleVersePost` Still in `src/Root.tsx`) — the 3:4
   (1080x1440) card.
-- `scripts/publish-buffer.ts` — creates a Buffer update on one channel.
-- `scripts/daily-bible-post.ts` — orchestrates all of the above, saves the
-  rendered image to `output/bible_verse/`, uploads it as a GitHub Release
-  asset (so Buffer has a public URL to fetch it from), and records the date
-  in `data/bible-post-state.json` so the same day never posts twice.
-- `.github/workflows/daily-bible-post.yml` — runs it daily at 6:30 AM IST
-  (01:00 UTC cron), plus a manual `workflow_dispatch` (with a `force` input
-  to bypass the dedupe check) for testing.
+- `scripts/build-all-bible-posts.ts` — batch-renders all 365 cards using the
+  Remotion Node API directly (`bundle()` once, then `selectComposition()` +
+  `renderStill()` per verse against one reused browser instance), writing to
+  `output/bible_verse_batch/bible-post-day-<1-365>.png`.
+- `scripts/publish-buffer.ts` — creates a Buffer update on one channel via
+  Buffer's GraphQL API.
+- `scripts/list-buffer-channels.ts` — one-off lookup for a channel's GraphQL
+  `id` (see Setup below).
+- `scripts/daily-bible-post.ts` — gets today's verse, builds the pre-built
+  image's Release asset URL, posts it via Buffer, and records the date in
+  `data/bible-post-state.json` so the same day never posts twice.
+- `.github/workflows/build-bible-posts.yml` — manual-only; runs phase 1 and
+  uploads the batch to the `bible-posts-v1` release.
+- `.github/workflows/daily-bible-post.yml` — runs phase 2 daily at 6:30 AM
+  IST (01:00 UTC cron), plus a manual `workflow_dispatch` (with a `force`
+  input to bypass the dedupe check) for testing.
 
 **Setup:**
 1. Get a Buffer **GraphQL API key** from Buffer's account/API settings
@@ -270,20 +286,22 @@ to Instagram through Buffer, fully unattended, every day at 6:30 AM IST.
    Actions) on this repo:
    - `BUFFER_API_KEY`
    - `BUFFER_INSTAGRAM_CHANNEL_ID`
-4. The repo (or the release assets) must be reachable by Buffer's servers —
-   keep it public, or the media URL Buffer fetches from will 404.
+   - `ACTION_GITHUB` (a token with `contents: write`, used only by
+     `build-bible-posts.yml` to create/upload the release)
+4. Run **Actions → Build Bible Posts → Run workflow** once (and again
+   whenever `scripts/bible.json` changes) to populate the `bible-posts-v1`
+   release. The repo (or its release assets) must stay public, or the media
+   URL Buffer fetches from will 404.
 5. Test locally against your real `.env` values (Node/tsx don't auto-load
    `.env`, so pass it explicitly):
    ```
-   npx tsx scripts/get-bible-verse.ts                        # verse pick only, no env needed
+   npx tsx scripts/get-bible-verse.ts                       # verse pick only, no env needed
    npx tsx --env-file=.env scripts/list-buffer-channels.ts  # look up channel ids
-   npx tsx --env-file=.env scripts/daily-bible-post.ts       # full pipeline
+   npx tsx --env-file=.env scripts/daily-bible-post.ts       # full daily pipeline
    ```
-   The full pipeline's release-upload step only works inside GitHub Actions
-   where `gh` is authenticated (it needs `GITHUB_REPOSITORY` set) — run the
-   workflow via **Actions → Daily Bible Verse Post → Run workflow** to test
-   posting end-to-end. Locally you can still confirm the verse + rendered
-   image (saved to `output/bible_verse/`) look right before that.
+   Once the release from step 4 exists, run the daily workflow via
+   **Actions → Daily Bible Verse Post → Run workflow** to test posting
+   end-to-end.
 
 **Adding/editing verses:** just edit `scripts/bible.json` — each entry is
 `{ "id", "reference", "text" }`; the day-of-year rotation picks by array

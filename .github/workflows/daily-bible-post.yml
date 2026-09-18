@@ -35,7 +35,6 @@ jobs:
           BIBLE_API_KEY: ${{ secrets.BIBLE_API_KEY }}
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           BUFFER_INSTAGRAM_CHANNEL_ID: ${{ secrets.BUFFER_INSTAGRAM_CHANNEL_ID }}
-          GH_TOKEN: ${{ secrets.ACTION_GITHUB }}
           FORCE_POST: ${{ inputs.force }}
         run: npm run bible-post
 

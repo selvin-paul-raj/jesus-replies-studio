@@ -20,21 +20,27 @@ export interface DailyVerse {
   reference: string;
   version: string;
   text: string;
+  /** 0-based index into VERSES for this date -- lets callers locate the
+   * matching pre-built image from scripts/build-all-bible-posts.ts's batch
+   * (see assetFileName there) without re-deriving the day-of-year math. */
+  dayIndex: number;
 }
 
-function pickVerseForDate(date: Date): VerseEntry {
+function dayIndexForDate(date: Date): number {
   const startOfYear = Date.UTC(date.getUTCFullYear(), 0, 0);
   const today = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
   const dayOfYear = Math.floor((today - startOfYear) / 86_400_000);
-  return VERSES[dayOfYear % VERSES.length];
+  return dayOfYear % VERSES.length;
 }
 
 export async function getDailyVerse(date: Date = new Date()): Promise<DailyVerse> {
-  const picked = pickVerseForDate(date);
+  const dayIndex = dayIndexForDate(date);
+  const picked = VERSES[dayIndex];
   return {
     reference: picked.reference,
     version: process.env.BIBLE_VERSION_LABEL || "NIV",
     text: picked.text.replace(/\s+/g, " ").trim(),
+    dayIndex,
   };
 }
 

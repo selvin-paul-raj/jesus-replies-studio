@@ -1,0 +1,37 @@
+name: Build Bible Posts
+
+# Manual only -- this is the one-off (or "whenever bible.json changes") batch
+# render. It bundles Remotion once and renders all 365 verse cards, then
+# uploads them to a single GitHub Release so the daily workflow can post
+# from a pre-built image instead of rendering every day.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Render all 365 verse cards
+        run: npm run build-bible-posts
+
+      - name: Upload as GitHub Release assets
+        env:
+          GH_TOKEN: ${{ secrets.ACTION_GITHUB }}
+        run: |
+          TAG="bible-posts-v1"
+          gh release view "$TAG" || gh release create "$TAG" --title "$TAG" --notes "Pre-built daily Bible verse cards (see scripts/build-all-bible-posts.ts)"
+          gh release upload "$TAG" output/bible_verse_batch/*.png --clobber
