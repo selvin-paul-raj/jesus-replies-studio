@@ -53,18 +53,23 @@ function todayUTC(): string {
   return new Date().toISOString().slice(0, 10);
 }
 
+// Instagram caption template -- edit the wording/hashtags here directly.
+// Placeholders: {{text}} (verse text), {{reference}} (e.g. "Psalm 126:5-6"),
+// {{version}} (e.g. "NIV").
+const CAPTION_TEMPLATE = `✨ Today's blessing:
+
+"{{text}}"
+
+— {{reference}} ({{version}})
+
+🙏 Say Amen if you're receiving this today, and tag someone who needs it.
+
+#Bible #Jesus #Faith #Blessed #Scripture #DailyVerse #JesusRepliesOfficial`;
+
 function buildCaption(verse: DailyVerse): string {
-  return [
-    `✨ Today's blessing:`,
-    "",
-    `"${verse.text}"`,
-    "",
-    `— ${verse.reference} (${verse.version})`,
-    "",
-    "🙏 Say Amen if you're receiving this today, and tag someone who needs it.",
-    "",
-    "#Bible #Jesus #Faith #Blessed #Scripture #DailyVerse #JesusRepliesOfficial",
-  ].join("\n");
+  return CAPTION_TEMPLATE.replace("{{text}}", verse.text)
+    .replace("{{reference}}", verse.reference)
+    .replace("{{version}}", verse.version);
 }
 
 /** The pre-built image's public URL -- no rendering, no `gh` CLI, no auth
