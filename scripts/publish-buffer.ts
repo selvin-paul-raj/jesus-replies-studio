@@ -6,14 +6,18 @@
  * scripts/daily-bible-post.ts. BUFFER_API_KEY must be a key generated for
  * the GraphQL API (Buffer settings -> API), not the old OAuth access token.
  *
- * Uses mode: customScheduled with dueAt = now instead of addToQueue, since
- * addToQueue posts at Buffer's next configured slot (not necessarily now) --
- * the workflow's cron IS the desired post time, so "now" is what we want.
+ * Uses mode: customScheduled with dueAt = now + a small buffer instead of
+ * addToQueue, since addToQueue posts at Buffer's next configured slot (not
+ * necessarily now) -- the workflow's cron IS the desired post time. Buffer
+ * rejects a dueAt that isn't strictly in the future by the time its server
+ * validates the request, so a bare `new Date()` is a race Buffer usually
+ * loses -- DUE_AT_BUFFER_MS pushes it far enough ahead to reliably win.
  * See scripts/list-buffer-channels.ts to look up a channel's GraphQL id.
  * ============================================================================
  */
 
 const BUFFER_API_BASE = "https://api.buffer.com";
+const DUE_AT_BUFFER_MS = 2 * 60 * 1000;
 
 export interface BufferPostInput {
   channelId: string;
@@ -25,7 +29,7 @@ export async function createBufferPost({ channelId, text, mediaUrl }: BufferPost
   const apiKey = process.env.BUFFER_API_KEY;
   if (!apiKey) throw new Error("BUFFER_API_KEY is not set");
 
-  const dueAt = new Date().toISOString();
+  const dueAt = new Date(Date.now() + DUE_AT_BUFFER_MS).toISOString();
   const query = `
     mutation {
       createPost(input: {
