@@ -8,7 +8,8 @@
     "render": "remotion render Episode out/episode.mp4",
     "still": "remotion still",
     "build-episode": "tsx scripts/build-episode.ts",
-    "jr": "tsx scripts/cli.ts"
+    "jr": "tsx scripts/cli.ts",
+    "bible-post": "tsx scripts/daily-bible-post.ts"
   },
   "keywords": [],
   "author": "",

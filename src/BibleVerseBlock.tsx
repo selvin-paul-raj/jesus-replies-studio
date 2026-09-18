@@ -50,7 +50,12 @@ export const BibleVerseBlock: React.FC<{
   referenceText?: string;
   style: SpeakerStyle;
   durationInFrames: number;
-}> = ({ verseText, referenceText, style, durationInFrames }) => {
+  /** Overrides for the divider/reference/version colors -- default to the
+   * usual gold so Episode/Thumbnail are unaffected; BibleVersePost passes
+   * its own calmer palette. */
+  dividerColor?: string;
+  citationColor?: string;
+}> = ({ verseText, referenceText, style, durationInFrames, dividerColor = DIVIDER_COLOR, citationColor = CITATION_COLOR }) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
 
@@ -133,7 +138,7 @@ export const BibleVerseBlock: React.FC<{
             style={{
               width: DIVIDER_WIDTH,
               height: DIVIDER_HEIGHT,
-              background: DIVIDER_COLOR,
+              background: dividerColor,
               margin: `${DIVIDER_MARGIN_TOP}px auto ${DIVIDER_MARGIN_BOTTOM}px`,
             }}
           />
@@ -142,7 +147,7 @@ export const BibleVerseBlock: React.FC<{
               style={{
                 margin: 0,
                 fontSize: REFERENCE_FONT_SIZE,
-                color: CITATION_COLOR,
+                color: citationColor,
                 fontFamily: style.fontFamily,
                 fontWeight: "bold",
                 textTransform: "uppercase",
@@ -159,7 +164,7 @@ export const BibleVerseBlock: React.FC<{
               style={{
                 margin: `${VERSION_MARGIN_TOP}px 0 0`,
                 fontSize: VERSION_FONT_SIZE,
-                color: CITATION_COLOR,
+                color: citationColor,
                 fontFamily: style.fontFamily,
                 fontWeight: "bold",
                 textTransform: "uppercase",

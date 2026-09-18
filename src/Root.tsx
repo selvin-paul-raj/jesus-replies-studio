@@ -3,7 +3,8 @@ import { Composition, Still, staticFile } from "remotion";
 import { getAudioDurationInSeconds } from "@remotion/media-utils";
 import { EpisodeComposition, THUMBNAIL_LEAD_FRAMES } from "./Episode";
 import { ThumbnailComposition } from "./Thumbnail";
-import { EpisodePropsSchema, ThumbnailPropsSchema } from "./schema";
+import { BibleVersePostComposition } from "./BibleVersePost";
+import { EpisodePropsSchema, ThumbnailPropsSchema, BibleVersePostPropsSchema } from "./schema";
 import { buildRevealFrames } from "./timeline";
 import defaultEpisode from "./episodes/porch_conversation.json";
 
@@ -54,6 +55,17 @@ export const Root: React.FC = () => {
         defaultProps={ThumbnailPropsSchema.parse({
           title: defaultEpisode.title,
           image: defaultEpisode.background.image,
+        })}
+      />
+      <Still
+        id="BibleVersePost"
+        component={BibleVersePostComposition}
+        schema={BibleVersePostPropsSchema}
+        width={1080}
+        height={1440}
+        defaultProps={BibleVersePostPropsSchema.parse({
+          verseText: "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.",
+          referenceText: "Jeremiah 29:11\nNIV",
         })}
       />
     </>

@@ -206,3 +206,19 @@ export const ThumbnailPropsSchema = z.object({
   image: z.string(),
 });
 export type ThumbnailProps = z.infer<typeof ThumbnailPropsSchema>;
+
+/** Props for the standalone daily Bible verse post still -- verse + citation
+ * over a plain brand-colored card, used by the Bible Verse Post Tool
+ * (scripts/daily-bible-post.ts). Isolated from the Episode/Thumbnail props
+ * above; nothing else reads this schema. */
+export const BibleVersePostPropsSchema = z.object({
+  verseText: z.string(),
+  /** "Book chapter:verse\nVERSION", same shape BibleVerseBlock expects. */
+  referenceText: z.string(),
+  /** Small uppercase label above the verse, e.g. "A WORD FOR YOU". */
+  eyebrowLabel: z.string().default("A WORD FOR YOU"),
+  backgroundColor: zColor().default("#eef1e7"),
+  /** Optional brand logo pinned to the bottom-center, same asset Background.tsx uses. */
+  logoImage: z.string().optional().default("branding/bottom.png"),
+});
+export type BibleVersePostProps = z.infer<typeof BibleVersePostPropsSchema>;
