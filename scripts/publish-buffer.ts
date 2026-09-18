@@ -39,7 +39,7 @@ export async function createBufferPost({ channelId, text, mediaUrl }: BufferPost
         mode: customScheduled
         dueAt: ${JSON.stringify(dueAt)}
         assets: [{ image: { url: ${JSON.stringify(mediaUrl)} } }]
-        metadata: { instagram: { type: post } }
+        metadata: { instagram: { type: post, shouldShareToFeed: true } }
       }) {
         ... on PostActionSuccess {
           post { id status }
