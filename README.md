@@ -255,10 +255,15 @@ to Instagram through Buffer, fully unattended, every day at 6:30 AM IST.
   to bypass the dedupe check) for testing.
 
 **Setup:**
-1. Get a Buffer account/access token from
-   [buffer.com/developers/api](https://buffer.com/developers/api). Find your
-   Instagram channel/profile id via Buffer's `GET /1/profiles.json` endpoint.
-2. Copy `.env.example` to `.env` and fill in the values for local testing
+1. Get a Buffer **GraphQL API key** from Buffer's account/API settings
+   (`developers.buffer.com`) — the old REST/OAuth access token is deprecated
+   and is rejected outright by `createPost`, so it must be a key issued for
+   the GraphQL API.
+2. Copy `.env.example` to `.env`, set `BUFFER_API_KEY` to that key, then run
+   `npx tsx --env-file=.env scripts/list-buffer-channels.ts` to print every
+   connected channel's GraphQL `id` — use your Instagram channel's `id` as
+   `BUFFER_INSTAGRAM_CHANNEL_ID` (this id is not the same as the old REST
+   profile id).
    (`BIBLE_API_KEY` is no longer required — verses come from `bible.json` —
    but it's left in place in case you want to swap the source back later).
 3. Add these as **GitHub Secrets** (Settings → Secrets and variables →
@@ -270,8 +275,9 @@ to Instagram through Buffer, fully unattended, every day at 6:30 AM IST.
 5. Test locally against your real `.env` values (Node/tsx don't auto-load
    `.env`, so pass it explicitly):
    ```
-   npx tsx scripts/get-bible-verse.ts                   # verse pick only, no env needed
-   npx tsx --env-file=.env scripts/daily-bible-post.ts  # full pipeline
+   npx tsx scripts/get-bible-verse.ts                        # verse pick only, no env needed
+   npx tsx --env-file=.env scripts/list-buffer-channels.ts  # look up channel ids
+   npx tsx --env-file=.env scripts/daily-bible-post.ts       # full pipeline
    ```
    The full pipeline's release-upload step only works inside GitHub Actions
    where `gh` is authenticated (it needs `GITHUB_REPOSITORY` set) — run the

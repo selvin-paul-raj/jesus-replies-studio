@@ -1,11 +1,19 @@
 /**
  * ============================================================================
- * BUFFER PUBLISHER -- thin client around Buffer's public API (v1) to create
- * an update (post) on one channel. Used only by scripts/daily-bible-post.ts.
+ * BUFFER PUBLISHER -- thin client around Buffer's GraphQL API (the REST v1
+ * API is deprecated and rejects "public API token" keys outright) to create
+ * a post with one image on one channel. Used only by
+ * scripts/daily-bible-post.ts. BUFFER_API_KEY must be a key generated for
+ * the GraphQL API (Buffer settings -> API), not the old OAuth access token.
+ *
+ * Uses mode: customScheduled with dueAt = now instead of addToQueue, since
+ * addToQueue posts at Buffer's next configured slot (not necessarily now) --
+ * the workflow's cron IS the desired post time, so "now" is what we want.
+ * See scripts/list-buffer-channels.ts to look up a channel's GraphQL id.
  * ============================================================================
  */
 
-const BUFFER_API_BASE = "https://api.bufferapp.com/1";
+const BUFFER_API_BASE = "https://api.buffer.com";
 
 export interface BufferPostInput {
   channelId: string;
@@ -14,26 +22,42 @@ export interface BufferPostInput {
 }
 
 export async function createBufferPost({ channelId, text, mediaUrl }: BufferPostInput): Promise<void> {
-  const accessToken = process.env.BUFFER_API_KEY;
-  if (!accessToken) throw new Error("BUFFER_API_KEY is not set");
+  const apiKey = process.env.BUFFER_API_KEY;
+  if (!apiKey) throw new Error("BUFFER_API_KEY is not set");
 
-  const body = new URLSearchParams();
-  body.append("access_token", accessToken);
-  body.append("profile_ids[]", channelId);
-  body.append("text", text);
-  body.append("media[photo]", mediaUrl);
-  body.append("media[thumbnail]", mediaUrl);
-  body.append("now", "true");
+  const dueAt = new Date().toISOString();
+  const query = `
+    mutation {
+      createPost(input: {
+        text: ${JSON.stringify(text)}
+        channelId: ${JSON.stringify(channelId)}
+        schedulingType: automatic
+        mode: customScheduled
+        dueAt: ${JSON.stringify(dueAt)}
+        assets: [{ image: { url: ${JSON.stringify(mediaUrl)} } }]
+      }) {
+        ... on PostActionSuccess {
+          post { id status }
+        }
+        ... on MutationError {
+          message
+        }
+      }
+    }
+  `;
 
-  const res = await fetch(`${BUFFER_API_BASE}/updates/create.json`, {
+  const res = await fetch(BUFFER_API_BASE, {
     method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body,
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${apiKey}` },
+    body: JSON.stringify({ query }),
   });
 
   const json = await res.json().catch(() => ({}));
-  if (!res.ok || json?.success === false) {
-    throw new Error(`Buffer post failed for channel ${channelId} (${res.status}): ${JSON.stringify(json)}`);
+  const result = json?.data?.createPost;
+  if (!res.ok || json?.errors || result?.message) {
+    throw new Error(
+      `Buffer post failed for channel ${channelId}: ${JSON.stringify(json?.errors ?? result ?? json)}`
+    );
   }
 }
 
