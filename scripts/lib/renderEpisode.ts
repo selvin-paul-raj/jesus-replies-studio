@@ -32,10 +32,10 @@ export function renderEpisode(
   const videoOut = path.join(videosDir, `${id}.mp4`);
   const thumbOut = path.join(thumbnailsDir, `${id}-thumb.png`);
 
-  execSync(`npx remotion render src/index.ts Episode "${videoOut}" --props="${episodePropsPath}"`, {
-    cwd: rootDir,
-    stdio: "inherit",
-  });
+  execSync(
+    `npx remotion render src/index.ts Episode "${videoOut}" --props="${episodePropsPath}" --concurrency=16`,
+    { cwd: rootDir, stdio: "inherit" }
+  );
   execSync(`npx remotion still src/index.ts Thumbnail "${thumbOut}" --props="${thumbnailPropsPath}"`, {
     cwd: rootDir,
     stdio: "inherit",

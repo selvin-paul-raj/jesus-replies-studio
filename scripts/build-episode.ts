@@ -38,10 +38,10 @@ const videoOut = path.join(outDir, `${script.id}.mp4`);
 const thumbOut = path.join(outDir, `${script.id}-thumb.png`);
 
 console.log(`[build-episode] rendering ${videoOut} ...`);
-execSync(`npx remotion render src/index.ts Episode "${videoOut}" --props="${episodePropsPath}"`, {
-  cwd: rootDir,
-  stdio: "inherit",
-});
+execSync(
+  `npx remotion render src/index.ts Episode "${videoOut}" --props="${episodePropsPath}" --concurrency=16`,
+  { cwd: rootDir, stdio: "inherit" }
+);
 
 console.log(`[build-episode] rendering ${thumbOut} ...`);
 execSync(`npx remotion still src/index.ts Thumbnail "${thumbOut}" --props="${thumbnailPropsPath}"`, {
