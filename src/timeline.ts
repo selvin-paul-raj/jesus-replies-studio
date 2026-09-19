@@ -31,16 +31,26 @@ export function buildRevealFrames(
   timing: TimingConfig,
   fps: number
 ): { frames: RevealFrame[]; totalFrames: number } {
-  let cursorSeconds = 0;
+  // Cursor is tracked in whole frames, not float seconds: rounding each
+  // frame's startFrame/durationInFrames independently from a running
+  // seconds total can drift by a frame (e.g. two adjacent Math.round calls
+  // landing on opposite sides of a .5), so a contiguous person->jesus join
+  // would occasionally fail toSpeakerSegments' `===` adjacency check and
+  // remount the person's <Sequence> -- replaying its entrance animation
+  // right as Jesus's reply appears. Accumulating in integer frames instead
+  // makes every push's end exactly equal to the next push's start.
+  let cursorFrames = 0;
   const frames: RevealFrame[] = [];
+  const gapFrames = Math.round(timing.gapSeconds * fps);
 
   const push = (slots: Partial<Record<Speaker, string>>, durationSeconds: number, gapAfter = true) => {
+    const durationInFrames = Math.round(durationSeconds * fps);
     frames.push({
       slots,
-      startFrame: Math.round(cursorSeconds * fps),
-      durationInFrames: Math.round(durationSeconds * fps),
+      startFrame: cursorFrames,
+      durationInFrames,
     });
-    cursorSeconds += durationSeconds + (gapAfter ? timing.gapSeconds : 0);
+    cursorFrames += durationInFrames + (gapAfter ? gapFrames : 0);
   };
 
   if (timing.revealMode === "all-at-once") {
@@ -59,7 +69,7 @@ export function buildRevealFrames(
     }
   } else {
     // cumulative-pairs (default)
-    let personBuffer: string[] = [];
+    let lastPersonText = "";
     let pendingVerse: string | null = null;
     let pendingVerseDuration = 0;
 
@@ -82,7 +92,10 @@ export function buildRevealFrames(
 
       if (line.speaker === "person") {
         flushVerse();
-        personBuffer.push(line.text);
+        // Replace, don't accumulate: back-to-back person lines (asked before
+        // Jesus replies) should each stand alone on screen, not stack into a
+        // growing paragraph of every question asked so far.
+        lastPersonText = line.text;
         // No gap when a jesus reply immediately joins this same exchange --
         // `timing.gapSeconds` is breathing room BETWEEN exchanges, not
         // inside one. A gap here would put real dead air between "person
@@ -90,11 +103,11 @@ export function buildRevealFrames(
         // contiguity check and reintroduces the remount flicker it exists
         // to prevent -- independent of whatever gapSeconds the episode uses.
         const joinsJesus = lines[i + 1]?.speaker === "jesus";
-        push({ person: personBuffer.join("\n") }, dur, !joinsJesus);
+        push({ person: lastPersonText }, dur, !joinsJesus);
       } else if (line.speaker === "jesus") {
         flushVerse();
-        push({ person: personBuffer.join("\n"), jesus: line.text }, dur);
-        personBuffer = [];
+        push({ person: lastPersonText, jesus: line.text }, dur);
+        lastPersonText = "";
       } else if (line.speaker === "verse") {
         flushVerse(); // defensive: handles back-to-back verse lines
         pendingVerse = line.text;
@@ -105,14 +118,14 @@ export function buildRevealFrames(
         pendingVerseDuration = 0;
       } else if (line.speaker === "engagement") {
         flushVerse();
-        personBuffer = [];
+        lastPersonText = "";
         push({ engagement: line.text }, dur);
       }
     }
     flushVerse(); // a verse with no following reference still gets shown
   }
 
-  return { frames, totalFrames: Math.round(cursorSeconds * fps) };
+  return { frames, totalFrames: cursorFrames };
 }
 
 export interface SpeakerSegment {

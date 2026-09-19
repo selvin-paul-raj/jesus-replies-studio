@@ -64,4 +64,43 @@ const gappyPerson = gappySegments.filter((s) => s.speaker === "person");
 assert.strictEqual(gappyPerson.length, 1, "person must still merge into ONE segment even with gapSeconds > 0");
 assert.strictEqual(gappyPerson[0].durationInFrames, Math.round(16 * fps), "no dead gap between person-alone and the join");
 
+// Back-to-back person lines before Jesus replies must show only the LATEST
+// one -- not stack into a growing paragraph of every question asked so far.
+const { frames: stackedExchange } = buildRevealFrames(
+  [
+    { speaker: "person", text: "Question one?", durationInSeconds: 5 },
+    { speaker: "person", text: "Question two?", durationInSeconds: 5 },
+    { speaker: "jesus", text: "Reply", durationInSeconds: 5 },
+  ],
+  timing,
+  fps
+);
+const stackedPersonTexts = toSpeakerSegments(stackedExchange)
+  .filter((s) => s.speaker === "person")
+  .map((s) => s.text);
+assert.deepStrictEqual(
+  stackedPersonTexts,
+  ["Question one?", "Question two?"],
+  "each person segment shows only its own line, never joined with the previous one"
+);
+
+// Regression check: durations whose seconds->frames rounding doesn't line
+// up must still merge into one continuous person segment across the join
+// (this is the exact rounding-drift shape that caused the intermittent
+// "person text remounts when Jesus's reply appears" glitch).
+const { frames: driftFrames } = buildRevealFrames(
+  [
+    { speaker: "person", text: "Drift check", durationInSeconds: 1 / 3 },
+    { speaker: "jesus", text: "Reply", durationInSeconds: 1 / 3 },
+  ],
+  timing,
+  fps
+);
+const driftPerson = toSpeakerSegments(driftFrames).filter((s) => s.speaker === "person");
+assert.strictEqual(
+  driftPerson.length,
+  1,
+  "person must merge into one segment even when duration-in-seconds doesn't round evenly into frames"
+);
+
 console.log("check-speaker-continuity: OK");
