@@ -53,10 +53,10 @@ fields = {f["name"]: (f["type"].get("name") or (f["type"].get("ofType") or {}).g
 print("[introspect] CreatePostInput fields:", json.dumps(fields, sort_keys=True))
 
 draft_field = None
-for cand in ("isDraft", "draft", "status", "mode"):
+for cand in ("saveToDraft", "isDraft", "draft", "status", "mode"):
     if cand in fields:
         enum = fields[cand]
-        if cand in ("isDraft", "draft"):
+        if cand in ("saveToDraft", "isDraft", "draft"):
             draft_field = (cand, "true"); break
         st2, js2 = gql(f'query {{ __type(name: "{enum}") {{ enumValues {{ name }} }} }}', "enum")
         vals = [v["name"] for v in (((js2.get("data") or {}).get("__type") or {}).get("enumValues") or [])]
@@ -105,9 +105,18 @@ if not pid:
 print(f"[buffer] action=CREATED post_id={pid} status={post.get('status')}")
 
 # ---------- 3. read it back ----------
-VER = f'query {{ post(id: {json.dumps(pid)}) {{ id status dueAt text channelId assets {{ ... on VideoAsset {{ url thumbnailUrl }} }} }} }}'
-st, js = gql(VER, "verify")
-print(f"[verify] HTTP {st} {json.dumps((js.get('data') or {}).get('post') or js.get('errors') or js)[:800]}")
+st, qj = gql('query { __schema { queryType { fields { name args { name } } } } } ', "qfields")
+qfields = {f["name"]: [a["name"] for a in f["args"]]
+           for f in ((((qj.get("data") or {}).get("__schema") or {}).get("queryType") or {}).get("fields") or [])}
+print("[verify] query fields:", json.dumps(sorted(qfields)))
+verified = None
+if "post" in qfields and "id" in qfields["post"]:
+    st, js = gql(f'query {{ post(id: {json.dumps(pid)}) {{ id status dueAt text channelId }} }}', "verify")
+    verified = (js.get("data") or {}).get("post")
+    print(f"[verify] HTTP {st} {json.dumps(verified or js.get('errors') or js)[:700]}")
+else:
+    print("[verify] NOT_VERIFIED: no post(id:) query field on this schema")
+
 json.dump({"episode": EID, "post_id": pid, "status": post.get("status"), "asset_url": url,
-           "draft_field": f"{name}={value}", "verify": (js.get("data") or {}).get("post")},
+           "draft_field": f"{name}={value}", "verify": verified},
           open("buffer-draft-result.json", "w"), indent=2)
