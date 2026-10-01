@@ -21,10 +21,16 @@ jobs:
         with:
           python-version: '3.11'
       - name: Read back one Buffer post
-        if: inputs.post_id != 'LIST'
+        if: inputs.post_id != 'LIST' && inputs.post_id != 'PROBE'
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: python3 scripts/buffer_verify_post.py "${{ inputs.post_id }}"
+      - name: Schema + channel probe
+        if: inputs.post_id == 'PROBE'
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_INSTAGRAM_CHANNEL_ID: ${{ secrets.BUFFER_INSTAGRAM_CHANNEL_ID }}
+        run: python3 scripts/buffer_schema_probe.py
       - name: List channel posts (orphan check)
         if: inputs.post_id == 'LIST'
         env:
