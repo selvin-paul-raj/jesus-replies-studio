@@ -9,23 +9,35 @@ def gql(q):
     try:
         with urllib.request.urlopen(r,timeout=90) as x: return x.status,json.loads(x.read())
     except urllib.error.HTTPError as e:
-        raw=e.read().decode()[:400]
+        raw=e.read().decode()[:600]
         try: return e.code,json.loads(raw)
         except Exception: return e.code,{"_raw":raw}
 
-st,js=gql('query { __schema { queryType { fields { name args { name type { name kind ofType { name } } } } } } }')
-f=[x for x in ((((js.get("data") or {}).get("__schema") or {}).get("queryType") or {}).get("fields") or []) if x["name"]=="post"]
-print("[schema] Query.post args:", json.dumps([{a["name"]:(a["type"].get("name") or (a["type"].get("ofType") or {}).get("name"))} for a in f[0]["args"]]) if f else "ABSENT")
-arg=f[0]["args"][0]["name"] if f and f[0]["args"] else None
-if not arg: print("[verify] NOT_VERIFIED: Query.post takes no id-like argument"); raise SystemExit(3)
+def tfields(name):
+    st,js=gql('query { __type(name: "%s") { kind fields { name type { name kind ofType { name } } } inputFields { name type { name kind ofType { name } } } } }' % name)
+    t=((js.get("data") or {}).get("__type")) or {}
+    out={}
+    for key in ("fields","inputFields"):
+        for f in (t.get(key) or []):
+            out[f["name"]]=f["type"].get("name") or (f["type"].get("ofType") or {}).get("name")
+    return out
 
-st,aj=gql('query { __type(name: "VideoAsset") { fields { name } } }')
-vfields=[x["name"] for x in ((((aj.get("data") or {}).get("__type")) or {}).get("fields") or [])]
-print("[schema] VideoAsset fields:", json.dumps(vfields))
-asset_sel = ("assets { ... on VideoAsset { " + " ".join([v for v in ("url","thumbnailUrl","duration","size") if v in vfields]) + " } }") if vfields else ""
+pin=tfields("PostInput")
+print("[schema] PostInput:", json.dumps(pin))
+va=tfields("VideoAsset")
+print("[schema] VideoAsset:", json.dumps(va))
+vid=tfields(va.get("video") or "")
+print("[schema] Video:", json.dumps(vid))
 
-q=f'query {{ post({arg}: {json.dumps(PID)}) {{ id status dueAt text schedulingType shareMode isCustomScheduled notificationStatus via createdAt channelService {asset_sel} }} }}'
+idkey = "id" if "id" in pin else (list(pin)[0] if pin else None)
+if not idkey:
+    print("[verify] NOT_VERIFIED: PostInput has no fields"); raise SystemExit(3)
+
+scalar = lambda d: [k for k,v in d.items() if v in ("String","Int","Float","Boolean","ID","DateTime","URL")]
+vsel = " ".join(scalar(vid)) if vid else ""
+asel = " ".join([k for k in ("id","mimeType","type") if k in va]) + (f" video {{ {vsel} }}" if vsel else "")
+q = f'query {{ post(input: {{ {idkey}: {json.dumps(PID)} }}) {{ id status dueAt text schedulingType shareMode isCustomScheduled notificationStatus via createdAt channelService assets {{ ... on VideoAsset {{ {asel} }} }} }} }}'
 st,js=gql(q)
 post=(js.get("data") or {}).get("post")
 print(f"[verify] HTTP {st}")
-print("[verify]", json.dumps(post if post is not None else (js.get("errors") or js))[:1500])
+print("[verify]", json.dumps(post if post is not None else (js.get("errors") or js))[:2000])
