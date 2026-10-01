@@ -1,8 +1,8 @@
 name: Jesus Replies render episodes
 
 # System B. Manual dispatch only. Renders a named list of episodes and measures real
-# durations. It creates no release, touches no Buffer, schedules nothing and has no cron.
-# It does not read or write daily-bible-post.yml or any System A state.
+# durations. It creates no release, calls no Buffer, schedules nothing, has no cron,
+# and never reads or writes daily-bible-post.yml or any System A state.
 
 on:
   workflow_dispatch:
@@ -17,6 +17,8 @@ permissions:
 jobs:
   render:
     runs-on: ubuntu-latest
+    env:
+      EPISODE_IDS: ${{ inputs.episode_ids }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -29,22 +31,7 @@ jobs:
       - run: npm ci
 
       - name: Authoring gate
-        run: |
-          set -e
-          IFS=',' read -ra IDS <<< "${{ inputs.episode_ids }}"
-          for id in "${IDS[@]}"; do
-            id=$(echo "$id" | tr -d ' ')
-            test -s "generated/$id.json" || { echo "[gate] missing generated/$id.json"; exit 1; }
-            python3 - "$id" <<'PY'
-import json, pathlib, sys
-eid = sys.argv[1]
-ep = json.loads(pathlib.Path(f"generated/{eid}.json").read_text())
-b = ep["bible"]
-assert b.get("text") and b.get("version") == "NIV", f"{eid} scripture missing or not NIV"
-assert ep.get("lines"), f"{eid} no lines"
-print(f"[gate] {eid} OK scripture={b['book']} {b['chapter']}:{b['verse']}")
-PY
-          done
+        run: python3 scripts/render_gate.py "$EPISODE_IDS"
 
       - name: Render (bounded concurrency)
         env:
@@ -52,34 +39,12 @@ PY
         run: |
           set -e
           mkdir -p output/videos
-          IFS=',' read -ra IDS <<< "${{ inputs.episode_ids }}"
-          for id in "${IDS[@]}"; do
+          echo "$EPISODE_IDS" | tr ',' '\n' | while read -r id; do
             id=$(echo "$id" | tr -d ' ')
+            [ -n "$id" ] || continue
             echo "[render] $id action=RENDERING"
-            npm run jr -- render "generated/$id.json" --out-dir output || { echo "[render] $id action=FAILED"; exit 1; }
+            npm run jr -- render "generated/$id.json" --out-dir output
           done
 
       - name: Render QA and real durations
-        run: |
-          python3 - <<'PY'
-import json, pathlib, subprocess, sys
-ids = [i.strip() for i in "${{ inputs.episode_ids }}".split(",") if i.strip()]
-bad = []
-for eid in ids:
-    p = pathlib.Path(f"output/videos/{eid}.mp4")
-    if not p.exists() or p.stat().st_size == 0:
-        print(f"[qa] {eid} MISSING_OR_EMPTY"); bad.append(eid); continue
-    out = subprocess.run(["python3", "-c", f"""
-import struct, sys
-d = open({str(p)!r}, 'rb').read()
-i = d.find(b'mvhd')
-ts, du = struct.unpack('>II', d[i+12:i+20])
-print(round(du/ts, 2) if ts else 0)
-"""], capture_output=True, text=True)
-    dur = float(out.stdout.strip() or 0)
-    status = "PASS" if 0 < dur <= 90 else "FAIL"
-    if status == "FAIL": bad.append(eid)
-    print(f"[qa] {eid} duration={dur}s bytes={p.stat().st_size} {status}")
-print(f"[qa] measured={len(ids)} failed={len(bad)}")
-sys.exit(1 if bad else 0)
-PY
+        run: python3 scripts/render_qa.py "$EPISODE_IDS"
