@@ -1,0 +1,41 @@
+name: Cleanup Jesus Replies weekly releases
+
+# Deletes a spent weekly media release whole, once its posts are resolved and the
+# retention window has passed. Fails closed: anything uncertain is KEPT.
+# Only touches tags matching jr-week-YYYY-MM-DD. Never touches source, episode JSON,
+# Input/, JOE state, or daily-bible-post.yml.
+
+on:
+  schedule:
+    - cron: '0 20 * * 1'      # Mon 01:30 IST, after a week's last post has landed
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: Actually delete. false = report only.
+        required: true
+        default: 'false'
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+
+      - name: Decide per weekly release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          CLEANUP_APPLY: ${{ github.event_name == 'workflow_dispatch' && inputs.apply || 'false' }}
+        run: |
+          TAGS=$(gh release list --limit 100 --json tagName -q '.[].tagName' \
+                 | grep -E '^jr-week-[0-9]{4}-[0-9]{2}-[0-9]{2}$' || true)
+          if [ -z "$TAGS" ]; then echo "[cleanup] no weekly releases found"; exit 0; fi
+          echo "[cleanup] candidates:"; echo "$TAGS"
+          npx tsx scripts/storage/cleanup.ts $TAGS
