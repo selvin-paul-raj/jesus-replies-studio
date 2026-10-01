@@ -44,8 +44,17 @@ assets = {a["name"]: a for a in meta["assets"] if a["name"].endswith(".mp4")}
 if sorted(assets) != sorted(f.name for f in files):
     sys.exit(f"[release] asset set mismatch: {sorted(assets)}")
 
-durs = {r["episode"]: r["duration_s"]
-        for r in json.loads(pathlib.Path("output/durations.json").read_text())}
+def mp4_duration(b: bytes):
+    i = b.find(b"mvhd")
+    if i < 0:
+        return None
+    import struct
+    ts, du = struct.unpack(">II", b[i + 16:i + 24])
+    return round(du / ts, 2) if ts else None
+
+dp = pathlib.Path("output/durations.json")
+durs = ({r["episode"]: r["duration_s"] for r in json.loads(dp.read_text())} if dp.exists()
+        else {f.stem: mp4_duration(f.read_bytes()) for f in files})
 
 rows, fails = [], []
 for f in files:
