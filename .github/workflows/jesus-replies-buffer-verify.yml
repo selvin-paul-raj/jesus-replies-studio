@@ -1,0 +1,26 @@
+name: Jesus Replies Buffer verify post
+
+# READ-ONLY. Fetches one Buffer post by id. Creates, edits and deletes nothing.
+
+on:
+  workflow_dispatch:
+    inputs:
+      post_id:
+        description: Buffer post id to read back
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Read back one Buffer post
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python3 scripts/buffer_verify_post.py "${{ inputs.post_id }}"
