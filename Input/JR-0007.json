@@ -1,0 +1,19 @@
+{
+  "id": "JR-0007",
+  "title": "So Tired 😔",
+  "character": "girl",
+  "topic": "burnout",
+  "emotion": "crying",
+  "bible": {
+    "book": "Matthew", "chapter": 11, "verse": 28, "version": "NIV",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  "lines": [
+    { "speaker": "person", "text": "Jesus... I'm so tired. I keep trying and trying and nothing works." },
+    { "speaker": "jesus", "text": "You don't have to carry all of it by yourself anymore." },
+    { "speaker": "person", "text": "But if I stop trying, won't everything just fall apart?" },
+    { "speaker": "jesus", "text": "Rest isn't quitting. Rest is where I meet you and carry what you can't." },
+    { "speaker": "bible_verse" },
+    { "speaker": "engagement", "text": "What's making you tired right now?" }
+  ]
+}

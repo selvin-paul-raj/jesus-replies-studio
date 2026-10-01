@@ -1,0 +1,26 @@
+{
+  "id": "JR-0013",
+  "title": "How Do I Get Closer To You? 🙏",
+  "character": "boy",
+  "topic": "faith",
+  "emotion": "hopeful",
+  "bible": {
+    "book": "James",
+    "chapter": 4,
+    "verse": 8,
+    "version": "NIV",
+    "text": "Come near to God and he will come near to you. Wash your hands, you sinners, and purify your hearts, you double-minded."
+  },
+  "lines": [
+    { "speaker": "person", "text": "Jesus... how do I get closer to You when I keep messing up the same way?" },
+    { "speaker": "person", "text": "I pray, then I fail again by night. Feels like I don't even deserve to talk to You." },
+    { "speaker": "jesus", "text": "Closeness was never about being clean first. It's about showing up anyway." },
+    { "speaker": "person", "text": "But every time I pray after failing, I feel like a hypocrite." },
+    { "speaker": "jesus", "text": "A hypocrite stops caring. You're still here, still asking. That's not fake -- that's faith fighting through shame." },
+    { "speaker": "person", "text": "So what, I just keep failing and keep praying?" },
+    { "speaker": "jesus", "text": "You keep coming back. Closeness isn't a finish line you reach -- it's a direction you keep walking." },
+    { "speaker": "bible_verse" },
+    { "speaker": "jesus", "text": "Maybe you were never too far. Maybe you just stopped believing you could come back." },
+    { "speaker": "engagement", "text": "If you're tired of running and ready to come back today, drop a \ud83d\ude4f below." }
+  ]
+}

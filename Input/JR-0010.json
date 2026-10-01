@@ -1,0 +1,31 @@
+{
+  "id": "JR-0010",
+  "title": "Jesus, Why Did David Fight Goliath?",
+  "character": "boy",
+  "topic": "courage",
+  "emotion": "hopeful",
+  "bible": {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "verse": 7,
+    "version": "NIV",
+    "text": "But the LORD said to Samuel, \"Do not consider his appearance or his height, for I have rejected him. The LORD does not look at the things people look at. People look at the outward appearance, but the LORD looks at the heart.\""
+  },
+  "lines": [
+    { "speaker": "person", "text": "Jesus... why did David fight Goliath? He was just a young shepherd!" },
+    { "speaker": "jesus", "text": "What did everyone else see when they looked at Goliath?" },
+    { "speaker": "person", "text": "A giant. Someone nobody could beat." },
+    { "speaker": "jesus", "text": "And what did David see?" },
+    { "speaker": "person", "text": "Someone who dared to challenge the living God." },
+    { "speaker": "jesus", "text": "Exactly." },
+    { "speaker": "person", "text": "But wasn't Saul the tallest man in Israel?" },
+    { "speaker": "jesus", "text": "Yes. Saul stood head and shoulders above everyone else." },
+    { "speaker": "person", "text": "Then why wasn't he the one who beat Goliath?" },
+    { "speaker": "jesus", "text": "Because God's choice was never about height, or strength, or how someone looks." },
+    { "speaker": "person", "text": "Wait... so killing Goliath isn't what made David king?" },
+    { "speaker": "jesus", "text": "No. God had already chosen him, long before that battlefield." },
+    { "speaker": "bible_verse" },
+    { "speaker": "person", "text": "Then maybe Goliath wasn't David's biggest battle after all..." },
+    { "speaker": "engagement", "text": "What do you see when you look at your own \"giants\"?" }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "JR-0009",
+  "title": "Jesus, How Long Do I Have to Wait for This?",
+  "character": "girl",
+  "topic": "waiting",
+  "emotion": "hopeful",
+  "bible": {
+    "book": "Habakkuk", "chapter": 2, "verse": 3, "version": "NIV",
+    "text": "For the revelation awaits an appointed time; it speaks of the end and will not prove false. Though it linger, wait for it; it will certainly come and will not delay."
+  },
+  "lines": [
+    { "speaker": "person", "text": "Jesus... how long do I have to wait for this?" },
+    { "speaker": "person", "text": "I've been praying for the same thing for so long, and nothing's changed yet." },
+    { "speaker": "jesus", "text": "Waiting isn't wasted time. Something is being prepared, even in what looks like nothing happening." },
+    { "speaker": "person", "text": "But what if it never comes? What if I'm just waiting for nothing?" },
+    { "speaker": "jesus", "text": "What I promise doesn't depend on how long it takes to arrive." },
+    { "speaker": "person", "text": "It's just hard to keep hoping when I don't see anything move." },
+    { "speaker": "jesus", "text": "Then hold on a little longer. What's coming is worth every bit of the wait." },
+    { "speaker": "bible_verse" },
+    { "speaker": "jesus", "text": "Maybe the waiting isn't Me forgetting you. Maybe it's Me preparing you for what's next." },
+    { "speaker": "engagement", "text": "What are you still waiting on right now?" }
+  ]
+}

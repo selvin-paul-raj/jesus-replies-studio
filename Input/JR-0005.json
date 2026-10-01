@@ -1,0 +1,19 @@
+{
+  "id": "JR-0005",
+  "title": "Jesus, Why Does Everyone Else's Life Look So Much Better?",
+  "character": "girl",
+  "topic": "comparison",
+  "emotion": "sad",
+  "bible": {
+    "book": "Psalms", "chapter": 139, "verse": 14, "version": "NIV",
+    "text": "I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well."
+  },
+  "lines": [
+    { "speaker": "person", "text": "Jesus... why does everyone else's life look so much better than mine online?" },
+    { "speaker": "jesus", "text": "You're comparing your everyday to their highlight reel. You're not seeing the whole story -- just the part they chose to show." },
+    { "speaker": "person", "text": "But I still feel like I'm falling behind everyone." },
+    { "speaker": "jesus", "text": "You were never made to be her. You were made to be exactly who I formed you to be." },
+    { "speaker": "bible_verse" },
+    { "speaker": "engagement", "text": "When do you feel the pressure to compare the most?" }
+  ]
+}
