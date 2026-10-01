@@ -13,7 +13,7 @@ for eid in ids:
     i = data.find(b"mvhd")
     dur = 0.0
     if i != -1:
-        ts, du = struct.unpack(">II", data[i + 12:i + 20])
+        ts, du = struct.unpack(">II", data[i + 16:i + 24])
         dur = round(du / ts, 2) if ts else 0.0
     status = "PASS" if 0 < dur <= CEILING else "FAIL"
     if status == "FAIL":
