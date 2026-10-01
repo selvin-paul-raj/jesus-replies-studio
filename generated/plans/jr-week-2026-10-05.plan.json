@@ -19,11 +19,12 @@
       "emotion": "scared",
       "bible": {
         "book": "Hebrews",
-        "chapter": 13,
-        "verse": "5-6",
+        "chapter": 10,
+        "verse": "36",
         "version": "NIV",
-        "text": null,
-        "text_status": "NEEDS_FETCH"
+        "text": "You need to persevere so that when you have done the will of God, you will receive what he has promised.",
+        "text_status": "RESOLVED_SAME_BOOK",
+        "original_choice": "Hebrews 13:5-6"
       },
       "lines": [
         {
@@ -84,11 +85,12 @@
       "emotion": "sad",
       "bible": {
         "book": "2 Corinthians",
-        "chapter": 2,
-        "verse": "7-8",
+        "chapter": 1,
+        "verse": "7",
         "version": "NIV",
-        "text": null,
-        "text_status": "NEEDS_FETCH"
+        "text": "And our hope for you is firm, because we know that just as you share in our sufferings, so also you share in our comfort.",
+        "text_status": "RESOLVED_SAME_BOOK",
+        "original_choice": "2 Corinthians 2:7-8"
       },
       "lines": [
         {
@@ -153,7 +155,7 @@
         "verse": "1",
         "version": "NIV",
         "text": null,
-        "text_status": "NEEDS_FETCH"
+        "text_status": "UNRESOLVED_FAIL_CLOSED"
       },
       "lines": [
         {
@@ -218,7 +220,7 @@
         "verse": "16",
         "version": "NIV",
         "text": null,
-        "text_status": "NEEDS_FETCH"
+        "text_status": "UNRESOLVED_FAIL_CLOSED"
       },
       "lines": [
         {
@@ -282,8 +284,8 @@
         "chapter": 1,
         "verse": "9",
         "version": "NIV",
-        "text": null,
-        "text_status": "NEEDS_FETCH"
+        "text": "If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness.",
+        "text_status": "RESOLVED"
       },
       "lines": [
         {
@@ -344,11 +346,12 @@
       "emotion": "angry",
       "bible": {
         "book": "Ephesians",
-        "chapter": 4,
-        "verse": "31-32",
+        "chapter": 1,
+        "verse": "18-19",
         "version": "NIV",
-        "text": null,
-        "text_status": "NEEDS_FETCH"
+        "text": "I pray also that...you may know the hope to which he has called you, the riches of his glorious inheritance in the saints, and his incomparably great power for us who believe.",
+        "text_status": "RESOLVED_SAME_BOOK",
+        "original_choice": "Ephesians 4:31-32"
       },
       "lines": [
         {
@@ -412,8 +415,8 @@
         "chapter": 1,
         "verse": "9",
         "version": "NIV",
-        "text": null,
-        "text_status": "NEEDS_FETCH"
+        "text": "Have I not commanded you? Be strong and courageous. Do not be terrified; do not be discouraged, for the Lord your God will be with you wherever you go.",
+        "text_status": "RESOLVED"
       },
       "lines": [
         {
@@ -478,7 +481,7 @@
         "verse": "22-23",
         "version": "NIV",
         "text": null,
-        "text_status": "NEEDS_FETCH"
+        "text_status": "UNRESOLVED_FAIL_CLOSED"
       },
       "lines": [
         {
@@ -539,11 +542,12 @@
       "emotion": "happy",
       "bible": {
         "book": "1 Peter",
-        "chapter": 5,
-        "verse": "5-6",
+        "chapter": 1,
+        "verse": "3-5",
         "version": "NIV",
-        "text": null,
-        "text_status": "NEEDS_FETCH"
+        "text": "In his great mercy he has given us new birth into a living hope through the resurrection of Jesus Christ from the dead, and into an inheritance that can never perish, spoil or fade - kept in heaven for you who through faith are shielded by God's power until the coming of the salvation that is ready to be revealed in the last time.",
+        "text_status": "RESOLVED_SAME_BOOK",
+        "original_choice": "1 Peter 5:5-6"
       },
       "lines": [
         {
@@ -607,8 +611,8 @@
         "chapter": 7,
         "verse": "7",
         "version": "NIV",
-        "text": null,
-        "text_status": "NEEDS_FETCH"
+        "text": "But as for me, I watch in hope for the Lord, I wait for God my Savior; my God will hear me.",
+        "text_status": "RESOLVED"
       },
       "lines": [
         {
@@ -672,8 +676,8 @@
         "chapter": 2,
         "verse": "13",
         "version": "NIV",
-        "text": null,
-        "text_status": "NEEDS_FETCH"
+        "text": "if we are faithless, he will remain faithful, for he cannot disown himself.",
+        "text_status": "RESOLVED"
       },
       "lines": [
         {
