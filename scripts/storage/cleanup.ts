@@ -29,7 +29,7 @@ export function decide(tag: string, graceHours = 24, now = new Date()): { action
   return { action: ret.safe ? "DELETE" : "KEEP", reason: ret.reason, videos: batch.videos.length, last_schedule: batch.last_scheduled_at, upcoming };
 }
 
-if (process.argv[1]?.endsWith("cleanup.ts")) {
+async function main(): Promise<void> {
   const tags = process.argv.slice(2);
   if (!tags.length) { console.error("usage: tsx scripts/storage/cleanup.ts <tag> [tag...]"); process.exit(1); }
   const apply = process.env.CLEANUP_APPLY === "true";
@@ -42,6 +42,10 @@ if (process.argv[1]?.endsWith("cleanup.ts")) {
     console.log(`[cleanup] retention_safe=${d.action === "DELETE"}`);
     console.log(`[cleanup] action=${d.action}${d.action === "KEEP" ? ` reason=${d.reason}` : ""}`);
     if (apply) await cleanupWeeklyRelease(tag, d.action === "DELETE", d.reason);
-    else console.log(`[cleanup] dry run: nothing deleted`);
+    else console.log("[cleanup] report only: nothing deleted");
   }
+}
+
+if (process.argv[1]?.endsWith("cleanup.ts")) {
+  main().catch((err) => { console.error(`[cleanup] FAILED: ${(err as Error).message}`); process.exit(1); });
 }
