@@ -1,0 +1,62 @@
+name: Jesus Replies weekly batch
+
+# System B. ONE WEEK = ONE RELEASE = 14 VIDEOS (7 morning + 7 night).
+# Manual dispatch only. The weekly schedule below stays commented out until one
+# controlled publication has succeeded end to end. Does not touch daily-bible-post.yml.
+#
+# on:
+#   schedule:
+#     - cron: '30 18 * * 6'   # Sat 00:00 IST, ahead of a Monday week start
+
+on:
+  workflow_dispatch:
+    inputs:
+      week_start:
+        description: First publishing day, YYYY-MM-DD (Monday)
+        required: true
+      publish:
+        description: Create real Buffer posts. false = dry run.
+        required: true
+        default: 'false'
+
+permissions:
+  contents: write        # release create/upload/delete only
+
+concurrency:
+  group: jr-weekly-${{ inputs.week_start }}   # one run per week, no racing reruns
+  cancel-in-progress: false
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+
+      - name: Build the diversity briefs for all 14 slots
+        run: npx tsx scripts/storage/weekly-plan.ts ${{ inputs.week_start }}
+
+      - name: Authoring gate
+        # Episode dialogue is authored through the Jesus Replies skill, which needs a
+        # model call this workflow has no credential for. Until that is wired, the 14
+        # episodes must already exist in generated/ or the run stops here rather than
+        # publishing a short week.
+        run: |
+          MISSING=0
+          for i in $(seq 1 14); do :; done
+          COUNT=$(ls generated/JR-*.json 2>/dev/null | wc -l)
+          echo "[weekly] authored_episodes_present=$COUNT expected=14"
+          if [ "$COUNT" -lt 14 ]; then
+            echo "BLOCKED: fewer than 14 authored episodes. Not publishing a partial week."
+            exit 1
+          fi
+
+      - name: Render, QA, upload, verify, schedule
+        # ENG-002: renderEpisode.ts hardcodes --concurrency=16 and hosted runners have
+        # fewer cores, so rendering fails here until that is fixed with a tested change.
+        run: |
+          echo "BLOCKED by ENG-002: fix the hardcoded render concurrency before enabling this step."
+          exit 1
