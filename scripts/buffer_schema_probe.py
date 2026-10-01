@@ -16,7 +16,7 @@ def gql(q):
 st,js=gql('query { __schema { mutationType { fields { name args { name type { name kind ofType { name } } } } } } }')
 mf=(((js.get("data") or {}).get("__schema") or {}).get("mutationType") or {}).get("fields") or []
 print("[schema] mutations:", json.dumps(sorted(f["name"] for f in mf)))
-for want in ("updatePost","schedulePost","publishPost","updatePostSchedule"):
+for want in ("editPost","deletePost","movePostInQueue"):
     hit=[f for f in mf if f["name"]==want]
     if hit:
         a=hit[0]["args"][0]
