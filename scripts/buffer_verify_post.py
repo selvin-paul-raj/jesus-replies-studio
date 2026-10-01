@@ -35,7 +35,7 @@ if not idkey:
 
 scalar = lambda d: [k for k,v in d.items() if v in ("String","Int","Float","Boolean","ID","DateTime","URL")]
 vsel = " ".join(scalar(vid)) if vid else ""
-asel = " ".join([k for k in ("id","mimeType","type") if k in va]) + (f" video {{ {vsel} }}" if vsel else "")
+asel = " ".join([k for k in ("id","mimeType","type","source","thumbnail") if k in va]) + (f" video {{ {vsel} }}" if vsel else "")
 q = f'query {{ post(input: {{ {idkey}: {json.dumps(PID)} }}) {{ id status dueAt text schedulingType shareMode isCustomScheduled notificationStatus via createdAt channelService assets {{ ... on VideoAsset {{ {asel} }} }} }} }}'
 st,js=gql(q)
 post=(js.get("data") or {}).get("post")
