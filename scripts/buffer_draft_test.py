@@ -79,16 +79,28 @@ tags = pkg["instagram_hashtags"]
 tags = " ".join(tags) if isinstance(tags, list) else tags
 text = pkg["instagram_caption"] + "\n\n" + tags
 
+# discover Post fields so the selection set cannot invalidate the mutation
+st, pj = gql('query { __type(name: "Post") { fields { name } } }', "postfields")
+pfields = [f["name"] for f in ((((pj.get("data") or {}).get("__type")) or {}).get("fields") or [])]
+want = [f for f in ("id","status","dueAt","text","channelId","mode","schedulingType","isDraft","draft","via","createdAt") if f in pfields]
+if "id" not in want: want = ["id"]
+print("[introspect] Post fields:", json.dumps(pfields))
+print("[introspect] selecting:", want)
+SEL = " ".join(want)
+
 MUT = f"""
 mutation {{
   createPost(input: {{
     text: {json.dumps(text)}
     channelId: {json.dumps(CHANNEL)}
-    {name}: {value}
+    saveToDraft: true
+    schedulingType: automatic
+    mode: customScheduled
+    dueAt: "2026-12-31T00:00:00Z"
     assets: [{{ video: {{ url: {json.dumps(url)}, metadata: {{ thumbnailOffset: {THUMB_MS} }} }} }}]
     metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true }} }}
   }}) {{
-    ... on PostActionSuccess {{ post {{ id status dueAt text channelId }} }}
+    ... on PostActionSuccess {{ post {{ {SEL} }} }}
     ... on MutationError {{ message }}
   }}
 }}
@@ -104,7 +116,7 @@ pid = post.get("id")
 if not pid:
     print("[buffer] action=UNRESOLVED reason=no-post-id-in-success-response; reconcile before any retry")
     raise SystemExit(7)
-print(f"[buffer] action=CREATED post_id={pid} status={post.get('status')}")
+print(f"[buffer] action=CREATED post_id={pid} post={json.dumps(post)}")
 
 # ---------- 3. read it back ----------
 st, qj = gql('query { __schema { queryType { fields { name args { name } } } } } ', "qfields")
@@ -113,7 +125,7 @@ qfields = {f["name"]: [a["name"] for a in f["args"]]
 print("[verify] query fields:", json.dumps(sorted(qfields)))
 verified = None
 if "post" in qfields and "id" in qfields["post"]:
-    st, js = gql(f'query {{ post(id: {json.dumps(pid)}) {{ id status dueAt text channelId }} }}', "verify")
+    st, js = gql(f'query {{ post(id: {json.dumps(pid)}) {{ {SEL} }} }}', "verify")
     verified = (js.get("data") or {}).get("post")
     print(f"[verify] HTTP {st} {json.dumps(verified or js.get('errors') or js)[:700]}")
 else:
