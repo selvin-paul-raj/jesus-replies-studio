@@ -1,0 +1,222 @@
+{
+  "batch_id": "jr-week-2026-10-05",
+  "week_start": "2026-10-05",
+  "existing_episodes": [
+    "JR-0021",
+    "JR-0022",
+    "JR-0023"
+  ],
+  "new_slots": 11,
+  "diversity_clashes": [],
+  "slots": [
+    {
+      "id": "JR-0024",
+      "date": "2026-10-05",
+      "slot": "morning",
+      "title": "Jesus... Will There Be Enough Money This Month?",
+      "topic": "money anxiety",
+      "character": "boy",
+      "emotion": "scared",
+      "bible": {
+        "book": "Hebrews",
+        "chapter": 13,
+        "verse": "5-6",
+        "version": "NIV",
+        "text": null,
+        "text_status": "NEEDS_FETCH"
+      },
+      "lines": [],
+      "authoring_status": "PLANNED"
+    },
+    {
+      "id": "JR-0025",
+      "date": "2026-10-05",
+      "slot": "night",
+      "title": "Jesus... My Best Friend Told Everyone My Secret?",
+      "topic": "friendship betrayal",
+      "character": "girl",
+      "emotion": "sad",
+      "bible": {
+        "book": "2 Corinthians",
+        "chapter": 2,
+        "verse": "7-8",
+        "version": "NIV",
+        "text": null,
+        "text_status": "NEEDS_FETCH"
+      },
+      "lines": [],
+      "authoring_status": "PLANNED"
+    },
+    {
+      "id": "JR-0026",
+      "date": "2026-10-06",
+      "slot": "morning",
+      "title": "Jesus... Why Did They Pick Someone Else Again?",
+      "topic": "job rejection",
+      "character": "boy",
+      "emotion": "neutral",
+      "bible": {
+        "book": "Ecclesiastes",
+        "chapter": 3,
+        "verse": "1",
+        "version": "NIV",
+        "text": null,
+        "text_status": "NEEDS_FETCH"
+      },
+      "lines": [],
+      "authoring_status": "PLANNED"
+    },
+    {
+      "id": "JR-0027",
+      "date": "2026-10-06",
+      "slot": "night",
+      "title": "Jesus... I'm Scared To Watch My Mother Get Weaker?",
+      "topic": "caring for a sick parent",
+      "character": "girl",
+      "emotion": "crying",
+      "bible": {
+        "book": "Ruth",
+        "chapter": 1,
+        "verse": "16",
+        "version": "NIV",
+        "text": null,
+        "text_status": "NEEDS_FETCH"
+      },
+      "lines": [],
+      "authoring_status": "PLANNED"
+    },
+    {
+      "id": "JR-0028",
+      "date": "2026-10-07",
+      "slot": "morning",
+      "title": "Jesus... What If You Knew What I Actually Did?",
+      "topic": "shame over a secret",
+      "character": "boy",
+      "emotion": "sad",
+      "bible": {
+        "book": "1 John",
+        "chapter": 1,
+        "verse": "9",
+        "version": "NIV",
+        "text": null,
+        "text_status": "NEEDS_FETCH"
+      },
+      "lines": [],
+      "authoring_status": "PLANNED"
+    },
+    {
+      "id": "JR-0029",
+      "date": "2026-10-07",
+      "slot": "night",
+      "title": "Jesus... Why Does Everything Come Easy For Her?",
+      "topic": "jealousy of a sibling",
+      "character": "girl",
+      "emotion": "angry",
+      "bible": {
+        "book": "Ephesians",
+        "chapter": 4,
+        "verse": "31-32",
+        "version": "NIV",
+        "text": null,
+        "text_status": "NEEDS_FETCH"
+      },
+      "lines": [],
+      "authoring_status": "PLANNED"
+    },
+    {
+      "id": "JR-0030",
+      "date": "2026-10-08",
+      "slot": "morning",
+      "title": "Jesus... What If I Don't Belong There Either?",
+      "topic": "moving to a new city",
+      "character": "boy",
+      "emotion": "scared",
+      "bible": {
+        "book": "Joshua",
+        "chapter": 1,
+        "verse": "9",
+        "version": "NIV",
+        "text": null,
+        "text_status": "NEEDS_FETCH"
+      },
+      "lines": [],
+      "authoring_status": "PLANNED"
+    },
+    {
+      "id": "JR-0031",
+      "date": "2026-10-08",
+      "slot": "night",
+      "title": "Jesus... It's Been One Year. Why Does It Still Hurt?",
+      "topic": "grief anniversary",
+      "character": "girl",
+      "emotion": "crying",
+      "bible": {
+        "book": "Lamentations",
+        "chapter": 3,
+        "verse": "22-23",
+        "version": "NIV",
+        "text": null,
+        "text_status": "NEEDS_FETCH"
+      },
+      "lines": [],
+      "authoring_status": "PLANNED"
+    },
+    {
+      "id": "JR-0032",
+      "date": "2026-10-09",
+      "slot": "morning",
+      "title": "Jesus... Is It Wrong That I Feel This Proud?",
+      "topic": "pride after success",
+      "character": "boy",
+      "emotion": "happy",
+      "bible": {
+        "book": "1 Peter",
+        "chapter": 5,
+        "verse": "5-6",
+        "version": "NIV",
+        "text": null,
+        "text_status": "NEEDS_FETCH"
+      },
+      "lines": [],
+      "authoring_status": "PLANNED"
+    },
+    {
+      "id": "JR-0033",
+      "date": "2026-10-09",
+      "slot": "night",
+      "title": "Jesus... How Long Am I Supposed To Keep Asking?",
+      "topic": "unanswered prayer",
+      "character": "girl",
+      "emotion": "neutral",
+      "bible": {
+        "book": "Micah",
+        "chapter": 7,
+        "verse": "7",
+        "version": "NIV",
+        "text": null,
+        "text_status": "NEEDS_FETCH"
+      },
+      "lines": [],
+      "authoring_status": "PLANNED"
+    },
+    {
+      "id": "JR-0034",
+      "date": "2026-10-10",
+      "slot": "morning",
+      "title": "Jesus... What If I Stopped Believing Tomorrow?",
+      "topic": "wanting to quit faith",
+      "character": "boy",
+      "emotion": "sad",
+      "bible": {
+        "book": "2 Timothy",
+        "chapter": 2,
+        "verse": "13",
+        "version": "NIV",
+        "text": null,
+        "text_status": "NEEDS_FETCH"
+      },
+      "lines": [],
+      "authoring_status": "PLANNED"
+    }
+  ]
+}
