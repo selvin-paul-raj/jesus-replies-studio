@@ -1,8 +1,10 @@
 name: Jesus Replies render episodes
 
 # System B. Manual dispatch only. Renders a named list of episodes and measures real
-# durations. It creates no release, calls no Buffer, schedules nothing, has no cron,
-# and never reads or writes daily-bible-post.yml or any System A state.
+# durations. Optionally uploads those episodes as assets of their own release when
+# release_tag is set. It calls no Buffer, schedules nothing, publishes nothing, has
+# no cron, never touches jr-week-* releases, and never reads or writes
+# daily-bible-post.yml or any System A state.
 
 on:
   workflow_dispatch:
@@ -10,9 +12,13 @@ on:
       episode_ids:
         description: Comma-separated episode ids, e.g. JR-0035,JR-0036
         required: true
+      release_tag:
+        description: Leave empty to render only. Set a tag to also publish these episodes as release assets.
+        required: false
+        default: ''
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   render:
@@ -48,3 +54,21 @@ jobs:
 
       - name: Render QA and real durations
         run: python3 scripts/render_qa.py "$EPISODE_IDS"
+
+      - name: Release upload and anonymous URL verification
+        if: inputs.release_tag != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ inputs.release_tag }}
+          REPO: ${{ github.repository }}
+        run: python3 scripts/release_episodes.py "$EPISODE_IDS"
+
+      - name: Commit verified manifest rows
+        if: inputs.release_tag != ''
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated/release-manifest.json
+          git diff --cached --quiet || git commit -m "automation: record verified release assets for ${{ inputs.release_tag }} [skip ci]"
+          git push
