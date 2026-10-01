@@ -87,15 +87,95 @@ jobs:
           raise SystemExit(1 if (len(rows) != 14 or bad) else 0)
           EOF
 
-      - name: Weekly release, URL verification, Buffer
-        if: ${{ inputs.publish == 'true' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-          BUFFER_INSTAGRAM_CHANNEL_ID: ${{ secrets.BUFFER_INSTAGRAM_CHANNEL_ID }}
-          BUFFER_YOUTUBE_CHANNEL_ID: ${{ secrets.BUFFER_YOUTUBE_CHANNEL_ID }}
+      - name: Phase 2 package QA
         run: |
-          echo "HELD: release upload and the single controlled Buffer post run only after"
-          echo "the duration report above has been reviewed. Nothing published."
+          python3 - <<'EOF'
+          import json, pathlib
+          eps = sorted(p.stem for p in pathlib.Path("generated").glob("JR-*.json") if ".package" not in p.name)
+          bad = []
+          for e in eps:
+              pk = pathlib.Path(f"generated/{e}.package.json")
+              if not pk.exists(): bad.append(f"{e}: no package"); continue
+              d = json.loads(pk.read_text())
+              for f in ("instagram_caption","instagram_hashtags","youtube_title","youtube_description","thumbnail_text"):
+                  if not d.get(f): bad.append(f"{e}: missing {f}")
+              if len(d["instagram_caption"]) > 2200: bad.append(f"{e}: caption too long")
+              if len(d["youtube_title"]) > 100: bad.append(f"{e}: title too long")
+              if len(d["youtube_description"]) > 5000: bad.append(f"{e}: description too long")
+              if len(d["instagram_hashtags"]) != 5: bad.append(f"{e}: hashtag count")
+              for other in eps:
+                  if other != e and other in json.dumps(d): bad.append(f"{e}: references {other}")
+          print(f"[pkg] episodes={len(eps)} packages_ok={len(eps)-len({b.split(':')[0] for b in bad})}")
+          for b in bad: print("[pkg] FAIL", b)
+          raise SystemExit(1 if (bad or len(eps) != 14) else 0)
+          EOF
+
+      - name: One weekly release, 14 assets, anonymous URL verification
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: jr-week-${{ inputs.week_start }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          # Idempotency: never blindly create a second weekly release.
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            n=$(gh release view "$TAG" --json assets --jq '[.assets[]|select(.name|endswith(".mp4"))]|length')
+            echo "[release] $TAG exists with $n mp4 assets"
+            if [ "$n" != "14" ]; then echo "[release] AMBIGUOUS existing release, failing closed"; exit 1; fi
+            echo "[release] reusing existing complete release"
+          else
+            gh release create "$TAG" --title "Jesus Replies week of ${{ inputs.week_start }}" \
+              --notes "Temporary public media storage for the 14 episodes of this week. Deleted only after the retention window." 
+            echo "[release] created $TAG"
+          fi
+          for f in output/videos/JR-*.mp4; do
+            gh release upload "$TAG" "$f" --clobber
+            echo "[release] uploaded $(basename $f)"
+          done
+          python3 - <<'EOF'
+          import json, os, subprocess, hashlib, pathlib, urllib.request
+          tag, repo = os.environ["TAG"], os.environ["REPO"]
+          meta = json.loads(subprocess.run(["gh","release","view",tag,"--json","assets,createdAt,tagName"],
+                                           capture_output=True,text=True,check=True).stdout)
+          assets = [a for a in meta["assets"] if a["name"].endswith(".mp4")]
+          names = [a["name"] for a in assets]
+          assert len(assets) == 14, f"asset count {len(assets)}"
+          assert len(set(names)) == 14, "duplicate asset names"
+          durs = {r["episode"]: r["duration_s"] for r in json.loads(pathlib.Path("output/durations.json").read_text())}
+          rows, fails = [], []
+          for a in sorted(assets, key=lambda x: x["name"]):
+              eid = a["name"][:-4]
+              url = a.get("url") or f"https://github.com/{repo}/releases/download/{tag}/{a['name']}"
+              # anonymous read, no token
+              try:
+                  req = urllib.request.Request(url, headers={"User-Agent":"jr-url-verify"})
+                  with urllib.request.urlopen(req, timeout=60) as r:
+                      head = r.read(32)
+                      ct = r.headers.get("Content-Type","")
+                      size = int(r.headers.get("Content-Length") or 0)
+                      ok = r.status == 200 and url.startswith("https://") and b"ftyp" in head
+              except Exception as ex:
+                  ok, ct, size = False, f"ERROR {ex}", 0
+              sha = hashlib.sha256(pathlib.Path(f"output/videos/{a['name']}").read_bytes()).hexdigest()
+              rows.append({"release_tag": tag, "created_at": meta["createdAt"], "episode_id": eid,
+                           "asset_name": a["name"], "public_url": url,
+                           "duration_seconds": durs.get(eid), "size_bytes": a["size"],
+                           "sha256": sha, "qa_status": "PASS" if ok else "FAIL"})
+              print(f"[url] {eid} {'PASS' if ok else 'FAIL'} {size}B {ct}")
+              if not ok: fails.append(eid)
+          pathlib.Path("generated/release-manifest.json").write_text(json.dumps(rows, indent=2)+"\n")
+          print(f"[url] verified={14-len(fails)}/14")
+          raise SystemExit(1 if fails else 0)
+          EOF
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add generated/release-manifest.json
+          git commit -m "content: release manifest for $TAG" || true
+          git push || true
+
+      - name: Buffer
+        if: ${{ inputs.publish == 'true' }}
+        run: |
+          echo "Buffer is intentionally not wired into this workflow yet."
+          echo "The controlled single mutation is a separate, explicitly authorised step."
           exit 1
