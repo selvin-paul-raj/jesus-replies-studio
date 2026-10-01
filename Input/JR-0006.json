@@ -1,0 +1,19 @@
+{
+  "id": "JR-0006",
+  "title": "She Left Me 💔",
+  "character": "boy",
+  "topic": "heartbreak",
+  "emotion": "angry",
+  "bible": {
+    "book": "Psalms", "chapter": 34, "verse": 18, "version": "NIV",
+    "text": "The LORD is close to the brokenhearted and saves those who are crushed in spirit."
+  },
+  "lines": [
+    { "speaker": "person", "text": "Jesus... she left me for someone else. Just like that. Like none of it mattered." },
+    { "speaker": "jesus", "text": "It mattered. Your hurt is real, and I'm not asking you to pretend it isn't." },
+    { "speaker": "person", "text": "Then why does it feel like You're far away right now?" },
+    { "speaker": "jesus", "text": "I'm not far. I'm closest to you exactly when you're breaking." },
+    { "speaker": "bible_verse" },
+    { "speaker": "engagement", "text": "What helped you get through your worst heartbreak?" }
+  ]
+}

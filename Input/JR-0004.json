@@ -1,0 +1,19 @@
+{
+  "id": "JR-0004",
+  "title": "Jesus, I Studied So Hard and I Still Failed",
+  "character": "boy",
+  "topic": "failure",
+  "emotion": "worried",
+  "bible": {
+    "book": "James", "chapter": 1, "verse": 12, "version": "NIV",
+    "text": "Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him."
+  },
+  "lines": [
+    { "speaker": "person", "text": "Jesus... I studied so hard for this. I did everything right. And I still failed. What was even the point?" },
+    { "speaker": "jesus", "text": "The point was never only the result on that page. Something in you was being built that a passing grade could never measure." },
+    { "speaker": "person", "text": "But now I feel like all that time was wasted." },
+    { "speaker": "jesus", "text": "Nothing you gave Me in faithfulness is ever wasted. Even this failure is doing something in you that success couldn't." },
+    { "speaker": "bible_verse" },
+    { "speaker": "engagement", "text": "What's a failure that ended up teaching you something you needed?" }
+  ]
+}

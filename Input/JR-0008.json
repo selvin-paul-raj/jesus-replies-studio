@@ -1,0 +1,23 @@
+{
+  "id": "JR-0008",
+  "title": "Why So Quiet? 😔",
+  "character": "boy",
+  "topic": "doubt",
+  "emotion": "sad",
+  "bible": {
+    "book": "Isaiah", "chapter": 41, "verse": 10, "version": "NIV",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  "lines": [
+    { "speaker": "person", "text": "Jesus... it feels like You've gone quiet. I pray and nothing comes back." },
+    { "speaker": "person", "text": "It's been weeks now. Maybe longer. I don't even feel You anymore." },
+    { "speaker": "jesus", "text": "Silence isn't the same as absence. I haven't moved. I'm still here, even in the quiet." },
+    { "speaker": "person", "text": "Then why can't I feel it? Why does it feel like You stopped caring?" },
+    { "speaker": "jesus", "text": "Feelings change. My presence doesn't depend on what you feel in this moment." },
+    { "speaker": "person", "text": "I just need something. Some sign You're actually listening." },
+    { "speaker": "jesus", "text": "I am listening. Even this question you're asking Me right now is proof you haven't stopped reaching for Me." },
+    { "speaker": "bible_verse" },
+    { "speaker": "jesus", "text": "Maybe the silence isn't Me leaving. Maybe it's you learning to trust Me without needing to feel it." },
+    { "speaker": "engagement", "text": "Have you ever felt like God went quiet on you?" }
+  ]
+}
