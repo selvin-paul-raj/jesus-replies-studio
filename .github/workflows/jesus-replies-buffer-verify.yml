@@ -21,6 +21,13 @@ jobs:
         with:
           python-version: '3.11'
       - name: Read back one Buffer post
+        if: inputs.post_id != 'LIST'
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: python3 scripts/buffer_verify_post.py "${{ inputs.post_id }}"
+      - name: List channel posts (orphan check)
+        if: inputs.post_id == 'LIST'
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_INSTAGRAM_CHANNEL_ID: ${{ secrets.BUFFER_INSTAGRAM_CHANNEL_ID }}
+        run: python3 scripts/buffer_list_drafts.py
