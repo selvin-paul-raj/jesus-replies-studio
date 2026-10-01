@@ -15,7 +15,13 @@ const EMOTIONS = ["neutral", "happy", "sad", "crying", "angry", "scared", "hopef
 const WORDS_TARGET: [number, number] = [141, 166];
 const WORDS_MAX = 187;
 
-interface Prior { topic?: string; bible_verse?: { reference?: string }; emotion?: string; character?: string; title?: string; }
+interface Prior {
+  topic?: string; emotion?: string; character?: string; title?: string;
+  // Historical Input/ shape, confirmed against all 21 corpus files.
+  bible?: { book?: string; chapter?: number | string; verse?: string; version?: string };
+  // Shape used by newer generated/ episodes.
+  bible_verse?: { reference?: string; book?: string };
+}
 
 function readCorpus(dirs: string[]): Prior[] {
   const out: Prior[] = [];
@@ -28,8 +34,20 @@ function readCorpus(dirs: string[]): Prior[] {
   return out;
 }
 
-function book(ref?: string): string | null {
-  return ref ? (ref.match(/^([1-3]?\s?[A-Za-z]+)/)?.[1]?.trim() ?? null) : null;
+/** Psalm and Psalms are the same book; normalise so diversity counts them once. */
+function normaliseBook(raw?: string | null): string | null {
+  if (!raw) return null;
+  const b = raw.trim().replace(/\s+/g, " ");
+  const canon: Record<string, string> = { Psalm: "Psalms", Song: "Song of Songs", Revelations: "Revelation" };
+  return canon[b] ?? b;
+}
+
+/** Reads the real corpus field first, then the newer reference string. */
+function bookOf(p: Prior): string | null {
+  if (p.bible?.book) return normaliseBook(p.bible.book);
+  if (p.bible_verse?.book) return normaliseBook(p.bible_verse.book);
+  const ref = p.bible_verse?.reference;
+  return ref ? normaliseBook(ref.match(/^([1-3]?\s?[A-Za-z ]+?)\s*\d/)?.[1] ?? null) : null;
 }
 
 export interface SlotBrief {
@@ -43,7 +61,7 @@ export interface SlotBrief {
 export function weeklyBriefs(weekStart: string, corpusDirs = ["Input", "generated"]): SlotBrief[] {
   const prior = readCorpus(corpusDirs);
   const spentTopics = new Set(prior.map((p) => p.topic).filter(Boolean) as string[]);
-  const spentBooks = new Set(prior.map((p) => book(p.bible_verse?.reference)).filter(Boolean) as string[]);
+  const spentBooks = new Set(prior.map(bookOf).filter(Boolean) as string[]);
   const hooks = prior.map((p) => p.title).filter(Boolean).slice(-8) as string[];
   const emotionCounts = new Map(EMOTIONS.map((e) => [e, prior.filter((p) => p.emotion === e).length]));
   const chars = prior.map((p) => p.character).filter(Boolean) as string[];
