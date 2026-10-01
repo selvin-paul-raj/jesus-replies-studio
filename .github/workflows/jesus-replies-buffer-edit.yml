@@ -1,0 +1,27 @@
+name: Jesus Replies Buffer edit dueAt
+
+# ONE editPost on ONE allowlisted post, dueAt only. No cron. Touches nothing else.
+
+on:
+  workflow_dispatch:
+    inputs:
+      post_id:
+        required: true
+      due_at:
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  edit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: One dueAt edit
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python3 scripts/buffer_edit_due.py "${{ inputs.post_id }}" "${{ inputs.due_at }}"
