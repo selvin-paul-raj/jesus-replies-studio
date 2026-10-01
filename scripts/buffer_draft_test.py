@@ -75,7 +75,9 @@ pkg = json.load(open(f"generated/{EID}.package.json"))
 man = {r["episode_id"]: r for r in json.load(open("generated/release-manifest.json"))}
 url = man[EID]["public_url"]
 assert url.startswith("https://"), "asset URL must be public https"
-text = pkg["instagram_caption"] + "\n\n" + pkg["instagram_hashtags"]
+tags = pkg["instagram_hashtags"]
+tags = " ".join(tags) if isinstance(tags, list) else tags
+text = pkg["instagram_caption"] + "\n\n" + tags
 
 MUT = f"""
 mutation {{
