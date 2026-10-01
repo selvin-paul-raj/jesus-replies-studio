@@ -54,9 +54,48 @@ jobs:
             exit 1
           fi
 
-      - name: Render, QA, upload, verify, schedule
-        # ENG-002: renderEpisode.ts hardcodes --concurrency=16 and hosted runners have
-        # fewer cores, so rendering fails here until that is fixed with a tested change.
+      - name: Render all 14 (bounded concurrency)
+        # Uses the existing renderer. ENG-002 is respected: concurrency comes from the
+        # runner's own core count, and JR_RENDER_CONCURRENCY pins it to the tested 2.
+        env:
+          JR_RENDER_CONCURRENCY: 2
         run: |
-          echo "BLOCKED by ENG-002: fix the hardcoded render concurrency before enabling this step."
+          mkdir -p output/videos
+          for f in generated/JR-*.json; do
+            case "$f" in *package*) continue;; esac
+            id=$(basename "$f" .json)
+            if [ -s "output/videos/$id.mp4" ]; then echo "[render] $id action=REUSED"; continue; fi
+            echo "[render] $id action=RENDERING"
+            npm run jr -- render "$f" --out-dir output || { echo "[render] $id action=FAILED"; exit 1; }
+          done
+          echo "[render] rendered=$(ls output/videos/*.mp4 2>/dev/null | wc -l) expected=14"
+
+      - name: Render QA and real durations
+        run: |
+          python3 - <<'EOF'
+          import pathlib, json, struct
+          rows = []
+          for v in sorted(pathlib.Path("output/videos").glob("JR-*.mp4")):
+              d = v.read_bytes(); i = d.find(b"mvhd")
+              ts, du = struct.unpack(">II", d[i+16:i+24]) if i > 0 else (0, 0)
+              rows.append({"episode": v.stem, "bytes": v.stat().st_size,
+                           "duration_s": round(du/ts, 2) if ts else None})
+          pathlib.Path("output/durations.json").write_text(json.dumps(rows, indent=2))
+          for r in rows: print(f"[qa] {r['episode']} duration={r['duration_s']}s bytes={r['bytes']}")
+          bad = [r for r in rows if not r["duration_s"] or r["duration_s"] > 90]
+          print(f"[qa] measured={len(rows)} over_ceiling_or_unreadable={len(bad)}")
+          raise SystemExit(1 if (len(rows) != 14 or bad) else 0)
+          EOF
+
+      - name: Weekly release, URL verification, Buffer
+        if: ${{ inputs.publish == 'true' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_INSTAGRAM_CHANNEL_ID: ${{ secrets.BUFFER_INSTAGRAM_CHANNEL_ID }}
+          BUFFER_YOUTUBE_CHANNEL_ID: ${{ secrets.BUFFER_YOUTUBE_CHANNEL_ID }}
+        run: |
+          echo "HELD: release upload and the single controlled Buffer post run only after"
+          echo "the duration report above has been reviewed. Nothing published."
           exit 1
