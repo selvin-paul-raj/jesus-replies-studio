@@ -1,0 +1,86 @@
+name: Jesus Replies controlled test
+
+# System B. Manual dispatch only: no schedule, nothing recurring, and it does not touch
+# daily-bible-post.yml or its state. Runs inside Actions because that is the only place
+# the rotated Buffer key and the R2 configuration exist.
+#
+# publish: false (default) stops after the dry-run payload. Nothing public is created.
+# publish: true is refused until the video publisher exists, so this workflow cannot
+# accidentally become the thing that posts.
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode_id:
+        description: Episode to test
+        required: true
+        default: JR-0022
+      publish:
+        description: Create a real Buffer post (requires the video publisher)
+        required: true
+        default: 'false'
+
+jobs:
+  controlled-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci
+      - run: pip install boto3
+
+      - name: Checkout JOE tooling
+        uses: actions/checkout@v4
+        with:
+          repository: selvin-paul-raj/joe
+          token: ${{ secrets.JOE_REPO_TOKEN }}
+          path: .joe
+
+      - name: Render the episode
+        # ENG-002: the hardcoded --concurrency=16 needs >=16 cores. Hosted runners have
+        # fewer, so this step is expected to fail until ENG-002 is resolved. Do not
+        # silently lower it here; fix it in renderEpisode.ts with a tested change.
+        run: npm run jr -- render generated/${{ inputs.episode_id }}.json --out-dir output
+
+      - name: Validate episode and package
+        run: |
+          python3 scripts/validate_episode.py generated/${{ inputs.episode_id }}.json
+          python3 scripts/validate.py generated/${{ inputs.episode_id }}.package.json
+
+      - name: Upload artifact to R2
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          R2_PUBLIC_BASE_URL: ${{ secrets.R2_PUBLIC_BASE_URL }}
+        run: |
+          python3 .joe/tools/r2_artifacts.py upload \
+            --episode-id ${{ inputs.episode_id }} \
+            --file output/videos/${{ inputs.episode_id }}.mp4 | tee r2.json
+
+      - name: Verify the URL anonymously
+        # No credentials in this step on purpose: it must fetch the way Buffer will.
+        run: |
+          URL=$(python3 -c "import json;print(json.load(open('r2.json'))['url'])")
+          python3 .joe/tools/r2_artifacts.py verify-url --url "$URL"
+
+      - name: Build the Buffer payload (no post created)
+        run: |
+          python3 .joe/tools/publish_dryrun.py \
+            --episode generated/${{ inputs.episode_id }}.json \
+            --package generated/${{ inputs.episode_id }}.package.json \
+            --video output/videos/${{ inputs.episode_id }}.mp4 --slot morning
+
+      - name: Refuse to publish
+        if: ${{ inputs.publish == 'true' }}
+        run: |
+          echo "BLOCKED: the Buffer video publisher is not implemented."
+          echo "scripts/publish-buffer.ts sends assets[].image and returns void."
+          echo "It must send assets[].video.url with metadata.thumbnailOffset and persist post.id first."
+          exit 1
