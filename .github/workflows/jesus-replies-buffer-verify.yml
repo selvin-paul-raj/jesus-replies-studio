@@ -21,10 +21,15 @@ jobs:
         with:
           python-version: '3.11'
       - name: Read back one Buffer post
-        if: inputs.post_id != 'LIST' && inputs.post_id != 'PROBE'
+        if: inputs.post_id != 'LIST' && inputs.post_id != 'PROBE' && inputs.post_id != 'PREFLIGHT'
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: python3 scripts/buffer_verify_post.py "${{ inputs.post_id }}"
+      - name: Preflight both drafts
+        if: inputs.post_id == 'PREFLIGHT'
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+        run: python3 scripts/buffer_preflight.py
       - name: Schema + channel probe
         if: inputs.post_id == 'PROBE'
         env:
