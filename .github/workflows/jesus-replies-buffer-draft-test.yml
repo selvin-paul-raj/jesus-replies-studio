@@ -1,0 +1,29 @@
+name: Jesus Replies Buffer draft test
+
+# System B. ONE controlled Buffer mutation for ONE episode, Instagram only, draft only.
+# Publishes nothing, schedules nothing, has no cron, touches no other Buffer content,
+# and never reads or writes daily-bible-post.yml or any System A state.
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode_id:
+        description: Exactly one episode id, e.g. JR-0035
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: One controlled draft mutation
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_INSTAGRAM_CHANNEL_ID: ${{ secrets.BUFFER_INSTAGRAM_CHANNEL_ID }}
+        run: python3 scripts/buffer_draft_test.py "${{ inputs.episode_id }}"
