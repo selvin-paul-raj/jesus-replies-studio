@@ -8,3 +8,5 @@ out/
 # input/
 output/
 .env
+__pycache__/
+*.pyc
