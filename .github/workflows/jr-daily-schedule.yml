@@ -1,0 +1,66 @@
+name: JR daily schedule (after explicit approval)
+
+# Records ONE explicit approval and performs ONE whole-post edit for that episode,
+# then reads it back. Refuses unless the episode is WAITING_FOR_USER with a Buffer draft.
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode_id:
+        required: true
+      date:
+        description: YYYY-MM-DD
+        required: true
+      time:
+        description: HH:MM (a configured slot, 08:00 or 21:00)
+        required: true
+      timezone:
+        required: true
+        default: Asia/Kolkata
+      approved_by:
+        required: true
+      approval_words:
+        description: Selvin's exact approval message
+        required: true
+      dry_run:
+        required: true
+        default: 'true'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jr-episode-${{ inputs.episode_id }}
+  cancel-in-progress: false
+
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Safety tests (mocked Buffer, no network)
+        run: python3 -m unittest discover -s tests
+      - name: Approve and schedule
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_INSTAGRAM_CHANNEL_ID: ${{ secrets.BUFFER_INSTAGRAM_CHANNEL_ID }}
+          DRY: ${{ inputs.dry_run == 'true' && '--dry-run' || '' }}
+          WORDS: ${{ inputs.approval_words }}
+          BY: ${{ inputs.approved_by }}
+        run: |
+          python3 scripts/daily/jr_daily.py approve "${{ inputs.episode_id }}" --date "${{ inputs.date }}" \
+            --time "${{ inputs.time }}" --tz "${{ inputs.timezone }}" --by "$BY" --evidence "$WORDS" $DRY
+          [ -n "$DRY" ] && { echo "[dry-run] approval validated only; no Buffer edit"; exit 0; }
+          python3 scripts/daily/jr_daily.py schedule "${{ inputs.episode_id }}"
+      - name: Commit episode state
+        if: always() && inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add episodes manifests generated/briefs generated/release-manifest.json 2>/dev/null || true
+          git diff --cached --quiet && { echo "[state] nothing to commit"; exit 0; }
+          git commit -m "automation: daily post state ${{ github.run_id }} [skip ci]"
+          git pull --rebase -q && git push

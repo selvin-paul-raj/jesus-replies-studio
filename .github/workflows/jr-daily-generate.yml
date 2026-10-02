@@ -1,0 +1,78 @@
+name: JR daily generate (to WAITING_FOR_USER)
+
+# Prepares episodes up to a Buffer DRAFT and stops at WAITING_FOR_USER. Never schedules or
+# publishes. Manual only: the schedule stays commented out until Selvin authorises it.
+# Does not touch daily-bible-post.yml or any existing workflow.
+#
+# on:
+#   schedule:
+#     - cron: '30 13 * * *'   # 19:00 IST, prepares the next day's two slots
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: Publishing date YYYY-MM-DD the two slots are for
+        required: true
+      episode_id:
+        description: Optional. Advance only this episode (e.g. for a dry run)
+        required: false
+        default: ''
+      dry_run:
+        description: true = no upload, no Buffer post, state kept in scratch
+        required: true
+        default: 'true'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jr-daily-${{ inputs.target_date }}
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Safety tests (mocked Buffer, no network)
+        run: python3 -m unittest discover -s tests
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: ffprobe available
+        run: which ffprobe || (sudo apt-get update -q && sudo apt-get install -y -q ffmpeg)
+      - name: Advance episodes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BUFFER_API_KEY: ${{ inputs.dry_run != 'true' && secrets.BUFFER_API_KEY || '' }}
+          BUFFER_INSTAGRAM_CHANNEL_ID: ${{ inputs.dry_run != 'true' && secrets.BUFFER_INSTAGRAM_CHANNEL_ID || '' }}
+          DRY: ${{ inputs.dry_run == 'true' && '--dry-run' || '' }}
+        run: |
+          set -o pipefail
+          if [ -n "${{ inputs.episode_id }}" ]; then
+            IDS="${{ inputs.episode_id }}"
+          else
+            if [ -n "$DRY" ]; then echo "dry run needs episode_id"; exit 1; fi
+            IDS="$(python3 scripts/daily/jr_daily.py allocate --date ${{ inputs.target_date }} --slot MORNING) $(python3 scripts/daily/jr_daily.py allocate --date ${{ inputs.target_date }} --slot NIGHT)"
+          fi
+          rc=0
+          for id in $IDS; do
+            [ -n "$DRY" ] || python3 scripts/daily/jr_daily.py brief "$id" > /dev/null
+            python3 scripts/daily/jr_daily.py advance "$id" $DRY || rc=1
+          done
+          exit $rc
+      - name: Commit episode state
+        if: always() && inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add episodes manifests generated/briefs generated/release-manifest.json 2>/dev/null || true
+          git diff --cached --quiet && { echo "[state] nothing to commit"; exit 0; }
+          git commit -m "automation: daily post state ${{ github.run_id }} [skip ci]"
+          git pull --rebase -q && git push

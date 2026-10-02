@@ -1,0 +1,14 @@
+{
+  "timezone": "Asia/Kolkata",
+  "slots": { "MORNING": "08:00", "NIGHT": "21:00" },
+  "require_human_approval": true,
+  "auto_publish": false,
+  "verify_after_publish": true,
+  "publish_grace_minutes": 30,
+  "duration": { "min_seconds": 3, "target_seconds": [70, 80], "ceiling_seconds": 90, "auto_trim": false },
+  "video": { "width": 1080, "height": 1920 },
+  "package": { "caption_max": 2200, "hashtag_count": 5, "youtube_title_max": 100, "youtube_description_max": 5000 },
+  "hosting": { "release_tag_pattern": "jr-ep-{episode_id}" },
+  "buffer": { "api": "https://api.buffer.com", "draft_due_at": "2026-12-31T00:00:00Z", "thumbnail_offset_ms": 1500, "channel": "instagram" },
+  "lock_ttl_minutes": 90
+}

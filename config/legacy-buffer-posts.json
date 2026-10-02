@@ -1,0 +1,5 @@
+{
+  "_note": "Buffer posts created before the daily system existed. Read-only idempotency keys: the daily system must never create a second post for these episodes. Verified by read-back runs 37003036178 (JR-0035) and 36881798590 (JR-0036).",
+  "JR-0035": "6abe5636534a309fe98499bb",
+  "JR-0036": "6abe5dab0c33e408f7a9414b"
+}
