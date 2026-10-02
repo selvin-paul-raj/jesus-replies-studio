@@ -9,6 +9,9 @@ on:
         required: true
       due_at:
         required: true
+      undraft:
+        required: false
+        default: 'no'
 
 permissions:
   contents: read
@@ -24,4 +27,4 @@ jobs:
       - name: One dueAt edit
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-        run: python3 scripts/buffer_edit_due.py "${{ inputs.post_id }}" "${{ inputs.due_at }}"
+        run: python3 scripts/buffer_edit_due.py "${{ inputs.post_id }}" "${{ inputs.due_at }}" ${{ inputs.undraft == 'yes' && '--undraft' || '' }}

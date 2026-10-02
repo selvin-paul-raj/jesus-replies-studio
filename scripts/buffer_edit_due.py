@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """ONE editPost on ONE allowlisted post. Buffer validates edits as whole posts, so the
 CURRENT text, asset URL and reel metadata are read from Buffer first and resent unchanged;
-only dueAt differs. saveToDraft is not sent (optional on EditPostInput). Never retries.
+only dueAt differs. saveToDraft:false is sent ONLY with --undraft (approved 2026-10-02 for JR-0035). Never retries.
 Never prints the key."""
 import json, os, sys, urllib.error, urllib.request
 API="https://api.buffer.com"; KEY=os.environ["BUFFER_API_KEY"]
 ALLOW={"6abe5636534a309fe98499bb": ("JR-0035", "2026-10-03T02:30:00Z")}
 pid, due = sys.argv[1], sys.argv[2]
+UNDRAFT = len(sys.argv) > 3 and sys.argv[3] == "--undraft"
 if pid not in ALLOW or ALLOW[pid][1] != due:
     print(f"[guard] REFUSED: {pid} / {due} is not the approved post+slot"); raise SystemExit(9)
 ep = ALLOW[pid][0]
@@ -22,6 +23,8 @@ if not cur or cur["status"]!="draft":
 a=(cur.get("assets") or [{}])[0]; src=a.get("source"); off=(a.get("video") or {}).get("thumbnailOffset") or 1500
 if not src or not src.endswith(f"/{ep}.mp4"):
     print(f"[guard] REFUSED: asset is not {ep}.mp4: {src}"); raise SystemExit(9)
+if UNDRAFT and cur["dueAt"] != due.replace("Z", ".000Z"):
+    print(f"[guard] REFUSED: undraft needs the already-verified dueAt {due}, found {cur['dueAt']}"); raise SystemExit(9)
 print(f"[pre] {ep} status={cur['status']} due={cur['dueAt']} asset={src.split('/')[-1]} textlen={len(cur['text'])} offset={off}")
 
 q=f"""mutation {{ editPost(input: {{
@@ -31,9 +34,9 @@ q=f"""mutation {{ editPost(input: {{
   mode: {cur['shareMode']}
   schedulingType: {cur['schedulingType']}
   assets: [{{ video: {{ url: {json.dumps(src)}, metadata: {{ thumbnailOffset: {off} }} }} }}]
-  metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true }} }}
+  metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true }} }}{"\n  saveToDraft: false" if UNDRAFT else ""}
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
-print(f"[mutation] editPost {ep} id={pid} dueAt={due} (text/asset/metadata resent unchanged, saveToDraft not sent)")
+print(f"[mutation] editPost {ep} id={pid} dueAt={due} (text/asset/metadata resent unchanged, saveToDraft={'false' if UNDRAFT else 'not sent'})")
 try:
     st,js=gql(q)
 except urllib.error.HTTPError as e:
