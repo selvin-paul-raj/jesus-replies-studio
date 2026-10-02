@@ -302,7 +302,7 @@ def step_package_qa(ctx, st):
             probs.append(f"Bible reference {book} not in caption or description")
         others = set(re.findall(r"JR-\d{4}", json.dumps(pk))) - {eid}
         if others: probs.append(f"references other episodes {sorted(others)}")
-    thumbs = list((ctx.root / "output/thumbnails").glob(f"{eid}.*"))
+    thumbs = sorted((ctx.root / "output/thumbnails").glob(f"{eid}-thumb.png")) or sorted((ctx.root / "output/thumbnails").glob(f"{eid}.png"))
     if not thumbs: probs.append("thumbnail image not rendered")
     if probs:
         st["package_qa"] = "FAIL"
@@ -602,4 +602,7 @@ def report(st):
             ("RENDER_QA", st["render_qa"]), ("PACKAGED", st["package"]), ("PACKAGE_QA", st["package_qa"]),
             ("HOSTED", st["asset_hosting"]), ("BUFFER", st["buffer"]["status"] or "NOT_STARTED"),
             ("APPROVAL", st["approval"]["status"]), ("STATE", st["state"])]
-    return "\n".join([st["episode_id"]] + [f"{k:<14} {v}" for k, v in rows])
+    out = [st["episode_id"]] + [f"{k:<14} {v}" for k, v in rows]
+    if st["errors"]:
+        out.append(f"{'LAST_ERROR':<14} {st['errors'][-1]['detail']}")
+    return "\n".join(out)

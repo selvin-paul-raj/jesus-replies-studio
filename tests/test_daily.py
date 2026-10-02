@@ -70,7 +70,7 @@ class Base(unittest.TestCase):
         (self.root / "output/videos").mkdir(parents=True)
         (self.root / "output/thumbnails").mkdir(parents=True)
         (self.root / "output/videos/JR-0002.mp4").write_bytes(b"\x00\x00\x00\x18ftypmp42" + b"\x00" * 200)
-        (self.root / "output/thumbnails/JR-0002.png").write_bytes(b"png")
+        (self.root / "output/thumbnails/JR-0002-thumb.png").write_bytes(b"png")
         self.buf = FakeBuffer()
         self.clock = dt.datetime(2026, 10, 2, 12, 0, tzinfo=UTC)
         self.calls = []
