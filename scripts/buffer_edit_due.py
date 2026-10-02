@@ -27,6 +27,7 @@ if UNDRAFT and cur["dueAt"] != due.replace("Z", ".000Z"):
     print(f"[guard] REFUSED: undraft needs the already-verified dueAt {due}, found {cur['dueAt']}"); raise SystemExit(9)
 print(f"[pre] {ep} status={cur['status']} due={cur['dueAt']} asset={src.split('/')[-1]} textlen={len(cur['text'])} offset={off}")
 
+undraft_line = "\n  saveToDraft: false" if UNDRAFT else ""
 q=f"""mutation {{ editPost(input: {{
   id: {json.dumps(pid)}
   dueAt: {json.dumps(due)}
@@ -34,7 +35,7 @@ q=f"""mutation {{ editPost(input: {{
   mode: {cur['shareMode']}
   schedulingType: {cur['schedulingType']}
   assets: [{{ video: {{ url: {json.dumps(src)}, metadata: {{ thumbnailOffset: {off} }} }} }}]
-  metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true }} }}{"\n  saveToDraft: false" if UNDRAFT else ""}
+  metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true }} }}{undraft_line}
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
 print(f"[mutation] editPost {ep} id={pid} dueAt={due} (text/asset/metadata resent unchanged, saveToDraft={'false' if UNDRAFT else 'not sent'})")
 try:
