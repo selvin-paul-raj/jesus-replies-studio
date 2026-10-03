@@ -619,6 +619,6 @@ def report(st):
             ("HOSTED", st["asset_hosting"]), ("BUFFER", st["buffer"]["status"] or "NOT_STARTED"),
             ("APPROVAL", st["approval"]["status"]), ("STATE", st["state"])]
     out = [st["episode_id"]] + [f"{k:<14} {v}" for k, v in rows]
-    if st["errors"]:
+    if st["errors"] and st["state"] in states.FAILURES:
         out.append(f"{'LAST_ERROR':<14} {st['errors'][-1]['detail']}")
     return "\n".join(out)

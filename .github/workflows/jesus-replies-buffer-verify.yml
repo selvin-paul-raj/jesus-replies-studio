@@ -21,10 +21,16 @@ jobs:
         with:
           python-version: '3.11'
       - name: Read back one Buffer post
-        if: inputs.post_id != 'LIST' && inputs.post_id != 'PROBE' && inputs.post_id != 'PREFLIGHT'
+        if: inputs.post_id != 'LIST' && inputs.post_id != 'PROBE' && inputs.post_id != 'PREFLIGHT' && !startsWith(inputs.post_id, 'READ:')
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
         run: python3 scripts/buffer_verify_post.py "${{ inputs.post_id }}"
+      - name: Daily-system read-back (read-only)
+        if: startsWith(inputs.post_id, 'READ:')
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          EID: ${{ inputs.post_id }}
+        run: python3 scripts/daily/jr_daily.py read "${EID#READ:}"
       - name: Preflight both drafts
         if: inputs.post_id == 'PREFLIGHT'
         env:

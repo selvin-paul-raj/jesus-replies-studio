@@ -88,6 +88,26 @@ def main():
             bad += st["state"] == "PUBLISH_VERIFICATION_FAILED"
         print(f"[verify] checked={len(ids)} failed={bad}")
         return 1 if bad else 0
+    if a.cmd == "read":
+        # READ-ONLY independent read-back of the episode's recorded Buffer post.
+        st = store.load(a.eid)
+        pid = st["buffer"]["post_id"]
+        if not pid or buffer is None:
+            print(f"[read] {a.eid} no post id or no Buffer access"); return 1
+        post, d = buffer.read(pid)
+        if not post:
+            print(f"[read] {a.eid} {pid} UNREADABLE {d}"); return 1
+        pk = json.loads((ROOT / f"generated/{a.eid}.package.json").read_text())
+        want = pl.caption_text(pk)
+        tags = [w for w in post["text"].split() if w.startswith("#")]
+        print(f"[read] post_id={post['id']} match={post['id'] == pid}")
+        print(f"[read] status={post.get('status')} dueAt={post.get('dueAt')} channel={post.get('channelService')} shareMode={post.get('shareMode')}")
+        print(f"[read] sentAt_field_in_schema={post['_has_sent_at_field']} sentAt={post.get('sentAt')}")
+        print(f"[read] asset={post['_asset_source']} match={post['_asset_source'] == st['asset_url']}")
+        print(f"[read] durationMs={post['_duration_ms']} rendered_s={st['render_facts'].get('duration_s')}")
+        print(f"[read] caption_chars={len(post['text'])} caption_match={pl.norm_text(post['text']) == pl.norm_text(want)}")
+        print(f"[read] hashtags={tags} match={tags == list(pk['instagram_hashtags'])}")
+        return 0
     if a.cmd == "status":
         print(pl.report(store.load(a.eid))); return 0
     ap.error(f"unknown command {a.cmd}")
