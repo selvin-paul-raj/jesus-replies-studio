@@ -1,27 +1,41 @@
 {
   "episode_id": "JR-0037",
-  "state": "BLOCKED",
-  "updated_at": "2026-10-03T12:29:25Z",
+  "state": "WAITING_FOR_USER",
+  "updated_at": "2026-10-03T12:39:59Z",
   "slot": null,
   "target_date": null,
-  "generation": "BLOCKED",
-  "validation": "NOT_STARTED",
-  "render": "NOT_STARTED",
-  "render_qa": "NOT_STARTED",
-  "package": "NOT_STARTED",
-  "package_qa": "NOT_STARTED",
-  "asset_hosting": "NOT_STARTED",
-  "asset_url": null,
-  "render_facts": {},
+  "generation": "PASS",
+  "validation": "PASS",
+  "render": "PASS",
+  "render_qa": "PASS",
+  "package": "PASS",
+  "package_qa": "PASS",
+  "asset_hosting": "VERIFIED",
+  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0037/JR-0037.mp4",
+  "render_facts": {
+    "command": "npm run jr -- render generated/JR-0037.json --out-dir output",
+    "exit": 0,
+    "path": "output/videos/JR-0037.mp4",
+    "size_bytes": 7879504,
+    "how": "RENDERED",
+    "duration_s": 80.38,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "resolution": "1080x1920",
+    "warnings": [
+      "duration 80.38s above target [70, 80] but under ceiling"
+    ]
+  },
   "buffer": {
-    "post_id": null,
-    "status": null,
-    "due_at": null,
+    "post_id": "6ac0f79fad7fd83bc5f1e243",
+    "status": "draft",
+    "due_at": "2026-12-31T00:00:00.000Z",
     "sent_at": null,
-    "pending_mutation": null
+    "pending_mutation": null,
+    "create_attempts": 1
   },
   "approval": {
-    "status": "NOT_REQUESTED",
+    "status": "WAITING_FOR_USER",
     "approved_at": null,
     "approved_by": null,
     "slot_local": null,
@@ -46,6 +60,76 @@
       "to": "BLOCKED",
       "run": "37122996095",
       "evidence": "generated/JR-0037.json not authored. Dialogue authoring needs a model call and no credential is wired into this workflow."
+    },
+    {
+      "at": "2026-10-03T12:37:54Z",
+      "from": "BLOCKED",
+      "to": "NEW",
+      "run": "37123443645",
+      "evidence": "reopen: generated/JR-0037.json now authored"
+    },
+    {
+      "at": "2026-10-03T12:37:54Z",
+      "from": "NEW",
+      "to": "GENERATED",
+      "run": "37123443645",
+      "evidence": "generated/JR-0037.json present (1686 B)"
+    },
+    {
+      "at": "2026-10-03T12:37:55Z",
+      "from": "GENERATED",
+      "to": "VALIDATED",
+      "run": "37123443645",
+      "evidence": "schema PASS, originality PASS, NIV Isaiah 43:18-19 verbatim match"
+    },
+    {
+      "at": "2026-10-03T12:39:54Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "37123443645",
+      "evidence": "RENDERED JR-0037.mp4 7879504 B"
+    },
+    {
+      "at": "2026-10-03T12:39:54Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "37123443645",
+      "evidence": "80.38s 1080x1920 h264/aac duration 80.38s above target [70, 80] but under ceiling"
+    },
+    {
+      "at": "2026-10-03T12:39:54Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "37123443645",
+      "evidence": "JR-0037.package.json present"
+    },
+    {
+      "at": "2026-10-03T12:39:54Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_PASSED",
+      "run": "37123443645",
+      "evidence": "caption 704 chars, 5 hashtags, title 77, thumbnail JR-0037-thumb.png"
+    },
+    {
+      "at": "2026-10-03T12:39:58Z",
+      "from": "PACKAGE_QA_PASSED",
+      "to": "ASSET_HOSTED",
+      "run": "37123443645",
+      "evidence": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0037/JR-0037.mp4 http=206 ftyp=True bytes=7879504/7879504"
+    },
+    {
+      "at": "2026-10-03T12:39:59Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_DRAFT",
+      "run": "37123443645",
+      "evidence": "draft 6ac0f79fad7fd83bc5f1e243 read back: status draft, asset, caption, duration, channel OK"
+    },
+    {
+      "at": "2026-10-03T12:39:59Z",
+      "from": "BUFFER_DRAFT",
+      "to": "WAITING_FOR_USER",
+      "run": "37123443645",
+      "evidence": "approval required: episode, date, time, timezone"
     }
   ]
 }
