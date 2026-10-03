@@ -29,7 +29,7 @@ jobs:
         if: inputs.post_id == 'OSPROBE'
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
-        run: python3 scripts/content_os/probe.py
+        run: python3 scripts/content_os/probe.py && python3 scripts/content_os/probe_metrics.py
       - name: Daily-system read-back (read-only)
         if: startsWith(inputs.post_id, 'READ:')
         env:

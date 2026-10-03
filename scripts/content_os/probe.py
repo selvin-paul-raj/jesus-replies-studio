@@ -3,7 +3,7 @@
 Answers: what analytics a Post exposes, what YouTube metadata a post needs,
 whether posts can be listed per channel (duplicate detection), and JR-0035's live status."""
 import json, os, sys, urllib.request, urllib.error
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from daily.redact import redact
 API = "https://api.buffer.com"; KEY = os.environ["BUFFER_API_KEY"]
 CFG = json.load(open("config/publishing-rules.json"))
