@@ -36,10 +36,10 @@ def patterns(rows, cfg, min_n=3, min_age=72):
                 big = {g: v for g, v in groups.items() if len(v) >= min_n}
                 entry = {"platform": platform, "objective": dim_name, "metric": m, "dimension": dim,
                          "groups": {g: {"n": len(v), "median": median(v)} for g, v in groups.items()}}
-                if len(big) >= 2:
-                    best = max(big, key=lambda g: median(big[g]))
-                    worst = min(big, key=lambda g: median(big[g]))
-                    entry.update(finding="pattern", stronger=best, weaker=worst)
+                best = max(big, key=lambda g: median(big[g])) if len(big) >= 2 else None
+                worst = min(big, key=lambda g: median(big[g])) if len(big) >= 2 else None
+                if best and best != worst and median(big[best]) > median(big[worst]):
+                    entry.update(finding="pattern (low n, confounded by topic)", stronger=best, weaker=worst)
                 else:
                     entry["finding"] = "insufficient data"
                 res.append(entry)
@@ -59,9 +59,9 @@ def weekly_report(week_start, rows, attrs, plan, cfg, now):
             if k != "engagementRate":
                 t[k] = t.get(k, 0) + v
     pats = patterns(ev, cfg)
-    found = [p for p in pats if p["finding"] == "pattern"]
+    found = [p for p in pats if p["finding"].startswith("pattern")]
     recs = []
-    for p in found:
+    for p in [p for p in found if p["objective"] in ("reach", "retention", "shares", "saves")][:6]:
         recs.append(f"{p['platform']} {p['objective']} ({p['metric']}): '{p['stronger']}' beat '{p['weaker']}' on {p['dimension']} "
                     f"(n={p['groups'][p['stronger']]['n']} vs {p['groups'][p['weaker']]['n']}). Generalise the pattern, do not copy the story.")
     if not found:
