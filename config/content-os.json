@@ -97,5 +97,10 @@
     72,
     168
   ],
-  "slot_note": "TEST SLOTS chosen by Selvin on 2026-10-03 (08:00 vs 20:30 IST, same slot on Instagram and YouTube). Not 'best times' until account evidence is sufficient."
+  "slot_note": "TEST SLOTS chosen by Selvin on 2026-10-03 (08:00 vs 20:30 IST, same slot on Instagram and YouTube). Not 'best times' until account evidence is sufficient.",
+  "scheduled_limit": {
+    "instagram": 9,
+    "youtube": 10,
+    "_why": "Buffer plan allows 10 scheduled posts per channel (rejection 2026-10-03). Instagram keeps 1 free for the daily Bible post on the same channel."
+  }
 }

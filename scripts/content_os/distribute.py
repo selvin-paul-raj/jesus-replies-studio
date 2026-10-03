@@ -11,10 +11,11 @@ ALLOWED = {
     "SCHEDULED": {"PUBLISHED", "PUBLISHED_VERIFIED", "FAILED", "UNKNOWN", "DRAFT", "BLOCKED"},
     "PUBLISHED": {"PUBLISHED_VERIFIED", "UNKNOWN"},
     "PUBLISHED_VERIFIED": set(),
-    "FAILED": {"SCHEDULED", "UNKNOWN", "BLOCKED"},
+    "FAILED": {"SCHEDULED", "UNKNOWN", "BLOCKED", "NONE"},
     "UNKNOWN": {"DRAFT", "SCHEDULED", "PUBLISHED", "PUBLISHED_VERIFIED", "FAILED", "BLOCKED"},
     "BLOCKED": {"DRAFT", "SCHEDULED", "PUBLISHED", "PUBLISHED_VERIFIED", "FAILED", "UNKNOWN"},
 }
+QUOTA_MSG = "scheduled posts limit reached"
 BUFFER_STATUS = {"draft": "DRAFT", "scheduled": "SCHEDULED", "needs_approval": "SCHEDULED", "sending": "SCHEDULED",
                  "sent": "PUBLISHED", "error": "FAILED"}
 
@@ -138,6 +139,9 @@ class Distributor:
                 blk["pending_mutation"] = None
             elif blk["pending_mutation"]:
                 move(blk, "UNKNOWN", f"pending {blk['pending_mutation']['kind']} has no matching post", self.run, self.now)
+            elif blk["state"] == "FAILED" and QUOTA_MSG in (blk.get("error") or "").lower():
+                move(blk, "NONE", "quota rejection created nothing (no matching post in Buffer); eligible for top-up", self.run, self.now)
+                blk["error"], blk["attempts"] = None, 0
         self.store.save(d)
         return d, blk
 
@@ -172,6 +176,11 @@ class Distributor:
             post, det = self.buf.read(blk["post_id"])
             if not post or norm_text(post.get("text")) != norm_text(text) or post.get("_asset") != ctx["asset_url"]:
                 return "DRAFT_CONTENT_MISMATCH", blk
+        limit = (self.cfg.get("scheduled_limit") or {}).get(platform)
+        if limit is not None:
+            used = sum(1 for p in self.live_posts(platform) if p.get("status") == "scheduled")
+            if used >= limit:
+                return "QUOTA_DEFERRED", blk
         if self.dry:
             return ("WOULD_SCHEDULE_DRAFT" if s == "DRAFT" else "WOULD_CREATE"), blk
         kind = "schedule_draft" if s == "DRAFT" else "create_scheduled"
@@ -189,11 +198,17 @@ class Distributor:
                     and post.get("_asset") == ctx["asset_url"]:
                 blk.update(post_id=post["id"], due_at=post["dueAt"])
                 move(blk, "SCHEDULED", f"{kind} read back: scheduled {post['dueAt']}", self.run, self.now)
+                self.live.setdefault(platform, []).append(post) if kind == "create_scheduled" else None
                 r = "SCHEDULED"
             else:
                 blk["post_id"] = out.post["id"]
                 move(blk, "UNKNOWN", f"{kind} returned {out.post['id']} but read-back did not confirm ({det})", self.run, self.now)
                 r = "STOP"
+        elif out.kind == "REJECTED" and QUOTA_MSG in out.detail.lower():
+            blk["pending_mutation"] = None
+            blk["attempts"] -= 1
+            blk["history"].append({"at": iso(self.now), "from": s, "to": s, "run": self.run, "evidence": "quota: " + out.detail[:200]})
+            r = "QUOTA_DEFERRED"
         elif out.kind == "REJECTED":
             blk["pending_mutation"] = None
             blk["error"] = out.detail
@@ -213,6 +228,24 @@ class Distributor:
             else:
                 move(blk, "UNKNOWN", f"{kind} outcome {out.kind}; listing found {len(m)} candidates", self.run, self.now)
                 r = "STOP"
+        self.store.save(d)
+        return r, blk
+
+    def hold(self, eid, platform, ctx):
+        """SCHEDULED -> DRAFT, read back. Used only to free a scheduled slot."""
+        d, blk = self.reconcile(eid, platform, ctx)
+        if blk["state"] != "SCHEDULED":
+            return "NOT_SCHEDULED", blk
+        if self.dry:
+            return "WOULD_HOLD", blk
+        yt = dict(self.cfg["youtube"], title=ctx["youtube_title"]) if platform == "youtube" else None
+        out = self.buf.to_draft(blk["post_id"], platform, self.expected_text(platform, ctx), ctx["asset_url"], blk["due_at"], yt)
+        post, det = self.buf.read(blk["post_id"])
+        if post and post.get("status") == "draft":
+            move(blk, "DRAFT", f"held to draft ({out.kind}); read back draft", self.run, self.now)
+            r = "HELD_TO_DRAFT"
+        else:
+            r = f"HOLD_NOT_CONFIRMED {out.kind} status={(post or {}).get('status')}"
         self.store.save(d)
         return r, blk
 

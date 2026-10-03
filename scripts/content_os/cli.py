@@ -82,6 +82,8 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--by")
     ap.add_argument("--quote")
+    ap.add_argument("--episode")
+    ap.add_argument("--platform")
     a = ap.parse_args()
     cfg = cfg_load()
     now = dt.datetime.now(dt.timezone.utc)
@@ -171,6 +173,10 @@ def main():
         for r in res["results"]:
             print(f"[sched] {r.get('episode_id')} {r.get('platform', '-')} {r.get('due_at', '')} {r['result']} state={r.get('state')} post={r.get('post_id')}")
         return 0 if res["status"] in ("DONE", "DRY_RUN") else 4
+    if a.cmd == "hold":
+        d = Distributor(ROOT, Buffer.from_env(cfg), cfg, http_status, run, now, dry_run=a.dry_run)
+        r, blk = d.hold(a.episode, a.platform, ctx_for_factory(eps, pkgs, assets)(a.episode))
+        print(f"[hold] {a.episode} {a.platform} {r} state={blk['state']} post={blk['post_id']}"); return 0
     if a.cmd == "verify":
         d = Distributor(ROOT, Buffer.from_env(cfg), cfg, http_status, run, now, dry_run=True)
         out = d.verify_all(ctx_for_factory(eps, pkgs, assets))

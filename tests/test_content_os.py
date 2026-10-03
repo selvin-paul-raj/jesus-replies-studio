@@ -258,5 +258,21 @@ class T09Analytics(unittest.TestCase):
         self.assertEqual(hk["finding"], "insufficient data")
 
 
+
+class T10Quota(Base):
+    def test_quota_precheck_defers_without_mutation(self):
+        c = json.loads(json.dumps(CFG)); c["scheduled_limit"] = {"instagram": 1}
+        self.buf.add("instagram", "scheduled", text="other", asset="x")
+        d = Distributor(self.root, self.buf, c, lambda u: 200, "t", NOW, dry_run=False)
+        r, blk = d.schedule("JR-0040", "instagram", DUE, ctx())
+        self.assertEqual((r, blk["state"], self.buf.creates), ("QUOTA_DEFERRED", "NONE", 0))
+
+    def test_quota_failure_resets_for_topup(self):
+        st = DistStore(self.root, CFG["platforms"]); d0 = st.load("JR-0040")
+        d0["platforms"]["youtube"].update(state="FAILED", attempts=1, error='{"message": "Scheduled posts limit reached. You have 10"}'); st.save(d0)
+        r, blk = self.dist().schedule("JR-0040", "youtube", DUE, ctx())
+        self.assertEqual((r, self.buf.creates), ("SCHEDULED", 1))
+
+
 if __name__ == "__main__":
     unittest.main()

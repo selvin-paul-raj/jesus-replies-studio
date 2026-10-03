@@ -15,6 +15,12 @@ on:
       week_start:
         description: Monday YYYY-MM-DD
         required: false
+      episode:
+        description: episode id (hold only)
+        required: false
+      platform:
+        description: instagram | youtube (hold only)
+        required: false
       dry_run:
         description: true = no Buffer mutations (schedule only)
         required: true
@@ -39,10 +45,13 @@ jobs:
           CMD: ${{ inputs.command }}
           WEEK: ${{ inputs.week_start }}
           DRY: ${{ inputs.dry_run }}
+          EP: ${{ inputs.episode }}
+          PL: ${{ inputs.platform }}
         run: |
           args="$CMD"
           [ -n "$WEEK" ] && args="$args --week $WEEK"
-          [ "$DRY" = "true" ] && [ "$CMD" = "schedule" ] && args="$args --dry-run"
+          [ "$DRY" = "true" ] && { [ "$CMD" = "schedule" ] || [ "$CMD" = "hold" ]; } && args="$args --dry-run"
+          [ -n "$EP" ] && args="$args --episode $EP --platform $PL"
           python3 scripts/content_os/cli.py $args
       - name: Commit state
         if: always()

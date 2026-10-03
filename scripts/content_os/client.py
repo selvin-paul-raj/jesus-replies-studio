@@ -114,3 +114,17 @@ class Buffer:
   saveToDraft: false
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
         return self._mutate("editPost", q)
+
+    def to_draft(self, post_id, platform, text, url, due_at, yt=None):
+        """Whole-post edit back to draft (frees a scheduled slot; the post id is kept)."""
+        q = f"""mutation {{ editPost(input: {{
+  id: {json.dumps(post_id)}
+  dueAt: {json.dumps(due_at)}
+  text: {json.dumps(text)}
+  mode: customScheduled
+  schedulingType: automatic
+  assets: {self._video(url)}
+  metadata: {self._meta(platform, yt)}
+  saveToDraft: true
+}}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
+        return self._mutate("editPost", q)
