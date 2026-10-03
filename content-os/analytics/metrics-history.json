@@ -121,6 +121,20 @@
         },
         "observed_age_hours": 71.9,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "72h": {
+        "metrics": {
+          "reactions": 2,
+          "comments": 0,
+          "engagementRate": 25,
+          "views": 22,
+          "shares": 0,
+          "saves": 0,
+          "follows": 0,
+          "reach": 8
+        },
+        "observed_age_hours": 72.2,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },

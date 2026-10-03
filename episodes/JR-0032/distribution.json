@@ -2,14 +2,14 @@
   "episode_id": "JR-0032",
   "platforms": {
     "instagram": {
-      "state": "FAILED",
+      "state": "NONE",
       "post_id": null,
       "due_at": null,
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
-      "attempts": 1,
-      "error": "http=200 {\"message\": \"Scheduled posts limit reached. You have 10 scheduled posts out of 10 allowed.\"}",
+      "attempts": 0,
+      "error": null,
       "history": [
         {
           "at": "2026-10-03T13:19:01.000Z",
@@ -17,18 +17,25 @@
           "to": "FAILED",
           "run": "37125750133",
           "evidence": "create_scheduled rejected: http=200 {\"message\": \"Scheduled posts limit reached. You have 10 scheduled posts out of 10 allowed.\"}"
+        },
+        {
+          "at": "2026-10-03T13:22:41.000Z",
+          "from": "FAILED",
+          "to": "NONE",
+          "run": "37125957496",
+          "evidence": "quota rejection created nothing (no matching post in Buffer); eligible for top-up"
         }
       ]
     },
     "youtube": {
-      "state": "FAILED",
+      "state": "NONE",
       "post_id": null,
       "due_at": null,
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
-      "attempts": 1,
-      "error": "http=200 {\"message\": \"Scheduled posts limit reached. You have 10 scheduled posts out of 10 allowed.\"}",
+      "attempts": 0,
+      "error": null,
       "history": [
         {
           "at": "2026-10-03T13:19:01.000Z",
@@ -36,6 +43,13 @@
           "to": "FAILED",
           "run": "37125750133",
           "evidence": "create_scheduled rejected: http=200 {\"message\": \"Scheduled posts limit reached. You have 10 scheduled posts out of 10 allowed.\"}"
+        },
+        {
+          "at": "2026-10-03T13:22:41.000Z",
+          "from": "FAILED",
+          "to": "NONE",
+          "run": "37125957496",
+          "evidence": "quota rejection created nothing (no matching post in Buffer); eligible for top-up"
         }
       ]
     }

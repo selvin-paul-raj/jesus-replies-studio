@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-10-03T13:22:41.613334+00:00",
+  "slots": [
+    "08:00",
+    "20:30"
+  ],
+  "decision_rule": "7-day checkpoint medians per platform once each slot has >= 7 publications",
+  "audience_activity": {
+    "youtube": "UNAVAILABLE: 'When your viewers are on YouTube' is not exposed through Buffer; needs a YouTube Analytics connection",
+    "instagram": "UNAVAILABLE: follower online-times are not exposed through Buffer; historical post performance used instead"
+  },
+  "platforms": {
+    "instagram": {
+      "n_7d": {
+        "08:00": 1,
+        "20:30": 0
+      },
+      "verdict": "insufficient data"
+    },
+    "youtube": {
+      "n_7d": {
+        "08:00": 0,
+        "20:30": 2
+      },
+      "verdict": "insufficient data"
+    }
+  }
+}
