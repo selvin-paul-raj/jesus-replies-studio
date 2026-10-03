@@ -1,7 +1,7 @@
 {
   "week_start": "2026-09-28",
   "week_end": "2026-10-04",
-  "generated_at": "2026-10-03T13:05:41.656645+00:00",
+  "generated_at": "2026-10-03T13:06:48.613575+00:00",
   "planned_posts": "UNKNOWN (no content-OS plan existed for this week)",
   "published_posts": [
     {
@@ -231,7 +231,7 @@
           "median": 2273
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "sad",
       "weaker": "worried"
     },
@@ -250,7 +250,7 @@
           "median": 1664
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -273,7 +273,7 @@
           "median": 1311
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -292,7 +292,7 @@
           "median": 380.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "boy",
       "weaker": "girl"
     },
@@ -323,7 +323,7 @@
           "median": 1145.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "21:00-24:00",
       "weaker": "18:00-21:00"
     },
@@ -362,7 +362,7 @@
           "median": 1903.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     },
@@ -418,7 +418,7 @@
           "median": 11
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "sad",
       "weaker": "worried"
     },
@@ -437,7 +437,7 @@
           "median": 11
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -460,7 +460,7 @@
           "median": 6
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -479,7 +479,7 @@
           "median": 4.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "boy",
       "weaker": "girl"
     },
@@ -510,7 +510,7 @@
           "median": 5.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "21:00-24:00",
       "weaker": "18:00-21:00"
     },
@@ -549,7 +549,7 @@
           "median": 10.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     },
@@ -605,7 +605,7 @@
           "median": 21
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "sad",
       "weaker": "worried"
     },
@@ -624,7 +624,7 @@
           "median": 21
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -647,7 +647,7 @@
           "median": 14
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -666,7 +666,7 @@
           "median": 8.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "boy",
       "weaker": "girl"
     },
@@ -697,7 +697,7 @@
           "median": 10.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "21:00-24:00",
       "weaker": "18:00-21:00"
     },
@@ -736,7 +736,7 @@
           "median": 16.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     },
@@ -792,9 +792,7 @@
           "median": 2
         }
       },
-      "finding": "pattern",
-      "stronger": "worried",
-      "weaker": "worried"
+      "finding": "insufficient data"
     },
     {
       "platform": "instagram",
@@ -811,7 +809,7 @@
           "median": 2
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -834,9 +832,7 @@
           "median": 0
         }
       },
-      "finding": "pattern",
-      "stronger": "comment_question_plus_action",
-      "weaker": "comment_question_plus_action"
+      "finding": "insufficient data"
     },
     {
       "platform": "instagram",
@@ -853,9 +849,7 @@
           "median": 0.0
         }
       },
-      "finding": "pattern",
-      "stronger": "girl",
-      "weaker": "girl"
+      "finding": "insufficient data"
     },
     {
       "platform": "instagram",
@@ -884,9 +878,7 @@
           "median": 1.0
         }
       },
-      "finding": "pattern",
-      "stronger": "09:00-12:00",
-      "weaker": "09:00-12:00"
+      "finding": "insufficient data"
     },
     {
       "platform": "instagram",
@@ -923,9 +915,7 @@
           "median": 2.0
         }
       },
-      "finding": "pattern",
-      "stronger": "Tuesday",
-      "weaker": "Tuesday"
+      "finding": "insufficient data"
     },
     {
       "platform": "instagram",
@@ -979,9 +969,7 @@
           "median": 0
         }
       },
-      "finding": "pattern",
-      "stronger": "worried",
-      "weaker": "worried"
+      "finding": "insufficient data"
     },
     {
       "platform": "instagram",
@@ -998,9 +986,7 @@
           "median": 0
         }
       },
-      "finding": "pattern",
-      "stronger": "full_arc_two_pushbacks",
-      "weaker": "full_arc_two_pushbacks"
+      "finding": "insufficient data"
     },
     {
       "platform": "instagram",
@@ -1021,9 +1007,7 @@
           "median": 0
         }
       },
-      "finding": "pattern",
-      "stronger": "comment_question_plus_action",
-      "weaker": "comment_question_plus_action"
+      "finding": "insufficient data"
     },
     {
       "platform": "instagram",
@@ -1040,9 +1024,7 @@
           "median": 0.0
         }
       },
-      "finding": "pattern",
-      "stronger": "girl",
-      "weaker": "girl"
+      "finding": "insufficient data"
     },
     {
       "platform": "instagram",
@@ -1071,9 +1053,7 @@
           "median": 0.0
         }
       },
-      "finding": "pattern",
-      "stronger": "09:00-12:00",
-      "weaker": "09:00-12:00"
+      "finding": "insufficient data"
     },
     {
       "platform": "instagram",
@@ -1110,9 +1090,7 @@
           "median": 0.0
         }
       },
-      "finding": "pattern",
-      "stronger": "Tuesday",
-      "weaker": "Tuesday"
+      "finding": "insufficient data"
     },
     {
       "platform": "instagram",
@@ -1166,7 +1144,7 @@
           "median": 282
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "sad",
       "weaker": "worried"
     },
@@ -1185,7 +1163,7 @@
           "median": 182
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -1208,7 +1186,7 @@
           "median": 143
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -1227,7 +1205,7 @@
           "median": 41.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "boy",
       "weaker": "girl"
     },
@@ -1258,7 +1236,7 @@
           "median": 142.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "21:00-24:00",
       "weaker": "18:00-21:00"
     },
@@ -1297,7 +1275,7 @@
           "median": 243.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     },
@@ -1353,7 +1331,7 @@
           "median": 2639
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "sad",
       "weaker": "worried"
     },
@@ -1372,7 +1350,7 @@
           "median": 1944
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -1395,7 +1373,7 @@
           "median": 1457
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -1414,7 +1392,7 @@
           "median": 444.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "boy",
       "weaker": "girl"
     },
@@ -1445,7 +1423,7 @@
           "median": 1340.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "21:00-24:00",
       "weaker": "18:00-21:00"
     },
@@ -1484,7 +1462,7 @@
           "median": 2179.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     },
@@ -1540,7 +1518,7 @@
           "median": 0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "sad",
       "weaker": "worried"
     },
@@ -1559,7 +1537,7 @@
           "median": 1.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -1582,7 +1560,7 @@
           "median": 1.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "reflection_statement",
       "weaker": "comment_question_plus_action"
     },
@@ -1601,7 +1579,7 @@
           "median": 2
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "girl",
       "weaker": "boy"
     },
@@ -1624,7 +1602,7 @@
           "median": 0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "18:00-21:00",
       "weaker": "21:00-24:00"
     },
@@ -1659,9 +1637,7 @@
           "median": 1.5
         }
       },
-      "finding": "pattern",
-      "stronger": "Tuesday",
-      "weaker": "Tuesday"
+      "finding": "insufficient data"
     },
     {
       "platform": "youtube",
@@ -1715,7 +1691,7 @@
           "median": 141
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "worried",
       "weaker": "sad"
     },
@@ -1734,7 +1710,7 @@
           "median": 133.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -1757,7 +1733,7 @@
           "median": 125.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -1776,7 +1752,7 @@
           "median": 47
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "girl",
       "weaker": "boy"
     },
@@ -1799,7 +1775,7 @@
           "median": 55
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "21:00-24:00",
       "weaker": "18:00-21:00"
     },
@@ -1834,7 +1810,7 @@
           "median": 160.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     },
@@ -1890,7 +1866,7 @@
           "median": 826
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "worried",
       "weaker": "sad"
     },
@@ -1909,7 +1885,7 @@
           "median": 900.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -1932,7 +1908,7 @@
           "median": 886.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -1951,7 +1927,7 @@
           "median": 342
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "boy",
       "weaker": "girl"
     },
@@ -1974,7 +1950,7 @@
           "median": 655
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "09:00-12:00",
       "weaker": "18:00-21:00"
     },
@@ -2009,7 +1985,7 @@
           "median": 1237.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     }
@@ -2046,7 +2022,7 @@
           "median": 2273
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "sad",
       "weaker": "worried"
     },
@@ -2065,7 +2041,7 @@
           "median": 1664
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -2088,7 +2064,7 @@
           "median": 1311
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -2107,7 +2083,7 @@
           "median": 380.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "boy",
       "weaker": "girl"
     },
@@ -2138,7 +2114,7 @@
           "median": 1145.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "21:00-24:00",
       "weaker": "18:00-21:00"
     },
@@ -2177,7 +2153,7 @@
           "median": 1903.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     },
@@ -2212,7 +2188,7 @@
           "median": 11
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "sad",
       "weaker": "worried"
     },
@@ -2231,7 +2207,7 @@
           "median": 11
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -2254,7 +2230,7 @@
           "median": 6
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -2273,7 +2249,7 @@
           "median": 4.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "boy",
       "weaker": "girl"
     },
@@ -2304,7 +2280,7 @@
           "median": 5.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "21:00-24:00",
       "weaker": "18:00-21:00"
     },
@@ -2343,7 +2319,7 @@
           "median": 10.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     },
@@ -2378,7 +2354,7 @@
           "median": 21
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "sad",
       "weaker": "worried"
     },
@@ -2397,7 +2373,7 @@
           "median": 21
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -2420,7 +2396,7 @@
           "median": 14
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -2439,7 +2415,7 @@
           "median": 8.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "boy",
       "weaker": "girl"
     },
@@ -2470,7 +2446,7 @@
           "median": 10.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "21:00-24:00",
       "weaker": "18:00-21:00"
     },
@@ -2509,7 +2485,7 @@
           "median": 16.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     },
@@ -2517,41 +2493,6 @@
       "platform": "instagram",
       "objective": "comments",
       "metric": "comments",
-      "dimension": "emotion",
-      "groups": {
-        "angry": {
-          "n": 2,
-          "median": 1.0
-        },
-        "worried": {
-          "n": 3,
-          "median": 0
-        },
-        "sad": {
-          "n": 5,
-          "median": 0
-        },
-        "hopeful": {
-          "n": 3,
-          "median": 0
-        },
-        "neutral": {
-          "n": 1,
-          "median": 0
-        },
-        "crying": {
-          "n": 1,
-          "median": 2
-        }
-      },
-      "finding": "pattern",
-      "stronger": "worried",
-      "weaker": "worried"
-    },
-    {
-      "platform": "instagram",
-      "objective": "comments",
-      "metric": "comments",
       "dimension": "story_type",
       "groups": {
         "full_arc_two_pushbacks": {
@@ -2563,287 +2504,9 @@
           "median": 2
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
-    },
-    {
-      "platform": "instagram",
-      "objective": "comments",
-      "metric": "comments",
-      "dimension": "cta_type",
-      "groups": {
-        "comment_question_plus_action": {
-          "n": 6,
-          "median": 0.0
-        },
-        "reflection_statement": {
-          "n": 3,
-          "median": 0
-        },
-        "comment_question": {
-          "n": 7,
-          "median": 0
-        }
-      },
-      "finding": "pattern",
-      "stronger": "comment_question_plus_action",
-      "weaker": "comment_question_plus_action"
-    },
-    {
-      "platform": "instagram",
-      "objective": "comments",
-      "metric": "comments",
-      "dimension": "character",
-      "groups": {
-        "girl": {
-          "n": 7,
-          "median": 0
-        },
-        "boy": {
-          "n": 8,
-          "median": 0.0
-        }
-      },
-      "finding": "pattern",
-      "stronger": "girl",
-      "weaker": "girl"
-    },
-    {
-      "platform": "instagram",
-      "objective": "comments",
-      "metric": "comments",
-      "dimension": "slot_window",
-      "groups": {
-        "09:00-12:00": {
-          "n": 5,
-          "median": 0
-        },
-        "18:00-21:00": {
-          "n": 3,
-          "median": 0
-        },
-        "15:00-18:00": {
-          "n": 2,
-          "median": 0.0
-        },
-        "21:00-24:00": {
-          "n": 4,
-          "median": 0.0
-        },
-        "06:00-09:00": {
-          "n": 2,
-          "median": 1.0
-        }
-      },
-      "finding": "pattern",
-      "stronger": "09:00-12:00",
-      "weaker": "09:00-12:00"
-    },
-    {
-      "platform": "instagram",
-      "objective": "comments",
-      "metric": "comments",
-      "dimension": "weekday",
-      "groups": {
-        "Wednesday": {
-          "n": 1,
-          "median": 0
-        },
-        "Tuesday": {
-          "n": 5,
-          "median": 0
-        },
-        "Monday": {
-          "n": 1,
-          "median": 0
-        },
-        "Sunday": {
-          "n": 2,
-          "median": 0.0
-        },
-        "Thursday": {
-          "n": 3,
-          "median": 0
-        },
-        "Saturday": {
-          "n": 2,
-          "median": 0.0
-        },
-        "Friday": {
-          "n": 2,
-          "median": 2.0
-        }
-      },
-      "finding": "pattern",
-      "stronger": "Tuesday",
-      "weaker": "Tuesday"
-    },
-    {
-      "platform": "instagram",
-      "objective": "follows",
-      "metric": "follows",
-      "dimension": "emotion",
-      "groups": {
-        "angry": {
-          "n": 2,
-          "median": 0.0
-        },
-        "worried": {
-          "n": 3,
-          "median": 0
-        },
-        "sad": {
-          "n": 5,
-          "median": 0
-        },
-        "hopeful": {
-          "n": 3,
-          "median": 0
-        },
-        "neutral": {
-          "n": 1,
-          "median": 0
-        },
-        "crying": {
-          "n": 1,
-          "median": 0
-        }
-      },
-      "finding": "pattern",
-      "stronger": "worried",
-      "weaker": "worried"
-    },
-    {
-      "platform": "instagram",
-      "objective": "follows",
-      "metric": "follows",
-      "dimension": "story_type",
-      "groups": {
-        "full_arc_two_pushbacks": {
-          "n": 13,
-          "median": 0
-        },
-        "one_pushback": {
-          "n": 3,
-          "median": 0
-        }
-      },
-      "finding": "pattern",
-      "stronger": "full_arc_two_pushbacks",
-      "weaker": "full_arc_two_pushbacks"
-    },
-    {
-      "platform": "instagram",
-      "objective": "follows",
-      "metric": "follows",
-      "dimension": "cta_type",
-      "groups": {
-        "comment_question_plus_action": {
-          "n": 6,
-          "median": 0.0
-        },
-        "reflection_statement": {
-          "n": 3,
-          "median": 0
-        },
-        "comment_question": {
-          "n": 7,
-          "median": 0
-        }
-      },
-      "finding": "pattern",
-      "stronger": "comment_question_plus_action",
-      "weaker": "comment_question_plus_action"
-    },
-    {
-      "platform": "instagram",
-      "objective": "follows",
-      "metric": "follows",
-      "dimension": "character",
-      "groups": {
-        "girl": {
-          "n": 7,
-          "median": 0
-        },
-        "boy": {
-          "n": 8,
-          "median": 0.0
-        }
-      },
-      "finding": "pattern",
-      "stronger": "girl",
-      "weaker": "girl"
-    },
-    {
-      "platform": "instagram",
-      "objective": "follows",
-      "metric": "follows",
-      "dimension": "slot_window",
-      "groups": {
-        "09:00-12:00": {
-          "n": 5,
-          "median": 0
-        },
-        "18:00-21:00": {
-          "n": 3,
-          "median": 0
-        },
-        "15:00-18:00": {
-          "n": 2,
-          "median": 0.0
-        },
-        "21:00-24:00": {
-          "n": 4,
-          "median": 0.0
-        },
-        "06:00-09:00": {
-          "n": 2,
-          "median": 0.0
-        }
-      },
-      "finding": "pattern",
-      "stronger": "09:00-12:00",
-      "weaker": "09:00-12:00"
-    },
-    {
-      "platform": "instagram",
-      "objective": "follows",
-      "metric": "follows",
-      "dimension": "weekday",
-      "groups": {
-        "Wednesday": {
-          "n": 1,
-          "median": 0
-        },
-        "Tuesday": {
-          "n": 5,
-          "median": 0
-        },
-        "Monday": {
-          "n": 1,
-          "median": 0
-        },
-        "Sunday": {
-          "n": 2,
-          "median": 0.0
-        },
-        "Thursday": {
-          "n": 3,
-          "median": 0
-        },
-        "Saturday": {
-          "n": 2,
-          "median": 0.0
-        },
-        "Friday": {
-          "n": 2,
-          "median": 0.0
-        }
-      },
-      "finding": "pattern",
-      "stronger": "Tuesday",
-      "weaker": "Tuesday"
     },
     {
       "platform": "instagram",
@@ -2876,7 +2539,7 @@
           "median": 282
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "sad",
       "weaker": "worried"
     },
@@ -2895,7 +2558,7 @@
           "median": 182
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -2918,7 +2581,7 @@
           "median": 143
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -2937,7 +2600,7 @@
           "median": 41.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "boy",
       "weaker": "girl"
     },
@@ -2968,7 +2631,7 @@
           "median": 142.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "21:00-24:00",
       "weaker": "18:00-21:00"
     },
@@ -3007,7 +2670,7 @@
           "median": 243.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     },
@@ -3042,7 +2705,7 @@
           "median": 2639
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "sad",
       "weaker": "worried"
     },
@@ -3061,7 +2724,7 @@
           "median": 1944
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -3084,7 +2747,7 @@
           "median": 1457
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -3103,7 +2766,7 @@
           "median": 444.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "boy",
       "weaker": "girl"
     },
@@ -3134,7 +2797,7 @@
           "median": 1340.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "21:00-24:00",
       "weaker": "18:00-21:00"
     },
@@ -3173,7 +2836,7 @@
           "median": 2179.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     },
@@ -3208,7 +2871,7 @@
           "median": 0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "sad",
       "weaker": "worried"
     },
@@ -3227,7 +2890,7 @@
           "median": 1.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -3250,7 +2913,7 @@
           "median": 1.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "reflection_statement",
       "weaker": "comment_question_plus_action"
     },
@@ -3269,7 +2932,7 @@
           "median": 2
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "girl",
       "weaker": "boy"
     },
@@ -3292,44 +2955,9 @@
           "median": 0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "18:00-21:00",
       "weaker": "21:00-24:00"
-    },
-    {
-      "platform": "youtube",
-      "objective": "comments",
-      "metric": "comments",
-      "dimension": "weekday",
-      "groups": {
-        "Tuesday": {
-          "n": 5,
-          "median": 0
-        },
-        "Monday": {
-          "n": 1,
-          "median": 0
-        },
-        "Sunday": {
-          "n": 1,
-          "median": 3
-        },
-        "Thursday": {
-          "n": 3,
-          "median": 0
-        },
-        "Saturday": {
-          "n": 2,
-          "median": 1.0
-        },
-        "Wednesday": {
-          "n": 2,
-          "median": 1.5
-        }
-      },
-      "finding": "pattern",
-      "stronger": "Tuesday",
-      "weaker": "Tuesday"
     },
     {
       "platform": "youtube",
@@ -3362,7 +2990,7 @@
           "median": 141
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "worried",
       "weaker": "sad"
     },
@@ -3381,7 +3009,7 @@
           "median": 133.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -3404,7 +3032,7 @@
           "median": 125.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -3423,7 +3051,7 @@
           "median": 47
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "girl",
       "weaker": "boy"
     },
@@ -3446,7 +3074,7 @@
           "median": 55
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "21:00-24:00",
       "weaker": "18:00-21:00"
     },
@@ -3481,7 +3109,7 @@
           "median": 160.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     },
@@ -3516,7 +3144,7 @@
           "median": 826
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "worried",
       "weaker": "sad"
     },
@@ -3535,7 +3163,7 @@
           "median": 900.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "one_pushback",
       "weaker": "full_arc_two_pushbacks"
     },
@@ -3558,7 +3186,7 @@
           "median": 886.0
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "comment_question",
       "weaker": "comment_question_plus_action"
     },
@@ -3577,7 +3205,7 @@
           "median": 342
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "boy",
       "weaker": "girl"
     },
@@ -3600,7 +3228,7 @@
           "median": 655
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "09:00-12:00",
       "weaker": "18:00-21:00"
     },
@@ -3635,7 +3263,7 @@
           "median": 1237.5
         }
       },
-      "finding": "pattern",
+      "finding": "pattern (low n, confounded by topic)",
       "stronger": "Thursday",
       "weaker": "Tuesday"
     }
@@ -3751,75 +3379,9 @@
     },
     {
       "platform": "instagram",
-      "dimension": "emotion",
-      "weaker": "worried",
-      "metric": "comments"
-    },
-    {
-      "platform": "instagram",
       "dimension": "story_type",
       "weaker": "full_arc_two_pushbacks",
       "metric": "comments"
-    },
-    {
-      "platform": "instagram",
-      "dimension": "cta_type",
-      "weaker": "comment_question_plus_action",
-      "metric": "comments"
-    },
-    {
-      "platform": "instagram",
-      "dimension": "character",
-      "weaker": "girl",
-      "metric": "comments"
-    },
-    {
-      "platform": "instagram",
-      "dimension": "slot_window",
-      "weaker": "09:00-12:00",
-      "metric": "comments"
-    },
-    {
-      "platform": "instagram",
-      "dimension": "weekday",
-      "weaker": "Tuesday",
-      "metric": "comments"
-    },
-    {
-      "platform": "instagram",
-      "dimension": "emotion",
-      "weaker": "worried",
-      "metric": "follows"
-    },
-    {
-      "platform": "instagram",
-      "dimension": "story_type",
-      "weaker": "full_arc_two_pushbacks",
-      "metric": "follows"
-    },
-    {
-      "platform": "instagram",
-      "dimension": "cta_type",
-      "weaker": "comment_question_plus_action",
-      "metric": "follows"
-    },
-    {
-      "platform": "instagram",
-      "dimension": "character",
-      "weaker": "girl",
-      "metric": "follows"
-    },
-    {
-      "platform": "instagram",
-      "dimension": "slot_window",
-      "weaker": "09:00-12:00",
-      "metric": "follows"
-    },
-    {
-      "platform": "instagram",
-      "dimension": "weekday",
-      "weaker": "Tuesday",
-      "metric": "follows"
     },
     {
       "platform": "instagram",
@@ -3925,12 +3487,6 @@
     },
     {
       "platform": "youtube",
-      "dimension": "weekday",
-      "weaker": "Tuesday",
-      "metric": "comments"
-    },
-    {
-      "platform": "youtube",
       "dimension": "emotion",
       "weaker": "sad",
       "metric": "reactions"
@@ -4011,60 +3567,6 @@
     "instagram reach (reach): 'boy' beat 'girl' on character (n=8 vs 7). Generalise the pattern, do not copy the story.",
     "instagram reach (reach): '21:00-24:00' beat '18:00-21:00' on slot_window (n=4 vs 3). Generalise the pattern, do not copy the story.",
     "instagram reach (reach): 'Thursday' beat 'Tuesday' on weekday (n=3 vs 5). Generalise the pattern, do not copy the story.",
-    "instagram shares (shares): 'sad' beat 'worried' on emotion (n=5 vs 3). Generalise the pattern, do not copy the story.",
-    "instagram shares (shares): 'one_pushback' beat 'full_arc_two_pushbacks' on story_type (n=3 vs 13). Generalise the pattern, do not copy the story.",
-    "instagram shares (shares): 'comment_question' beat 'comment_question_plus_action' on cta_type (n=7 vs 6). Generalise the pattern, do not copy the story.",
-    "instagram shares (shares): 'boy' beat 'girl' on character (n=8 vs 7). Generalise the pattern, do not copy the story.",
-    "instagram shares (shares): '21:00-24:00' beat '18:00-21:00' on slot_window (n=4 vs 3). Generalise the pattern, do not copy the story.",
-    "instagram shares (shares): 'Thursday' beat 'Tuesday' on weekday (n=3 vs 5). Generalise the pattern, do not copy the story.",
-    "instagram saves (saves): 'sad' beat 'worried' on emotion (n=5 vs 3). Generalise the pattern, do not copy the story.",
-    "instagram saves (saves): 'one_pushback' beat 'full_arc_two_pushbacks' on story_type (n=3 vs 13). Generalise the pattern, do not copy the story.",
-    "instagram saves (saves): 'comment_question' beat 'comment_question_plus_action' on cta_type (n=7 vs 6). Generalise the pattern, do not copy the story.",
-    "instagram saves (saves): 'boy' beat 'girl' on character (n=8 vs 7). Generalise the pattern, do not copy the story.",
-    "instagram saves (saves): '21:00-24:00' beat '18:00-21:00' on slot_window (n=4 vs 3). Generalise the pattern, do not copy the story.",
-    "instagram saves (saves): 'Thursday' beat 'Tuesday' on weekday (n=3 vs 5). Generalise the pattern, do not copy the story.",
-    "instagram comments (comments): 'worried' beat 'worried' on emotion (n=3 vs 3). Generalise the pattern, do not copy the story.",
-    "instagram comments (comments): 'one_pushback' beat 'full_arc_two_pushbacks' on story_type (n=3 vs 13). Generalise the pattern, do not copy the story.",
-    "instagram comments (comments): 'comment_question_plus_action' beat 'comment_question_plus_action' on cta_type (n=6 vs 6). Generalise the pattern, do not copy the story.",
-    "instagram comments (comments): 'girl' beat 'girl' on character (n=7 vs 7). Generalise the pattern, do not copy the story.",
-    "instagram comments (comments): '09:00-12:00' beat '09:00-12:00' on slot_window (n=5 vs 5). Generalise the pattern, do not copy the story.",
-    "instagram comments (comments): 'Tuesday' beat 'Tuesday' on weekday (n=5 vs 5). Generalise the pattern, do not copy the story.",
-    "instagram follows (follows): 'worried' beat 'worried' on emotion (n=3 vs 3). Generalise the pattern, do not copy the story.",
-    "instagram follows (follows): 'full_arc_two_pushbacks' beat 'full_arc_two_pushbacks' on story_type (n=13 vs 13). Generalise the pattern, do not copy the story.",
-    "instagram follows (follows): 'comment_question_plus_action' beat 'comment_question_plus_action' on cta_type (n=6 vs 6). Generalise the pattern, do not copy the story.",
-    "instagram follows (follows): 'girl' beat 'girl' on character (n=7 vs 7). Generalise the pattern, do not copy the story.",
-    "instagram follows (follows): '09:00-12:00' beat '09:00-12:00' on slot_window (n=5 vs 5). Generalise the pattern, do not copy the story.",
-    "instagram follows (follows): 'Tuesday' beat 'Tuesday' on weekday (n=5 vs 5). Generalise the pattern, do not copy the story.",
-    "instagram likes (reactions): 'sad' beat 'worried' on emotion (n=5 vs 3). Generalise the pattern, do not copy the story.",
-    "instagram likes (reactions): 'one_pushback' beat 'full_arc_two_pushbacks' on story_type (n=3 vs 13). Generalise the pattern, do not copy the story.",
-    "instagram likes (reactions): 'comment_question' beat 'comment_question_plus_action' on cta_type (n=7 vs 6). Generalise the pattern, do not copy the story.",
-    "instagram likes (reactions): 'boy' beat 'girl' on character (n=8 vs 7). Generalise the pattern, do not copy the story.",
-    "instagram likes (reactions): '21:00-24:00' beat '18:00-21:00' on slot_window (n=4 vs 3). Generalise the pattern, do not copy the story.",
-    "instagram likes (reactions): 'Thursday' beat 'Tuesday' on weekday (n=3 vs 5). Generalise the pattern, do not copy the story.",
-    "instagram views (views): 'sad' beat 'worried' on emotion (n=5 vs 3). Generalise the pattern, do not copy the story.",
-    "instagram views (views): 'one_pushback' beat 'full_arc_two_pushbacks' on story_type (n=3 vs 13). Generalise the pattern, do not copy the story.",
-    "instagram views (views): 'comment_question' beat 'comment_question_plus_action' on cta_type (n=7 vs 6). Generalise the pattern, do not copy the story.",
-    "instagram views (views): 'boy' beat 'girl' on character (n=8 vs 7). Generalise the pattern, do not copy the story.",
-    "instagram views (views): '21:00-24:00' beat '18:00-21:00' on slot_window (n=4 vs 3). Generalise the pattern, do not copy the story.",
-    "instagram views (views): 'Thursday' beat 'Tuesday' on weekday (n=3 vs 5). Generalise the pattern, do not copy the story.",
-    "youtube comments (comments): 'sad' beat 'worried' on emotion (n=4 vs 4). Generalise the pattern, do not copy the story.",
-    "youtube comments (comments): 'one_pushback' beat 'full_arc_two_pushbacks' on story_type (n=4 vs 10). Generalise the pattern, do not copy the story.",
-    "youtube comments (comments): 'reflection_statement' beat 'comment_question_plus_action' on cta_type (n=3 vs 5). Generalise the pattern, do not copy the story.",
-    "youtube comments (comments): 'girl' beat 'boy' on character (n=5 vs 8). Generalise the pattern, do not copy the story.",
-    "youtube comments (comments): '18:00-21:00' beat '21:00-24:00' on slot_window (n=5 vs 6). Generalise the pattern, do not copy the story.",
-    "youtube comments (comments): 'Tuesday' beat 'Tuesday' on weekday (n=5 vs 5). Generalise the pattern, do not copy the story.",
-    "youtube likes (reactions): 'worried' beat 'sad' on emotion (n=4 vs 4). Generalise the pattern, do not copy the story.",
-    "youtube likes (reactions): 'one_pushback' beat 'full_arc_two_pushbacks' on story_type (n=4 vs 10). Generalise the pattern, do not copy the story.",
-    "youtube likes (reactions): 'comment_question' beat 'comment_question_plus_action' on cta_type (n=6 vs 5). Generalise the pattern, do not copy the story.",
-    "youtube likes (reactions): 'girl' beat 'boy' on character (n=5 vs 8). Generalise the pattern, do not copy the story.",
-    "youtube likes (reactions): '21:00-24:00' beat '18:00-21:00' on slot_window (n=6 vs 5). Generalise the pattern, do not copy the story.",
-    "youtube likes (reactions): 'Thursday' beat 'Tuesday' on weekday (n=3 vs 5). Generalise the pattern, do not copy the story.",
-    "youtube views (views): 'worried' beat 'sad' on emotion (n=4 vs 4). Generalise the pattern, do not copy the story.",
-    "youtube views (views): 'one_pushback' beat 'full_arc_two_pushbacks' on story_type (n=4 vs 10). Generalise the pattern, do not copy the story.",
-    "youtube views (views): 'comment_question' beat 'comment_question_plus_action' on cta_type (n=6 vs 5). Generalise the pattern, do not copy the story.",
-    "youtube views (views): 'boy' beat 'girl' on character (n=8 vs 5). Generalise the pattern, do not copy the story.",
-    "youtube views (views): '09:00-12:00' beat '18:00-21:00' on slot_window (n=3 vs 5). Generalise the pattern, do not copy the story.",
-    "youtube views (views): 'Thursday' beat 'Tuesday' on weekday (n=3 vs 5). Generalise the pattern, do not copy the story.",
     "Keep at most two variables under test (hook type, slot); hold emotion, CTA and duration steady."
   ]
 }
