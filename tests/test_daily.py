@@ -320,6 +320,22 @@ class T14Redaction(Base):
             del os.environ["BUFFER_API_KEY"]
 
 
+class T16GenerationBlockReopen(Base):
+    def test_unauthored_blocks_then_resumes_once_authored(self):
+        f = self.root / "generated/JR-0002.json"; body = f.read_text(); f.unlink()
+        st = pl.advance(self.ctx, "JR-0002")
+        self.assertEqual((st["state"], st["generation"]), ("BLOCKED", "BLOCKED"))
+        f.write_text(body)
+        self.assertEqual(pl.advance(self.ctx, "JR-0002")["state"], "WAITING_FOR_USER")
+
+    def test_other_blocks_do_not_reopen(self):
+        self.ctx = self.make_ctx(fetch=lambda ref: None)
+        pl.advance(self.ctx, "JR-0002")
+        self.ctx = self.make_ctx()
+        self.assertEqual(pl.advance(self.ctx, "JR-0002")["state"], "BLOCKED")
+        self.assertEqual(self.buf.creates, 0)
+
+
 class T15DryRun(Base):
     def test_dry_run_never_mutates(self):
         dry = self.make_ctx(dry_run=True)

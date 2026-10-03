@@ -436,6 +436,7 @@ def advance(ctx, eid):
         return None
     try:
         st = ctx.store.load(eid)
+        st = _reopen_generation_block(ctx, st)
         chain = [(states.NEW, step_generated), ("GENERATED", step_validated), ("VALIDATED", step_rendered),
                  ("RENDERED", step_render_qa), ("RENDER_QA_PASSED", step_packaged), ("PACKAGED", step_package_qa),
                  ("PACKAGE_QA_PASSED", step_hosted), ("ASSET_HOSTED", step_buffer_draft)]
@@ -451,6 +452,21 @@ def advance(ctx, eid):
         return st
     finally:
         ctx.store.release(eid, ctx.run_id)
+
+
+def _reopen_generation_block(ctx, st):
+    """An episode BLOCKED only because it was not yet authored re-enters at NEW once the
+    file exists. Never applies after any later stage or any Buffer activity."""
+    B = st["buffer"]
+    if (st["state"] == "BLOCKED" and st["generation"] == "BLOCKED" and st["history"]
+            and st["history"][-1]["from"] == states.NEW and not B.get("post_id")
+            and not B.get("pending_mutation") and ctx.ep_path(st["episode_id"]).is_file()):
+        ts = now_iso()
+        st["history"].append({"at": ts, "from": "BLOCKED", "to": states.NEW, "run": ctx.run_id,
+                              "evidence": f"reopen: generated/{st['episode_id']}.json now authored"})
+        st["state"], st["generation"], st["updated_at"] = states.NEW, "NOT_STARTED", ts
+        ctx.store.save(st)
+    return st
 
 
 def _title(ctx, eid):
