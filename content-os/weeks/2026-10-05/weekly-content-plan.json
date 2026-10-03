@@ -3,7 +3,7 @@
   "week_start": "2026-10-05",
   "week_end": "2026-10-11",
   "timezone": "Asia/Kolkata",
-  "generated_at": "2026-10-03T13:06:48.000Z",
+  "generated_at": "2026-10-03T13:18:28.000Z",
   "status": "PROPOSED",
   "requires_authorization": true,
   "targets": {
@@ -225,15 +225,15 @@
       "date": "2026-10-05",
       "weekday": "Monday",
       "slot": 2,
-      "time": "21:00",
+      "time": "20:30",
       "timezone": "Asia/Kolkata",
       "platform_times": {
-        "instagram": "21:00",
-        "youtube": "21:00"
+        "instagram": "20:30",
+        "youtube": "20:30"
       },
       "due_at": {
-        "instagram": "2026-10-05T15:30:00.000Z",
-        "youtube": "2026-10-05T15:30:00.000Z"
+        "instagram": "2026-10-05T15:00:00.000Z",
+        "youtube": "2026-10-05T15:00:00.000Z"
       },
       "slot_confidence": "low",
       "slot_status": "evidence_informed",
@@ -305,15 +305,15 @@
       "date": "2026-10-06",
       "weekday": "Tuesday",
       "slot": 2,
-      "time": "21:00",
+      "time": "20:30",
       "timezone": "Asia/Kolkata",
       "platform_times": {
-        "instagram": "21:00",
-        "youtube": "21:00"
+        "instagram": "20:30",
+        "youtube": "20:30"
       },
       "due_at": {
-        "instagram": "2026-10-06T15:30:00.000Z",
-        "youtube": "2026-10-06T15:30:00.000Z"
+        "instagram": "2026-10-06T15:00:00.000Z",
+        "youtube": "2026-10-06T15:00:00.000Z"
       },
       "slot_confidence": "low",
       "slot_status": "evidence_informed",
@@ -385,15 +385,15 @@
       "date": "2026-10-07",
       "weekday": "Wednesday",
       "slot": 2,
-      "time": "21:00",
+      "time": "20:30",
       "timezone": "Asia/Kolkata",
       "platform_times": {
-        "instagram": "21:00",
-        "youtube": "21:00"
+        "instagram": "20:30",
+        "youtube": "20:30"
       },
       "due_at": {
-        "instagram": "2026-10-07T15:30:00.000Z",
-        "youtube": "2026-10-07T15:30:00.000Z"
+        "instagram": "2026-10-07T15:00:00.000Z",
+        "youtube": "2026-10-07T15:00:00.000Z"
       },
       "slot_confidence": "low",
       "slot_status": "evidence_informed",
@@ -465,15 +465,15 @@
       "date": "2026-10-08",
       "weekday": "Thursday",
       "slot": 2,
-      "time": "21:00",
+      "time": "20:30",
       "timezone": "Asia/Kolkata",
       "platform_times": {
-        "instagram": "21:00",
-        "youtube": "21:00"
+        "instagram": "20:30",
+        "youtube": "20:30"
       },
       "due_at": {
-        "instagram": "2026-10-08T15:30:00.000Z",
-        "youtube": "2026-10-08T15:30:00.000Z"
+        "instagram": "2026-10-08T15:00:00.000Z",
+        "youtube": "2026-10-08T15:00:00.000Z"
       },
       "slot_confidence": "low",
       "slot_status": "evidence_informed",
@@ -545,15 +545,15 @@
       "date": "2026-10-09",
       "weekday": "Friday",
       "slot": 2,
-      "time": "21:00",
+      "time": "20:30",
       "timezone": "Asia/Kolkata",
       "platform_times": {
-        "instagram": "21:00",
-        "youtube": "21:00"
+        "instagram": "20:30",
+        "youtube": "20:30"
       },
       "due_at": {
-        "instagram": "2026-10-09T15:30:00.000Z",
-        "youtube": "2026-10-09T15:30:00.000Z"
+        "instagram": "2026-10-09T15:00:00.000Z",
+        "youtube": "2026-10-09T15:00:00.000Z"
       },
       "slot_confidence": "low",
       "slot_status": "evidence_informed",
@@ -625,15 +625,15 @@
       "date": "2026-10-10",
       "weekday": "Saturday",
       "slot": 2,
-      "time": "21:00",
+      "time": "20:30",
       "timezone": "Asia/Kolkata",
       "platform_times": {
-        "instagram": "21:00",
-        "youtube": "21:00"
+        "instagram": "20:30",
+        "youtube": "20:30"
       },
       "due_at": {
-        "instagram": "2026-10-10T15:30:00.000Z",
-        "youtube": "2026-10-10T15:30:00.000Z"
+        "instagram": "2026-10-10T15:00:00.000Z",
+        "youtube": "2026-10-10T15:00:00.000Z"
       },
       "slot_confidence": "low",
       "slot_status": "evidence_informed",
@@ -705,15 +705,15 @@
       "date": "2026-10-11",
       "weekday": "Sunday",
       "slot": 2,
-      "time": "21:00",
+      "time": "20:30",
       "timezone": "Asia/Kolkata",
       "platform_times": {
-        "instagram": "21:00",
-        "youtube": "21:00"
+        "instagram": "20:30",
+        "youtube": "20:30"
       },
       "due_at": {
-        "instagram": "2026-10-11T15:30:00.000Z",
-        "youtube": "2026-10-11T15:30:00.000Z"
+        "instagram": "2026-10-11T15:00:00.000Z",
+        "youtube": "2026-10-11T15:00:00.000Z"
       },
       "slot_confidence": "low",
       "slot_status": "evidence_informed",
@@ -741,5 +741,5 @@
       ]
     }
   ],
-  "plan_sha256": "1715311fa9de383aaef87c48d2050ec2bee766cf2bdddae44214f713b1414ded"
+  "plan_sha256": "a113a3f2180e5ab9a288d6d1ccd8049391db2682a02c6a93e9626644925e7bd3"
 }

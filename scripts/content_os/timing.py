@@ -65,7 +65,7 @@ def recommend(rows, cfg):
                       "platform_times": {p: t for p in cfg["platforms"]},
                       "status": "experimental" if best_conf == "insufficient" else "evidence_informed",
                       "confidence": best_conf if best_conf != "insufficient" else "insufficient data",
-                      "evidence": ["test slot carried from the 2026-10-02 build brief",
+                      "evidence": ["test slot set by Selvin on 2026-10-03",
                                    "own-account comparison too thin to override it (see analysis)"]})
     return {"slots": slots, "analysis": an, "hypotheses": hypotheses,
             "coordination": cfg.get("coordination", "same_slot"),

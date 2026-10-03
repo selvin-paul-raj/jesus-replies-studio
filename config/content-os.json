@@ -9,13 +9,13 @@
   "autonomy": {
     "weekly_plan_approval": true,
     "per_post_approval": false,
-    "scheduler_enabled": false,
-    "_why": "scheduler_enabled stays false until a week is authorized; the cron lines in jr-content-os.yml are commented out until then"
+    "scheduler_enabled": true,
+    "_why": "enabled 2026-10-03 after Selvin authorized week 2026-10-05 and asked for an autonomous weekly loop"
   },
   "coordination": "same_slot",
   "initial_test_slots": [
     "08:00",
-    "21:00"
+    "20:30"
   ],
   "min_lead_minutes": 45,
   "publish_grace_minutes": 30,
@@ -96,5 +96,6 @@
     24,
     72,
     168
-  ]
+  ],
+  "slot_note": "TEST SLOTS chosen by Selvin on 2026-10-03 (08:00 vs 20:30 IST, same slot on Instagram and YouTube). Not 'best times' until account evidence is sufficient."
 }

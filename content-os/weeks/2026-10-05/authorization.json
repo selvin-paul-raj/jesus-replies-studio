@@ -1,0 +1,14 @@
+{
+  "week_start": "2026-10-05",
+  "plan_sha256": "a113a3f2180e5ab9a288d6d1ccd8049391db2682a02c6a93e9626644925e7bd3",
+  "authorized_by": "Selvin PaulRaj K (chat, 2026-10-03 18:48 IST)",
+  "quote": "Use the current weekly batch, but change the experimental publishing slots to: 08:00 IST 20:30 IST for both Instagram and YouTube. Treat these as TEST SLOTS, not best times. Keep the same episode mapped to Instagram + YouTube. ... Keep the weekly batch -> scheduling -> publication -> analytics -> next-week learning loop autonomous.",
+  "at": "2026-10-03T13:18:41.729088+00:00",
+  "scope": {
+    "platforms": [
+      "instagram",
+      "youtube"
+    ],
+    "slots": 14
+  }
+}
