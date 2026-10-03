@@ -2,26 +2,42 @@
   "episode_id": "JR-0031",
   "platforms": {
     "instagram": {
-      "state": "NONE",
+      "state": "FAILED",
       "post_id": null,
       "due_at": null,
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
-      "attempts": 0,
-      "error": null,
-      "history": []
+      "attempts": 1,
+      "error": "http=200 {\"message\": \"Scheduled posts limit reached. You have 10 scheduled posts out of 10 allowed.\"}",
+      "history": [
+        {
+          "at": "2026-10-03T13:19:01.000Z",
+          "from": "NONE",
+          "to": "FAILED",
+          "run": "37125750133",
+          "evidence": "create_scheduled rejected: http=200 {\"message\": \"Scheduled posts limit reached. You have 10 scheduled posts out of 10 allowed.\"}"
+        }
+      ]
     },
     "youtube": {
-      "state": "NONE",
+      "state": "FAILED",
       "post_id": null,
       "due_at": null,
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
-      "attempts": 0,
-      "error": null,
-      "history": []
+      "attempts": 1,
+      "error": "http=200 {\"message\": \"Scheduled posts limit reached. You have 10 scheduled posts out of 10 allowed.\"}",
+      "history": [
+        {
+          "at": "2026-10-03T13:19:01.000Z",
+          "from": "NONE",
+          "to": "FAILED",
+          "run": "37125750133",
+          "evidence": "create_scheduled rejected: http=200 {\"message\": \"Scheduled posts limit reached. You have 10 scheduled posts out of 10 allowed.\"}"
+        }
+      ]
     }
   }
 }

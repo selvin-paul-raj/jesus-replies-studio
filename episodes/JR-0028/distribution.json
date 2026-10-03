@@ -2,26 +2,42 @@
   "episode_id": "JR-0028",
   "platforms": {
     "instagram": {
-      "state": "NONE",
-      "post_id": null,
-      "due_at": null,
+      "state": "SCHEDULED",
+      "post_id": "6ac100d6fec5913394774a84",
+      "due_at": "2026-10-09T02:30:00.000Z",
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
-      "attempts": 0,
+      "attempts": 1,
       "error": null,
-      "history": []
+      "history": [
+        {
+          "at": "2026-10-03T13:19:01.000Z",
+          "from": "NONE",
+          "to": "SCHEDULED",
+          "run": "37125750133",
+          "evidence": "create_scheduled read back: scheduled 2026-10-09T02:30:00.000Z"
+        }
+      ]
     },
     "youtube": {
-      "state": "NONE",
-      "post_id": null,
-      "due_at": null,
+      "state": "SCHEDULED",
+      "post_id": "6ac100d73bfd38430fe20b2e",
+      "due_at": "2026-10-09T02:30:00.000Z",
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
-      "attempts": 0,
+      "attempts": 1,
       "error": null,
-      "history": []
+      "history": [
+        {
+          "at": "2026-10-03T13:19:01.000Z",
+          "from": "NONE",
+          "to": "SCHEDULED",
+          "run": "37125750133",
+          "evidence": "create_scheduled read back: scheduled 2026-10-09T02:30:00.000Z"
+        }
+      ]
     }
   }
 }
