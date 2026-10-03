@@ -1,0 +1,51 @@
+{
+  "episode_id": "JR-0037",
+  "state": "BLOCKED",
+  "updated_at": "2026-10-03T12:29:25Z",
+  "slot": null,
+  "target_date": null,
+  "generation": "BLOCKED",
+  "validation": "NOT_STARTED",
+  "render": "NOT_STARTED",
+  "render_qa": "NOT_STARTED",
+  "package": "NOT_STARTED",
+  "package_qa": "NOT_STARTED",
+  "asset_hosting": "NOT_STARTED",
+  "asset_url": null,
+  "render_facts": {},
+  "buffer": {
+    "post_id": null,
+    "status": null,
+    "due_at": null,
+    "sent_at": null,
+    "pending_mutation": null
+  },
+  "approval": {
+    "status": "NOT_REQUESTED",
+    "approved_at": null,
+    "approved_by": null,
+    "slot_local": null,
+    "due_at": null,
+    "evidence": null
+  },
+  "verification": {
+    "status": "NOT_VERIFIED",
+    "verified_at": null
+  },
+  "errors": [
+    {
+      "at": "2026-10-03T12:29:25Z",
+      "state": "BLOCKED",
+      "detail": "generated/JR-0037.json not authored. Dialogue authoring needs a model call and no credential is wired into this workflow."
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-10-03T12:29:25Z",
+      "from": "NEW",
+      "to": "BLOCKED",
+      "run": "37122996095",
+      "evidence": "generated/JR-0037.json not authored. Dialogue authoring needs a model call and no credential is wired into this workflow."
+    }
+  ]
+}
