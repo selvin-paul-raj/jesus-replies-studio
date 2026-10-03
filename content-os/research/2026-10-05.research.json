@@ -1,0 +1,24 @@
+{
+  "week_start": "2026-10-05",
+  "compiled_at": "2026-10-03",
+  "_rule": "External research says what the wider ecosystem does. It never overrides own-account analytics; disagreements are recorded.",
+  "findings": [
+    {"claim": "Nearly 1 in 3 Gen Z (29%) report frequently feeling lonely; 39% frequently feel anxiety about important decisions.",
+     "type": "SOURCE_CLAIM", "source": "Barna Group, Gen Z emotions (2025)", "url": "https://www.barna.com/trends/gen-z-emotions/"},
+    {"claim": "Gen Z report rising anxiety, loneliness, self-doubt and a desire for authentic connection.",
+     "type": "SOURCE_CLAIM", "source": "Gloo/Barna State of the Church release via RNS (May 2025)", "url": "https://religionnews.com/2025/05/14/new-research-highlights-trends-in-gen-z-mental-health/"},
+    {"claim": "Instagram's head named watch time, sends per reach and likes per reach as the top ranking signals (Jan 2025); sends matter more for non-follower reach. No weights published.",
+     "type": "SOURCE_CLAIM", "source": "Secondary summaries of Adam Mosseri, Jan 2025", "url": "https://keywordseverywhere.com/news/instagram-algorithm-updates/"},
+    {"claim": "Since 31 Mar 2025 any YouTube Shorts play counts as a view; engaged views, viewed-vs-swiped and average % viewed are the quality measures.",
+     "type": "SOURCE_CLAIM", "source": "vidIQ / Shortimize summaries", "url": "https://www.shortimize.com/blog/youtube-shorts-retention-rate"},
+    {"claim": "World Mental Health Day is 10 Oct 2026, theme 'Lived experiences heard: real voices, real change'.",
+     "type": "SOURCE_CLAIM", "source": "WHO", "url": "https://www.who.int/campaigns/world-mental-health-day"}
+  ],
+  "opportunities": [
+    {"opportunity": "Loneliness and decision anxiety as specific human moments (eating alone at a hostel, choosing a course or job).", "type": "INFERENCE", "from": ["Barna 2025"]},
+    {"opportunity": "Sat 10 Oct: a lived-experience episode on mental health, written as one real moment, no clinical framing.", "type": "INFERENCE", "from": ["WHO WMHD 2026"]},
+    {"opportunity": "Write lines viewers would send to one specific friend (DM-share moments); measure shares/sends where Buffer exposes them.", "type": "INFERENCE", "from": ["Mosseri signals"]},
+    {"opportunity": "Judge YouTube on retention metrics, not raw views, because raw Shorts views were inflated by the 2025 change.", "type": "INFERENCE", "from": ["Shorts view change"]}
+  ],
+  "disagreements_with_account_data": []
+}

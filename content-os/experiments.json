@@ -1,0 +1,15 @@
+{
+  "_rule": "At most two variables under test at once. Everything else is held steady.",
+  "experiments": [
+    {"id": "EXP-001", "status": "active", "variable": "hook_type",
+     "hypothesis": "A confession/statement hook holds viewers longer than a question hook.",
+     "control": "question", "variant": "confession_statement or statement",
+     "metrics": ["averageTimeWatched", "reach", "shares"], "min_n_per_arm": 4, "result": null},
+    {"id": "EXP-002", "status": "active", "variable": "release_slot",
+     "hypothesis": "Slot 1 (08:00 IST) and slot 2 (21:00 IST) differ in reach per post.",
+     "control": "slot1", "variant": "slot2", "metrics": ["reach", "views"], "min_n_per_arm": 7, "result": null},
+    {"id": "EXP-003", "status": "proposed", "variable": "cta_type",
+     "hypothesis": "A comment question plus a small action beats a comment question alone on comments.",
+     "control": "comment_question", "variant": "comment_question_plus_action", "metrics": ["comments"], "min_n_per_arm": 4, "result": null}
+  ]
+}

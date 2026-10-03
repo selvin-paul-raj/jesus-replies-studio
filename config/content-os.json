@@ -1,0 +1,32 @@
+{
+  "_note": "Content OS settings. Ids only; the Buffer key lives only in secrets.BUFFER_API_KEY.",
+  "timezone": "Asia/Kolkata",
+  "videos_per_day": 2,
+  "platforms": ["instagram", "youtube"],
+  "autonomy": {
+    "weekly_plan_approval": true,
+    "per_post_approval": false,
+    "scheduler_enabled": false,
+    "_why": "scheduler_enabled stays false until a week is authorized; the cron lines in jr-content-os.yml are commented out until then"
+  },
+  "coordination": "same_slot",
+  "initial_test_slots": ["08:00", "21:00"],
+  "min_lead_minutes": 45,
+  "publish_grace_minutes": 30,
+  "duration_ceiling_seconds": 90,
+  "duration_note": "90s is the Buffer Instagram Reels ceiling. The old 70-80s target is no longer an optimisation goal.",
+  "held_episodes": {"JR-0035": "existing resource; not modified without explicit authorization", "JR-0036": "existing draft; not modified without explicit authorization"},
+  "pinned_first": ["JR-0037"],
+  "youtube": {"privacy": "public", "category_id": null, "made_for_kids": false, "notify_subscribers": true},
+  "metric_priority": [
+    ["reach", ["reach", "viewers", "impressions"]],
+    ["retention", ["averageTimeWatched", "totalTimeWatched"]],
+    ["shares", ["shares", "reposts", "sends"]],
+    ["saves", ["saves"]],
+    ["comments", ["comments"]],
+    ["follows", ["follows", "freeSubscriptions"]],
+    ["likes", ["likes", "reactions"]],
+    ["views", ["views"]]
+  ],
+  "checkpoints_hours": [24, 72, 168]
+}
