@@ -1,11 +1,11 @@
 name: JR content OS
 # Weekly brain + daily verification for Jesus Replies.
-# Autonomous cadence is OFF. Uncomment only after Selvin authorizes it:
-# on:
-#   schedule:
-#     - cron: '30 12 * * 6'   # Sat 18:00 IST: weekly (snapshot, plan, report, schedule dry run)
-#     - cron: '0 */6 * * *'   # every 6h: verify publications + metrics snapshot
+# Autonomous cadence ON since 2026-10-03 (Selvin: "Keep the weekly batch -> scheduling -> publication
+# -> analytics -> next-week learning loop autonomous.").
 on:
+  schedule:
+    - cron: '30 12 * * 6'   # Sat 18:00 IST: weekly brain for next Monday (snapshot, plan, report, schedule if all READY)
+    - cron: '15 */6 * * *'  # every 6h: snapshot + metrics checkpoints + verify publications + quota top-up
   workflow_dispatch:
     inputs:
       command:
@@ -44,10 +44,14 @@ jobs:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           CMD: ${{ inputs.command }}
           WEEK: ${{ inputs.week_start }}
+          SCHED: ${{ github.event.schedule }}
           DRY: ${{ inputs.dry_run }}
           EP: ${{ inputs.episode }}
           PL: ${{ inputs.platform }}
         run: |
+          if [ -z "$CMD" ]; then
+            if [ "$SCHED" = "30 12 * * 6" ]; then CMD=weekly; WEEK=$(TZ=Asia/Kolkata date -d 'next monday' +%F); else CMD=cycle; fi
+          fi
           args="$CMD"
           [ -n "$WEEK" ] && args="$args --week $WEEK"
           [ "$DRY" = "true" ] && { [ "$CMD" = "schedule" ] || [ "$CMD" = "hold" ]; } && args="$args --dry-run"
@@ -60,5 +64,5 @@ jobs:
           git config user.email "115263986+selvin-paul-raj@users.noreply.github.com"
           git add content-os episodes generated/attributes 2>/dev/null || true
           git diff --cached --quiet && exit 0
-          git commit -m "automation: content OS ${{ inputs.command }} ${{ github.run_id }} [skip ci]"
+          git commit -m "automation: content OS ${{ inputs.command || github.event.schedule }} ${{ github.run_id }} [skip ci]"
           git pull --rebase -q && git push

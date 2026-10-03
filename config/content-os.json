@@ -7,10 +7,15 @@
     "youtube"
   ],
   "autonomy": {
-    "weekly_plan_approval": true,
+    "weekly_plan_approval": false,
     "per_post_approval": false,
     "scheduler_enabled": true,
-    "_why": "enabled 2026-10-03 after Selvin authorized week 2026-10-05 and asked for an autonomous weekly loop"
+    "_why": "enabled 2026-10-03 after Selvin authorized week 2026-10-05 and asked for an autonomous weekly loop",
+    "standing_authorization": {
+      "given": "2026-10-03 18:48 IST, Selvin in chat",
+      "quote": "Keep the weekly batch -> scheduling -> publication -> analytics -> next-week learning loop autonomous.",
+      "applies_when": "a weekly plan whose every slot is READY (hosted, QA PASS) with no generation pending"
+    }
   },
   "coordination": "same_slot",
   "initial_test_slots": [

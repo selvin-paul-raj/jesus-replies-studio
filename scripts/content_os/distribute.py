@@ -263,6 +263,8 @@ class Distributor:
                 r, blk = self.schedule(slot["episode_id"], platform, due, ctx)
                 results.append({"episode_id": slot["episode_id"], "platform": platform, "due_at": due,
                                 "result": r, "state": blk["state"], "post_id": blk["post_id"]})
+                if r == "QUOTA_DEFERRED":
+                    continue
                 if r == "STOP":
                     return {"status": "STOPPED", "reason": f"{slot['episode_id']} {platform} unresolved", "results": results}
         return {"status": "DRY_RUN" if self.dry else "DONE", "results": results}

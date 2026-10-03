@@ -274,5 +274,21 @@ class T10Quota(Base):
         self.assertEqual((r, self.buf.creates), ("SCHEDULED", 1))
 
 
+
+class T11Ledger(unittest.TestCase):
+    def test_ledger_fields_slot_labels_and_unavailable(self):
+        from content_os import ledger
+        rows = [{"episode_id": "E1", "status": "sent", "sent_at": "2026-10-05T15:01:00Z", "platform": "youtube",
+                 "post_id": "Y1", "age_hours": 30, "metrics": {"views": 9, "reactions": 1}, "external_link": "l"}]
+        hist = {"youtube:Y1": {"checkpoints": {"24h": {"metrics": {"views": 7}, "observed_age_hours": 25}}}}
+        c = dict(CFG, initial_test_slots=["08:00", "20:30"])
+        led = ledger.build(rows, hist, {"E1": {"theme": "t", "hook_type": "question", "emotion": "sad", "bible_theme": "John 1:1"}}, c)
+        l = led[0]
+        self.assertEqual((l["slot"], l["publication_time"], l["latest"]["reach"], l["checkpoints"]["24h"]["views"],
+                          l["checkpoints"]["72h"]), ("20:30", "20:31", "UNAVAILABLE", 7, "NOT_YET"))
+        st = ledger.slot_test(led, c)
+        self.assertEqual(st["platforms"]["youtube"]["verdict"], "insufficient data")
+
+
 if __name__ == "__main__":
     unittest.main()
