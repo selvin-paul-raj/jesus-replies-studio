@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0010",
+  "theme": "courage",
+  "emotion": "hopeful",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus... why did David fight Goliath? He was just a young shepherd!",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "courage",
+  "bible_theme": "1 Samuel 16:7",
+  "bible_book": "1 Samuel",
+  "cta_type": "comment_question",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

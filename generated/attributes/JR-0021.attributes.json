@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0021",
+  "theme": "contentment",
+  "emotion": "neutral",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... I finally got the thing I begged You for. Why do I feel nothing?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "contentment",
+  "bible_theme": "Philippians 4:12-13",
+  "bible_book": "Philippians",
+  "cta_type": "comment_question_plus_action",
+  "duration": 84.33,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0021.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

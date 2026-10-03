@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0013",
+  "theme": "faith",
+  "emotion": "hopeful",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus... how do I get closer to You when I keep messing up the same way?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "faith",
+  "bible_theme": "James 4:8",
+  "bible_book": "James",
+  "cta_type": "reflection_statement",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

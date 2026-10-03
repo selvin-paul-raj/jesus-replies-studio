@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0028",
+  "theme": "shame over a secret",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus, what if You knew what I actually did?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "shame over a secret",
+  "bible_theme": "1 John 1:9",
+  "bible_book": "1 John",
+  "cta_type": "none",
+  "duration": 59.56,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0028.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

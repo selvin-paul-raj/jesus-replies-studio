@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0009",
+  "theme": "waiting",
+  "emotion": "hopeful",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... how long do I have to wait for this?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "waiting",
+  "bible_theme": "Habakkuk 2:3",
+  "bible_book": "Habakkuk",
+  "cta_type": "comment_question",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

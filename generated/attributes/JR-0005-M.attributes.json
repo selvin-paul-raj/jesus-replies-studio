@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0005-M",
+  "theme": "comparison",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus... why do I keep doing this to myself at 1 a.m.? 💔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "comparison",
+  "bible_theme": "Jeremiah 1:5",
+  "bible_book": "Jeremiah",
+  "cta_type": "comment_question_plus_action",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0006",
+  "theme": "heartbreak",
+  "emotion": "angry",
+  "character": "boy",
+  "hook_type": "statement",
+  "hook": "Jesus... she left me for someone else. Just like that. Like none of it mattered.",
+  "story_type": "one_pushback",
+  "audience_problem": "heartbreak",
+  "bible_theme": "Psalms 34:18",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

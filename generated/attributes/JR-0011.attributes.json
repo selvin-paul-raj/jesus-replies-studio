@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0011",
+  "theme": "freewill",
+  "emotion": "neutral",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... why did God create that tree? The one with the knowledge of good and evil? 🤔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "freewill",
+  "bible_theme": "Genesis 2:17",
+  "bible_book": "Genesis",
+  "cta_type": "comment_question_plus_action",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

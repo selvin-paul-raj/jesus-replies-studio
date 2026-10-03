@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0037",
+  "theme": "returning to church after years away",
+  "emotion": "worried",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I parked outside church this morning. I never went in. 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "returning to church after years away",
+  "bible_theme": "Isaiah 43:18-19",
+  "bible_book": "Isaiah",
+  "cta_type": "comment_question_plus_action",
+  "duration": 80.38,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0037/JR-0037.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

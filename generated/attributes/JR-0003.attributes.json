@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0003",
+  "theme": "forgiveness",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus… I did something really wrong. 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "forgiveness",
+  "bible_theme": "Romans 5:8",
+  "bible_book": "Romans",
+  "cta_type": "comment_question_plus_action",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

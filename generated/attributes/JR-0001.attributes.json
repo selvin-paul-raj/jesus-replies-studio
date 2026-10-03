@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0001",
+  "theme": null,
+  "emotion": null,
+  "character": null,
+  "hook_type": "question",
+  "hook": "Jesus… when I'm angry, can I just tell everyone how I feel?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": null,
+  "bible_theme": "Proverbs 29:11",
+  "bible_book": "Proverbs",
+  "cta_type": "comment_question",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "as_of": "2026-10-03T13:05:41.656645+00:00",
+  "instagram": {
+    "AVAILABLE": [
+      "averageTimeWatched",
+      "comments",
+      "engagementRate",
+      "follows",
+      "reach",
+      "reactions",
+      "saves",
+      "shares",
+      "totalTimeWatched",
+      "views"
+    ],
+    "UNAVAILABLE_VIA_BUFFER": [
+      "clicks",
+      "freeSubscriptions",
+      "impressions",
+      "likes",
+      "paidSubscriptions",
+      "postCount",
+      "quotes",
+      "reposts",
+      "viewers"
+    ],
+    "UNAVAILABLE_NO_SOURCE": [
+      "retention_curve",
+      "early_drop_off",
+      "non_follower_reach",
+      "discovery_source",
+      "profile_visits",
+      "channel_visits",
+      "swipe_away_rate",
+      "engaged_views",
+      "average_percentage_watched"
+    ],
+    "UNKNOWN": [
+      "follower_or_subscriber_totals",
+      "audience_activity_by_hour"
+    ],
+    "sent_posts_with_metrics": 37,
+    "sent_posts": 38
+  },
+  "youtube": {
+    "AVAILABLE": [
+      "comments",
+      "engagementRate",
+      "reactions",
+      "views"
+    ],
+    "UNAVAILABLE_VIA_BUFFER": [
+      "averageTimeWatched",
+      "clicks",
+      "follows",
+      "freeSubscriptions",
+      "impressions",
+      "likes",
+      "paidSubscriptions",
+      "postCount",
+      "quotes",
+      "reach",
+      "reposts",
+      "saves",
+      "shares",
+      "totalTimeWatched",
+      "viewers"
+    ],
+    "UNAVAILABLE_NO_SOURCE": [
+      "retention_curve",
+      "early_drop_off",
+      "non_follower_reach",
+      "discovery_source",
+      "profile_visits",
+      "channel_visits",
+      "swipe_away_rate",
+      "engaged_views",
+      "average_percentage_watched"
+    ],
+    "UNKNOWN": [
+      "follower_or_subscriber_totals",
+      "audience_activity_by_hour"
+    ],
+    "sent_posts_with_metrics": 21,
+    "sent_posts": 21
+  }
+}

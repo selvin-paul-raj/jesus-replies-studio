@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0026",
+  "theme": "job rejection",
+  "emotion": "neutral",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus, why did they pick someone else again?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "job rejection",
+  "bible_theme": "Ecclesiastes 3:1",
+  "bible_book": "Ecclesiastes",
+  "cta_type": "none",
+  "duration": 55.62,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0026.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

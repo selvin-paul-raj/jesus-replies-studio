@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0020",
+  "theme": "comparison",
+  "emotion": "heartbroken",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "comparison",
+  "bible_theme": "Galatians 6:4",
+  "bible_book": "Galatians",
+  "cta_type": "comment_question_plus_action",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

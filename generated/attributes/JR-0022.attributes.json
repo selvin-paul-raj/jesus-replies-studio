@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0022",
+  "theme": "reconciliation",
+  "emotion": "happy",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus... my brother texted back after two years of silence. Why am I so scared to be happy about it?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "reconciliation",
+  "bible_theme": "Genesis 33:4",
+  "bible_book": "Genesis",
+  "cta_type": "comment_question_plus_action",
+  "duration": 87.32,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0022.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

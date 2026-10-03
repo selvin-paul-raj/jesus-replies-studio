@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0034",
+  "theme": "wanting to quit faith",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus, what if I stopped believing tomorrow?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "wanting to quit faith",
+  "bible_theme": "2 Timothy 2:13",
+  "bible_book": "2 Timothy",
+  "cta_type": "none",
+  "duration": 54.29,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0034.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

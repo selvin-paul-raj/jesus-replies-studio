@@ -1,0 +1,745 @@
+{
+  "plan_version": 1,
+  "week_start": "2026-10-05",
+  "week_end": "2026-10-11",
+  "timezone": "Asia/Kolkata",
+  "generated_at": "2026-10-03T13:05:41.000Z",
+  "status": "PROPOSED",
+  "requires_authorization": true,
+  "targets": {
+    "unique_videos": 14,
+    "instagram": 14,
+    "youtube": 14,
+    "platform_publications": 28
+  },
+  "generation_needed": 0,
+  "carry_over_ready": [
+    "JR-0034"
+  ],
+  "inventory_counts": {
+    "PUBLISHED": 20,
+    "UNUSED": 3,
+    "READY": 15
+  },
+  "analytics_summary": {
+    "instagram": {
+      "jr_posts_sent": 19,
+      "dimensions": {
+        "reach": {
+          "metric": "reach",
+          "n": 19,
+          "median": 213,
+          "max": 2273
+        },
+        "retention": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "shares": {
+          "metric": "shares",
+          "n": 19,
+          "median": 2,
+          "max": 22
+        },
+        "saves": {
+          "metric": "saves",
+          "n": 19,
+          "median": 3,
+          "max": 47
+        },
+        "comments": {
+          "metric": "comments",
+          "n": 19,
+          "median": 0,
+          "max": 2
+        },
+        "follows": {
+          "metric": "follows",
+          "n": 19,
+          "median": 0,
+          "max": 0
+        },
+        "likes": {
+          "metric": "reactions",
+          "n": 19,
+          "median": 26,
+          "max": 282
+        },
+        "views": {
+          "metric": "views",
+          "n": 19,
+          "median": 263,
+          "max": 2639
+        }
+      }
+    },
+    "youtube": {
+      "jr_posts_sent": 17,
+      "dimensions": {
+        "reach": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "retention": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "shares": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "saves": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "comments": {
+          "metric": "comments",
+          "n": 17,
+          "median": 0,
+          "max": 3
+        },
+        "follows": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "likes": {
+          "metric": "reactions",
+          "n": 17,
+          "median": 27,
+          "max": 215
+        },
+        "views": {
+          "metric": "views",
+          "n": 17,
+          "median": 170,
+          "max": 1666
+        }
+      }
+    }
+  },
+  "timing": {
+    "hypotheses": [
+      {
+        "platform": "instagram",
+        "window": "21:00-24:00",
+        "median": 1305.5,
+        "n": 4,
+        "metric": "reach",
+        "confidence": "low"
+      },
+      {
+        "platform": "youtube",
+        "window": "21:00-24:00",
+        "median": 106,
+        "n": 5,
+        "metric": "reactions",
+        "confidence": "low"
+      }
+    ],
+    "caveats": [
+      "metrics are cumulative and confounded by topic, hook and account momentum",
+      "Buffer reports no audience-activity-by-hour; Instagram/YouTube native insights are not wired",
+      "only posts at least 7 days old are compared so totals are roughly comparable"
+    ],
+    "coordination": "same_slot"
+  },
+  "research_ref": "content-os/research/2026-10-05.research.json",
+  "research_opportunities": [
+    {
+      "opportunity": "Loneliness and decision anxiety as specific human moments (eating alone at a hostel, choosing a course or job).",
+      "type": "INFERENCE",
+      "from": [
+        "Barna 2025"
+      ]
+    },
+    {
+      "opportunity": "Sat 10 Oct: a lived-experience episode on mental health, written as one real moment, no clinical framing.",
+      "type": "INFERENCE",
+      "from": [
+        "WHO WMHD 2026"
+      ]
+    },
+    {
+      "opportunity": "Write lines viewers would send to one specific friend (DM-share moments); measure shares/sends where Buffer exposes them.",
+      "type": "INFERENCE",
+      "from": [
+        "Mosseri signals"
+      ]
+    },
+    {
+      "opportunity": "Judge YouTube on retention metrics, not raw views, because raw Shorts views were inflated by the 2025 change.",
+      "type": "INFERENCE",
+      "from": [
+        "Shorts view change"
+      ]
+    }
+  ],
+  "experiments_active": [
+    "EXP-001",
+    "EXP-002"
+  ],
+  "slots": [
+    {
+      "episode_id": "JR-0037",
+      "date": "2026-10-05",
+      "weekday": "Monday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-05T02:30:00.000Z",
+        "youtube": "2026-10-05T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "returning to church after years away",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I parked outside church this morning. I never went in. 😔",
+      "emotional_angle": "worried",
+      "character": "boy",
+      "bible_reference": "Isaiah 43:18-19",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 80.38,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "existing Buffer Instagram draft; scheduled by edit, never recreated",
+        "ready inventory (hosted, QA PASS, 80.38s)",
+        "emotion 'worried' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0021",
+      "date": "2026-10-05",
+      "weekday": "Monday",
+      "slot": 2,
+      "time": "21:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "21:00",
+        "youtube": "21:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-05T15:30:00.000Z",
+        "youtube": "2026-10-05T15:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "contentment",
+      "hook_strategy": "question",
+      "hook": "Jesus... I finally got the thing I begged You for. Why do I feel nothing?",
+      "emotional_angle": "neutral",
+      "character": "girl",
+      "bible_reference": "Philippians 4:12-13",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 84.33,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 84.33s)",
+        "emotion 'neutral' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0022",
+      "date": "2026-10-06",
+      "weekday": "Tuesday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-06T02:30:00.000Z",
+        "youtube": "2026-10-06T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "reconciliation",
+      "hook_strategy": "question",
+      "hook": "Jesus... my brother texted back after two years of silence. Why am I so scared to be happy about it?",
+      "emotional_angle": "happy",
+      "character": "boy",
+      "bible_reference": "Genesis 33:4",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 87.32,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 87.32s)",
+        "emotion 'happy' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0023",
+      "date": "2026-10-06",
+      "weekday": "Tuesday",
+      "slot": 2,
+      "time": "21:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "21:00",
+        "youtube": "21:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-06T15:30:00.000Z",
+        "youtube": "2026-10-06T15:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "family expectations",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... tomorrow I have to tell my parents I am leaving the course they paid for. 😭",
+      "emotional_angle": "crying",
+      "character": "girl",
+      "bible_reference": "Psalms 27:10",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 82.56,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 82.56s)",
+        "emotion 'crying' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0024",
+      "date": "2026-10-07",
+      "weekday": "Wednesday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-07T02:30:00.000Z",
+        "youtube": "2026-10-07T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "money anxiety",
+      "hook_strategy": "question",
+      "hook": "Jesus, will there be enough money this month?",
+      "emotional_angle": "worried",
+      "character": "boy",
+      "bible_reference": "Hebrews 13:5-6",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "none",
+      "duration_s": 63.0,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 63.0s)",
+        "emotion 'worried' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0025",
+      "date": "2026-10-07",
+      "weekday": "Wednesday",
+      "slot": 2,
+      "time": "21:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "21:00",
+        "youtube": "21:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-07T15:30:00.000Z",
+        "youtube": "2026-10-07T15:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "friendship betrayal",
+      "hook_strategy": "question",
+      "hook": "Jesus, my best friend told everyone my secret?",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "2 Corinthians 2:7-8",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "none",
+      "duration_s": 56.85,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 56.85s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0026",
+      "date": "2026-10-08",
+      "weekday": "Thursday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-08T02:30:00.000Z",
+        "youtube": "2026-10-08T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "job rejection",
+      "hook_strategy": "question",
+      "hook": "Jesus, why did they pick someone else again?",
+      "emotional_angle": "neutral",
+      "character": "boy",
+      "bible_reference": "Ecclesiastes 3:1",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "none",
+      "duration_s": 55.62,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 55.62s)",
+        "emotion 'neutral' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0027",
+      "date": "2026-10-08",
+      "weekday": "Thursday",
+      "slot": 2,
+      "time": "21:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "21:00",
+        "youtube": "21:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-08T15:30:00.000Z",
+        "youtube": "2026-10-08T15:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "caring for a sick parent",
+      "hook_strategy": "question",
+      "hook": "Jesus, I am scared to watch my mother get weaker?",
+      "emotional_angle": "crying",
+      "character": "girl",
+      "bible_reference": "Ruth 1:16",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "none",
+      "duration_s": 58.18,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 58.18s)",
+        "emotion 'crying' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0028",
+      "date": "2026-10-09",
+      "weekday": "Friday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-09T02:30:00.000Z",
+        "youtube": "2026-10-09T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "shame over a secret",
+      "hook_strategy": "question",
+      "hook": "Jesus, what if You knew what I actually did?",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "1 John 1:9",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "none",
+      "duration_s": 59.56,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 59.56s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0029",
+      "date": "2026-10-09",
+      "weekday": "Friday",
+      "slot": 2,
+      "time": "21:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "21:00",
+        "youtube": "21:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-09T15:30:00.000Z",
+        "youtube": "2026-10-09T15:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "jealousy of a sibling",
+      "hook_strategy": "question",
+      "hook": "Jesus, why does everything come easy for her?",
+      "emotional_angle": "angry",
+      "character": "girl",
+      "bible_reference": "Ephesians 4:31-32",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "none",
+      "duration_s": 58.65,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 58.65s)",
+        "emotion 'angry' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0030",
+      "date": "2026-10-10",
+      "weekday": "Saturday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-10T02:30:00.000Z",
+        "youtube": "2026-10-10T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "moving to a new city",
+      "hook_strategy": "question",
+      "hook": "Jesus, what if I do not belong there either?",
+      "emotional_angle": "worried",
+      "character": "boy",
+      "bible_reference": "Joshua 1:9",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "none",
+      "duration_s": 54.72,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 54.72s)",
+        "emotion 'worried' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0031",
+      "date": "2026-10-10",
+      "weekday": "Saturday",
+      "slot": 2,
+      "time": "21:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "21:00",
+        "youtube": "21:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-10T15:30:00.000Z",
+        "youtube": "2026-10-10T15:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "grief anniversary",
+      "hook_strategy": "question",
+      "hook": "Jesus, it has been one year. Why does it still hurt?",
+      "emotional_angle": "crying",
+      "character": "girl",
+      "bible_reference": "Lamentations 3:22-23",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "none",
+      "duration_s": 55.19,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 55.19s)",
+        "emotion 'crying' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0032",
+      "date": "2026-10-11",
+      "weekday": "Sunday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-11T02:30:00.000Z",
+        "youtube": "2026-10-11T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "pride after success",
+      "hook_strategy": "question",
+      "hook": "Jesus, is it wrong that I feel this proud?",
+      "emotional_angle": "happy",
+      "character": "boy",
+      "bible_reference": "1 Peter 5:5-6",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "none",
+      "duration_s": 57.28,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 57.28s)",
+        "emotion 'happy' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0033",
+      "date": "2026-10-11",
+      "weekday": "Sunday",
+      "slot": 2,
+      "time": "21:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "21:00",
+        "youtube": "21:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-11T15:30:00.000Z",
+        "youtube": "2026-10-11T15:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "unanswered prayer",
+      "hook_strategy": "question",
+      "hook": "Jesus, how long am I supposed to keep asking?",
+      "emotional_angle": "neutral",
+      "character": "girl",
+      "bible_reference": "Micah 7:7",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "none",
+      "duration_s": 53.42,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 53.42s)",
+        "emotion 'neutral' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    }
+  ],
+  "plan_sha256": "1715311fa9de383aaef87c48d2050ec2bee766cf2bdddae44214f713b1414ded"
+}

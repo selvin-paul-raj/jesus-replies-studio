@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0016",
+  "theme": "waiting",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... why do You make me wait when You know how badly I need You? 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "waiting",
+  "bible_theme": "John 11:5-6",
+  "bible_book": "John",
+  "cta_type": "comment_question_plus_action",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

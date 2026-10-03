@@ -1,0 +1,229 @@
+{
+  "status": "DRY_RUN",
+  "results": [
+    {
+      "episode_id": "JR-0037",
+      "platform": "instagram",
+      "due_at": "2026-10-05T02:30:00.000Z",
+      "result": "WOULD_SCHEDULE_DRAFT",
+      "state": "DRAFT",
+      "post_id": "6ac0f79fad7fd83bc5f1e243"
+    },
+    {
+      "episode_id": "JR-0037",
+      "platform": "youtube",
+      "due_at": "2026-10-05T02:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0021",
+      "platform": "instagram",
+      "due_at": "2026-10-05T15:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0021",
+      "platform": "youtube",
+      "due_at": "2026-10-05T15:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0022",
+      "platform": "instagram",
+      "due_at": "2026-10-06T02:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0022",
+      "platform": "youtube",
+      "due_at": "2026-10-06T02:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0023",
+      "platform": "instagram",
+      "due_at": "2026-10-06T15:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0023",
+      "platform": "youtube",
+      "due_at": "2026-10-06T15:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0024",
+      "platform": "instagram",
+      "due_at": "2026-10-07T02:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0024",
+      "platform": "youtube",
+      "due_at": "2026-10-07T02:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0025",
+      "platform": "instagram",
+      "due_at": "2026-10-07T15:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0025",
+      "platform": "youtube",
+      "due_at": "2026-10-07T15:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0026",
+      "platform": "instagram",
+      "due_at": "2026-10-08T02:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0026",
+      "platform": "youtube",
+      "due_at": "2026-10-08T02:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0027",
+      "platform": "instagram",
+      "due_at": "2026-10-08T15:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0027",
+      "platform": "youtube",
+      "due_at": "2026-10-08T15:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0028",
+      "platform": "instagram",
+      "due_at": "2026-10-09T02:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0028",
+      "platform": "youtube",
+      "due_at": "2026-10-09T02:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0029",
+      "platform": "instagram",
+      "due_at": "2026-10-09T15:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0029",
+      "platform": "youtube",
+      "due_at": "2026-10-09T15:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0030",
+      "platform": "instagram",
+      "due_at": "2026-10-10T02:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0030",
+      "platform": "youtube",
+      "due_at": "2026-10-10T02:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0031",
+      "platform": "instagram",
+      "due_at": "2026-10-10T15:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0031",
+      "platform": "youtube",
+      "due_at": "2026-10-10T15:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0032",
+      "platform": "instagram",
+      "due_at": "2026-10-11T02:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0032",
+      "platform": "youtube",
+      "due_at": "2026-10-11T02:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0033",
+      "platform": "instagram",
+      "due_at": "2026-10-11T15:30:00.000Z",
+      "result": "WOULD_CREATE",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0033",
+      "platform": "youtube",
+      "due_at": "2026-10-11T15:30:00.000Z",
+      "result": "BLOCKED_YOUTUBE_CATEGORY",
+      "state": "NONE",
+      "post_id": null
+    }
+  ]
+}

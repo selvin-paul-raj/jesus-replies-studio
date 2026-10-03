@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0036",
+  "theme": "fear of becoming like a parent",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I shouted at my brother tonight. And it was not my voice. It was my father's.",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "fear of becoming like a parent",
+  "bible_theme": "Romans 8:15",
+  "bible_book": "Romans",
+  "cta_type": "comment_question_plus_action",
+  "duration": 78.68,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-episodes-2026-10-01/JR-0036.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

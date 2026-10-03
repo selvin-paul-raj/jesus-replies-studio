@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0012",
+  "theme": "purpose",
+  "emotion": "worried",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus... why does everyone else already know exactly what they're doing with their life? 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "purpose",
+  "bible_theme": "Proverbs 16:9",
+  "bible_book": "Proverbs",
+  "cta_type": "reflection_statement",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

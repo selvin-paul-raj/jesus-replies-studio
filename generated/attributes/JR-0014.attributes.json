@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0014",
+  "theme": "loneliness",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus... why do I keep hurting the people I love? 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "loneliness",
+  "bible_theme": "Matthew 11:28",
+  "bible_book": "Matthew",
+  "cta_type": "reflection_statement",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

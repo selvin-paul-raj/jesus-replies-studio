@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0030",
+  "theme": "moving to a new city",
+  "emotion": "worried",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus, what if I do not belong there either?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "moving to a new city",
+  "bible_theme": "Joshua 1:9",
+  "bible_book": "Joshua",
+  "cta_type": "none",
+  "duration": 54.72,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0030.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

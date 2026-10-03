@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0023",
+  "theme": "family expectations",
+  "emotion": "crying",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... tomorrow I have to tell my parents I am leaving the course they paid for. 😭",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "family expectations",
+  "bible_theme": "Psalms 27:10",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question_plus_action",
+  "duration": 82.56,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0023.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

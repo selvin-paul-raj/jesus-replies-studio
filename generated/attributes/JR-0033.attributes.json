@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0033",
+  "theme": "unanswered prayer",
+  "emotion": "neutral",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus, how long am I supposed to keep asking?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "unanswered prayer",
+  "bible_theme": "Micah 7:7",
+  "bible_book": "Micah",
+  "cta_type": "none",
+  "duration": 53.42,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0033.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

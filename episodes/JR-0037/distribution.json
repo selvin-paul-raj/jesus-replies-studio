@@ -1,0 +1,35 @@
+{
+  "episode_id": "JR-0037",
+  "platforms": {
+    "instagram": {
+      "state": "DRAFT",
+      "post_id": "6ac0f79fad7fd83bc5f1e243",
+      "due_at": "2026-12-31T00:00:00.000Z",
+      "sent_at": null,
+      "external_link": null,
+      "pending_mutation": null,
+      "attempts": 0,
+      "error": null,
+      "history": [
+        {
+          "at": "2026-10-03T13:05:41.000Z",
+          "from": "NONE",
+          "to": "DRAFT",
+          "run": "37125016721",
+          "evidence": "adopted existing 6ac0f79fad7fd83bc5f1e243: Buffer status draft"
+        }
+      ]
+    },
+    "youtube": {
+      "state": "NONE",
+      "post_id": null,
+      "due_at": null,
+      "sent_at": null,
+      "external_link": null,
+      "pending_mutation": null,
+      "attempts": 0,
+      "error": null,
+      "history": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0027",
+  "theme": "caring for a sick parent",
+  "emotion": "crying",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus, I am scared to watch my mother get weaker?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "caring for a sick parent",
+  "bible_theme": "Ruth 1:16",
+  "bible_book": "Ruth",
+  "cta_type": "none",
+  "duration": 58.18,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0027.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

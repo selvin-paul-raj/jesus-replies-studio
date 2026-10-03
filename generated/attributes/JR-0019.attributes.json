@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0019",
+  "theme": "self-worth",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus... why do I always feel like I'm not enough? 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "self-worth",
+  "bible_theme": "Luke 15:20-24",
+  "bible_book": "Luke",
+  "cta_type": "comment_question_plus_action",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

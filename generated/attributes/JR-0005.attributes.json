@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0005",
+  "theme": "comparison",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... why does everyone else's life look so much better than mine online?",
+  "story_type": "one_pushback",
+  "audience_problem": "comparison",
+  "bible_theme": "Psalms 139:14",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

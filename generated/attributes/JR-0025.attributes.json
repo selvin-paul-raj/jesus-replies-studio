@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0025",
+  "theme": "friendship betrayal",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus, my best friend told everyone my secret?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "friendship betrayal",
+  "bible_theme": "2 Corinthians 2:7-8",
+  "bible_book": "2 Corinthians",
+  "cta_type": "none",
+  "duration": 56.85,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0025.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0008",
+  "theme": "doubt",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "statement",
+  "hook": "Jesus... it feels like You've gone quiet. I pray and nothing comes back.",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "doubt",
+  "bible_theme": "Isaiah 41:10",
+  "bible_book": "Isaiah",
+  "cta_type": "comment_question",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": false,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}
