@@ -143,7 +143,7 @@ def main():
         plan_prev = rjson(OS_DIR / f"weeks/{rep_week}/weekly-content-plan.json")
         rep = learn.weekly_report(rep_week, snap["rows"], attrs, plan_prev, cfg, now)
         wjson(OS_DIR / f"weeks/{rep_week}/weekly-performance-report.json", rep)
-        print(f"[report] {rep_week} published={len(rep['published_posts'])} patterns={sum(p['finding']=='pattern' for p in rep['patterns'])}")
+        print(f"[report] {rep_week} published={len(rep['published_posts'])} patterns={sum(p['finding'].startswith('pattern') for p in rep['patterns'])}")
         for r in rep["NEXT_WEEK_RECOMMENDATIONS"]:
             print(f"[rec] {r}")
         if a.cmd != "weekly":
