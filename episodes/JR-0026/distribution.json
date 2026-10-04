@@ -21,7 +21,7 @@
       ]
     },
     "youtube": {
-      "state": "UNKNOWN",
+      "state": "SCHEDULED",
       "post_id": "6ac100d3ad7fd83bc5f366f6",
       "due_at": "2026-10-08T02:30:00.000Z",
       "sent_at": null,
@@ -43,6 +43,13 @@
           "to": "UNKNOWN",
           "run": "37201545556",
           "evidence": "read failed: UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
+        },
+        {
+          "at": "2026-10-04T21:20:13.000Z",
+          "from": "UNKNOWN",
+          "to": "SCHEDULED",
+          "run": "37235668612",
+          "evidence": "read 6ac100d3ad7fd83bc5f366f6: Buffer status scheduled"
         }
       ]
     }
