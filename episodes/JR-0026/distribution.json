@@ -21,7 +21,7 @@
       ]
     },
     "youtube": {
-      "state": "SCHEDULED",
+      "state": "UNKNOWN",
       "post_id": "6ac100d3ad7fd83bc5f366f6",
       "due_at": "2026-10-08T02:30:00.000Z",
       "sent_at": null,
@@ -36,6 +36,13 @@
           "to": "SCHEDULED",
           "run": "37125750133",
           "evidence": "create_scheduled read back: scheduled 2026-10-08T02:30:00.000Z"
+        },
+        {
+          "at": "2026-10-04T12:16:45.000Z",
+          "from": "SCHEDULED",
+          "to": "UNKNOWN",
+          "run": "37201545556",
+          "evidence": "read failed: UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
         }
       ]
     }
