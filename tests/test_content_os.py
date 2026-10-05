@@ -274,6 +274,27 @@ class T10Quota(Base):
         self.assertEqual((r, self.buf.creates), ("SCHEDULED", 1))
 
 
+    def test_draft_to_scheduled_counts_toward_quota(self):
+        # Regression 2026-10-05: schedule_draft was not counted, so a second post
+        # was scheduled past the limit and the Bible post hit Buffer 10/10.
+        c = json.loads(json.dumps(CFG)); c["scheduled_limit"] = {"instagram": 2}
+
+        class SnapshotBuffer(FakeBuffer):  # real Buffer listings are snapshots, not live objects
+            def list_posts(self, platform):
+                posts, d = FakeBuffer.list_posts(self, platform)
+                return json.loads(json.dumps(posts)), d
+        self.buf = SnapshotBuffer()
+        self.buf.add("instagram", "scheduled", text="other", asset="x")
+        pid = self.buf.add("instagram", "draft", text="cap", asset=URL)
+        st = DistStore(self.root, CFG["platforms"]); d0 = st.load("JR-0040")
+        d0["platforms"]["instagram"].update(state="DRAFT", post_id=pid); st.save(d0)
+        d = Distributor(self.root, self.buf, c, lambda u: 200, "t", NOW, dry_run=False)
+        r1, _ = d.schedule("JR-0040", "instagram", DUE, ctx())
+        c2 = dict(ctx("second episode"), asset_url="https://example.com/JR-0041.mp4")
+        r2, blk = d.schedule("JR-0041", "instagram", DUE, c2)
+        self.assertEqual((r1, r2, self.buf.creates), ("SCHEDULED", "QUOTA_DEFERRED", 0))
+
+
 
 class T11Ledger(unittest.TestCase):
     def test_ledger_fields_slot_labels_and_unavailable(self):

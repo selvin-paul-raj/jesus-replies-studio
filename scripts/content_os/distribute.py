@@ -198,7 +198,12 @@ class Distributor:
                     and post.get("_asset") == ctx["asset_url"]:
                 blk.update(post_id=post["id"], due_at=post["dueAt"])
                 move(blk, "SCHEDULED", f"{kind} read back: scheduled {post['dueAt']}", self.run, self.now)
-                self.live.setdefault(platform, []).append(post) if kind == "create_scheduled" else None
+                # Keep the cached listing truthful for BOTH paths so the quota count
+                # sees this post as scheduled (2026-10-05: a draft->scheduled edit was
+                # not counted, IG reached 10/10 and the daily Bible post was rejected).
+                cache = self.live.setdefault(platform, [])
+                cache[:] = [x for x in cache if x.get("id") != post["id"]]
+                cache.append(post)
                 r = "SCHEDULED"
             else:
                 blk["post_id"] = out.post["id"]
