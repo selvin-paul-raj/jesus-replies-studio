@@ -66,6 +66,17 @@ def latest_snapshot():
     return rjson(snaps[-1]) if snaps else {"rows": []}
 
 
+
+def ready_check(eps, pkgs, assets, cfg):
+    """True only for an episode that exists, has a package, is not held, and has a hosted
+    QA-PASS asset. Same rule the inventory uses for READY."""
+    held = cfg.get("held_episodes", {})
+
+    def f(eid):
+        a = assets.get(eid) or {}
+        return eid in eps and eid in pkgs and eid not in held and a.get("qa_status") == "PASS" and bool(a.get("public_url"))
+    return f
+
 def ctx_for_factory(eps, pkgs, assets):
     def ctx_for(eid):
         pk, a = pkgs.get(eid) or {}, assets.get(eid) or {}
@@ -155,12 +166,12 @@ def main():
             return 0
         auto = cfg["autonomy"].get("standing_authorization")
         plan_now = rjson(week_dir / "weekly-content-plan.json")
-        if auto and cfg["autonomy"]["scheduler_enabled"] and plan_now and plan_now["generation_needed"] == 0 \
+        if auto and cfg["autonomy"]["scheduler_enabled"] and plan_now \
                 and not (week_dir / "authorization.json").exists():
             wjson(week_dir / "authorization.json", {"week_start": a.week, "plan_sha256": plan_now["plan_sha256"],
                                                     "authorized_by": "standing authorization", "quote": auto["quote"],
                                                     "given": auto["given"], "at": now.isoformat(),
-                                                    "condition": "every slot READY (hosted, QA PASS); no generation pending"})
+                                                    "condition": "per slot: only an episode hosted with QA PASS is scheduled; NEEDS_GENERATION slots wait for their reserved id to pass QA (DEC-018)"})
             print(f"[authorize] standing authorization applied to {plan_now['plan_sha256'][:12]}")
         a.dry_run = not (week_dir / "authorization.json").exists()
     if a.cmd == "authorize":
@@ -179,7 +190,7 @@ def main():
         if not a.dry_run and not cfg["autonomy"]["scheduler_enabled"]:
             print("[schedule] scheduler_enabled=false in config/content-os.json: WAITING_FOR_USER"); return 3
         d = Distributor(ROOT, Buffer.from_env(cfg), cfg, http_status, run, now, dry_run=a.dry_run)
-        res = d.schedule_week(plan, ctx_for_factory(eps, pkgs, assets), auth)
+        res = d.schedule_week(plan, ctx_for_factory(eps, pkgs, assets), auth, is_ready=ready_check(eps, pkgs, assets, cfg))
         wjson(week_dir / ("schedule-dry-run.json" if a.dry_run else f"schedule-run-{run}.json"), res)
         print(f"[schedule] {res['status']} {res.get('reason', '')}")
         for r in res["results"]:
@@ -198,7 +209,7 @@ def main():
             if not (plan and auth and cfg["autonomy"]["scheduler_enabled"]):
                 continue
             d2 = Distributor(ROOT, Buffer.from_env(cfg), cfg, http_status, run, now, dry_run=False)
-            res = d2.schedule_week(plan, ctx_for_factory(eps, pkgs, assets), auth)
+            res = d2.schedule_week(plan, ctx_for_factory(eps, pkgs, assets), auth, is_ready=ready_check(eps, pkgs, assets, cfg))
             changed = [r for r in res["results"] if r["result"] not in ("ALREADY_SCHEDULED", "ALREADY_PUBLISHED", "MISSED_SLOT", "QUOTA_DEFERRED")]
             print(f"[topup] {wk} {res['status']} changed={len(changed)} deferred={sum(r['result']=='QUOTA_DEFERRED' for r in res['results'])}")
             for r in changed:

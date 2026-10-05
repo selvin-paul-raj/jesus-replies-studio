@@ -14,8 +14,10 @@
     "standing_authorization": {
       "given": "2026-10-03 18:48 IST, Selvin in chat",
       "quote": "Keep the weekly batch -> scheduling -> publication -> analytics -> next-week learning loop autonomous.",
-      "applies_when": "a weekly plan whose every slot is READY (hosted, QA PASS) with no generation pending"
-    }
+      "applies_when": "any weekly plan; gated per slot: only an episode hosted with QA PASS is scheduled, NEEDS_GENERATION slots schedule once their reserved episode id passes QA (DEC-018, 2026-10-05)"
+    },
+    "auto_queue_on_qa_pass": true,
+    "_why_auto_queue": "Selvin 2026-10-05: 'continue' after being asked whether QA-passed episodes go straight to the queue; matches his stated no-per-episode-approval preference."
   },
   "coordination": "same_slot",
   "initial_test_slots": [

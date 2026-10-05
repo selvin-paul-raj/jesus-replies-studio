@@ -171,6 +171,22 @@ class T06Safety(Base):
         plan = {"plan_sha256": "abc", "slots": []}
         self.assertEqual(self.dist().schedule_week(plan, lambda e: ctx(), {"plan_sha256": "other"})["status"], "WAITING_FOR_USER")
 
+    def _gen_plan(self):
+        return {"plan_sha256": "abc", "slots": [{"episode_id": "JR-0040", "status": "NEEDS_GENERATION",
+                "platforms": ["instagram"], "due_at": {"instagram": DUE}}]}
+
+    def test_generation_slot_waits_until_qa_pass(self):
+        res = self.dist().schedule_week(self._gen_plan(), lambda e: ctx(), {"plan_sha256": "abc"}, is_ready=lambda e: False)
+        self.assertEqual((res["results"][0]["result"], self.buf.creates), ("AWAITING_GENERATION", 0))
+
+    def test_generation_slot_schedules_reserved_id_after_qa_pass(self):
+        res = self.dist().schedule_week(self._gen_plan(), lambda e: ctx(), {"plan_sha256": "abc"}, is_ready=lambda e: e == "JR-0040")
+        self.assertEqual((res["results"][0]["result"], self.buf.creates), ("SCHEDULED", 1))
+
+    def test_generation_slot_without_ready_check_never_schedules(self):
+        res = self.dist().schedule_week(self._gen_plan(), lambda e: ctx(), {"plan_sha256": "abc"})
+        self.assertEqual(self.buf.creates, 0)
+
     def test_past_slot_is_missed_not_published_now(self):
         r, _ = self.dist().schedule("JR-0040", "instagram", "2026-10-04T05:30:00.000Z", ctx())
         self.assertEqual((r, self.buf.creates), ("MISSED_SLOT", 0))

@@ -254,13 +254,18 @@ class Distributor:
         self.store.save(d)
         return r, blk
 
-    def schedule_week(self, plan, ctx_for, authorization):
+    def schedule_week(self, plan, ctx_for, authorization, is_ready=None):
+        """Per-slot gate. A READY slot schedules. A NEEDS_GENERATION slot keeps its reserved
+        episode id in the (hash-bound) plan and schedules only once that exact episode is
+        hosted with QA PASS (is_ready). Anything else is skipped, never guessed."""
         if not authorization or authorization.get("plan_sha256") != plan.get("plan_sha256"):
             return {"status": "WAITING_FOR_USER", "reason": "week not authorized for this exact plan", "results": []}
         results = []
         for slot in plan["slots"]:
-            if slot["status"] != "READY":
-                results.append({"episode_id": slot["episode_id"], "result": "NOT_READY"})
+            eid = slot["episode_id"]
+            ok = slot["status"] == "READY" or (slot["status"] == "NEEDS_GENERATION" and is_ready is not None and is_ready(eid))
+            if not ok:
+                results.append({"episode_id": eid, "result": "NOT_READY" if slot["status"] == "READY" else "AWAITING_GENERATION"})
                 continue
             ctx = ctx_for(slot["episode_id"])
             for platform in slot["platforms"]:
