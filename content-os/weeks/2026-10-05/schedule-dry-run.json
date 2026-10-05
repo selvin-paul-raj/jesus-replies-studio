@@ -5,191 +5,191 @@
       "episode_id": "JR-0037",
       "platform": "instagram",
       "due_at": "2026-10-05T02:30:00.000Z",
-      "result": "WOULD_SCHEDULE_DRAFT",
-      "state": "DRAFT",
+      "result": "ALREADY_PUBLISHED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6ac0f79fad7fd83bc5f1e243"
     },
     {
       "episode_id": "JR-0037",
       "platform": "youtube",
       "due_at": "2026-10-05T02:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "result": "ALREADY_PUBLISHED",
+      "state": "PUBLISHED_VERIFIED",
+      "post_id": "6ac100c7fec59133947744e4"
     },
     {
       "episode_id": "JR-0021",
       "platform": "instagram",
-      "due_at": "2026-10-05T15:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "due_at": "2026-10-05T15:00:00.000Z",
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100c9ad7fd83bc5f3657f"
     },
     {
       "episode_id": "JR-0021",
       "platform": "youtube",
-      "due_at": "2026-10-05T15:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "due_at": "2026-10-05T15:00:00.000Z",
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100c9814d657011c5ecf7"
     },
     {
       "episode_id": "JR-0022",
       "platform": "instagram",
       "due_at": "2026-10-06T02:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100cafec591339477480c"
     },
     {
       "episode_id": "JR-0022",
       "platform": "youtube",
       "due_at": "2026-10-06T02:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100cb3bfd38430fe2099e"
     },
     {
       "episode_id": "JR-0023",
       "platform": "instagram",
-      "due_at": "2026-10-06T15:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "due_at": "2026-10-06T15:00:00.000Z",
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100ccad7fd83bc5f36618"
     },
     {
       "episode_id": "JR-0023",
       "platform": "youtube",
-      "due_at": "2026-10-06T15:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "due_at": "2026-10-06T15:00:00.000Z",
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100cd814d657011c5ed8c"
     },
     {
       "episode_id": "JR-0024",
       "platform": "instagram",
       "due_at": "2026-10-07T02:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100ce7d53b827e0dd9f10"
     },
     {
       "episode_id": "JR-0024",
       "platform": "youtube",
       "due_at": "2026-10-07T02:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100cf814d657011c5edcf"
     },
     {
       "episode_id": "JR-0025",
       "platform": "instagram",
-      "due_at": "2026-10-07T15:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "due_at": "2026-10-07T15:00:00.000Z",
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100d07d53b827e0dd9f53"
     },
     {
       "episode_id": "JR-0025",
       "platform": "youtube",
-      "due_at": "2026-10-07T15:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "due_at": "2026-10-07T15:00:00.000Z",
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100d1fec5913394774945"
     },
     {
       "episode_id": "JR-0026",
       "platform": "instagram",
       "due_at": "2026-10-08T02:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100d27d53b827e0dd9faa"
     },
     {
       "episode_id": "JR-0026",
       "platform": "youtube",
       "due_at": "2026-10-08T02:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100d3ad7fd83bc5f366f6"
     },
     {
       "episode_id": "JR-0027",
       "platform": "instagram",
-      "due_at": "2026-10-08T15:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "due_at": "2026-10-08T15:00:00.000Z",
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100d43bfd38430fe20abe"
     },
     {
       "episode_id": "JR-0027",
       "platform": "youtube",
-      "due_at": "2026-10-08T15:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "due_at": "2026-10-08T15:00:00.000Z",
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100d5905eed02e0674732"
     },
     {
       "episode_id": "JR-0028",
       "platform": "instagram",
       "due_at": "2026-10-09T02:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100d6fec5913394774a84"
     },
     {
       "episode_id": "JR-0028",
       "platform": "youtube",
       "due_at": "2026-10-09T02:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100d73bfd38430fe20b2e"
     },
     {
       "episode_id": "JR-0029",
       "platform": "instagram",
-      "due_at": "2026-10-09T15:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "due_at": "2026-10-09T15:00:00.000Z",
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100d8814d657011c5eec8"
     },
     {
       "episode_id": "JR-0029",
       "platform": "youtube",
-      "due_at": "2026-10-09T15:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "due_at": "2026-10-09T15:00:00.000Z",
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac100d87d53b827e0dda062"
     },
     {
       "episode_id": "JR-0030",
       "platform": "instagram",
       "due_at": "2026-10-10T02:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "result": "QUOTA_DEFERRED",
+      "state": "DRAFT",
+      "post_id": "6ac33695fe1389e41351ba1d"
     },
     {
       "episode_id": "JR-0030",
       "platform": "youtube",
       "due_at": "2026-10-10T02:30:00.000Z",
-      "result": "WOULD_CREATE",
-      "state": "NONE",
-      "post_id": null
+      "result": "ALREADY_SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ac33697fe1389e41351baad"
     },
     {
       "episode_id": "JR-0031",
       "platform": "instagram",
-      "due_at": "2026-10-10T15:30:00.000Z",
-      "result": "WOULD_CREATE",
+      "due_at": "2026-10-10T15:00:00.000Z",
+      "result": "QUOTA_DEFERRED",
       "state": "NONE",
       "post_id": null
     },
     {
       "episode_id": "JR-0031",
       "platform": "youtube",
-      "due_at": "2026-10-10T15:30:00.000Z",
-      "result": "WOULD_CREATE",
+      "due_at": "2026-10-10T15:00:00.000Z",
+      "result": "QUOTA_DEFERRED",
       "state": "NONE",
       "post_id": null
     },
@@ -197,7 +197,7 @@
       "episode_id": "JR-0032",
       "platform": "instagram",
       "due_at": "2026-10-11T02:30:00.000Z",
-      "result": "WOULD_CREATE",
+      "result": "QUOTA_DEFERRED",
       "state": "NONE",
       "post_id": null
     },
@@ -205,23 +205,23 @@
       "episode_id": "JR-0032",
       "platform": "youtube",
       "due_at": "2026-10-11T02:30:00.000Z",
-      "result": "WOULD_CREATE",
+      "result": "QUOTA_DEFERRED",
       "state": "NONE",
       "post_id": null
     },
     {
       "episode_id": "JR-0033",
       "platform": "instagram",
-      "due_at": "2026-10-11T15:30:00.000Z",
-      "result": "WOULD_CREATE",
+      "due_at": "2026-10-11T15:00:00.000Z",
+      "result": "QUOTA_DEFERRED",
       "state": "NONE",
       "post_id": null
     },
     {
       "episode_id": "JR-0033",
       "platform": "youtube",
-      "due_at": "2026-10-11T15:30:00.000Z",
-      "result": "WOULD_CREATE",
+      "due_at": "2026-10-11T15:00:00.000Z",
+      "result": "QUOTA_DEFERRED",
       "state": "NONE",
       "post_id": null
     }
