@@ -2,7 +2,7 @@
   "episode_id": "JR-0030",
   "platforms": {
     "instagram": {
-      "state": "SCHEDULED",
+      "state": "DRAFT",
       "post_id": "6ac33695fe1389e41351ba1d",
       "due_at": "2026-10-10T02:30:00.000Z",
       "sent_at": null,
@@ -31,6 +31,13 @@
           "to": "SCHEDULED",
           "run": "37268267124",
           "evidence": "create_scheduled read back: scheduled 2026-10-10T02:30:00.000Z"
+        },
+        {
+          "at": "2026-10-05T07:57:34.000Z",
+          "from": "SCHEDULED",
+          "to": "DRAFT",
+          "run": "37280616756",
+          "evidence": "held to draft (OK); read back draft"
         }
       ]
     },
