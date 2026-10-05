@@ -2380,5 +2380,23 @@
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
+  },
+  "instagram:6ac1f1e45829d2489a081f11": {
+    "episode_id": null,
+    "platform": "instagram",
+    "sent_at": "2026-10-04T06:30:22.866Z",
+    "checkpoints": {}
+  },
+  "instagram:6ac0f79fad7fd83bc5f1e243": {
+    "episode_id": "JR-0037",
+    "platform": "instagram",
+    "sent_at": "2026-10-05T02:31:17.629Z",
+    "checkpoints": {}
+  },
+  "youtube:6ac100c7fec59133947744e4": {
+    "episode_id": "JR-0037",
+    "platform": "youtube",
+    "sent_at": "2026-10-05T02:30:13.863Z",
+    "checkpoints": {}
   }
 }
