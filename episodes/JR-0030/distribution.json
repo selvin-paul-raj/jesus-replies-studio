@@ -2,13 +2,13 @@
   "episode_id": "JR-0030",
   "platforms": {
     "instagram": {
-      "state": "DRAFT",
+      "state": "SCHEDULED",
       "post_id": "6ac33695fe1389e41351ba1d",
       "due_at": "2026-10-10T02:30:00.000Z",
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
-      "attempts": 1,
+      "attempts": 2,
       "error": null,
       "history": [
         {
@@ -38,6 +38,13 @@
           "to": "DRAFT",
           "run": "37280616756",
           "evidence": "held to draft (OK); read back draft"
+        },
+        {
+          "at": "2026-10-06T06:15:17.000Z",
+          "from": "DRAFT",
+          "to": "SCHEDULED",
+          "run": "37422710875",
+          "evidence": "schedule_draft read back: scheduled 2026-10-10T02:30:00.000Z"
         }
       ]
     },
