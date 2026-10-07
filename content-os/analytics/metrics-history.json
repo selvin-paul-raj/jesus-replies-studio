@@ -136,6 +136,20 @@
         },
         "observed_age_hours": 79.0,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "168h": {
+        "metrics": {
+          "reactions": 1,
+          "comments": 0,
+          "engagementRate": 20,
+          "views": 11,
+          "shares": 0,
+          "saves": 0,
+          "follows": 0,
+          "reach": 5
+        },
+        "observed_age_hours": 175.2,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -205,6 +219,20 @@
           "reach": 8
         },
         "observed_age_hours": 72.2,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "168h": {
+        "metrics": {
+          "reactions": 2,
+          "comments": 0,
+          "engagementRate": 22.22,
+          "views": 25,
+          "shares": 0,
+          "saves": 0,
+          "follows": 0,
+          "reach": 9
+        },
+        "observed_age_hours": 168.1,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
@@ -2531,6 +2559,20 @@
         },
         "observed_age_hours": 32.0,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "72h": {
+        "metrics": {
+          "reactions": 1,
+          "comments": 0,
+          "engagementRate": 20,
+          "views": 14,
+          "shares": 0,
+          "saves": 0,
+          "follows": 0,
+          "reach": 5
+        },
+        "observed_age_hours": 78.8,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -2637,7 +2679,22 @@
     "episode_id": null,
     "platform": "instagram",
     "sent_at": "2026-10-06T06:58:23.858Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 2,
+          "comments": 1,
+          "engagementRate": 42.86,
+          "views": 17,
+          "shares": 0,
+          "saves": 0,
+          "follows": 0,
+          "reach": 7
+        },
+        "observed_age_hours": 30.3,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "instagram:6ac100ccad7fd83bc5f36618": {
     "episode_id": "JR-0023",
