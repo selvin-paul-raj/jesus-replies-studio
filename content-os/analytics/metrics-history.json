@@ -1810,6 +1810,16 @@
         },
         "observed_age_hours": 77.0,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "168h": {
+        "metrics": {
+          "reactions": 1,
+          "comments": 0,
+          "engagementRate": 25,
+          "views": 4
+        },
+        "observed_age_hours": 174.8,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -1836,6 +1846,16 @@
           "views": 12
         },
         "observed_age_hours": 77.7,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "168h": {
+        "metrics": {
+          "reactions": 3,
+          "comments": 0,
+          "engagementRate": 21.43,
+          "views": 14
+        },
+        "observed_age_hours": 175.6,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
@@ -2673,7 +2693,18 @@
     "episode_id": "JR-0023",
     "platform": "youtube",
     "sent_at": "2026-10-06T15:02:38.108Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 1,
+          "comments": 0,
+          "engagementRate": 14.29,
+          "views": 7
+        },
+        "observed_age_hours": 32.0,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "instagram:6ac49b86b0e0485fb4702f75": {
     "episode_id": null,
@@ -2700,7 +2731,22 @@
     "episode_id": "JR-0023",
     "platform": "instagram",
     "sent_at": "2026-10-06T15:06:18.632Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 37,
+          "comments": 0,
+          "engagementRate": 8.9,
+          "views": 550,
+          "shares": 2,
+          "saves": 4,
+          "follows": 0,
+          "reach": 483
+        },
+        "observed_age_hours": 31.9,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "instagram:6ac100cafec591339477480c": {
     "episode_id": "JR-0022",
@@ -2727,6 +2773,12 @@
     "episode_id": "JR-0024",
     "platform": "youtube",
     "sent_at": "2026-10-07T02:30:11.364Z",
+    "checkpoints": {}
+  },
+  "youtube:6ac100d1fec5913394774945": {
+    "episode_id": "JR-0025",
+    "platform": "youtube",
+    "sent_at": "2026-10-07T15:01:52.739Z",
     "checkpoints": {}
   }
 }
