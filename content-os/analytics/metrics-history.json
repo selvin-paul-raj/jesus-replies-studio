@@ -241,6 +241,20 @@
         },
         "observed_age_hours": 81.1,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "168h": {
+        "metrics": {
+          "reactions": 5,
+          "comments": 0,
+          "engagementRate": 58.33,
+          "views": 20,
+          "shares": 0,
+          "saves": 1,
+          "follows": 0,
+          "reach": 12
+        },
+        "observed_age_hours": 169.8,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -2600,12 +2614,62 @@
     "episode_id": "JR-0022",
     "platform": "youtube",
     "sent_at": "2026-10-06T02:30:11.045Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 14,
+          "comments": 1,
+          "engagementRate": 10.34,
+          "views": 145
+        },
+        "observed_age_hours": 27.4,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "youtube:6ac100cd814d657011c5ed8c": {
     "episode_id": "JR-0023",
     "platform": "youtube",
     "sent_at": "2026-10-06T15:02:38.108Z",
+    "checkpoints": {}
+  },
+  "instagram:6ac49b86b0e0485fb4702f75": {
+    "episode_id": null,
+    "platform": "instagram",
+    "sent_at": "2026-10-06T06:58:23.858Z",
+    "checkpoints": {}
+  },
+  "instagram:6ac100ccad7fd83bc5f36618": {
+    "episode_id": "JR-0023",
+    "platform": "instagram",
+    "sent_at": "2026-10-06T15:06:18.632Z",
+    "checkpoints": {}
+  },
+  "instagram:6ac100cafec591339477480c": {
+    "episode_id": "JR-0022",
+    "platform": "instagram",
+    "sent_at": "2026-10-06T02:31:22.352Z",
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 9,
+          "comments": 0,
+          "engagementRate": 5.41,
+          "views": 200,
+          "shares": 0,
+          "saves": 1,
+          "follows": 0,
+          "reach": 185
+        },
+        "observed_age_hours": 27.4,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
+  },
+  "youtube:6ac100cf814d657011c5edcf": {
+    "episode_id": "JR-0024",
+    "platform": "youtube",
+    "sent_at": "2026-10-07T02:30:11.364Z",
     "checkpoints": {}
   }
 }

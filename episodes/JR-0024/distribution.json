@@ -2,11 +2,11 @@
   "episode_id": "JR-0024",
   "platforms": {
     "instagram": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6ac100ce7d53b827e0dd9f10",
       "due_at": "2026-10-07T02:30:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-10-07T02:31:24.782Z",
+      "external_link": "https://www.instagram.com/reel/DeLSiknlDmU/",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -17,15 +17,29 @@
           "to": "SCHEDULED",
           "run": "37125750133",
           "evidence": "create_scheduled read back: scheduled 2026-10-07T02:30:00.000Z"
+        },
+        {
+          "at": "2026-10-07T05:53:09.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "37578532064",
+          "evidence": "read 6ac100ce7d53b827e0dd9f10: status sent at 2026-10-07T02:31:24.782Z"
+        },
+        {
+          "at": "2026-10-07T05:53:09.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "37578532064",
+          "evidence": "permalink http=200 metricsUpdatedAt=2026-10-03T13:19:10.661Z"
         }
       ]
     },
     "youtube": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6ac100cf814d657011c5edcf",
       "due_at": "2026-10-07T02:30:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-10-07T02:30:11.364Z",
+      "external_link": "https://www.youtube.com/shorts/yjhhc7vsjqg",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -36,6 +50,20 @@
           "to": "SCHEDULED",
           "run": "37125750133",
           "evidence": "create_scheduled read back: scheduled 2026-10-07T02:30:00.000Z"
+        },
+        {
+          "at": "2026-10-07T05:53:09.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "37578532064",
+          "evidence": "read 6ac100cf814d657011c5edcf: status sent at 2026-10-07T02:30:11.364Z"
+        },
+        {
+          "at": "2026-10-07T05:53:09.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "37578532064",
+          "evidence": "permalink http=200"
         }
       ]
     }

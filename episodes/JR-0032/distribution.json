@@ -2,13 +2,13 @@
   "episode_id": "JR-0032",
   "platforms": {
     "instagram": {
-      "state": "NONE",
-      "post_id": null,
-      "due_at": null,
+      "state": "SCHEDULED",
+      "post_id": "6ac5de4e535511041621fcc2",
+      "due_at": "2026-10-11T02:30:00.000Z",
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
-      "attempts": 0,
+      "attempts": 1,
       "error": null,
       "history": [
         {
@@ -24,6 +24,13 @@
           "to": "NONE",
           "run": "37125957496",
           "evidence": "quota rejection created nothing (no matching post in Buffer); eligible for top-up"
+        },
+        {
+          "at": "2026-10-07T05:53:09.000Z",
+          "from": "NONE",
+          "to": "SCHEDULED",
+          "run": "37578532064",
+          "evidence": "create_scheduled read back: scheduled 2026-10-11T02:30:00.000Z"
         }
       ]
     },
