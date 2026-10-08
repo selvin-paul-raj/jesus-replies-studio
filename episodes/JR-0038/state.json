@@ -1,0 +1,97 @@
+{
+  "episode_id": "JR-0038",
+  "state": "PACKAGE_QA_FAILED",
+  "updated_at": "2026-10-08T04:43:36Z",
+  "slot": null,
+  "target_date": null,
+  "generation": "PASS",
+  "validation": "PASS",
+  "render": "PASS",
+  "render_qa": "PASS",
+  "package": "PASS",
+  "package_qa": "FAIL",
+  "asset_hosting": "NOT_STARTED",
+  "asset_url": null,
+  "render_facts": {
+    "command": "npm run jr -- render generated/JR-0038.json --out-dir output",
+    "exit": 0,
+    "path": "output/videos/JR-0038.mp4",
+    "size_bytes": 7723168,
+    "how": "RENDERED",
+    "duration_s": 77.4,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "resolution": "1080x1920",
+    "warnings": []
+  },
+  "buffer": {
+    "post_id": null,
+    "status": null,
+    "due_at": null,
+    "sent_at": null,
+    "pending_mutation": null
+  },
+  "approval": {
+    "status": "NOT_REQUESTED",
+    "approved_at": null,
+    "approved_by": null,
+    "slot_local": null,
+    "due_at": null,
+    "evidence": null
+  },
+  "verification": {
+    "status": "NOT_VERIFIED",
+    "verified_at": null
+  },
+  "errors": [
+    {
+      "at": "2026-10-08T04:43:36Z",
+      "state": "PACKAGE_QA_FAILED",
+      "detail": "Bible reference Psalms not in caption or description"
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-10-08T04:41:17Z",
+      "from": "NEW",
+      "to": "GENERATED",
+      "run": "37728627613",
+      "evidence": "generated/JR-0038.json present (1709 B)"
+    },
+    {
+      "at": "2026-10-08T04:41:18Z",
+      "from": "GENERATED",
+      "to": "VALIDATED",
+      "run": "37728627613",
+      "evidence": "schema PASS, originality PASS, NIV Psalms 25:16 verbatim match"
+    },
+    {
+      "at": "2026-10-08T04:43:35Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "37728627613",
+      "evidence": "RENDERED JR-0038.mp4 7723168 B"
+    },
+    {
+      "at": "2026-10-08T04:43:36Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "37728627613",
+      "evidence": "77.40s 1080x1920 h264/aac "
+    },
+    {
+      "at": "2026-10-08T04:43:36Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "37728627613",
+      "evidence": "JR-0038.package.json present"
+    },
+    {
+      "at": "2026-10-08T04:43:36Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_FAILED",
+      "run": "37728627613",
+      "evidence": "Bible reference Psalms not in caption or description"
+    }
+  ]
+}

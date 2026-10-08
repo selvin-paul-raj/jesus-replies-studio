@@ -11,5 +11,18 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0038",
+    "created_at": "2026-10-08T04:41:17Z",
+    "title": "Jesus... Everyone Went Home For The Holidays Except Me",
+    "slot": null,
+    "target_date": null,
+    "state": "PACKAGE_QA_FAILED",
+    "asset_url": null,
+    "buffer_post_id": null,
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]
