@@ -1,0 +1,28 @@
+{
+  "week_start": "2026-10-12",
+  "compiled_at": "2026-10-08",
+  "_rule": "External research says what the wider ecosystem does. It never overrides own-account analytics; disagreements are recorded.",
+  "findings": [
+    {"claim": "In a Feb 2026 survey of 1,500 US teens, questions about livelihood, the future, truth, belonging and purpose carried the most urgency; whether God loves them (57%) and whether God is real (56%) ranked lowest but are still carried by more than half.",
+     "type": "SOURCE_CLAIM", "source": "Barna Group, The Big Questions on Teens' Minds Today (June 2026)", "url": "https://www.barna.com/research/questions-teens-are-asking/"},
+    {"claim": "Young adults often do not feel they can be themselves or ask honest questions in religious gatherings.",
+     "type": "SOURCE_CLAIM", "source": "Christian Standard summarising Springtide Research Institute (May 2026)", "url": "https://christianstandard.com/2026/05/hope-for-the-future/"},
+    {"claim": "Sharad Navratri runs 11 to 19 Oct 2026 and Dussehra is 20 Oct 2026.",
+     "type": "SOURCE_CLAIM", "source": "Times of India; News18", "url": "https://timesofindia.indiatimes.com/etimes/trending/navratri-2026-when-does-sharad-navratri-begin-know-date-significance-puja-and-rituals/articleshow/134730306.cms"},
+    {"claim": "Telangana schools are closed 10 to 22 Oct 2026 and Andhra Pradesh schools 10 to 21 Oct 2026 for Dussehra holidays.",
+     "type": "SOURCE_CLAIM", "source": "Times of India", "url": "https://timesofindia.indiatimes.com/education/news/telangana-andhra-pradesh-dussehra-school-holidays-2026-check-vacation-dates-and-reopening-schedule/articleshow/134687136.cms"},
+    {"claim": "For Reels, DM sends are described as the most heavily weighted distribution signal; watch time stays critical.",
+     "type": "SOURCE_CLAIM", "source": "Buffer, How the Instagram Algorithm Works (Sep 2026); Hootsuite (2026)", "url": "https://buffer.com/resources/instagram-algorithms/"},
+    {"claim": "Same-day posts make up more than 30% of recommended Reels; Reels under 90 seconds are pushed to non-followers.",
+     "type": "SOURCE_CLAIM", "source": "Vidico, Instagram Reels statistics (Aug 2026)", "url": "https://vidico.com/news/instagram-reels-statistics/"}
+  ],
+  "opportunities": [
+    {"opportunity": "Festival-holiday loneliness: students and workers left behind in hostels or rented rooms while others travel home (11 to 22 Oct). Written as one moment, no festival named.", "type": "INFERENCE", "from": ["Navratri/Dussehra dates", "school holiday dates"]},
+    {"opportunity": "'Is God real?' as a lived moment (a friend asks and you have no answer), not an apologetics lecture.", "type": "INFERENCE", "from": ["Barna 2026 teens"]},
+    {"opportunity": "Belonging and home-life pressure (parents fighting, people-pleasing) as DM-sendable moments a viewer would forward to one person.", "type": "INFERENCE", "from": ["Barna 2026 teens", "Buffer/Hootsuite sends signal"]},
+    {"opportunity": "Keep runtime 70 to 80s, under the 90s non-follower push line.", "type": "INFERENCE", "from": ["Vidico 2026"]}
+  ],
+  "disagreements_with_account_data": [
+    {"note": "Own report for week 2026-09-28 says one_pushback beat full_arc on Instagram reach (n=3 vs 13). Too small to act on; full arc held steady per the 'two variables under test' rule.", "type": "INFERENCE"}
+  ]
+}
