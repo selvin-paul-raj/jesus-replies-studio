@@ -63,5 +63,18 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0042",
+    "created_at": "2026-10-09T04:36:41Z",
+    "title": "Jesus... My Grandmother Didn't Know Who I Was Today",
+    "slot": null,
+    "target_date": null,
+    "state": "WAITING_FOR_USER",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0042/JR-0042.mp4",
+    "buffer_post_id": "6ac86ff07d9f9f33012598c2",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]
