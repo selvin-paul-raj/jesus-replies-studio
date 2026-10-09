@@ -2772,6 +2772,16 @@
         },
         "observed_age_hours": 27.4,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "72h": {
+        "metrics": {
+          "reactions": 17,
+          "comments": 1,
+          "engagementRate": 9.73,
+          "views": 185
+        },
+        "observed_age_hours": 75.6,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -2851,6 +2861,20 @@
           "reach": 185
         },
         "observed_age_hours": 27.4,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "72h": {
+        "metrics": {
+          "reactions": 10,
+          "comments": 0,
+          "engagementRate": 5.76,
+          "views": 205,
+          "shares": 0,
+          "saves": 1,
+          "follows": 0,
+          "reach": 191
+        },
+        "observed_age_hours": 75.5,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
@@ -2956,7 +2980,18 @@
     "episode_id": "JR-0026",
     "platform": "youtube",
     "sent_at": "2026-10-08T02:30:08.725Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 17,
+          "comments": 0,
+          "engagementRate": 8.9,
+          "views": 191
+        },
+        "observed_age_hours": 27.6,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "instagram:6ac73b918dbd42e4bc86a445": {
     "episode_id": null,
@@ -2974,12 +3009,33 @@
     "episode_id": "JR-0026",
     "platform": "instagram",
     "sent_at": "2026-10-08T02:30:49.527Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 101,
+          "comments": 0,
+          "engagementRate": 9.18,
+          "views": 1549,
+          "shares": 5,
+          "saves": 16,
+          "follows": 0,
+          "reach": 1351
+        },
+        "observed_age_hours": 27.5,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "youtube:6ac100d5905eed02e0674732": {
     "episode_id": "JR-0027",
     "platform": "youtube",
     "sent_at": "2026-10-08T15:03:18.356Z",
+    "checkpoints": {}
+  },
+  "youtube:6ac100d73bfd38430fe20b2e": {
+    "episode_id": "JR-0028",
+    "platform": "youtube",
+    "sent_at": "2026-10-09T02:30:11.976Z",
     "checkpoints": {}
   }
 }
