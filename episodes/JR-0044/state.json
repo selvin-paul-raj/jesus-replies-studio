@@ -1,0 +1,113 @@
+{
+  "episode_id": "JR-0044",
+  "state": "WAITING_FOR_USER",
+  "updated_at": "2026-10-09T04:46:15Z",
+  "slot": null,
+  "target_date": null,
+  "generation": "PASS",
+  "validation": "PASS",
+  "render": "PASS",
+  "render_qa": "PASS",
+  "package": "PASS",
+  "package_qa": "PASS",
+  "asset_hosting": "VERIFIED",
+  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0044/JR-0044.mp4",
+  "render_facts": {
+    "command": "npm run jr -- render generated/JR-0044.json --out-dir output",
+    "exit": 0,
+    "path": "output/videos/JR-0044.mp4",
+    "size_bytes": 7717378,
+    "how": "RENDERED",
+    "duration_s": 74.26,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "resolution": "1080x1920",
+    "warnings": []
+  },
+  "buffer": {
+    "post_id": "6ac87197987e694c3c4106e5",
+    "status": "draft",
+    "due_at": "2026-12-31T00:00:00.000Z",
+    "sent_at": null,
+    "pending_mutation": null,
+    "create_attempts": 1
+  },
+  "approval": {
+    "status": "WAITING_FOR_USER",
+    "approved_at": null,
+    "approved_by": null,
+    "slot_local": null,
+    "due_at": null,
+    "evidence": null
+  },
+  "verification": {
+    "status": "NOT_VERIFIED",
+    "verified_at": null
+  },
+  "errors": [],
+  "history": [
+    {
+      "at": "2026-10-09T04:43:55Z",
+      "from": "NEW",
+      "to": "GENERATED",
+      "run": "37885194661",
+      "evidence": "generated/JR-0044.json present (1723 B)"
+    },
+    {
+      "at": "2026-10-09T04:43:56Z",
+      "from": "GENERATED",
+      "to": "VALIDATED",
+      "run": "37885194661",
+      "evidence": "schema PASS, originality PASS, NIV James 1:5 verbatim match"
+    },
+    {
+      "at": "2026-10-09T04:46:10Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "37885194661",
+      "evidence": "RENDERED JR-0044.mp4 7717378 B"
+    },
+    {
+      "at": "2026-10-09T04:46:10Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "37885194661",
+      "evidence": "74.26s 1080x1920 h264/aac "
+    },
+    {
+      "at": "2026-10-09T04:46:10Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "37885194661",
+      "evidence": "JR-0044.package.json present"
+    },
+    {
+      "at": "2026-10-09T04:46:10Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_PASSED",
+      "run": "37885194661",
+      "evidence": "caption 601 chars, 5 hashtags, title 77, thumbnail JR-0044-thumb.png"
+    },
+    {
+      "at": "2026-10-09T04:46:14Z",
+      "from": "PACKAGE_QA_PASSED",
+      "to": "ASSET_HOSTED",
+      "run": "37885194661",
+      "evidence": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0044/JR-0044.mp4 http=206 ftyp=True bytes=7717378/7717378"
+    },
+    {
+      "at": "2026-10-09T04:46:15Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_DRAFT",
+      "run": "37885194661",
+      "evidence": "draft 6ac87197987e694c3c4106e5 read back: status draft, asset, caption, duration, channel OK"
+    },
+    {
+      "at": "2026-10-09T04:46:15Z",
+      "from": "BUFFER_DRAFT",
+      "to": "WAITING_FOR_USER",
+      "run": "37885194661",
+      "evidence": "approval required: episode, date, time, timezone"
+    }
+  ]
+}
