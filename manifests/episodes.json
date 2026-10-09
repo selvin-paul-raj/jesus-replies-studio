@@ -102,5 +102,18 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0045",
+    "created_at": "2026-10-09T04:47:35Z",
+    "title": "Jesus... My Last Single Friend Got Engaged Today",
+    "slot": null,
+    "target_date": null,
+    "state": "WAITING_FOR_USER",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0045/JR-0045.mp4",
+    "buffer_post_id": "6ac87277987e694c3c41162e",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]

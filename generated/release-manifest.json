@@ -251,5 +251,16 @@
     "size_bytes": 7717378,
     "sha256": "e35726001ec7378919778383418c43b409f66ac1303b0005c5b60cfa4e89f0bb",
     "qa_status": "PASS"
+  },
+  {
+    "release_tag": "jr-ep-JR-0045",
+    "created_at": "2026-10-09T04:46:16Z",
+    "episode_id": "JR-0045",
+    "asset_name": "JR-0045.mp4",
+    "public_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0045/JR-0045.mp4",
+    "duration_seconds": 75.16,
+    "size_bytes": 7697109,
+    "sha256": "7230a0cbf63c7e77017c13543522f663ee6a838fa44c692aa0fa3d1629c7a968",
+    "qa_status": "PASS"
   }
 ]
