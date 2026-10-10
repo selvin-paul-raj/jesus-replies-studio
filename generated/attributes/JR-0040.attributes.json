@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0040",
+  "theme": "hearing parents fight at night",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "hearing parents fight at night",
+  "bible_theme": "Isaiah 26:3",
+  "bible_book": "Isaiah",
+  "cta_type": "comment_question_plus_action",
+  "duration": 74.33,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0040/JR-0040.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

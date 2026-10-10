@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0041",
+  "theme": "people-pleasing and not being able to say no",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "people-pleasing and not being able to say no",
+  "bible_theme": "Galatians 1:10",
+  "bible_book": "Galatians",
+  "cta_type": "comment_question_plus_action",
+  "duration": 79.98,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0041/JR-0041.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

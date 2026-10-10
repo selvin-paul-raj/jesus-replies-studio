@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0038",
+  "theme": "alone in the hostel during the festival holidays",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "statement",
+  "hook": "Jesus... everyone in my hostel went home for the holidays. I'm the only one left. 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "alone in the hostel during the festival holidays",
+  "bible_theme": "Psalms 25:16",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question_plus_action",
+  "duration": null,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": null,
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

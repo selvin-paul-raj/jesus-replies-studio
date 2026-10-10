@@ -1,0 +1,733 @@
+{
+  "plan_version": 1,
+  "week_start": "2026-10-12",
+  "week_end": "2026-10-18",
+  "timezone": "Asia/Kolkata",
+  "generated_at": "2026-10-10T17:23:55.000Z",
+  "status": "PROPOSED",
+  "requires_authorization": false,
+  "targets": {
+    "unique_videos": 14,
+    "instagram": 14,
+    "youtube": 14,
+    "platform_publications": 28
+  },
+  "generation_needed": 6,
+  "carry_over_ready": [],
+  "inventory_counts": {
+    "PUBLISHED": 31,
+    "UNUSED": 4,
+    "SCHEDULED": 3,
+    "READY": 8
+  },
+  "analytics_summary": {
+    "instagram": {
+      "jr_posts_sent": 31,
+      "dimensions": {
+        "reach": {
+          "metric": "reach",
+          "n": 29,
+          "median": 579,
+          "max": 2276
+        },
+        "retention": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "shares": {
+          "metric": "shares",
+          "n": 29,
+          "median": 4,
+          "max": 22
+        },
+        "saves": {
+          "metric": "saves",
+          "n": 29,
+          "median": 10,
+          "max": 48
+        },
+        "comments": {
+          "metric": "comments",
+          "n": 29,
+          "median": 0,
+          "max": 2
+        },
+        "follows": {
+          "metric": "follows",
+          "n": 29,
+          "median": 0,
+          "max": 0
+        },
+        "likes": {
+          "metric": "reactions",
+          "n": 29,
+          "median": 53,
+          "max": 282
+        },
+        "views": {
+          "metric": "views",
+          "n": 29,
+          "median": 658,
+          "max": 2641
+        }
+      }
+    },
+    "youtube": {
+      "jr_posts_sent": 29,
+      "dimensions": {
+        "reach": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "retention": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "shares": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "saves": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "comments": {
+          "metric": "comments",
+          "n": 29,
+          "median": 0,
+          "max": 3
+        },
+        "follows": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "likes": {
+          "metric": "reactions",
+          "n": 29,
+          "median": 13,
+          "max": 215
+        },
+        "views": {
+          "metric": "views",
+          "n": 29,
+          "median": 104,
+          "max": 1667
+        }
+      }
+    }
+  },
+  "timing": {
+    "hypotheses": [
+      {
+        "platform": "instagram",
+        "window": "21:00-24:00",
+        "median": 1306.5,
+        "n": 4,
+        "metric": "reach",
+        "confidence": "low"
+      },
+      {
+        "platform": "youtube",
+        "window": "09:00-12:00",
+        "median": 59,
+        "n": 3,
+        "metric": "reactions",
+        "confidence": "low"
+      }
+    ],
+    "caveats": [
+      "metrics are cumulative and confounded by topic, hook and account momentum",
+      "Buffer reports no audience-activity-by-hour; Instagram/YouTube native insights are not wired",
+      "only posts at least 7 days old are compared so totals are roughly comparable"
+    ],
+    "coordination": "same_slot"
+  },
+  "research_ref": "content-os/research/2026-10-12.research.json",
+  "research_opportunities": [
+    {
+      "opportunity": "Festival-holiday loneliness: students and workers left behind in hostels or rented rooms while others travel home (11 to 22 Oct). Written as one moment, no festival named.",
+      "type": "INFERENCE",
+      "from": [
+        "Navratri/Dussehra dates",
+        "school holiday dates"
+      ]
+    },
+    {
+      "opportunity": "'Is God real?' as a lived moment (a friend asks and you have no answer), not an apologetics lecture.",
+      "type": "INFERENCE",
+      "from": [
+        "Barna 2026 teens"
+      ]
+    },
+    {
+      "opportunity": "Belonging and home-life pressure (parents fighting, people-pleasing) as DM-sendable moments a viewer would forward to one person.",
+      "type": "INFERENCE",
+      "from": [
+        "Barna 2026 teens",
+        "Buffer/Hootsuite sends signal"
+      ]
+    },
+    {
+      "opportunity": "Keep runtime 70 to 80s, under the 90s non-follower push line.",
+      "type": "INFERENCE",
+      "from": [
+        "Vidico 2026"
+      ]
+    }
+  ],
+  "experiments_active": [
+    "EXP-001",
+    "EXP-002"
+  ],
+  "slots": [
+    {
+      "episode_id": "JR-0034",
+      "date": "2026-10-12",
+      "weekday": "Monday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-12T02:30:00.000Z",
+        "youtube": "2026-10-12T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "wanting to quit faith",
+      "hook_strategy": "question",
+      "hook": "Jesus, what if I stopped believing tomorrow?",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "2 Timothy 2:13",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "none",
+      "duration_s": 54.29,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 54.29s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0039",
+      "date": "2026-10-12",
+      "weekday": "Monday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-12T15:00:00.000Z",
+        "youtube": "2026-10-12T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "not knowing how to answer a friend who asks if God is real",
+      "hook_strategy": "question",
+      "hook": "Jesus... my friend asked me how I know You're real. Why couldn't I answer her?",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "John 20:29",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 79.96,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 79.96s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0040",
+      "date": "2026-10-13",
+      "weekday": "Tuesday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-13T02:30:00.000Z",
+        "youtube": "2026-10-13T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "hearing parents fight at night",
+      "hook_strategy": "question",
+      "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Isaiah 26:3",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 74.33,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 74.33s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0041",
+      "date": "2026-10-13",
+      "weekday": "Tuesday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-13T15:00:00.000Z",
+        "youtube": "2026-10-13T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "people-pleasing and not being able to say no",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Galatians 1:10",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 79.98,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 79.98s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0042",
+      "date": "2026-10-14",
+      "weekday": "Wednesday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-14T02:30:00.000Z",
+        "youtube": "2026-10-14T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "grandmother with dementia no longer recognising him",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Isaiah 46:4",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 80.43,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 80.43s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0043",
+      "date": "2026-10-14",
+      "weekday": "Wednesday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-14T15:00:00.000Z",
+        "youtube": "2026-10-14T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "best friend moved abroad and they are drifting apart",
+      "hook_strategy": "question",
+      "hook": "Jesus... why does it feel like my best friend has a whole new life without me?",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Proverbs 17:17",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 75.65,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 75.65s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0044",
+      "date": "2026-10-15",
+      "weekday": "Thursday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-15T02:30:00.000Z",
+        "youtube": "2026-10-15T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "first in the family at college and lost in class",
+      "hook_strategy": "question",
+      "hook": "Jesus... why does everyone in class understand except me?",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "James 1:5",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 74.26,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 74.26s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0045",
+      "date": "2026-10-15",
+      "weekday": "Thursday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-15T15:00:00.000Z",
+        "youtube": "2026-10-15T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "being the last single friend",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... my last single friend got engaged today. I smiled in every photo. 😔",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Psalms 139:16",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 75.16,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 75.16s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0046",
+      "date": "2026-10-16",
+      "weekday": "Friday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-16T02:30:00.000Z",
+        "youtube": "2026-10-16T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": null,
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0047",
+      "date": "2026-10-16",
+      "weekday": "Friday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-16T15:00:00.000Z",
+        "youtube": "2026-10-16T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": null,
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0048",
+      "date": "2026-10-17",
+      "weekday": "Saturday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-17T02:30:00.000Z",
+        "youtube": "2026-10-17T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": null,
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0049",
+      "date": "2026-10-17",
+      "weekday": "Saturday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-17T15:00:00.000Z",
+        "youtube": "2026-10-17T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": null,
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0050",
+      "date": "2026-10-18",
+      "weekday": "Sunday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-18T02:30:00.000Z",
+        "youtube": "2026-10-18T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": null,
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0051",
+      "date": "2026-10-18",
+      "weekday": "Sunday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-18T15:00:00.000Z",
+        "youtube": "2026-10-18T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": null,
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    }
+  ],
+  "plan_sha256": "575b26466dc167431eb94db1aa91aef9b4758a733e00bb242254e3944b9644b7"
+}

@@ -1,0 +1,9 @@
+{
+  "week_start": "2026-10-12",
+  "plan_sha256": "575b26466dc167431eb94db1aa91aef9b4758a733e00bb242254e3944b9644b7",
+  "authorized_by": "standing authorization",
+  "quote": "Keep the weekly batch -> scheduling -> publication -> analytics -> next-week learning loop autonomous.",
+  "given": "2026-10-03 18:48 IST, Selvin in chat",
+  "at": "2026-10-10T17:23:55.025098+00:00",
+  "condition": "per slot: only an episode hosted with QA PASS is scheduled; NEEDS_GENERATION slots wait for their reserved id to pass QA (DEC-018)"
+}

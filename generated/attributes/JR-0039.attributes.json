@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0039",
+  "theme": "not knowing how to answer a friend who asks if God is real",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... my friend asked me how I know You're real. Why couldn't I answer her?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "not knowing how to answer a friend who asks if God is real",
+  "bible_theme": "John 20:29",
+  "bible_book": "John",
+  "cta_type": "comment_question_plus_action",
+  "duration": 79.96,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0039/JR-0039.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

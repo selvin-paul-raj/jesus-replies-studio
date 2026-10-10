@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0045",
+  "theme": "being the last single friend",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... my last single friend got engaged today. I smiled in every photo. 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "being the last single friend",
+  "bible_theme": "Psalms 139:16",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question_plus_action",
+  "duration": 75.16,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0045/JR-0045.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0043",
+  "theme": "best friend moved abroad and they are drifting apart",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... why does it feel like my best friend has a whole new life without me?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "best friend moved abroad and they are drifting apart",
+  "bible_theme": "Proverbs 17:17",
+  "bible_book": "Proverbs",
+  "cta_type": "comment_question_plus_action",
+  "duration": 75.65,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0043/JR-0043.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

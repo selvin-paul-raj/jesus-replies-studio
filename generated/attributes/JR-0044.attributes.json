@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0044",
+  "theme": "first in the family at college and lost in class",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus... why does everyone in class understand except me?",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "first in the family at college and lost in class",
+  "bible_theme": "James 1:5",
+  "bible_book": "James",
+  "cta_type": "comment_question_plus_action",
+  "duration": 74.26,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0044/JR-0044.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}
