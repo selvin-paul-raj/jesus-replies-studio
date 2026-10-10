@@ -1,15 +1,15 @@
 {
   "episode_id": "JR-0038",
-  "state": "PACKAGE_QA_FAILED",
-  "updated_at": "2026-10-08T04:43:36Z",
+  "state": "RENDER_QA_PASSED",
+  "updated_at": "2026-10-10T09:05:00+05:30",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
   "validation": "PASS",
   "render": "PASS",
   "render_qa": "PASS",
-  "package": "PASS",
-  "package_qa": "FAIL",
+  "package": "NOT_STARTED",
+  "package_qa": "NOT_STARTED",
   "asset_hosting": "NOT_STARTED",
   "asset_url": null,
   "render_facts": {
@@ -92,6 +92,13 @@
       "to": "PACKAGE_QA_FAILED",
       "run": "37728627613",
       "evidence": "Bible reference Psalms not in caption or description"
+    },
+    {
+      "at": "2026-10-10T09:05:00+05:30",
+      "from": "PACKAGE_QA_FAILED",
+      "to": "RENDER_QA_PASSED",
+      "run": "hark-reset-2026-10-10",
+      "evidence": "Manual retry reset per states.RETRY_FROM after package text fix (commit 564463f: 'Psalms 25:16'); authorised by Selvin 2026-10-10 'handle everything'"
     }
   ]
 }
