@@ -141,5 +141,18 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0048",
+    "created_at": "2026-10-11T04:46:20Z",
+    "title": "Jesus... Why Does My Mind Get Loud The Moment I Lie Down?",
+    "slot": null,
+    "target_date": null,
+    "state": "VALIDATION_FAILED",
+    "asset_url": null,
+    "buffer_post_id": null,
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]
