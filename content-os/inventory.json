@@ -2,9 +2,8 @@
   "counts": {
     "PUBLISHED": 34,
     "UNUSED": 3,
-    "FAILED": 1,
-    "READY": 9,
-    "SCHEDULED": 9
+    "SCHEDULED": 10,
+    "READY": 9
   },
   "next_ready": [
     "JR-0038",
@@ -522,11 +521,11 @@
     },
     {
       "episode_id": "JR-0034",
-      "status": "FAILED",
-      "why": "unresolved platform state",
+      "status": "SCHEDULED",
+      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
       "platforms": {
         "instagram": "SCHEDULED",
-        "youtube": "UNKNOWN"
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0034.mp4",
       "duration_s": 54.29,
@@ -790,5 +789,5 @@
       "published_on": []
     }
   ],
-  "as_of": "2026-10-11T15:47:35.855892+00:00"
+  "as_of": "2026-10-11T15:50:41.699523+00:00"
 }
