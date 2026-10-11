@@ -193,5 +193,57 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0052",
+    "created_at": "2026-10-11T15:41:05Z",
+    "title": "Jesus... He Ended Three Years With One Text",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0052/JR-0052.mp4",
+    "buffer_post_id": "6acbae73d9cab260a7017de8",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0053",
+    "created_at": "2026-10-11T15:42:43Z",
+    "title": "Jesus... My Father Is In The ICU And I Can't Get There",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0053/JR-0053.mp4",
+    "buffer_post_id": "6acbaed3f91f772d45d1c2b5",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0054",
+    "created_at": "2026-10-11T15:44:20Z",
+    "title": "Jesus... Everyone From My Batch Is Doing Better Than Me",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0054/JR-0054.mp4",
+    "buffer_post_id": "6acbaf30c4de2d2b12670a70",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0055",
+    "created_at": "2026-10-11T15:45:53Z",
+    "title": "Jesus... I Lost Money On A Betting App And Hid It From Everyone",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0055/JR-0055.mp4",
+    "buffer_post_id": "6acbaf8db07d37ac97b00b30",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]

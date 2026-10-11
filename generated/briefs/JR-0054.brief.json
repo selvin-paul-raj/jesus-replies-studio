@@ -89,7 +89,7 @@
   "scripture_rule": "NIV verbatim, verified against Bible Gateway; unverifiable -> BLOCKED",
   "strategy": {
     "source": "content-os/learnings.json + content-os/STRATEGY.md",
-    "as_of": "2026-10-11T15:26:46.576028+00:00",
+    "as_of": "2026-10-11T15:39:03.733060+00:00",
     "lean_towards": [],
     "avoid": [
       "emotion=worried (IG median 280 vs 1445, n=4)",
