@@ -142,6 +142,18 @@ class T04UnknownOutcome(Base):
         self.assertEqual((r2, b.creates), ("STOP", 1))
 
 
+class T04bRateLimit(Base):
+    def test_rate_limited_read_keeps_state_and_stops_mutating(self):
+        pid = self.buf.add("instagram", "scheduled", due=DUE)
+        st = DistStore(self.root, CFG["platforms"])
+        d = st.load("JR-0040"); d["platforms"]["instagram"].update(state="SCHEDULED", post_id=pid, due_at=DUE); st.save(d)
+        self.buf.read = lambda p: (None, 'UNREADABLE [{"extensions": {"code": "RATE_LIMIT_EXCEEDED"}}]')
+        dist = self.dist()
+        r, blk = dist.schedule("JR-0040", "instagram", DUE, ctx())
+        self.assertEqual((r, blk["state"]), ("RATE_LIMITED", "SCHEDULED"))
+        self.assertEqual(self.buf.creates + self.buf.edits, 0)
+
+
 class T05Recovery(Base):
     def test_pending_mutation_with_post_is_adopted(self):
         st = DistStore(self.root, CFG["platforms"]); d0 = st.load("JR-0040")

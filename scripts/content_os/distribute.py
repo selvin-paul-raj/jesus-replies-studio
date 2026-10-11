@@ -20,6 +20,11 @@ BUFFER_STATUS = {"draft": "DRAFT", "scheduled": "SCHEDULED", "needs_approval": "
                  "sent": "PUBLISHED", "error": "FAILED"}
 
 
+def is_rate_limit(det):
+    t = str(det or "")
+    return "RATE_LIMIT" in t or "Too many requests" in t or "429" in t
+
+
 def iso(t):
     return t.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
 
@@ -69,6 +74,7 @@ class Distributor:
         self.run, self.now, self.dry = run_id, now or dt.datetime.now(dt.timezone.utc), dry_run
         self.store = DistStore(root, cfg["platforms"])
         self.live = {}
+        self.rate_limited = False
 
     # ---------- reads ----------
     def live_posts(self, platform, refresh=False):
@@ -128,6 +134,11 @@ class Distributor:
                 self.apply_post(blk, post, platform, f"read {blk['post_id']}")
             elif det == "NOT_FOUND":
                 move(blk, "BLOCKED", f"recorded post {blk['post_id']} not found in Buffer", self.run, self.now)
+            elif is_rate_limit(det):
+                # Transient: Buffer said 'try later'. Nothing is known to have changed, so the
+                # state is kept and this run stops touching Buffer (2026-10-11 JR-0034 youtube).
+                self.rate_limited = True
+                blk["last_read_error"] = {"at": iso(self.now), "detail": str(det)[:200]}
             else:
                 move(blk, "UNKNOWN", f"read failed: {det}", self.run, self.now)
         else:
@@ -147,7 +158,11 @@ class Distributor:
 
     # ---------- scheduling ----------
     def schedule(self, eid, platform, due_at, ctx):
+        if self.rate_limited:
+            return "RATE_LIMITED", self.store.load(eid)["platforms"][platform]
         d, blk = self.reconcile(eid, platform, ctx)
+        if self.rate_limited:
+            return "RATE_LIMITED", blk
         s = blk["state"]
         if eid in self.cfg.get("held_episodes", {}) and not ctx.get("held_authorized"):
             return "HELD", blk
@@ -273,7 +288,7 @@ class Distributor:
                 r, blk = self.schedule(slot["episode_id"], platform, due, ctx)
                 results.append({"episode_id": slot["episode_id"], "platform": platform, "due_at": due,
                                 "result": r, "state": blk["state"], "post_id": blk["post_id"]})
-                if r == "QUOTA_DEFERRED":
+                if r in ("QUOTA_DEFERRED", "RATE_LIMITED"):
                     continue
                 if r == "STOP":
                     return {"status": "STOPPED", "reason": f"{slot['episode_id']} {platform} unresolved", "results": results}

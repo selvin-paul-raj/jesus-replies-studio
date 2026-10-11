@@ -257,8 +257,9 @@ def main():
                 continue
             d2 = Distributor(ROOT, Buffer.from_env(cfg), cfg, http_status, run, now, dry_run=False)
             res = d2.schedule_week(plan, ctx_for_factory(eps, pkgs, assets), auth, is_ready=ready_check(eps, pkgs, assets, cfg))
-            changed = [r for r in res["results"] if r["result"] not in ("ALREADY_SCHEDULED", "ALREADY_PUBLISHED", "MISSED_SLOT", "QUOTA_DEFERRED")]
-            print(f"[topup] {wk} {res['status']} changed={len(changed)} deferred={sum(r['result']=='QUOTA_DEFERRED' for r in res['results'])}")
+            changed = [r for r in res["results"] if r["result"] not in ("ALREADY_SCHEDULED", "ALREADY_PUBLISHED", "MISSED_SLOT", "QUOTA_DEFERRED", "RATE_LIMITED")]
+            print(f"[topup] {wk} {res['status']} changed={len(changed)} deferred={sum(r['result']=='QUOTA_DEFERRED' for r in res['results'])} "
+                  f"rate_limited={sum(r['result']=='RATE_LIMITED' for r in res['results'])}")
             for r in changed:
                 print(f"[sched] {r.get('episode_id')} {r.get('platform','-')} {r.get('due_at','')} {r['result']} state={r.get('state')} post={r.get('post_id')}")
             if res["status"] == "STOPPED":
