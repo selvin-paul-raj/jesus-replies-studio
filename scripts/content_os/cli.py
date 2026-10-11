@@ -9,10 +9,17 @@
   schedule --week D [--dry-run]   schedule the authorized week on both platforms
   verify                read back every tracked platform publication
   weekly --week D       snapshot, attributes, inventory, plan, previous-week report, schedule dry run
+  cycle                 every 6h: snapshot, verify, learnings, autopilot (authorise, sync, fill slots),
+                        schedule top-up for this + next week, ready-buffer report / authoring queue
+  autopilot-targets     print episode ids the daily generator should advance now
+  learn                 recompute content-os/learnings.json + STRATEGY.md auto block
+  review [--force]      bi-weekly review (even ISO weeks) -> content-os/reviews/<date>.json
 Buffer mutations happen only in `schedule` without --dry-run, and only for an authorized plan."""
 import argparse, datetime as dt, json, os, pathlib, sys, urllib.request
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
-from content_os import analytics, timing, inventory as inv_mod, brain, learn, episodes, ledger
+from content_os import analytics, timing, inventory as inv_mod, brain, learn, episodes, ledger, strategy
+from content_os.autopilot import Autopilot
+from daily.store import Store as DailyStore
 from content_os.distribute import Distributor, DistStore
 from content_os.client import Buffer
 from daily import pipeline as pl
@@ -95,6 +102,7 @@ def main():
     ap.add_argument("--quote")
     ap.add_argument("--episode")
     ap.add_argument("--platform")
+    ap.add_argument("--force", action="store_true")
     a = ap.parse_args()
     cfg = cfg_load()
     now = dt.datetime.now(dt.timezone.utc)
@@ -126,6 +134,32 @@ def main():
         print(f"[snapshot] rows={len(rows)} jr_matched={len(jr)} lists={notes} history_added={added} youtube_categories_seen={cats}")
         return snap
 
+    def autopilot():
+        return Autopilot(ROOT, cfg, eps, pkgs, assets, store, DailyStore(ROOT), now, run)
+
+    full_auth = cfg["autonomy"].get("full_autonomy")
+
+    def next_id():
+        nums = [int(e[3:7]) for e in eps if e[3:7].isdigit()]
+        for wd in (OS_DIR / "weeks").glob("*/weekly-content-plan.json"):
+            nums += [int(x["episode_id"][3:7]) for x in rjson(wd)["slots"]]
+        return max(nums) + 1
+
+    if a.cmd == "autopilot-targets":
+        print(" ".join(autopilot().targets())); return 0
+    if a.cmd in ("learn", "review"):
+        L = strategy.learnings(latest_snapshot()["rows"], attrs, now, exclude=cfg.get("analytics_exclude"))
+        strategy.write(ROOT, L)
+        print(f"[learn] lean_towards={L['authoring_guidance']['lean_towards']} avoid={L['authoring_guidance']['avoid']}")
+        if a.cmd == "review":
+            exps = rjson(OS_DIR / "experiments.json", {"experiments": []})
+            rep = strategy.review(ROOT, L, exps, cfg, now, force=a.force)
+            if rep is None:
+                print("[review] odd ISO week; bi-weekly review skipped"); return 0
+            wjson(OS_DIR / "experiments.json", exps)
+            for x in rep["actions"]:
+                print(f"[review] {x['type']}: {x['detail']}")
+        return 0
     if a.cmd == "snapshot":
         snapshot(); return 0
     if a.cmd == "attributes":
@@ -164,7 +198,7 @@ def main():
             print(f"[rec] {r}")
         if a.cmd != "weekly":
             return 0
-        auto = cfg["autonomy"].get("standing_authorization")
+        auto = cfg["autonomy"].get("full_autonomy") or cfg["autonomy"].get("standing_authorization")
         plan_now = rjson(week_dir / "weekly-content-plan.json")
         if auto and cfg["autonomy"]["scheduler_enabled"] and plan_now \
                 and not (week_dir / "authorization.json").exists():
@@ -197,12 +231,25 @@ def main():
             print(f"[sched] {r.get('episode_id')} {r.get('platform', '-')} {r.get('due_at', '')} {r['result']} state={r.get('state')} post={r.get('post_id')}")
         return 0 if res["status"] in ("DONE", "DRY_RUN") else 4
     if a.cmd == "cycle":
-        snapshot()
+        snap = snapshot()
         d = Distributor(ROOT, Buffer.from_env(cfg), cfg, http_status, run, now, dry_run=True)
         for o in d.verify_all(ctx_for_factory(eps, pkgs, assets)):
             print(f"[verify] {o['episode_id']} {o['platform']} {o['state']} {o['post_id']}")
+        try:
+            strategy.write(ROOT, strategy.learnings(snap["rows"], attrs, now, exclude=cfg.get("analytics_exclude")))
+        except Exception as e:
+            print(f"[learn] skipped: {type(e).__name__}: {e}")
+        ap_ = autopilot()
+        if full_auth and cfg["autonomy"]["scheduler_enabled"]:
+            for w in ap_.ensure_authorized(full_auth):
+                print(f"[autopilot] standing authorization applied to week {w}")
+            for c in ap_.sync_states(full_auth):
+                print(f"[sync] {c[0]} {c[1]} -> {c[2]}")
+            for sw in ap_.fill_slots(full_auth):
+                print(f"[fill] {sw['slot']} {sw['from']} ({sw['from_status']}) -> {sw['to']}")
         today = now.astimezone(timing.IST).date()
         monday = today - dt.timedelta(days=today.weekday())
+        rc = 0
         for wk in (monday, monday + dt.timedelta(days=7)):
             wd = OS_DIR / "weeks" / wk.isoformat()
             plan, auth = rjson(wd / "weekly-content-plan.json"), rjson(wd / "authorization.json")
@@ -215,8 +262,20 @@ def main():
             for r in changed:
                 print(f"[sched] {r.get('episode_id')} {r.get('platform','-')} {r.get('due_at','')} {r['result']} state={r.get('state')} post={r.get('post_id')}")
             if res["status"] == "STOPPED":
-                return 4
-        return 0
+                rc = 4
+                break
+        if full_auth:
+            for c in autopilot().sync_states(full_auth):
+                print(f"[sync] {c[0]} {c[1]} -> {c[2]}")
+        dists = {x["episode_id"]: x for x in store.all()}
+        inv = inv_mod.build(eps, assets, dists, snap["rows"], cfg)
+        inv["as_of"] = now.isoformat()
+        wjson(OS_DIR / "inventory.json", inv)
+        rb = autopilot().buffer_report(next_id())
+        wjson(OS_DIR / "ready-buffer.json", rb)
+        print(f"[buffer] ready_buffer={rb['ready_buffer']} target={rb['target']} in_pipeline={len(rb['authored_in_pipeline'])} "
+              f"authoring_needed={rb['authoring_needed']}")
+        return rc
     if a.cmd == "hold":
         d = Distributor(ROOT, Buffer.from_env(cfg), cfg, http_status, run, now, dry_run=a.dry_run)
         r, blk = d.hold(a.episode, a.platform, ctx_for_factory(eps, pkgs, assets)(a.episode))

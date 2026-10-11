@@ -1,15 +1,17 @@
 name: JR content OS
 # Weekly brain + daily verification for Jesus Replies.
 # Autonomous cadence ON since 2026-10-03 (Selvin: "Keep the weekly batch -> scheduling -> publication
-# -> analytics -> next-week learning loop autonomous.").
+# -> analytics -> next-week learning loop autonomous."). Full autonomy + self-correction + bi-weekly
+# review since 2026-10-11 (content-os/DECISIONS.md DEC-JR-005).
 on:
   schedule:
     - cron: '30 12 * * 6'   # Sat 18:00 IST: weekly brain for next Monday (snapshot, plan, report, schedule if all READY)
-    - cron: '15 */6 * * *'  # every 6h: snapshot + metrics checkpoints + verify publications + quota top-up
+    - cron: '15 */6 * * *'  # every 6h: snapshot, verify, learnings, autopilot (sync, fill slots), quota top-up
+    - cron: '0 14 * * 0'    # Sun 19:30 IST: bi-weekly review (runs on even ISO weeks, skips odd)
   workflow_dispatch:
     inputs:
       command:
-        description: snapshot | attributes | inventory | plan | report | weekly | verify | schedule
+        description: snapshot | attributes | inventory | plan | report | weekly | verify | schedule | cycle | learn | review
         required: true
         default: weekly
       week_start:
@@ -38,7 +40,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       - name: Safety tests
-        run: python3 -m unittest tests.test_content_os tests.test_daily
+        run: python3 -m unittest discover -s tests
       - name: Run
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
@@ -50,19 +52,21 @@ jobs:
           PL: ${{ inputs.platform }}
         run: |
           if [ -z "$CMD" ]; then
-            if [ "$SCHED" = "30 12 * * 6" ]; then CMD=weekly; WEEK=$(TZ=Asia/Kolkata date -d 'next monday' +%F); else CMD=cycle; fi
+            if [ "$SCHED" = "30 12 * * 6" ]; then CMD=weekly; WEEK=$(TZ=Asia/Kolkata date -d 'next monday' +%F);
+            elif [ "$SCHED" = "0 14 * * 0" ]; then CMD=review; else CMD=cycle; fi
           fi
           args="$CMD"
           [ -n "$WEEK" ] && args="$args --week $WEEK"
           [ "$DRY" = "true" ] && { [ "$CMD" = "schedule" ] || [ "$CMD" = "hold" ]; } && args="$args --dry-run"
           [ -n "$EP" ] && args="$args --episode $EP --platform $PL"
+          [ "$CMD" = "review" ] && [ -z "$SCHED" ] && args="$args --force"
           python3 scripts/content_os/cli.py $args
       - name: Commit state
         if: always()
         run: |
           git config user.name "jr-content-os"
           git config user.email "115263986+selvin-paul-raj@users.noreply.github.com"
-          git add content-os episodes generated/attributes 2>/dev/null || true
+          git add content-os episodes manifests generated/attributes 2>/dev/null || true
           git diff --cached --quiet && exit 0
           git commit -m "automation: content OS ${{ inputs.command || github.event.schedule }} ${{ github.run_id }} [skip ci]"
-          git pull --rebase -q && git push
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done

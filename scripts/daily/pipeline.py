@@ -18,7 +18,10 @@ def _jr_num(name):
 
 def norm_text(s):
     s = (s or "").replace("\u201c", '"').replace("\u201d", '"').replace("\u2018", "'").replace("\u2019", "'")
-    return re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"\s+", " ", s).strip()
+    # Bible Gateway renders small-caps LORD as "Lord ," (a span before punctuation):
+    # whitespace before punctuation is markup, not wording (JR-0048 Psalm 4:8, 2026-10-11).
+    return re.sub(r"\s+([,.;:!?\u2019'\")])", r"\1", s)
 
 
 def words(s):
@@ -146,6 +149,11 @@ def brief(ctx, eid):
          "recent_topics": [e.get("topic") for e in recent], "recent_emotions": [e.get("emotion") for e in recent],
          "duration_target_seconds": ctx.rules["duration"]["target_seconds"],
          "scripture_rule": "NIV verbatim, verified against Bible Gateway; unverifiable -> BLOCKED"}
+    lp = ctx.root / "content-os/learnings.json"
+    if lp.exists():               # feedback loop: analytics -> learnings -> every new brief
+        L = json.loads(lp.read_text())
+        b["strategy"] = {"source": "content-os/learnings.json + content-os/STRATEGY.md", "as_of": L.get("as_of"),
+                         **(L.get("authoring_guidance") or {})}
     p = ctx.root / "generated/briefs" / f"{eid}.brief.json"
     if not ctx.dry_run:
         p.parent.mkdir(parents=True, exist_ok=True)
@@ -191,7 +199,7 @@ def step_validated(ctx, st):
     if not fetched:
         st["validation"] = "BLOCKED"
         return ctx.store.transition(st, "BLOCKED", f"scripture {ref} could not be verified (source unreadable); not rendering", ctx.run_id)
-    if norm_text(fetched) != norm_text(b["text"]):
+    if norm_text(fetched).lower() != norm_text(b["text"]).lower():
         st["validation"] = "FAIL"
         return ctx.store.transition(st, "VALIDATION_FAILED", f"scripture {ref} text does not match NIV source", ctx.run_id)
     st["validation"] = "PASS"
@@ -298,7 +306,9 @@ def step_package_qa(ctx, st):
         if len(pk["youtube_title"]) > P["youtube_title_max"]: probs.append("youtube title too long")
         if len(pk["youtube_description"]) > P["youtube_description_max"]: probs.append("youtube description too long")
         book = (ep.get("bible") or {}).get("book", "")
-        if book and book.lower() not in (pk["instagram_caption"] + pk["youtube_description"]).lower():
+        hay = (pk["instagram_caption"] + pk["youtube_description"]).lower()
+        names = {book.lower(), book.lower()[:-1] if book.lower() == "psalms" else book.lower()}
+        if book and not any(n in hay for n in names):
             probs.append(f"Bible reference {book} not in caption or description")
         others = set(re.findall(r"JR-\d{4}", json.dumps(pk))) - {eid}
         if others: probs.append(f"references other episodes {sorted(others)}")
@@ -426,7 +436,34 @@ def step_buffer_draft(ctx, st):
 
 def to_waiting(ctx, st):
     st["approval"]["status"] = "WAITING_FOR_USER"
-    return ctx.store.transition(st, "WAITING_FOR_USER", "approval required: episode, date, time, timezone", ctx.run_id)
+    st = ctx.store.transition(st, "WAITING_FOR_USER", "approval required: episode, date, time, timezone", ctx.run_id)
+    return auto_approve(ctx, st)
+
+
+def standing_authorization(ctx):
+    """Selvin's standing autonomy authorization (config/content-os.json autonomy.full_autonomy)."""
+    p = ctx.root / "config/content-os.json"
+    try:
+        return (json.loads(p.read_text()).get("autonomy") or {}).get("full_autonomy")
+    except Exception:
+        return None
+
+
+def auto_approve(ctx, st):
+    """Human gate removed 2026-10-11 (Selvin: 'complete autonomous running system').
+    A draft that passed every automated gate (verse, render QA, package QA, hosting,
+    draft read-back) is APPROVED under the standing authorization; the content OS
+    distributor then schedules it into its reserved slot on Instagram and YouTube."""
+    if ctx.rules.get("require_human_approval", True) or st["state"] != "WAITING_FOR_USER":
+        return st
+    auth = standing_authorization(ctx)
+    if not auth:
+        ctx.log(f"[approve] {st['episode_id']} no standing authorization recorded; stays WAITING_FOR_USER")
+        return st
+    st["approval"].update({"status": "APPROVED", "approved_at": now_iso(), "approved_by": "standing authorization",
+                           "evidence": redact(f"{auth['given']}: {auth['quote']}")[:300]})
+    return ctx.store.transition(st, "APPROVED", f"auto-approved after all QA gates under standing authorization "
+                                f"{auth['given']}; slot time comes from the weekly plan", ctx.run_id)
 
 
 def advance(ctx, eid):
@@ -447,8 +484,11 @@ def advance(ctx, eid):
                 ctx.store.upsert_manifest(st, _title(ctx, eid))
                 if st["state"] == before:      # dry-run or read-only stop
                     break
-            if st["state"] in states.FAILURES or st["state"] == "WAITING_FOR_USER":
+            if st["state"] in states.FAILURES or st["state"] in ("WAITING_FOR_USER", "APPROVED"):
                 break
+        if st["state"] == "WAITING_FOR_USER":
+            st = auto_approve(ctx, st)
+            ctx.store.upsert_manifest(st, _title(ctx, eid))
         return st
     finally:
         ctx.store.release(eid, ctx.run_id)
@@ -622,3 +662,126 @@ def report(st):
     if st["errors"] and st["state"] in states.FAILURES:
         out.append(f"{'LAST_ERROR':<14} {st['errors'][-1]['detail']}")
     return "\n".join(out)
+
+
+# ---------------------------------------------------------------- self-healing
+def _heal_block(st):
+    return st.setdefault("heal", {"attempts": 0, "exhausted": False, "log": []})
+
+
+def _replace_in_package(ctx, eid, old, new):
+    p = ctx.pkg_path(eid)
+    if not p.is_file() or not old or old == new:
+        return False
+    pk = json.loads(p.read_text())
+    changed = False
+    for k in ("instagram_caption", "youtube_description"):
+        if isinstance(pk.get(k), str) and old in pk[k]:
+            pk[k] = pk[k].replace(old, new)
+            changed = True
+    if changed:
+        p.write_text(json.dumps(pk, indent=2, ensure_ascii=False) + "\n")
+    return changed
+
+
+def heal(ctx, st, max_attempts=3):
+    """One bounded automatic repair for a failed episode. Returns (state, action|None).
+    Repairs never weaken a gate: they fix the input and send the episode back through the
+    same gate. Unrepairable failures (originality, over-ceiling duration, anything with
+    Buffer doubt) mark the episode exhausted so the autopilot fills its slot instead."""
+    eid, s = st["episode_id"], st["state"]
+    h = _heal_block(st)
+    last = (st["errors"][-1]["detail"] if st["errors"] else "") or ""
+    if h["exhausted"]:
+        return st, None
+    if h["attempts"] >= max_attempts:
+        h["exhausted"] = True
+        h["log"].append({"at": now_iso(), "run": ctx.run_id, "action": f"exhausted after {h['attempts']} repairs"})
+        ctx.store.save(st)
+        return st, None
+    action, reopen_to = None, None
+    B = st["buffer"]
+    if s == "VALIDATION_FAILED" and "does not match NIV source" in last and "originality" not in last:
+        ep = json.loads(ctx.ep_path(eid).read_text())
+        try:
+            fetched = ctx.fetch_scripture(ref_of(ep)) if ctx.fetch_scripture else None
+        except Exception:
+            fetched = None
+        if fetched:
+            fetched = norm_text(fetched)
+            old = ep["bible"]["text"]
+            ep["bible"]["text"] = fetched
+            ctx.ep_path(eid).write_text(json.dumps(ep, indent=2, ensure_ascii=False) + "\n")
+            _replace_in_package(ctx, eid, old, fetched)
+            action = f"scripture text for {ref_of(ep)} replaced with the NIV source wording (episode + package)"
+    elif s == "BLOCKED" and st.get("validation") == "BLOCKED" and not B.get("post_id") and not B.get("pending_mutation"):
+        action, reopen_to = "scripture source was unreadable; retrying validation", "GENERATED"
+    elif s in ("RENDER_FAILED", "RENDER_QA_FAILED"):
+        if "duration" in last and "outside" in last:
+            action = None            # dialogue is never trimmed automatically
+        else:
+            v = video_path(ctx, eid)
+            if v.exists():
+                v.unlink()
+            action = "stale or broken render removed; re-rendering"
+    elif s == "PACKAGE_QA_FAILED":
+        p = ctx.pkg_path(eid)
+        pk = json.loads(p.read_text()) if p.is_file() else None
+        fixes = []
+        if pk is not None:
+            tags = pk.get("instagram_hashtags")
+            tags = tags if isinstance(tags, list) else (tags or "").split()
+            n = ctx.rules["package"]["hashtag_count"]
+            if "hashtag count" in last and len(tags) > n:
+                pk["instagram_hashtags"] = tags[:n]; fixes.append(f"hashtags trimmed to {n}")
+            mx = ctx.rules["package"]["youtube_title_max"]
+            if "youtube title too long" in last and len(pk.get("youtube_title", "")) > mx:
+                t = pk["youtube_title"].replace(" #Shorts", "")
+                t = t[:mx - 8].rsplit(" ", 1)[0] + " #Shorts"
+                pk["youtube_title"] = t; fixes.append("youtube title shortened")
+            if "Bible reference" in last:
+                ep = json.loads(ctx.ep_path(eid).read_text())
+                ref = ref_of(ep)
+                pk["youtube_description"] = pk.get("youtube_description", "") + f"\n\n{ref} (NIV)"
+                fixes.append(f"reference {ref} added to the description")
+            if fixes:
+                p.write_text(json.dumps(pk, indent=2, ensure_ascii=False) + "\n")
+        if "thumbnail" in last:
+            v = video_path(ctx, eid)
+            if v.exists():
+                v.unlink()
+            fixes.append("re-render to produce the thumbnail")
+            reopen_to = "VALIDATED"
+        action = "; ".join(fixes) if fixes else None
+    elif s in ("PACKAGE_FAILED", "HOSTING_FAILED") or (s == "BUFFER_FAILED" and not B.get("pending_mutation")):
+        action = "transient step failure; retrying the same step"
+    if not action:
+        h["exhausted"] = True
+        h["log"].append({"at": now_iso(), "run": ctx.run_id, "action": f"not auto-repairable: {s}: {last[:200]}"})
+        ctx.store.save(st)
+        return st, None
+    h["attempts"] += 1
+    h["log"].append({"at": now_iso(), "run": ctx.run_id, "action": action})
+    if reopen_to:
+        ts = now_iso()
+        st["history"].append({"at": ts, "from": s, "to": reopen_to, "run": ctx.run_id, "evidence": f"heal: {action}"[:300]})
+        st["state"], st["updated_at"] = reopen_to, ts
+        ctx.store.save(st)
+    else:
+        ctx.store.reopen(st, f"heal: {action}", ctx.run_id)
+    ctx.log(f"[heal] {eid} {s} -> {st['state']}: {action}")
+    return st, action
+
+
+def autoadvance(ctx, eid, max_rounds=2, max_attempts=3):
+    """advance, and on a failure repair + advance again (bounded)."""
+    st = advance(ctx, eid)
+    rounds = 0
+    while st is not None and (st["state"] in states.FAILURES) and rounds < max_rounds:
+        st, action = heal(ctx, st, max_attempts)
+        ctx.store.upsert_manifest(st, _title(ctx, eid))
+        if not action:
+            break
+        rounds += 1
+        st = advance(ctx, eid)
+    return st

@@ -4,7 +4,10 @@
   next-id                                  print the next unused episode id
   allocate --date D --slot MORNING|NIGHT   map (date, slot) to exactly one episode id
   brief EID                                write authoring constraints (no dialogue)
-  advance EID [--dry-run]                  run from current state up to WAITING_FOR_USER
+  advance EID [--dry-run]                  run from current state up to the Buffer draft
+                                           (auto-APPROVED under the standing authorization when
+                                           publishing-rules require_human_approval=false)
+  autoadvance EID                          advance + bounded self-healing repairs on failure
   approve EID --date D --time HH:MM --tz Asia/Kolkata --by NAME --evidence "words"
   schedule EID [--dry-run]                 only after APPROVED; whole-post edit + read-back
   verify EID | --all                       post-publish verification
@@ -69,6 +72,14 @@ def main():
         if st is None: return 3
         print(pl.report(st))
         return 0 if st["state"] not in pl.states.FAILURES else 1
+    if a.cmd == "autoadvance":
+        st = pl.autoadvance(ctx, a.eid)
+        if st is None: return 3
+        print(pl.report(st))
+        h = st.get("heal") or {}
+        if h.get("log"):
+            print(f"{'HEAL':<14} attempts={h.get('attempts')} exhausted={h.get('exhausted')} last={h['log'][-1]['action']}")
+        return 0 if st["state"] not in pl.states.FAILURES and st["state"] != "BLOCKED" else 1
     if a.cmd == "approve":
         st = pl.approve(ctx, a.eid, a.date, a.time, a.tz, a.by, a.evidence, a.allow_off_slot)
         print(pl.report(st)); return 0

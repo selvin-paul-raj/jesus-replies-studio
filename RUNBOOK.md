@@ -279,3 +279,23 @@ npx tsx scripts/check-bible-merge.ts                      # self-checks
 npx tsx scripts/check-speaker-continuity.ts
 npx tsx scripts/check-cli-input.ts
 ```
+
+## Autonomous mode (since 2026-10-11, DEC-JR-005)
+
+No human approval step. See `content-os/DECISIONS.md` and `content-os/STRATEGY.md`.
+
+- `jr-daily-generate.yml` — daily 05:00 IST. `cli.py autopilot-targets` picks reserved
+  episodes for slots up to 3 days ahead, then authored spares (max 4 per run);
+  `jr_daily.py autoadvance <id>` runs validate → render → QA → package QA → host → Buffer
+  draft with bounded self-healing, then auto-approves; a second job runs `cli.py cycle`.
+- `jr-content-os.yml` — every 6h `cycle`: snapshot, verify, learnings → STRATEGY.md, apply
+  the standing authorization to any re-hashed plan, sync episode states, fill any slot whose
+  episode is unauthored/exhausted/not ready 30h out from READY spares, schedule top-up
+  (Buffer quota aware), write `content-os/ready-buffer.json` (ready count + `authoring_needed`).
+  Sat 18:00 IST weekly plan; Sun 19:30 IST bi-weekly `review` (even ISO weeks).
+- Authoring new episodes needs a writer (no model key is wired into CI): whoever authors
+  reads `content-os/ready-buffer.json` → `authoring_needed`, runs
+  `python3 scripts/daily/jr_daily.py brief <id>` (includes the learnings), writes
+  `generated/<id>.json` + `generated/<id>.package.json`, pushes. The daily run does the rest.
+- Manual knobs: `config/publishing-rules.json` `require_human_approval: true` restores the
+  human gate; `config/content-os.json` `autonomy.scheduler_enabled: false` stops scheduling.

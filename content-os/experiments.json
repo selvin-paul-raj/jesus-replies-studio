@@ -33,7 +33,17 @@
       ],
       "min_n_per_arm": 7,
       "result": null,
-      "decision_rule": "compare 7-day medians per platform once each arm has >=7 publications; until then 'insufficient data'"
+      "decision_rule": "compare 7-day medians per platform once each arm has >=7 publications; until then 'insufficient data'",
+      "readings": [
+        {
+          "at": "2026-10-11T15:26:46.576028+00:00",
+          "reading": "instagram: night (18-24 IST) median 1506 vs morning (06-12 IST) 1436 (n=9/13)"
+        },
+        {
+          "at": "2026-10-11T15:26:46.576028+00:00",
+          "reading": "youtube: night (18-24 IST) median 351 vs morning (06-12 IST) 208 (n=11/8)"
+        }
+      ]
     },
     {
       "id": "EXP-003",

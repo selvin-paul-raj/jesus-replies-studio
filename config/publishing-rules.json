@@ -4,8 +4,8 @@
     "MORNING": "08:00",
     "NIGHT": "21:00"
   },
-  "require_human_approval": true,
-  "auto_publish": false,
+  "require_human_approval": false,
+  "auto_publish": true,
   "verify_after_publish": true,
   "publish_grace_minutes": 30,
   "duration": {
@@ -42,5 +42,6 @@
     },
     "note": "ids, not credentials; the API key stays only in secrets.BUFFER_API_KEY"
   },
-  "lock_ttl_minutes": 90
+  "lock_ttl_minutes": 90,
+  "_approval_note": "2026-10-11: human gate removed under Selvin's full-autonomy authorization (config/content-os.json autonomy.full_autonomy). All automated QA gates remain."
 }
