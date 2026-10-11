@@ -37,28 +37,28 @@ trends and experiment readings in `content-os/reviews/`.
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-11T15:50Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-11T21:54Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=22, median views 1445, best 2641, saves per 1k reach 13.2
-- **youtube**: n=19, median views 229, best 1667, saves per 1k reach None
+- **instagram**: n=22, median views 1449, best 2641, saves per 1k reach 13.2
+- **youtube**: n=20, median views 250, best 1673, saves per 1k reach None
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
 
 **Avoid / de-emphasise:**
-- emotion=worried (IG median 280 vs 1445, n=4)
-- duration=>78s (IG median 436 vs 1445, n=4)
+- emotion=worried (IG median 280 vs 1449, n=4)
+- duration=>78s (IG median 436 vs 1449, n=4)
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
 - JR-0007 2641 views: Jesus... I'm so tired. I keep trying and trying and nothing works.
 - JR-0006 1949 views: Jesus... she left me for someone else. Just like that. Like none of it mattered.
-- JR-0020 1893 views: Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭
+- JR-0020 1895 views: Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭
 - JR-0008 1724 views: Jesus... it feels like You've gone quiet. I pray and nothing comes back.
-- JR-0029 1717 views: Jesus, why does everything come easy for her?
+- JR-0029 1723 views: Jesus, why does everything come easy for her?
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1436 (n=13), night (18-24 IST) 1506 (n=9)
-- youtube slot medians: morning (06-12 IST) 208 (n=8), night (18-24 IST) 351 (n=11)
+- instagram slot medians: morning (06-12 IST) 1444 (n=13), night (18-24 IST) 1506 (n=9)
+- youtube slot medians: morning (06-12 IST) 250 (n=8), night (18-24 IST) 254 (n=12)
 - average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->
