@@ -1,7 +1,7 @@
 {
   "episode_id": "JR-0039",
-  "state": "WAITING_FOR_USER",
-  "updated_at": "2026-10-08T04:46:53Z",
+  "state": "SCHEDULED",
+  "updated_at": "2026-10-11T15:39:07Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
@@ -26,19 +26,19 @@
   },
   "buffer": {
     "post_id": "6ac7203c57f9bd074d291549",
-    "status": "draft",
-    "due_at": "2026-12-31T00:00:00.000Z",
+    "status": "scheduled",
+    "due_at": "2026-10-12T15:00:00.000Z",
     "sent_at": null,
     "pending_mutation": null,
     "create_attempts": 1
   },
   "approval": {
-    "status": "WAITING_FOR_USER",
-    "approved_at": null,
-    "approved_by": null,
+    "status": "APPROVED",
+    "approved_at": "2026-10-11T15:39:07Z",
+    "approved_by": "standing authorization",
     "slot_local": null,
-    "due_at": null,
-    "evidence": null
+    "due_at": "2026-10-12T15:00:00.000Z",
+    "evidence": "2026-10-11 20:48 IST, Selvin in chat: dont stop it continus complete automous running system i wnat it bi-weelky review it and enhance the content and enagament , qually and follow ups and crack chnaging algorthim of thsoe social medias build life long running system self correction , feeadbackloop "
   },
   "verification": {
     "status": "NOT_VERIFIED",
@@ -108,6 +108,20 @@
       "to": "WAITING_FOR_USER",
       "run": "37728927545",
       "evidence": "approval required: episode, date, time, timezone"
+    },
+    {
+      "at": "2026-10-11T15:39:07Z",
+      "from": "WAITING_FOR_USER",
+      "to": "APPROVED",
+      "run": "38151502869",
+      "evidence": "standing authorization 2026-10-11 20:48 IST, Selvin in chat (human gate removed)"
+    },
+    {
+      "at": "2026-10-11T15:39:07Z",
+      "from": "APPROVED",
+      "to": "SCHEDULED",
+      "run": "38151502869",
+      "evidence": "distributor scheduled instagram 6ac7203c57f9bd074d291549 at 2026-10-12T15:00:00.000Z"
     }
   ]
 }
