@@ -3,20 +3,6 @@
   "schema": "generated/JR-0036.json (id,title,character,topic,emotion,bible{book,chapter,verse,version=NIV,text},lines[{speaker,text}])",
   "package_schema": "generated/JR-0036.package.json",
   "avoid_titles": [
-    "Jesus... I Got What I Prayed For. Why Do I Feel Empty?",
-    "Jesus... My Brother Texted Back After Two Years",
-    "Jesus... I Have To Tell My Parents Tomorrow",
-    "Jesus... Will There Be Enough Money This Month?",
-    "Jesus... My Best Friend Told Everyone My Secret?",
-    "Jesus... Why Did They Pick Someone Else Again?",
-    "Jesus... I'm Scared To Watch My Mother Get Weaker?",
-    "Jesus... What If You Knew What I Actually Did?",
-    "Jesus... Why Does Everything Come Easy For Her?",
-    "Jesus... What If I Don't Belong There Either?",
-    "Jesus... It's Been One Year. Why Does It Still Hurt?",
-    "Jesus... Is It Wrong That I Feel This Proud?",
-    "Jesus... How Long Am I Supposed To Keep Asking?",
-    "Jesus... What If I Stopped Believing Tomorrow?",
     "Jesus... They Want Me To Sign Something That Isn't True",
     "Jesus... I Heard My Father's Voice Come Out Of My Mouth",
     "Jesus... I Parked Outside Church And Couldn't Go In",
@@ -27,23 +13,12 @@
     "Jesus... My Grandmother Didn't Know Who I Was Today",
     "Jesus... Why Does My Best Friend Have A New Life Without Me?",
     "Jesus... Why Does Everyone In Class Understand Except Me?",
-    "Jesus... My Last Single Friend Got Engaged Today"
+    "Jesus... My Last Single Friend Got Engaged Today",
+    "Jesus... Why Do I Hate Every Photo Of Myself?",
+    "Jesus... Why Does My Mind Get Loud The Moment I Lie Down?",
+    "Jesus... I Was The One Who Hurt Her And Never Said Sorry"
   ],
   "avoid_scripture": [
-    "Philippians 4:12-13",
-    "Genesis 33:4",
-    "Psalms 27:10",
-    "Hebrews 13:5-6",
-    "2 Corinthians 2:7-8",
-    "Ecclesiastes 3:1",
-    "Ruth 1:16",
-    "1 John 1:9",
-    "Ephesians 4:31-32",
-    "Joshua 1:9",
-    "Lamentations 3:22-23",
-    "1 Peter 5:5-6",
-    "Micah 7:7",
-    "2 Timothy 2:13",
     "1 Corinthians 10:13",
     "Romans 8:15",
     "Isaiah 43:18-19",
@@ -54,23 +29,12 @@
     "Isaiah 46:4",
     "Proverbs 17:17",
     "James 1:5",
-    "Psalms 139:16"
+    "Psalms 139:16",
+    "Psalms 149:4",
+    "Psalms 4:8",
+    "Romans 12:18"
   ],
   "avoid_hooks": [
-    "Jesus... I finally got the thing I begged You for. Why do I feel nothing?",
-    "Jesus... my brother texted back after two years of silence. Why am I so scared to be happy about it?",
-    "Jesus... tomorrow I have to tell my parents I am leaving the course they paid for. 😭",
-    "Jesus, will there be enough money this month?",
-    "Jesus, my best friend told everyone my secret?",
-    "Jesus, why did they pick someone else again?",
-    "Jesus, I am scared to watch my mother get weaker?",
-    "Jesus, what if You knew what I actually did?",
-    "Jesus, why does everything come easy for her?",
-    "Jesus, what if I do not belong there either?",
-    "Jesus, it has been one year. Why does it still hurt?",
-    "Jesus, is it wrong that I feel this proud?",
-    "Jesus, how long am I supposed to keep asking?",
-    "Jesus, what if I stopped believing tomorrow?",
     "Jesus... my manager asked me to sign a report. The numbers in it are not true.",
     "Jesus... I shouted at my brother tonight. And it was not my voice. It was my father's.",
     "Jesus... I parked outside church this morning. I never went in. 😔",
@@ -81,12 +45,12 @@
     "Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
     "Jesus... why does it feel like my best friend has a whole new life without me?",
     "Jesus... why does everyone in class understand except me?",
-    "Jesus... my last single friend got engaged today. I smiled in every photo. 😔"
+    "Jesus... my last single friend got engaged today. I smiled in every photo. 😔",
+    "Jesus... why do I hate every photo of myself? My friend posted one tonight and I made her delete it. 😔",
+    "Jesus... why does my mind get loud the moment I lie down? It's 3 AM again. 😔",
+    "Jesus... I was the one who hurt her. It's been three years, and I never said sorry. 😔"
   ],
   "recent_topics": [
-    "pride after success",
-    "unanswered prayer",
-    "wanting to quit faith",
     "pressure to falsify a report at work",
     "fear of becoming like a parent",
     "returning to church after years away",
@@ -97,15 +61,18 @@
     "grandmother with dementia no longer recognising him",
     "best friend moved abroad and they are drifting apart",
     "first in the family at college and lost in class",
-    "being the last single friend"
+    "being the last single friend",
+    "hating how she looks in every photo of herself",
+    "lying awake at night overthinking",
+    "hurt a friend years ago and never apologised"
   ],
   "recent_emotions": [
-    "happy",
-    "neutral",
-    "sad",
     "worried",
     "sad",
     "worried",
+    "sad",
+    "sad",
+    "sad",
     "sad",
     "sad",
     "sad",
@@ -119,10 +86,5 @@
     70,
     80
   ],
-  "scripture_rule": "NIV verbatim, verified against Bible Gateway; unverifiable -> BLOCKED",
-  "hook_type": "statement",
-  "experiments": [
-    "EXP-001",
-    "EXP-002"
-  ]
+  "scripture_rule": "NIV verbatim, verified against Bible Gateway; unverifiable -> BLOCKED"
 }
