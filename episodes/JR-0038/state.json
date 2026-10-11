@@ -1,22 +1,22 @@
 {
   "episode_id": "JR-0038",
-  "state": "RENDER_QA_PASSED",
-  "updated_at": "2026-10-10T09:05:00+05:30",
+  "state": "APPROVED",
+  "updated_at": "2026-10-11T15:38:53Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
   "validation": "PASS",
   "render": "PASS",
   "render_qa": "PASS",
-  "package": "NOT_STARTED",
-  "package_qa": "NOT_STARTED",
-  "asset_hosting": "NOT_STARTED",
-  "asset_url": null,
+  "package": "PASS",
+  "package_qa": "PASS",
+  "asset_hosting": "VERIFIED",
+  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0038/JR-0038.mp4",
   "render_facts": {
     "command": "npm run jr -- render generated/JR-0038.json --out-dir output",
     "exit": 0,
     "path": "output/videos/JR-0038.mp4",
-    "size_bytes": 7723168,
+    "size_bytes": 7723223,
     "how": "RENDERED",
     "duration_s": 77.4,
     "video_codec": "h264",
@@ -25,19 +25,20 @@
     "warnings": []
   },
   "buffer": {
-    "post_id": null,
-    "status": null,
-    "due_at": null,
+    "post_id": "6acbad8ced92ed8fa509d81e",
+    "status": "draft",
+    "due_at": "2026-12-31T00:00:00.000Z",
     "sent_at": null,
-    "pending_mutation": null
+    "pending_mutation": null,
+    "create_attempts": 1
   },
   "approval": {
-    "status": "NOT_REQUESTED",
-    "approved_at": null,
-    "approved_by": null,
+    "status": "APPROVED",
+    "approved_at": "2026-10-11T15:38:53Z",
+    "approved_by": "standing authorization",
     "slot_local": null,
     "due_at": null,
-    "evidence": null
+    "evidence": "2026-10-11 20:48 IST, Selvin in chat: dont stop it continus complete automous running system i wnat it bi-weelky review it and enhance the content and enagament , qually and follow ups and crack chnaging algorthim of thsoe social medias build life long running system self correction , feeadbackloop "
   },
   "verification": {
     "status": "NOT_VERIFIED",
@@ -48,6 +49,11 @@
       "at": "2026-10-08T04:43:36Z",
       "state": "PACKAGE_QA_FAILED",
       "detail": "Bible reference Psalms not in caption or description"
+    },
+    {
+      "at": "2026-10-11T15:36:43Z",
+      "state": "PACKAGE_QA_FAILED",
+      "detail": "thumbnail image not rendered"
     }
   ],
   "history": [
@@ -99,6 +105,94 @@
       "to": "RENDER_QA_PASSED",
       "run": "hark-reset-2026-10-10",
       "evidence": "Manual retry reset per states.RETRY_FROM after package text fix (commit 564463f: 'Psalms 25:16'); authorised by Selvin 2026-10-10 'handle everything'"
+    },
+    {
+      "at": "2026-10-11T15:36:43Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "38151502869",
+      "evidence": "JR-0038.package.json present"
+    },
+    {
+      "at": "2026-10-11T15:36:43Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_FAILED",
+      "run": "38151502869",
+      "evidence": "thumbnail image not rendered"
+    },
+    {
+      "at": "2026-10-11T15:36:43Z",
+      "from": "PACKAGE_QA_FAILED",
+      "to": "VALIDATED",
+      "run": "38151502869",
+      "evidence": "heal: re-render to produce the thumbnail"
+    },
+    {
+      "at": "2026-10-11T15:38:47Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "38151502869",
+      "evidence": "RENDERED JR-0038.mp4 7723223 B"
+    },
+    {
+      "at": "2026-10-11T15:38:47Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "38151502869",
+      "evidence": "77.40s 1080x1920 h264/aac "
+    },
+    {
+      "at": "2026-10-11T15:38:47Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "38151502869",
+      "evidence": "JR-0038.package.json present"
+    },
+    {
+      "at": "2026-10-11T15:38:47Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_PASSED",
+      "run": "38151502869",
+      "evidence": "caption 576 chars, 5 hashtags, title 76, thumbnail JR-0038-thumb.png"
+    },
+    {
+      "at": "2026-10-11T15:38:52Z",
+      "from": "PACKAGE_QA_PASSED",
+      "to": "ASSET_HOSTED",
+      "run": "38151502869",
+      "evidence": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0038/JR-0038.mp4 http=206 ftyp=True bytes=7723223/7723223"
+    },
+    {
+      "at": "2026-10-11T15:38:53Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_DRAFT",
+      "run": "38151502869",
+      "evidence": "draft 6acbad8ced92ed8fa509d81e read back: status draft, asset, caption, duration, channel OK"
+    },
+    {
+      "at": "2026-10-11T15:38:53Z",
+      "from": "BUFFER_DRAFT",
+      "to": "WAITING_FOR_USER",
+      "run": "38151502869",
+      "evidence": "approval required: episode, date, time, timezone"
+    },
+    {
+      "at": "2026-10-11T15:38:53Z",
+      "from": "WAITING_FOR_USER",
+      "to": "APPROVED",
+      "run": "38151502869",
+      "evidence": "auto-approved after all QA gates under standing authorization 2026-10-11 20:48 IST, Selvin in chat; slot time comes from the weekly plan"
     }
-  ]
+  ],
+  "heal": {
+    "attempts": 1,
+    "exhausted": false,
+    "log": [
+      {
+        "at": "2026-10-11T15:36:43Z",
+        "run": "38151502869",
+        "action": "re-render to produce the thumbnail"
+      }
+    ]
+  }
 }
