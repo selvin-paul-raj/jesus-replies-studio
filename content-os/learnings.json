@@ -1,13 +1,612 @@
 {
-  "as_of": "2026-10-12T02:36:05.439984+00:00",
+  "as_of": "2026-10-11T21:54:05.757221+00:00",
   "window_days": 28,
   "min_n": 3,
   "platforms": {
     "instagram": {
-      "n": 0
+      "n": 22,
+      "median_views": 1449.0,
+      "max_views": 2641,
+      "saves_per_1k_reach_median": 13.2,
+      "avg_watch_time_available": false,
+      "by_dimension": {
+        "slot": {
+          "morning (06-12 IST)": {
+            "n": 13,
+            "median_views": 1444
+          },
+          "night (18-24 IST)": {
+            "n": 9,
+            "median_views": 1506
+          }
+        },
+        "emotion": {
+          "angry": {
+            "n": 2,
+            "median_views": 1836.0
+          },
+          "crying": {
+            "n": 3,
+            "median_views": 1506
+          },
+          "happy": {
+            "n": 1,
+            "median_views": 214
+          },
+          "heartbroken": {
+            "n": 1,
+            "median_views": 1895
+          },
+          "hopeful": {
+            "n": 2,
+            "median_views": 686.5
+          },
+          "neutral": {
+            "n": 3,
+            "median_views": 1640
+          },
+          "sad": {
+            "n": 5,
+            "median_views": 1444
+          },
+          "worried": {
+            "n": 4,
+            "median_views": 279.5
+          }
+        },
+        "character": {
+          "boy": {
+            "n": 10,
+            "median_views": 1386.5
+          },
+          "girl": {
+            "n": 11,
+            "median_views": 1506
+          }
+        },
+        "hook_type": {
+          "confession_statement": {
+            "n": 4,
+            "median_views": 1056.5
+          },
+          "question": {
+            "n": 16,
+            "median_views": 1386.5
+          },
+          "statement": {
+            "n": 2,
+            "median_views": 1836.5
+          }
+        },
+        "duration": {
+          "66-78s": {
+            "n": 1,
+            "median_views": 1454
+          },
+          "<=65s": {
+            "n": 6,
+            "median_views": 1475.0
+          },
+          ">78s": {
+            "n": 4,
+            "median_views": 436.5
+          }
+        },
+        "bible_book": {
+          "1 Corinthians": {
+            "n": 1,
+            "median_views": 1454
+          },
+          "1 John": {
+            "n": 1,
+            "median_views": 1444
+          },
+          "1 Samuel": {
+            "n": 1,
+            "median_views": 1329
+          },
+          "2 Corinthians": {
+            "n": 1,
+            "median_views": 1223
+          },
+          "Ecclesiastes": {
+            "n": 1,
+            "median_views": 1587
+          },
+          "Ephesians": {
+            "n": 1,
+            "median_views": 1723
+          },
+          "Galatians": {
+            "n": 1,
+            "median_views": 1895
+          },
+          "Genesis": {
+            "n": 2,
+            "median_views": 959.0
+          },
+          "Habakkuk": {
+            "n": 1,
+            "median_views": 44
+          },
+          "Hebrews": {
+            "n": 1,
+            "median_views": 228
+          },
+          "Isaiah": {
+            "n": 2,
+            "median_views": 957.5
+          },
+          "Matthew": {
+            "n": 1,
+            "median_views": 2641
+          },
+          "Philippians": {
+            "n": 1,
+            "median_views": 1640
+          },
+          "Proverbs": {
+            "n": 2,
+            "median_views": 298.0
+          },
+          "Psalms": {
+            "n": 4,
+            "median_views": 1059.5
+          },
+          "Ruth": {
+            "n": 1,
+            "median_views": 1506
+          }
+        }
+      },
+      "stronger": [],
+      "weaker": [
+        {
+          "dimension": "emotion",
+          "value": "worried",
+          "n": 4,
+          "median_views": 279.5,
+          "vs_overall": 0.19
+        },
+        {
+          "dimension": "duration",
+          "value": ">78s",
+          "n": 4,
+          "median_views": 436.5,
+          "vs_overall": 0.3
+        }
+      ],
+      "top": [
+        {
+          "episode_id": "JR-0007",
+          "views": 2641,
+          "saves": 21,
+          "shares": 11,
+          "theme": "burnout",
+          "emotion": "crying",
+          "hook": "Jesus... I'm so tired. I keep trying and trying and nothing works.",
+          "slot": "morning (06-12 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0006",
+          "views": 1949,
+          "saves": 46,
+          "shares": 18,
+          "theme": "heartbreak",
+          "emotion": "angry",
+          "hook": "Jesus... she left me for someone else. Just like that. Like none of it mattered.",
+          "slot": "morning (06-12 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0020",
+          "views": 1895,
+          "saves": 48,
+          "shares": 15,
+          "theme": "comparison",
+          "emotion": "heartbroken",
+          "hook": "Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭",
+          "slot": "morning (06-12 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0008",
+          "views": 1724,
+          "saves": 11,
+          "shares": 9,
+          "theme": "doubt",
+          "emotion": "sad",
+          "hook": "Jesus... it feels like You've gone quiet. I pray and nothing comes back.",
+          "slot": "night (18-24 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0029",
+          "views": 1723,
+          "saves": 16,
+          "shares": 5,
+          "theme": "jealousy of a sibling",
+          "emotion": "angry",
+          "hook": "Jesus, why does everything come easy for her?",
+          "slot": "night (18-24 IST)",
+          "duration": "<=65s"
+        }
+      ],
+      "bottom": [
+        {
+          "episode_id": "JR-0009",
+          "views": 44,
+          "theme": "waiting",
+          "emotion": "hopeful",
+          "hook": "Jesus... how long do I have to wait for this?",
+          "slot": "morning (06-12 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0037",
+          "views": 191,
+          "theme": "returning to church after years away",
+          "emotion": "worried",
+          "hook": "Jesus... I parked outside church this morning. I never went in. 😔",
+          "slot": "morning (06-12 IST)",
+          "duration": ">78s"
+        },
+        {
+          "episode_id": "JR-0022",
+          "views": 214,
+          "theme": "reconciliation",
+          "emotion": "happy",
+          "hook": "Jesus... my brother texted back after two years of silence. Why am I so scared to be happy about it?",
+          "slot": "morning (06-12 IST)",
+          "duration": ">78s"
+        },
+        {
+          "episode_id": "JR-0024",
+          "views": 228,
+          "theme": "money anxiety",
+          "emotion": "worried",
+          "hook": "Jesus, will there be enough money this month?",
+          "slot": "morning (06-12 IST)",
+          "duration": "<=65s"
+        },
+        {
+          "episode_id": "JR-0005-M",
+          "views": 231,
+          "theme": "comparison",
+          "emotion": "sad",
+          "hook": "Jesus... why does everyone else's life look so much better than mine online?",
+          "slot": "morning (06-12 IST)",
+          "duration": null
+        }
+      ]
     },
     "youtube": {
-      "n": 0
+      "n": 20,
+      "median_views": 249.5,
+      "max_views": 1673,
+      "saves_per_1k_reach_median": null,
+      "avg_watch_time_available": false,
+      "by_dimension": {
+        "slot": {
+          "morning (06-12 IST)": {
+            "n": 8,
+            "median_views": 249.5
+          },
+          "night (18-24 IST)": {
+            "n": 12,
+            "median_views": 253.5
+          }
+        },
+        "emotion": {
+          "angry": {
+            "n": 2,
+            "median_views": 483.0
+          },
+          "crying": {
+            "n": 3,
+            "median_views": 144
+          },
+          "happy": {
+            "n": 1,
+            "median_views": 192
+          },
+          "heartbroken": {
+            "n": 1,
+            "median_views": 10
+          },
+          "hopeful": {
+            "n": 1,
+            "median_views": 677
+          },
+          "neutral": {
+            "n": 3,
+            "median_views": 307
+          },
+          "sad": {
+            "n": 4,
+            "median_views": 304.0
+          },
+          "worried": {
+            "n": 4,
+            "median_views": 417.5
+          }
+        },
+        "character": {
+          "boy": {
+            "n": 9,
+            "median_views": 427
+          },
+          "girl": {
+            "n": 10,
+            "median_views": 140.0
+          }
+        },
+        "hook_type": {
+          "confession_statement": {
+            "n": 3,
+            "median_views": 16
+          },
+          "question": {
+            "n": 16,
+            "median_views": 249.5
+          },
+          "statement": {
+            "n": 1,
+            "median_views": 830
+          }
+        },
+        "duration": {
+          "<=65s": {
+            "n": 6,
+            "median_views": 140.0
+          },
+          ">78s": {
+            "n": 4,
+            "median_views": 33.5
+          }
+        },
+        "bible_book": {
+          "1 John": {
+            "n": 1,
+            "median_views": 427
+          },
+          "1 Samuel": {
+            "n": 1,
+            "median_views": 677
+          },
+          "2 Corinthians": {
+            "n": 1,
+            "median_views": 31
+          },
+          "Ecclesiastes": {
+            "n": 1,
+            "median_views": 307
+          },
+          "Ephesians": {
+            "n": 1,
+            "median_views": 136
+          },
+          "Galatians": {
+            "n": 1,
+            "median_views": 10
+          },
+          "Genesis": {
+            "n": 2,
+            "median_views": 277.5
+          },
+          "Hebrews": {
+            "n": 1,
+            "median_views": 116
+          },
+          "Isaiah": {
+            "n": 1,
+            "median_views": 16
+          },
+          "James": {
+            "n": 1,
+            "median_views": 816
+          },
+          "Matthew": {
+            "n": 1,
+            "median_views": 993
+          },
+          "Philippians": {
+            "n": 1,
+            "median_views": 51
+          },
+          "Proverbs": {
+            "n": 2,
+            "median_views": 840.5
+          },
+          "Psalms": {
+            "n": 4,
+            "median_views": 505.5
+          },
+          "Ruth": {
+            "n": 1,
+            "median_views": 144
+          }
+        }
+      },
+      "stronger": [
+        {
+          "dimension": "emotion",
+          "value": "neutral",
+          "n": 3,
+          "median_views": 307,
+          "vs_overall": 1.23
+        },
+        {
+          "dimension": "emotion",
+          "value": "sad",
+          "n": 4,
+          "median_views": 304.0,
+          "vs_overall": 1.22
+        },
+        {
+          "dimension": "emotion",
+          "value": "worried",
+          "n": 4,
+          "median_views": 417.5,
+          "vs_overall": 1.67
+        },
+        {
+          "dimension": "character",
+          "value": "boy",
+          "n": 9,
+          "median_views": 427,
+          "vs_overall": 1.71
+        },
+        {
+          "dimension": "bible_book",
+          "value": "Psalms",
+          "n": 4,
+          "median_views": 505.5,
+          "vs_overall": 2.03
+        }
+      ],
+      "weaker": [
+        {
+          "dimension": "emotion",
+          "value": "crying",
+          "n": 3,
+          "median_views": 144,
+          "vs_overall": 0.58
+        },
+        {
+          "dimension": "character",
+          "value": "girl",
+          "n": 10,
+          "median_views": 140.0,
+          "vs_overall": 0.56
+        },
+        {
+          "dimension": "hook_type",
+          "value": "confession_statement",
+          "n": 3,
+          "median_views": 16,
+          "vs_overall": 0.06
+        },
+        {
+          "dimension": "duration",
+          "value": "<=65s",
+          "n": 6,
+          "median_views": 140.0,
+          "vs_overall": 0.56
+        },
+        {
+          "dimension": "duration",
+          "value": ">78s",
+          "n": 4,
+          "median_views": 33.5,
+          "vs_overall": 0.13
+        }
+      ],
+      "top": [
+        {
+          "episode_id": "JR-0005",
+          "views": 1673,
+          "saves": null,
+          "shares": null,
+          "theme": "comparison",
+          "emotion": "sad",
+          "hook": "Jesus... why does everyone else's life look so much better than mine online?",
+          "slot": "night (18-24 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0007",
+          "views": 993,
+          "saves": null,
+          "shares": null,
+          "theme": "burnout",
+          "emotion": "crying",
+          "hook": "Jesus... I'm so tired. I keep trying and trying and nothing works.",
+          "slot": "night (18-24 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0001",
+          "views": 962,
+          "saves": null,
+          "shares": null,
+          "theme": null,
+          "emotion": null,
+          "hook": "Jesus… when I'm angry, can I just tell everyone how I feel?",
+          "slot": "morning (06-12 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0006",
+          "views": 830,
+          "saves": null,
+          "shares": null,
+          "theme": "heartbreak",
+          "emotion": "angry",
+          "hook": "Jesus... she left me for someone else. Just like that. Like none of it mattered.",
+          "slot": "night (18-24 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0004",
+          "views": 816,
+          "saves": null,
+          "shares": null,
+          "theme": "failure",
+          "emotion": "worried",
+          "hook": "Jesus... I studied so hard for this. I did everything right. And I still failed. What was even the point?",
+          "slot": "night (18-24 IST)",
+          "duration": null
+        }
+      ],
+      "bottom": [
+        {
+          "episode_id": "JR-0020",
+          "views": 10,
+          "theme": "comparison",
+          "emotion": "heartbroken",
+          "hook": "Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭",
+          "slot": "night (18-24 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0023",
+          "views": 14,
+          "theme": "family expectations",
+          "emotion": "crying",
+          "hook": "Jesus... tomorrow I have to tell my parents I am leaving the course they paid for. 😭",
+          "slot": "night (18-24 IST)",
+          "duration": ">78s"
+        },
+        {
+          "episode_id": "JR-0037",
+          "views": 16,
+          "theme": "returning to church after years away",
+          "emotion": "worried",
+          "hook": "Jesus... I parked outside church this morning. I never went in. 😔",
+          "slot": "morning (06-12 IST)",
+          "duration": ">78s"
+        },
+        {
+          "episode_id": "JR-0025",
+          "views": 31,
+          "theme": "friendship betrayal",
+          "emotion": "sad",
+          "hook": "Jesus, my best friend told everyone my secret?",
+          "slot": "night (18-24 IST)",
+          "duration": "<=65s"
+        },
+        {
+          "episode_id": "JR-0021",
+          "views": 51,
+          "theme": "contentment",
+          "emotion": "neutral",
+          "hook": "Jesus... I finally got the thing I begged You for. Why do I feel nothing?",
+          "slot": "night (18-24 IST)",
+          "duration": ">78s"
+        }
+      ]
     }
   },
   "excluded_ranges": [
@@ -19,9 +618,21 @@
   ],
   "authoring_guidance": {
     "lean_towards": [],
-    "avoid": [],
+    "avoid": [
+      "emotion=worried (IG median 280 vs 1449, n=4)",
+      "duration=>78s (IG median 436 vs 1449, n=4)"
+    ],
     "evidence_notes": [
+      "instagram slot medians: morning (06-12 IST) 1444 (n=13), night (18-24 IST) 1506 (n=9)",
+      "youtube slot medians: morning (06-12 IST) 250 (n=8), night (18-24 IST) 254 (n=12)",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
+    ],
+    "top_hooks_to_learn_from": [
+      "JR-0007 2641 views: Jesus... I'm so tired. I keep trying and trying and nothing works.",
+      "JR-0006 1949 views: Jesus... she left me for someone else. Just like that. Like none of it mattered.",
+      "JR-0020 1895 views: Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭",
+      "JR-0008 1724 views: Jesus... it feels like You've gone quiet. I pray and nothing comes back.",
+      "JR-0029 1723 views: Jesus, why does everything come easy for her?"
     ]
   }
 }

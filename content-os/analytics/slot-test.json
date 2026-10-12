@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-12T02:36:05.439984+00:00",
+  "as_of": "2026-10-11T21:54:05.757221+00:00",
   "slots": [
     "08:00",
     "20:30"
@@ -9,5 +9,20 @@
     "youtube": "UNAVAILABLE: 'When your viewers are on YouTube' is not exposed through Buffer; needs a YouTube Analytics connection",
     "instagram": "UNAVAILABLE: follower online-times are not exposed through Buffer; historical post performance used instead"
   },
-  "platforms": {}
+  "platforms": {
+    "instagram": {
+      "n_7d": {
+        "08:00": 2,
+        "20:30": 0
+      },
+      "verdict": "insufficient data"
+    },
+    "youtube": {
+      "n_7d": {
+        "08:00": 0,
+        "20:30": 4
+      },
+      "verdict": "insufficient data"
+    }
+  }
 }

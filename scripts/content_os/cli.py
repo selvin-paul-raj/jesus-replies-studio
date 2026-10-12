@@ -119,6 +119,13 @@ def main():
             posts[p], notes[p] = buf.list_posts(p)
             if posts[p] is None:
                 print(f"[snapshot] {p} UNREADABLE {notes[p]}"); posts[p] = []
+        if any(posts[p] == [] and str(notes[p]).startswith("UNREADABLE") for p in cfg["platforms"]):
+            # Buffer unreadable (e.g. RATE_LIMIT_EXCEEDED, 24h window): keep the last good snapshot and every
+            # derived file (ledger, learnings, inventory input). Writing an empty snapshot wiped them on 2026-10-12.
+            last = latest_snapshot()
+            print(f"[snapshot] degraded read; keeping last good snapshot rows={len(last.get('rows', []))} taken_at={last.get('taken_at')}")
+            last = dict(last); last["stale_since_read_error"] = {"at": now.isoformat(), "notes": notes}
+            return last
         rows = analytics.snapshot(posts, eps, pkgs, now, cfg["checkpoints_hours"])
         snap = {"taken_at": now.isoformat(), "source": "Buffer GraphQL posts list", "list_status": notes, "rows": rows}
         wjson(OS_DIR / f"analytics/snapshots/{now.date().isoformat()}.json", snap)
