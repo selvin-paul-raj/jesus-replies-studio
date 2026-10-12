@@ -37,17 +37,17 @@ trends and experiment readings in `content-os/reviews/`.
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-11T21:54Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-12T05:50Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=22, median views 1449, best 2641, saves per 1k reach 13.2
-- **youtube**: n=20, median views 250, best 1673, saves per 1k reach None
+- **instagram**: n=23, median views 1444, best 2641, saves per 1k reach 12.7
+- **youtube**: n=21, median views 307, best 1673, saves per 1k reach None
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
 
 **Avoid / de-emphasise:**
-- emotion=worried (IG median 280 vs 1449, n=4)
-- duration=>78s (IG median 436 vs 1449, n=4)
+- emotion=worried (IG median 331 vs 1444, n=5)
+- duration=>78s (IG median 436 vs 1444, n=4)
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
 - JR-0007 2641 views: Jesus... I'm so tired. I keep trying and trying and nothing works.
@@ -57,8 +57,8 @@ _Last computed 2026-10-11T21:54Z from Buffer analytics, last 28 days, posts at l
 - JR-0029 1723 views: Jesus, why does everything come easy for her?
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1444 (n=13), night (18-24 IST) 1506 (n=9)
-- youtube slot medians: morning (06-12 IST) 250 (n=8), night (18-24 IST) 254 (n=12)
+- instagram slot medians: morning (06-12 IST) 1359 (n=14), night (18-24 IST) 1506 (n=9)
+- youtube slot medians: morning (06-12 IST) 307 (n=9), night (18-24 IST) 254 (n=12)
 - average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->
