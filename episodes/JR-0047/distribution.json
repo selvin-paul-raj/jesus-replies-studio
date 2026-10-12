@@ -18,7 +18,11 @@
           "run": "38115561072",
           "evidence": "adopted existing 6acb144fc4de2d2b124cd031: Buffer status draft"
         }
-      ]
+      ],
+      "last_read_error": {
+        "at": "2026-10-12T02:36:05.000Z",
+        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
+      }
     },
     "youtube": {
       "state": "SCHEDULED",
@@ -37,7 +41,11 @@
           "run": "38151502869",
           "evidence": "create_scheduled read back: scheduled 2026-10-16T15:00:00.000Z"
         }
-      ]
+      ],
+      "last_read_error": {
+        "at": "2026-10-12T02:36:05.000Z",
+        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
+      }
     }
   }
 }

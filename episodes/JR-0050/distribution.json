@@ -18,7 +18,11 @@
           "run": "38151502869",
           "evidence": "adopted existing 6acbac8fb07d37ac97af887e: Buffer status draft"
         }
-      ]
+      ],
+      "last_read_error": {
+        "at": "2026-10-12T02:36:05.000Z",
+        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
+      }
     },
     "youtube": {
       "state": "NONE",

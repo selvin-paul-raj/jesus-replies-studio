@@ -25,7 +25,11 @@
           "run": "38115561072",
           "evidence": "schedule_draft read back: scheduled 2026-10-15T02:30:00.000Z"
         }
-      ]
+      ],
+      "last_read_error": {
+        "at": "2026-10-12T02:36:05.000Z",
+        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
+      }
     },
     "youtube": {
       "state": "SCHEDULED",
@@ -46,7 +50,7 @@
         }
       ],
       "last_read_error": {
-        "at": "2026-10-11T21:54:05.000Z",
+        "at": "2026-10-12T02:36:05.000Z",
         "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
       }
     }
