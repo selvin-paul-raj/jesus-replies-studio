@@ -57,12 +57,12 @@
     "title": "Jesus... I Said Yes Again When I Wanted To Say No",
     "slot": null,
     "target_date": null,
-    "state": "SCHEDULED",
+    "state": "PUBLISHED_VERIFIED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0041/JR-0041.mp4",
     "buffer_post_id": "6ac721d35632f7b74bdc4beb",
     "scheduled_at": "2026-10-13T15:00:00.000Z",
-    "published_at": null,
-    "verification_status": "NOT_VERIFIED"
+    "published_at": "2026-10-13T15:06:15.463Z",
+    "verification_status": "PUBLISHED_VERIFIED"
   },
   {
     "episode_id": "JR-0042",
@@ -161,10 +161,10 @@
     "title": "Jesus... I Was The One Who Hurt Her And Never Said Sorry",
     "slot": null,
     "target_date": null,
-    "state": "APPROVED",
+    "state": "SCHEDULED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0049/JR-0049.mp4",
     "buffer_post_id": "6acb15b3b07d37ac979630b1",
-    "scheduled_at": null,
+    "scheduled_at": "2026-10-17T15:00:00.000Z",
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
   },
