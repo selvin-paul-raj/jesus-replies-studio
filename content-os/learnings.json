@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-10-13T00:35:38.786616+00:00",
+  "as_of": "2026-10-13T03:46:06.001880+00:00",
   "window_days": 28,
   "min_n": 3,
   "platforms": {
     "instagram": {
-      "n": 24,
-      "median_views": 1450.0,
+      "n": 25,
+      "median_views": 1455,
       "max_views": 2641,
-      "saves_per_1k_reach_median": 13.2,
+      "saves_per_1k_reach_median": 12.7,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 14,
-            "median_views": 1360.0
+            "n": 15,
+            "median_views": 1445
           },
           "night (18-24 IST)": {
             "n": 10,
@@ -30,8 +30,8 @@
             "median_views": 1525.0
           },
           "happy": {
-            "n": 1,
-            "median_views": 215
+            "n": 2,
+            "median_views": 889.5
           },
           "heartbroken": {
             "n": 1,
@@ -56,8 +56,8 @@
         },
         "character": {
           "boy": {
-            "n": 11,
-            "median_views": 1329
+            "n": 12,
+            "median_views": 1387.0
           },
           "girl": {
             "n": 12,
@@ -70,8 +70,8 @@
             "median_views": 1058.0
           },
           "question": {
-            "n": 18,
-            "median_views": 1387.0
+            "n": 19,
+            "median_views": 1445
           },
           "statement": {
             "n": 2,
@@ -84,8 +84,8 @@
             "median_views": 1455
           },
           "<=65s": {
-            "n": 8,
-            "median_views": 1476.5
+            "n": 9,
+            "median_views": 1508
           },
           ">78s": {
             "n": 4,
@@ -100,6 +100,10 @@
           "1 John": {
             "n": 1,
             "median_views": 1445
+          },
+          "1 Peter": {
+            "n": 1,
+            "median_views": 1564
           },
           "1 Samuel": {
             "n": 1,
@@ -290,182 +294,193 @@
       ]
     },
     "youtube": {
-      "n": 22,
-      "median_views": 283.5,
-      "max_views": 1675,
+      "n": 23,
+      "median_views": 308,
+      "max_views": 1678,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 9,
-            "median_views": 307
+            "n": 10,
+            "median_views": 388.0
           },
           "night (18-24 IST)": {
             "n": 13,
-            "median_views": 260
+            "median_views": 288
           }
         },
         "emotion": {
           "angry": {
             "n": 2,
-            "median_views": 484.5
+            "median_views": 487.0
           },
           "crying": {
             "n": 4,
-            "median_views": 203.0
+            "median_views": 217.5
           },
           "happy": {
-            "n": 1,
-            "median_views": 194
+            "n": 2,
+            "median_views": 756.5
           },
           "heartbroken": {
             "n": 1,
-            "median_views": 13
+            "median_views": 15
           },
           "hopeful": {
             "n": 1,
-            "median_views": 678
+            "median_views": 685
           },
           "neutral": {
             "n": 3,
-            "median_views": 307
+            "median_views": 308
           },
           "sad": {
             "n": 4,
-            "median_views": 316.0
+            "median_views": 327.5
           },
           "worried": {
             "n": 5,
-            "median_views": 432
+            "median_views": 478
           }
         },
         "character": {
           "boy": {
-            "n": 10,
-            "median_views": 441.0
+            "n": 11,
+            "median_views": 478
           },
           "girl": {
             "n": 11,
-            "median_views": 146
+            "median_views": 147
           }
         },
         "hook_type": {
           "confession_statement": {
             "n": 3,
-            "median_views": 18
+            "median_views": 20
           },
           "question": {
-            "n": 18,
-            "median_views": 283.5
+            "n": 19,
+            "median_views": 308
           },
           "statement": {
             "n": 1,
-            "median_views": 830
+            "median_views": 834
           }
         },
         "duration": {
           "<=65s": {
-            "n": 8,
-            "median_views": 203.0
+            "n": 9,
+            "median_views": 288
           },
           ">78s": {
             "n": 4,
-            "median_views": 36.0
+            "median_views": 38.0
           }
         },
         "bible_book": {
           "1 John": {
             "n": 1,
-            "median_views": 450
+            "median_views": 468
+          },
+          "1 Peter": {
+            "n": 1,
+            "median_views": 1315
           },
           "1 Samuel": {
             "n": 1,
-            "median_views": 678
+            "median_views": 685
           },
           "2 Corinthians": {
             "n": 1,
-            "median_views": 33
+            "median_views": 34
           },
           "Ecclesiastes": {
             "n": 1,
-            "median_views": 307
+            "median_views": 308
           },
           "Ephesians": {
             "n": 1,
-            "median_views": 139
+            "median_views": 140
           },
           "Galatians": {
             "n": 1,
-            "median_views": 13
+            "median_views": 15
           },
           "Genesis": {
             "n": 2,
-            "median_views": 279.0
+            "median_views": 284.0
           },
           "Hebrews": {
             "n": 1,
-            "median_views": 121
+            "median_views": 123
           },
           "Isaiah": {
             "n": 1,
-            "median_views": 18
+            "median_views": 20
           },
           "James": {
             "n": 1,
-            "median_views": 821
+            "median_views": 824
           },
           "Joshua": {
             "n": 1,
-            "median_views": 432
+            "median_views": 478
           },
           "Lamentations": {
             "n": 1,
-            "median_views": 260
+            "median_views": 288
           },
           "Matthew": {
             "n": 1,
-            "median_views": 994
+            "median_views": 1002
           },
           "Philippians": {
             "n": 1,
-            "median_views": 54
+            "median_views": 56
           },
           "Proverbs": {
             "n": 2,
-            "median_views": 842.5
+            "median_views": 847.5
           },
           "Psalms": {
             "n": 4,
-            "median_views": 506.0
+            "median_views": 510.5
           },
           "Ruth": {
             "n": 1,
-            "median_views": 146
+            "median_views": 147
           }
         }
       },
       "stronger": [
         {
+          "dimension": "slot",
+          "value": "morning (06-12 IST)",
+          "n": 10,
+          "median_views": 388.0,
+          "vs_overall": 1.26
+        },
+        {
           "dimension": "emotion",
           "value": "worried",
           "n": 5,
-          "median_views": 432,
-          "vs_overall": 1.52
+          "median_views": 478,
+          "vs_overall": 1.55
         },
         {
           "dimension": "character",
           "value": "boy",
-          "n": 10,
-          "median_views": 441.0,
-          "vs_overall": 1.56
+          "n": 11,
+          "median_views": 478,
+          "vs_overall": 1.55
         },
         {
           "dimension": "bible_book",
           "value": "Psalms",
           "n": 4,
-          "median_views": 506.0,
-          "vs_overall": 1.78
+          "median_views": 510.5,
+          "vs_overall": 1.66
         }
       ],
       "weaker": [
@@ -473,28 +488,28 @@
           "dimension": "character",
           "value": "girl",
           "n": 11,
-          "median_views": 146,
-          "vs_overall": 0.51
+          "median_views": 147,
+          "vs_overall": 0.48
         },
         {
           "dimension": "hook_type",
           "value": "confession_statement",
           "n": 3,
-          "median_views": 18,
+          "median_views": 20,
           "vs_overall": 0.06
         },
         {
           "dimension": "duration",
           "value": ">78s",
           "n": 4,
-          "median_views": 36.0,
-          "vs_overall": 0.13
+          "median_views": 38.0,
+          "vs_overall": 0.12
         }
       ],
       "top": [
         {
           "episode_id": "JR-0005",
-          "views": 1675,
+          "views": 1678,
           "saves": null,
           "shares": null,
           "theme": "comparison",
@@ -504,8 +519,19 @@
           "duration": null
         },
         {
+          "episode_id": "JR-0032",
+          "views": 1315,
+          "saves": null,
+          "shares": null,
+          "theme": "pride after success",
+          "emotion": "happy",
+          "hook": "Jesus, is it wrong that I feel this proud?",
+          "slot": "morning (06-12 IST)",
+          "duration": "<=65s"
+        },
+        {
           "episode_id": "JR-0007",
-          "views": 994,
+          "views": 1002,
           "saves": null,
           "shares": null,
           "theme": "burnout",
@@ -516,7 +542,7 @@
         },
         {
           "episode_id": "JR-0001",
-          "views": 965,
+          "views": 974,
           "saves": null,
           "shares": null,
           "theme": null,
@@ -527,7 +553,7 @@
         },
         {
           "episode_id": "JR-0006",
-          "views": 830,
+          "views": 834,
           "saves": null,
           "shares": null,
           "theme": "heartbreak",
@@ -535,23 +561,12 @@
           "hook": "Jesus... she left me for someone else. Just like that. Like none of it mattered.",
           "slot": "night (18-24 IST)",
           "duration": null
-        },
-        {
-          "episode_id": "JR-0004",
-          "views": 821,
-          "saves": null,
-          "shares": null,
-          "theme": "failure",
-          "emotion": "worried",
-          "hook": "Jesus... I studied so hard for this. I did everything right. And I still failed. What was even the point?",
-          "slot": "night (18-24 IST)",
-          "duration": null
         }
       ],
       "bottom": [
         {
           "episode_id": "JR-0020",
-          "views": 13,
+          "views": 15,
           "theme": "comparison",
           "emotion": "heartbroken",
           "hook": "Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭",
@@ -560,7 +575,7 @@
         },
         {
           "episode_id": "JR-0023",
-          "views": 16,
+          "views": 17,
           "theme": "family expectations",
           "emotion": "crying",
           "hook": "Jesus... tomorrow I have to tell my parents I am leaving the course they paid for. 😭",
@@ -569,7 +584,7 @@
         },
         {
           "episode_id": "JR-0037",
-          "views": 18,
+          "views": 20,
           "theme": "returning to church after years away",
           "emotion": "worried",
           "hook": "Jesus... I parked outside church this morning. I never went in. 😔",
@@ -578,7 +593,7 @@
         },
         {
           "episode_id": "JR-0025",
-          "views": 33,
+          "views": 34,
           "theme": "friendship betrayal",
           "emotion": "sad",
           "hook": "Jesus, my best friend told everyone my secret?",
@@ -587,7 +602,7 @@
         },
         {
           "episode_id": "JR-0021",
-          "views": 54,
+          "views": 56,
           "theme": "contentment",
           "emotion": "neutral",
           "hook": "Jesus... I finally got the thing I begged You for. Why do I feel nothing?",
@@ -607,12 +622,12 @@
   "authoring_guidance": {
     "lean_towards": [],
     "avoid": [
-      "emotion=worried (IG median 331 vs 1450, n=5)",
-      "duration=>78s (IG median 438 vs 1450, n=4)"
+      "emotion=worried (IG median 331 vs 1455, n=5)",
+      "duration=>78s (IG median 438 vs 1455, n=4)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1360 (n=14), night (18-24 IST) 1525 (n=10)",
-      "youtube slot medians: morning (06-12 IST) 307 (n=9), night (18-24 IST) 260 (n=13)",
+      "instagram slot medians: morning (06-12 IST) 1445 (n=15), night (18-24 IST) 1525 (n=10)",
+      "youtube slot medians: morning (06-12 IST) 388 (n=10), night (18-24 IST) 288 (n=13)",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
     ],
     "top_hooks_to_learn_from": [

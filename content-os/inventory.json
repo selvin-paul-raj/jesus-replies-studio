@@ -1,20 +1,19 @@
 {
   "counts": {
-    "PUBLISHED": 36,
+    "PUBLISHED": 37,
     "UNUSED": 3,
-    "READY": 7,
+    "READY": 6,
     "SCHEDULED": 10
   },
   "next_ready": [
     "JR-0038",
-    "JR-0050",
     "JR-0051",
     "JR-0052",
     "JR-0053",
     "JR-0054",
     "JR-0055"
   ],
-  "ready_total": 7,
+  "ready_total": 6,
   "items": [
     {
       "episode_id": "JR-0001",
@@ -602,15 +601,18 @@
     },
     {
       "episode_id": "JR-0040",
-      "status": "SCHEDULED",
-      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
+      "status": "PUBLISHED",
+      "why": "all platforms",
       "platforms": {
-        "instagram": "SCHEDULED",
-        "youtube": "SCHEDULED"
+        "instagram": "PUBLISHED_VERIFIED",
+        "youtube": "PUBLISHED_VERIFIED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0040/JR-0040.mp4",
       "duration_s": 74.33,
-      "published_on": []
+      "published_on": [
+        "instagram",
+        "youtube"
+      ]
     },
     {
       "episode_id": "JR-0041",
@@ -699,9 +701,9 @@
     {
       "episode_id": "JR-0048",
       "status": "SCHEDULED",
-      "why": "instagram=DRAFT, youtube=SCHEDULED",
+      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "DRAFT",
+        "instagram": "SCHEDULED",
         "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0048/JR-0048.mp4",
@@ -722,11 +724,11 @@
     },
     {
       "episode_id": "JR-0050",
-      "status": "READY",
-      "why": "instagram=DRAFT, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
         "instagram": "DRAFT",
-        "youtube": "NONE"
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0050/JR-0050.mp4",
       "duration_s": 66.86,
@@ -793,5 +795,5 @@
       "published_on": []
     }
   ],
-  "as_of": "2026-10-13T00:35:38.786616+00:00"
+  "as_of": "2026-10-13T03:46:06.001880+00:00"
 }
