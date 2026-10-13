@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-10-13T03:46:06.001880+00:00",
+  "as_of": "2026-10-13T14:06:01.545033+00:00",
   "window_days": 28,
   "min_n": 3,
   "platforms": {
     "instagram": {
-      "n": 25,
-      "median_views": 1455,
+      "n": 24,
+      "median_views": 1457.5,
       "max_views": 2641,
       "saves_per_1k_reach_median": 12.7,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 15,
-            "median_views": 1445
+            "n": 14,
+            "median_views": 1450.0
           },
           "night (18-24 IST)": {
             "n": 10,
@@ -70,8 +70,8 @@
             "median_views": 1058.0
           },
           "question": {
-            "n": 19,
-            "median_views": 1445
+            "n": 18,
+            "median_views": 1452.5
           },
           "statement": {
             "n": 2,
@@ -158,8 +158,8 @@
             "median_views": 1641
           },
           "Proverbs": {
-            "n": 2,
-            "median_views": 298.0
+            "n": 1,
+            "median_views": 331
           },
           "Psalms": {
             "n": 4,
@@ -294,16 +294,16 @@
       ]
     },
     "youtube": {
-      "n": 23,
-      "median_views": 308,
+      "n": 22,
+      "median_views": 298.0,
       "max_views": 1678,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 10,
-            "median_views": 388.0
+            "n": 9,
+            "median_views": 308
           },
           "night (18-24 IST)": {
             "n": 13,
@@ -360,8 +360,8 @@
             "median_views": 20
           },
           "question": {
-            "n": 19,
-            "median_views": 308
+            "n": 18,
+            "median_views": 298.0
           },
           "statement": {
             "n": 1,
@@ -440,8 +440,8 @@
             "median_views": 56
           },
           "Proverbs": {
-            "n": 2,
-            "median_views": 847.5
+            "n": 1,
+            "median_views": 721
           },
           "Psalms": {
             "n": 4,
@@ -455,32 +455,25 @@
       },
       "stronger": [
         {
-          "dimension": "slot",
-          "value": "morning (06-12 IST)",
-          "n": 10,
-          "median_views": 388.0,
-          "vs_overall": 1.26
-        },
-        {
           "dimension": "emotion",
           "value": "worried",
           "n": 5,
           "median_views": 478,
-          "vs_overall": 1.55
+          "vs_overall": 1.6
         },
         {
           "dimension": "character",
           "value": "boy",
           "n": 11,
           "median_views": 478,
-          "vs_overall": 1.55
+          "vs_overall": 1.6
         },
         {
           "dimension": "bible_book",
           "value": "Psalms",
           "n": 4,
           "median_views": 510.5,
-          "vs_overall": 1.66
+          "vs_overall": 1.71
         }
       ],
       "weaker": [
@@ -489,21 +482,21 @@
           "value": "girl",
           "n": 11,
           "median_views": 147,
-          "vs_overall": 0.48
+          "vs_overall": 0.49
         },
         {
           "dimension": "hook_type",
           "value": "confession_statement",
           "n": 3,
           "median_views": 20,
-          "vs_overall": 0.06
+          "vs_overall": 0.07
         },
         {
           "dimension": "duration",
           "value": ">78s",
           "n": 4,
           "median_views": 38.0,
-          "vs_overall": 0.12
+          "vs_overall": 0.13
         }
       ],
       "top": [
@@ -541,17 +534,6 @@
           "duration": null
         },
         {
-          "episode_id": "JR-0001",
-          "views": 974,
-          "saves": null,
-          "shares": null,
-          "theme": null,
-          "emotion": null,
-          "hook": "Jesus… when I'm angry, can I just tell everyone how I feel?",
-          "slot": "morning (06-12 IST)",
-          "duration": null
-        },
-        {
           "episode_id": "JR-0006",
           "views": 834,
           "saves": null,
@@ -559,6 +541,17 @@
           "theme": "heartbreak",
           "emotion": "angry",
           "hook": "Jesus... she left me for someone else. Just like that. Like none of it mattered.",
+          "slot": "night (18-24 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0004",
+          "views": 824,
+          "saves": null,
+          "shares": null,
+          "theme": "failure",
+          "emotion": "worried",
+          "hook": "Jesus... I studied so hard for this. I did everything right. And I still failed. What was even the point?",
           "slot": "night (18-24 IST)",
           "duration": null
         }
@@ -622,12 +615,12 @@
   "authoring_guidance": {
     "lean_towards": [],
     "avoid": [
-      "emotion=worried (IG median 331 vs 1455, n=5)",
-      "duration=>78s (IG median 438 vs 1455, n=4)"
+      "emotion=worried (IG median 331 vs 1458, n=5)",
+      "duration=>78s (IG median 438 vs 1458, n=4)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1445 (n=15), night (18-24 IST) 1525 (n=10)",
-      "youtube slot medians: morning (06-12 IST) 388 (n=10), night (18-24 IST) 288 (n=13)",
+      "instagram slot medians: morning (06-12 IST) 1450 (n=14), night (18-24 IST) 1525 (n=10)",
+      "youtube slot medians: morning (06-12 IST) 308 (n=9), night (18-24 IST) 288 (n=13)",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
     ],
     "top_hooks_to_learn_from": [
