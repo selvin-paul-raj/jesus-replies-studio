@@ -37,17 +37,17 @@ trends and experiment readings in `content-os/reviews/`.
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-14T02:05Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-14T04:47Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=25, median views 1456, best 2643, saves per 1k reach 12.7
-- **youtube**: n=23, median views 288, best 1678, saves per 1k reach None
+- **instagram**: n=26, median views 1458, best 2643, saves per 1k reach 13.2
+- **youtube**: n=24, median views 310, best 1686, saves per 1k reach None
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
 
 **Avoid / de-emphasise:**
-- emotion=worried (IG median 332 vs 1456, n=5)
-- duration=>78s (IG median 439 vs 1456, n=4)
+- emotion=worried (IG median 332 vs 1458, n=5)
+- duration=>78s (IG median 439 vs 1458, n=4)
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
 - JR-0007 2643 views: Jesus... I'm so tired. I keep trying and trying and nothing works.
@@ -57,8 +57,8 @@ _Last computed 2026-10-14T02:05Z from Buffer analytics, last 28 days, posts at l
 - JR-0008 1726 views: Jesus... it feels like You've gone quiet. I pray and nothing comes back.
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1450 (n=14), night (18-24 IST) 1508 (n=11)
-- youtube slot medians: morning (06-12 IST) 308 (n=9), night (18-24 IST) 237 (n=14)
+- instagram slot medians: morning (06-12 IST) 1456 (n=15), night (18-24 IST) 1508 (n=11)
+- youtube slot medians: morning (06-12 IST) 391 (n=10), night (18-24 IST) 302 (n=14)
 - average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->

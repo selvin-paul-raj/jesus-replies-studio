@@ -70,12 +70,12 @@
     "title": "Jesus... My Grandmother Didn't Know Who I Was Today",
     "slot": null,
     "target_date": null,
-    "state": "SCHEDULED",
+    "state": "PUBLISHED_VERIFIED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0042/JR-0042.mp4",
     "buffer_post_id": "6ac86ff07d9f9f33012598c2",
     "scheduled_at": "2026-10-14T02:30:00.000Z",
-    "published_at": null,
-    "verification_status": "NOT_VERIFIED"
+    "published_at": "2026-10-14T02:31:25.584Z",
+    "verification_status": "PUBLISHED_VERIFIED"
   },
   {
     "episode_id": "JR-0043",
@@ -174,10 +174,10 @@
     "title": "Jesus... I'm The Strong One For Everyone And I'm So Tired",
     "slot": null,
     "target_date": null,
-    "state": "APPROVED",
+    "state": "SCHEDULED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0050/JR-0050.mp4",
     "buffer_post_id": "6acbac8fb07d37ac97af887e",
-    "scheduled_at": null,
+    "scheduled_at": "2026-10-18T02:30:00.000Z",
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
   },
