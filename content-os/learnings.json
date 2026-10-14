@@ -1,13 +1,13 @@
 {
-  "as_of": "2026-10-14T11:46:08.425240+00:00",
+  "as_of": "2026-10-14T17:06:25.587427+00:00",
   "window_days": 28,
   "min_n": 3,
   "platforms": {
     "instagram": {
-      "n": 26,
-      "median_views": 1458.0,
+      "n": 27,
+      "median_views": 1456,
       "max_views": 2643,
-      "saves_per_1k_reach_median": 13.2,
+      "saves_per_1k_reach_median": 13.6,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
@@ -16,26 +16,26 @@
             "median_views": 1456
           },
           "night (18-24 IST)": {
-            "n": 11,
-            "median_views": 1508
+            "n": 12,
+            "median_views": 1420.0
           }
         },
         "emotion": {
           "angry": {
             "n": 2,
-            "median_views": 1841.0
+            "median_views": 1842.0
           },
           "crying": {
             "n": 4,
-            "median_views": 1527.0
+            "median_views": 1529.0
           },
           "happy": {
             "n": 2,
-            "median_views": 897.5
+            "median_views": 900.0
           },
           "heartbroken": {
             "n": 1,
-            "median_views": 1903
+            "median_views": 1904
           },
           "hopeful": {
             "n": 2,
@@ -43,11 +43,11 @@
           },
           "neutral": {
             "n": 4,
-            "median_views": 1616.0
+            "median_views": 1618.0
           },
           "sad": {
-            "n": 6,
-            "median_views": 1452.5
+            "n": 7,
+            "median_views": 1447
           },
           "worried": {
             "n": 5,
@@ -57,21 +57,21 @@
         "character": {
           "boy": {
             "n": 13,
-            "median_views": 1445
+            "median_views": 1447
           },
           "girl": {
-            "n": 13,
-            "median_views": 1508
+            "n": 14,
+            "median_views": 1484.5
           }
         },
         "hook_type": {
           "confession_statement": {
             "n": 4,
-            "median_views": 1059.0
+            "median_views": 1059.5
           },
           "question": {
-            "n": 20,
-            "median_views": 1452.5
+            "n": 21,
+            "median_views": 1447
           },
           "statement": {
             "n": 2,
@@ -85,11 +85,11 @@
           },
           "<=65s": {
             "n": 11,
-            "median_views": 1498
+            "median_views": 1507
           },
           ">78s": {
-            "n": 4,
-            "median_views": 439.0
+            "n": 5,
+            "median_views": 663
           }
         },
         "bible_book": {
@@ -99,11 +99,11 @@
           },
           "1 John": {
             "n": 1,
-            "median_views": 1445
+            "median_views": 1447
           },
           "1 Peter": {
             "n": 1,
-            "median_views": 1579
+            "median_views": 1584
           },
           "1 Samuel": {
             "n": 1,
@@ -111,27 +111,27 @@
           },
           "2 Corinthians": {
             "n": 1,
-            "median_views": 1231
+            "median_views": 1232
           },
           "2 Timothy": {
             "n": 1,
-            "median_views": 1498
+            "median_views": 1507
           },
           "Ecclesiastes": {
             "n": 1,
-            "median_views": 1590
+            "median_views": 1593
           },
           "Ephesians": {
             "n": 1,
-            "median_views": 1731
+            "median_views": 1733
           },
           "Galatians": {
             "n": 1,
-            "median_views": 1903
+            "median_views": 1904
           },
           "Genesis": {
             "n": 2,
-            "median_views": 960.5
+            "median_views": 961.0
           },
           "Habakkuk": {
             "n": 1,
@@ -143,15 +143,19 @@
           },
           "Isaiah": {
             "n": 2,
-            "median_views": 959.0
+            "median_views": 959.5
+          },
+          "John": {
+            "n": 1,
+            "median_views": 1259
           },
           "Joshua": {
             "n": 1,
-            "median_views": 1276
+            "median_views": 1279
           },
           "Lamentations": {
             "n": 1,
-            "median_views": 1546
+            "median_views": 1549
           },
           "Matthew": {
             "n": 1,
@@ -159,11 +163,11 @@
           },
           "Micah": {
             "n": 1,
-            "median_views": 55
+            "median_views": 57
           },
           "Philippians": {
             "n": 1,
-            "median_views": 1642
+            "median_views": 1643
           },
           "Proverbs": {
             "n": 1,
@@ -171,11 +175,11 @@
           },
           "Psalms": {
             "n": 4,
-            "median_views": 1061.0
+            "median_views": 1061.5
           },
           "Ruth": {
             "n": 1,
-            "median_views": 1508
+            "median_views": 1509
           }
         }
       },
@@ -191,9 +195,9 @@
         {
           "dimension": "duration",
           "value": ">78s",
-          "n": 4,
-          "median_views": 439.0,
-          "vs_overall": 0.3
+          "n": 5,
+          "median_views": 663,
+          "vs_overall": 0.46
         }
       ],
       "top": [
@@ -221,7 +225,7 @@
         },
         {
           "episode_id": "JR-0020",
-          "views": 1903,
+          "views": 1904,
           "saves": 48,
           "shares": 15,
           "theme": "comparison",
@@ -232,7 +236,7 @@
         },
         {
           "episode_id": "JR-0029",
-          "views": 1731,
+          "views": 1733,
           "saves": 16,
           "shares": 5,
           "theme": "jealousy of a sibling",
@@ -265,7 +269,7 @@
         },
         {
           "episode_id": "JR-0033",
-          "views": 55,
+          "views": 57,
           "theme": "unanswered prayer",
           "emotion": "neutral",
           "hook": "Jesus, how long am I supposed to keep asking?",
@@ -274,7 +278,7 @@
         },
         {
           "episode_id": "JR-0037",
-          "views": 192,
+          "views": 193,
           "theme": "returning to church after years away",
           "emotion": "worried",
           "hook": "Jesus... I parked outside church this morning. I never went in. 😔",
@@ -302,9 +306,9 @@
       ]
     },
     "youtube": {
-      "n": 24,
-      "median_views": 310.5,
-      "max_views": 1686,
+      "n": 23,
+      "median_views": 309,
+      "max_views": 1543,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
@@ -314,8 +318,8 @@
             "median_views": 391.0
           },
           "night (18-24 IST)": {
-            "n": 14,
-            "median_views": 302.0
+            "n": 13,
+            "median_views": 292
           }
         },
         "emotion": {
@@ -348,14 +352,14 @@
             "median_views": 473
           },
           "worried": {
-            "n": 5,
-            "median_views": 521
+            "n": 4,
+            "median_views": 324.0
           }
         },
         "character": {
           "boy": {
-            "n": 12,
-            "median_views": 604.0
+            "n": 11,
+            "median_views": 521
           },
           "girl": {
             "n": 12,
@@ -368,8 +372,8 @@
             "median_views": 20
           },
           "question": {
-            "n": 20,
-            "median_views": 310.5
+            "n": 19,
+            "median_views": 309
           },
           "statement": {
             "n": 1,
@@ -382,8 +386,8 @@
             "median_views": 309
           },
           ">78s": {
-            "n": 4,
-            "median_views": 38.0
+            "n": 5,
+            "median_views": 56
           }
         },
         "bible_book": {
@@ -431,9 +435,9 @@
             "n": 1,
             "median_views": 20
           },
-          "James": {
+          "John": {
             "n": 1,
-            "median_views": 832
+            "median_views": 513
           },
           "Joshua": {
             "n": 1,
@@ -460,8 +464,8 @@
             "median_views": 721
           },
           "Psalms": {
-            "n": 4,
-            "median_views": 510.5
+            "n": 3,
+            "median_views": 187
           },
           "Ruth": {
             "n": 1,
@@ -475,35 +479,21 @@
           "value": "morning (06-12 IST)",
           "n": 10,
           "median_views": 391.0,
-          "vs_overall": 1.26
+          "vs_overall": 1.27
         },
         {
           "dimension": "emotion",
           "value": "sad",
           "n": 5,
           "median_views": 473,
-          "vs_overall": 1.52
-        },
-        {
-          "dimension": "emotion",
-          "value": "worried",
-          "n": 5,
-          "median_views": 521,
-          "vs_overall": 1.68
+          "vs_overall": 1.53
         },
         {
           "dimension": "character",
           "value": "boy",
-          "n": 12,
-          "median_views": 604.0,
-          "vs_overall": 1.95
-        },
-        {
-          "dimension": "bible_book",
-          "value": "Psalms",
-          "n": 4,
-          "median_views": 510.5,
-          "vs_overall": 1.64
+          "n": 11,
+          "median_views": 521,
+          "vs_overall": 1.69
         }
       ],
       "weaker": [
@@ -524,23 +514,19 @@
         {
           "dimension": "duration",
           "value": ">78s",
-          "n": 4,
-          "median_views": 38.0,
-          "vs_overall": 0.12
+          "n": 5,
+          "median_views": 56,
+          "vs_overall": 0.18
+        },
+        {
+          "dimension": "bible_book",
+          "value": "Psalms",
+          "n": 3,
+          "median_views": 187,
+          "vs_overall": 0.61
         }
       ],
       "top": [
-        {
-          "episode_id": "JR-0005",
-          "views": 1686,
-          "saves": null,
-          "shares": null,
-          "theme": "comparison",
-          "emotion": "sad",
-          "hook": "Jesus... why does everyone else's life look so much better than mine online?",
-          "slot": "night (18-24 IST)",
-          "duration": null
-        },
         {
           "episode_id": "JR-0034",
           "views": 1543,
@@ -582,6 +568,17 @@
           "theme": "heartbreak",
           "emotion": "angry",
           "hook": "Jesus... she left me for someone else. Just like that. Like none of it mattered.",
+          "slot": "night (18-24 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0012",
+          "views": 721,
+          "saves": null,
+          "shares": null,
+          "theme": "purpose",
+          "emotion": "worried",
+          "hook": "Jesus... why does everyone else already know exactly what they're doing with their life? 😔",
           "slot": "night (18-24 IST)",
           "duration": null
         }
@@ -645,19 +642,19 @@
   "authoring_guidance": {
     "lean_towards": [],
     "avoid": [
-      "emotion=worried (IG median 332 vs 1458, n=5)",
-      "duration=>78s (IG median 439 vs 1458, n=4)"
+      "emotion=worried (IG median 332 vs 1456, n=5)",
+      "duration=>78s (IG median 663 vs 1456, n=5)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1456 (n=15), night (18-24 IST) 1508 (n=11)",
-      "youtube slot medians: morning (06-12 IST) 391 (n=10), night (18-24 IST) 302 (n=14)",
+      "instagram slot medians: morning (06-12 IST) 1456 (n=15), night (18-24 IST) 1420 (n=12)",
+      "youtube slot medians: morning (06-12 IST) 391 (n=10), night (18-24 IST) 292 (n=13)",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
     ],
     "top_hooks_to_learn_from": [
       "JR-0007 2643 views: Jesus... I'm so tired. I keep trying and trying and nothing works.",
       "JR-0006 1951 views: Jesus... she left me for someone else. Just like that. Like none of it mattered.",
-      "JR-0020 1903 views: Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭",
-      "JR-0029 1731 views: Jesus, why does everything come easy for her?",
+      "JR-0020 1904 views: Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭",
+      "JR-0029 1733 views: Jesus, why does everything come easy for her?",
       "JR-0008 1726 views: Jesus... it feels like You've gone quiet. I pray and nothing comes back."
     ]
   }
