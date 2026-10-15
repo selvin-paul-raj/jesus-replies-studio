@@ -27,7 +27,7 @@
         }
       ],
       "last_read_error": {
-        "at": "2026-10-12T05:50:41.000Z",
+        "at": "2026-10-15T04:52:08.000Z",
         "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
       }
     },
@@ -48,7 +48,11 @@
           "run": "38479393538",
           "evidence": "create_scheduled read back: scheduled 2026-10-18T15:00:00.000Z"
         }
-      ]
+      ],
+      "last_read_error": {
+        "at": "2026-10-15T04:52:08.000Z",
+        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
+      }
     }
   }
 }
