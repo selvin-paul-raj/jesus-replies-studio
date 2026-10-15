@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-10-15T04:55:51.199035+00:00",
+  "as_of": "2026-10-15T11:22:17.669311+00:00",
   "window_days": 28,
   "min_n": 3,
   "platforms": {
     "instagram": {
-      "n": 27,
-      "median_views": 1460,
+      "n": 25,
+      "median_views": 1457,
       "max_views": 2643,
       "saves_per_1k_reach_median": 13.6,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 15,
-            "median_views": 1460
+            "n": 13,
+            "median_views": 1457
           },
           "night (18-24 IST)": {
             "n": 12,
@@ -22,8 +22,8 @@
         },
         "emotion": {
           "angry": {
-            "n": 2,
-            "median_views": 1842.5
+            "n": 1,
+            "median_views": 1734
           },
           "crying": {
             "n": 4,
@@ -46,8 +46,8 @@
             "median_views": 1618.0
           },
           "sad": {
-            "n": 7,
-            "median_views": 1460
+            "n": 6,
+            "median_views": 1477.0
           },
           "worried": {
             "n": 5,
@@ -56,12 +56,12 @@
         },
         "character": {
           "boy": {
-            "n": 14,
-            "median_views": 1452.0
+            "n": 13,
+            "median_views": 1447
           },
           "girl": {
-            "n": 13,
-            "median_views": 1509
+            "n": 12,
+            "median_views": 1529.5
           }
         },
         "hook_type": {
@@ -70,12 +70,12 @@
             "median_views": 1060.0
           },
           "question": {
-            "n": 21,
-            "median_views": 1460
+            "n": 20,
+            "median_views": 1477.0
           },
           "statement": {
-            "n": 2,
-            "median_views": 1838.5
+            "n": 1,
+            "median_views": 1726
           }
         },
         "duration": {
@@ -174,8 +174,8 @@
             "median_views": 332
           },
           "Psalms": {
-            "n": 3,
-            "median_views": 1460
+            "n": 1,
+            "median_views": 663
           },
           "Ruth": {
             "n": 1,
@@ -197,7 +197,7 @@
           "value": ">78s",
           "n": 5,
           "median_views": 663,
-          "vs_overall": 0.45
+          "vs_overall": 0.46
         }
       ],
       "top": [
@@ -209,17 +209,6 @@
           "theme": "burnout",
           "emotion": "crying",
           "hook": "Jesus... I'm so tired. I keep trying and trying and nothing works.",
-          "slot": "morning (06-12 IST)",
-          "duration": null
-        },
-        {
-          "episode_id": "JR-0006",
-          "views": 1951,
-          "saves": 46,
-          "shares": 18,
-          "theme": "heartbreak",
-          "emotion": "angry",
-          "hook": "Jesus... she left me for someone else. Just like that. Like none of it mattered.",
           "slot": "morning (06-12 IST)",
           "duration": null
         },
@@ -253,6 +242,17 @@
           "theme": "doubt",
           "emotion": "sad",
           "hook": "Jesus... it feels like You've gone quiet. I pray and nothing comes back.",
+          "slot": "night (18-24 IST)",
+          "duration": null
+        },
+        {
+          "episode_id": "JR-0011",
+          "views": 1706,
+          "saves": 22,
+          "shares": 22,
+          "theme": "freewill",
+          "emotion": "neutral",
+          "hook": "Jesus... why did God create that tree? The one with the knowledge of good and evil? 🤔",
           "slot": "night (18-24 IST)",
           "duration": null
         }
@@ -639,20 +639,20 @@
   "authoring_guidance": {
     "lean_towards": [],
     "avoid": [
-      "emotion=worried (IG median 332 vs 1460, n=5)",
-      "duration=>78s (IG median 663 vs 1460, n=5)"
+      "emotion=worried (IG median 332 vs 1457, n=5)",
+      "duration=>78s (IG median 663 vs 1457, n=5)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1460 (n=15), night (18-24 IST) 1420 (n=12)",
+      "instagram slot medians: morning (06-12 IST) 1457 (n=13), night (18-24 IST) 1420 (n=12)",
       "youtube slot medians: morning (06-12 IST) 502 (n=10), night (18-24 IST) 295 (n=13)",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
     ],
     "top_hooks_to_learn_from": [
       "JR-0007 2643 views: Jesus... I'm so tired. I keep trying and trying and nothing works.",
-      "JR-0006 1951 views: Jesus... she left me for someone else. Just like that. Like none of it mattered.",
       "JR-0020 1904 views: Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭",
       "JR-0029 1734 views: Jesus, why does everything come easy for her?",
-      "JR-0008 1726 views: Jesus... it feels like You've gone quiet. I pray and nothing comes back."
+      "JR-0008 1726 views: Jesus... it feels like You've gone quiet. I pray and nothing comes back.",
+      "JR-0011 1706 views: Jesus... why did God create that tree? The one with the knowledge of good and evil? 🤔"
     ]
   }
 }
