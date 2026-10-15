@@ -2,11 +2,11 @@
   "episode_id": "JR-0045",
   "platforms": {
     "instagram": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6ac87277987e694c3c41162e",
       "due_at": "2026-10-15T15:00:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-10-15T15:07:36.318Z",
+      "external_link": "https://www.instagram.com/reel/DehPWaFDmKQ/",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -24,6 +24,20 @@
           "to": "SCHEDULED",
           "run": "38151502869",
           "evidence": "schedule_draft read back: scheduled 2026-10-15T15:00:00.000Z"
+        },
+        {
+          "at": "2026-10-15T16:55:53.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "38773057371",
+          "evidence": "read 6ac87277987e694c3c41162e: status sent at 2026-10-15T15:07:36.318Z"
+        },
+        {
+          "at": "2026-10-15T16:55:53.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "38773057371",
+          "evidence": "permalink http=200 metricsUpdatedAt=2026-10-15T15:31:16.025Z"
         }
       ],
       "last_read_error": {
@@ -32,11 +46,11 @@
       }
     },
     "youtube": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6aca74b8bba9419ccb0d59cc",
       "due_at": "2026-10-15T15:00:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-10-15T15:03:32.212Z",
+      "external_link": "https://www.youtube.com/shorts/L_cJ2ov3Sks",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -47,6 +61,20 @@
           "to": "SCHEDULED",
           "run": "38071558663",
           "evidence": "create_scheduled read back: scheduled 2026-10-15T15:00:00.000Z"
+        },
+        {
+          "at": "2026-10-15T16:55:53.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "38773057371",
+          "evidence": "read 6aca74b8bba9419ccb0d59cc: status sent at 2026-10-15T15:03:32.212Z"
+        },
+        {
+          "at": "2026-10-15T16:55:53.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "38773057371",
+          "evidence": "permalink http=200"
         }
       ],
       "last_read_error": {
