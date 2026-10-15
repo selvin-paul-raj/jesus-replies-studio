@@ -1,0 +1,45 @@
+{
+  "week_start": "2026-10-19",
+  "compiled_at": "2026-10-15",
+  "_rule": "External research says what the wider ecosystem does. It never overrides own-account analytics; disagreements are recorded.",
+  "findings": [
+    {
+      "claim": "Diwali 2026 falls on Sunday 8 November 2026 (Lakshmi Puja), with the five-day festival running 6-10 November; Dhanteras is 6 November and Bhai Dooj 10 November.",
+      "type": "SOURCE_CLAIM",
+      "source": "Airalo festival calendar; Old Farmer's Almanac",
+      "url": "https://www.airalo.com/blog/when-is-diwali"
+    },
+    {
+      "claim": "The week of 2026-10-19 sits in the gap between Dussehra (20 Oct) and Diwali (8 Nov): families travel home mid-festival-window, exams and result announcements cluster here, and train tickets for the Diwali rush are already sold out weeks ahead.",
+      "type": "INFERENCE",
+      "source": "Inferred from Diwali 2026 dates plus Indian Railways 120-day booking pattern",
+      "url": "https://www.airalo.com/blog/when-is-diwali"
+    },
+    {
+      "claim": "A Times of India survey (14 Oct 2026) finds young Indians constantly connected online still struggle to form meaningful relationships; demanding work schedules and exhaustion leave digital interactions that do not translate into closeness offline.",
+      "type": "SOURCE_CLAIM",
+      "source": "Times of India relationships survey coverage (14 Oct 2026)",
+      "url": "https://timesofindia.indiatimes.com/life-style/relationships/love-sex/why-meaningful-connection-feels-harder-to-find/articleshow/134940986.cms"
+    },
+    {
+      "claim": "An Oct 2026 survey of Indian singles reports 58% feel completely lonely in real life despite mingling online, and 55% are too tired after work to meet anyone; 40% use dating apps.",
+      "type": "SOURCE_CLAIM",
+      "source": "Asianet Newsable summarising an Indian singles loneliness survey (5 Oct 2026)",
+      "url": "https://newsable.asianetnews.com/india/hundreds-of-online-friends-but-zero-in-real-life-survey-reveals-why-indian-singles-are-feeling-lonely-articleshow-1vtdt0c"
+    },
+    {
+      "claim": "For Reels in 2026 the top ranking signals are watch time and sends per reach (DM shares); reels built to be sent to a friend outperform reels built to be liked, and 30-90 second storytelling holds watch time best.",
+      "type": "SOURCE_CLAIM",
+      "source": "Buffer Instagram algorithm guide (14 Oct 2026); Metricool Reels guide (21 Sep 2026)",
+      "url": "https://buffer.com/resources/instagram-algorithms/"
+    }
+  ],
+  "opportunities": [
+    "Festival-window belonging pain: being away from family or left out of friend-group plans while everyone posts celebrations; keep topics universal, never festival-specific.",
+    "Result/anxiety season: exam and job outcomes land mid-week for Indian students and young professionals.",
+    "Loneliness-in-a-crowd angle matches the Oct 2026 India surveys directly and fits the account's sad/confession register."
+  ],
+  "disagreements_with_account_data": [
+    "External guides push 15-30s quick hooks, but own-account analytics favour 70-80s one_pushback storytelling; own data wins, no change."
+  ]
+}
