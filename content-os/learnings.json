@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-10-14T21:37:50.052853+00:00",
+  "as_of": "2026-10-15T01:42:23.782881+00:00",
   "window_days": 28,
   "min_n": 3,
   "platforms": {
     "instagram": {
       "n": 27,
-      "median_views": 1456,
+      "median_views": 1457,
       "max_views": 2643,
       "saves_per_1k_reach_median": 13.6,
       "avg_watch_time_available": false,
@@ -13,7 +13,7 @@
         "slot": {
           "morning (06-12 IST)": {
             "n": 15,
-            "median_views": 1456
+            "median_views": 1457
           },
           "night (18-24 IST)": {
             "n": 12,
@@ -23,15 +23,15 @@
         "emotion": {
           "angry": {
             "n": 2,
-            "median_views": 1842.0
+            "median_views": 1842.5
           },
           "crying": {
             "n": 4,
-            "median_views": 1529.0
+            "median_views": 1529.5
           },
           "happy": {
             "n": 2,
-            "median_views": 900.0
+            "median_views": 901.0
           },
           "heartbroken": {
             "n": 1,
@@ -67,7 +67,7 @@
         "hook_type": {
           "confession_statement": {
             "n": 4,
-            "median_views": 1059.5
+            "median_views": 1060.0
           },
           "question": {
             "n": 21,
@@ -81,7 +81,7 @@
         "duration": {
           "66-78s": {
             "n": 1,
-            "median_views": 1456
+            "median_views": 1457
           },
           "<=65s": {
             "n": 11,
@@ -95,7 +95,7 @@
         "bible_book": {
           "1 Corinthians": {
             "n": 1,
-            "median_views": 1456
+            "median_views": 1457
           },
           "1 John": {
             "n": 1,
@@ -123,7 +123,7 @@
           },
           "Ephesians": {
             "n": 1,
-            "median_views": 1733
+            "median_views": 1734
           },
           "Galatians": {
             "n": 1,
@@ -131,7 +131,7 @@
           },
           "Genesis": {
             "n": 2,
-            "median_views": 961.0
+            "median_views": 962.0
           },
           "Habakkuk": {
             "n": 1,
@@ -147,15 +147,15 @@
           },
           "John": {
             "n": 1,
-            "median_views": 1259
+            "median_views": 1260
           },
           "Joshua": {
             "n": 1,
-            "median_views": 1279
+            "median_views": 1280
           },
           "Lamentations": {
             "n": 1,
-            "median_views": 1549
+            "median_views": 1550
           },
           "Matthew": {
             "n": 1,
@@ -236,7 +236,7 @@
         },
         {
           "episode_id": "JR-0029",
-          "views": 1733,
+          "views": 1734,
           "saves": 16,
           "shares": 5,
           "theme": "jealousy of a sibling",
@@ -287,7 +287,7 @@
         },
         {
           "episode_id": "JR-0022",
-          "views": 216,
+          "views": 218,
           "theme": "reconciliation",
           "emotion": "happy",
           "hook": "Jesus... my brother texted back after two years of silence. Why am I so scared to be happy about it?",
@@ -642,11 +642,11 @@
   "authoring_guidance": {
     "lean_towards": [],
     "avoid": [
-      "emotion=worried (IG median 332 vs 1456, n=5)",
-      "duration=>78s (IG median 663 vs 1456, n=5)"
+      "emotion=worried (IG median 332 vs 1457, n=5)",
+      "duration=>78s (IG median 663 vs 1457, n=5)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1456 (n=15), night (18-24 IST) 1420 (n=12)",
+      "instagram slot medians: morning (06-12 IST) 1457 (n=15), night (18-24 IST) 1420 (n=12)",
       "youtube slot medians: morning (06-12 IST) 393 (n=10), night (18-24 IST) 295 (n=13)",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
     ],
@@ -654,7 +654,7 @@
       "JR-0007 2643 views: Jesus... I'm so tired. I keep trying and trying and nothing works.",
       "JR-0006 1951 views: Jesus... she left me for someone else. Just like that. Like none of it mattered.",
       "JR-0020 1904 views: Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭",
-      "JR-0029 1733 views: Jesus, why does everything come easy for her?",
+      "JR-0029 1734 views: Jesus, why does everything come easy for her?",
       "JR-0008 1726 views: Jesus... it feels like You've gone quiet. I pray and nothing comes back."
     ]
   }
