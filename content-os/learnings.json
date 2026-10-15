@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-15T16:55:53.525955+00:00",
+  "as_of": "2026-10-15T21:19:03.360938+00:00",
   "window_days": 28,
   "min_n": 3,
   "platforms": {
@@ -314,19 +314,19 @@
     },
     "youtube": {
       "n": 22,
-      "median_views": 314.0,
-      "max_views": 1591,
+      "median_views": 315.5,
+      "max_views": 1835,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 10,
-            "median_views": 502.0
+            "median_views": 502.5
           },
           "night (18-24 IST)": {
             "n": 12,
-            "median_views": 222.5
+            "median_views": 223.5
           }
         },
         "emotion": {
@@ -336,11 +336,11 @@
           },
           "crying": {
             "n": 3,
-            "median_views": 150
+            "median_views": 151
           },
           "happy": {
             "n": 2,
-            "median_views": 825.0
+            "median_views": 835.0
           },
           "heartbroken": {
             "n": 1,
@@ -352,25 +352,25 @@
           },
           "neutral": {
             "n": 4,
-            "median_views": 314.0
+            "median_views": 315.5
           },
           "sad": {
             "n": 6,
-            "median_views": 870.0
+            "median_views": 924.5
           },
           "worried": {
             "n": 4,
-            "median_views": 328.5
+            "median_views": 328.0
           }
         },
         "character": {
           "boy": {
             "n": 11,
-            "median_views": 529
+            "median_views": 528
           },
           "girl": {
             "n": 11,
-            "median_views": 150
+            "median_views": 151
           }
         },
         "hook_type": {
@@ -380,17 +380,17 @@
           },
           "question": {
             "n": 19,
-            "median_views": 317
+            "median_views": 319
           }
         },
         "duration": {
           "66-78s": {
             "n": 1,
-            "median_views": 1120
+            "median_views": 1172
           },
           "<=65s": {
             "n": 11,
-            "median_views": 311
+            "median_views": 312
           },
           ">78s": {
             "n": 6,
@@ -400,11 +400,11 @@
         "bible_book": {
           "1 John": {
             "n": 1,
-            "median_views": 475
+            "median_views": 477
           },
           "1 Peter": {
             "n": 1,
-            "median_views": 1451
+            "median_views": 1471
           },
           "1 Samuel": {
             "n": 1,
@@ -416,11 +416,11 @@
           },
           "2 Timothy": {
             "n": 1,
-            "median_views": 1591
+            "median_views": 1653
           },
           "Ecclesiastes": {
             "n": 1,
-            "median_views": 311
+            "median_views": 312
           },
           "Ephesians": {
             "n": 1,
@@ -428,7 +428,7 @@
           },
           "Galatians": {
             "n": 2,
-            "median_views": 741.5
+            "median_views": 925.5
           },
           "Genesis": {
             "n": 2,
@@ -440,23 +440,23 @@
           },
           "Isaiah": {
             "n": 2,
-            "median_views": 570.5
+            "median_views": 596.5
           },
           "John": {
             "n": 1,
-            "median_views": 620
+            "median_views": 677
           },
           "Joshua": {
             "n": 1,
-            "median_views": 529
+            "median_views": 528
           },
           "Lamentations": {
             "n": 1,
-            "median_views": 295
+            "median_views": 296
           },
           "Micah": {
             "n": 1,
-            "median_views": 317
+            "median_views": 319
           },
           "Philippians": {
             "n": 1,
@@ -464,7 +464,7 @@
           },
           "Proverbs": {
             "n": 1,
-            "median_views": 722
+            "median_views": 723
           },
           "Psalms": {
             "n": 1,
@@ -472,7 +472,7 @@
           },
           "Ruth": {
             "n": 1,
-            "median_views": 150
+            "median_views": 151
           }
         }
       },
@@ -481,22 +481,22 @@
           "dimension": "slot",
           "value": "morning (06-12 IST)",
           "n": 10,
-          "median_views": 502.0,
-          "vs_overall": 1.6
+          "median_views": 502.5,
+          "vs_overall": 1.59
         },
         {
           "dimension": "emotion",
           "value": "sad",
           "n": 6,
-          "median_views": 870.0,
-          "vs_overall": 2.77
+          "median_views": 924.5,
+          "vs_overall": 2.93
         },
         {
           "dimension": "character",
           "value": "boy",
           "n": 11,
-          "median_views": 529,
-          "vs_overall": 1.68
+          "median_views": 528,
+          "vs_overall": 1.67
         }
       ],
       "weaker": [
@@ -504,14 +504,14 @@
           "dimension": "emotion",
           "value": "crying",
           "n": 3,
-          "median_views": 150,
+          "median_views": 151,
           "vs_overall": 0.48
         },
         {
           "dimension": "character",
           "value": "girl",
           "n": 11,
-          "median_views": 150,
+          "median_views": 151,
           "vs_overall": 0.48
         },
         {
@@ -531,19 +531,8 @@
       ],
       "top": [
         {
-          "episode_id": "JR-0034",
-          "views": 1591,
-          "saves": null,
-          "shares": null,
-          "theme": "wanting to quit faith",
-          "emotion": "sad",
-          "hook": "Jesus, what if I stopped believing tomorrow?",
-          "slot": "morning (06-12 IST)",
-          "duration": "<=65s"
-        },
-        {
           "episode_id": "JR-0041",
-          "views": 1467,
+          "views": 1835,
           "saves": null,
           "shares": null,
           "theme": "people-pleasing and not being able to say no",
@@ -553,8 +542,19 @@
           "duration": ">78s"
         },
         {
+          "episode_id": "JR-0034",
+          "views": 1653,
+          "saves": null,
+          "shares": null,
+          "theme": "wanting to quit faith",
+          "emotion": "sad",
+          "hook": "Jesus, what if I stopped believing tomorrow?",
+          "slot": "morning (06-12 IST)",
+          "duration": "<=65s"
+        },
+        {
           "episode_id": "JR-0032",
-          "views": 1451,
+          "views": 1471,
           "saves": null,
           "shares": null,
           "theme": "pride after success",
@@ -565,7 +565,7 @@
         },
         {
           "episode_id": "JR-0040",
-          "views": 1120,
+          "views": 1172,
           "saves": null,
           "shares": null,
           "theme": "hearing parents fight at night",
@@ -576,7 +576,7 @@
         },
         {
           "episode_id": "JR-0012",
-          "views": 722,
+          "views": 723,
           "saves": null,
           "shares": null,
           "theme": "purpose",
@@ -651,7 +651,7 @@
     ],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1457 (n=13), night (18-24 IST) 1332 (n=13)",
-      "youtube slot medians: morning (06-12 IST) 502 (n=10), night (18-24 IST) 222 (n=12)",
+      "youtube slot medians: morning (06-12 IST) 502 (n=10), night (18-24 IST) 224 (n=12)",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
     ],
     "top_hooks_to_learn_from": [
