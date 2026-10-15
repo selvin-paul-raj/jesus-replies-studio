@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-10-15T01:42:23.782881+00:00",
+  "as_of": "2026-10-15T04:31:59.488084+00:00",
   "window_days": 28,
   "min_n": 3,
   "platforms": {
     "instagram": {
       "n": 27,
-      "median_views": 1457,
+      "median_views": 1460,
       "max_views": 2643,
       "saves_per_1k_reach_median": 13.6,
       "avg_watch_time_available": false,
@@ -13,7 +13,7 @@
         "slot": {
           "morning (06-12 IST)": {
             "n": 15,
-            "median_views": 1457
+            "median_views": 1460
           },
           "night (18-24 IST)": {
             "n": 12,
@@ -47,7 +47,7 @@
           },
           "sad": {
             "n": 7,
-            "median_views": 1447
+            "median_views": 1460
           },
           "worried": {
             "n": 5,
@@ -56,12 +56,12 @@
         },
         "character": {
           "boy": {
-            "n": 13,
-            "median_views": 1447
+            "n": 14,
+            "median_views": 1452.0
           },
           "girl": {
-            "n": 14,
-            "median_views": 1484.5
+            "n": 13,
+            "median_views": 1509
           }
         },
         "hook_type": {
@@ -71,7 +71,7 @@
           },
           "question": {
             "n": 21,
-            "median_views": 1447
+            "median_views": 1460
           },
           "statement": {
             "n": 2,
@@ -80,8 +80,8 @@
         },
         "duration": {
           "66-78s": {
-            "n": 1,
-            "median_views": 1457
+            "n": 2,
+            "median_views": 1551.0
           },
           "<=65s": {
             "n": 11,
@@ -142,8 +142,8 @@
             "median_views": 238
           },
           "Isaiah": {
-            "n": 2,
-            "median_views": 959.5
+            "n": 3,
+            "median_views": 1645
           },
           "John": {
             "n": 1,
@@ -174,8 +174,8 @@
             "median_views": 332
           },
           "Psalms": {
-            "n": 4,
-            "median_views": 1061.5
+            "n": 3,
+            "median_views": 1460
           },
           "Ruth": {
             "n": 1,
@@ -197,7 +197,7 @@
           "value": ">78s",
           "n": 5,
           "median_views": 663,
-          "vs_overall": 0.46
+          "vs_overall": 0.45
         }
       ],
       "top": [
@@ -295,19 +295,19 @@
           "duration": ">78s"
         },
         {
-          "episode_id": "JR-0005-M",
-          "views": 231,
-          "theme": "comparison",
-          "emotion": "sad",
-          "hook": "Jesus... why does everyone else's life look so much better than mine online?",
+          "episode_id": "JR-0024",
+          "views": 238,
+          "theme": "money anxiety",
+          "emotion": "worried",
+          "hook": "Jesus, will there be enough money this month?",
           "slot": "morning (06-12 IST)",
-          "duration": null
+          "duration": "<=65s"
         }
       ]
     },
     "youtube": {
       "n": 23,
-      "median_views": 311,
+      "median_views": 317,
       "max_views": 1591,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
@@ -315,7 +315,7 @@
         "slot": {
           "morning (06-12 IST)": {
             "n": 10,
-            "median_views": 393.0
+            "median_views": 502.0
           },
           "night (18-24 IST)": {
             "n": 13,
@@ -349,7 +349,7 @@
           },
           "sad": {
             "n": 5,
-            "median_views": 475
+            "median_views": 620
           },
           "worried": {
             "n": 4,
@@ -358,12 +358,12 @@
         },
         "character": {
           "boy": {
-            "n": 11,
-            "median_views": 529
+            "n": 12,
+            "median_views": 608.5
           },
           "girl": {
-            "n": 12,
-            "median_views": 169.0
+            "n": 11,
+            "median_views": 150
           }
         },
         "hook_type": {
@@ -373,7 +373,7 @@
           },
           "question": {
             "n": 19,
-            "median_views": 311
+            "median_views": 317
           },
           "statement": {
             "n": 1,
@@ -381,6 +381,10 @@
           }
         },
         "duration": {
+          "66-78s": {
+            "n": 1,
+            "median_views": 1120
+          },
           "<=65s": {
             "n": 11,
             "median_views": 311
@@ -432,8 +436,8 @@
             "median_views": 128
           },
           "Isaiah": {
-            "n": 1,
-            "median_views": 21
+            "n": 2,
+            "median_views": 570.5
           },
           "John": {
             "n": 1,
@@ -464,8 +468,8 @@
             "median_views": 722
           },
           "Psalms": {
-            "n": 3,
-            "median_views": 188
+            "n": 2,
+            "median_views": 426.5
           },
           "Ruth": {
             "n": 1,
@@ -478,31 +482,31 @@
           "dimension": "slot",
           "value": "morning (06-12 IST)",
           "n": 10,
-          "median_views": 393.0,
-          "vs_overall": 1.26
+          "median_views": 502.0,
+          "vs_overall": 1.58
         },
         {
           "dimension": "emotion",
           "value": "sad",
           "n": 5,
-          "median_views": 475,
-          "vs_overall": 1.53
+          "median_views": 620,
+          "vs_overall": 1.96
         },
         {
           "dimension": "character",
           "value": "boy",
-          "n": 11,
-          "median_views": 529,
-          "vs_overall": 1.7
+          "n": 12,
+          "median_views": 608.5,
+          "vs_overall": 1.92
         }
       ],
       "weaker": [
         {
           "dimension": "character",
           "value": "girl",
-          "n": 12,
-          "median_views": 169.0,
-          "vs_overall": 0.54
+          "n": 11,
+          "median_views": 150,
+          "vs_overall": 0.47
         },
         {
           "dimension": "hook_type",
@@ -517,13 +521,6 @@
           "n": 5,
           "median_views": 57,
           "vs_overall": 0.18
-        },
-        {
-          "dimension": "bible_book",
-          "value": "Psalms",
-          "n": 3,
-          "median_views": 188,
-          "vs_overall": 0.6
         }
       ],
       "top": [
@@ -550,6 +547,17 @@
           "duration": "<=65s"
         },
         {
+          "episode_id": "JR-0040",
+          "views": 1120,
+          "saves": null,
+          "shares": null,
+          "theme": "hearing parents fight at night",
+          "emotion": "sad",
+          "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔",
+          "slot": "morning (06-12 IST)",
+          "duration": "66-78s"
+        },
+        {
           "episode_id": "JR-0007",
           "views": 1009,
           "saves": null,
@@ -568,17 +576,6 @@
           "theme": "heartbreak",
           "emotion": "angry",
           "hook": "Jesus... she left me for someone else. Just like that. Like none of it mattered.",
-          "slot": "night (18-24 IST)",
-          "duration": null
-        },
-        {
-          "episode_id": "JR-0012",
-          "views": 722,
-          "saves": null,
-          "shares": null,
-          "theme": "purpose",
-          "emotion": "worried",
-          "hook": "Jesus... why does everyone else already know exactly what they're doing with their life? 😔",
           "slot": "night (18-24 IST)",
           "duration": null
         }
@@ -642,12 +639,12 @@
   "authoring_guidance": {
     "lean_towards": [],
     "avoid": [
-      "emotion=worried (IG median 332 vs 1457, n=5)",
-      "duration=>78s (IG median 663 vs 1457, n=5)"
+      "emotion=worried (IG median 332 vs 1460, n=5)",
+      "duration=>78s (IG median 663 vs 1460, n=5)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1457 (n=15), night (18-24 IST) 1420 (n=12)",
-      "youtube slot medians: morning (06-12 IST) 393 (n=10), night (18-24 IST) 295 (n=13)",
+      "instagram slot medians: morning (06-12 IST) 1460 (n=15), night (18-24 IST) 1420 (n=12)",
+      "youtube slot medians: morning (06-12 IST) 502 (n=10), night (18-24 IST) 295 (n=13)",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
     ],
     "top_hooks_to_learn_from": [
