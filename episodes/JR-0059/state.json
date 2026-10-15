@@ -1,0 +1,168 @@
+{
+  "episode_id": "JR-0059",
+  "state": "BLOCKED",
+  "updated_at": "2026-10-15T04:55:38Z",
+  "slot": null,
+  "target_date": null,
+  "generation": "PASS",
+  "validation": "PASS",
+  "render": "PASS",
+  "render_qa": "PASS",
+  "package": "PASS",
+  "package_qa": "PASS",
+  "asset_hosting": "VERIFIED",
+  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0059/JR-0059.mp4",
+  "render_facts": {
+    "command": "npm run jr -- render generated/JR-0059.json --out-dir output",
+    "exit": 0,
+    "path": "output/videos/JR-0059.mp4",
+    "size_bytes": 8389397,
+    "how": "RENDERED",
+    "duration_s": 81.22,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "resolution": "1080x1920",
+    "warnings": [
+      "duration 81.22s above target [70, 80] but under ceiling"
+    ]
+  },
+  "buffer": {
+    "post_id": null,
+    "status": null,
+    "due_at": null,
+    "sent_at": null,
+    "pending_mutation": null,
+    "create_attempts": 2
+  },
+  "approval": {
+    "status": "NOT_REQUESTED",
+    "approved_at": null,
+    "approved_by": null,
+    "slot_local": null,
+    "due_at": null,
+    "evidence": null
+  },
+  "verification": {
+    "status": "NOT_VERIFIED",
+    "verified_at": null
+  },
+  "errors": [
+    {
+      "at": "2026-10-15T04:55:38Z",
+      "state": "BUFFER_FAILED",
+      "detail": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
+    },
+    {
+      "at": "2026-10-15T04:55:38Z",
+      "state": "BUFFER_FAILED",
+      "detail": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
+    },
+    {
+      "at": "2026-10-15T04:55:38Z",
+      "state": "BLOCKED",
+      "detail": "draft creation already failed twice; human review needed"
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-10-15T04:53:14Z",
+      "from": "NEW",
+      "to": "GENERATED",
+      "run": "38683763284",
+      "evidence": "generated/JR-0059.json present (1797 B)"
+    },
+    {
+      "at": "2026-10-15T04:53:14Z",
+      "from": "GENERATED",
+      "to": "VALIDATED",
+      "run": "38683763284",
+      "evidence": "schema PASS, originality PASS, NIV Philippians 4:6 verbatim match"
+    },
+    {
+      "at": "2026-10-15T04:55:33Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "38683763284",
+      "evidence": "RENDERED JR-0059.mp4 8389397 B"
+    },
+    {
+      "at": "2026-10-15T04:55:34Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "38683763284",
+      "evidence": "81.22s 1080x1920 h264/aac duration 81.22s above target [70, 80] but under ceiling"
+    },
+    {
+      "at": "2026-10-15T04:55:34Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "38683763284",
+      "evidence": "JR-0059.package.json present"
+    },
+    {
+      "at": "2026-10-15T04:55:34Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_PASSED",
+      "run": "38683763284",
+      "evidence": "caption 605 chars, 5 hashtags, title 76, thumbnail JR-0059-thumb.png"
+    },
+    {
+      "at": "2026-10-15T04:55:38Z",
+      "from": "PACKAGE_QA_PASSED",
+      "to": "ASSET_HOSTED",
+      "run": "38683763284",
+      "evidence": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0059/JR-0059.mp4 http=206 ftyp=True bytes=8389397/8389397"
+    },
+    {
+      "at": "2026-10-15T04:55:38Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_FAILED",
+      "run": "38683763284",
+      "evidence": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
+    },
+    {
+      "at": "2026-10-15T04:55:38Z",
+      "from": "BUFFER_FAILED",
+      "to": "ASSET_HOSTED",
+      "run": "38683763284",
+      "evidence": "reopen: heal: transient step failure; retrying the same step"
+    },
+    {
+      "at": "2026-10-15T04:55:38Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_FAILED",
+      "run": "38683763284",
+      "evidence": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
+    },
+    {
+      "at": "2026-10-15T04:55:38Z",
+      "from": "BUFFER_FAILED",
+      "to": "ASSET_HOSTED",
+      "run": "38683763284",
+      "evidence": "reopen: heal: transient step failure; retrying the same step"
+    },
+    {
+      "at": "2026-10-15T04:55:38Z",
+      "from": "ASSET_HOSTED",
+      "to": "BLOCKED",
+      "run": "38683763284",
+      "evidence": "draft creation already failed twice; human review needed"
+    }
+  ],
+  "heal": {
+    "attempts": 2,
+    "exhausted": false,
+    "log": [
+      {
+        "at": "2026-10-15T04:55:38Z",
+        "run": "38683763284",
+        "action": "transient step failure; retrying the same step"
+      },
+      {
+        "at": "2026-10-15T04:55:38Z",
+        "run": "38683763284",
+        "action": "transient step failure; retrying the same step"
+      }
+    ]
+  }
+}
