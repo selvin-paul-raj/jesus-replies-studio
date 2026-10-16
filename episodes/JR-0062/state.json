@@ -1,29 +1,18 @@
 {
   "episode_id": "JR-0062",
-  "state": "RENDER_QA_FAILED",
-  "updated_at": "2026-10-16T04:47:37Z",
+  "state": "NEW",
+  "updated_at": null,
   "slot": null,
   "target_date": null,
-  "generation": "PASS",
-  "validation": "PASS",
-  "render": "PASS",
-  "render_qa": "FAIL",
+  "generation": "NOT_STARTED",
+  "validation": "NOT_STARTED",
+  "render": "NOT_STARTED",
+  "render_qa": "NOT_STARTED",
   "package": "NOT_STARTED",
   "package_qa": "NOT_STARTED",
   "asset_hosting": "NOT_STARTED",
   "asset_url": null,
-  "render_facts": {
-    "command": "npm run jr -- render generated/JR-0062.json --out-dir output",
-    "exit": 0,
-    "path": "output/videos/JR-0062.mp4",
-    "size_bytes": 9881188,
-    "how": "RENDERED",
-    "duration_s": 100.35,
-    "video_codec": "h264",
-    "audio_codec": "aac",
-    "resolution": "1080x1920",
-    "warnings": []
-  },
+  "render_facts": {},
   "buffer": {
     "post_id": null,
     "status": null,
@@ -43,52 +32,6 @@
     "status": "NOT_VERIFIED",
     "verified_at": null
   },
-  "errors": [
-    {
-      "at": "2026-10-16T04:47:37Z",
-      "state": "RENDER_QA_FAILED",
-      "detail": "duration 100.35s outside 3-90s (auto-trim disabled by policy; dialogue is never trimmed automatically)"
-    }
-  ],
-  "history": [
-    {
-      "at": "2026-10-16T04:44:43Z",
-      "from": "NEW",
-      "to": "GENERATED",
-      "run": "38852125144",
-      "evidence": "generated/JR-0062.json present (1944 B)"
-    },
-    {
-      "at": "2026-10-16T04:44:44Z",
-      "from": "GENERATED",
-      "to": "VALIDATED",
-      "run": "38852125144",
-      "evidence": "schema PASS, originality PASS, NIV Luke 15:20 verbatim match"
-    },
-    {
-      "at": "2026-10-16T04:47:37Z",
-      "from": "VALIDATED",
-      "to": "RENDERED",
-      "run": "38852125144",
-      "evidence": "RENDERED JR-0062.mp4 9881188 B"
-    },
-    {
-      "at": "2026-10-16T04:47:37Z",
-      "from": "RENDERED",
-      "to": "RENDER_QA_FAILED",
-      "run": "38852125144",
-      "evidence": "duration 100.35s outside 3-90s (auto-trim disabled by policy; dialogue is never trimmed automatically)"
-    }
-  ],
-  "heal": {
-    "attempts": 0,
-    "exhausted": true,
-    "log": [
-      {
-        "at": "2026-10-16T04:47:37Z",
-        "run": "38852125144",
-        "action": "not auto-repairable: RENDER_QA_FAILED: duration 100.35s outside 3-90s (auto-trim disabled by policy; dialogue is never trimmed automatically)"
-      }
-    ]
-  }
+  "errors": [],
+  "history": []
 }
