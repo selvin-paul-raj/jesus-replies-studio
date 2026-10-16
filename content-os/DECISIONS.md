@@ -9,6 +9,7 @@ Authority comes only from Selvin's own chat messages. Newest last.
 | DEC-JR-003 | 2026-10-05 | QA-passed episodes go straight to the queue (Selvin: "continue") | config/content-os.json autonomy.auto_queue_on_qa_pass |
 | DEC-JR-004 | 2026-10-05 | NEEDS_GENERATION slots keep their reserved id and schedule once it passes QA (referred to as DEC-018 in older files) | weekly authorization.json |
 | DEC-JR-005 | 2026-10-11 20:48 IST | **Full autonomy, human gate removed.** Quote: "dont stop it continus complete automous running system i wnat it bi-weelky review it and enhance the content and enagament , qually and follow ups and crack chnaging algorthim of thsoe social medias build life long running system self correction , feeadbackloop system" | config/content-os.json autonomy.full_autonomy; config/publishing-rules.json require_human_approval=false |
+| DEC-JR-007 | 2026-10-16 15:00 IST | **Deep-review fixes:** original music, BSB instead of NIV, 50-62 s / 75 s ceiling, honesty line, crisis gate (held for human review), learning loop on IG+YT with stalls excluded and n>=8, verse card as Story, one slot table. Quote: "COMPLETE DEEP UNDERSTANDING AND REVIEW AND SOLUTION" + "you do anything use anything for it" | CEO fix plan 2026-10-16; branch ceo/deep-review-fixes |
 
 ## DEC-JR-005 in practice
 
@@ -37,3 +38,32 @@ Applied now (hooks/captions/strategy only; no profile, money or new post types):
 2. Package QA from JR-0064: no hashtags inside the caption body; no engagement-bait phrases.
 3. STRATEGY.md: follow-conversion line, small specific comment questions, one send line, searchable phrase in first 2 lines, rotating sized 5-tag sets, avoid "waiting/unanswered prayer" angle for now.
 Proposed, waiting on Selvin: display name + bio rewrite, link swap, category label, pins/highlights (need the @jesusrepliesofficial login), and stopping/reshaping the daily Bible photo posts on Instagram (avg 29 views, cluttering the grid).
+
+## DEC-JR-007 — 2026-10-16 deep-review fixes (CEO, under Selvin's 15:00 IST go-ahead)
+
+1. **Music:** the third-party track is removed from rendering and from the repo; 5 original tracks
+   (`public/audio/bgm-01..05.mp3`, made by `scripts/audio/make_bgm.py`, ~-20 LUFS, loopable) rotate
+   by a hash of the episode id. Licence notes: `public/audio/LICENSES.md`.
+2. **Length:** `config/publishing-rules.json` duration is the only setting: target 50-62 s, ceiling
+   75 s. The validator estimates length before rendering and rejects anything over the ceiling.
+3. **Scripture:** Berean Standard Bible (public domain) bundled at `data/bible/bsb.json`; verbatim
+   check is local; Bible Gateway scraping removed; labels say (BSB); daily cards move to release
+   `bible-posts-v2` (must be built once with the "Build Bible Posts" workflow).
+4. **Honesty line** on every caption and YouTube description from JR-0064: "An imagined reply. The
+   Scripture is quoted as written." "answered in His words" -> "answered from Scripture".
+5. **Crisis gate:** self-harm / suicide / abuse themes, or a Jesus line that promises outcomes, gives
+   medical/financial advice or adds doctrine, are HELD_FOR_REVIEW: never hosted, never sent to Buffer,
+   never auto-approved; a READY spare fills the slot. Release only with
+   `jr_daily.py release-review EID --by NAME --evidence "words"`; released ones must carry "If you are
+   in danger, please reach a local crisis line."
+6. **Learning loop:** IG Reels with reach below followers (`config/content-os.json`
+   analytics.instagram_followers) are stalls, excluded from content learning; each episode is scored on
+   the mean IG/YT view percentile; a rule needs n>=8. Old avoid rules (confession hook, worried, Isaiah)
+   are gone.
+7. **Daily verse** posts as an Instagram Story (`daily_verse.instagram_post_type`), 06:37 IST.
+8. **Slots:** one table, `publishing-rules.json` slots 08:00 / 20:30 IST; crons moved off :00.
+9. Every workflow that writes to main has a concurrency group.
+
+Queued episodes JR-0047..JR-0063 were already rendered and in Buffer before this change; they keep
+their NIV text, old captions and old music until replaced (not touched automatically).
+

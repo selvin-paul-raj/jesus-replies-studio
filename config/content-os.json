@@ -22,7 +22,7 @@
       "given": "2026-10-11 20:48 IST, Selvin in chat",
       "quote": "dont stop it continus complete automous running system i wnat it bi-weelky review it and enhance the content and enagament , qually and follow ups and crack chnaging algorthim of thsoe social medias build life long running system self correction , feeadbackloop system",
       "effect": "human approval step removed: an episode that passes every automated gate (BSB verse verbatim check (NIV until 2026-10-16), originality, render QA, package QA, hosting check, Buffer draft read-back) is approved and scheduled into its reserved slot on Instagram and YouTube without waiting for Selvin. Gates stay; failures self-heal (bounded) or the slot is filled from READY spares.",
-      "limits": "never spends money, never deletes published posts, never changes a Buffer plan; held_episodes stay held",
+      "limits": "never spends money, never deletes published posts, never changes a Buffer plan; held_episodes stay held; crisis-gate holds (episodes/<id>/state.json review.status HELD_FOR_REVIEW, DEC-JR-007) are never auto-approved or published",
       "decision": "content-os/DECISIONS.md DEC-JR-005"
     }
   },
