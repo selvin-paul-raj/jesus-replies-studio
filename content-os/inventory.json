@@ -1,8 +1,8 @@
 {
   "counts": {
     "PUBLISHED": 43,
-    "UNUSED": 4,
-    "READY": 12,
+    "UNUSED": 3,
+    "READY": 13,
     "SCHEDULED": 5
   },
   "next_ready": [
@@ -17,9 +17,10 @@
     "JR-0059",
     "JR-0060",
     "JR-0061",
-    "JR-0062"
+    "JR-0062",
+    "JR-0063"
   ],
-  "ready_total": 12,
+  "ready_total": 13,
   "items": [
     {
       "episode_id": "JR-0001",
@@ -904,16 +905,16 @@
     },
     {
       "episode_id": "JR-0063",
-      "status": "UNUSED",
-      "why": "no hosted QA-passed asset",
+      "status": "READY",
+      "why": "instagram=NONE, youtube=NONE",
       "platforms": {
         "instagram": "NONE",
         "youtube": "NONE"
       },
-      "asset_url": null,
-      "duration_s": null,
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0063/JR-0063.mp4",
+      "duration_s": 85.01,
       "published_on": []
     }
   ],
-  "as_of": "2026-10-16T04:55:47.426440+00:00"
+  "as_of": "2026-10-16T04:59:51.922570+00:00"
 }
