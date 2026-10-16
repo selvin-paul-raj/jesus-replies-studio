@@ -28,3 +28,12 @@ Authority comes only from Selvin's own chat messages. Newest last.
   every new brief. Bi-weekly review on even ISO weeks.
 - Limits: never spends money, never changes the Buffer plan, never deletes a published post,
   held episodes (JR-0035, JR-0036) stay held.
+
+## DEC-JR-006 — 2026-10-16 Instagram audit changes (under DEC-JR-005 bi-weekly-review autonomy)
+
+Requested by Selvin (main chat, 2026-10-16 14:05 IST: "use [instagram-skills] and complete deep research and analysis of my jesusrepliesofficial completely").
+Applied now (hooks/captions/strategy only; no profile, money or new post types):
+1. Fixed duplicate hashtag block (caption_text no longer appends tags when the caption already ends with them).
+2. Package QA from JR-0064: no hashtags inside the caption body; no engagement-bait phrases.
+3. STRATEGY.md: follow-conversion line, small specific comment questions, one send line, searchable phrase in first 2 lines, rotating sized 5-tag sets, avoid "waiting/unanswered prayer" angle for now.
+Proposed, waiting on Selvin: display name + bio rewrite, link swap, category label, pins/highlights (need the @jesusrepliesofficial login), and stopping/reshaping the daily Bible photo posts on Instagram (avg 29 views, cluttering the grid).

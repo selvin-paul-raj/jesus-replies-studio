@@ -34,6 +34,34 @@ trends and experiment readings in `content-os/reviews/`.
   between reviews is flagged and the next briefs lean harder on the strongest
   emotions/hooks.
 
+## Instagram audit 2026-10-16 (instagram-skills framework; full report in the project PDF)
+
+- **Followers are the bottleneck, not views.** ~38K Instagram views across 44 Reels, but the
+  profile has 68 followers and Buffer reports 0 follows on every post. Every episode must give a
+  stranger a reason to follow: a series promise ("a new question every morning and night") in the
+  caption's last line, and the profile fixes Selvin approves.
+- **Comments are ~0** (7 in 44 Reels) even with the question CTA added from JR-0036. Ask a
+  *small, specific, answerable* question tied to the story ("Which line hit you?" / "What would
+  you have said to him?"), not a reflective essay question. No engagement bait: never "comment
+  amen / type a prayer / tag a friend / say X in the comments" (Instagram downranks it; package
+  QA blocks it from JR-0064).
+- **Sends are the weakest strong signal** (~4.6 per 1k reach vs saves ~13). End on one line
+  someone would *send* to a specific person; caption can say "Send this to the friend who…" once.
+- **Caption first 125 chars** = the question + the one concrete moment (keep). Put 1 searchable
+  phrase people type in the first two lines ("Bible verse for jealousy", "when God feels silent").
+- **Hashtags: exactly 5, added once** (bug fixed: 11 posts JR-0024..JR-0034 went out with the same
+  5 tags twice). Mix: #JesusReplies (always) + 1-2 niche/topic (e.g. #UnansweredPrayer,
+  #ChristianAnxiety, #FaithDoubts, #GriefAndFaith) + 1 mid (#ChristianReels 1.1M, #ChristianLiving
+  2.8M, #BibleVerses 1.15M — rotate, don't repeat the same mid tag every post) + at most 1 huge
+  (#Jesus / #Faith / #Prayer). Never #reels/#explore/#fyp.
+- **Stall pattern:** 1 in 5 Reels stalls under 100 views (JR-0033, JR-0041, JR-0042 recently) with
+  no caption difference; "waiting / unanswered prayer" stories stalled 3 of 3 times (JR-0009,
+  JR-0016, JR-0033). Avoid that theme until a stronger angle exists; lean on named, concrete
+  moments (sister, parents fighting, a secret told, a parent's illness).
+- **Morning slot** is now the stronger one on both platforms (IG median 1,448 vs 1,332; YouTube
+  528 vs 224). Keep 08:00 and 20:30 for now; next review tests 06:00 IST (≈8:30 pm US East)
+  against 08:00 if the morning lead holds.
+
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->

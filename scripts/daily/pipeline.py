@@ -41,7 +41,16 @@ def ref_of(ep):
 def caption_text(pkg):
     tags = pkg["instagram_hashtags"]
     tags = " ".join(tags) if isinstance(tags, list) else tags
-    return pkg["instagram_caption"] + "\n\n" + tags
+    cap = pkg["instagram_caption"].rstrip()
+    # Audit 2026-10-16: 11 packages already ended with their hashtag block, so the post went out
+    # with the same 5 tags twice (10 total). Instagram allows 5 per post; never append a second block.
+    if re.search(r"(?:^|\s)#\w", cap.splitlines()[-1] if cap else ""):
+        return cap
+    return cap + "\n\n" + tags
+
+
+BAIT_PATTERNS = (r"\bcomment (?:yes|amen|below)\b", r"\bin the comments\b", r"\btype (?:a|amen|yes)\b",
+                 r"\bdouble tap\b", r"\btag (?:a|the|someone|your)\b")
 
 
 class Ctx:
@@ -303,6 +312,10 @@ def step_package_qa(ctx, st):
         tags = pk["instagram_hashtags"] if isinstance(pk["instagram_hashtags"], list) else pk["instagram_hashtags"].split()
         if len(caption_text(pk)) > P["caption_max"]: probs.append("caption too long")
         if len(tags) != P["hashtag_count"]: probs.append(f"hashtag count {len(tags)}")
+        new_rules = int(eid[3:7]) >= 64  # audit rules (2026-10-16) apply to episodes written from JR-0064 on
+        if new_rules and re.search(r"(?:^|\s)#\w", pk["instagram_caption"]): probs.append("hashtags inside caption (they are added once from instagram_hashtags)")
+        if new_rules and any(re.search(b, pk["instagram_caption"], re.I) for b in BAIT_PATTERNS):
+            probs.append("engagement bait in caption (Instagram downranks 'comment X / tag / type amen'); ask a real question instead")
         if len(pk["youtube_title"]) > P["youtube_title_max"]: probs.append("youtube title too long")
         if len(pk["youtube_description"]) > P["youtube_description_max"]: probs.append("youtube description too long")
         book = (ep.get("bible") or {}).get("book", "")
