@@ -27,10 +27,6 @@
     }
   },
   "coordination": "same_slot",
-  "initial_test_slots": [
-    "08:00",
-    "20:30"
-  ],
   "min_lead_minutes": 45,
   "publish_grace_minutes": 30,
   "duration_note": "Duration lives only in config/publishing-rules.json duration (target 50-62 s, ceiling 75 s since 2026-10-16, DEC-JR-007). Buffer's 90 s Reels limit is no longer the working ceiling.",
@@ -110,7 +106,7 @@
     72,
     168
   ],
-  "slot_note": "TEST SLOTS chosen by Selvin on 2026-10-03 (08:00 vs 20:30 IST, same slot on Instagram and YouTube). Not 'best times' until account evidence is sufficient.",
+  "slot_note": "Slot times live only in config/publishing-rules.json slots (08:00 and 20:30 IST, same slot on Instagram and YouTube; test slots chosen by Selvin on 2026-10-03). Not 'best times' until account evidence is sufficient.",
   "scheduled_limit": {
     "instagram": 8,
     "youtube": 10,

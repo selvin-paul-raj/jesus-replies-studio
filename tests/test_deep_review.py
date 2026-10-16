@@ -239,6 +239,30 @@ class T25VerseStory(unittest.TestCase):
         self.assertIn('id="BibleVerseStory"', (ROOT / "src/Root.tsx").read_text())
 
 
+class T26Slots(unittest.TestCase):
+    def test_one_slot_table(self):
+        rules = json.loads((ROOT / "config/publishing-rules.json").read_text())
+        self.assertEqual(rules["slots"], {"MORNING": "08:00", "NIGHT": "20:30"})
+        cos = json.loads((ROOT / "config/content-os.json").read_text())
+        self.assertNotIn("initial_test_slots", cos)
+        from content_os import cli as cocli
+        c = cocli.cfg_load()
+        self.assertEqual(c["initial_test_slots"], ["08:00", "20:30"])
+
+    def test_no_top_of_hour_crons(self):
+        for wf in (ROOT / ".github/workflows").glob("*.yml"):
+            for line in wf.read_text().splitlines():
+                m = re.match(r"\s*-\s*cron:\s*['\"](\S+)\s", line)
+                if m:
+                    self.assertNotEqual(m.group(1), "0", f"{wf.name}: {line.strip()}")
+
+    def test_every_workflow_that_pushes_has_concurrency(self):
+        for wf in (ROOT / ".github/workflows").glob("*.yml"):
+            src = wf.read_text()
+            if "git push" in src or "contents: write" in src:
+                self.assertIn("concurrency:", src, wf.name)
+
+
 def fnv1a(text):
     h = 0x811c9dc5
     for b in text.encode():

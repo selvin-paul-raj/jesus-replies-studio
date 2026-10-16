@@ -7,7 +7,7 @@ on:
   schedule:
     - cron: '30 12 * * 6'   # Sat 18:00 IST: weekly brain for next Monday (snapshot, plan, report, schedule if all READY)
     - cron: '15 */6 * * *'  # every 6h: snapshot, verify, learnings, autopilot (sync, fill slots), quota top-up
-    - cron: '0 14 * * 0'    # Sun 19:30 IST: bi-weekly review (runs on even ISO weeks, skips odd)
+    - cron: '7 14 * * 0'    # Sun 19:37 IST: bi-weekly review (runs on even ISO weeks, skips odd)
   workflow_dispatch:
     inputs:
       command:
@@ -53,7 +53,7 @@ jobs:
         run: |
           if [ -z "$CMD" ]; then
             if [ "$SCHED" = "30 12 * * 6" ]; then CMD=weekly; WEEK=$(TZ=Asia/Kolkata date -d 'next monday' +%F);
-            elif [ "$SCHED" = "0 14 * * 0" ]; then CMD=review; else CMD=cycle; fi
+            elif [ "$SCHED" = "7 14 * * 0" ]; then CMD=review; else CMD=cycle; fi
           fi
           args="$CMD"
           [ -n "$WEEK" ] && args="$args --week $WEEK"

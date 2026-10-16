@@ -43,7 +43,11 @@ def review_holds(root=None):
 
 def cfg_load():
     c = json.loads((ROOT / "config/content-os.json").read_text())
-    c["buffer"] = json.loads((ROOT / "config/publishing-rules.json").read_text())["buffer"]
+    rules = json.loads((ROOT / "config/publishing-rules.json").read_text())
+    c["buffer"] = rules["buffer"]
+    # one slot table (publishing-rules.json slots), ordered by time; nothing else defines slot times
+    c["slots"] = rules["slots"]
+    c["initial_test_slots"] = sorted(rules["slots"].values())
     c["held_episodes"] = {**review_holds(), **(c.get("held_episodes") or {})}
     return c
 

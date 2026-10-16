@@ -2,8 +2,10 @@ name: Daily Bible Verse Post
 
 on:
   schedule:
-    # 6:30 AM IST (UTC+5:30) every day = 01:00 UTC.
-    - cron: "0 1 * * *"
+    # 06:37 IST (01:07 UTC): off the top of the hour, when GitHub's scheduler is busiest and
+    # delays runs (cards used to land 10:45-12:30 IST). Posts as an Instagram Story
+    # (config/publishing-rules.json daily_verse).
+    - cron: "7 1 * * *"
   workflow_dispatch:
     inputs:
       force:

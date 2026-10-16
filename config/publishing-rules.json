@@ -2,8 +2,9 @@
   "timezone": "Asia/Kolkata",
   "slots": {
     "MORNING": "08:00",
-    "NIGHT": "21:00"
+    "NIGHT": "20:30"
   },
+  "_slots_note": "THE slot table (IST). Read by the daily pipeline (allocate/approve), the content OS (weekly plan, timing, ledger via cli.cfg_load) and docs. NIGHT was 21:00 here and 20:30 elsewhere until 2026-10-16 (DEC-JR-007). The daily verse Story is not a slot: it posts from daily-bible-post.yml at 06:37 IST.",
   "require_human_approval": false,
   "auto_publish": true,
   "verify_after_publish": true,
