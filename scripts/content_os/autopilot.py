@@ -132,7 +132,8 @@ class Autopilot:
             ig = self.dists.load(eid)["platforms"].get("instagram", {})
             before = st["state"]
             try:
-                if st["state"] == "WAITING_FOR_USER" and auth:
+                if st["state"] == "WAITING_FOR_USER" and auth and eid not in self.held \
+                        and (st.get("review") or {}).get("status") != "HELD_FOR_REVIEW":
                     st["approval"].update({"status": "APPROVED", "approved_at": now_iso(), "approved_by": "standing authorization",
                                            "evidence": f"{auth['given']}: {auth['quote']}"[:300]})
                     self.daily.transition(st, "APPROVED", f"standing authorization {auth['given']} (human gate removed)", self.run)

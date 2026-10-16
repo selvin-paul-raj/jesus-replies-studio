@@ -12,6 +12,8 @@
   schedule EID [--dry-run]                 only after APPROVED; whole-post edit + read-back
   verify EID | --all                       post-publish verification
   status EID
+  release-review EID --by NAME --evidence "words"
+                                           a human read a crisis-gate hold and lets it continue
   verse "Psalm 23:1"                       print the exact BSB text for a reference (authoring)
   to-bsb EID                               switch an UNPUBLISHED, not-yet-in-Buffer episode from NIV to BSB
                                            (episode text + package labels); refuses anything already drafted
@@ -113,6 +115,16 @@ def main():
         print(f"[read] caption_chars={len(post['text'])} caption_match={pl.norm_text(post['text']) == pl.norm_text(want)}")
         print(f"[read] hashtags={tags} match={tags == list(pk['instagram_hashtags'])}")
         return 0
+    if a.cmd == "release-review":
+        st = store.load(a.eid)
+        if (st.get("review") or {}).get("status") != "HELD_FOR_REVIEW":
+            print(f"[review] {a.eid} is not held"); return 1
+        if not a.by or not a.evidence:
+            print("[review] needs --by and --evidence (the reviewer's own words)"); return 1
+        st["review"].update({"status": "RELEASED", "released_by": a.by, "released_at": pl.now_iso(),
+                             "evidence": pl.redact(a.evidence)[:300]})
+        store.save(st)
+        print(f"[review] {a.eid} RELEASED by {a.by}; the next daily run continues it"); return 0
     if a.cmd == "verse":
         t = bsb.lookup(a.eid)
         print(t if t else f"[verse] {a.eid} not found in the BSB text")

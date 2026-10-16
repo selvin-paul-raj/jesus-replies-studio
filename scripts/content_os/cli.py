@@ -28,9 +28,23 @@ ROOT = pathlib.Path(os.environ.get("JR_ROOT", pathlib.Path(__file__).resolve().p
 OS_DIR = ROOT / "content-os"
 
 
+def review_holds(root=None):
+    """Episodes the crisis gate held for human review (episodes/<id>/state.json review.status)."""
+    out = {}
+    for p in sorted(pathlib.Path(root or ROOT).glob("episodes/JR-*/state.json")):
+        try:
+            r = json.loads(p.read_text()).get("review") or {}
+        except Exception:
+            continue
+        if r.get("status") == "HELD_FOR_REVIEW":
+            out[p.parent.name] = "crisis gate: held for human review (DEC-JR-007)"
+    return out
+
+
 def cfg_load():
     c = json.loads((ROOT / "config/content-os.json").read_text())
     c["buffer"] = json.loads((ROOT / "config/publishing-rules.json").read_text())["buffer"]
+    c["held_episodes"] = {**review_holds(), **(c.get("held_episodes") or {})}
     return c
 
 

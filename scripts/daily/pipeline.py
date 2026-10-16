@@ -5,7 +5,7 @@ Scripture is the public-domain Berean Standard Bible bundled at data/bible/bsb.j
 (scripts/daily/bsb.py); there is no network scripture source any more (DEC-JR-007)."""
 import datetime as dt, json, pathlib, re, subprocess, urllib.request
 from zoneinfo import ZoneInfo
-from . import states, bsb
+from . import states, bsb, safety
 from .redact import redact
 from .store import Store, now_iso, ID_RE
 
@@ -53,6 +53,18 @@ def caption_text(pkg):
 
 BAIT_PATTERNS = (r"\bcomment (?:yes|amen|below)\b", r"\bin the comments\b", r"\btype (?:a|amen|yes)\b",
                  r"\bdouble tap\b", r"\btag (?:a|the|someone|your)\b")
+
+
+RULES_V2_FROM = 64   # audit + deep-review rules (2026-10-16) apply to episodes written from JR-0064 on
+
+
+def new_rules(eid):
+    m = re.search(r"JR-(\d{4})", eid or "")
+    return bool(m) and int(m.group(1)) >= RULES_V2_FROM
+
+
+def held_for_review(st):
+    return (st.get("review") or {}).get("status") == "HELD_FOR_REVIEW"
 
 
 class Ctx:
@@ -166,6 +178,8 @@ def brief(ctx, eid):
     recent = sorted(corpus(ctx, exclude=eid), key=lambda e: _jr_num(e.get("id", "")) or 0)[-14:]
     b = {"episode_id": eid, "schema": "generated/JR-0036.json (id,title,character,topic,emotion,bible{book,chapter,verse,version=BSB,text},lines[{speaker,text}])",
          "package_schema": "generated/JR-0036.package.json",
+         "honesty_line": safety.HONESTY_LINE,
+         "writer_rules": safety.WRITER_RULES,
          "avoid_titles": [e.get("title") for e in recent], "avoid_scripture": [ref_of(e) for e in recent if ref_of(e)],
          "avoid_hooks": [(e.get("lines") or [{}])[0].get("text") for e in recent],
          "recent_topics": [e.get("topic") for e in recent], "recent_emotions": [e.get("emotion") for e in recent],
@@ -338,9 +352,9 @@ def step_package_qa(ctx, st):
         tags = pk["instagram_hashtags"] if isinstance(pk["instagram_hashtags"], list) else pk["instagram_hashtags"].split()
         if len(caption_text(pk)) > P["caption_max"]: probs.append("caption too long")
         if len(tags) != P["hashtag_count"]: probs.append(f"hashtag count {len(tags)}")
-        new_rules = int(eid[3:7]) >= 64  # audit rules (2026-10-16) apply to episodes written from JR-0064 on
-        if new_rules and re.search(r"(?:^|\s)#\w", pk["instagram_caption"]): probs.append("hashtags inside caption (they are added once from instagram_hashtags)")
-        if new_rules and any(re.search(b, pk["instagram_caption"], re.I) for b in BAIT_PATTERNS):
+        v2 = new_rules(eid)
+        if v2 and re.search(r"(?:^|\s)#\w", pk["instagram_caption"]): probs.append("hashtags inside caption (they are added once from instagram_hashtags)")
+        if v2 and any(re.search(b, pk["instagram_caption"], re.I) for b in BAIT_PATTERNS):
             probs.append("engagement bait in caption (Instagram downranks 'comment X / tag / type amen'); ask a real question instead")
         if len(pk["youtube_title"]) > P["youtube_title_max"]: probs.append("youtube title too long")
         if len(pk["youtube_description"]) > P["youtube_description_max"]: probs.append("youtube description too long")
@@ -351,14 +365,25 @@ def step_package_qa(ctx, st):
             probs.append(f"Bible reference {book} not in caption or description")
         others = set(re.findall(r"JR-\d{4}", json.dumps(pk))) - {eid}
         if others: probs.append(f"references other episodes {sorted(others)}")
+        crisis, found = safety.crisis_check(ep, pk)
+        lint = safety.jesus_lint(ep)
+        sp = safety.package_problems(pk, crisis=crisis)
+        if not v2:      # queued legacy packages are already in Buffer: only the crisis line is enforced
+            sp = [p for p in sp if p.startswith("crisis line")]
+        probs += sp
+        if (crisis or lint) and (st.get("review") or {}).get("status") != "RELEASED":
+            st["review"] = {"status": "HELD_FOR_REVIEW", "at": now_iso(), "crisis": found, "jesus_lines": lint,
+                            "why": "sensitive theme or a Jesus line that may promise an outcome / advise / add doctrine; "
+                                   "never auto-published (DEC-JR-007). Release: jr_daily.py release-review"}
     thumbs = sorted((ctx.root / "output/thumbnails").glob(f"{eid}-thumb.png")) or sorted((ctx.root / "output/thumbnails").glob(f"{eid}.png"))
     if not thumbs: probs.append("thumbnail image not rendered")
     if probs:
         st["package_qa"] = "FAIL"
         return ctx.store.transition(st, "PACKAGE_QA_FAILED", "; ".join(probs), ctx.run_id)
     st["package_qa"] = "PASS"
+    held = " HELD_FOR_REVIEW (crisis gate)" if held_for_review(st) else ""
     return ctx.store.transition(st, "PACKAGE_QA_PASSED", f"caption {len(caption_text(pk))} chars, 5 hashtags, "
-                                f"title {len(pk['youtube_title'])}, thumbnail {thumbs[0].name}", ctx.run_id)
+                                f"title {len(pk['youtube_title'])}, thumbnail {thumbs[0].name}, honesty line OK{held}", ctx.run_id)
 
 
 def http_range(url):
@@ -495,6 +520,9 @@ def auto_approve(ctx, st):
     distributor then schedules it into its reserved slot on Instagram and YouTube."""
     if ctx.rules.get("require_human_approval", True) or st["state"] != "WAITING_FOR_USER":
         return st
+    if held_for_review(st):
+        ctx.log(f"[approve] {st['episode_id']} is HELD_FOR_REVIEW (crisis gate); never auto-approved")
+        return st
     auth = standing_authorization(ctx)
     if not auth:
         ctx.log(f"[approve] {st['episode_id']} no standing authorization recorded; stays WAITING_FOR_USER")
@@ -517,6 +545,10 @@ def advance(ctx, eid):
                  ("RENDERED", step_render_qa), ("RENDER_QA_PASSED", step_packaged), ("PACKAGED", step_package_qa),
                  ("PACKAGE_QA_PASSED", step_hosted), ("ASSET_HOSTED", step_buffer_draft)]
         for want, fn in chain:
+            if held_for_review(st) and want == "PACKAGE_QA_PASSED":
+                ctx.log(f"[review] {eid} HELD_FOR_REVIEW {st['review'].get('crisis') or st['review'].get('jesus_lines')}; "
+                        "not hosted, not sent to Buffer; a READY spare fills its slot")
+                break
             if st["state"] == want:
                 before = st["state"]
                 st = fn(ctx, st)
@@ -778,6 +810,9 @@ def heal(ctx, st, max_attempts=3):
                 t = pk["youtube_title"].replace(" #Shorts", "")
                 t = t[:mx - 8].rsplit(" ", 1)[0] + " #Shorts"
                 pk["youtube_title"] = t; fixes.append("youtube title shortened")
+            if any(k in last for k in ("honesty line", "crisis line", "banned phrase")):
+                crisis, _ = safety.crisis_check(json.loads(ctx.ep_path(eid).read_text()), pk)
+                fixes += safety.fix_package(pk, crisis=crisis)
             if "Bible reference" in last:
                 ep = json.loads(ctx.ep_path(eid).read_text())
                 ref = ref_of(ep)

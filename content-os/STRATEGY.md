@@ -63,6 +63,22 @@ trends and experiment readings in `content-os/reviews/`.
   528 vs 224). Keep 08:00 and 20:30 for now; next review tests 06:00 IST (≈8:30 pm US East)
   against 08:00 if the morning lead holds.
 
+## Deep review 2026-10-16 (DEC-JR-007) — rules every episode follows
+
+- **Scripture:** Berean Standard Bible (public domain), copied verbatim from `data/bible/bsb.json`
+  (`python3 scripts/daily/jr_daily.py verse "Psalm 23:1"`). Label it **(BSB)**. NIV is no longer used.
+- **Length:** 50–62 s target, 75 s hard ceiling (`config/publishing-rules.json` duration, the only
+  place it is set). The validator estimates the length before rendering.
+- **Honesty line** at the end of every Instagram caption and YouTube description:
+  "An imagined reply. The Scripture is quoted as written." Say "answered from Scripture", never
+  "answered in His words". Package QA fails without it (from JR-0064).
+- **Jesus's lines** never promise an outcome, never give medical, mental-health, legal or
+  financial advice, never tell anyone to skip a doctor or treatment, and never invent doctrine.
+- **Crisis gate:** self-harm, suicide or abuse themes (and any Jesus line the lint flags) are held
+  for Selvin's review and never auto-published; a READY spare fills the slot. If released, the
+  caption and description must also carry "If you are in danger, please reach a local crisis line."
+- **Music:** original tracks only (`public/audio/LICENSES.md`), rotated by episode id.
+
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
