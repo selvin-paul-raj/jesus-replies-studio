@@ -1,7 +1,8 @@
 /**
  * ============================================================================
  * DAILY BIBLE VERSE -- picks one entry from the curated scripts/bible.json
- * (365 promises, one for every day of the year, NIV wording) by day-of-year,
+ * (365 promises, one for every day of the year, Berean Standard Bible wording,
+ * public domain since 2023) by day-of-year,
  * so the same date always yields the same verse (reruns are idempotent).
  * Local data, no network call -- used only by scripts/daily-bible-post.ts.
  * ============================================================================
@@ -38,7 +39,7 @@ export async function getDailyVerse(date: Date = new Date()): Promise<DailyVerse
   const picked = VERSES[dayIndex];
   return {
     reference: picked.reference,
-    version: process.env.BIBLE_VERSION_LABEL || "NIV",
+    version: "BSB",
     text: picked.text.replace(/\s+/g, " ").trim(),
     dayIndex,
   };

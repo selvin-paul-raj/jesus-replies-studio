@@ -37,7 +37,7 @@ const VERSES = (bibleData as { promises: VerseEntry[] }).promises;
  * this script (uploader) and scripts/daily-bible-post.ts (consumer) need to
  * agree on it. Bump the suffix if bible.json's verses are ever reordered in
  * a way that changes which index maps to which verse. */
-export const BATCH_RELEASE_TAG = "bible-posts-v1";
+export const BATCH_RELEASE_TAG = "bible-posts-v2"; // v2 = BSB text (2026-10-16); v1 held NIV cards
 
 /** File name for a given 0-based index into VERSES -- get-bible-verse.ts's
  * dayIndex (dayOfYear % VERSES.length) is exactly that index, so
@@ -63,7 +63,7 @@ async function main(): Promise<void> {
       const outputPath = path.join(OUT_DIR, assetFileName(i));
       const inputProps = BibleVersePostPropsSchema.parse({
         verseText: verse.text.replace(/\s+/g, " ").trim(),
-        referenceText: `${verse.reference}\n${process.env.BIBLE_VERSION_LABEL || "NIV"}`,
+        referenceText: `${verse.reference}\nBSB`,
       });
 
       console.log(`[build-all] (${i + 1}/${VERSES.length}) ${verse.reference}...`);

@@ -65,7 +65,7 @@ export const Root: React.FC = () => {
         height={1440}
         defaultProps={BibleVersePostPropsSchema.parse({
           verseText: "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.",
-          referenceText: "Jeremiah 29:11\nNIV",
+          referenceText: "Jeremiah 29:11\nBSB",
         })}
       />
     </>

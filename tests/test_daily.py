@@ -16,7 +16,7 @@ UTC = dt.timezone.utc
 
 def ep(eid, title, hook, ref=("Psalm", 23, "1"), topic="fear", character="boy", emotion="sad"):
     return {"id": eid, "title": title, "character": character, "topic": topic, "emotion": emotion,
-            "bible": {"book": ref[0], "chapter": ref[1], "verse": ref[2], "version": "NIV", "text": VERSE},
+            "bible": {"book": ref[0], "chapter": ref[1], "verse": ref[2], "version": "BSB", "text": VERSE},
             "lines": [{"speaker": "person", "text": hook}, {"speaker": "jesus", "text": "I am here."}]}
 
 

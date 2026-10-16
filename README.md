@@ -244,7 +244,7 @@ so the *daily* job stays fast and cheap:
    Instagram through Buffer. No rendering, no bundling, no `gh` calls.
 
 **Pieces:**
-- `scripts/bible.json` — 365 curated promises/blessings (NIV wording), one
+- `scripts/bible.json` — 365 curated promises/blessings (Berean Standard Bible, public domain), one
   per day of the year — deliberately no narrative/story verses, every entry
   is meant to stand alone and invite a reaction.
 - `scripts/get-bible-verse.ts` — picks that day's entry from `bible.json` by
@@ -280,8 +280,8 @@ so the *daily* job stays fast and cheap:
    connected channel's GraphQL `id` — use your Instagram channel's `id` as
    `BUFFER_INSTAGRAM_CHANNEL_ID` (this id is not the same as the old REST
    profile id).
-   (`BIBLE_API_KEY` is no longer required — verses come from `bible.json` —
-   but it's left in place in case you want to swap the source back later).
+   (No Bible API key is used: verses come from `bible.json`, which holds the
+   public-domain Berean Standard Bible text.)
 3. Add these as **GitHub Secrets** (Settings → Secrets and variables →
    Actions) on this repo:
    - `BUFFER_API_KEY`
