@@ -37,28 +37,28 @@ trends and experiment readings in `content-os/reviews/`.
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-15T21:19Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-16T01:35Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=26, median views 1452, best 2644, saves per 1k reach 13.2
+- **instagram**: n=26, median views 1453, best 2644, saves per 1k reach 13.2
 - **youtube**: n=22, median views 316, best 1835, saves per 1k reach None
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
 
 **Avoid / de-emphasise:**
-- emotion=worried (IG median 332 vs 1452, n=5)
-- hook_type=confession_statement (IG median 664 vs 1452, n=5)
-- duration=>78s (IG median 441 vs 1452, n=6)
+- emotion=worried (IG median 332 vs 1453, n=5)
+- hook_type=confession_statement (IG median 664 vs 1453, n=5)
+- duration=>78s (IG median 441 vs 1453, n=6)
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
 - JR-0007 2644 views: Jesus... I'm so tired. I keep trying and trying and nothing works.
-- JR-0020 1906 views: Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭
+- JR-0020 1907 views: Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭
 - JR-0029 1736 views: Jesus, why does everything come easy for her?
 - JR-0008 1728 views: Jesus... it feels like You've gone quiet. I pray and nothing comes back.
 - JR-0011 1706 views: Jesus... why did God create that tree? The one with the knowledge of good and evil? 🤔
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1457 (n=13), night (18-24 IST) 1332 (n=13)
+- instagram slot medians: morning (06-12 IST) 1458 (n=13), night (18-24 IST) 1332 (n=13)
 - youtube slot medians: morning (06-12 IST) 502 (n=10), night (18-24 IST) 224 (n=12)
 - average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
