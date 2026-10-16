@@ -1,9 +1,9 @@
 {
   "counts": {
-    "PUBLISHED": 43,
+    "PUBLISHED": 44,
     "UNUSED": 3,
     "READY": 13,
-    "SCHEDULED": 5
+    "SCHEDULED": 4
   },
   "next_ready": [
     "JR-0038",
@@ -713,15 +713,18 @@
     },
     {
       "episode_id": "JR-0047",
-      "status": "SCHEDULED",
-      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
+      "status": "PUBLISHED",
+      "why": "all platforms",
       "platforms": {
-        "instagram": "SCHEDULED",
-        "youtube": "SCHEDULED"
+        "instagram": "PUBLISHED_VERIFIED",
+        "youtube": "PUBLISHED_VERIFIED"
       },
-      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-a/JR-0047.mp4",
-      "duration_s": 73.86,
-      "published_on": []
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-c/JR-0047.mp4",
+      "duration_s": 47.36,
+      "published_on": [
+        "instagram",
+        "youtube"
+      ]
     },
     {
       "episode_id": "JR-0048",
@@ -731,8 +734,8 @@
         "instagram": "SCHEDULED",
         "youtube": "SCHEDULED"
       },
-      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-a/JR-0048.mp4",
-      "duration_s": 72.96,
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-c/JR-0048.mp4",
+      "duration_s": 48.26,
       "published_on": []
     },
     {
@@ -743,8 +746,8 @@
         "instagram": "SCHEDULED",
         "youtube": "SCHEDULED"
       },
-      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-a/JR-0049.mp4",
-      "duration_s": 72.56,
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-c/JR-0049.mp4",
+      "duration_s": 45.61,
       "published_on": []
     },
     {
@@ -755,8 +758,8 @@
         "instagram": "SCHEDULED",
         "youtube": "SCHEDULED"
       },
-      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-a/JR-0050.mp4",
-      "duration_s": 66.86,
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-c/JR-0050.mp4",
+      "duration_s": 49.09,
       "published_on": []
     },
     {
@@ -767,8 +770,8 @@
         "instagram": "SCHEDULED",
         "youtube": "SCHEDULED"
       },
-      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-a/JR-0051.mp4",
-      "duration_s": 71.19,
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-c/JR-0051.mp4",
+      "duration_s": 45.99,
       "published_on": []
     },
     {
@@ -916,5 +919,5 @@
       "published_on": []
     }
   ],
-  "as_of": "2026-10-16T11:21:10.671563+00:00"
+  "as_of": "2026-10-16T16:34:40.217879+00:00"
 }

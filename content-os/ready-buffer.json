@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-16T11:21:10.671563+00:00",
+  "as_of": "2026-10-16T16:34:40.217879+00:00",
   "target": 6,
   "ready_unscheduled": [
     "JR-0038",
@@ -17,7 +17,6 @@
     "JR-0063"
   ],
   "scheduled_not_yet_published": [
-    "JR-0047",
     "JR-0048",
     "JR-0049",
     "JR-0050",
@@ -25,7 +24,7 @@
   ],
   "authored_in_pipeline": [],
   "upcoming_slots_unauthored": [],
-  "ready_buffer": 18,
+  "ready_buffer": 17,
   "authoring_needed": [],
   "authoring_rule": "author each id with generated/<id>.json + <id>.package.json, run `python3 scripts/daily/jr_daily.py brief <id>` for constraints, read content-os/STRATEGY.md and content-os/learnings.json, then push; the daily generator validates, renders and schedules"
 }
