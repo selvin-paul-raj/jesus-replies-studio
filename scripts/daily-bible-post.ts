@@ -19,6 +19,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { getDailyVerse, DailyVerse } from "./get-bible-verse";
 import { createBufferPost } from "./publish-buffer";
+import { verseInstagramType } from "./lib/verseConfig";
 
 const ROOT_DIR = path.join(__dirname, "..");
 const STATE_PATH = path.join(ROOT_DIR, "data", "bible-post-state.json");
@@ -62,7 +63,7 @@ const CAPTION_TEMPLATE = `✨ Today's blessing:
 
 — {{reference}} ({{version}})
 
-🙏 Say Amen if you're receiving this today, and tag someone who needs it.
+🙏 Keep this one close today.
 
 #Bible #Jesus #Faith #Blessed #Scripture #DailyVerse #JesusRepliesOfficial`;
 
@@ -111,8 +112,9 @@ async function main(): Promise<void> {
 
   const caption = buildCaption(verse);
 
-  console.log("[bible-post] Posting to Instagram via Buffer...");
-  await createBufferPost({ channelId: instagramChannelId, text: caption, mediaUrl });
+  const instagramType = verseInstagramType();
+  console.log(`[bible-post] Posting to Instagram via Buffer as a ${instagramType}...`);
+  await createBufferPost({ channelId: instagramChannelId, text: caption, mediaUrl, instagramType });
 
   writeState({ lastPostedDate: today });
   console.log(`[bible-post] Done. Recorded lastPostedDate=${today}.`);

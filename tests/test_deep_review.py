@@ -228,6 +228,17 @@ class T23BSBValidation(Base):
         self.assertIn("not BSB", pl.step_validated(self.ctx, s)["errors"][-1]["detail"])
 
 
+class T25VerseStory(unittest.TestCase):
+    def test_story_switch_and_payload(self):
+        d = json.loads((ROOT / "config/publishing-rules.json").read_text())["daily_verse"]
+        self.assertIn(d["instagram_post_type"], ("story", "post"))
+        self.assertEqual(d["instagram_post_type"], "story")
+        pub = (ROOT / "scripts/publish-buffer.ts").read_text()
+        self.assertIn("type: story, shouldShareToFeed: false", pub)
+        self.assertIn("instagramType", (ROOT / "scripts/daily-bible-post.ts").read_text())
+        self.assertIn('id="BibleVerseStory"', (ROOT / "src/Root.tsx").read_text())
+
+
 def fnv1a(text):
     h = 0x811c9dc5
     for b in text.encode():

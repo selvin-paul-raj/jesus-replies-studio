@@ -44,5 +44,9 @@
     "note": "ids, not credentials; the API key stays only in secrets.BUFFER_API_KEY"
   },
   "lock_ttl_minutes": 90,
-  "_approval_note": "2026-10-11: human gate removed under Selvin's full-autonomy authorization (config/content-os.json autonomy.full_autonomy). All automated QA gates remain."
+  "_approval_note": "2026-10-11: human gate removed under Selvin's full-autonomy authorization (config/content-os.json autonomy.full_autonomy). All automated QA gates remain.",
+  "daily_verse": {
+    "instagram_post_type": "story",
+    "_note": "Daily BSB verse card. 'story' (default since 2026-10-16, DEC-JR-007) keeps it off the Reels grid; set 'post' to go back to a feed post. Buffer GraphQL supports metadata.instagram.type story (https://developers.buffer.com/types/PostType.html). Story cards render at 1080x1920 (BibleVerseStory), feed cards at 1080x1440 (BibleVersePost). YouTube is not used for verse cards."
+  }
 }

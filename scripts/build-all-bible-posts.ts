@@ -20,6 +20,7 @@ import { bundle } from "@remotion/bundler";
 import { renderStill, selectComposition, openBrowser } from "@remotion/renderer";
 import bibleData from "./bible.json";
 import { BibleVersePostPropsSchema } from "../src/schema";
+import { verseInstagramType, verseCompositionId } from "./lib/verseConfig";
 
 const ROOT_DIR = path.join(__dirname, "..");
 const OUT_DIR = path.join(ROOT_DIR, "output", "bible_verse_batch");
@@ -49,7 +50,8 @@ export function assetFileName(index: number): string {
 async function main(): Promise<void> {
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
-  console.log(`[build-all] Bundling once for ${VERSES.length} verses...`);
+  const compositionId = verseCompositionId(verseInstagramType());
+  console.log(`[build-all] Bundling once for ${VERSES.length} verses (${compositionId})...`);
   const bundleLocation = await bundle({ entryPoint: ENTRY_POINT });
 
   // One browser instance reused across all 365 renders -- selectComposition
@@ -69,7 +71,7 @@ async function main(): Promise<void> {
       console.log(`[build-all] (${i + 1}/${VERSES.length}) ${verse.reference}...`);
       const composition = await selectComposition({
         serveUrl: bundleLocation,
-        id: "BibleVersePost",
+        id: compositionId,
         inputProps,
         puppeteerInstance,
       });
