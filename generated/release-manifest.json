@@ -471,5 +471,60 @@
     "size_bytes": 8815478,
     "sha256": "37f2dd4bc58d403580c0e71d3a80586efec3ee3fe807a7c3756fac0ed05bd389",
     "qa_status": "PASS"
+  },
+  {
+    "release_tag": "jr-fix-2026-10-16-a",
+    "created_at": "2026-10-16T10:29:25Z",
+    "episode_id": "JR-0047",
+    "asset_name": "JR-0047.mp4",
+    "public_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-a/JR-0047.mp4",
+    "duration_seconds": 73.86,
+    "size_bytes": 7622910,
+    "sha256": "954e4a16abb7593b55c3ad1870dc48b2ccc56bf06a633773e4b2770bccc45320",
+    "qa_status": "PASS"
+  },
+  {
+    "release_tag": "jr-fix-2026-10-16-a",
+    "created_at": "2026-10-16T10:29:25Z",
+    "episode_id": "JR-0048",
+    "asset_name": "JR-0048.mp4",
+    "public_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-a/JR-0048.mp4",
+    "duration_seconds": 72.96,
+    "size_bytes": 7541782,
+    "sha256": "11385c604b8d191a624a2c3638be9df17e4c6df743393b9992f3d1fd54c0c4a0",
+    "qa_status": "PASS"
+  },
+  {
+    "release_tag": "jr-fix-2026-10-16-a",
+    "created_at": "2026-10-16T10:29:25Z",
+    "episode_id": "JR-0049",
+    "asset_name": "JR-0049.mp4",
+    "public_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-a/JR-0049.mp4",
+    "duration_seconds": 72.56,
+    "size_bytes": 7420186,
+    "sha256": "d1b02b807648e8442f3064a38b434ab49a761ddc7fc0a47e1e57517e271aeac9",
+    "qa_status": "PASS"
+  },
+  {
+    "release_tag": "jr-fix-2026-10-16-a",
+    "created_at": "2026-10-16T10:29:25Z",
+    "episode_id": "JR-0050",
+    "asset_name": "JR-0050.mp4",
+    "public_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-a/JR-0050.mp4",
+    "duration_seconds": 66.86,
+    "size_bytes": 6961160,
+    "sha256": "909237ee1d24795b40fc112bb909a995a8fd10109d6a096924507c80a485146f",
+    "qa_status": "PASS"
+  },
+  {
+    "release_tag": "jr-fix-2026-10-16-a",
+    "created_at": "2026-10-16T10:29:25Z",
+    "episode_id": "JR-0051",
+    "asset_name": "JR-0051.mp4",
+    "public_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-a/JR-0051.mp4",
+    "duration_seconds": 71.19,
+    "size_bytes": 7486724,
+    "sha256": "42d02769e0e53cadb4c853d732a2816fb18c5b5b3a3f04cfc483029f24dbb868",
+    "qa_status": "PASS"
   }
 ]
