@@ -1,0 +1,24 @@
+[
+  {
+    "episode_id": "JR-0047",
+    "platform": "instagram",
+    "post_id": "6acb144fc4de2d2b124cd031",
+    "status_kept": "scheduled",
+    "due_at_kept": "2026-10-16T15:00:00.000Z",
+    "old_asset": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0047/JR-0047.mp4",
+    "new_asset": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-a/JR-0047.mp4",
+    "result": "REPLACED",
+    "run": "38887587126"
+  },
+  {
+    "episode_id": "JR-0047",
+    "platform": "youtube",
+    "post_id": "6acbad9fd9cab260a7015c7a",
+    "status_kept": "scheduled",
+    "due_at_kept": "2026-10-16T15:00:00.000Z",
+    "old_asset": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0047/JR-0047.mp4",
+    "new_asset": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-a/JR-0047.mp4",
+    "result": "FAILED",
+    "run": "38887587126"
+  }
+]
