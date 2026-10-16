@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-16T09:57:01.804010+00:00",
+  "as_of": "2026-10-16T11:21:10.671563+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -50,7 +50,7 @@
           "emotion": "angry",
           "hook": "Jesus, why does everything come easy for her?",
           "slot": "night (18-24 IST)",
-          "duration": "<=62s"
+          "duration": "56-60s"
         },
         {
           "episode_id": "JR-0008",
@@ -83,7 +83,7 @@
           "emotion": "sad",
           "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔",
           "slot": "morning (06-12 IST)",
-          "duration": "63-75s"
+          "duration": ">60s"
         }
       ],
       "bottom": [
@@ -94,7 +94,7 @@
           "emotion": "worried",
           "hook": "Jesus... I parked outside church this morning. I never went in. 😔",
           "slot": "morning (06-12 IST)",
-          "duration": ">75s"
+          "duration": ">60s"
         },
         {
           "episode_id": "JR-0022",
@@ -103,7 +103,7 @@
           "emotion": "happy",
           "hook": "Jesus... my brother texted back after two years of silence. Why am I so scared to be happy about it?",
           "slot": "morning (06-12 IST)",
-          "duration": ">75s"
+          "duration": ">60s"
         },
         {
           "episode_id": "JR-0024",
@@ -112,7 +112,7 @@
           "emotion": "worried",
           "hook": "Jesus, will there be enough money this month?",
           "slot": "morning (06-12 IST)",
-          "duration": "63-75s"
+          "duration": ">60s"
         },
         {
           "episode_id": "JR-0012",
@@ -130,7 +130,7 @@
           "emotion": "crying",
           "hook": "Jesus... tomorrow I have to tell my parents I am leaving the course they paid for. 😭",
           "slot": "night (18-24 IST)",
-          "duration": ">75s"
+          "duration": ">60s"
         }
       ]
     },
@@ -165,7 +165,7 @@
           "emotion": "sad",
           "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔",
           "slot": "night (18-24 IST)",
-          "duration": ">75s"
+          "duration": ">60s"
         },
         {
           "episode_id": "JR-0034",
@@ -176,7 +176,7 @@
           "emotion": "sad",
           "hook": "Jesus, what if I stopped believing tomorrow?",
           "slot": "morning (06-12 IST)",
-          "duration": "<=62s"
+          "duration": "<=55s"
         },
         {
           "episode_id": "JR-0032",
@@ -187,7 +187,7 @@
           "emotion": "happy",
           "hook": "Jesus, is it wrong that I feel this proud?",
           "slot": "morning (06-12 IST)",
-          "duration": "<=62s"
+          "duration": "56-60s"
         },
         {
           "episode_id": "JR-0042",
@@ -198,7 +198,7 @@
           "emotion": "sad",
           "hook": "Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
           "slot": "morning (06-12 IST)",
-          "duration": ">75s"
+          "duration": ">60s"
         },
         {
           "episode_id": "JR-0040",
@@ -209,7 +209,7 @@
           "emotion": "sad",
           "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔",
           "slot": "morning (06-12 IST)",
-          "duration": "63-75s"
+          "duration": ">60s"
         }
       ],
       "bottom": [
@@ -229,7 +229,7 @@
           "emotion": "crying",
           "hook": "Jesus... tomorrow I have to tell my parents I am leaving the course they paid for. 😭",
           "slot": "night (18-24 IST)",
-          "duration": ">75s"
+          "duration": ">60s"
         },
         {
           "episode_id": "JR-0037",
@@ -238,7 +238,7 @@
           "emotion": "worried",
           "hook": "Jesus... I parked outside church this morning. I never went in. 😔",
           "slot": "morning (06-12 IST)",
-          "duration": ">75s"
+          "duration": ">60s"
         },
         {
           "episode_id": "JR-0025",
@@ -247,7 +247,7 @@
           "emotion": "sad",
           "hook": "Jesus, my best friend told everyone my secret?",
           "slot": "night (18-24 IST)",
-          "duration": "<=62s"
+          "duration": "56-60s"
         },
         {
           "episode_id": "JR-0021",
@@ -256,7 +256,7 @@
           "emotion": "neutral",
           "hook": "Jesus... I finally got the thing I begged You for. Why do I feel nothing?",
           "slot": "night (18-24 IST)",
-          "duration": ">75s"
+          "duration": ">60s"
         }
       ]
     }
@@ -334,16 +334,16 @@
         }
       },
       "duration": {
-        "63-75s": {
-          "n": 2,
-          "median_score": 0.4875
+        "56-60s": {
+          "n": 7,
+          "median_score": 0.514
         },
-        "<=62s": {
+        "<=55s": {
+          "n": 3,
+          "median_score": 0.5
+        },
+        ">60s": {
           "n": 10,
-          "median_score": 0.512
-        },
-        ">75s": {
-          "n": 8,
           "median_score": 0.474
         }
       },
