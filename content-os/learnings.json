@@ -1,19 +1,19 @@
 {
-  "as_of": "2026-10-16T01:35:58.025790+00:00",
+  "as_of": "2026-10-16T04:25:45.973574+00:00",
   "window_days": 28,
   "min_n": 3,
   "platforms": {
     "instagram": {
       "n": 26,
-      "median_views": 1453.0,
-      "max_views": 2644,
+      "median_views": 1390.0,
+      "max_views": 1907,
       "saves_per_1k_reach_median": 13.2,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 13,
-            "median_views": 1458
+            "median_views": 1448
           },
           "night (18-24 IST)": {
             "n": 13,
@@ -26,8 +26,8 @@
             "median_views": 1736
           },
           "crying": {
-            "n": 4,
-            "median_views": 1531.5
+            "n": 3,
+            "median_views": 1509
           },
           "happy": {
             "n": 2,
@@ -46,8 +46,8 @@
             "median_views": 1618.5
           },
           "sad": {
-            "n": 7,
-            "median_views": 1448
+            "n": 8,
+            "median_views": 1357.5
           },
           "worried": {
             "n": 5,
@@ -56,18 +56,18 @@
         },
         "character": {
           "boy": {
-            "n": 13,
-            "median_views": 1448
+            "n": 14,
+            "median_views": 1390.0
           },
           "girl": {
-            "n": 13,
-            "median_views": 1509
+            "n": 12,
+            "median_views": 1388.0
           }
         },
         "hook_type": {
           "confession_statement": {
             "n": 5,
-            "median_views": 664
+            "median_views": 193
           },
           "question": {
             "n": 20,
@@ -88,8 +88,8 @@
             "median_views": 1508
           },
           ">78s": {
-            "n": 6,
-            "median_views": 441.0
+            "n": 7,
+            "median_views": 218
           }
         },
         "bible_book": {
@@ -142,8 +142,8 @@
             "median_views": 239
           },
           "Isaiah": {
-            "n": 3,
-            "median_views": 1651
+            "n": 4,
+            "median_views": 922.0
           },
           "John": {
             "n": 1,
@@ -156,10 +156,6 @@
           "Lamentations": {
             "n": 1,
             "median_views": 1554
-          },
-          "Matthew": {
-            "n": 1,
-            "median_views": 2644
           },
           "Micah": {
             "n": 1,
@@ -183,42 +179,46 @@
           }
         }
       },
-      "stronger": [],
+      "stronger": [
+        {
+          "dimension": "emotion",
+          "value": "neutral",
+          "n": 4,
+          "median_views": 1618.5,
+          "vs_overall": 1.16
+        }
+      ],
       "weaker": [
         {
           "dimension": "emotion",
           "value": "worried",
           "n": 5,
           "median_views": 332,
-          "vs_overall": 0.23
+          "vs_overall": 0.24
         },
         {
           "dimension": "hook_type",
           "value": "confession_statement",
           "n": 5,
-          "median_views": 664,
-          "vs_overall": 0.46
+          "median_views": 193,
+          "vs_overall": 0.14
         },
         {
           "dimension": "duration",
           "value": ">78s",
-          "n": 6,
-          "median_views": 441.0,
-          "vs_overall": 0.3
+          "n": 7,
+          "median_views": 218,
+          "vs_overall": 0.16
+        },
+        {
+          "dimension": "bible_book",
+          "value": "Isaiah",
+          "n": 4,
+          "median_views": 922.0,
+          "vs_overall": 0.66
         }
       ],
       "top": [
-        {
-          "episode_id": "JR-0007",
-          "views": 2644,
-          "saves": 21,
-          "shares": 11,
-          "theme": "burnout",
-          "emotion": "crying",
-          "hook": "Jesus... I'm so tired. I keep trying and trying and nothing works.",
-          "slot": "morning (06-12 IST)",
-          "duration": null
-        },
         {
           "episode_id": "JR-0020",
           "views": 1907,
@@ -262,6 +262,17 @@
           "hook": "Jesus... why did God create that tree? The one with the knowledge of good and evil? 🤔",
           "slot": "night (18-24 IST)",
           "duration": null
+        },
+        {
+          "episode_id": "JR-0040",
+          "views": 1651,
+          "saves": 12,
+          "shares": 3,
+          "theme": "hearing parents fight at night",
+          "emotion": "sad",
+          "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔",
+          "slot": "morning (06-12 IST)",
+          "duration": "66-78s"
         }
       ],
       "bottom": [
@@ -272,6 +283,15 @@
           "emotion": "sad",
           "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔",
           "slot": "night (18-24 IST)",
+          "duration": ">78s"
+        },
+        {
+          "episode_id": "JR-0042",
+          "views": 32,
+          "theme": "grandmother with dementia no longer recognising him",
+          "emotion": "sad",
+          "hook": "Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+          "slot": "morning (06-12 IST)",
           "duration": ">78s"
         },
         {
@@ -300,29 +320,20 @@
           "hook": "Jesus... I parked outside church this morning. I never went in. 😔",
           "slot": "morning (06-12 IST)",
           "duration": ">78s"
-        },
-        {
-          "episode_id": "JR-0022",
-          "views": 218,
-          "theme": "reconciliation",
-          "emotion": "happy",
-          "hook": "Jesus... my brother texted back after two years of silence. Why am I so scared to be happy about it?",
-          "slot": "morning (06-12 IST)",
-          "duration": ">78s"
         }
       ]
     },
     "youtube": {
-      "n": 22,
-      "median_views": 315.5,
+      "n": 23,
+      "median_views": 319,
       "max_views": 1835,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 10,
-            "median_views": 502.5
+            "n": 11,
+            "median_views": 528
           },
           "night (18-24 IST)": {
             "n": 12,
@@ -355,8 +366,8 @@
             "median_views": 315.5
           },
           "sad": {
-            "n": 6,
-            "median_views": 924.5
+            "n": 7,
+            "median_views": 1172
           },
           "worried": {
             "n": 4,
@@ -365,8 +376,8 @@
         },
         "character": {
           "boy": {
-            "n": 11,
-            "median_views": 528
+            "n": 12,
+            "median_views": 608.0
           },
           "girl": {
             "n": 11,
@@ -375,8 +386,8 @@
         },
         "hook_type": {
           "confession_statement": {
-            "n": 3,
-            "median_views": 21
+            "n": 4,
+            "median_views": 688.5
           },
           "question": {
             "n": 19,
@@ -393,8 +404,8 @@
             "median_views": 312
           },
           ">78s": {
-            "n": 6,
-            "median_views": 128.0
+            "n": 7,
+            "median_views": 199
           }
         },
         "bible_book": {
@@ -439,8 +450,8 @@
             "median_views": 128
           },
           "Isaiah": {
-            "n": 2,
-            "median_views": 596.5
+            "n": 3,
+            "median_views": 1172
           },
           "John": {
             "n": 1,
@@ -480,23 +491,37 @@
         {
           "dimension": "slot",
           "value": "morning (06-12 IST)",
-          "n": 10,
-          "median_views": 502.5,
-          "vs_overall": 1.59
+          "n": 11,
+          "median_views": 528,
+          "vs_overall": 1.66
         },
         {
           "dimension": "emotion",
           "value": "sad",
-          "n": 6,
-          "median_views": 924.5,
-          "vs_overall": 2.93
+          "n": 7,
+          "median_views": 1172,
+          "vs_overall": 3.67
         },
         {
           "dimension": "character",
           "value": "boy",
-          "n": 11,
-          "median_views": 528,
-          "vs_overall": 1.67
+          "n": 12,
+          "median_views": 608.0,
+          "vs_overall": 1.91
+        },
+        {
+          "dimension": "hook_type",
+          "value": "confession_statement",
+          "n": 4,
+          "median_views": 688.5,
+          "vs_overall": 2.16
+        },
+        {
+          "dimension": "bible_book",
+          "value": "Isaiah",
+          "n": 3,
+          "median_views": 1172,
+          "vs_overall": 3.67
         }
       ],
       "weaker": [
@@ -505,28 +530,21 @@
           "value": "crying",
           "n": 3,
           "median_views": 151,
-          "vs_overall": 0.48
+          "vs_overall": 0.47
         },
         {
           "dimension": "character",
           "value": "girl",
           "n": 11,
           "median_views": 151,
-          "vs_overall": 0.48
-        },
-        {
-          "dimension": "hook_type",
-          "value": "confession_statement",
-          "n": 3,
-          "median_views": 21,
-          "vs_overall": 0.07
+          "vs_overall": 0.47
         },
         {
           "dimension": "duration",
           "value": ">78s",
-          "n": 6,
-          "median_views": 128.0,
-          "vs_overall": 0.41
+          "n": 7,
+          "median_views": 199,
+          "vs_overall": 0.62
         }
       ],
       "top": [
@@ -564,6 +582,17 @@
           "duration": "<=65s"
         },
         {
+          "episode_id": "JR-0042",
+          "views": 1356,
+          "saves": null,
+          "shares": null,
+          "theme": "grandmother with dementia no longer recognising him",
+          "emotion": "sad",
+          "hook": "Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+          "slot": "morning (06-12 IST)",
+          "duration": ">78s"
+        },
+        {
           "episode_id": "JR-0040",
           "views": 1172,
           "saves": null,
@@ -573,17 +602,6 @@
           "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔",
           "slot": "morning (06-12 IST)",
           "duration": "66-78s"
-        },
-        {
-          "episode_id": "JR-0012",
-          "views": 723,
-          "saves": null,
-          "shares": null,
-          "theme": "purpose",
-          "emotion": "worried",
-          "hook": "Jesus... why does everyone else already know exactly what they're doing with their life? 😔",
-          "slot": "night (18-24 IST)",
-          "duration": null
         }
       ],
       "bottom": [
@@ -643,23 +661,26 @@
     }
   ],
   "authoring_guidance": {
-    "lean_towards": [],
+    "lean_towards": [
+      "emotion=neutral (IG median 1618 vs 1390, n=4)"
+    ],
     "avoid": [
-      "emotion=worried (IG median 332 vs 1453, n=5)",
-      "hook_type=confession_statement (IG median 664 vs 1453, n=5)",
-      "duration=>78s (IG median 441 vs 1453, n=6)"
+      "emotion=worried (IG median 332 vs 1390, n=5)",
+      "hook_type=confession_statement (IG median 193 vs 1390, n=5)",
+      "duration=>78s (IG median 218 vs 1390, n=7)",
+      "bible_book=Isaiah (IG median 922 vs 1390, n=4)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1458 (n=13), night (18-24 IST) 1332 (n=13)",
-      "youtube slot medians: morning (06-12 IST) 502 (n=10), night (18-24 IST) 224 (n=12)",
+      "instagram slot medians: morning (06-12 IST) 1448 (n=13), night (18-24 IST) 1332 (n=13)",
+      "youtube slot medians: morning (06-12 IST) 528 (n=11), night (18-24 IST) 224 (n=12)",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0007 2644 views: Jesus... I'm so tired. I keep trying and trying and nothing works.",
       "JR-0020 1907 views: Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭",
       "JR-0029 1736 views: Jesus, why does everything come easy for her?",
       "JR-0008 1728 views: Jesus... it feels like You've gone quiet. I pray and nothing comes back.",
-      "JR-0011 1706 views: Jesus... why did God create that tree? The one with the knowledge of good and evil? 🤔"
+      "JR-0011 1706 views: Jesus... why did God create that tree? The one with the knowledge of good and evil? 🤔",
+      "JR-0040 1651 views: Jesus... why do my parents only fight when they think I'm asleep? 😔"
     ]
   }
 }

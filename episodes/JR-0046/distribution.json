@@ -2,11 +2,11 @@
   "episode_id": "JR-0046",
   "platforms": {
     "instagram": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6acb1381b07d37ac979602ad",
       "due_at": "2026-10-16T02:30:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-10-16T02:31:34.177Z",
+      "external_link": "https://www.instagram.com/reel/Deidurtkudh/",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -24,6 +24,20 @@
           "to": "SCHEDULED",
           "run": "38268858847",
           "evidence": "schedule_draft read back: scheduled 2026-10-16T02:30:00.000Z"
+        },
+        {
+          "at": "2026-10-16T04:25:45.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "38850558038",
+          "evidence": "read 6acb1381b07d37ac979602ad: status sent at 2026-10-16T02:31:34.177Z"
+        },
+        {
+          "at": "2026-10-16T04:25:45.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "38850558038",
+          "evidence": "permalink http=200 metricsUpdatedAt=2026-10-11T04:41:37.706Z"
         }
       ],
       "last_read_error": {
@@ -32,11 +46,11 @@
       }
     },
     "youtube": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6acb216aed92ed8fa5f188a9",
       "due_at": "2026-10-16T02:30:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-10-16T02:30:26.027Z",
+      "external_link": "https://www.youtube.com/shorts/Xc_B_Eu70UA",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -47,6 +61,20 @@
           "to": "SCHEDULED",
           "run": "38115561072",
           "evidence": "create_scheduled read back: scheduled 2026-10-16T02:30:00.000Z"
+        },
+        {
+          "at": "2026-10-16T04:25:45.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "38850558038",
+          "evidence": "read 6acb216aed92ed8fa5f188a9: status sent at 2026-10-16T02:30:26.027Z"
+        },
+        {
+          "at": "2026-10-16T04:25:45.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "38850558038",
+          "evidence": "permalink http=200"
         }
       ],
       "last_read_error": {
