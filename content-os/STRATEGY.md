@@ -117,7 +117,7 @@ questions sent through the profile form (credit the question, never the person's
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-16T16:34Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-16T21:02Z from Buffer analytics, last 28 days, posts at least 48h old._
 
 - **instagram**: n=22, median views 1456, best 1907, saves per 1k reach 14.5, stalled 4 (excluded)
 - **youtube**: n=24, median views 351, best 1925, saves per 1k reach None, stalled 0 (excluded)
