@@ -169,7 +169,8 @@ def main():
     if a.cmd == "autopilot-targets":
         print(" ".join(autopilot().targets())); return 0
     if a.cmd in ("learn", "review"):
-        L = strategy.learnings(latest_snapshot()["rows"], attrs, now, exclude=cfg.get("analytics_exclude"))
+        L = strategy.learnings(latest_snapshot()["rows"], attrs, now, exclude=cfg.get("analytics_exclude"),
+                                followers=(cfg.get("analytics") or {}).get("instagram_followers"))
         strategy.write(ROOT, L)
         print(f"[learn] lean_towards={L['authoring_guidance']['lean_towards']} avoid={L['authoring_guidance']['avoid']}")
         if a.cmd == "review":
@@ -257,7 +258,8 @@ def main():
         for o in d.verify_all(ctx_for_factory(eps, pkgs, assets)):
             print(f"[verify] {o['episode_id']} {o['platform']} {o['state']} {o['post_id']}")
         try:
-            strategy.write(ROOT, strategy.learnings(snap["rows"], attrs, now, exclude=cfg.get("analytics_exclude")))
+            strategy.write(ROOT, strategy.learnings(snap["rows"], attrs, now, exclude=cfg.get("analytics_exclude"),
+                                followers=(cfg.get("analytics") or {}).get("instagram_followers")))
         except Exception as e:
             print(f"[learn] skipped: {type(e).__name__}: {e}")
         ap_ = autopilot()

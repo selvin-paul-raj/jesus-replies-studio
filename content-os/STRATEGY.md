@@ -82,30 +82,30 @@ trends and experiment readings in `content-os/reviews/`.
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-16T04:59Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-16T09:57Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=26, median views 1390, best 1907, saves per 1k reach 13.2
-- **youtube**: n=23, median views 319, best 1835, saves per 1k reach None
+- **instagram**: n=22, median views 1483, best 1907, saves per 1k reach 14.0, stalled 4 (excluded)
+- **youtube**: n=23, median views 319, best 1835, saves per 1k reach None, stalled 0 (excluded)
+- **episodes scored** (IG + YT percentile): 25, 20 with both platforms
 
 **Lean towards** (authoring reads this):
-- emotion=neutral (IG median 1618 vs 1390, n=4)
+- emotion=sad (episode score 0.78 vs 0.50, n=8, IG+YT percentile)
 
 **Avoid / de-emphasise:**
-- emotion=worried (IG median 332 vs 1390, n=5)
-- hook_type=confession_statement (IG median 193 vs 1390, n=5)
-- duration=>78s (IG median 218 vs 1390, n=7)
-- bible_book=Isaiah (IG median 922 vs 1390, n=4)
+- nothing with enough evidence
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
-- JR-0020 1907 views: Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭
-- JR-0029 1736 views: Jesus, why does everything come easy for her?
-- JR-0008 1728 views: Jesus... it feels like You've gone quiet. I pray and nothing comes back.
-- JR-0011 1706 views: Jesus... why did God create that tree? The one with the knowledge of good and evil? 🤔
-- JR-0040 1651 views: Jesus... why do my parents only fight when they think I'm asleep? 😔
+- JR-0041 score 1.00 (youtube 1835 views): Jesus... I said yes again. I didn't want to. I never do. 😔
+- JR-0008 score 0.91 (instagram 1728 views): Jesus... it feels like You've gone quiet. I pray and nothing comes back.
+- JR-0042 score 0.86 (youtube 1356 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔
+- JR-0040 score 0.81 (instagram 1651, youtube 1172 views): Jesus... why do my parents only fight when they think I'm asleep? 😔
+- JR-0032 score 0.79 (instagram 1586, youtube 1471 views): Jesus, is it wrong that I feel this proud?
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1448 (n=13), night (18-24 IST) 1332 (n=13)
+- instagram slot medians: morning (06-12 IST) 1458 (n=11), night (18-24 IST) 1509 (n=11)
 - youtube slot medians: morning (06-12 IST) 528 (n=11), night (18-24 IST) 224 (n=12)
+- instagram: 4 of 26 Reels stalled (reach under 68 followers) and were left out of content learning: JR-0042, JR-0041, JR-0033, JR-0009
+- rules need n>=8 episodes per bucket; smaller buckets are reported only
 - average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->

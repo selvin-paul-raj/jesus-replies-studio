@@ -155,20 +155,28 @@ class Fill(unittest.TestCase):
 
 
 class Learn(unittest.TestCase):
-    def test_guidance_needs_n_and_feeds_brief(self):
-        now = dt.datetime(2026, 10, 11, 12, 0, tzinfo=UTC)
+    NOW = dt.datetime(2026, 10, 11, 12, 0, tzinfo=UTC)
+
+    def rows(self, n=16, followers_reach=1000, yt=None):
         rows, attrs = [], {}
-        for i in range(8):
-            eid = f"JR-00{20 + i}"
-            emo = "crying" if i < 4 else "happy"
+        for i in range(n):
+            eid = f"JR-{20 + i:04d}"
+            emo = "crying" if i < n // 2 else "happy"
             attrs[eid] = {"emotion": emo, "character": "girl", "hook_type": "question", "duration": 58, "hook": f"h{i}"}
-            rows.append({"episode_id": eid, "platform": "instagram", "status": "sent",
-                         "sent_at": (now - dt.timedelta(days=3 + i)).isoformat(),
-                         "metrics": {"views": 2000 if emo == "crying" else 200, "reach": 1000, "saves": 10}})
-        L = strategy.learnings(rows, attrs, now)
+            sent = (self.NOW - dt.timedelta(days=3 + i % 20)).isoformat()
+            rows.append({"episode_id": eid, "platform": "instagram", "status": "sent", "sent_at": sent,
+                         "metrics": {"views": (2000 if emo == "crying" else 200) + i, "reach": followers_reach, "saves": 10}})
+            if yt:
+                rows.append({"episode_id": eid, "platform": "youtube", "status": "sent", "sent_at": sent,
+                             "metrics": {"views": yt(i, emo)}})
+        return rows, attrs
+
+    def test_guidance_needs_n_and_feeds_brief(self):
+        rows, attrs = self.rows()
+        L = strategy.learnings(rows, attrs, self.NOW, followers=68)
         g = L["authoring_guidance"]
-        self.assertTrue(any("emotion=crying" in x for x in g["lean_towards"]))
-        self.assertTrue(any("emotion=happy" in x for x in g["avoid"]))
+        self.assertTrue(any("emotion=crying" in x for x in g["lean_towards"]), g)
+        self.assertTrue(any("emotion=happy" in x for x in g["avoid"]), g)
         root = pathlib.Path(tempfile.mkdtemp())
         (root / "content-os").mkdir()
         strategy.write(root, L)
@@ -177,6 +185,42 @@ class Learn(unittest.TestCase):
         shutil.copy(ROOT / "config/publishing-rules.json", root / "config")
         ctx = pl.Ctx(root, store=Store(root), dry_run=True, log=lambda m: None)
         self.assertIn("lean_towards", pl.brief(ctx, "JR-0099")["strategy"])
+
+    def test_no_rule_below_eight_per_bucket(self):
+        rows, attrs = self.rows(n=14)          # 7 vs 7
+        g = strategy.learnings(rows, attrs, self.NOW, followers=68)["authoring_guidance"]
+        self.assertEqual(g["lean_towards"], [])
+        self.assertEqual(g["avoid"], [])
+
+    def test_stalls_are_excluded_from_content_learning(self):
+        rows, attrs = self.rows()
+        for r in rows:                         # every 'happy' Reel stalled inside the follower pool
+            if attrs[r["episode_id"]]["emotion"] == "happy":
+                r["metrics"]["reach"] = 40
+        L = strategy.learnings(rows, attrs, self.NOW, followers=68)
+        ig = L["platforms"]["instagram"]
+        self.assertEqual(ig["n_stalled"], 8)
+        self.assertEqual(ig["n"], 8)
+        self.assertFalse(any("happy" in x for x in L["authoring_guidance"]["avoid"]))
+        self.assertTrue(any("stalled" in x for x in L["authoring_guidance"]["evidence_notes"]))
+
+    def test_score_uses_instagram_and_youtube(self):
+        # Instagram says crying >> happy, YouTube says the exact opposite: no rule survives
+        rows, attrs = self.rows(yt=lambda i, emo: (200 if emo == "crying" else 2000) + i)
+        L = strategy.learnings(rows, attrs, self.NOW, followers=68)
+        self.assertEqual(L["content"]["both_platforms"], 16)
+        self.assertEqual(L["authoring_guidance"]["lean_towards"], [])
+        self.assertEqual(L["authoring_guidance"]["avoid"], [])
+        # YouTube agrees: rule holds
+        rows, attrs = self.rows(yt=lambda i, emo: (900 if emo == "crying" else 90) + i)
+        g = strategy.learnings(rows, attrs, self.NOW, followers=68)["authoring_guidance"]
+        self.assertTrue(any("emotion=crying" in x for x in g["lean_towards"]))
+
+    def test_current_learnings_have_no_old_avoid_rules(self):
+        L = json.loads((ROOT / "content-os/learnings.json").read_text())
+        avoid = " ".join(L["authoring_guidance"]["avoid"])
+        for gone in ("confession_statement", "emotion=worried", "Isaiah"):
+            self.assertNotIn(gone, avoid)
 
 
 if __name__ == "__main__":

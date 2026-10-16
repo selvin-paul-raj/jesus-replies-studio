@@ -130,5 +130,9 @@
       "to": "2026-10-01T00:00:00Z",
       "reason": "account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)"
     }
-  ]
+  ],
+  "analytics": {
+    "instagram_followers": 68,
+    "_note": "Stall line for content learning (scripts/content_os/strategy.py): an Instagram Reel whose reach is below this follower count is treated as a distribution stall and left out of content learning. Buffer does not expose follower totals, so update this from each Meta export (68 in the 2026-10-16 deep review)."
+  }
 }
