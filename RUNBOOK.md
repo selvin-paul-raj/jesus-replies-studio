@@ -109,10 +109,11 @@ Field notes:
   `src/schema.ts`'s `SpeakerStyleSchema`: color, fontSize, entrance/exit
   animation, position, ...). Only the fields you name change; everything
   else keeps the curated default (position/anchor won't reset).
-- **`music`** — `type` maps through `src/assetResolver.ts`'s
-  `resolveMusicFile` (currently only `"soft_christian_instrumental"` ->
-  `audio/hallelujah.mp3`); or set `track` directly to a `public/` path.
-  Defaults to `hallelujah.mp3` at volume 1 if omitted.
+- **`music`** — optional. Every episode gets one of the original tracks
+  `audio/bgm-01.mp3` .. `bgm-05.mp3` (see `public/audio/LICENSES.md`), picked by a
+  hash of the episode id (`pickBgmTrack` in `src/assetResolver.ts`). `track` may
+  name one of those files directly; any other path is ignored. Volume defaults to 1
+  (tracks are mastered to about -20 LUFS).
 - **`finalLogo`** — defaults to the follow end card (`branding/follow.png`,
   "Stay with Jesus" / "Carry this with you"). Include a partial `finalLogo`
   object to override just the fields you name (e.g. `ctaLabel` only).

@@ -201,7 +201,7 @@ scripts/
   check-*.ts                -- self-checks for timeline.ts/episodeInput.ts logic
 public/
   backgrounds/boy/, backgrounds/girl/ (boy_1.png, boy_1_sad.png, ...),
-  audio/hallelujah.mp3, branding/{bottom,follow}.png
+  audio/bgm-01..05.mp3 (original, see audio/LICENSES.md), branding/{bottom,follow}.png
 out/                       -- legacy build-episode.ts output (git-ignored): <id>.mp4,
                               <id>-thumb.png, <id>.episode-props.json, <id>.thumbnail-props.json
 output/                    -- npm run jr render output (git-ignored, default --out-dir):
