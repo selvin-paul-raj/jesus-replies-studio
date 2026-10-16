@@ -1,0 +1,96 @@
+name: JR swap fixed versions into Buffer queue
+
+# DEC-JR-009 (2026-10-16, Selvin yes via CEO 15:54 IST). Re-renders already-written episodes with the
+# deep-review fixes (original music, BSB, honesty line), uploads them to a NEW release tag (old assets
+# are kept), then edits the SAME queued Buffer posts in the SAME slots. Published posts are never touched.
+# mode=dry renders + uploads + prints the swap plan without Buffer mutations.
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode_ids:
+        description: Comma-separated episode ids
+        required: true
+      release_tag:
+        description: New release tag for the fixed renders
+        required: true
+        default: jr-fix-2026-10-16-a
+      mode:
+        description: dry | apply
+        required: true
+        default: dry
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jr-content-os
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    env:
+      EPISODE_IDS: ${{ inputs.episode_ids }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci
+
+      - name: Authoring gate
+        run: python3 scripts/render_gate.py "$EPISODE_IDS"
+
+      - name: Render (bounded concurrency)
+        env:
+          JR_RENDER_CONCURRENCY: 2
+        run: |
+          set -e
+          mkdir -p output/videos
+          echo "$EPISODE_IDS" | tr ',' '\n' | while read -r id; do
+            id=$(echo "$id" | tr -d ' ')
+            [ -n "$id" ] || continue
+            echo "[render] $id action=RENDERING"
+            npm run jr -- render "generated/$id.json" --out-dir output
+          done
+
+      - name: Render QA and real durations
+        run: python3 scripts/render_qa.py "$EPISODE_IDS"
+
+      - name: Release upload and anonymous URL verification
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ inputs.release_tag }}
+          REPO: ${{ github.repository }}
+        run: python3 scripts/release_episodes.py "$EPISODE_IDS"
+
+      - name: Commit verified manifest rows
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated/release-manifest.json
+          git diff --cached --quiet || git commit -m "automation: record verified release assets for ${{ inputs.release_tag }} [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
+
+      - name: Swap into Buffer (same post, same slot)
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          TAG: ${{ inputs.release_tag }}
+          MODE: ${{ inputs.mode }}
+        run: python3 scripts/jr_swap_fixed.py
+
+      - name: Commit swap ledger and state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content-os episodes generated/release-manifest.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "automation: swap fixed versions ${{ inputs.release_tag }} ${{ inputs.mode }} [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done

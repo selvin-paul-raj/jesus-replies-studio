@@ -1,63 +1,63 @@
 {
- "id": "JR-0061",
- "title": "Jesus... I Can't Remember The Last Time I Did Something For Me",
- "character": "boy",
- "topic": "no time for himself anymore, everything is for others",
- "emotion": "sad",
- "bible": {
-  "book": "Matthew",
-  "chapter": 11,
-  "verse": "28",
-  "version": "NIV",
-  "text": "“Come to me, all you who are weary and burdened, and I will give you rest."
- },
- "lines": [
-  {
-   "speaker": "person",
-   "text": "Jesus... I can't remember the last time I did something just for me. 😔"
+  "id": "JR-0061",
+  "title": "Jesus... I Can't Remember The Last Time I Did Something For Me",
+  "character": "boy",
+  "topic": "no time for himself anymore, everything is for others",
+  "emotion": "sad",
+  "bible": {
+    "book": "Matthew",
+    "chapter": 11,
+    "verse": "28",
+    "version": "BSB",
+    "text": "Come to Me, all you who are weary and burdened, and I will give you rest."
   },
-  {
-   "speaker": "person",
-   "text": "Work, family calls, helping everyone. My whole week belongs to other people."
-  },
-  {
-   "speaker": "jesus",
-   "text": "You gave away your Sunday, your evenings, even your lunch break. I saw every piece you handed out."
-  },
-  {
-   "speaker": "person",
-   "text": "Isn't that what a good son does? What a good friend does?"
-  },
-  {
-   "speaker": "jesus",
-   "text": "It is. But you didn't leave yourself a single seat in your own week, and even I rested."
-  },
-  {
-   "speaker": "person",
-   "text": "I feel guilty resting when everyone around me needs something."
-  },
-  {
-   "speaker": "jesus",
-   "text": "Rest isn't stealing from them. A poured-out cup cannot pour again. Sit with Me tonight."
-  },
-  {
-   "speaker": "person",
-   "text": "I honestly don't know what I'd even do with an hour that was mine."
-  },
-  {
-   "speaker": "jesus",
-   "text": "Then start small. One hour, no phone, no favours. Just you and Me remembering who you are."
-  },
-  {
-   "speaker": "bible_verse"
-  },
-  {
-   "speaker": "jesus",
-   "text": "The world will not fall apart if you rest tonight. I'm holding it."
-  },
-  {
-   "speaker": "engagement",
-   "text": "When did you last do something just for you? 🙏"
-  }
- ]
+  "lines": [
+    {
+      "speaker": "person",
+      "text": "Jesus... I can't remember the last time I did something just for me. 😔"
+    },
+    {
+      "speaker": "person",
+      "text": "Work, family calls, helping everyone. My whole week belongs to other people."
+    },
+    {
+      "speaker": "jesus",
+      "text": "You gave away your Sunday, your evenings, even your lunch break. I saw every piece you handed out."
+    },
+    {
+      "speaker": "person",
+      "text": "Isn't that what a good son does? What a good friend does?"
+    },
+    {
+      "speaker": "jesus",
+      "text": "It is. But you didn't leave yourself a single seat in your own week, and even I rested."
+    },
+    {
+      "speaker": "person",
+      "text": "I feel guilty resting when everyone around me needs something."
+    },
+    {
+      "speaker": "jesus",
+      "text": "Rest isn't stealing from them. A poured-out cup cannot pour again. Sit with Me tonight."
+    },
+    {
+      "speaker": "person",
+      "text": "I honestly don't know what I'd even do with an hour that was mine."
+    },
+    {
+      "speaker": "jesus",
+      "text": "Then start small. One hour, no phone, no favours. Just you and Me remembering who you are."
+    },
+    {
+      "speaker": "bible_verse"
+    },
+    {
+      "speaker": "jesus",
+      "text": "The world will not fall apart if you rest tonight. I'm holding it."
+    },
+    {
+      "speaker": "engagement",
+      "text": "When did you last do something just for you? 🙏"
+    }
+  ]
 }

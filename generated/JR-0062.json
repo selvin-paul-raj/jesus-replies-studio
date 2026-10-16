@@ -1,59 +1,59 @@
 {
- "id": "JR-0062",
- "title": "Jesus... I Apologised To My Dad And He Left Me On Read",
- "character": "boy",
- "topic": "apologised to his father by text and the message was left on read",
- "emotion": "sad",
- "bible": {
-  "book": "Luke",
-  "chapter": 15,
-  "verse": "20",
-  "version": "NIV",
-  "text": "So he got up and went to his father. “But while he was still a long way off, his father saw him and was filled with compassion for him; he ran to his son, threw his arms around him and kissed him."
- },
- "lines": [
-  {
-   "speaker": "person",
-   "text": "Jesus... I sent Dad a long apology last night. Why did he leave me on read? 😔"
+  "id": "JR-0062",
+  "title": "Jesus... I Apologised To My Dad And He Left Me On Read",
+  "character": "boy",
+  "topic": "apologised to his father by text and the message was left on read",
+  "emotion": "sad",
+  "bible": {
+    "book": "Luke",
+    "chapter": 15,
+    "verse": "20",
+    "version": "BSB",
+    "text": "So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him."
   },
-  {
-   "speaker": "person",
-   "text": "Two blue ticks this morning. No reply. Not even a thumbs up."
-  },
-  {
-   "speaker": "jesus",
-   "text": "You rewrote that message eleven times. He read it once and went very quiet."
-  },
-  {
-   "speaker": "person",
-   "text": "Does quiet mean he's still angry? Or worse, that he doesn't care?"
-  },
-  {
-   "speaker": "jesus",
-   "text": "It means a fifty-year-old man holding words he doesn't know how to answer yet. Quiet is not rejection."
-  },
-  {
-   "speaker": "jesus",
-   "text": "Give it today. Then one small line, no speech: I meant it, and I'm here."
-  },
-  {
-   "speaker": "person",
-   "text": "I just wanted to hear him say it's okay before I sleep."
-  },
-  {
-   "speaker": "jesus",
-   "text": "If tonight passes without it, I'm still the Father who saw you coming from a long way off."
-  },
-  {
-   "speaker": "bible_verse"
-  },
-  {
-   "speaker": "jesus",
-   "text": "He ran before you finished your speech. So will your dad, in his own time."
-  },
-  {
-   "speaker": "engagement",
-   "text": "What message are you still waiting on? 🙏"
-  }
- ]
+  "lines": [
+    {
+      "speaker": "person",
+      "text": "Jesus... I sent Dad a long apology last night. Why did he leave me on read? 😔"
+    },
+    {
+      "speaker": "person",
+      "text": "Two blue ticks this morning. No reply. Not even a thumbs up."
+    },
+    {
+      "speaker": "jesus",
+      "text": "You rewrote that message eleven times. He read it once and went very quiet."
+    },
+    {
+      "speaker": "person",
+      "text": "Does quiet mean he's still angry? Or worse, that he doesn't care?"
+    },
+    {
+      "speaker": "jesus",
+      "text": "It means a fifty-year-old man holding words he doesn't know how to answer yet. Quiet is not rejection."
+    },
+    {
+      "speaker": "jesus",
+      "text": "Give it today. Then one small line, no speech: I meant it, and I'm here."
+    },
+    {
+      "speaker": "person",
+      "text": "I just wanted to hear him say it's okay before I sleep."
+    },
+    {
+      "speaker": "jesus",
+      "text": "If tonight passes without it, I'm still the Father who saw you coming from a long way off."
+    },
+    {
+      "speaker": "bible_verse"
+    },
+    {
+      "speaker": "jesus",
+      "text": "He ran before you finished your speech. So will your dad, in his own time."
+    },
+    {
+      "speaker": "engagement",
+      "text": "What message are you still waiting on? 🙏"
+    }
+  ]
 }

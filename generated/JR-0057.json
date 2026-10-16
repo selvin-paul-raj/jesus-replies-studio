@@ -1,63 +1,63 @@
 {
- "id": "JR-0057",
- "title": "Jesus... Why Do I Feel Like A Fraud On My First Day?",
- "character": "boy",
- "topic": "impostor fear the night before his first day at a new job",
- "emotion": "sad",
- "bible": {
-  "book": "Psalms",
-  "chapter": 139,
-  "verse": "14",
-  "version": "NIV",
-  "text": "I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well."
- },
- "lines": [
-  {
-   "speaker": "person",
-   "text": "Jesus... I start the new job tomorrow. 😔"
+  "id": "JR-0057",
+  "title": "Jesus... Why Do I Feel Like A Fraud On My First Day?",
+  "character": "boy",
+  "topic": "impostor fear the night before his first day at a new job",
+  "emotion": "sad",
+  "bible": {
+    "book": "Psalms",
+    "chapter": 139,
+    "verse": "14",
+    "version": "BSB",
+    "text": "I praise You, for I am fearfully and wonderfully made. Marvelous are Your works, and I know this very well."
   },
-  {
-   "speaker": "person",
-   "text": "Everyone congratulated me. But I keep thinking they'll find out in week one that I'm not good enough."
-  },
-  {
-   "speaker": "jesus",
-   "text": "You stayed up past midnight reading their docs like exam notes. Why do you think I led you there?"
-  },
-  {
-   "speaker": "person",
-   "text": "What if they ask something I can't answer and I just freeze?"
-  },
-  {
-   "speaker": "jesus",
-   "text": "You will. Then you'll say the most senior words in any room: let me check and get back to you."
-  },
-  {
-   "speaker": "person",
-   "text": "But everyone there looks like they belong. I look like I walked in with a fake badge."
-  },
-  {
-   "speaker": "jesus",
-   "text": "They all had a first day. Every one of them didn't know where the cups were either."
-  },
-  {
-   "speaker": "person",
-   "text": "I just don't want my first impression to be the wrong one."
-  },
-  {
-   "speaker": "jesus",
-   "text": "It's already done. They chose you from everyone who applied. Tomorrow you walk in as the person they picked."
-  },
-  {
-   "speaker": "bible_verse"
-  },
-  {
-   "speaker": "jesus",
-   "text": "Walk in slowly. I already went ahead of you and saved your seat."
-  },
-  {
-   "speaker": "engagement",
-   "text": "What do you fear they'll find out? 🙏"
-  }
- ]
+  "lines": [
+    {
+      "speaker": "person",
+      "text": "Jesus... I start the new job tomorrow. 😔"
+    },
+    {
+      "speaker": "person",
+      "text": "Everyone congratulated me. But I keep thinking they'll find out in week one that I'm not good enough."
+    },
+    {
+      "speaker": "jesus",
+      "text": "You stayed up past midnight reading their docs like exam notes. Why do you think I led you there?"
+    },
+    {
+      "speaker": "person",
+      "text": "What if they ask something I can't answer and I just freeze?"
+    },
+    {
+      "speaker": "jesus",
+      "text": "You will. Then you'll say the most senior words in any room: let me check and get back to you."
+    },
+    {
+      "speaker": "person",
+      "text": "But everyone there looks like they belong. I look like I walked in with a fake badge."
+    },
+    {
+      "speaker": "jesus",
+      "text": "They all had a first day. Every one of them didn't know where the cups were either."
+    },
+    {
+      "speaker": "person",
+      "text": "I just don't want my first impression to be the wrong one."
+    },
+    {
+      "speaker": "jesus",
+      "text": "It's already done. They chose you from everyone who applied. Tomorrow you walk in as the person they picked."
+    },
+    {
+      "speaker": "bible_verse"
+    },
+    {
+      "speaker": "jesus",
+      "text": "Walk in slowly. I already went ahead of you and saved your seat."
+    },
+    {
+      "speaker": "engagement",
+      "text": "What do you fear they'll find out? 🙏"
+    }
+  ]
 }
