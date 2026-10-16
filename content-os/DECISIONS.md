@@ -67,3 +67,6 @@ Proposed, waiting on Selvin: display name + bio rewrite, link swap, category lab
 Queued episodes JR-0047..JR-0063 were already rendered and in Buffer before this change; they keep
 their NIV text, old captions and old music until replaced (not touched automatically).
 
+
+## DEC-JR-008 — Master plan adopted (2026-10-16)
+Selvin's Jesus Replies Master Plan (via CEO, 15:56 IST) replaces the CEO fix plan where they differ. Slice (a) done: caption order (hurt + search phrase, story/reply/verse BSB, small question, send line, honesty line, series line, 5 tags) and the 14-a-week topic mix (heartbreak 5, burnout 3, jealousy 3, family/illness 2, faith doubt 1, trivia 0; 2 Real-question Fridays inside it) written into STRATEGY.md and config weekly_mix. Queued JR-0047..JR-0063 untouched pending Selvin.

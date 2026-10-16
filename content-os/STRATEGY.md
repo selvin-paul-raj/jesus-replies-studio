@@ -79,6 +79,36 @@ trends and experiment readings in `content-os/reviews/`.
   caption and description must also carry "If you are in danger, please reach a local crisis line."
 - **Music:** original tracks only (`public/audio/LICENSES.md`), rotated by episode id.
 
+## Master plan 2026-10-16 (DEC-JR-008) — captions and weekly mix
+
+**Every Instagram caption, in this order** (YouTube description uses lines 1, 2, 5, 6 plus the
+Instagram link):
+1. First line: the hurt plus one searchable phrase people type ("Bible verse for jealousy",
+   "prayer for anxiety", "when God feels silent").
+2. The story in a line or two, Jesus's reply, the verse with **(BSB)**.
+3. One small, easy question: "Which line hit you?" / "What would you have said to her?" Never a
+   big reflective one ("Who in your family is carrying something?").
+4. One send line: "Send this to the sister who needs it." (name a specific person.)
+5. *An imagined reply. The Scripture is quoted as written.*
+6. *New question every morning and night.*
+7. Exactly 5 hashtags: #JesusReplies + 1-2 topic + 1 mid-size + 1 big. Never "type amen" or
+   "tag a friend".
+
+**Weekly mix — 14 episodes** (writer plans each week to this; `config/content-os.json` weekly_mix):
+
+| Topic | Per week |
+|---|---|
+| Heartbreak and relationships | 5 |
+| Burnout and tiredness | 3 |
+| Jealousy and comparison | 3 |
+| Family and illness | 2 |
+| Faith doubt | 1 |
+| Bible trivia | 0 |
+
+From the week of 2026-10-19, 2 of the 14 are **Real-question Friday** episodes built from real
+questions sent through the profile form (credit the question, never the person's name). Winners
+(top 10% by IG+YT score) get a "Part 2" follow-up within two weeks, counted inside the mix.
+
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->

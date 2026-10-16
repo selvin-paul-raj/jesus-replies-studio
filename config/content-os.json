@@ -130,5 +130,15 @@
   "analytics": {
     "instagram_followers": 68,
     "_note": "Stall line for content learning (scripts/content_os/strategy.py): an Instagram Reel whose reach is below this follower count is treated as a distribution stall and left out of content learning. Buffer does not expose follower totals, so update this from each Meta export (68 in the 2026-10-16 deep review)."
+  },
+  "weekly_mix": {
+    "_note": "Master plan 2026-10-16 section 3.3 (DEC-JR-008); 14 episodes/week",
+    "heartbreak_relationships": 5,
+    "burnout_tiredness": 3,
+    "jealousy_comparison": 3,
+    "family_illness": 2,
+    "faith_doubt": 1,
+    "bible_trivia": 0,
+    "real_question_fridays_per_week": 2
   }
 }
