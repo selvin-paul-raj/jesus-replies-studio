@@ -20,6 +20,7 @@ import { bundle } from "@remotion/bundler";
 import { renderStill, selectComposition, openBrowser } from "@remotion/renderer";
 import bibleData from "./bible.json";
 import { BibleVersePostPropsSchema } from "../src/schema";
+import { verseInstagramType, verseCompositionId } from "./lib/verseConfig";
 
 const ROOT_DIR = path.join(__dirname, "..");
 const OUT_DIR = path.join(ROOT_DIR, "output", "bible_verse_batch");
@@ -37,7 +38,7 @@ const VERSES = (bibleData as { promises: VerseEntry[] }).promises;
  * this script (uploader) and scripts/daily-bible-post.ts (consumer) need to
  * agree on it. Bump the suffix if bible.json's verses are ever reordered in
  * a way that changes which index maps to which verse. */
-export const BATCH_RELEASE_TAG = "bible-posts-v1";
+export const BATCH_RELEASE_TAG = "bible-posts-v2"; // v2 = BSB text (2026-10-16); v1 held NIV cards
 
 /** File name for a given 0-based index into VERSES -- get-bible-verse.ts's
  * dayIndex (dayOfYear % VERSES.length) is exactly that index, so
@@ -49,7 +50,8 @@ export function assetFileName(index: number): string {
 async function main(): Promise<void> {
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
-  console.log(`[build-all] Bundling once for ${VERSES.length} verses...`);
+  const compositionId = verseCompositionId(verseInstagramType());
+  console.log(`[build-all] Bundling once for ${VERSES.length} verses (${compositionId})...`);
   const bundleLocation = await bundle({ entryPoint: ENTRY_POINT });
 
   // One browser instance reused across all 365 renders -- selectComposition
@@ -63,13 +65,13 @@ async function main(): Promise<void> {
       const outputPath = path.join(OUT_DIR, assetFileName(i));
       const inputProps = BibleVersePostPropsSchema.parse({
         verseText: verse.text.replace(/\s+/g, " ").trim(),
-        referenceText: `${verse.reference}\n${process.env.BIBLE_VERSION_LABEL || "NIV"}`,
+        referenceText: `${verse.reference}\nBSB`,
       });
 
       console.log(`[build-all] (${i + 1}/${VERSES.length}) ${verse.reference}...`);
       const composition = await selectComposition({
         serveUrl: bundleLocation,
-        id: "BibleVersePost",
+        id: compositionId,
         inputProps,
         puppeteerInstance,
       });

@@ -12,6 +12,11 @@
   schedule EID [--dry-run]                 only after APPROVED; whole-post edit + read-back
   verify EID | --all                       post-publish verification
   status EID
+  release-review EID --by NAME --evidence "words"
+                                           a human read a crisis-gate hold and lets it continue
+  verse "Psalm 23:1"                       print the exact BSB text for a reference (authoring)
+  to-bsb EID                               switch an UNPUBLISHED, not-yet-in-Buffer episode from NIV to BSB
+                                           (episode text + package labels); refuses anything already drafted
 
 --dry-run copies state to a scratch directory and never uploads, creates, schedules or
 publishes. Secrets are redacted from every printed line."""
@@ -20,18 +25,9 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 from daily import pipeline as pl                      # noqa: E402
 from daily.store import Store                         # noqa: E402
 from daily.buffer import Buffer                       # noqa: E402
+from daily import bsb                                 # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-
-
-def scripture_fetcher():
-    sys.path.insert(0, str(ROOT / "scripts"))
-    import importlib.util
-    spec = importlib.util.spec_from_file_location("fetch_passage", ROOT / "scripts/fetch-passage.py")
-    mod = importlib.util.module_from_spec(spec)
-    import urllib.parse  # fetch-passage.py uses urllib.parse via urllib
-    spec.loader.exec_module(mod)
-    return mod.fetch
 
 
 def main():
@@ -59,7 +55,7 @@ def main():
     buffer = None
     if os.environ.get("BUFFER_API_KEY"):
         buffer = Buffer.from_env(rules)
-    ctx = pl.Ctx(ROOT, rules, store, run_id, a.dry_run, buffer, fetch_scripture=scripture_fetcher())
+    ctx = pl.Ctx(ROOT, rules, store, run_id, a.dry_run, buffer, fetch_scripture=bsb.lookup)
 
     if a.cmd == "next-id":
         print(pl.next_episode_id(ctx)); return 0
@@ -119,9 +115,50 @@ def main():
         print(f"[read] caption_chars={len(post['text'])} caption_match={pl.norm_text(post['text']) == pl.norm_text(want)}")
         print(f"[read] hashtags={tags} match={tags == list(pk['instagram_hashtags'])}")
         return 0
+    if a.cmd == "release-review":
+        st = store.load(a.eid)
+        if (st.get("review") or {}).get("status") != "HELD_FOR_REVIEW":
+            print(f"[review] {a.eid} is not held"); return 1
+        if not a.by or not a.evidence:
+            print("[review] needs --by and --evidence (the reviewer's own words)"); return 1
+        st["review"].update({"status": "RELEASED", "released_by": a.by, "released_at": pl.now_iso(),
+                             "evidence": pl.redact(a.evidence)[:300]})
+        store.save(st)
+        print(f"[review] {a.eid} RELEASED by {a.by}; the next daily run continues it"); return 0
+    if a.cmd == "verse":
+        t = bsb.lookup(a.eid)
+        print(t if t else f"[verse] {a.eid} not found in the BSB text")
+        return 0 if t else 1
+    if a.cmd == "to-bsb":
+        return to_bsb(a.eid, store)
     if a.cmd == "status":
         print(pl.report(store.load(a.eid))); return 0
     ap.error(f"unknown command {a.cmd}")
+
+
+def to_bsb(eid, store):
+    st = store.load(eid)
+    if st["buffer"].get("post_id") or st["state"] in ("SCHEDULED", "PUBLISHED", "PUBLISHED_VERIFIED", "APPROVED"):
+        print(f"[to-bsb] {eid} is {st['state']} with Buffer post {st['buffer'].get('post_id')}; not touched")
+        return 1
+    ep_p, pk_p = ROOT / f"generated/{eid}.json", ROOT / f"generated/{eid}.package.json"
+    ep = json.loads(ep_p.read_text())
+    b = ep.get("bible") or {}
+    text = bsb.lookup(bsb.ref_from_bible(b))
+    if not text:
+        print(f"[to-bsb] {eid} {bsb.ref_from_bible(b)} not in BSB"); return 1
+    old = b.get("text")
+    b.update({"version": bsb.VERSION, "text": text})
+    ep_p.write_text(json.dumps(ep, indent=2, ensure_ascii=False) + "\n")
+    if pk_p.exists():
+        pk = json.loads(pk_p.read_text())
+        for k in ("instagram_caption", "youtube_description", "thumbnail_text"):
+            if isinstance(pk.get(k), str):
+                v = pk[k].replace("(NIV)", "(BSB)").replace(" NIV", " BSB")
+                pk[k] = v.replace(old, text) if old else v
+        pk_p.write_text(json.dumps(pk, indent=2, ensure_ascii=False) + "\n")
+    print(f"[to-bsb] {eid} now BSB {bsb.ref_from_bible(b)}; re-run advance to validate and re-render")
+    return 0
 
 
 if __name__ == "__main__":

@@ -23,9 +23,18 @@ export interface BufferPostInput {
   channelId: string;
   text: string;
   mediaUrl: string;
+  /** Instagram post type: "story" keeps the card off the grid (Buffer PostType enum). */
+  instagramType?: "post" | "story";
 }
 
-export async function createBufferPost({ channelId, text, mediaUrl }: BufferPostInput): Promise<void> {
+/** Instagram metadata for an image post. Exported for tests/dry runs. */
+export function instagramImageMetadata(type: "post" | "story" = "post"): string {
+  return type === "story"
+    ? "metadata: { instagram: { type: story, shouldShareToFeed: false } }"
+    : "metadata: { instagram: { type: post, shouldShareToFeed: true } }";
+}
+
+export async function createBufferPost({ channelId, text, mediaUrl, instagramType = "post" }: BufferPostInput): Promise<void> {
   const apiKey = process.env.BUFFER_API_KEY;
   if (!apiKey) throw new Error("BUFFER_API_KEY is not set");
 
@@ -39,7 +48,7 @@ export async function createBufferPost({ channelId, text, mediaUrl }: BufferPost
         mode: customScheduled
         dueAt: ${JSON.stringify(dueAt)}
         assets: [{ image: { url: ${JSON.stringify(mediaUrl)} } }]
-        metadata: { instagram: { type: post, shouldShareToFeed: true } }
+        ${instagramImageMetadata(instagramType)}
       }) {
         ... on PostActionSuccess {
           post { id status }

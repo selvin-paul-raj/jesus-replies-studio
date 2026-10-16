@@ -201,7 +201,7 @@ scripts/
   check-*.ts                -- self-checks for timeline.ts/episodeInput.ts logic
 public/
   backgrounds/boy/, backgrounds/girl/ (boy_1.png, boy_1_sad.png, ...),
-  audio/hallelujah.mp3, branding/{bottom,follow}.png
+  audio/bgm-01..05.mp3 (original, see audio/LICENSES.md), branding/{bottom,follow}.png
 out/                       -- legacy build-episode.ts output (git-ignored): <id>.mp4,
                               <id>-thumb.png, <id>.episode-props.json, <id>.thumbnail-props.json
 output/                    -- npm run jr render output (git-ignored, default --out-dir):
@@ -237,14 +237,14 @@ so the *daily* job stays fast and cheap:
 
 1. **Build once** (`build-bible-posts.yml`, manual) — bundles Remotion a
    single time and renders all 365 verse cards, uploading them as assets on
-   one GitHub Release (`bible-posts-v1`). Re-run only when `bible.json`
+   one GitHub Release (`bible-posts-v2`). Re-run only when `bible.json`
    changes. This is the only phase that touches Remotion/headless Chrome.
-2. **Post daily** (`daily-bible-post.yml`, 6:30 AM IST cron) — picks today's
+2. **Post daily** (`daily-bible-post.yml`, 06:37 IST cron, posted as an Instagram Story) — picks today's
    verse, looks up its already-built image by day-of-year, and posts it to
    Instagram through Buffer. No rendering, no bundling, no `gh` calls.
 
 **Pieces:**
-- `scripts/bible.json` — 365 curated promises/blessings (NIV wording), one
+- `scripts/bible.json` — 365 curated promises/blessings (Berean Standard Bible, public domain), one
   per day of the year — deliberately no narrative/story verses, every entry
   is meant to stand alone and invite a reaction.
 - `scripts/get-bible-verse.ts` — picks that day's entry from `bible.json` by
@@ -265,9 +265,9 @@ so the *daily* job stays fast and cheap:
   image's Release asset URL, posts it via Buffer, and records the date in
   `data/bible-post-state.json` so the same day never posts twice.
 - `.github/workflows/build-bible-posts.yml` — manual-only; runs phase 1 and
-  uploads the batch to the `bible-posts-v1` release.
-- `.github/workflows/daily-bible-post.yml` — runs phase 2 daily at 6:30 AM
-  IST (01:00 UTC cron), plus a manual `workflow_dispatch` (with a `force`
+  uploads the batch to the `bible-posts-v2` release.
+- `.github/workflows/daily-bible-post.yml` — runs phase 2 daily at 06:37
+  IST (01:07 UTC cron), plus a manual `workflow_dispatch` (with a `force`
   input to bypass the dedupe check) for testing.
 
 **Setup:**
@@ -280,8 +280,8 @@ so the *daily* job stays fast and cheap:
    connected channel's GraphQL `id` — use your Instagram channel's `id` as
    `BUFFER_INSTAGRAM_CHANNEL_ID` (this id is not the same as the old REST
    profile id).
-   (`BIBLE_API_KEY` is no longer required — verses come from `bible.json` —
-   but it's left in place in case you want to swap the source back later).
+   (No Bible API key is used: verses come from `bible.json`, which holds the
+   public-domain Berean Standard Bible text.)
 3. Add these as **GitHub Secrets** (Settings → Secrets and variables →
    Actions) on this repo:
    - `BUFFER_API_KEY`
@@ -289,7 +289,7 @@ so the *daily* job stays fast and cheap:
    - `ACTION_GITHUB` (a token with `contents: write`, used only by
      `build-bible-posts.yml` to create/upload the release)
 4. Run **Actions → Build Bible Posts → Run workflow** once (and again
-   whenever `scripts/bible.json` changes) to populate the `bible-posts-v1`
+   whenever `scripts/bible.json` changes) to populate the `bible-posts-v2`
    release. The repo (or its release assets) must stay public, or the media
    URL Buffer fetches from will 404.
 5. Test locally against your real `.env` values (Node/tsx don't auto-load

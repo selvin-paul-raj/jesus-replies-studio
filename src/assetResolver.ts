@@ -45,16 +45,50 @@ export function resolveBackgroundImage(character: string, topic: string, emotion
   return "backgrounds/boy/boy_1.png";
 }
 
-/** music.type -> public/audio/ filename. Extend as more tracks are added. */
-const MUSIC_TYPE_FILES: Record<string, string> = {
-  soft_christian_instrumental: "audio/hallelujah.mp3",
-};
+/** Original background tracks (public/audio/LICENSES.md). Made for this project by
+ * scripts/audio/make_bgm.py; replaced a third-party track on 2026-10-16
+ * (DEC-JR-007). Episodes rotate through them deterministically by episode id. */
+export const BGM_TRACKS: readonly string[] = [
+  "audio/bgm-01.mp3",
+  "audio/bgm-02.mp3",
+  "audio/bgm-03.mp3",
+  "audio/bgm-04.mp3",
+  "audio/bgm-05.mp3",
+];
 
-export function resolveMusicFile(type: string): string {
-  const file = MUSIC_TYPE_FILES[type];
-  if (file) return file;
-  console.warn(`[assetResolver] no music mapped for type "${type}", falling back to audio/hallelujah.mp3`);
-  return "audio/hallelujah.mp3";
+/** FNV-1a 32-bit -- small, stable across Node versions, mirrored in Python tests. */
+export function fnv1a(text: string): number {
+  let h = 0x811c9dc5;
+  for (const ch of Buffer.from(text, "utf8")) {
+    h ^= ch;
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return h >>> 0;
+}
+
+/** Same episode id -> same track, every render. */
+export function pickBgmTrack(seed: string): string {
+  return BGM_TRACKS[fnv1a(seed) % BGM_TRACKS.length];
+}
+
+/** music.type is kept for old episode files: every known type now maps to the rotation. */
+const MUSIC_TYPES = new Set(["soft_christian_instrumental", "soft_worship_ambient"]);
+
+export function resolveMusicFile(type: string | undefined, seed: string): string {
+  if (type && !MUSIC_TYPES.has(type)) {
+    console.warn(`[assetResolver] unknown music type "${type}", using the original-track rotation`);
+  }
+  return pickBgmTrack(seed);
+}
+
+/** An explicit `track` wins only if it is one of the licensed tracks in public/audio/LICENSES.md
+ * (BGM_TRACKS) or a remote URL; anything else (e.g. removed third-party audio) falls back. */
+export function resolveTrack(track: string | undefined, type: string | undefined, seed: string): string {
+  if (track && (track.startsWith("http") || (BGM_TRACKS.includes(track) && fs.existsSync(path.join(PUBLIC_DIR, track))))) {
+    return track;
+  }
+  if (track) console.warn(`[assetResolver] track "${track}" is not a licensed project track; using the original-track rotation`);
+  return resolveMusicFile(type, seed);
 }
 
 /** Brand assets used by the end card / bottom logo -- fixed paths, kept here

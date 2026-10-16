@@ -12,7 +12,7 @@ on:
         description: YYYY-MM-DD
         required: true
       time:
-        description: HH:MM (a configured slot, 08:00 or 21:00)
+        description: 'HH:MM, a slot from config/publishing-rules.json (08:00 or 20:30)'
         required: true
       timezone:
         required: true

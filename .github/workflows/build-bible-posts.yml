@@ -10,6 +10,11 @@ on:
 permissions:
   contents: write
 
+# One run at a time; never cancel a run that may be mid-push (DEC-JR-007).
+concurrency:
+  group: jr-build-bible-posts
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,6 +37,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.ACTION_GITHUB }}
         run: |
-          TAG="bible-posts-v1"
+          TAG="bible-posts-v2"   # BSB cards (2026-10-16); v1 held NIV cards
           gh release view "$TAG" || gh release create "$TAG" --title "$TAG" --notes "Pre-built daily Bible verse cards (see scripts/build-all-bible-posts.ts)"
           gh release upload "$TAG" output/bible_verse_batch/*.png --clobber

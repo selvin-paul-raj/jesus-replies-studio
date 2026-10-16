@@ -7,7 +7,7 @@ name: Cleanup Jesus Replies weekly releases
 
 on:
   schedule:
-    - cron: '0 20 * * 1'      # Mon 01:30 IST, after a week's last post has landed
+    - cron: '7 20 * * 1'      # Mon 01:37 IST, after a week's last post has landed
   workflow_dispatch:
     inputs:
       apply:
@@ -17,6 +17,11 @@ on:
 
 permissions:
   contents: write
+
+# One run at a time; never cancel a run that may be mid-push (DEC-JR-007).
+concurrency:
+  group: jr-cleanup-releases
+  cancel-in-progress: false
 
 jobs:
   cleanup:

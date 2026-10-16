@@ -2,8 +2,9 @@
   "timezone": "Asia/Kolkata",
   "slots": {
     "MORNING": "08:00",
-    "NIGHT": "21:00"
+    "NIGHT": "20:30"
   },
+  "_slots_note": "THE slot table (IST). Read by the daily pipeline (allocate/approve), the content OS (weekly plan, timing, ledger via cli.cfg_load) and docs. NIGHT was 21:00 here and 20:30 elsewhere until 2026-10-16 (DEC-JR-007). The daily verse Story is not a slot: it posts from daily-bible-post.yml at 06:37 IST.",
   "require_human_approval": false,
   "auto_publish": true,
   "verify_after_publish": true,
@@ -11,11 +12,12 @@
   "duration": {
     "min_seconds": 3,
     "target_seconds": [
-      70,
-      80
+      50,
+      62
     ],
-    "ceiling_seconds": 90,
-    "auto_trim": false
+    "ceiling_seconds": 75,
+    "auto_trim": false,
+    "_note": "The ONLY duration setting. brief(), the pre-render estimate, render QA and the content OS learning buckets (scripts/content_os/strategy.py) all read it. Set 2026-10-16 (DEC-JR-007): 50-62 s target, 75 s hard ceiling."
   },
   "video": {
     "width": 1080,
@@ -43,5 +45,9 @@
     "note": "ids, not credentials; the API key stays only in secrets.BUFFER_API_KEY"
   },
   "lock_ttl_minutes": 90,
-  "_approval_note": "2026-10-11: human gate removed under Selvin's full-autonomy authorization (config/content-os.json autonomy.full_autonomy). All automated QA gates remain."
+  "_approval_note": "2026-10-11: human gate removed under Selvin's full-autonomy authorization (config/content-os.json autonomy.full_autonomy). All automated QA gates remain.",
+  "daily_verse": {
+    "instagram_post_type": "story",
+    "_note": "Daily BSB verse card. 'story' (default since 2026-10-16, DEC-JR-007) keeps it off the Reels grid; set 'post' to go back to a feed post. Buffer GraphQL supports metadata.instagram.type story (https://developers.buffer.com/types/PostType.html). Story cards render at 1080x1920 (BibleVerseStory), feed cards at 1080x1440 (BibleVersePost). YouTube is not used for verse cards."
+  }
 }

@@ -139,7 +139,7 @@ export function scriptToEpisode(script: Script): z.input<typeof EpisodeSchema> {
       bottomLogo: BRAND_ASSETS.bottomLogo,
     },
     audio: {
-      track: video.music ? resolveMusicFile(video.music.type) : "hallelujah.mp3",
+      track: resolveMusicFile(video.music?.type, video.title),
       volume: video.music?.volume ?? 1,
     },
     timing: {

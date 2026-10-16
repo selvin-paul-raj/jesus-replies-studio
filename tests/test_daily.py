@@ -16,11 +16,11 @@ UTC = dt.timezone.utc
 
 def ep(eid, title, hook, ref=("Psalm", 23, "1"), topic="fear", character="boy", emotion="sad"):
     return {"id": eid, "title": title, "character": character, "topic": topic, "emotion": emotion,
-            "bible": {"book": ref[0], "chapter": ref[1], "verse": ref[2], "version": "NIV", "text": VERSE},
+            "bible": {"book": ref[0], "chapter": ref[1], "verse": ref[2], "version": "BSB", "text": VERSE},
             "lines": [{"speaker": "person", "text": hook}, {"speaker": "jesus", "text": "I am here."}]}
 
 
-GOOD_PROBE = {"format": {"format_name": "mov,mp4,m4a", "duration": "77.4"},
+GOOD_PROBE = {"format": {"format_name": "mov,mp4,m4a", "duration": "58.4"},
               "streams": [{"codec_type": "video", "codec_name": "h264", "width": 1080, "height": 1920},
                           {"codec_type": "audio", "codec_name": "aac"}]}
 
@@ -42,7 +42,7 @@ class FakeBuffer:
         if out.kind == "OK":
             self.posts[out.post["id"]] = {"id": out.post["id"], "status": "draft", "dueAt": "2026-12-31T00:00:00.000Z",
                                          "text": text, "channelService": "instagram", "_asset_source": url,
-                                         "_duration_ms": 77400, "sentAt": None, "_has_sent_at_field": True}
+                                         "_duration_ms": 58400, "sentAt": None, "_has_sent_at_field": True}
         return out
 
     def schedule(self, pid, text, url, due):

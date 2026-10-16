@@ -1,9 +1,11 @@
 """Steps of the daily post system. Every step reads state first, moves it along one
 legal edge, records evidence, and stops at the first failure. External effects
-(subprocess, scripture fetch, ffprobe, HTTP, Buffer) are injectable for tests."""
+(subprocess, scripture lookup, ffprobe, HTTP, Buffer) are injectable for tests.
+Scripture is the public-domain Berean Standard Bible bundled at data/bible/bsb.json
+(scripts/daily/bsb.py); there is no network scripture source any more (DEC-JR-007)."""
 import datetime as dt, json, pathlib, re, subprocess, urllib.request
 from zoneinfo import ZoneInfo
-from . import states
+from . import states, bsb, safety
 from .redact import redact
 from .store import Store, now_iso, ID_RE
 
@@ -19,8 +21,8 @@ def _jr_num(name):
 def norm_text(s):
     s = (s or "").replace("\u201c", '"').replace("\u201d", '"').replace("\u2018", "'").replace("\u2019", "'")
     s = re.sub(r"\s+", " ", s).strip()
-    # Bible Gateway renders small-caps LORD as "Lord ," (a span before punctuation):
-    # whitespace before punctuation is markup, not wording (JR-0048 Psalm 4:8, 2026-10-11).
+    # Whitespace before punctuation is never wording (older scraped sources rendered small-caps
+    # LORD as "Lord ,"; JR-0048 Psalm 4:8, 2026-10-11).
     return re.sub(r"\s+([,.;:!?\u2019'\")])", r"\1", s)
 
 
@@ -53,6 +55,18 @@ BAIT_PATTERNS = (r"\bcomment (?:yes|amen|below)\b", r"\bin the comments\b", r"\b
                  r"\bdouble tap\b", r"\btag (?:a|the|someone|your)\b")
 
 
+RULES_V2_FROM = 64   # audit + deep-review rules (2026-10-16) apply to episodes written from JR-0064 on
+
+
+def new_rules(eid):
+    m = re.search(r"JR-(\d{4})", eid or "")
+    return bool(m) and int(m.group(1)) >= RULES_V2_FROM
+
+
+def held_for_review(st):
+    return (st.get("review") or {}).get("status") == "HELD_FOR_REVIEW"
+
+
 class Ctx:
     def __init__(self, root=".", rules=None, store=None, run_id="local", dry_run=False,
                  buffer=None, run=None, fetch_scripture=None, probe=None, http_get=None,
@@ -62,7 +76,7 @@ class Ctx:
         self.store = store or Store(root)
         self.run_id, self.dry_run, self.buffer, self.repo = run_id, dry_run, buffer, repo
         self.run = run or (lambda cmd, env=None: subprocess.run(cmd, capture_output=True, text=True, env=env))
-        self.fetch_scripture = fetch_scripture
+        self.fetch_scripture = fetch_scripture or bsb.lookup
         self.probe, self.http_get = probe, http_get
         self.now = now or (lambda: dt.datetime.now(dt.timezone.utc))
         self.log = lambda m: log(redact(m))
@@ -148,16 +162,35 @@ def originality(ctx, ep):
     return (not issues), sorted(set(issues))
 
 
+def estimated_seconds(stdout):
+    m = re.search(r"estimated_seconds=([0-9.]+)", stdout or "")
+    return float(m.group(1)) if m else None
+
+
+def words_budget(rules):
+    """Rough word budget for the target length: default timing is 2.3 words/s plus ~3 s of
+    end card and gaps (src/schema.ts TimingConfig). The validator's estimate is the real check."""
+    return int((rules["duration"]["target_seconds"][1] - 6) * 2.3)
+
+
 def brief(ctx, eid):
     """Authoring constraints for one slot. Writes no dialogue."""
     recent = sorted(corpus(ctx, exclude=eid), key=lambda e: _jr_num(e.get("id", "")) or 0)[-14:]
-    b = {"episode_id": eid, "schema": "generated/JR-0036.json (id,title,character,topic,emotion,bible{book,chapter,verse,version=NIV,text},lines[{speaker,text}])",
+    b = {"episode_id": eid, "schema": "generated/JR-0036.json (id,title,character,topic,emotion,bible{book,chapter,verse,version=BSB,text},lines[{speaker,text}])",
          "package_schema": "generated/JR-0036.package.json",
+         "honesty_line": safety.HONESTY_LINE,
+         "writer_rules": safety.WRITER_RULES,
          "avoid_titles": [e.get("title") for e in recent], "avoid_scripture": [ref_of(e) for e in recent if ref_of(e)],
          "avoid_hooks": [(e.get("lines") or [{}])[0].get("text") for e in recent],
          "recent_topics": [e.get("topic") for e in recent], "recent_emotions": [e.get("emotion") for e in recent],
          "duration_target_seconds": ctx.rules["duration"]["target_seconds"],
-         "scripture_rule": "NIV verbatim, verified against Bible Gateway; unverifiable -> BLOCKED"}
+         "duration_ceiling_seconds": ctx.rules["duration"]["ceiling_seconds"],
+         "duration_rule": (f"aim for {ctx.rules['duration']['target_seconds'][0]}-{ctx.rules['duration']['target_seconds'][1]} s "
+                           f"(about {words_budget(ctx.rules)} spoken words across all lines incl. the verse); the validator "
+                           f"estimates the length before rendering and rejects anything over {ctx.rules['duration']['ceiling_seconds']} s"),
+         "scripture_rule": ("Berean Standard Bible (BSB, public domain), version=\"BSB\", text copied verbatim from "
+                            "data/bible/bsb.json (get it with `python3 scripts/daily/jr_daily.py verse \"Psalm 23:1\"`); "
+                            "label it (BSB) in captions and descriptions; never NIV/ESV/NLT; unverifiable -> BLOCKED")}
     lp = ctx.root / "content-os/learnings.json"
     if lp.exists():               # feedback loop: analytics -> learnings -> every new brief
         L = json.loads(lp.read_text())
@@ -191,9 +224,16 @@ def step_validated(ctx, st):
     for f in ("title", "character", "topic", "emotion"):
         if not ep.get(f): probs.append(f"missing {f}")
     b = ep.get("bible") or {}
-    if b.get("version") != "NIV" or not b.get("text"): probs.append("scripture missing or not NIV")
+    if b.get("version") != bsb.VERSION or not b.get("text"): probs.append("scripture missing or not BSB")
     r = ctx.run(["npx", "tsx", "scripts/daily/validate-episode.ts", str(ctx.ep_path(eid))])
     if r.returncode != 0: probs.append(f"schema validator: {(r.stdout or r.stderr).strip()[-300:]}")
+    est = estimated_seconds(r.stdout)
+    d = ctx.rules["duration"]
+    if est is not None:
+        st["render_facts"]["estimated_seconds"] = est
+        if est > d["ceiling_seconds"]:
+            probs.append(f"estimated length {est:.1f}s is over the {d['ceiling_seconds']}s ceiling "
+                         f"(target {d['target_seconds'][0]}-{d['target_seconds'][1]}s); cut lines before rendering")
     ok, issues = originality(ctx, ep)
     if not ok: probs += [f"originality: {i}" for i in issues]
     if probs:
@@ -207,12 +247,12 @@ def step_validated(ctx, st):
         ctx.log(f"[scripture] fetch error {type(e).__name__}")
     if not fetched:
         st["validation"] = "BLOCKED"
-        return ctx.store.transition(st, "BLOCKED", f"scripture {ref} could not be verified (source unreadable); not rendering", ctx.run_id)
+        return ctx.store.transition(st, "BLOCKED", f"scripture {ref} not found in the bundled BSB text; not rendering", ctx.run_id)
     if norm_text(fetched).lower() != norm_text(b["text"]).lower():
         st["validation"] = "FAIL"
-        return ctx.store.transition(st, "VALIDATION_FAILED", f"scripture {ref} text does not match NIV source", ctx.run_id)
+        return ctx.store.transition(st, "VALIDATION_FAILED", f"scripture {ref} text does not match BSB source", ctx.run_id)
     st["validation"] = "PASS"
-    return ctx.store.transition(st, "VALIDATED", f"schema PASS, originality PASS, NIV {ref} verbatim match", ctx.run_id)
+    return ctx.store.transition(st, "VALIDATED", f"schema PASS, originality PASS, BSB {ref} verbatim match", ctx.run_id)
 
 
 def video_path(ctx, eid):
@@ -312,9 +352,9 @@ def step_package_qa(ctx, st):
         tags = pk["instagram_hashtags"] if isinstance(pk["instagram_hashtags"], list) else pk["instagram_hashtags"].split()
         if len(caption_text(pk)) > P["caption_max"]: probs.append("caption too long")
         if len(tags) != P["hashtag_count"]: probs.append(f"hashtag count {len(tags)}")
-        new_rules = int(eid[3:7]) >= 64  # audit rules (2026-10-16) apply to episodes written from JR-0064 on
-        if new_rules and re.search(r"(?:^|\s)#\w", pk["instagram_caption"]): probs.append("hashtags inside caption (they are added once from instagram_hashtags)")
-        if new_rules and any(re.search(b, pk["instagram_caption"], re.I) for b in BAIT_PATTERNS):
+        v2 = new_rules(eid)
+        if v2 and re.search(r"(?:^|\s)#\w", pk["instagram_caption"]): probs.append("hashtags inside caption (they are added once from instagram_hashtags)")
+        if v2 and any(re.search(b, pk["instagram_caption"], re.I) for b in BAIT_PATTERNS):
             probs.append("engagement bait in caption (Instagram downranks 'comment X / tag / type amen'); ask a real question instead")
         if len(pk["youtube_title"]) > P["youtube_title_max"]: probs.append("youtube title too long")
         if len(pk["youtube_description"]) > P["youtube_description_max"]: probs.append("youtube description too long")
@@ -325,14 +365,25 @@ def step_package_qa(ctx, st):
             probs.append(f"Bible reference {book} not in caption or description")
         others = set(re.findall(r"JR-\d{4}", json.dumps(pk))) - {eid}
         if others: probs.append(f"references other episodes {sorted(others)}")
+        crisis, found = safety.crisis_check(ep, pk)
+        lint = safety.jesus_lint(ep)
+        sp = safety.package_problems(pk, crisis=crisis)
+        if not v2:      # queued legacy packages are already in Buffer: only the crisis line is enforced
+            sp = [p for p in sp if p.startswith("crisis line")]
+        probs += sp
+        if (crisis or lint) and (st.get("review") or {}).get("status") != "RELEASED":
+            st["review"] = {"status": "HELD_FOR_REVIEW", "at": now_iso(), "crisis": found, "jesus_lines": lint,
+                            "why": "sensitive theme or a Jesus line that may promise an outcome / advise / add doctrine; "
+                                   "never auto-published (DEC-JR-007). Release: jr_daily.py release-review"}
     thumbs = sorted((ctx.root / "output/thumbnails").glob(f"{eid}-thumb.png")) or sorted((ctx.root / "output/thumbnails").glob(f"{eid}.png"))
     if not thumbs: probs.append("thumbnail image not rendered")
     if probs:
         st["package_qa"] = "FAIL"
         return ctx.store.transition(st, "PACKAGE_QA_FAILED", "; ".join(probs), ctx.run_id)
     st["package_qa"] = "PASS"
+    held = " HELD_FOR_REVIEW (crisis gate)" if held_for_review(st) else ""
     return ctx.store.transition(st, "PACKAGE_QA_PASSED", f"caption {len(caption_text(pk))} chars, 5 hashtags, "
-                                f"title {len(pk['youtube_title'])}, thumbnail {thumbs[0].name}", ctx.run_id)
+                                f"title {len(pk['youtube_title'])}, thumbnail {thumbs[0].name}, honesty line OK{held}", ctx.run_id)
 
 
 def http_range(url):
@@ -469,6 +520,9 @@ def auto_approve(ctx, st):
     distributor then schedules it into its reserved slot on Instagram and YouTube."""
     if ctx.rules.get("require_human_approval", True) or st["state"] != "WAITING_FOR_USER":
         return st
+    if held_for_review(st):
+        ctx.log(f"[approve] {st['episode_id']} is HELD_FOR_REVIEW (crisis gate); never auto-approved")
+        return st
     auth = standing_authorization(ctx)
     if not auth:
         ctx.log(f"[approve] {st['episode_id']} no standing authorization recorded; stays WAITING_FOR_USER")
@@ -491,6 +545,10 @@ def advance(ctx, eid):
                  ("RENDERED", step_render_qa), ("RENDER_QA_PASSED", step_packaged), ("PACKAGED", step_package_qa),
                  ("PACKAGE_QA_PASSED", step_hosted), ("ASSET_HOSTED", step_buffer_draft)]
         for want, fn in chain:
+            if held_for_review(st) and want == "PACKAGE_QA_PASSED":
+                ctx.log(f"[review] {eid} HELD_FOR_REVIEW {st['review'].get('crisis') or st['review'].get('jesus_lines')}; "
+                        "not hosted, not sent to Buffer; a READY spare fills its slot")
+                break
             if st["state"] == want:
                 before = st["state"]
                 st = fn(ctx, st)
@@ -714,7 +772,7 @@ def heal(ctx, st, max_attempts=3):
         return st, None
     action, reopen_to = None, None
     B = st["buffer"]
-    if s == "VALIDATION_FAILED" and "does not match NIV source" in last and "originality" not in last:
+    if s == "VALIDATION_FAILED" and "does not match BSB source" in last and "originality" not in last:
         ep = json.loads(ctx.ep_path(eid).read_text())
         try:
             fetched = ctx.fetch_scripture(ref_of(ep)) if ctx.fetch_scripture else None
@@ -726,9 +784,9 @@ def heal(ctx, st, max_attempts=3):
             ep["bible"]["text"] = fetched
             ctx.ep_path(eid).write_text(json.dumps(ep, indent=2, ensure_ascii=False) + "\n")
             _replace_in_package(ctx, eid, old, fetched)
-            action = f"scripture text for {ref_of(ep)} replaced with the NIV source wording (episode + package)"
+            action = f"scripture text for {ref_of(ep)} replaced with the BSB source wording (episode + package)"
     elif s == "BLOCKED" and st.get("validation") == "BLOCKED" and not B.get("post_id") and not B.get("pending_mutation"):
-        action, reopen_to = "scripture source was unreadable; retrying validation", "GENERATED"
+        action, reopen_to = "scripture lookup failed; retrying validation", "GENERATED"
     elif s in ("RENDER_FAILED", "RENDER_QA_FAILED"):
         if "duration" in last and "outside" in last:
             action = None            # dialogue is never trimmed automatically
@@ -752,10 +810,13 @@ def heal(ctx, st, max_attempts=3):
                 t = pk["youtube_title"].replace(" #Shorts", "")
                 t = t[:mx - 8].rsplit(" ", 1)[0] + " #Shorts"
                 pk["youtube_title"] = t; fixes.append("youtube title shortened")
+            if any(k in last for k in ("honesty line", "crisis line", "banned phrase")):
+                crisis, _ = safety.crisis_check(json.loads(ctx.ep_path(eid).read_text()), pk)
+                fixes += safety.fix_package(pk, crisis=crisis)
             if "Bible reference" in last:
                 ep = json.loads(ctx.ep_path(eid).read_text())
                 ref = ref_of(ep)
-                pk["youtube_description"] = pk.get("youtube_description", "") + f"\n\n{ref} (NIV)"
+                pk["youtube_description"] = pk.get("youtube_description", "") + f"\n\n{ref} (BSB)"
                 fixes.append(f"reference {ref} added to the description")
             if fixes:
                 p.write_text(json.dumps(pk, indent=2, ensure_ascii=False) + "\n")

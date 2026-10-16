@@ -7,7 +7,7 @@ import {
   BackgroundConfigSchema,
   FinalLogoConfigSchema,
 } from "../../src/schema";
-import { resolveBackgroundImage, resolveMusicFile, BRAND_ASSETS } from "../../src/assetResolver";
+import { resolveBackgroundImage, resolveTrack, BRAND_ASSETS } from "../../src/assetResolver";
 import { formatBibleRef } from "../../src/scriptAdapter";
 
 /**
@@ -137,7 +137,7 @@ export function buildEpisodeAndThumbnail(input: EpisodeInput) {
     title: input.title,
     background,
     audio: {
-      track: input.music?.track ?? (input.music?.type ? resolveMusicFile(input.music.type) : "audio/hallelujah.mp3"),
+      track: resolveTrack(input.music?.track, input.music?.type, input.id),
       volume: input.music?.volume,
     },
     styles: mergeStyles(input.styles),

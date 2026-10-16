@@ -21,20 +21,15 @@
     "full_autonomy": {
       "given": "2026-10-11 20:48 IST, Selvin in chat",
       "quote": "dont stop it continus complete automous running system i wnat it bi-weelky review it and enhance the content and enagament , qually and follow ups and crack chnaging algorthim of thsoe social medias build life long running system self correction , feeadbackloop system",
-      "effect": "human approval step removed: an episode that passes every automated gate (NIV verse validation, originality, render QA, package QA, hosting check, Buffer draft read-back) is approved and scheduled into its reserved slot on Instagram and YouTube without waiting for Selvin. Gates stay; failures self-heal (bounded) or the slot is filled from READY spares.",
-      "limits": "never spends money, never deletes published posts, never changes a Buffer plan; held_episodes stay held",
+      "effect": "human approval step removed: an episode that passes every automated gate (BSB verse verbatim check (NIV until 2026-10-16), originality, render QA, package QA, hosting check, Buffer draft read-back) is approved and scheduled into its reserved slot on Instagram and YouTube without waiting for Selvin. Gates stay; failures self-heal (bounded) or the slot is filled from READY spares.",
+      "limits": "never spends money, never deletes published posts, never changes a Buffer plan; held_episodes stay held; crisis-gate holds (episodes/<id>/state.json review.status HELD_FOR_REVIEW, DEC-JR-007) are never auto-approved or published",
       "decision": "content-os/DECISIONS.md DEC-JR-005"
     }
   },
   "coordination": "same_slot",
-  "initial_test_slots": [
-    "08:00",
-    "20:30"
-  ],
   "min_lead_minutes": 45,
   "publish_grace_minutes": 30,
-  "duration_ceiling_seconds": 90,
-  "duration_note": "90s is the Buffer Instagram Reels ceiling. The old 70-80s target is no longer an optimisation goal.",
+  "duration_note": "Duration lives only in config/publishing-rules.json duration (target 50-62 s, ceiling 75 s since 2026-10-16, DEC-JR-007). Buffer's 90 s Reels limit is no longer the working ceiling.",
   "held_episodes": {
     "JR-0035": "existing resource; not modified without explicit authorization",
     "JR-0036": "existing draft; not modified without explicit authorization"
@@ -111,7 +106,7 @@
     72,
     168
   ],
-  "slot_note": "TEST SLOTS chosen by Selvin on 2026-10-03 (08:00 vs 20:30 IST, same slot on Instagram and YouTube). Not 'best times' until account evidence is sufficient.",
+  "slot_note": "Slot times live only in config/publishing-rules.json slots (08:00 and 20:30 IST, same slot on Instagram and YouTube; test slots chosen by Selvin on 2026-10-03). Not 'best times' until account evidence is sufficient.",
   "scheduled_limit": {
     "instagram": 8,
     "youtube": 10,
@@ -131,5 +126,9 @@
       "to": "2026-10-01T00:00:00Z",
       "reason": "account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)"
     }
-  ]
+  ],
+  "analytics": {
+    "instagram_followers": 68,
+    "_note": "Stall line for content learning (scripts/content_os/strategy.py): an Instagram Reel whose reach is below this follower count is treated as a distribution stall and left out of content learning. Buffer does not expose follower totals, so update this from each Meta export (68 in the 2026-10-16 deep review)."
+  }
 }

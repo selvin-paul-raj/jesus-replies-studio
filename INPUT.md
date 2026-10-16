@@ -195,7 +195,7 @@ curated defaults.
 | `bible` | `{book, chapter, verse, version?, text}` (optional) | *(none)* | `chapter`/`verse` accept `number` or `string`; `text` is the full verse — the single source of truth |
 | `lines` | `EpisodeInputLine[]` (min 1) | — required | see below |
 | `styles` | partial per-speaker overrides (optional) | *(curated A defaults)* | any `SpeakerStyleSchema` field, per speaker (`person`/`jesus`/`verse`/`reference`/`engagement`); merged **on top of** the curated defaults (position/anchor never reset by a partial override) |
-| `music` | `{type?, track?, volume}` (optional) | `hallelujah.mp3` @ volume 1 | `type` resolves via `assetResolver.resolveMusicFile`; `track` is a direct `public/` path and wins if both given |
+| `music` | `{type?, track?, volume}` (optional) | original track rotated by episode id (`bgm-01..05.mp3`) @ volume 1 | `track` may name one of the licensed `audio/bgm-*.mp3` files; anything else falls back to the rotation (`public/audio/LICENSES.md`) |
 | `finalLogo` | partial `FinalLogoConfig` (optional) | `branding/follow.png`, "Stay with Jesus" / "Carry this with you" | any field overrides just that one; unlike A, this level always gets an end card |
 
 ### `lines[]` (`EpisodeInputLineSchema`)

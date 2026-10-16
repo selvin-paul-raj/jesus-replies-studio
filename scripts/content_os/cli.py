@@ -28,9 +28,27 @@ ROOT = pathlib.Path(os.environ.get("JR_ROOT", pathlib.Path(__file__).resolve().p
 OS_DIR = ROOT / "content-os"
 
 
+def review_holds(root=None):
+    """Episodes the crisis gate held for human review (episodes/<id>/state.json review.status)."""
+    out = {}
+    for p in sorted(pathlib.Path(root or ROOT).glob("episodes/JR-*/state.json")):
+        try:
+            r = json.loads(p.read_text()).get("review") or {}
+        except Exception:
+            continue
+        if r.get("status") == "HELD_FOR_REVIEW":
+            out[p.parent.name] = "crisis gate: held for human review (DEC-JR-007)"
+    return out
+
+
 def cfg_load():
     c = json.loads((ROOT / "config/content-os.json").read_text())
-    c["buffer"] = json.loads((ROOT / "config/publishing-rules.json").read_text())["buffer"]
+    rules = json.loads((ROOT / "config/publishing-rules.json").read_text())
+    c["buffer"] = rules["buffer"]
+    # one slot table (publishing-rules.json slots), ordered by time; nothing else defines slot times
+    c["slots"] = rules["slots"]
+    c["initial_test_slots"] = sorted(rules["slots"].values())
+    c["held_episodes"] = {**review_holds(), **(c.get("held_episodes") or {})}
     return c
 
 
@@ -155,7 +173,8 @@ def main():
     if a.cmd == "autopilot-targets":
         print(" ".join(autopilot().targets())); return 0
     if a.cmd in ("learn", "review"):
-        L = strategy.learnings(latest_snapshot()["rows"], attrs, now, exclude=cfg.get("analytics_exclude"))
+        L = strategy.learnings(latest_snapshot()["rows"], attrs, now, exclude=cfg.get("analytics_exclude"),
+                                followers=(cfg.get("analytics") or {}).get("instagram_followers"))
         strategy.write(ROOT, L)
         print(f"[learn] lean_towards={L['authoring_guidance']['lean_towards']} avoid={L['authoring_guidance']['avoid']}")
         if a.cmd == "review":
@@ -243,7 +262,8 @@ def main():
         for o in d.verify_all(ctx_for_factory(eps, pkgs, assets)):
             print(f"[verify] {o['episode_id']} {o['platform']} {o['state']} {o['post_id']}")
         try:
-            strategy.write(ROOT, strategy.learnings(snap["rows"], attrs, now, exclude=cfg.get("analytics_exclude")))
+            strategy.write(ROOT, strategy.learnings(snap["rows"], attrs, now, exclude=cfg.get("analytics_exclude"),
+                                followers=(cfg.get("analytics") or {}).get("instagram_followers")))
         except Exception as e:
             print(f"[learn] skipped: {type(e).__name__}: {e}")
         ap_ = autopilot()
