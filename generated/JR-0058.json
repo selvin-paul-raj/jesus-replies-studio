@@ -1,63 +1,63 @@
 {
- "id": "JR-0058",
- "title": "Jesus... I Said I Forgive Him So Why Does It Still Hurt?",
- "character": "girl",
- "topic": "said she forgave him but the hurt keeps returning every night",
- "emotion": "sad",
- "bible": {
-  "book": "Psalms",
-  "chapter": 147,
-  "verse": "3",
-  "version": "NIV",
-  "text": "He heals the brokenhearted and binds up their wounds."
- },
- "lines": [
-  {
-   "speaker": "person",
-   "text": "Jesus... I told him I forgave him. I meant it that day. 💔"
+  "id": "JR-0058",
+  "title": "Jesus... I Said I Forgive Him So Why Does It Still Hurt?",
+  "character": "girl",
+  "topic": "said she forgave him but the hurt keeps returning every night",
+  "emotion": "sad",
+  "bible": {
+    "book": "Psalms",
+    "chapter": 147,
+    "verse": "3",
+    "version": "BSB",
+    "text": "He heals the brokenhearted and binds up their wounds."
   },
-  {
-   "speaker": "person",
-   "text": "But every night the memory plays again like I never said it."
-  },
-  {
-   "speaker": "jesus",
-   "text": "Saying it once opened the door. Walking through it nightly is how the wound closes."
-  },
-  {
-   "speaker": "person",
-   "text": "So was my forgiveness fake? I still get angry when I remember."
-  },
-  {
-   "speaker": "jesus",
-   "text": "It wasn't fake. Forgiveness is a decision you keep making while the feeling catches up slowly."
-  },
-  {
-   "speaker": "person",
-   "text": "How many times do I have to forgive the same thing?"
-  },
-  {
-   "speaker": "jesus",
-   "text": "As many times as it returns. Not because he deserves it again, but because you deserve a heart that isn't carrying him everywhere."
-  },
-  {
-   "speaker": "person",
-   "text": "I just want one morning where it doesn't come with me."
-  },
-  {
-   "speaker": "jesus",
-   "text": "Tonight hand it to Me once more. I never tire of holding what's too heavy for you."
-  },
-  {
-   "speaker": "bible_verse"
-  },
-  {
-   "speaker": "jesus",
-   "text": "Healing isn't one moment. It's Me binding it tighter every night."
-  },
-  {
-   "speaker": "engagement",
-   "text": "What are you still forgiving on repeat? 🙏"
-  }
- ]
+  "lines": [
+    {
+      "speaker": "person",
+      "text": "Jesus... I told him I forgave him. I meant it that day. 💔"
+    },
+    {
+      "speaker": "person",
+      "text": "But every night the memory plays again like I never said it."
+    },
+    {
+      "speaker": "jesus",
+      "text": "Saying it once opened the door. Walking through it nightly is how the wound closes."
+    },
+    {
+      "speaker": "person",
+      "text": "So was my forgiveness fake? I still get angry when I remember."
+    },
+    {
+      "speaker": "jesus",
+      "text": "It wasn't fake. Forgiveness is a decision you keep making while the feeling catches up slowly."
+    },
+    {
+      "speaker": "person",
+      "text": "How many times do I have to forgive the same thing?"
+    },
+    {
+      "speaker": "jesus",
+      "text": "As many times as it returns. Not because he deserves it again, but because you deserve a heart that isn't carrying him everywhere."
+    },
+    {
+      "speaker": "person",
+      "text": "I just want one morning where it doesn't come with me."
+    },
+    {
+      "speaker": "jesus",
+      "text": "Tonight hand it to Me once more. I never tire of holding what's too heavy for you."
+    },
+    {
+      "speaker": "bible_verse"
+    },
+    {
+      "speaker": "jesus",
+      "text": "Healing isn't one moment. It's Me binding it tighter every night."
+    },
+    {
+      "speaker": "engagement",
+      "text": "What are you still forgiving on repeat? 🙏"
+    }
+  ]
 }

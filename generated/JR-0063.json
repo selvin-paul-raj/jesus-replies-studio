@@ -1,63 +1,63 @@
 {
- "id": "JR-0063",
- "title": "Jesus... I'm Always The One Who Texts First",
- "character": "girl",
- "topic": "she always texts first and wonders if anyone would notice if she stopped",
- "emotion": "sad",
- "bible": {
-  "book": "Isaiah",
-  "chapter": 49,
-  "verse": "15",
-  "version": "NIV",
-  "text": "“Can a mother forget the baby at her breast and have no compassion on the child she has borne? Though she may forget, I will not forget you!"
- },
- "lines": [
-  {
-   "speaker": "person",
-   "text": "Jesus... I'm always the one who texts first. What happens if I just stop? 💔"
+  "id": "JR-0063",
+  "title": "Jesus... I'm Always The One Who Texts First",
+  "character": "girl",
+  "topic": "she always texts first and wonders if anyone would notice if she stopped",
+  "emotion": "sad",
+  "bible": {
+    "book": "Isaiah",
+    "chapter": 49,
+    "verse": "15",
+    "version": "BSB",
+    "text": "“Can a woman forget her nursing child, or lack compassion for the son of her womb? Even if she could forget, I will not forget you!"
   },
-  {
-   "speaker": "person",
-   "text": "Yesterday I tried. Nobody checked on me. Twenty-four hours of nothing."
-  },
-  {
-   "speaker": "jesus",
-   "text": "You counted every hour, hoping someone would prove you matter. You never needed their proof."
-  },
-  {
-   "speaker": "person",
-   "text": "But does nobody noticing mean nobody loves me?"
-  },
-  {
-   "speaker": "jesus",
-   "text": "It means the people around you got comfortable being carried. Comfortable is not careless, but it still hurts."
-  },
-  {
-   "speaker": "person",
-   "text": "So do I keep initiating, or let the friendships shrink to what they give back?"
-  },
-  {
-   "speaker": "jesus",
-   "text": "Keep showing up, because that's who you are. But tell one friend the truth tonight: I miss being pursued too."
-  },
-  {
-   "speaker": "person",
-   "text": "What if I say it and still nothing changes?"
-  },
-  {
-   "speaker": "jesus",
-   "text": "Then hear this: I have pursued you every single day, and I have never once been too tired to text first."
-  },
-  {
-   "speaker": "bible_verse"
-  },
-  {
-   "speaker": "jesus",
-   "text": "You are carved somewhere no one can forget. Start there tonight."
-  },
-  {
-   "speaker": "engagement",
-   "text": "Who would notice if you went quiet? 💔"
-  }
- ]
+  "lines": [
+    {
+      "speaker": "person",
+      "text": "Jesus... I'm always the one who texts first. What happens if I just stop? 💔"
+    },
+    {
+      "speaker": "person",
+      "text": "Yesterday I tried. Nobody checked on me. Twenty-four hours of nothing."
+    },
+    {
+      "speaker": "jesus",
+      "text": "You counted every hour, hoping someone would prove you matter. You never needed their proof."
+    },
+    {
+      "speaker": "person",
+      "text": "But does nobody noticing mean nobody loves me?"
+    },
+    {
+      "speaker": "jesus",
+      "text": "It means the people around you got comfortable being carried. Comfortable is not careless, but it still hurts."
+    },
+    {
+      "speaker": "person",
+      "text": "So do I keep initiating, or let the friendships shrink to what they give back?"
+    },
+    {
+      "speaker": "jesus",
+      "text": "Keep showing up, because that's who you are. But tell one friend the truth tonight: I miss being pursued too."
+    },
+    {
+      "speaker": "person",
+      "text": "What if I say it and still nothing changes?"
+    },
+    {
+      "speaker": "jesus",
+      "text": "Then hear this: I have pursued you every single day, and I have never once been too tired to text first."
+    },
+    {
+      "speaker": "bible_verse"
+    },
+    {
+      "speaker": "jesus",
+      "text": "You are carved somewhere no one can forget. Start there tonight."
+    },
+    {
+      "speaker": "engagement",
+      "text": "Who would notice if you went quiet? 💔"
+    }
+  ]
 }
