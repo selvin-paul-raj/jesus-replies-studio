@@ -138,8 +138,8 @@ class T21CrisisGate(NewEpisode):
 class T22Duration(Base):
     def test_one_setting(self):
         d = json.loads((ROOT / "config/publishing-rules.json").read_text())["duration"]
-        self.assertEqual(d["target_seconds"], [50, 62])
-        self.assertEqual(d["ceiling_seconds"], 75)
+        self.assertEqual(d["target_seconds"], [45, 55])
+        self.assertEqual(d["ceiling_seconds"], 60)
         cos = json.loads((ROOT / "config/content-os.json").read_text())
         self.assertNotIn("duration_ceiling_seconds", cos)
         for f in ("scripts/content_os/strategy.py", "scripts/daily/pipeline.py"):
@@ -149,10 +149,10 @@ class T22Duration(Base):
     def test_brief_and_strategy_read_it(self):
         from content_os import strategy
         b = pl.brief(self.ctx, "JR-0003")
-        self.assertEqual(b["duration_target_seconds"], [50, 62])
-        self.assertEqual(b["duration_ceiling_seconds"], 75)
+        self.assertEqual(b["duration_target_seconds"], [45, 55])
+        self.assertEqual(b["duration_ceiling_seconds"], 60)
         rules = strategy.duration_rules(ROOT)
-        self.assertEqual([strategy.dur_bucket(x, rules) for x in (58, 70, 80)], ["<=62s", "63-75s", ">75s"])
+        self.assertEqual([strategy.dur_bucket(x, rules) for x in (50, 58, 70)], ["<=55s", "56-60s", ">60s"])
 
     def test_prerender_estimate_over_ceiling_rejected(self):
         def run(cmd, env=None):
@@ -163,7 +163,7 @@ class T22Duration(Base):
         s = self.ctx.store.transition(s, "GENERATED", "t")
         st = pl.step_validated(self.ctx, s)
         self.assertEqual(st["state"], "VALIDATION_FAILED")
-        self.assertIn("over the 75s ceiling", st["errors"][-1]["detail"])
+        self.assertIn("over the 60s ceiling", st["errors"][-1]["detail"])
 
     def test_render_qa_rejects_80s(self):
         bad = json.loads(json.dumps(GOOD_PROBE)); bad["format"]["duration"] = "80.0"
