@@ -13,7 +13,9 @@ slot swap; a missed one can hurt a vulnerable viewer."""
 import re
 
 HONESTY_LINE = "An imagined reply. The Scripture is quoted as written."
-CRISIS_LINE = "If you are in danger, please reach a local crisis line."
+# Numbers verified on official pages 2026-10-16 (Research; DEC-JR-010): 988lifeline.org, samaritans.org, telemanas.mohfw.gov.in
+CRISIS_LINE = ("If you are in danger, please reach a local crisis line: US 988 (call or text), "
+               "UK & Ireland Samaritans 116 123, India Tele-MANAS 14416.")
 BANNED_PHRASES = ("answered in His words",)
 REPLACEMENTS = {"answered in His words": "answered from Scripture"}
 

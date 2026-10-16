@@ -109,6 +109,11 @@ From the week of 2026-10-19, 2 of the 14 are **Real-question Friday** episodes b
 questions sent through the profile form (credit the question, never the person's name). Winners
 (top 10% by IG+YT score) get a "Part 2" follow-up within two weeks, counted inside the mix.
 
+## Research checks 2026-10-16 (content-os/research/research-faith-studio-checks-2026-10-16.md)
+- Crisis line (safety.CRISIS_LINE) now names US 988, Samaritans 116 123, Tele-MANAS 14416. Philippines NCMH 1553 and Nigeria Lagos Lifeline 070 0000 6463 are verified backups for audience-specific posts.
+- Trial Reels: Buffer composer supports them (not the API), and Instagram needs 200+ followers on a professional account. At 68 followers we are not eligible: post normal Reels; revisit at 200.
+- YouTube "Generic or repetitive content": each episode needs a distinct question and story, and outcomes must vary (no same-situation, same-outcome template). Variation rules are the top monetisation risk.
+
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
