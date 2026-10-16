@@ -37,7 +37,7 @@ trends and experiment readings in `content-os/reviews/`.
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-16T04:47Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-16T04:50Z from Buffer analytics, last 28 days, posts at least 48h old._
 
 - **instagram**: n=26, median views 1390, best 1907, saves per 1k reach 13.2
 - **youtube**: n=23, median views 319, best 1835, saves per 1k reach None
