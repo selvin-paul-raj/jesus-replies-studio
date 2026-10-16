@@ -11,11 +11,12 @@
   "duration": {
     "min_seconds": 3,
     "target_seconds": [
-      70,
-      80
+      50,
+      62
     ],
-    "ceiling_seconds": 90,
-    "auto_trim": false
+    "ceiling_seconds": 75,
+    "auto_trim": false,
+    "_note": "The ONLY duration setting. brief(), the pre-render estimate, render QA and the content OS learning buckets (scripts/content_os/strategy.py) all read it. Set 2026-10-16 (DEC-JR-007): 50-62 s target, 75 s hard ceiling."
   },
   "video": {
     "width": 1080,

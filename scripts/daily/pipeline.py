@@ -148,6 +148,17 @@ def originality(ctx, ep):
     return (not issues), sorted(set(issues))
 
 
+def estimated_seconds(stdout):
+    m = re.search(r"estimated_seconds=([0-9.]+)", stdout or "")
+    return float(m.group(1)) if m else None
+
+
+def words_budget(rules):
+    """Rough word budget for the target length: default timing is 2.3 words/s plus ~3 s of
+    end card and gaps (src/schema.ts TimingConfig). The validator's estimate is the real check."""
+    return int((rules["duration"]["target_seconds"][1] - 6) * 2.3)
+
+
 def brief(ctx, eid):
     """Authoring constraints for one slot. Writes no dialogue."""
     recent = sorted(corpus(ctx, exclude=eid), key=lambda e: _jr_num(e.get("id", "")) or 0)[-14:]
@@ -157,6 +168,10 @@ def brief(ctx, eid):
          "avoid_hooks": [(e.get("lines") or [{}])[0].get("text") for e in recent],
          "recent_topics": [e.get("topic") for e in recent], "recent_emotions": [e.get("emotion") for e in recent],
          "duration_target_seconds": ctx.rules["duration"]["target_seconds"],
+         "duration_ceiling_seconds": ctx.rules["duration"]["ceiling_seconds"],
+         "duration_rule": (f"aim for {ctx.rules['duration']['target_seconds'][0]}-{ctx.rules['duration']['target_seconds'][1]} s "
+                           f"(about {words_budget(ctx.rules)} spoken words across all lines incl. the verse); the validator "
+                           f"estimates the length before rendering and rejects anything over {ctx.rules['duration']['ceiling_seconds']} s"),
          "scripture_rule": "NIV verbatim, verified against Bible Gateway; unverifiable -> BLOCKED"}
     lp = ctx.root / "content-os/learnings.json"
     if lp.exists():               # feedback loop: analytics -> learnings -> every new brief
@@ -194,6 +209,13 @@ def step_validated(ctx, st):
     if b.get("version") != "NIV" or not b.get("text"): probs.append("scripture missing or not NIV")
     r = ctx.run(["npx", "tsx", "scripts/daily/validate-episode.ts", str(ctx.ep_path(eid))])
     if r.returncode != 0: probs.append(f"schema validator: {(r.stdout or r.stderr).strip()[-300:]}")
+    est = estimated_seconds(r.stdout)
+    d = ctx.rules["duration"]
+    if est is not None:
+        st["render_facts"]["estimated_seconds"] = est
+        if est > d["ceiling_seconds"]:
+            probs.append(f"estimated length {est:.1f}s is over the {d['ceiling_seconds']}s ceiling "
+                         f"(target {d['target_seconds'][0]}-{d['target_seconds'][1]}s); cut lines before rendering")
     ok, issues = originality(ctx, ep)
     if not ok: probs += [f"originality: {i}" for i in issues]
     if probs:

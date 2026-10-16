@@ -17,7 +17,8 @@ trends and experiment readings in `content-os/reviews/`.
   doctrine question.
 - **What stalls:** abstract or Bible-trivia questions (why did Peter sink, why was Jesus
   sleeping in the storm), "happy" resolutions, and episodes over ~78s (JR-0022 87s, JR-0023
-  83s, JR-0037 80s all underperformed). Target 50–65s; never exceed 90s.
+  83s, JR-0037 80s all underperformed). Target 50–62s; hard ceiling 75s (one setting:
+  `config/publishing-rules.json` duration; the validator rejects longer scripts before rendering).
 - **Saves/shares** are highest on comparison and heartbreak episodes (JR-0006, JR-0020):
   end with a line people want to keep or send to a friend.
 - **Slots:** 08:00 and 20:30 IST (EXP-002). On Instagram the night slot has the steadier

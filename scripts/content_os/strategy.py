@@ -14,10 +14,19 @@ MIN_AGE_H = 48
 AUTO_START, AUTO_END = "<!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->", "<!-- AUTO:END -->"
 
 
-def dur_bucket(d):
+def duration_rules(root=None):
+    """The one duration setting (config/publishing-rules.json duration). No second copy here."""
+    import os
+    root = pathlib.Path(root or os.environ.get("JR_ROOT") or pathlib.Path(__file__).resolve().parents[2])
+    return json.loads((root / "config/publishing-rules.json").read_text())["duration"]
+
+
+def dur_bucket(d, rules=None):
     if not d:
         return None
-    return "<=65s" if d <= 65 else ("66-78s" if d <= 78 else ">78s")
+    rules = rules or duration_rules()
+    hi, ceil = rules["target_seconds"][1], rules["ceiling_seconds"]
+    return f"<={hi}s" if d <= hi else (f"{hi + 1}-{ceil}s" if d <= ceil else f">{ceil}s")
 
 
 def slot_of(sent_at):
@@ -31,7 +40,7 @@ def excluded(sent_at, ranges):
 
 
 def rows_for(rows, attrs, now, exclude=None):
-    out = []
+    out, drules = [], duration_rules()
     for r in rows:
         if not (r.get("episode_id") and r.get("status") == "sent" and r.get("sent_at")):
             continue
@@ -49,7 +58,7 @@ def rows_for(rows, attrs, now, exclude=None):
                     "shares": m.get("shares"), "comments": m.get("comments"),
                     "avg_watch": m.get("averageTimeWatched"),
                     "slot": slot_of(r["sent_at"]), "emotion": a.get("emotion"), "character": a.get("character"),
-                    "hook_type": a.get("hook_type"), "duration": dur_bucket(a.get("duration")),
+                    "hook_type": a.get("hook_type"), "duration": dur_bucket(a.get("duration"), drules),
                     "bible_book": a.get("bible_book"), "theme": a.get("theme"), "hook": a.get("hook")})
     return out
 
