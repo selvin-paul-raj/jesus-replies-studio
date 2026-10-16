@@ -10,6 +10,11 @@ on:
 permissions:
   contents: write
 
+# One run at a time; never cancel a run that may be mid-push (DEC-JR-007).
+concurrency:
+  group: jr-build-bible-posts
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
