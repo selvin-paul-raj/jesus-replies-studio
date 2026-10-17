@@ -3842,6 +3842,20 @@
         },
         "observed_age_hours": 79.6,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "168h": {
+        "metrics": {
+          "reactions": 4,
+          "comments": 0,
+          "engagementRate": 21.74,
+          "views": 55,
+          "shares": 0,
+          "saves": 1,
+          "follows": 0,
+          "reach": 23
+        },
+        "observed_age_hours": 172.1,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -4451,6 +4465,20 @@
         },
         "observed_age_hours": 35.4,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "72h": {
+        "metrics": {
+          "reactions": 1,
+          "comments": 0,
+          "engagementRate": 6.67,
+          "views": 33,
+          "shares": 0,
+          "saves": 0,
+          "follows": 0,
+          "reach": 15
+        },
+        "observed_age_hours": 77.0,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -4645,7 +4673,22 @@
     "episode_id": null,
     "platform": "instagram",
     "sent_at": "2026-10-16T05:14:10.141Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 1,
+          "comments": 1,
+          "engagementRate": 18.18,
+          "views": 25,
+          "shares": 0,
+          "saves": 0,
+          "follows": 0,
+          "reach": 11
+        },
+        "observed_age_hours": 29.4,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "instagram:6acb1381b07d37ac979602ad": {
     "episode_id": "JR-0046",
@@ -4684,6 +4727,12 @@
     "episode_id": "JR-0048",
     "platform": "youtube",
     "sent_at": "2026-10-17T02:30:12.731Z",
+    "checkpoints": {}
+  },
+  "instagram:6ad307f58ac6cfe544305c03": {
+    "episode_id": null,
+    "platform": "instagram",
+    "sent_at": "2026-10-17T05:32:36.665Z",
     "checkpoints": {}
   }
 }
