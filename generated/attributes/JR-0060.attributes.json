@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0060",
+  "theme": "relatives asking when it is her turn at a family wedding",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... four aunties asked me the same question today: when is it my turn? 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "relatives asking when it is her turn at a family wedding",
+  "bible_theme": "Psalms 37:4",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question_plus_action",
+  "duration": 88.15,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0060/JR-0060.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

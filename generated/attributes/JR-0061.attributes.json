@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0061",
+  "theme": "no time for himself anymore, everything is for others",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I can't remember the last time I did something just for me. 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "no time for himself anymore, everything is for others",
+  "bible_theme": "Matthew 11:28",
+  "bible_book": "Matthew",
+  "cta_type": "comment_question_plus_action",
+  "duration": 80.79,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0061/JR-0061.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

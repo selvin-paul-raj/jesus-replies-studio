@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0046",
+  "theme": "father lost his job and still leaves every morning as if going to work",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "father lost his job and still leaves every morning as if going to work",
+  "bible_theme": "Psalms 46:1",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question_plus_action",
+  "duration": 75.99,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0046/JR-0046.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

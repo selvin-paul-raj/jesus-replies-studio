@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0056",
+  "theme": "her friend group made plans without her and she found out from a story",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "statement",
+  "hook": "Jesus... they all went out tonight. I found out from her story. 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "her friend group made plans without her and she found out from a story",
+  "bible_theme": "John 15:15",
+  "bible_book": "John",
+  "cta_type": "comment_question_plus_action",
+  "duration": 86.89,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0056/JR-0056.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

@@ -1,0 +1,716 @@
+{
+  "plan_version": 1,
+  "week_start": "2026-10-19",
+  "week_end": "2026-10-25",
+  "timezone": "Asia/Kolkata",
+  "generated_at": "2026-10-17T15:44:58.000Z",
+  "status": "PROPOSED",
+  "requires_authorization": false,
+  "targets": {
+    "unique_videos": 14,
+    "instagram": 14,
+    "youtube": 14,
+    "platform_publications": 28
+  },
+  "generation_needed": 1,
+  "carry_over_ready": [],
+  "inventory_counts": {
+    "PUBLISHED": 46,
+    "UNUSED": 3,
+    "READY": 13,
+    "SCHEDULED": 2
+  },
+  "analytics_summary": {
+    "instagram": {
+      "jr_posts_sent": 45,
+      "dimensions": {
+        "reach": {
+          "metric": "reach",
+          "n": 44,
+          "median": 1097.5,
+          "max": 2279
+        },
+        "retention": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "shares": {
+          "metric": "shares",
+          "n": 44,
+          "median": 4.0,
+          "max": 22
+        },
+        "saves": {
+          "metric": "saves",
+          "n": 44,
+          "median": 11.0,
+          "max": 66
+        },
+        "comments": {
+          "metric": "comments",
+          "n": 44,
+          "median": 0.0,
+          "max": 2
+        },
+        "follows": {
+          "metric": "follows",
+          "n": 44,
+          "median": 0.0,
+          "max": 0
+        },
+        "likes": {
+          "metric": "reactions",
+          "n": 44,
+          "median": 81.5,
+          "max": 282
+        },
+        "views": {
+          "metric": "views",
+          "n": 44,
+          "median": 1257.5,
+          "max": 2646
+        }
+      }
+    },
+    "youtube": {
+      "jr_posts_sent": 43,
+      "dimensions": {
+        "reach": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "retention": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "shares": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "saves": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "comments": {
+          "metric": "comments",
+          "n": 43,
+          "median": 0,
+          "max": 6
+        },
+        "follows": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "likes": {
+          "metric": "reactions",
+          "n": 43,
+          "median": 32,
+          "max": 401
+        },
+        "views": {
+          "metric": "views",
+          "n": 43,
+          "median": 314,
+          "max": 1940
+        }
+      }
+    }
+  },
+  "timing": {
+    "hypotheses": [
+      {
+        "platform": "instagram",
+        "window": "21:00-24:00",
+        "median": 1309.5,
+        "n": 4,
+        "metric": "reach",
+        "confidence": "low"
+      },
+      {
+        "platform": "youtube",
+        "window": "09:00-12:00",
+        "median": 62,
+        "n": 3,
+        "metric": "reactions",
+        "confidence": "low"
+      }
+    ],
+    "caveats": [
+      "metrics are cumulative and confounded by topic, hook and account momentum",
+      "Buffer reports no audience-activity-by-hour; Instagram/YouTube native insights are not wired",
+      "only posts at least 7 days old are compared so totals are roughly comparable"
+    ],
+    "coordination": "same_slot"
+  },
+  "research_ref": "content-os/research/2026-10-19.research.json",
+  "research_opportunities": [
+    "Festival-window belonging pain: being away from family or left out of friend-group plans while everyone posts celebrations; keep topics universal, never festival-specific.",
+    "Result/anxiety season: exam and job outcomes land mid-week for Indian students and young professionals.",
+    "Loneliness-in-a-crowd angle matches the Oct 2026 India surveys directly and fits the account's sad/confession register."
+  ],
+  "experiments_active": [
+    "EXP-001",
+    "EXP-002"
+  ],
+  "slots": [
+    {
+      "episode_id": "JR-0038",
+      "date": "2026-10-19",
+      "weekday": "Monday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-19T02:30:00.000Z",
+        "youtube": "2026-10-19T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "alone in the hostel during the festival holidays",
+      "hook_strategy": "statement",
+      "hook": "Jesus... everyone in my hostel went home for the holidays. I'm the only one left. 😔",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Psalms 25:16",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 77.4,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 77.4s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0054",
+      "date": "2026-10-19",
+      "weekday": "Monday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-19T15:00:00.000Z",
+        "youtube": "2026-10-19T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "comparing her career to her batchmates' online updates",
+      "hook_strategy": "statement",
+      "hook": "Jesus... everyone from my batch is doing better than me. Abroad, promoted, engaged. I'm still here.",
+      "emotional_angle": "neutral",
+      "character": "girl",
+      "bible_reference": "Galatians 6:4-5",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 65.56,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 65.56s)",
+        "emotion 'neutral' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0053",
+      "date": "2026-10-20",
+      "weekday": "Tuesday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-20T02:30:00.000Z",
+        "youtube": "2026-10-20T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "father in the ICU while he is stuck in another city",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... my father is in the ICU and I'm stuck in another city. The next train is tomorrow night. 😭",
+      "emotional_angle": "crying",
+      "character": "boy",
+      "bible_reference": "Isaiah 41:10",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "reflection_statement",
+      "duration_s": 69.85,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 69.85s)",
+        "emotion 'crying' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0052",
+      "date": "2026-10-20",
+      "weekday": "Tuesday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-20T15:00:00.000Z",
+        "youtube": "2026-10-20T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "boyfriend ended a three year relationship over text",
+      "hook_strategy": "statement",
+      "hook": "Jesus... he ended three years with one text. \"I think we want different things.\" That's it. 💔",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Psalms 34:18",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "reflection_statement",
+      "duration_s": 63.42,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 63.42s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0055",
+      "date": "2026-10-21",
+      "weekday": "Wednesday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-21T02:30:00.000Z",
+        "youtube": "2026-10-21T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "hiding betting app losses from his family",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I lost my savings on a betting app. My family has no idea. 😔",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Proverbs 28:13",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 65.58,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 65.58s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0056",
+      "date": "2026-10-21",
+      "weekday": "Wednesday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-21T15:00:00.000Z",
+        "youtube": "2026-10-21T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "her friend group made plans without her and she found out from a story",
+      "hook_strategy": "statement",
+      "hook": "Jesus... they all went out tonight. I found out from her story. 😔",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "John 15:15",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 86.89,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 86.89s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0057",
+      "date": "2026-10-22",
+      "weekday": "Thursday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-22T02:30:00.000Z",
+        "youtube": "2026-10-22T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "impostor fear the night before his first day at a new job",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I start the new job tomorrow. 😔",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Psalms 139:14",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 86.42,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 86.42s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0058",
+      "date": "2026-10-22",
+      "weekday": "Thursday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-22T15:00:00.000Z",
+        "youtube": "2026-10-22T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "said she forgave him but the hurt keeps returning every night",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I told him I forgave him. I meant it that day. 💔",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Psalms 147:3",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 75.93,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 75.93s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0059",
+      "date": "2026-10-23",
+      "weekday": "Friday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-23T02:30:00.000Z",
+        "youtube": "2026-10-23T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "waiting for tomorrow's result that decides his future",
+      "hook_strategy": "statement",
+      "hook": "Jesus... the result comes out tomorrow at ten. 😔",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Philippians 4:6",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 81.22,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 81.22s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0060",
+      "date": "2026-10-23",
+      "weekday": "Friday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-23T15:00:00.000Z",
+        "youtube": "2026-10-23T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "relatives asking when it is her turn at a family wedding",
+      "hook_strategy": "question",
+      "hook": "Jesus... four aunties asked me the same question today: when is it my turn? 😔",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Psalms 37:4",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 88.15,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 88.15s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0061",
+      "date": "2026-10-24",
+      "weekday": "Saturday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-24T02:30:00.000Z",
+        "youtube": "2026-10-24T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "no time for himself anymore, everything is for others",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I can't remember the last time I did something just for me. 😔",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Matthew 11:28",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 80.79,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:variant",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 80.79s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0062",
+      "date": "2026-10-24",
+      "weekday": "Saturday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-24T15:00:00.000Z",
+        "youtube": "2026-10-24T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "apologised to his father by text and the message was left on read",
+      "hook_strategy": "question",
+      "hook": "Jesus... I sent Dad a long apology last night. Why did he leave me on read? 😔",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Luke 15:20",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 86.89,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 86.89s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0063",
+      "date": "2026-10-25",
+      "weekday": "Sunday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-25T02:30:00.000Z",
+        "youtube": "2026-10-25T02:30:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": "she always texts first and wonders if anyone would notice if she stopped",
+      "hook_strategy": "question",
+      "hook": "Jesus... I'm always the one who texts first. What happens if I just stop? 💔",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Isaiah 49:15",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 85.01,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [
+        "EXP-001:control",
+        "EXP-002:slot1"
+      ],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 85.01s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0064",
+      "date": "2026-10-25",
+      "weekday": "Sunday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-25T15:00:00.000Z",
+        "youtube": "2026-10-25T15:00:00.000Z"
+      },
+      "slot_confidence": "low",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": null,
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [
+        "EXP-002:slot2"
+      ],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    }
+  ],
+  "plan_sha256": "a633702eaceceb8c5195ed98de03853ca346de06d32bb01fee57d8d9cfbc64ce"
+}

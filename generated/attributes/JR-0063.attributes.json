@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0063",
+  "theme": "she always texts first and wonders if anyone would notice if she stopped",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... I'm always the one who texts first. What happens if I just stop? 💔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "she always texts first and wonders if anyone would notice if she stopped",
+  "bible_theme": "Isaiah 49:15",
+  "bible_book": "Isaiah",
+  "cta_type": "comment_question_plus_action",
+  "duration": 85.01,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0063/JR-0063.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

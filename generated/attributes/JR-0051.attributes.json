@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0051",
+  "theme": "angry that a classmate who cheated got better marks",
+  "emotion": "angry",
+  "character": "boy",
+  "hook_type": "statement",
+  "hook": "Jesus... he cheated and still got higher marks than me. 😠",
+  "story_type": "one_pushback",
+  "audience_problem": "angry that a classmate who cheated got better marks",
+  "bible_theme": "Psalms 37:7",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question",
+  "duration": 45.99,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-c/JR-0051.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

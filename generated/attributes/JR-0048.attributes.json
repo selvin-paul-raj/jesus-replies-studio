@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0048",
+  "theme": "lying awake at night overthinking",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus... why does my mind get loud the moment I lie down? 😔",
+  "story_type": "one_pushback",
+  "audience_problem": "lying awake at night overthinking",
+  "bible_theme": "Proverbs 3:24",
+  "bible_book": "Proverbs",
+  "cta_type": "reflection_statement",
+  "duration": 48.26,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-c/JR-0048.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

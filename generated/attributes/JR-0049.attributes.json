@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0049",
+  "theme": "hurt a friend years ago and never apologised",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I hurt her, and I never said sorry. 😔",
+  "story_type": "one_pushback",
+  "audience_problem": "hurt a friend years ago and never apologised",
+  "bible_theme": "Romans 12:18",
+  "bible_book": "Romans",
+  "cta_type": "reflection_statement",
+  "duration": 45.61,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-c/JR-0049.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

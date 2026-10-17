@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0053",
+  "theme": "father in the ICU while he is stuck in another city",
+  "emotion": "crying",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... my father is in the ICU and I'm stuck in another city. The next train is tomorrow night. 😭",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "father in the ICU while he is stuck in another city",
+  "bible_theme": "Isaiah 41:10",
+  "bible_book": "Isaiah",
+  "cta_type": "reflection_statement",
+  "duration": 69.85,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0053/JR-0053.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

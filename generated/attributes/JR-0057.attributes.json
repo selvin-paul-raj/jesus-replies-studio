@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0057",
+  "theme": "impostor fear the night before his first day at a new job",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I start the new job tomorrow. 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "impostor fear the night before his first day at a new job",
+  "bible_theme": "Psalms 139:14",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question_plus_action",
+  "duration": 86.42,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0057/JR-0057.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

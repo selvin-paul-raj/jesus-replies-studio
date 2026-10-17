@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0062",
+  "theme": "apologised to his father by text and the message was left on read",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "question",
+  "hook": "Jesus... I sent Dad a long apology last night. Why did he leave me on read? 😔",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "apologised to his father by text and the message was left on read",
+  "bible_theme": "Luke 15:20",
+  "bible_book": "Luke",
+  "cta_type": "comment_question_plus_action",
+  "duration": 86.89,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0062/JR-0062.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

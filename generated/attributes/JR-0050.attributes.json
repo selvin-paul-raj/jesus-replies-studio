@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0050",
+  "theme": "always being the strong friend everyone leans on",
+  "emotion": "crying",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I'm the strong one for everyone, and I'm so tired. 😭",
+  "story_type": "one_pushback",
+  "audience_problem": "always being the strong friend everyone leans on",
+  "bible_theme": "Psalms 55:22",
+  "bible_book": "Psalms",
+  "cta_type": "reflection_statement",
+  "duration": 49.09,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-c/JR-0050.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

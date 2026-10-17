@@ -1,0 +1,35 @@
+{
+  "episode_id": "JR-0059",
+  "platforms": {
+    "instagram": {
+      "state": "SCHEDULED",
+      "post_id": "6ad39807938409f1d091c650",
+      "due_at": "2026-10-23T02:30:00.000Z",
+      "sent_at": null,
+      "external_link": null,
+      "pending_mutation": null,
+      "attempts": 1,
+      "error": null,
+      "history": [
+        {
+          "at": "2026-10-17T15:44:58.000Z",
+          "from": "NONE",
+          "to": "SCHEDULED",
+          "run": "39046397124",
+          "evidence": "create_scheduled read back: scheduled 2026-10-23T02:30:00.000Z"
+        }
+      ]
+    },
+    "youtube": {
+      "state": "NONE",
+      "post_id": null,
+      "due_at": null,
+      "sent_at": null,
+      "external_link": null,
+      "pending_mutation": null,
+      "attempts": 0,
+      "error": null,
+      "history": []
+    }
+  }
+}
