@@ -2,11 +2,11 @@
   "episode_id": "JR-0049",
   "platforms": {
     "instagram": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6acb15b3b07d37ac979630b1",
       "due_at": "2026-10-17T15:00:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-10-17T15:04:56.721Z",
+      "external_link": "https://www.instagram.com/reel/DemYolslKQp/",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -24,6 +24,20 @@
           "to": "SCHEDULED",
           "run": "38479393538",
           "evidence": "schedule_draft read back: scheduled 2026-10-17T15:00:00.000Z"
+        },
+        {
+          "at": "2026-10-17T15:29:18.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "39045245677",
+          "evidence": "read 6acb15b3b07d37ac979630b1: status sent at 2026-10-17T15:04:56.721Z"
+        },
+        {
+          "at": "2026-10-17T15:29:18.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "39045245677",
+          "evidence": "permalink http=200 metricsUpdatedAt=2026-10-11T04:50:59.803Z"
         }
       ],
       "last_read_error": {
@@ -32,11 +46,11 @@
       }
     },
     "youtube": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6accf999d38ece527cc09183",
       "due_at": "2026-10-17T15:00:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-10-17T15:02:07.020Z",
+      "external_link": "https://www.youtube.com/shorts/yGG3KjZSFYY",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -47,6 +61,20 @@
           "to": "SCHEDULED",
           "run": "38268858847",
           "evidence": "create_scheduled read back: scheduled 2026-10-17T15:00:00.000Z"
+        },
+        {
+          "at": "2026-10-17T15:29:18.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "39045245677",
+          "evidence": "read 6accf999d38ece527cc09183: status sent at 2026-10-17T15:02:07.020Z"
+        },
+        {
+          "at": "2026-10-17T15:29:18.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "39045245677",
+          "evidence": "permalink http=200"
         }
       ],
       "last_read_error": {
