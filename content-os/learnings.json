@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-16T21:02:55.275064+00:00",
+  "as_of": "2026-10-17T01:26:49.777994+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -13,7 +13,7 @@
         "JR-0009"
       ],
       "stall_rate": 0.15,
-      "median_views": 1455.5,
+      "median_views": 1457.0,
       "max_views": 1907,
       "saves_per_1k_reach_median": 14.5,
       "avg_watch_time_available": false,
@@ -21,7 +21,7 @@
         "slot": {
           "morning (06-12 IST)": {
             "n": 11,
-            "median_views": 1460
+            "median_views": 1463
           },
           "night (18-24 IST)": {
             "n": 11,
@@ -65,7 +65,7 @@
         },
         {
           "episode_id": "JR-0040",
-          "views": 1652,
+          "views": 1656,
           "saves": 12,
           "shares": 3,
           "theme": "hearing parents fight at night",
@@ -76,7 +76,7 @@
         },
         {
           "episode_id": "JR-0021",
-          "views": 1646,
+          "views": 1649,
           "saves": 22,
           "shares": 13,
           "theme": "contentment",
@@ -125,7 +125,7 @@
         },
         {
           "episode_id": "JR-0043",
-          "views": 584,
+          "views": 591,
           "theme": "best friend moved abroad and they are drifting apart",
           "emotion": "sad",
           "hook": "Jesus... why does it feel like my best friend has a whole new life without me?",
@@ -282,7 +282,7 @@
         },
         "crying": {
           "n": 3,
-          "median_score": 0.45
+          "median_score": 0.462
         },
         "happy": {
           "n": 2,
@@ -302,7 +302,7 @@
         },
         "sad": {
           "n": 8,
-          "median_score": 0.659
+          "median_score": 0.653
         },
         "worried": {
           "n": 5,
@@ -366,7 +366,7 @@
         },
         "2 Timothy": {
           "n": 1,
-          "median_score": 0.776
+          "median_score": 0.764
         },
         "Ecclesiastes": {
           "n": 1,
@@ -422,7 +422,7 @@
         },
         "Ruth": {
           "n": 1,
-          "median_score": 0.45
+          "median_score": 0.462
         }
       }
     },
@@ -447,7 +447,7 @@
         "episode_id": "JR-0040",
         "score": 0.842,
         "views": {
-          "instagram": 1652,
+          "instagram": 1656,
           "youtube": 1196
         },
         "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔"
@@ -456,14 +456,14 @@
         "episode_id": "JR-0032",
         "score": 0.792,
         "views": {
-          "instagram": 1587,
+          "instagram": 1592,
           "youtube": 1477
         },
         "hook": "Jesus, is it wrong that I feel this proud?"
       },
       {
         "episode_id": "JR-0034",
-        "score": 0.776,
+        "score": 0.764,
         "views": {
           "instagram": 1510,
           "youtube": 1675
@@ -476,7 +476,7 @@
     "lean_towards": [],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1460 (n=11), night (18-24 IST) 1333 (n=11)",
+      "instagram slot medians: morning (06-12 IST) 1463 (n=11), night (18-24 IST) 1333 (n=11)",
       "youtube slot medians: morning (06-12 IST) 529 (n=11), night (18-24 IST) 298 (n=13)",
       "instagram: 4 of 26 Reels stalled (reach under 68 followers) and were left out of content learning: JR-0042, JR-0041, JR-0033, JR-0009",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only",
@@ -485,9 +485,9 @@
     "top_hooks_to_learn_from": [
       "JR-0041 score 1.00 (youtube 1925 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
       "JR-0042 score 0.91 (youtube 1483 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0040 score 0.84 (instagram 1652, youtube 1196 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
-      "JR-0032 score 0.79 (instagram 1587, youtube 1477 views): Jesus, is it wrong that I feel this proud?",
-      "JR-0034 score 0.78 (instagram 1510, youtube 1675 views): Jesus, what if I stopped believing tomorrow?"
+      "JR-0040 score 0.84 (instagram 1656, youtube 1196 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
+      "JR-0032 score 0.79 (instagram 1592, youtube 1477 views): Jesus, is it wrong that I feel this proud?",
+      "JR-0034 score 0.76 (instagram 1510, youtube 1675 views): Jesus, what if I stopped believing tomorrow?"
     ]
   }
 }
