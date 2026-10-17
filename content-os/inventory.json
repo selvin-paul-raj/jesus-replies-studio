@@ -2,25 +2,16 @@
   "counts": {
     "PUBLISHED": 46,
     "UNUSED": 3,
-    "READY": 13,
-    "SCHEDULED": 2
+    "SCHEDULED": 11,
+    "READY": 4
   },
   "next_ready": [
-    "JR-0038",
-    "JR-0052",
-    "JR-0053",
-    "JR-0054",
-    "JR-0055",
-    "JR-0056",
-    "JR-0057",
-    "JR-0058",
-    "JR-0059",
     "JR-0060",
     "JR-0061",
     "JR-0062",
     "JR-0063"
   ],
-  "ready_total": 13,
+  "ready_total": 4,
   "items": [
     {
       "episode_id": "JR-0001",
@@ -581,11 +572,11 @@
     },
     {
       "episode_id": "JR-0038",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "SCHEDULED",
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0038/JR-0038.mp4",
       "duration_s": 77.4,
@@ -782,11 +773,11 @@
     },
     {
       "episode_id": "JR-0052",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "DRAFT",
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0052/JR-0052.mp4",
       "duration_s": 63.42,
@@ -794,11 +785,11 @@
     },
     {
       "episode_id": "JR-0053",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "DRAFT",
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0053/JR-0053.mp4",
       "duration_s": 69.85,
@@ -806,11 +797,11 @@
     },
     {
       "episode_id": "JR-0054",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "DRAFT",
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0054/JR-0054.mp4",
       "duration_s": 65.56,
@@ -818,11 +809,11 @@
     },
     {
       "episode_id": "JR-0055",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "DRAFT",
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0055/JR-0055.mp4",
       "duration_s": 65.58,
@@ -830,11 +821,11 @@
     },
     {
       "episode_id": "JR-0056",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "DRAFT",
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0056/JR-0056.mp4",
       "duration_s": 86.89,
@@ -842,11 +833,11 @@
     },
     {
       "episode_id": "JR-0057",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "DRAFT",
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0057/JR-0057.mp4",
       "duration_s": 86.42,
@@ -854,11 +845,11 @@
     },
     {
       "episode_id": "JR-0058",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "DRAFT",
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0058/JR-0058.mp4",
       "duration_s": 75.93,
@@ -866,10 +857,10 @@
     },
     {
       "episode_id": "JR-0059",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=SCHEDULED, youtube=NONE",
       "platforms": {
-        "instagram": "NONE",
+        "instagram": "SCHEDULED",
         "youtube": "NONE"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0059/JR-0059.mp4",
@@ -879,9 +870,9 @@
     {
       "episode_id": "JR-0060",
       "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "why": "instagram=DRAFT, youtube=NONE",
       "platforms": {
-        "instagram": "NONE",
+        "instagram": "DRAFT",
         "youtube": "NONE"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0060/JR-0060.mp4",
@@ -891,9 +882,9 @@
     {
       "episode_id": "JR-0061",
       "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "why": "instagram=DRAFT, youtube=NONE",
       "platforms": {
-        "instagram": "NONE",
+        "instagram": "DRAFT",
         "youtube": "NONE"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0061/JR-0061.mp4",
@@ -903,9 +894,9 @@
     {
       "episode_id": "JR-0062",
       "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "why": "instagram=DRAFT, youtube=NONE",
       "platforms": {
-        "instagram": "NONE",
+        "instagram": "DRAFT",
         "youtube": "NONE"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0062/JR-0062.mp4",
@@ -915,9 +906,9 @@
     {
       "episode_id": "JR-0063",
       "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "why": "instagram=DRAFT, youtube=NONE",
       "platforms": {
-        "instagram": "NONE",
+        "instagram": "DRAFT",
         "youtube": "NONE"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0063/JR-0063.mp4",
@@ -925,5 +916,5 @@
       "published_on": []
     }
   ],
-  "as_of": "2026-10-17T15:44:58.181821+00:00"
+  "as_of": "2026-10-17T20:32:38.162595+00:00"
 }
