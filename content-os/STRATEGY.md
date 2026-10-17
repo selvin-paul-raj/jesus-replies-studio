@@ -117,11 +117,11 @@ questions sent through the profile form (credit the question, never the person's
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-17T01:26Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-17T04:19Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=22, median views 1457, best 1907, saves per 1k reach 14.5, stalled 4 (excluded)
+- **instagram**: n=23, median views 1451, best 1907, saves per 1k reach 14.6, stalled 3 (excluded)
 - **youtube**: n=24, median views 351, best 1925, saves per 1k reach None, stalled 0 (excluded)
-- **episodes scored** (IG + YT percentile): 25, 21 with both platforms
+- **episodes scored** (IG + YT percentile): 26, 21 with both platforms
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
@@ -133,13 +133,13 @@ _Last computed 2026-10-17T01:26Z from Buffer analytics, last 28 days, posts at l
 - JR-0041 score 1.00 (youtube 1925 views): Jesus... I said yes again. I didn't want to. I never do. 😔
 - JR-0042 score 0.91 (youtube 1483 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔
 - JR-0040 score 0.84 (instagram 1656, youtube 1196 views): Jesus... why do my parents only fight when they think I'm asleep? 😔
-- JR-0032 score 0.79 (instagram 1592, youtube 1477 views): Jesus, is it wrong that I feel this proud?
-- JR-0034 score 0.76 (instagram 1510, youtube 1675 views): Jesus, what if I stopped believing tomorrow?
+- JR-0032 score 0.80 (instagram 1592, youtube 1477 views): Jesus, is it wrong that I feel this proud?
+- JR-0034 score 0.77 (instagram 1510, youtube 1675 views): Jesus, what if I stopped believing tomorrow?
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1463 (n=11), night (18-24 IST) 1333 (n=11)
+- instagram slot medians: morning (06-12 IST) 1457 (n=12), night (18-24 IST) 1333 (n=11)
 - youtube slot medians: morning (06-12 IST) 529 (n=11), night (18-24 IST) 298 (n=13)
-- instagram: 4 of 26 Reels stalled (reach under 68 followers) and were left out of content learning: JR-0042, JR-0041, JR-0033, JR-0009
+- instagram: 3 of 26 Reels stalled (reach under 68 followers) and were left out of content learning: JR-0042, JR-0041, JR-0033
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
