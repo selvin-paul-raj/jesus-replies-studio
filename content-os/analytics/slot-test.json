@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T01:25:14.441363+00:00",
+  "as_of": "2026-10-18T04:25:40.801945+00:00",
   "slots": [
     "08:00",
     "20:30"
@@ -12,17 +12,40 @@
   "platforms": {
     "instagram": {
       "n_7d": {
-        "08:00": 8,
+        "08:00": 9,
         "20:30": 6
       },
       "verdict": "insufficient data"
     },
     "youtube": {
       "n_7d": {
-        "08:00": 6,
+        "08:00": 7,
         "20:30": 10
       },
-      "verdict": "insufficient data"
+      "medians_7d": {
+        "views": {
+          "08:00": 311,
+          "20:30": 85.5
+        },
+        "comments": {
+          "08:00": 0,
+          "20:30": 0.0
+        },
+        "likes": {
+          "08:00": 22,
+          "20:30": 11.5
+        },
+        "engagement_rate": {
+          "08:00": 13.39,
+          "20:30": 12.535
+        }
+      },
+      "ahead_on": {
+        "views": "08:00",
+        "likes": "08:00",
+        "engagement_rate": "08:00"
+      },
+      "verdict": "current evidence suggests 08:00 ahead on views, 08:00 ahead on likes, 08:00 ahead on engagement_rate"
     }
   }
 }

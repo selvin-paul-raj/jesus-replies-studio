@@ -1,17 +1,18 @@
 {
-  "as_of": "2026-10-18T01:25:14.441363+00:00",
+  "as_of": "2026-10-18T04:25:40.801945+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
     "instagram": {
       "n": 23,
-      "n_stalled": 3,
+      "n_stalled": 4,
       "stalled": [
+        "JR-0046",
         "JR-0042",
         "JR-0041",
         "JR-0033"
       ],
-      "stall_rate": 0.12,
+      "stall_rate": 0.15,
       "median_views": 1467,
       "max_views": 2251,
       "saves_per_1k_reach_median": 14.6,
@@ -134,19 +135,19 @@
       ]
     },
     "youtube": {
-      "n": 24,
+      "n": 25,
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 319.0,
+      "median_views": 324,
       "max_views": 1940,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 11,
-            "median_views": 532
+            "n": 12,
+            "median_views": 753.5
           },
           "night (18-24 IST)": {
             "n": 13,
@@ -200,13 +201,13 @@
           "duration": "56-60s"
         },
         {
-          "episode_id": "JR-0040",
-          "views": 1201,
+          "episode_id": "JR-0046",
+          "views": 1315,
           "saves": null,
           "shares": null,
-          "theme": "hearing parents fight at night",
+          "theme": "father lost his job and still leaves every morning as if going to work",
           "emotion": "sad",
-          "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔",
+          "hook": "Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
           "slot": "morning (06-12 IST)",
           "duration": ">60s"
         }
@@ -270,22 +271,22 @@
   "stall_rule": "Instagram reach < followers (68) = stalled, excluded from content learning",
   "scoring": "mean of Instagram and YouTube view percentiles where data exists",
   "content": {
-    "n_episodes": 26,
+    "n_episodes": 27,
     "both_platforms": 21,
-    "median_score": 0.516,
+    "median_score": 0.5,
     "by_dimension": {
       "emotion": {
         "angry": {
           "n": 1,
-          "median_score": 0.607
+          "median_score": 0.6
         },
         "crying": {
           "n": 3,
-          "median_score": 0.458
+          "median_score": 0.451
         },
         "happy": {
           "n": 2,
-          "median_score": 0.497
+          "median_score": 0.494
         },
         "heartbroken": {
           "n": 1,
@@ -293,49 +294,49 @@
         },
         "neutral": {
           "n": 4,
-          "median_score": 0.5625
+          "median_score": 0.5465
         },
         "sad": {
-          "n": 10,
-          "median_score": 0.5529999999999999
+          "n": 11,
+          "median_score": 0.573
         },
         "worried": {
           "n": 5,
-          "median_score": 0.438
+          "median_score": 0.422
         }
       },
       "character": {
         "boy": {
-          "n": 13,
-          "median_score": 0.51
+          "n": 14,
+          "median_score": 0.5085
         },
         "girl": {
           "n": 13,
-          "median_score": 0.522
+          "median_score": 0.5
         }
       },
       "hook_type": {
         "confession_statement": {
-          "n": 6,
-          "median_score": 0.538
+          "n": 7,
+          "median_score": 0.573
         },
         "question": {
           "n": 20,
-          "median_score": 0.516
+          "median_score": 0.499
         }
       },
       "duration": {
         "56-60s": {
           "n": 7,
-          "median_score": 0.536
+          "median_score": 0.527
         },
         "<=55s": {
           "n": 3,
-          "median_score": 0.531
+          "median_score": 0.517
         },
         ">60s": {
-          "n": 13,
-          "median_score": 0.495
+          "n": 14,
+          "median_score": 0.4955
         }
       },
       "bible_book": {
@@ -345,27 +346,27 @@
         },
         "1 John": {
           "n": 1,
-          "median_score": 0.51
+          "median_score": 0.498
         },
         "1 Peter": {
           "n": 1,
-          "median_score": 0.776
+          "median_score": 0.778
         },
         "2 Corinthians": {
           "n": 1,
-          "median_score": 0.235
+          "median_score": 0.232
         },
         "2 Timothy": {
           "n": 1,
-          "median_score": 0.762
+          "median_score": 0.763
         },
         "Ecclesiastes": {
           "n": 1,
-          "median_score": 0.603
+          "median_score": 0.593
         },
         "Ephesians": {
           "n": 1,
-          "median_score": 0.607
+          "median_score": 0.6
         },
         "Galatians": {
           "n": 2,
@@ -373,51 +374,51 @@
         },
         "Genesis": {
           "n": 2,
-          "median_score": 0.541
+          "median_score": 0.537
         },
         "Hebrews": {
           "n": 1,
-          "median_score": 0.176
+          "median_score": 0.17
         },
         "Isaiah": {
           "n": 3,
-          "median_score": 0.822
+          "median_score": 0.805
         },
         "James": {
           "n": 1,
-          "median_score": 0.482
+          "median_score": 0.466
         },
         "John": {
           "n": 1,
-          "median_score": 0.53
+          "median_score": 0.515
         },
         "Joshua": {
           "n": 1,
-          "median_score": 0.531
+          "median_score": 0.517
         },
         "Lamentations": {
           "n": 1,
-          "median_score": 0.536
+          "median_score": 0.527
         },
         "Micah": {
           "n": 1,
-          "median_score": 0.522
+          "median_score": 0.5
         },
         "Philippians": {
           "n": 1,
-          "median_score": 0.495
+          "median_score": 0.491
         },
         "Proverbs": {
           "n": 2,
-          "median_score": 0.428
+          "median_score": 0.4135
         },
         "Psalms": {
-          "n": 2,
-          "median_score": 0.3725
+          "n": 3,
+          "median_score": 0.573
         },
         "Ruth": {
           "n": 1,
-          "median_score": 0.458
+          "median_score": 0.451
         }
       }
     },
@@ -432,7 +433,7 @@
       },
       {
         "episode_id": "JR-0042",
-        "score": 0.913,
+        "score": 0.917,
         "views": {
           "youtube": 1502
         },
@@ -447,22 +448,21 @@
         "hook": "Jesus... why did God create that tree? The one with the knowledge of good and evil? 🤔"
       },
       {
+        "episode_id": "JR-0046",
+        "score": 0.833,
+        "views": {
+          "youtube": 1315
+        },
+        "hook": "Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔"
+      },
+      {
         "episode_id": "JR-0040",
-        "score": 0.822,
+        "score": 0.805,
         "views": {
           "instagram": 1659,
           "youtube": 1201
         },
         "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔"
-      },
-      {
-        "episode_id": "JR-0032",
-        "score": 0.776,
-        "views": {
-          "instagram": 1597,
-          "youtube": 1478
-        },
-        "hook": "Jesus, is it wrong that I feel this proud?"
       }
     ]
   },
@@ -471,17 +471,17 @@
     "avoid": [],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1460 (n=12), night (18-24 IST) 1516 (n=11)",
-      "youtube slot medians: morning (06-12 IST) 532 (n=11), night (18-24 IST) 154 (n=13)",
-      "instagram: 3 of 26 Reels stalled (reach under 68 followers) and were left out of content learning: JR-0042, JR-0041, JR-0033",
+      "youtube slot medians: morning (06-12 IST) 754 (n=12), night (18-24 IST) 154 (n=13)",
+      "instagram: 4 of 27 Reels stalled (reach under 68 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
     ],
     "top_hooks_to_learn_from": [
       "JR-0041 score 1.00 (youtube 1940 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0042 score 0.91 (youtube 1502 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0042 score 0.92 (youtube 1502 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
       "JR-0011 score 0.86 (instagram 1707 views): Jesus... why did God create that tree? The one with the knowledge of good and evil? 🤔",
-      "JR-0040 score 0.82 (instagram 1659, youtube 1201 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
-      "JR-0032 score 0.78 (instagram 1597, youtube 1478 views): Jesus, is it wrong that I feel this proud?"
+      "JR-0046 score 0.83 (youtube 1315 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0040 score 0.81 (instagram 1659, youtube 1201 views): Jesus... why do my parents only fight when they think I'm asleep? 😔"
     ]
   }
 }
