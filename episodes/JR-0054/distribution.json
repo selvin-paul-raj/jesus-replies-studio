@@ -20,7 +20,7 @@
         }
       ],
       "last_read_error": {
-        "at": "2026-10-18T04:49:30.000Z",
+        "at": "2026-10-18T04:52:41.000Z",
         "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
       }
     },
@@ -43,8 +43,8 @@
         }
       ],
       "last_read_error": {
-        "at": "2026-10-18T04:49:30.000Z",
-        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
+        "at": "2026-10-18T04:52:41.000Z",
+        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"15m\"}}]"
       }
     }
   }
