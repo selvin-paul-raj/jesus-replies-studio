@@ -128,8 +128,8 @@
     }
   ],
   "analytics": {
-    "instagram_followers": 68,
-    "_note": "Stall line for content learning (scripts/content_os/strategy.py): an Instagram Reel whose reach is below this follower count is treated as a distribution stall and left out of content learning. Buffer does not expose follower totals, so update this from each Meta export (68 in the 2026-10-16 deep review)."
+    "instagram_followers": 88,
+    "_note": "Stall line for content learning (scripts/content_os/strategy.py): an Instagram Reel whose reach is below this follower count is treated as a distribution stall and left out of content learning. Buffer does not expose follower totals, so update this from each Meta export (68 in the 2026-10-16 deep review; 88 on the public profile 2026-10-18 growth review)."
   },
   "weekly_mix": {
     "_note": "Master plan 2026-10-16 section 3.3 (DEC-JR-008); 14 episodes/week",
