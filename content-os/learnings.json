@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T04:52:41.493112+00:00",
+  "as_of": "2026-10-18T10:58:49.315713+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -268,7 +268,7 @@
       "reason": "account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)"
     }
   ],
-  "stall_rule": "Instagram reach < followers (68) = stalled, excluded from content learning",
+  "stall_rule": "Instagram reach < followers (88) = stalled, excluded from content learning",
   "scoring": "mean of Instagram and YouTube view percentiles where data exists",
   "content": {
     "n_episodes": 27,
@@ -472,7 +472,7 @@
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1460 (n=12), night (18-24 IST) 1516 (n=11)",
       "youtube slot medians: morning (06-12 IST) 754 (n=12), night (18-24 IST) 154 (n=13)",
-      "instagram: 4 of 27 Reels stalled (reach under 68 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
+      "instagram: 4 of 27 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
     ],

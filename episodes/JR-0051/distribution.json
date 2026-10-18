@@ -27,8 +27,8 @@
         }
       ],
       "last_read_error": {
-        "at": "2026-10-18T04:52:41.000Z",
-        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"15m\"}}]"
+        "at": "2026-10-18T10:58:49.000Z",
+        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
       }
     },
     "youtube": {
@@ -50,7 +50,7 @@
         }
       ],
       "last_read_error": {
-        "at": "2026-10-18T04:52:41.000Z",
+        "at": "2026-10-18T10:58:49.000Z",
         "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later.\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"24h\"}}]"
       }
     }

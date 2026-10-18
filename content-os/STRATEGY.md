@@ -140,7 +140,7 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-18T04:52Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-18T10:58Z from Buffer analytics, last 28 days, posts at least 48h old._
 
 - **instagram**: n=23, median views 1467, best 2251, saves per 1k reach 14.6, stalled 4 (excluded)
 - **youtube**: n=25, median views 324, best 1940, saves per 1k reach None, stalled 0 (excluded)
@@ -162,7 +162,7 @@ _Last computed 2026-10-18T04:52Z from Buffer analytics, last 28 days, posts at l
 **Evidence notes:**
 - instagram slot medians: morning (06-12 IST) 1460 (n=12), night (18-24 IST) 1516 (n=11)
 - youtube slot medians: morning (06-12 IST) 754 (n=12), night (18-24 IST) 154 (n=13)
-- instagram: 4 of 27 Reels stalled (reach under 68 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033
+- instagram: 4 of 27 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
