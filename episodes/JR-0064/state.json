@@ -1,10 +1,10 @@
 {
   "episode_id": "JR-0064",
-  "state": "NEW",
-  "updated_at": null,
+  "state": "GENERATED",
+  "updated_at": "2026-10-18T04:49:18Z",
   "slot": null,
   "target_date": null,
-  "generation": "NOT_STARTED",
+  "generation": "PASS",
   "validation": "NOT_STARTED",
   "render": "NOT_STARTED",
   "render_qa": "NOT_STARTED",
@@ -21,6 +21,14 @@
     "create_attempts": 0
   },
   "errors": [],
-  "history": [],
+  "history": [
+    {
+      "at": "2026-10-18T04:49:18Z",
+      "from": "NEW",
+      "to": "GENERATED",
+      "run": "39098376601",
+      "evidence": "generated/JR-0064.json present (1441 B)"
+    }
+  ],
   "render_facts": {}
 }
