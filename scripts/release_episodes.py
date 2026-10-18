@@ -26,7 +26,12 @@ def gh(*a, **kw):
 if gh("release", "view", tag).returncode == 0:
     existing = json.loads(gh("release", "view", tag, "--json", "assets", check=True).stdout)
     names = sorted(a["name"] for a in existing["assets"] if a["name"].endswith(".mp4"))
-    if names and names != sorted(f.name for f in files):
+    want = {f.name for f in files}
+    # growth-review 2026-10-18: a swap tag is filled in batches (e.g. JR-0047..49, then JR-0050..51),
+    # so a re-run with a subset or superset of the existing assets is the normal case, not ambiguity.
+    # Only re-upload (clobber) the requested files; never delete others. Fail closed only when the
+    # requested set and the existing set merely overlap (neither contains the other).
+    if names and not (want <= set(names) or set(names) <= want):
         sys.exit(f"[release] AMBIGUOUS existing release {tag} with assets {names}, failing closed")
     print(f"[release] reusing existing {tag}")
 else:
@@ -41,7 +46,7 @@ for f in files:
 
 meta = json.loads(gh("release", "view", tag, "--json", "assets,createdAt,tagName", check=True).stdout)
 assets = {a["name"]: a for a in meta["assets"] if a["name"].endswith(".mp4")}
-if sorted(assets) != sorted(f.name for f in files):
+if not {f.name for f in files} <= set(assets):
     sys.exit(f"[release] asset set mismatch: {sorted(assets)}")
 
 def mp4_duration(b: bytes):
@@ -82,7 +87,8 @@ for f in files:
 
 mp = pathlib.Path("generated/release-manifest.json")
 prior = json.loads(mp.read_text()) if mp.exists() else []
-kept = [r for r in prior if r.get("release_tag") != tag]
+batch = {f.stem for f in files}
+kept = [r for r in prior if not (r.get("release_tag") == tag and r.get("episode_id") in batch)]
 mp.write_text(json.dumps(kept + rows, indent=2) + "\n")
 print(f"[manifest] prior={len(prior)} kept={len(kept)} added={len(rows)} total={len(kept)+len(rows)}")
 print(f"[url] verified={len(files)-len(fails)}/{len(files)}")

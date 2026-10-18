@@ -232,6 +232,14 @@ class Autopilot:
                 "ready_unscheduled": ready, "scheduled_not_yet_published": scheduled,
                 "authored_in_pipeline": pipeline, "upcoming_slots_unauthored": unauthored,
                 "ready_buffer": len(ready) + len(scheduled),
+                # growth-review 2026-10-18: "scheduled" above counts an episode as LIVE when ANY platform is
+                # scheduled, so Instagram drafts parked at 2026-12-31 were reported as a healthy buffer (15)
+                # while Instagram had only 3 real future posts. Report each platform's real queue too.
+                "scheduled_by_platform": {pl: sum(1 for e in scheduled if self.platform_states(e).get(pl) == "SCHEDULED")
+                                          for pl in ("instagram", "youtube")},
+                "parked_drafts_by_platform": {pl: sorted(e for e in self.eps if not self.published_anywhere(e)
+                                                         and self.platform_states(e).get(pl) == "DRAFT")
+                                              for pl in ("instagram", "youtube")},
                 "authoring_needed": ids,
                 "authoring_rule": "author each id with generated/<id>.json + <id>.package.json, run "
                                   "`python3 scripts/daily/jr_daily.py brief <id>` for constraints, read content-os/STRATEGY.md "

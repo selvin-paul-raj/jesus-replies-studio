@@ -75,6 +75,8 @@ class Distributor:
         self.store = DistStore(root, cfg["platforms"])
         self.live = {}
         self.rate_limited = False
+        self.mutated = False
+        self.reads_saved = 0
 
     # ---------- reads ----------
     def live_posts(self, platform, refresh=False):
@@ -123,13 +125,32 @@ class Distributor:
             blk["error"] = (post.get("error") or {}).get("message") if isinstance(post.get("error"), dict) else "Buffer status error"
         move(blk, st, f"{why}: Buffer status {post.get('status')}", self.run, self.now)
 
+    def _cached(self, platform, post_id):
+        """growth-review 2026-10-18: Buffer's 24h RATE_LIMIT_EXCEEDED kept recurring because every
+        6-hourly cycle (plus each daily-generate dispatch) read every open post one by one. One list
+        call per platform per run already holds these posts, so use it; fall back to a single read only
+        when the post is not in the list, the list failed, or this run has mutated Buffer since."""
+        if self.mutated or self.rate_limited:
+            return None, "NO_CACHE"
+        try:
+            posts = self.live_posts(platform)
+        except RuntimeError:
+            return None, "NO_CACHE"
+        for p in posts:
+            if p.get("id") == post_id:
+                self.reads_saved += 1
+                return p, "OK_LIST"
+        return None, "NO_CACHE"
+
     def reconcile(self, eid, platform, ctx):
         d = self.store.load(eid)
         blk = d["platforms"][platform]
         if blk["state"] == "PUBLISHED_VERIFIED":
             return d, blk
         if blk["post_id"]:
-            post, det = self.buf.read(blk["post_id"])
+            post, det = self._cached(platform, blk["post_id"])
+            if post is None:
+                post, det = self.buf.read(blk["post_id"])
             if post:
                 self.apply_post(blk, post, platform, f"read {blk['post_id']}")
             elif det == "NOT_FOUND":
@@ -202,8 +223,10 @@ class Distributor:
         blk["pending_mutation"] = {"kind": kind, "at": iso(self.now), "run": self.run, "due_at": due_at}
         self.store.save(d)
         if kind == "schedule_draft":
+            self.mutated = True
             out = self.buf.schedule_draft(blk["post_id"], platform, text, ctx["asset_url"], due_at, yt)
         else:
+            self.mutated = True
             out = self.buf.create_scheduled(platform, text, ctx["asset_url"], due_at, yt)
         blk["attempts"] += 1
         if out.kind == "OK":
@@ -259,6 +282,7 @@ class Distributor:
         if self.dry:
             return "WOULD_HOLD", blk
         yt = dict(self.cfg["youtube"], title=ctx["youtube_title"]) if platform == "youtube" else None
+        self.mutated = True
         out = self.buf.to_draft(blk["post_id"], platform, self.expected_text(platform, ctx), ctx["asset_url"], blk["due_at"], yt)
         post, det = self.buf.read(blk["post_id"])
         if post and post.get("status") == "draft":

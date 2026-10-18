@@ -302,7 +302,8 @@ def main():
         rb = autopilot().buffer_report(next_id())
         wjson(OS_DIR / "ready-buffer.json", rb)
         print(f"[buffer] ready_buffer={rb['ready_buffer']} target={rb['target']} in_pipeline={len(rb['authored_in_pipeline'])} "
-              f"authoring_needed={rb['authoring_needed']}")
+              f"authoring_needed={rb['authoring_needed']} scheduled_by_platform={rb['scheduled_by_platform']} "
+              f"parked_drafts={ {k: len(v) for k, v in rb['parked_drafts_by_platform'].items()} }")
         return rc
     if a.cmd == "hold":
         d = Distributor(ROOT, Buffer.from_env(cfg), cfg, http_status, run, now, dry_run=a.dry_run)

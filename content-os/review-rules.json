@@ -1,0 +1,19 @@
+{
+  "as_of": "2026-10-18 (bi-weekly growth review, DEC-JR-011)",
+  "_note": "Written only by the bi-weekly growth review. Embedded in every brief as review_rules. Each rule cites its evidence; the next review keeps, changes or drops it.",
+  "rules": [
+    {"id": "R1-hidden-feeling-hook", "since": "2026-10-18",
+     "rule": "First line = one concrete moment + what the person pretended or hid in it (\"I smiled in every photo\", \"he told us he was at work\", \"I replied okay so he wouldn't see me cry\"). Keep it under ~18 words so it can be read on mute in the first 2-3 seconds.",
+     "evidence": "Last 14 days: JR-0045 (IG 2,251 views, 67 saves, best of the window), JR-0020 earlier (1,909 / 48 saves), JR-0040 (IG 1,659 + YT 1,201), JR-0046 (YT 1,315) all open on a hidden feeling. Mosseri: watch time and the first seconds gate distribution (kompozy.io, 2026-09-25); YouTube Shorts: viewed vs swiped away is the core signal (outlierkit.com, 2026-10-03)."},
+    {"id": "R2-no-worried-future", "since": "2026-10-18",
+     "rule": "Avoid 'worried about the future' episodes (money next month, will I belong, going back to church someday). If the topic is a worry, set it in a present, concrete scene that already happened today, and label the emotion sad/hurt, not worried. At most 1 per week.",
+     "evidence": "emotion=worried: JR-0024 247, JR-0037 198, JR-0030 1,287 IG views vs window median 1,370; flagged already on 2026-10-11 (IG median 280, n=4)."},
+    {"id": "R3-send-line-names-a-person", "since": "2026-10-18",
+     "rule": "The engagement line is a send line that names one specific person (\"Send this to the friend who...\"). Never 'type a prayer', 'comment amen', 'tag a friend'.",
+     "evidence": "Sends per reach is Instagram's strongest signal for non-followers (Mosseri, restated 2026-09-25, kompozy.io). JR-0053 old version still said 'Type a prayer...' and was fixed in this review."},
+    {"id": "R4-youtube-comments-are-the-conversation", "since": "2026-10-18",
+     "rule": "Write the closing question so it can be answered in one line on YouTube too; the review replies to YouTube comments from Studio.",
+     "evidence": "Last 14 days: 32 comments on 26 YouTube Shorts vs 4 on 26 Instagram Reels."}
+  ],
+  "experiments": ["EXP-004 hidden-feeling hook (see content-os/experiments.json)"]
+}

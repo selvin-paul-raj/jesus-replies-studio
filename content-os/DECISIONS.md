@@ -76,3 +76,14 @@ Selvin said yes (15:54 IST, via CEO) to replacing queued old-version episodes an
 
 ## DEC-JR-010 — Evidence playbook on top of the master plan (CEO, 2026-10-16 16:45 IST)
 Selvin's STRATEGY.md playbook wins where it differs from the master plan. Length now 45-55 s target, 60 s hard ceiling (config/publishing-rules.json). JR-0047..JR-0051 rewritten to the 7-beat story template (hook, detail, validate, turn, BSB verse, payoff, one CTA) at 44-49 s estimated, with new captions (search phrase, small question, send/save line, honesty line, series line) before swapping; the 67-74 s re-renders are never swapped in. Slots move to 07:30 / 17:30 IST after the current queue clears; hooks, variation, CTA rotation, Stories, series and the 30-day test follow as later slices.
+
+
+## DEC-JR-011 — Bi-weekly growth review (2026-10-18, autonomous under DEC-JR-005)
+- 2026-10-18 Hook rule R1 "hidden feeling" adopted (JR-0045, JR-0020, JR-0040, JR-0046); EXP-004 started, read 2026-11-01. EXP-001 folded in.
+- 2026-10-18 R2: de-emphasise "worried about the future" episodes (JR-0024 247, JR-0037 198 IG views; flagged 2026-10-11 too).
+- 2026-10-18 R3/R4: send line names one person, no "type a prayer"; YouTube comments (32 vs IG 4) answered from Studio by the review.
+- 2026-10-18 EXP-002 concluded: platforms disagree (IG night +18%, YT morning 3.5x), both slots kept.
+- 2026-10-18 JR-0052..JR-0059 rewritten to 47-54 s estimated (7-beat template, R1 hooks, new captions, rotated mid hashtags) so the stuck fixed-version swap (tag jr-fix-2026-10-16-d) can run; Instagram had no scheduled post Oct 19 20:30 - Oct 22 20:30 (7 slots parked as drafts).
+- 2026-10-18 Root-cause fixes: release_episodes.py failed every batched swap ("AMBIGUOUS existing release", run 39048554952) because it demanded the exact asset set; it now accepts a subset/superset batch and keeps other episodes' manifest rows. ready-buffer.json now reports scheduled_by_platform and parked_drafts_by_platform (it said 15 while Instagram had 3 real future posts).
+- 2026-10-18 New content-os/review-rules.json, embedded in every brief as review_rules (pipeline.brief).
+- 2026-10-18 Root-cause fix for the recurring Buffer 24h RATE_LIMIT_EXCEEDED (again at 10:22 IST today): Distributor.reconcile now reads open posts from the one per-platform list call it already makes, and only falls back to a single-post read when the post is missing from the list, the list failed, or the run has already changed Buffer. Test T04cListCache added; 108 tests pass.

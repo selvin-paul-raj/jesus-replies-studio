@@ -114,6 +114,29 @@ questions sent through the profile form (credit the question, never the person's
 - Trial Reels: Buffer composer supports them (not the API), and Instagram needs 200+ followers on a professional account. At 68 followers we are not eligible: post normal Reels; revisit at 200.
 - YouTube "Generic or repetitive content": each episode needs a distinct question and story, and outcomes must vary (no same-situation, same-outcome template). Variation rules are the top monetisation risk.
 
+## Growth review 2026-10-18 (DEC-JR-011) — what changed and why
+
+Window: Oct 4-17 (26 episodes on each platform) vs Sep 20-Oct 3. Instagram median 1,371 views (was 74 in
+the reach-collapse fortnight), YouTube median 319 (was 31). Best: **JR-0045** "my last single friend got
+engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares (but only 38 views on YouTube).
+
+- **Hook rule R1 — hidden feeling.** First line = one concrete moment + what the person pretended or hid
+  ("I smiled in every photo", "he told us he was at work"). Under ~18 words so it reads on mute in 2-3 s.
+  Evidence: JR-0045, JR-0020, JR-0040, JR-0046. Experiment **EXP-004** (from 2026-10-18; success = IG
+  (saves+shares)/1k reach >= 1.2x the 19.6 baseline and YT median >= 319, n>=7, read 2026-11-01).
+- **R2 — no "worried about the future" episodes** (JR-0024 247, JR-0037 198 IG views). Put a worry in a
+  concrete scene that already happened today. Max 1 a week.
+- **R3 — the last spoken line is a send line naming one person.** No "type a prayer" (JR-0053 fixed).
+- **R4 — YouTube is where people comment** (32 comments on 26 Shorts vs 4 on 26 Reels). Questions must be
+  answerable in one line; the review replies on YouTube.
+- **Instagram and YouTube disagree on what works.** JR-0041/0042/0046 stalled under 60 views on Instagram
+  but were YouTube's top 3 (1,315-1,940); JR-0045/0021/0025 won Instagram and got under 60 on YouTube.
+  Same video, different audiences: never judge an episode on one platform. Watch whether IG stalls cluster
+  on family-illness / job-loss themes (3 of 4 stalls) before acting.
+- **Slots (EXP-002 concluded):** IG night 1,516 vs morning 1,287; YouTube morning 532 vs night 154 (n=13
+  each). Platforms disagree → both slots kept; DEC-JR-010's 07:30 / 17:30 move is the next test.
+- Rules R1-R4 live in `content-os/review-rules.json` and are embedded in every brief as `review_rules`.
+
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->

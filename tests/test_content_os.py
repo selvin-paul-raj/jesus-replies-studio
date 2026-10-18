@@ -148,10 +148,26 @@ class T04bRateLimit(Base):
         st = DistStore(self.root, CFG["platforms"])
         d = st.load("JR-0040"); d["platforms"]["instagram"].update(state="SCHEDULED", post_id=pid, due_at=DUE); st.save(d)
         self.buf.read = lambda p: (None, 'UNREADABLE [{"extensions": {"code": "RATE_LIMIT_EXCEEDED"}}]')
+        self.buf.list_posts = lambda pl: (None, 'UNREADABLE [{"extensions": {"code": "RATE_LIMIT_EXCEEDED"}}]')
         dist = self.dist()
         r, blk = dist.schedule("JR-0040", "instagram", DUE, ctx())
         self.assertEqual((r, blk["state"]), ("RATE_LIMITED", "SCHEDULED"))
         self.assertEqual(self.buf.creates + self.buf.edits, 0)
+
+
+class T04cListCache(Base):
+    def test_open_post_reconciled_from_list_without_single_read(self):
+        """growth-review 2026-10-18: one list call per platform replaces per-post reads."""
+        pid = self.buf.add("instagram", "scheduled", due=DUE)
+        st = DistStore(self.root, CFG["platforms"])
+        d = st.load("JR-0040"); d["platforms"]["instagram"].update(state="SCHEDULED", post_id=pid, due_at=DUE); st.save(d)
+        calls = []
+        def no_read(p):
+            calls.append(p); return (None, "UNREADABLE should not be called")
+        self.buf.read = no_read
+        dist = self.dist()
+        r, blk = dist.schedule("JR-0040", "instagram", DUE, ctx())
+        self.assertEqual((r, blk["state"], calls, dist.reads_saved), ("ALREADY_SCHEDULED", "SCHEDULED", [], 1))
 
 
 class T05Recovery(Base):

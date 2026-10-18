@@ -196,6 +196,11 @@ def brief(ctx, eid):
         L = json.loads(lp.read_text())
         b["strategy"] = {"source": "content-os/learnings.json + content-os/STRATEGY.md", "as_of": L.get("as_of"),
                          **(L.get("authoring_guidance") or {})}
+    rp = ctx.root / "content-os/review-rules.json"
+    if rp.exists():               # bi-weekly growth review: hand-decided rules + active experiments (DECISIONS.md)
+        R = json.loads(rp.read_text())
+        b["review_rules"] = {"source": "content-os/review-rules.json", "as_of": R.get("as_of"),
+                             "rules": R.get("rules", []), "experiments": R.get("experiments", [])}
     p = ctx.root / "generated/briefs" / f"{eid}.brief.json"
     if not ctx.dry_run:
         p.parent.mkdir(parents=True, exist_ok=True)
