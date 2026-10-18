@@ -1,18 +1,16 @@
 {
   "counts": {
-    "PUBLISHED": 47,
+    "PUBLISHED": 48,
     "UNUSED": 3,
-    "SCHEDULED": 10,
-    "READY": 5
+    "SCHEDULED": 11,
+    "READY": 3
   },
   "next_ready": [
-    "JR-0060",
     "JR-0061",
     "JR-0062",
-    "JR-0063",
-    "JR-0064"
+    "JR-0063"
   ],
-  "ready_total": 5,
+  "ready_total": 3,
   "items": [
     {
       "episode_id": "JR-0001",
@@ -762,11 +760,11 @@
     },
     {
       "episode_id": "JR-0051",
-      "status": "SCHEDULED",
-      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
+      "status": "PUBLISHED",
+      "why": "all platforms",
       "platforms": {
-        "instagram": "SCHEDULED",
-        "youtube": "SCHEDULED"
+        "instagram": "PUBLISHED_VERIFIED",
+        "youtube": "PUBLISHED_VERIFIED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-c/JR-0051.mp4",
       "duration_s": 45.99,
@@ -870,11 +868,11 @@
     },
     {
       "episode_id": "JR-0060",
-      "status": "READY",
-      "why": "instagram=DRAFT, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
         "instagram": "DRAFT",
-        "youtube": "NONE"
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0060/JR-0060.mp4",
       "duration_s": 88.15,
@@ -918,10 +916,10 @@
     },
     {
       "episode_id": "JR-0064",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=SCHEDULED, youtube=NONE",
       "platforms": {
-        "instagram": "NONE",
+        "instagram": "SCHEDULED",
         "youtube": "NONE"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0064/JR-0064.mp4",
@@ -929,5 +927,5 @@
       "published_on": []
     }
   ],
-  "as_of": "2026-10-18T15:48:51.001977+00:00"
+  "as_of": "2026-10-18T20:36:51.674928+00:00"
 }
