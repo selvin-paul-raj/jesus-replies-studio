@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-17T20:32:38.162595+00:00",
+  "as_of": "2026-10-18T01:25:14.441363+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -12,27 +12,27 @@
         "JR-0033"
       ],
       "stall_rate": 0.12,
-      "median_views": 1464,
-      "max_views": 2192,
+      "median_views": 1467,
+      "max_views": 2251,
       "saves_per_1k_reach_median": 14.6,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 12,
-            "median_views": 1458.0
+            "median_views": 1460.5
           },
           "night (18-24 IST)": {
             "n": 11,
-            "median_views": 1513
+            "median_views": 1516
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0045",
-          "views": 2192,
-          "saves": 66,
+          "views": 2251,
+          "saves": 67,
           "shares": 16,
           "theme": "being the last single friend",
           "emotion": "sad",
@@ -53,7 +53,7 @@
         },
         {
           "episode_id": "JR-0029",
-          "views": 1741,
+          "views": 1743,
           "saves": 16,
           "shares": 5,
           "theme": "jealousy of a sibling",
@@ -75,7 +75,7 @@
         },
         {
           "episode_id": "JR-0040",
-          "views": 1657,
+          "views": 1659,
           "saves": 12,
           "shares": 3,
           "theme": "hearing parents fight at night",
@@ -88,7 +88,7 @@
       "bottom": [
         {
           "episode_id": "JR-0037",
-          "views": 196,
+          "views": 198,
           "theme": "returning to church after years away",
           "emotion": "worried",
           "hook": "Jesus... I parked outside church this morning. I never went in. 😔",
@@ -97,7 +97,7 @@
         },
         {
           "episode_id": "JR-0022",
-          "views": 220,
+          "views": 222,
           "theme": "reconciliation",
           "emotion": "happy",
           "hook": "Jesus... my brother texted back after two years of silence. Why am I so scared to be happy about it?",
@@ -106,7 +106,7 @@
         },
         {
           "episode_id": "JR-0024",
-          "views": 245,
+          "views": 247,
           "theme": "money anxiety",
           "emotion": "worried",
           "hook": "Jesus, will there be enough money this month?",
@@ -124,7 +124,7 @@
         },
         {
           "episode_id": "JR-0044",
-          "views": 487,
+          "views": 489,
           "theme": "first in the family at college and lost in class",
           "emotion": "sad",
           "hook": "Jesus... why does everyone in class understand except me?",
@@ -281,11 +281,11 @@
         },
         "crying": {
           "n": 3,
-          "median_score": 0.447
+          "median_score": 0.458
         },
         "happy": {
           "n": 2,
-          "median_score": 0.5025000000000001
+          "median_score": 0.497
         },
         "heartbroken": {
           "n": 1,
@@ -293,7 +293,7 @@
         },
         "neutral": {
           "n": 4,
-          "median_score": 0.5565
+          "median_score": 0.5625
         },
         "sad": {
           "n": 10,
@@ -349,7 +349,7 @@
         },
         "1 Peter": {
           "n": 1,
-          "median_score": 0.787
+          "median_score": 0.776
         },
         "2 Corinthians": {
           "n": 1,
@@ -357,11 +357,11 @@
         },
         "2 Timothy": {
           "n": 1,
-          "median_score": 0.774
+          "median_score": 0.762
         },
         "Ecclesiastes": {
           "n": 1,
-          "median_score": 0.591
+          "median_score": 0.603
         },
         "Ephesians": {
           "n": 1,
@@ -417,7 +417,7 @@
         },
         "Ruth": {
           "n": 1,
-          "median_score": 0.447
+          "median_score": 0.458
         }
       }
     },
@@ -450,16 +450,16 @@
         "episode_id": "JR-0040",
         "score": 0.822,
         "views": {
-          "instagram": 1657,
+          "instagram": 1659,
           "youtube": 1201
         },
         "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔"
       },
       {
         "episode_id": "JR-0032",
-        "score": 0.787,
+        "score": 0.776,
         "views": {
-          "instagram": 1595,
+          "instagram": 1597,
           "youtube": 1478
         },
         "hook": "Jesus, is it wrong that I feel this proud?"
@@ -470,7 +470,7 @@
     "lean_towards": [],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1458 (n=12), night (18-24 IST) 1513 (n=11)",
+      "instagram slot medians: morning (06-12 IST) 1460 (n=12), night (18-24 IST) 1516 (n=11)",
       "youtube slot medians: morning (06-12 IST) 532 (n=11), night (18-24 IST) 154 (n=13)",
       "instagram: 3 of 26 Reels stalled (reach under 68 followers) and were left out of content learning: JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only",
@@ -480,8 +480,8 @@
       "JR-0041 score 1.00 (youtube 1940 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
       "JR-0042 score 0.91 (youtube 1502 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
       "JR-0011 score 0.86 (instagram 1707 views): Jesus... why did God create that tree? The one with the knowledge of good and evil? 🤔",
-      "JR-0040 score 0.82 (instagram 1657, youtube 1201 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
-      "JR-0032 score 0.79 (instagram 1595, youtube 1478 views): Jesus, is it wrong that I feel this proud?"
+      "JR-0040 score 0.82 (instagram 1659, youtube 1201 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
+      "JR-0032 score 0.78 (instagram 1597, youtube 1478 views): Jesus, is it wrong that I feel this proud?"
     ]
   }
 }
