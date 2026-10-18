@@ -1,0 +1,47 @@
+{
+  "as_of": "2026-10-18T17:17:20.051589+00:00",
+  "iso_week": 42,
+  "platforms": {
+    "instagram": {
+      "n": 22,
+      "median_views": 1491.5,
+      "max_views": 2251,
+      "saves_per_1k_reach_median": 14.4
+    },
+    "youtube": {
+      "n": 25,
+      "median_views": 314,
+      "max_views": 1940,
+      "saves_per_1k_reach_median": null
+    }
+  },
+  "actions": [
+    {
+      "type": "experiment_reading",
+      "experiment": "EXP-002",
+      "detail": "instagram: night (18-24 IST) median 1544 vs morning (06-12 IST) 1460 (n=10/12)"
+    },
+    {
+      "type": "experiment_reading",
+      "experiment": "EXP-002",
+      "detail": "youtube: morning (06-12 IST) median 754 vs night (18-24 IST) 154 (n=12/13)"
+    },
+    {
+      "type": "authoring_emphasis",
+      "detail": {
+        "lean_towards": [],
+        "avoid": []
+      },
+      "applied": "STRATEGY.md auto block + every new brief"
+    },
+    {
+      "type": "trend",
+      "detail": "instagram median views 1445 -> 1492 (+3%) since 2026-10-11"
+    },
+    {
+      "type": "trend",
+      "detail": "youtube median views 229 -> 314 (+37%) since 2026-10-11"
+    }
+  ],
+  "slot_policy": "slot times change only when both platforms agree with n>=7 per arm (EXP-002 rule); otherwise recorded as a reading"
+}

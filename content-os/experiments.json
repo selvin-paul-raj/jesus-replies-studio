@@ -1,83 +1,91 @@
 {
- "_rule": "At most two variables under test at once. Everything else is held steady.",
- "experiments": [
-  {
-   "id": "EXP-001",
-   "status": "superseded",
-   "variable": "hook_type",
-   "hypothesis": "A confession/statement hook holds viewers longer than a question hook.",
-   "control": "question",
-   "variant": "confession_statement or statement",
-   "metrics": [
-    "averageTimeWatched",
-    "reach",
-    "shares"
-   ],
-   "min_n_per_arm": 4,
-   "result": "folded into EXP-004 (2026-10-18)"
-  },
-  {
-   "id": "EXP-002",
-   "status": "concluded",
-   "variable": "release_slot",
-   "hypothesis": "Slot 1 (08:00 IST) and slot 2 (20:30 IST) differ in reach and meaningful engagement for this account.",
-   "control": "08:00 IST",
-   "variant": "20:30 IST",
-   "metrics": [
-    "reach",
-    "views",
-    "averageTimeWatched",
-    "shares",
-    "saves",
-    "comments"
-   ],
-   "min_n_per_arm": 7,
-   "result": "platform-specific: IG night slightly ahead, YouTube morning ~3.5x ahead; both slots kept",
-   "decision_rule": "compare 7-day medians per platform once each arm has >=7 publications; until then 'insufficient data'",
-   "readings": [
+  "_rule": "At most two variables under test at once. Everything else is held steady.",
+  "experiments": [
     {
-     "at": "2026-10-11T15:26:46.576028+00:00",
-     "reading": "instagram: night (18-24 IST) median 1506 vs morning (06-12 IST) 1436 (n=9/13)"
+      "id": "EXP-001",
+      "status": "superseded",
+      "variable": "hook_type",
+      "hypothesis": "A confession/statement hook holds viewers longer than a question hook.",
+      "control": "question",
+      "variant": "confession_statement or statement",
+      "metrics": [
+        "averageTimeWatched",
+        "reach",
+        "shares"
+      ],
+      "min_n_per_arm": 4,
+      "result": "folded into EXP-004 (2026-10-18)"
     },
     {
-     "at": "2026-10-11T15:26:46.576028+00:00",
-     "reading": "youtube: night (18-24 IST) median 351 vs morning (06-12 IST) 208 (n=11/8)"
+      "id": "EXP-002",
+      "status": "concluded",
+      "variable": "release_slot",
+      "hypothesis": "Slot 1 (08:00 IST) and slot 2 (20:30 IST) differ in reach and meaningful engagement for this account.",
+      "control": "08:00 IST",
+      "variant": "20:30 IST",
+      "metrics": [
+        "reach",
+        "views",
+        "averageTimeWatched",
+        "shares",
+        "saves",
+        "comments"
+      ],
+      "min_n_per_arm": 7,
+      "result": "platform-specific: IG night slightly ahead, YouTube morning ~3.5x ahead; both slots kept",
+      "decision_rule": "compare 7-day medians per platform once each arm has >=7 publications; until then 'insufficient data'",
+      "readings": [
+        {
+          "at": "2026-10-11T15:26:46.576028+00:00",
+          "reading": "instagram: night (18-24 IST) median 1506 vs morning (06-12 IST) 1436 (n=9/13)"
+        },
+        {
+          "at": "2026-10-11T15:26:46.576028+00:00",
+          "reading": "youtube: night (18-24 IST) median 351 vs morning (06-12 IST) 208 (n=11/8)"
+        },
+        {
+          "at": "2026-10-18 growth review",
+          "reading": "last 14 days (n=13/13 per arm): instagram night 1516 vs morning 1287; youtube morning 532 vs night 154. Platforms disagree, so no slot change under the EXP-002 rule; DEC-JR-010's 07:30/17:30 move (after the current queue clears) becomes the next test."
+        },
+        {
+          "at": "2026-10-18T17:17:20.051589+00:00",
+          "reading": "instagram: night (18-24 IST) median 1544 vs morning (06-12 IST) 1460 (n=10/12)"
+        },
+        {
+          "at": "2026-10-18T17:17:20.051589+00:00",
+          "reading": "youtube: morning (06-12 IST) median 754 vs night (18-24 IST) 154 (n=12/13)"
+        }
+      ]
     },
     {
-     "at": "2026-10-18 growth review",
-     "reading": "last 14 days (n=13/13 per arm): instagram night 1516 vs morning 1287; youtube morning 532 vs night 154. Platforms disagree, so no slot change under the EXP-002 rule; DEC-JR-010's 07:30/17:30 move (after the current queue clears) becomes the next test."
+      "id": "EXP-003",
+      "status": "proposed",
+      "variable": "cta_type",
+      "hypothesis": "A comment question plus a small action beats a comment question alone on comments.",
+      "control": "comment_question",
+      "variant": "comment_question_plus_action",
+      "metrics": [
+        "comments"
+      ],
+      "min_n_per_arm": 4,
+      "result": null
+    },
+    {
+      "id": "EXP-004",
+      "status": "active",
+      "started": "2026-10-18",
+      "variable": "hook_type",
+      "hypothesis": "A hidden-feeling hook (one concrete moment + what the person pretended) earns more saves+sends per 1k reach on Instagram and more views on YouTube than a plain question/statement hook.",
+      "control": "plain question or statement hook (JR-0021..JR-0049 baseline: IG (saves+shares) per 1k reach median 19.6, YT median views 319)",
+      "variant": "hidden_feeling (JR-0052..JR-0059 rewrites and every new brief via review-rules R1)",
+      "metrics": [
+        "saves_per_1k_reach",
+        "shares_per_1k_reach",
+        "views"
+      ],
+      "min_n_per_arm": 7,
+      "success": "variant IG (saves+shares)/1k reach >= 1.2x control median AND YT median views >= control median, at n>=7; read at the 2026-11-01 review",
+      "result": null
     }
-   ]
-  },
-  {
-   "id": "EXP-003",
-   "status": "proposed",
-   "variable": "cta_type",
-   "hypothesis": "A comment question plus a small action beats a comment question alone on comments.",
-   "control": "comment_question",
-   "variant": "comment_question_plus_action",
-   "metrics": [
-    "comments"
-   ],
-   "min_n_per_arm": 4,
-   "result": null
-  },
-  {
-   "id": "EXP-004",
-   "status": "active",
-   "started": "2026-10-18",
-   "variable": "hook_type",
-   "hypothesis": "A hidden-feeling hook (one concrete moment + what the person pretended) earns more saves+sends per 1k reach on Instagram and more views on YouTube than a plain question/statement hook.",
-   "control": "plain question or statement hook (JR-0021..JR-0049 baseline: IG (saves+shares) per 1k reach median 19.6, YT median views 319)",
-   "variant": "hidden_feeling (JR-0052..JR-0059 rewrites and every new brief via review-rules R1)",
-   "metrics": [
-    "saves_per_1k_reach",
-    "shares_per_1k_reach",
-    "views"
-   ],
-   "min_n_per_arm": 7,
-   "success": "variant IG (saves+shares)/1k reach >= 1.2x control median AND YT median views >= control median, at n>=7; read at the 2026-11-01 review",
-   "result": null
-  }
- ]
+  ]
 }
