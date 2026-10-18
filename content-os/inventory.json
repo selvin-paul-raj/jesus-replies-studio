@@ -1,7 +1,7 @@
 {
   "counts": {
     "PUBLISHED": 47,
-    "UNUSED": 3,
+    "UNUSED": 4,
     "SCHEDULED": 10,
     "READY": 4
   },
@@ -914,7 +914,19 @@
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0063/JR-0063.mp4",
       "duration_s": 85.01,
       "published_on": []
+    },
+    {
+      "episode_id": "JR-0064",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
     }
   ],
-  "as_of": "2026-10-18T04:25:40.801945+00:00"
+  "as_of": "2026-10-18T04:44:21.433119+00:00"
 }

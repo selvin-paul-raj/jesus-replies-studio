@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T04:25:40.801945+00:00",
+  "as_of": "2026-10-18T04:44:21.433119+00:00",
   "target": 6,
   "ready_unscheduled": [
     "JR-0060",
@@ -20,12 +20,9 @@
     "JR-0059"
   ],
   "authored_in_pipeline": [],
-  "upcoming_slots_unauthored": [
-    "JR-0064"
-  ],
+  "upcoming_slots_unauthored": [],
   "ready_buffer": 14,
   "authoring_needed": [
-    "JR-0064",
     "JR-0065",
     "JR-0066"
   ],
