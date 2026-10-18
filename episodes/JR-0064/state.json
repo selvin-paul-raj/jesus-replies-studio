@@ -1,0 +1,71 @@
+{
+  "episode_id": "JR-0064",
+  "state": "VALIDATION_FAILED",
+  "updated_at": "2026-10-18T04:44:10Z",
+  "slot": null,
+  "target_date": null,
+  "generation": "PASS",
+  "validation": "FAIL",
+  "render": "NOT_STARTED",
+  "render_qa": "NOT_STARTED",
+  "package": "NOT_STARTED",
+  "package_qa": "NOT_STARTED",
+  "asset_hosting": "NOT_STARTED",
+  "asset_url": null,
+  "render_facts": {
+    "estimated_seconds": 79.43
+  },
+  "buffer": {
+    "post_id": null,
+    "status": null,
+    "due_at": null,
+    "sent_at": null,
+    "pending_mutation": null
+  },
+  "approval": {
+    "status": "NOT_REQUESTED",
+    "approved_at": null,
+    "approved_by": null,
+    "slot_local": null,
+    "due_at": null,
+    "evidence": null
+  },
+  "verification": {
+    "status": "NOT_VERIFIED",
+    "verified_at": null
+  },
+  "errors": [
+    {
+      "at": "2026-10-18T04:44:10Z",
+      "state": "VALIDATION_FAILED",
+      "detail": "estimated length 79.4s is over the 60s ceiling (target 45-55s); cut lines before rendering"
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-10-18T04:44:10Z",
+      "from": "NEW",
+      "to": "GENERATED",
+      "run": "39098078550",
+      "evidence": "generated/JR-0064.json present (1919 B)"
+    },
+    {
+      "at": "2026-10-18T04:44:10Z",
+      "from": "GENERATED",
+      "to": "VALIDATION_FAILED",
+      "run": "39098078550",
+      "evidence": "estimated length 79.4s is over the 60s ceiling (target 45-55s); cut lines before rendering"
+    }
+  ],
+  "heal": {
+    "attempts": 0,
+    "exhausted": true,
+    "log": [
+      {
+        "at": "2026-10-18T04:44:10Z",
+        "run": "39098078550",
+        "action": "not auto-repairable: VALIDATION_FAILED: estimated length 79.4s is over the 60s ceiling (target 45-55s); cut lines before rendering"
+      }
+    ]
+  }
+}
