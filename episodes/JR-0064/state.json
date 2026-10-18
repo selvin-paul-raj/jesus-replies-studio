@@ -30,5 +30,9 @@
       "evidence": "generated/JR-0064.json present (1441 B)"
     }
   ],
-  "render_facts": {}
+  "render_facts": {},
+  "verification": {
+    "status": "NOT_VERIFIED",
+    "verified_at": null
+  }
 }
