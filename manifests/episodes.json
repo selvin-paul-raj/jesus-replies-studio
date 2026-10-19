@@ -362,5 +362,57 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0065",
+    "created_at": "2026-10-19T04:49:54Z",
+    "title": "Jesus... I Ran The Tap So No One Would Hear Me Cry",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0065/JR-0065.mp4",
+    "buffer_post_id": "6ad5a1e10a208cb323951409",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0066",
+    "created_at": "2026-10-19T04:51:45Z",
+    "title": "Jesus... I Told Everyone \"All Good\" From Inside My Car",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0066/JR-0066.mp4",
+    "buffer_post_id": "6ad5a23e8206df0c0fb32a5c",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0067",
+    "created_at": "2026-10-19T04:53:19Z",
+    "title": "Jesus... I Said One More Reel An Hour Ago",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0067/JR-0067.mp4",
+    "buffer_post_id": "6ad5a2a2938409f1d0fd8b3a",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0068",
+    "created_at": "2026-10-19T04:54:58Z",
+    "title": "Jesus... I Deleted The Message And Sent \"Haha Nothing\"",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0068/JR-0068.mp4",
+    "buffer_post_id": "6ad5a2ff769b457934f250d0",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]
