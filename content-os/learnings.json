@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T20:36:51.674928+00:00",
+  "as_of": "2026-10-19T01:32:40.221619+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -13,8 +13,8 @@
         "JR-0033"
       ],
       "stall_rate": 0.15,
-      "median_views": 1491.5,
-      "max_views": 2257,
+      "median_views": 1492.5,
+      "max_views": 2260,
       "saves_per_1k_reach_median": 14.4,
       "avg_watch_time_available": false,
       "by_dimension": {
@@ -25,15 +25,15 @@
           },
           "night (18-24 IST)": {
             "n": 10,
-            "median_views": 1543.5
+            "median_views": 1544.5
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0045",
-          "views": 2257,
-          "saves": 67,
+          "views": 2260,
+          "saves": 66,
           "shares": 16,
           "theme": "being the last single friend",
           "emotion": "sad",
@@ -65,7 +65,7 @@
         },
         {
           "episode_id": "JR-0047",
-          "views": 1712,
+          "views": 1713,
           "saves": 21,
           "shares": 8,
           "theme": "hating how she looks in every photo of herself",
@@ -125,7 +125,7 @@
         },
         {
           "episode_id": "JR-0043",
-          "views": 600,
+          "views": 602,
           "theme": "best friend moved abroad and they are drifting apart",
           "emotion": "sad",
           "hook": "Jesus... why does it feel like my best friend has a whole new life without me?",
@@ -282,7 +282,7 @@
         },
         "crying": {
           "n": 3,
-          "median_score": 0.429
+          "median_score": 0.44
         },
         "happy": {
           "n": 2,
@@ -358,7 +358,7 @@
         },
         "2 Timothy": {
           "n": 1,
-          "median_score": 0.765
+          "median_score": 0.753
         },
         "Ecclesiastes": {
           "n": 1,
@@ -418,7 +418,7 @@
         },
         "Ruth": {
           "n": 1,
-          "median_score": 0.429
+          "median_score": 0.44
         }
       }
     },
@@ -460,7 +460,7 @@
         "episode_id": "JR-0032",
         "score": 0.771,
         "views": {
-          "instagram": 1597,
+          "instagram": 1601,
           "youtube": 1481
         },
         "hook": "Jesus, is it wrong that I feel this proud?"
@@ -482,7 +482,7 @@
       "JR-0042 score 0.92 (youtube 1514 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
       "JR-0046 score 0.83 (youtube 1441 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
       "JR-0040 score 0.80 (instagram 1659, youtube 1203 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
-      "JR-0032 score 0.77 (instagram 1597, youtube 1481 views): Jesus, is it wrong that I feel this proud?"
+      "JR-0032 score 0.77 (instagram 1601, youtube 1481 views): Jesus, is it wrong that I feel this proud?"
     ]
   }
 }
