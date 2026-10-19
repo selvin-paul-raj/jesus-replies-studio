@@ -1,15 +1,19 @@
 {
   "counts": {
     "PUBLISHED": 49,
-    "UNUSED": 3,
+    "UNUSED": 5,
     "SCHEDULED": 11,
-    "READY": 2
+    "READY": 6
   },
   "next_ready": [
     "JR-0062",
-    "JR-0063"
+    "JR-0063",
+    "JR-0065",
+    "JR-0066",
+    "JR-0067",
+    "JR-0068"
   ],
-  "ready_total": 2,
+  "ready_total": 6,
   "items": [
     {
       "episode_id": "JR-0001",
@@ -927,7 +931,79 @@
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0064/JR-0064.mp4",
       "duration_s": 53.01,
       "published_on": []
+    },
+    {
+      "episode_id": "JR-0065",
+      "status": "READY",
+      "why": "instagram=NONE, youtube=NONE",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0065/JR-0065.mp4",
+      "duration_s": 56.02,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0066",
+      "status": "READY",
+      "why": "instagram=NONE, youtube=NONE",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0066/JR-0066.mp4",
+      "duration_s": 51.71,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0067",
+      "status": "READY",
+      "why": "instagram=NONE, youtube=NONE",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0067/JR-0067.mp4",
+      "duration_s": 55.55,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0068",
+      "status": "READY",
+      "why": "instagram=NONE, youtube=NONE",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0068/JR-0068.mp4",
+      "duration_s": 52.1,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0069",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0070",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
     }
   ],
-  "as_of": "2026-10-19T04:34:23.421303+00:00"
+  "as_of": "2026-10-19T04:56:46.007594+00:00"
 }
