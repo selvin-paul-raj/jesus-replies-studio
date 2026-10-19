@@ -11,7 +11,7 @@
   "package": "PASS",
   "package_qa": "PASS",
   "asset_hosting": "VERIFIED",
-  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0056/JR-0056.mp4",
+  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-d/JR-0056.mp4",
   "render_facts": {
     "command": "npm run jr -- render generated/JR-0056.json --out-dir output",
     "exit": 0,
