@@ -140,9 +140,9 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-19T04:56Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-19T13:04Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=23, median views 1518, best 2260, saves per 1k reach 14.4, stalled 4 (excluded)
+- **instagram**: n=23, median views 1518, best 2262, saves per 1k reach 14.4, stalled 4 (excluded)
 - **youtube**: n=26, median views 334, best 1944, saves per 1k reach None, stalled 0 (excluded)
 - **episodes scored** (IG + YT percentile): 27, 22 with both platforms
 
@@ -156,11 +156,11 @@ _Last computed 2026-10-19T04:56Z from Buffer analytics, last 28 days, posts at l
 - JR-0041 score 1.00 (youtube 1944 views): Jesus... I said yes again. I didn't want to. I never do. 😔
 - JR-0042 score 0.92 (youtube 1514 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔
 - JR-0046 score 0.84 (youtube 1441 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔
-- JR-0040 score 0.81 (instagram 1659, youtube 1203 views): Jesus... why do my parents only fight when they think I'm asleep? 😔
+- JR-0040 score 0.81 (instagram 1660, youtube 1203 views): Jesus... why do my parents only fight when they think I'm asleep? 😔
 - JR-0032 score 0.76 (instagram 1601, youtube 1481 views): Jesus, is it wrong that I feel this proud?
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1467 (n=13), night (18-24 IST) 1544 (n=10)
+- instagram slot medians: morning (06-12 IST) 1467 (n=13), night (18-24 IST) 1546 (n=10)
 - youtube slot medians: morning (06-12 IST) 928 (n=13), night (18-24 IST) 155 (n=13)
 - instagram: 4 of 27 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033
 - rules need n>=8 episodes per bucket; smaller buckets are reported only

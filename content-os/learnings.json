@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T04:56:46.007594+00:00",
+  "as_of": "2026-10-19T13:04:16.291337+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -14,7 +14,7 @@
       ],
       "stall_rate": 0.15,
       "median_views": 1518,
-      "max_views": 2260,
+      "max_views": 2262,
       "saves_per_1k_reach_median": 14.4,
       "avg_watch_time_available": false,
       "by_dimension": {
@@ -25,14 +25,14 @@
           },
           "night (18-24 IST)": {
             "n": 10,
-            "median_views": 1544.5
+            "median_views": 1545.5
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0045",
-          "views": 2260,
+          "views": 2262,
           "saves": 66,
           "shares": 16,
           "theme": "being the last single friend",
@@ -65,7 +65,7 @@
         },
         {
           "episode_id": "JR-0047",
-          "views": 1713,
+          "views": 1717,
           "saves": 21,
           "shares": 8,
           "theme": "hating how she looks in every photo of herself",
@@ -76,7 +76,7 @@
         },
         {
           "episode_id": "JR-0040",
-          "views": 1659,
+          "views": 1660,
           "saves": 12,
           "shares": 3,
           "theme": "hearing parents fight at night",
@@ -98,7 +98,7 @@
         },
         {
           "episode_id": "JR-0022",
-          "views": 222,
+          "views": 223,
           "theme": "reconciliation",
           "emotion": "happy",
           "hook": "Jesus... my brother texted back after two years of silence. Why am I so scared to be happy about it?",
@@ -116,7 +116,7 @@
         },
         {
           "episode_id": "JR-0044",
-          "views": 489,
+          "views": 492,
           "theme": "first in the family at college and lost in class",
           "emotion": "sad",
           "hook": "Jesus... why does everyone in class understand except me?",
@@ -282,7 +282,7 @@
         },
         "crying": {
           "n": 3,
-          "median_score": 0.421
+          "median_score": 0.41
         },
         "happy": {
           "n": 2,
@@ -358,7 +358,7 @@
         },
         "2 Timothy": {
           "n": 1,
-          "median_score": 0.741
+          "median_score": 0.753
         },
         "Ecclesiastes": {
           "n": 1,
@@ -418,7 +418,7 @@
         },
         "Ruth": {
           "n": 1,
-          "median_score": 0.421
+          "median_score": 0.41
         }
       }
     },
@@ -451,7 +451,7 @@
         "episode_id": "JR-0040",
         "score": 0.809,
         "views": {
-          "instagram": 1659,
+          "instagram": 1660,
           "youtube": 1203
         },
         "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔"
@@ -473,7 +473,7 @@
     ],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1467 (n=13), night (18-24 IST) 1544 (n=10)",
+      "instagram slot medians: morning (06-12 IST) 1467 (n=13), night (18-24 IST) 1546 (n=10)",
       "youtube slot medians: morning (06-12 IST) 928 (n=13), night (18-24 IST) 155 (n=13)",
       "instagram: 4 of 27 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only",
@@ -483,7 +483,7 @@
       "JR-0041 score 1.00 (youtube 1944 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
       "JR-0042 score 0.92 (youtube 1514 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
       "JR-0046 score 0.84 (youtube 1441 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0040 score 0.81 (instagram 1659, youtube 1203 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
+      "JR-0040 score 0.81 (instagram 1660, youtube 1203 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
       "JR-0032 score 0.76 (instagram 1601, youtube 1481 views): Jesus, is it wrong that I feel this proud?"
     ]
   }
