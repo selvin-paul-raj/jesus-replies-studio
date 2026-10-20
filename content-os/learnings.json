@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T04:43:18.927272+00:00",
+  "as_of": "2026-10-20T11:30:14.991620+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -14,7 +14,7 @@
       ],
       "stall_rate": 0.14,
       "median_views": 1520.5,
-      "max_views": 2263,
+      "max_views": 2266,
       "saves_per_1k_reach_median": 14.3,
       "avg_watch_time_available": false,
       "by_dimension": {
@@ -25,14 +25,14 @@
           },
           "night (18-24 IST)": {
             "n": 11,
-            "median_views": 1574
+            "median_views": 1575
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0045",
-          "views": 2263,
+          "views": 2266,
           "saves": 66,
           "shares": 16,
           "theme": "being the last single friend",
@@ -43,7 +43,7 @@
         },
         {
           "episode_id": "JR-0020",
-          "views": 1913,
+          "views": 1914,
           "saves": 48,
           "shares": 15,
           "theme": "comparison",
@@ -65,7 +65,7 @@
         },
         {
           "episode_id": "JR-0047",
-          "views": 1718,
+          "views": 1720,
           "saves": 21,
           "shares": 8,
           "theme": "hating how she looks in every photo of herself",
@@ -76,7 +76,7 @@
         },
         {
           "episode_id": "JR-0049",
-          "views": 1678,
+          "views": 1681,
           "saves": 11,
           "shares": 7,
           "theme": "hurt a friend years ago and never apologised",
@@ -464,7 +464,7 @@
         "episode_id": "JR-0049",
         "score": 0.759,
         "views": {
-          "instagram": 1678,
+          "instagram": 1681,
           "youtube": 929
         },
         "hook": "Jesus... I hurt her, and I never said sorry. 😔"
@@ -478,7 +478,7 @@
     ],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1467 (n=13), night (18-24 IST) 1574 (n=11)",
+      "instagram slot medians: morning (06-12 IST) 1467 (n=13), night (18-24 IST) 1575 (n=11)",
       "youtube slot medians: morning (06-12 IST) 988 (n=13), night (18-24 IST) 228 (n=14)",
       "instagram: 4 of 28 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only",
@@ -489,7 +489,7 @@
       "JR-0046 score 0.92 (youtube 1518 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
       "JR-0042 score 0.89 (youtube 1516 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
       "JR-0040 score 0.80 (instagram 1660, youtube 1204 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
-      "JR-0049 score 0.76 (instagram 1678, youtube 929 views): Jesus... I hurt her, and I never said sorry. 😔"
+      "JR-0049 score 0.76 (instagram 1681, youtube 929 views): Jesus... I hurt her, and I never said sorry. 😔"
     ]
   }
 }

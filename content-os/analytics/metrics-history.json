@@ -4478,6 +4478,20 @@
         },
         "observed_age_hours": 81.4,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "168h": {
+        "metrics": {
+          "reactions": 3,
+          "comments": 0,
+          "engagementRate": 23.08,
+          "views": 34,
+          "shares": 0,
+          "saves": 0,
+          "follows": 0,
+          "reach": 13
+        },
+        "observed_age_hours": 172.3,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -5111,6 +5125,17 @@
         },
         "observed_age_hours": 39.1,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "72h": {
+        "metrics": {
+          "views": 59,
+          "reach": 40,
+          "comments": 0,
+          "engagementRate": 7.69,
+          "reactions": 3
+        },
+        "observed_age_hours": 78.0,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -5284,7 +5309,19 @@
     "episode_id": null,
     "platform": "instagram",
     "sent_at": "2026-10-19T06:03:04.198Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "views": 61,
+          "reach": 50,
+          "comments": 0,
+          "engagementRate": 2,
+          "reactions": 1
+        },
+        "observed_age_hours": 29.5,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "instagram:6acbad8ced92ed8fa509d81e": {
     "episode_id": "JR-0038",
@@ -5323,6 +5360,18 @@
     "episode_id": "JR-0053",
     "platform": "youtube",
     "sent_at": "2026-10-20T02:30:13.186Z",
+    "checkpoints": {}
+  },
+  "instagram:6ad701ffb81183413db45134": {
+    "episode_id": null,
+    "platform": "instagram",
+    "sent_at": "2026-10-20T05:56:22.150Z",
+    "checkpoints": {}
+  },
+  "instagram:6acbaed3f91f772d45d1c2b5": {
+    "episode_id": "JR-0053",
+    "platform": "instagram",
+    "sent_at": "2026-10-20T02:30:53.745Z",
     "checkpoints": {}
   }
 }
