@@ -414,5 +414,31 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0069",
+    "created_at": "2026-10-20T02:00:49Z",
+    "title": "Jesus... Our Dog Died And I Told Work My Weekend Was Good",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0069/JR-0069.mp4",
+    "buffer_post_id": "6ad6cba22fcafd0f184710dd",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0070",
+    "created_at": "2026-10-20T02:02:11Z",
+    "title": "Jesus... I Shouted At My Little Sister Over A Charger",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0070/JR-0070.mp4",
+    "buffer_post_id": "6ad6cbeeb81183413daa0d93",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]

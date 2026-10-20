@@ -13,11 +13,6 @@
     "Self-harm, suicide or abuse stories are held for Selvin's review before publishing and their caption and description must also carry: \"If you are in danger, please reach a local crisis line: US 988 (call or text), UK & Ireland Samaritans 116 123, India Tele-MANAS 14416.\". Prefer other themes for the daily slots."
   ],
   "avoid_titles": [
-    "Jesus... He Cheated And Still Got The Higher Marks",
-    "Jesus... He Ended Three Years With One Text",
-    "Jesus... My Father Is In The ICU And I Can't Get There",
-    "Jesus... Everyone From My Batch Is Doing Better Than Me",
-    "Jesus... I Lost Money On A Betting App And Hid It From Everyone",
     "Jesus... Why Am I Always The Last To Know?",
     "Jesus... Why Do I Feel Like A Fraud On My First Day?",
     "Jesus... I Said I Forgive Him So Why Does It Still Hurt?",
@@ -26,14 +21,14 @@
     "Jesus... I Can't Remember The Last Time I Did Something For Me",
     "Jesus... I Apologised To My Dad And He Left Me On Read",
     "Jesus... I'm Always The One Who Texts First",
-    "Jesus... I'm Staying Back For Diwali And Everyone's Gone Home"
+    "Jesus... I'm Staying Back For Diwali And Everyone's Gone Home",
+    "Jesus... I Ran The Tap So No One Would Hear Me Cry",
+    "Jesus... I Told Everyone \"All Good\" From Inside My Car",
+    "Jesus... I Said One More Reel An Hour Ago",
+    "Jesus... I Deleted The Message And Sent \"Haha Nothing\"",
+    "Jesus... Our Dog Died And I Told Work My Weekend Was Good"
   ],
   "avoid_scripture": [
-    "Psalms 37:7",
-    "Psalms 34:18",
-    "Isaiah 41:10",
-    "Galatians 6:4-5",
-    "Proverbs 28:13",
     "John 15:15",
     "Psalms 139:14",
     "Psalms 147:3",
@@ -42,14 +37,14 @@
     "Matthew 11:28",
     "Luke 15:20",
     "Isaiah 49:15",
-    "Matthew 5:14"
+    "Matthew 5:14",
+    "Psalms 56:8",
+    "Proverbs 12:25",
+    "Psalms 127:2",
+    "Psalms 55:22",
+    "Psalms 30:5"
   ],
   "avoid_hooks": [
-    "Jesus... he cheated and still got higher marks than me. 😠",
-    "Jesus... he ended three years with one text. I replied \"okay\" so he wouldn't see me cry. 💔",
-    "Jesus... my father is in the ICU. I told Mom I'm fine. The next train is tomorrow night. 😭",
-    "Jesus... I liked every batchmate's promotion post today. Then I sat in the bathroom feeling sick. 😔",
-    "Jesus... I lost my savings on a betting app. At dinner I laughed like nothing happened. 😔",
     "Jesus... they all went out tonight. I found out from her story, and replied \"looks fun!\" 😔",
     "Jesus... everyone congratulated me on the new job. I said \"thanks\" and felt like a fraud. 😔",
     "Jesus... I told him I forgave him. I smiled when I said it. But every night it plays again. 💔",
@@ -58,14 +53,14 @@
     "Jesus... I can't remember the last time I did something just for me. 😔",
     "Jesus... I sent Dad a long apology last night. Why did he leave me on read? 😔",
     "Jesus... I'm always the one who texts first. What happens if I just stop? 💔",
-    "Jesus... everyone's going home for Diwali. Why am I pretending I like the quiet? 🪔"
+    "Jesus... everyone's going home for Diwali. Why am I pretending I like the quiet? 🪔",
+    "Jesus... I ran the tap so my family wouldn't hear me cry. Then I came out and ate dinner. 🚿",
+    "Jesus... I typed \"all good bro\" to the boys. Then I sat in my car for twenty minutes. 🚗",
+    "Jesus... it's 2 a.m. again. I said one more reel an hour ago, and I'll smile at work anyway. 📱",
+    "Jesus... I typed a whole paragraph about how I feel. I deleted it and sent \"haha nothing\". 💬",
+    "Jesus... our dog died Tuesday. At work I said \"weekend was good\" and kept typing. 🐕"
   ],
   "recent_topics": [
-    "angry that a classmate who cheated got better marks",
-    "boyfriend ended a three year relationship over text",
-    "father in the ICU while he is stuck in another city",
-    "comparing her career to her batchmates' online updates",
-    "hiding betting app losses from his family",
     "her friend group made plans without her and she found out from a story",
     "impostor fear the night before his first day at a new job",
     "said she forgave him but the hurt keeps returning every night",
@@ -74,13 +69,18 @@
     "no time for himself anymore, everything is for others",
     "apologised to his father by text and the message was left on read",
     "she always texts first and wonders if anyone would notice if she stopped",
-    "his first Diwali away from home, staying back while everyone goes home and pretending he prefers the quiet"
+    "his first Diwali away from home, staying back while everyone goes home and pretending he prefers the quiet",
+    "she cries in the bathroom with the tap running so her family won't hear",
+    "he texts \"all good bro\" to the group chat while sitting in his car outside the office, unable to go in",
+    "she promises one more reel at 2 a.m. every night and hides her exhaustion at work",
+    "she types a long honest message to her best friend, deletes it and sends \"haha nothing\"",
+    "his dog died on Tuesday and at work he told everyone his long weekend was good"
   ],
   "recent_emotions": [
-    "angry",
     "sad",
-    "crying",
-    "neutral",
+    "sad",
+    "sad",
+    "sad",
     "sad",
     "sad",
     "sad",
@@ -101,24 +101,25 @@
   "scripture_rule": "Berean Standard Bible (BSB, public domain), version=\"BSB\", text copied verbatim from data/bible/bsb.json (get it with `python3 scripts/daily/jr_daily.py verse \"Psalm 23:1\"`); label it (BSB) in captions and descriptions; never NIV/ESV/NLT; unverifiable -> BLOCKED",
   "strategy": {
     "source": "content-os/learnings.json + content-os/STRATEGY.md",
-    "as_of": "2026-10-19T04:34:23.421303+00:00",
+    "as_of": "2026-10-19T22:18:42.519595+00:00",
     "lean_towards": [
-      "emotion=sad (episode score 0.69 vs 0.49, n=13, IG+YT percentile)"
+      "emotion=sad (episode score 0.71 vs 0.48, n=14, IG+YT percentile)",
+      "hook_type=confession_statement (episode score 0.67 vs 0.48, n=8, IG+YT percentile)"
     ],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1467 (n=13), night (18-24 IST) 1544 (n=10)",
-      "youtube slot medians: morning (06-12 IST) 928 (n=13), night (18-24 IST) 155 (n=13)",
-      "instagram: 4 of 27 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
+      "instagram slot medians: morning (06-12 IST) 1467 (n=13), night (18-24 IST) 1573 (n=11)",
+      "youtube slot medians: morning (06-12 IST) 988 (n=13), night (18-24 IST) 228 (n=14)",
+      "instagram: 4 of 28 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
     ],
     "top_hooks_to_learn_from": [
       "JR-0041 score 1.00 (youtube 1944 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0042 score 0.92 (youtube 1514 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0046 score 0.84 (youtube 1441 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0040 score 0.81 (instagram 1659, youtube 1203 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
-      "JR-0032 score 0.76 (instagram 1601, youtube 1481 views): Jesus, is it wrong that I feel this proud?"
+      "JR-0046 score 0.92 (youtube 1518 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0042 score 0.89 (youtube 1516 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0040 score 0.80 (instagram 1660, youtube 1204 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
+      "JR-0049 score 0.76 (instagram 1677, youtube 929 views): Jesus... I hurt her, and I never said sorry. 😔"
     ]
   },
   "review_rules": {
