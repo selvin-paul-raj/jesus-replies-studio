@@ -25,15 +25,23 @@
       }
     },
     "youtube": {
-      "state": "NONE",
-      "post_id": null,
-      "due_at": null,
+      "state": "SCHEDULED",
+      "post_id": "6ad6f16e9d034d7aedda0232",
+      "due_at": "2026-10-25T02:30:00.000Z",
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
-      "attempts": 0,
+      "attempts": 1,
       "error": null,
-      "history": []
+      "history": [
+        {
+          "at": "2026-10-20T04:43:18.000Z",
+          "from": "NONE",
+          "to": "SCHEDULED",
+          "run": "39371050028",
+          "evidence": "create_scheduled read back: scheduled 2026-10-25T02:30:00.000Z"
+        }
+      ]
     }
   }
 }
