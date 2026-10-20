@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T11:30:14.991620+00:00",
+  "as_of": "2026-10-20T16:58:29.020562+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -139,26 +139,26 @@
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 434,
-      "max_views": 1944,
+      "median_views": 471,
+      "max_views": 1949,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 13,
-            "median_views": 988
+            "median_views": 997
           },
           "night (18-24 IST)": {
             "n": 14,
-            "median_views": 228.5
+            "median_views": 229.5
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0041",
-          "views": 1944,
+          "views": 1949,
           "saves": null,
           "shares": null,
           "theme": "people-pleasing and not being able to say no",
@@ -169,7 +169,7 @@
         },
         {
           "episode_id": "JR-0034",
-          "views": 1683,
+          "views": 1687,
           "saves": null,
           "shares": null,
           "theme": "wanting to quit faith",
@@ -180,7 +180,7 @@
         },
         {
           "episode_id": "JR-0046",
-          "views": 1518,
+          "views": 1597,
           "saves": null,
           "shares": null,
           "theme": "father lost his job and still leaves every morning as if going to work",
@@ -191,7 +191,7 @@
         },
         {
           "episode_id": "JR-0042",
-          "views": 1516,
+          "views": 1528,
           "saves": null,
           "shares": null,
           "theme": "grandmother with dementia no longer recognising him",
@@ -202,7 +202,7 @@
         },
         {
           "episode_id": "JR-0032",
-          "views": 1483,
+          "views": 1487,
           "saves": null,
           "shares": null,
           "theme": "pride after success",
@@ -251,7 +251,7 @@
         },
         {
           "episode_id": "JR-0045",
-          "views": 47,
+          "views": 51,
           "theme": "being the last single friend",
           "emotion": "sad",
           "hook": "Jesus... my last single friend got engaged today. I smiled in every photo. 😔",
@@ -298,7 +298,7 @@
         },
         "sad": {
           "n": 14,
-          "median_score": 0.7085
+          "median_score": 0.7135
         },
         "worried": {
           "n": 4,
@@ -318,7 +318,7 @@
       "hook_type": {
         "confession_statement": {
           "n": 8,
-          "median_score": 0.6679999999999999
+          "median_score": 0.6775
         },
         "question": {
           "n": 20,
@@ -332,7 +332,7 @@
         },
         "<=55s": {
           "n": 6,
-          "median_score": 0.7085
+          "median_score": 0.7135
         },
         ">60s": {
           "n": 14,
@@ -382,11 +382,11 @@
         },
         "Isaiah": {
           "n": 3,
-          "median_score": 0.795
+          "median_score": 0.776
         },
         "James": {
           "n": 1,
-          "median_score": 0.431
+          "median_score": 0.411
         },
         "John": {
           "n": 1,
@@ -410,7 +410,7 @@
         },
         "Proverbs": {
           "n": 2,
-          "median_score": 0.5535
+          "median_score": 0.5635
         },
         "Psalms": {
           "n": 4,
@@ -418,7 +418,7 @@
         },
         "Romans": {
           "n": 1,
-          "median_score": 0.759
+          "median_score": 0.778
         },
         "Ruth": {
           "n": 1,
@@ -431,7 +431,7 @@
         "episode_id": "JR-0041",
         "score": 1.0,
         "views": {
-          "youtube": 1944
+          "youtube": 1949
         },
         "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔"
       },
@@ -439,7 +439,7 @@
         "episode_id": "JR-0046",
         "score": 0.923,
         "views": {
-          "youtube": 1518
+          "youtube": 1597
         },
         "hook": "Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔"
       },
@@ -447,49 +447,49 @@
         "episode_id": "JR-0042",
         "score": 0.885,
         "views": {
-          "youtube": 1516
+          "youtube": 1528
         },
         "hook": "Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔"
       },
       {
-        "episode_id": "JR-0040",
-        "score": 0.795,
-        "views": {
-          "instagram": 1660,
-          "youtube": 1204
-        },
-        "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔"
-      },
-      {
         "episode_id": "JR-0049",
-        "score": 0.759,
+        "score": 0.778,
         "views": {
           "instagram": 1681,
-          "youtube": 929
+          "youtube": 1032
         },
         "hook": "Jesus... I hurt her, and I never said sorry. 😔"
+      },
+      {
+        "episode_id": "JR-0040",
+        "score": 0.776,
+        "views": {
+          "instagram": 1660,
+          "youtube": 1206
+        },
+        "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔"
       }
     ]
   },
   "authoring_guidance": {
     "lean_towards": [
       "emotion=sad (episode score 0.71 vs 0.48, n=14, IG+YT percentile)",
-      "hook_type=confession_statement (episode score 0.67 vs 0.48, n=8, IG+YT percentile)"
+      "hook_type=confession_statement (episode score 0.68 vs 0.48, n=8, IG+YT percentile)"
     ],
     "avoid": [],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1467 (n=13), night (18-24 IST) 1575 (n=11)",
-      "youtube slot medians: morning (06-12 IST) 988 (n=13), night (18-24 IST) 228 (n=14)",
+      "youtube slot medians: morning (06-12 IST) 997 (n=13), night (18-24 IST) 230 (n=14)",
       "instagram: 4 of 28 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only",
       "average watch time is not exposed by the Buffer API for these posts; retention is judged by views/saves/shares only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0041 score 1.00 (youtube 1944 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0046 score 0.92 (youtube 1518 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0042 score 0.89 (youtube 1516 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0040 score 0.80 (instagram 1660, youtube 1204 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
-      "JR-0049 score 0.76 (instagram 1681, youtube 929 views): Jesus... I hurt her, and I never said sorry. 😔"
+      "JR-0041 score 1.00 (youtube 1949 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0046 score 0.92 (youtube 1597 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0042 score 0.89 (youtube 1528 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0049 score 0.78 (instagram 1681, youtube 1032 views): Jesus... I hurt her, and I never said sorry. 😔",
+      "JR-0040 score 0.78 (instagram 1660, youtube 1206 views): Jesus... why do my parents only fight when they think I'm asleep? 😔"
     ]
   }
 }
