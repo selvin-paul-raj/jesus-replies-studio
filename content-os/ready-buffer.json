@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-21T01:52:38.017671+00:00",
+  "as_of": "2026-10-21T04:40:00.660546+00:00",
   "target": 6,
   "ready_unscheduled": [
     "JR-0065",
@@ -10,7 +10,6 @@
     "JR-0070"
   ],
   "scheduled_not_yet_published": [
-    "JR-0055",
     "JR-0056",
     "JR-0057",
     "JR-0058",
@@ -23,10 +22,10 @@
   ],
   "authored_in_pipeline": [],
   "upcoming_slots_unauthored": [],
-  "ready_buffer": 16,
+  "ready_buffer": 15,
   "scheduled_by_platform": {
-    "instagram": 6,
-    "youtube": 10
+    "instagram": 5,
+    "youtube": 9
   },
   "parked_drafts_by_platform": {
     "instagram": [
