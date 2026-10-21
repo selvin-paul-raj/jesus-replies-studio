@@ -140,7 +140,7 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-21T17:07Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-21T21:37Z from Buffer analytics, last 28 days, posts at least 48h old._
 
 - **instagram**: n=26, median views 1492, best 2270, saves per 1k reach 14.2, stalled 4 (excluded)
 - **youtube**: n=29, median views 493, best 2777, saves per 1k reach None, stalled 0 (excluded)
