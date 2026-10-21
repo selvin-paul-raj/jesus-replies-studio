@@ -1,7 +1,8 @@
 {
-  "as_of": "2026-10-21T11:42:06.306760+00:00",
+  "as_of": "2026-10-21T17:07:31.008658+00:00",
   "instagram": {
     "AVAILABLE": [
+      "averageTimeWatched",
       "comments",
       "engagementRate",
       "follows",
@@ -9,10 +10,10 @@
       "reactions",
       "saves",
       "shares",
+      "totalTimeWatched",
       "views"
     ],
     "UNAVAILABLE_VIA_BUFFER": [
-      "averageTimeWatched",
       "clicks",
       "freeSubscriptions",
       "impressions",
@@ -21,7 +22,6 @@
       "postCount",
       "quotes",
       "reposts",
-      "totalTimeWatched",
       "viewers"
     ],
     "UNAVAILABLE_NO_SOURCE": [
@@ -40,7 +40,7 @@
       "audience_activity_by_hour"
     ],
     "sent_posts_with_metrics": 83,
-    "sent_posts": 83
+    "sent_posts": 84
   },
   "youtube": {
     "AVAILABLE": [
@@ -81,7 +81,7 @@
       "follower_or_subscriber_totals",
       "audience_activity_by_hour"
     ],
-    "sent_posts_with_metrics": 54,
-    "sent_posts": 54
+    "sent_posts_with_metrics": 55,
+    "sent_posts": 55
   }
 }
