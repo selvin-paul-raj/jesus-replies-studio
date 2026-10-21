@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T21:33:57.734318+00:00",
+  "as_of": "2026-10-21T01:52:38.017671+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -14,7 +14,7 @@
       ],
       "stall_rate": 0.14,
       "median_views": 1520.5,
-      "max_views": 2266,
+      "max_views": 2270,
       "saves_per_1k_reach_median": 14.3,
       "avg_watch_time_available": false,
       "by_dimension": {
@@ -32,7 +32,7 @@
       "top": [
         {
           "episode_id": "JR-0045",
-          "views": 2266,
+          "views": 2270,
           "saves": 66,
           "shares": 16,
           "theme": "being the last single friend",
@@ -76,7 +76,7 @@
         },
         {
           "episode_id": "JR-0049",
-          "views": 1681,
+          "views": 1685,
           "saves": 11,
           "shares": 7,
           "theme": "hurt a friend years ago and never apologised",
@@ -455,7 +455,7 @@
         "episode_id": "JR-0049",
         "score": 0.778,
         "views": {
-          "instagram": 1681,
+          "instagram": 1685,
           "youtube": 1032
         },
         "hook": "Jesus... I hurt her, and I never said sorry. 😔"
@@ -464,7 +464,7 @@
         "episode_id": "JR-0040",
         "score": 0.776,
         "views": {
-          "instagram": 1660,
+          "instagram": 1661,
           "youtube": 1206
         },
         "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔"
@@ -488,8 +488,8 @@
       "JR-0041 score 1.00 (youtube 1949 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
       "JR-0046 score 0.92 (youtube 1597 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
       "JR-0042 score 0.89 (youtube 1528 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0049 score 0.78 (instagram 1681, youtube 1032 views): Jesus... I hurt her, and I never said sorry. 😔",
-      "JR-0040 score 0.78 (instagram 1660, youtube 1206 views): Jesus... why do my parents only fight when they think I'm asleep? 😔"
+      "JR-0049 score 0.78 (instagram 1685, youtube 1032 views): Jesus... I hurt her, and I never said sorry. 😔",
+      "JR-0040 score 0.78 (instagram 1661, youtube 1206 views): Jesus... why do my parents only fight when they think I'm asleep? 😔"
     ]
   }
 }

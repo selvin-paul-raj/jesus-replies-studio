@@ -140,9 +140,9 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-20T21:33Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-21T01:52Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=24, median views 1520, best 2266, saves per 1k reach 14.3, stalled 4 (excluded)
+- **instagram**: n=24, median views 1520, best 2270, saves per 1k reach 14.3, stalled 4 (excluded)
 - **youtube**: n=27, median views 471, best 1949, saves per 1k reach None, stalled 0 (excluded)
 - **episodes scored** (IG + YT percentile): 28, 23 with both platforms
 
@@ -157,8 +157,8 @@ _Last computed 2026-10-20T21:33Z from Buffer analytics, last 28 days, posts at l
 - JR-0041 score 1.00 (youtube 1949 views): Jesus... I said yes again. I didn't want to. I never do. 😔
 - JR-0046 score 0.92 (youtube 1597 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔
 - JR-0042 score 0.89 (youtube 1528 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔
-- JR-0049 score 0.78 (instagram 1681, youtube 1032 views): Jesus... I hurt her, and I never said sorry. 😔
-- JR-0040 score 0.78 (instagram 1660, youtube 1206 views): Jesus... why do my parents only fight when they think I'm asleep? 😔
+- JR-0049 score 0.78 (instagram 1685, youtube 1032 views): Jesus... I hurt her, and I never said sorry. 😔
+- JR-0040 score 0.78 (instagram 1661, youtube 1206 views): Jesus... why do my parents only fight when they think I'm asleep? 😔
 
 **Evidence notes:**
 - instagram slot medians: morning (06-12 IST) 1467 (n=13), night (18-24 IST) 1575 (n=11)
