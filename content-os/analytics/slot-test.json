@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-22T04:53:49.563810+00:00",
+  "as_of": "2026-10-22T04:56:42.262729+00:00",
   "slots": [
     "08:00",
     "20:30"
@@ -12,48 +12,48 @@
   "platforms": {
     "instagram": {
       "n_7d": {
-        "08:00": 13,
+        "08:00": 12,
         "20:30": 10
       },
       "medians_7d": {
         "reach": {
-          "08:00": 1229,
+          "08:00": 1164.5,
           "20:30": 1198.5
         },
         "views": {
-          "08:00": 1448,
+          "08:00": 1366.0,
           "20:30": 1256.0
         },
         "shares": {
-          "08:00": 4,
+          "08:00": 3.5,
           "20:30": 4.5
         },
         "saves": {
-          "08:00": 12,
+          "08:00": 11.5,
           "20:30": 17.5
         },
         "comments": {
-          "08:00": 0,
+          "08:00": 0.0,
           "20:30": 0.0
         },
         "likes": {
-          "08:00": 95,
+          "08:00": 94.5,
           "20:30": 94.0
         },
         "engagement_rate": {
-          "08:00": 11.38,
+          "08:00": 11.120000000000001,
           "20:30": 12.254999999999999
         }
       },
       "ahead_on": {
-        "reach": "08:00",
+        "reach": "20:30",
         "views": "08:00",
         "shares": "20:30",
         "saves": "20:30",
         "likes": "08:00",
         "engagement_rate": "20:30"
       },
-      "verdict": "current evidence suggests 08:00 ahead on reach, 08:00 ahead on views, 20:30 ahead on shares, 20:30 ahead on saves, 08:00 ahead on likes, 20:30 ahead on engagement_rate"
+      "verdict": "current evidence suggests 20:30 ahead on reach, 08:00 ahead on views, 20:30 ahead on shares, 20:30 ahead on saves, 08:00 ahead on likes, 20:30 ahead on engagement_rate"
     },
     "youtube": {
       "n_7d": {
