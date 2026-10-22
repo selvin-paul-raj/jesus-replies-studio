@@ -1,7 +1,7 @@
 {
   "episode_id": "JR-0058",
-  "state": "SCHEDULED",
-  "updated_at": "2026-10-19T22:18:51Z",
+  "state": "PUBLISHED_VERIFIED",
+  "updated_at": "2026-10-22T17:06:42Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
@@ -26,9 +26,9 @@
   },
   "buffer": {
     "post_id": "6ad05bee0d0df6a75bc47e38",
-    "status": "scheduled",
+    "status": "sent",
     "due_at": "2026-10-22T15:00:00.000Z",
-    "sent_at": null,
+    "sent_at": "2026-10-22T15:09:04.921Z",
     "pending_mutation": null,
     "create_attempts": 1
   },
@@ -41,8 +41,8 @@
     "evidence": "2026-10-11 20:48 IST, Selvin in chat: dont stop it continus complete automous running system i wnat it bi-weelky review it and enhance the content and enagament , qually and follow ups and crack chnaging algorthim of thsoe social medias build life long running system self correction , feeadbackloop "
   },
   "verification": {
-    "status": "NOT_VERIFIED",
-    "verified_at": null
+    "status": "PUBLISHED_VERIFIED",
+    "verified_at": "2026-10-22T17:06:42Z"
   },
   "errors": [],
   "history": [
@@ -122,6 +122,20 @@
       "to": "SCHEDULED",
       "run": "39334012817",
       "evidence": "distributor scheduled instagram 6ad05bee0d0df6a75bc47e38 at 2026-10-22T15:00:00.000Z"
+    },
+    {
+      "at": "2026-10-22T17:06:42Z",
+      "from": "SCHEDULED",
+      "to": "PUBLISHED",
+      "run": "39819767149",
+      "evidence": "distributor: instagram sent 2026-10-22T15:09:04.921Z"
+    },
+    {
+      "at": "2026-10-22T17:06:42Z",
+      "from": "PUBLISHED",
+      "to": "PUBLISHED_VERIFIED",
+      "run": "39819767149",
+      "evidence": "distributor verified https://www.instagram.com/reel/DezRGUWgfY_/"
     }
   ]
 }
