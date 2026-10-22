@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-21T21:37:46.298498+00:00",
+  "as_of": "2026-10-22T01:43:05.845454+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -13,8 +13,8 @@
         "JR-0033"
       ],
       "stall_rate": 0.13,
-      "median_views": 1492.5,
-      "max_views": 2270,
+      "median_views": 1520.5,
+      "max_views": 2271,
       "saves_per_1k_reach_median": 14.2,
       "avg_watch_time_available": true,
       "by_dimension": {
@@ -25,14 +25,14 @@
           },
           "night (18-24 IST)": {
             "n": 12,
-            "median_views": 1546.5
+            "median_views": 1614.5
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0045",
-          "views": 2270,
+          "views": 2271,
           "saves": 66,
           "shares": 16,
           "theme": "being the last single friend",
@@ -53,6 +53,17 @@
           "duration": null
         },
         {
+          "episode_id": "JR-0025",
+          "views": 1786,
+          "saves": 19,
+          "shares": 10,
+          "theme": "friendship betrayal",
+          "emotion": "sad",
+          "hook": "Jesus, my best friend told everyone my secret?",
+          "slot": "night (18-24 IST)",
+          "duration": "56-60s"
+        },
+        {
           "episode_id": "JR-0029",
           "views": 1744,
           "saves": 16,
@@ -71,17 +82,6 @@
           "theme": "hating how she looks in every photo of herself",
           "emotion": "sad",
           "hook": "Jesus... why do I hate every photo of myself? 😔",
-          "slot": "night (18-24 IST)",
-          "duration": "<=55s"
-        },
-        {
-          "episode_id": "JR-0049",
-          "views": 1686,
-          "saves": 11,
-          "shares": 7,
-          "theme": "hurt a friend years ago and never apologised",
-          "emotion": "sad",
-          "hook": "Jesus... I hurt her, and I never said sorry. 😔",
           "slot": "night (18-24 IST)",
           "duration": "<=55s"
         }
@@ -273,20 +273,20 @@
   "content": {
     "n_episodes": 30,
     "both_platforms": 25,
-    "median_score": 0.482,
+    "median_score": 0.473,
     "by_dimension": {
       "emotion": {
         "angry": {
           "n": 1,
-          "median_score": 0.585
+          "median_score": 0.565
         },
         "crying": {
           "n": 3,
-          "median_score": 0.403
+          "median_score": 0.383
         },
         "happy": {
           "n": 2,
-          "median_score": 0.45699999999999996
+          "median_score": 0.44699999999999995
         },
         "heartbroken": {
           "n": 1,
@@ -294,25 +294,25 @@
         },
         "neutral": {
           "n": 4,
-          "median_score": 0.4665
+          "median_score": 0.4565
         },
         "sad": {
           "n": 15,
-          "median_score": 0.69
+          "median_score": 0.67
         },
         "worried": {
           "n": 4,
-          "median_score": 0.3235
+          "median_score": 0.3035
         }
       },
       "character": {
         "boy": {
           "n": 15,
-          "median_score": 0.536
+          "median_score": 0.516
         },
         "girl": {
           "n": 15,
-          "median_score": 0.479
+          "median_score": 0.464
         }
       },
       "hook_type": {
@@ -322,7 +322,7 @@
         },
         "question": {
           "n": 20,
-          "median_score": 0.4795
+          "median_score": 0.465
         },
         "statement": {
           "n": 1,
@@ -332,45 +332,45 @@
       "duration": {
         "56-60s": {
           "n": 7,
-          "median_score": 0.479
+          "median_score": 0.514
         },
         "<=55s": {
           "n": 7,
-          "median_score": 0.69
+          "median_score": 0.67
         },
         ">60s": {
           "n": 15,
-          "median_score": 0.48
+          "median_score": 0.449
         }
       },
       "bible_book": {
         "1 Corinthians": {
           "n": 1,
-          "median_score": 0.48
+          "median_score": 0.44
         },
         "1 John": {
           "n": 1,
-          "median_score": 0.452
+          "median_score": 0.432
         },
         "1 Peter": {
           "n": 1,
-          "median_score": 0.713
+          "median_score": 0.693
         },
         "2 Corinthians": {
           "n": 1,
-          "median_score": 0.214
+          "median_score": 0.514
         },
         "2 Timothy": {
           "n": 1,
-          "median_score": 0.726
+          "median_score": 0.706
         },
         "Ecclesiastes": {
           "n": 1,
-          "median_score": 0.536
+          "median_score": 0.516
         },
         "Ephesians": {
           "n": 1,
-          "median_score": 0.585
+          "median_score": 0.565
         },
         "Galatians": {
           "n": 3,
@@ -386,7 +386,7 @@
         },
         "Isaiah": {
           "n": 3,
-          "median_score": 0.757
+          "median_score": 0.737
         },
         "James": {
           "n": 1,
@@ -394,15 +394,15 @@
         },
         "John": {
           "n": 1,
-          "median_score": 0.484
+          "median_score": 0.464
         },
         "Joshua": {
           "n": 1,
-          "median_score": 0.486
+          "median_score": 0.466
         },
         "Lamentations": {
           "n": 1,
-          "median_score": 0.479
+          "median_score": 0.459
         },
         "Micah": {
           "n": 1,
@@ -410,11 +410,11 @@
         },
         "Philippians": {
           "n": 1,
-          "median_score": 0.469
+          "median_score": 0.449
         },
         "Proverbs": {
           "n": 2,
-          "median_score": 0.5615
+          "median_score": 0.5515
         },
         "Psalms": {
           "n": 5,
@@ -422,11 +422,11 @@
         },
         "Romans": {
           "n": 1,
-          "median_score": 0.759
+          "median_score": 0.739
         },
         "Ruth": {
           "n": 1,
-          "median_score": 0.403
+          "median_score": 0.383
         }
       }
     },
@@ -457,16 +457,16 @@
       },
       {
         "episode_id": "JR-0049",
-        "score": 0.759,
+        "score": 0.739,
         "views": {
-          "instagram": 1686,
+          "instagram": 1688,
           "youtube": 1092
         },
         "hook": "Jesus... I hurt her, and I never said sorry. 😔"
       },
       {
         "episode_id": "JR-0040",
-        "score": 0.757,
+        "score": 0.737,
         "views": {
           "instagram": 1661,
           "youtube": 1209
@@ -477,11 +477,11 @@
   },
   "authoring_guidance": {
     "lean_towards": [
-      "emotion=sad (episode score 0.69 vs 0.48, n=15, IG+YT percentile)"
+      "emotion=sad (episode score 0.67 vs 0.47, n=15, IG+YT percentile)"
     ],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1460 (n=14), night (18-24 IST) 1546 (n=12)",
+      "instagram slot medians: morning (06-12 IST) 1460 (n=14), night (18-24 IST) 1614 (n=12)",
       "youtube slot medians: morning (06-12 IST) 1108 (n=14), night (18-24 IST) 305 (n=15)",
       "instagram: 4 of 30 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
@@ -490,8 +490,8 @@
       "JR-0041 score 0.96 (youtube 1952 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
       "JR-0046 score 0.86 (youtube 1606 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
       "JR-0042 score 0.82 (youtube 1538 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0049 score 0.76 (instagram 1686, youtube 1092 views): Jesus... I hurt her, and I never said sorry. 😔",
-      "JR-0040 score 0.76 (instagram 1661, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔"
+      "JR-0049 score 0.74 (instagram 1688, youtube 1092 views): Jesus... I hurt her, and I never said sorry. 😔",
+      "JR-0040 score 0.74 (instagram 1661, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔"
     ]
   }
 }
