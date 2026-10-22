@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-10-22T01:43:05.845454+00:00",
+  "as_of": "2026-10-22T04:37:23.906138+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
     "instagram": {
-      "n": 26,
+      "n": 27,
       "n_stalled": 4,
       "stalled": [
         "JR-0046",
@@ -13,15 +13,15 @@
         "JR-0033"
       ],
       "stall_rate": 0.13,
-      "median_views": 1520.5,
+      "median_views": 1518,
       "max_views": 2271,
       "saves_per_1k_reach_median": 14.2,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 14,
-            "median_views": 1460.5
+            "n": 15,
+            "median_views": 1454
           },
           "night (18-24 IST)": {
             "n": 12,
@@ -135,19 +135,19 @@
       ]
     },
     "youtube": {
-      "n": 29,
+      "n": 30,
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 493,
-      "max_views": 2777,
+      "median_views": 501.0,
+      "max_views": 3480,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 14,
-            "median_views": 1108.0
+            "n": 15,
+            "median_views": 1209
           },
           "night (18-24 IST)": {
             "n": 15,
@@ -156,6 +156,17 @@
         }
       },
       "top": [
+        {
+          "episode_id": "JR-0053",
+          "views": 3480,
+          "saves": null,
+          "shares": null,
+          "theme": "father in the ICU while he is stuck in another city",
+          "emotion": "crying",
+          "hook": "Jesus... my father is in the ICU. I told Mom I'm fine. The next train is tomorrow night. 😭",
+          "slot": "morning (06-12 IST)",
+          "duration": "<=55s"
+        },
         {
           "episode_id": "JR-0038",
           "views": 2777,
@@ -199,17 +210,6 @@
           "hook": "Jesus, what if I stopped believing tomorrow?",
           "slot": "morning (06-12 IST)",
           "duration": "<=55s"
-        },
-        {
-          "episode_id": "JR-0046",
-          "views": 1606,
-          "saves": null,
-          "shares": null,
-          "theme": "father lost his job and still leaves every morning as if going to work",
-          "emotion": "sad",
-          "hook": "Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-          "slot": "morning (06-12 IST)",
-          "duration": ">60s"
         }
       ],
       "bottom": [
@@ -271,169 +271,169 @@
   "stall_rule": "Instagram reach < followers (88) = stalled, excluded from content learning",
   "scoring": "mean of Instagram and YouTube view percentiles where data exists",
   "content": {
-    "n_episodes": 30,
-    "both_platforms": 25,
-    "median_score": 0.473,
+    "n_episodes": 31,
+    "both_platforms": 26,
+    "median_score": 0.481,
     "by_dimension": {
       "emotion": {
         "angry": {
           "n": 1,
-          "median_score": 0.565
+          "median_score": 0.563
         },
         "crying": {
-          "n": 3,
-          "median_score": 0.383
+          "n": 4,
+          "median_score": 0.4245
         },
         "happy": {
           "n": 2,
-          "median_score": 0.44699999999999995
+          "median_score": 0.4405
         },
         "heartbroken": {
           "n": 1,
-          "median_score": 0.48
+          "median_score": 0.481
         },
         "neutral": {
           "n": 4,
-          "median_score": 0.4565
+          "median_score": 0.45
         },
         "sad": {
           "n": 15,
-          "median_score": 0.67
+          "median_score": 0.664
         },
         "worried": {
           "n": 4,
-          "median_score": 0.3035
+          "median_score": 0.3115
         }
       },
       "character": {
         "boy": {
-          "n": 15,
-          "median_score": 0.516
+          "n": 16,
+          "median_score": 0.5385
         },
         "girl": {
           "n": 15,
-          "median_score": 0.464
+          "median_score": 0.466
         }
       },
       "hook_type": {
         "confession_statement": {
-          "n": 9,
-          "median_score": 0.571
+          "n": 10,
+          "median_score": 0.5825
         },
         "question": {
           "n": 20,
-          "median_score": 0.465
+          "median_score": 0.467
         },
         "statement": {
           "n": 1,
-          "median_score": 0.58
+          "median_score": 0.56
         }
       },
       "duration": {
         "56-60s": {
           "n": 7,
-          "median_score": 0.514
+          "median_score": 0.513
         },
         "<=55s": {
-          "n": 7,
-          "median_score": 0.67
+          "n": 8,
+          "median_score": 0.63
         },
         ">60s": {
           "n": 15,
-          "median_score": 0.449
+          "median_score": 0.462
         }
       },
       "bible_book": {
         "1 Corinthians": {
           "n": 1,
-          "median_score": 0.44
+          "median_score": 0.462
         },
         "1 John": {
           "n": 1,
-          "median_score": 0.432
+          "median_score": 0.436
         },
         "1 Peter": {
           "n": 1,
-          "median_score": 0.693
+          "median_score": 0.687
         },
         "2 Corinthians": {
           "n": 1,
-          "median_score": 0.514
+          "median_score": 0.513
         },
         "2 Timothy": {
           "n": 1,
-          "median_score": 0.706
+          "median_score": 0.7
         },
         "Ecclesiastes": {
           "n": 1,
-          "median_score": 0.516
+          "median_score": 0.517
         },
         "Ephesians": {
           "n": 1,
-          "median_score": 0.565
+          "median_score": 0.563
         },
         "Galatians": {
           "n": 3,
-          "median_score": 0.48
+          "median_score": 0.481
         },
         "Genesis": {
           "n": 1,
-          "median_score": 0.201
+          "median_score": 0.194
         },
         "Hebrews": {
           "n": 1,
-          "median_score": 0.167
+          "median_score": 0.161
         },
         "Isaiah": {
-          "n": 3,
-          "median_score": 0.737
+          "n": 4,
+          "median_score": 0.6625
         },
         "James": {
           "n": 1,
-          "median_score": 0.421
+          "median_score": 0.426
         },
         "John": {
           "n": 1,
-          "median_score": 0.464
+          "median_score": 0.466
         },
         "Joshua": {
           "n": 1,
-          "median_score": 0.466
+          "median_score": 0.468
         },
         "Lamentations": {
           "n": 1,
-          "median_score": 0.459
+          "median_score": 0.461
         },
         "Micah": {
           "n": 1,
-          "median_score": 0.429
+          "median_score": 0.414
         },
         "Philippians": {
           "n": 1,
-          "median_score": 0.449
+          "median_score": 0.452
         },
         "Proverbs": {
           "n": 2,
-          "median_score": 0.5515
+          "median_score": 0.5505
         },
         "Psalms": {
           "n": 5,
-          "median_score": 0.58
+          "median_score": 0.569
         },
         "Romans": {
           "n": 1,
-          "median_score": 0.739
+          "median_score": 0.731
         },
         "Ruth": {
           "n": 1,
-          "median_score": 0.383
+          "median_score": 0.388
         }
       }
     },
     "top": [
       {
         "episode_id": "JR-0041",
-        "score": 0.964,
+        "score": 0.931,
         "views": {
           "youtube": 1952
         },
@@ -441,7 +441,7 @@
       },
       {
         "episode_id": "JR-0046",
-        "score": 0.857,
+        "score": 0.828,
         "views": {
           "youtube": 1606
         },
@@ -449,7 +449,7 @@
       },
       {
         "episode_id": "JR-0042",
-        "score": 0.821,
+        "score": 0.793,
         "views": {
           "youtube": 1538
         },
@@ -457,7 +457,7 @@
       },
       {
         "episode_id": "JR-0049",
-        "score": 0.739,
+        "score": 0.731,
         "views": {
           "instagram": 1688,
           "youtube": 1092
@@ -466,7 +466,7 @@
       },
       {
         "episode_id": "JR-0040",
-        "score": 0.737,
+        "score": 0.729,
         "views": {
           "instagram": 1661,
           "youtube": 1209
@@ -477,21 +477,21 @@
   },
   "authoring_guidance": {
     "lean_towards": [
-      "emotion=sad (episode score 0.67 vs 0.47, n=15, IG+YT percentile)"
+      "emotion=sad (episode score 0.66 vs 0.48, n=15, IG+YT percentile)"
     ],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1460 (n=14), night (18-24 IST) 1614 (n=12)",
-      "youtube slot medians: morning (06-12 IST) 1108 (n=14), night (18-24 IST) 305 (n=15)",
-      "instagram: 4 of 30 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
+      "instagram slot medians: morning (06-12 IST) 1454 (n=15), night (18-24 IST) 1614 (n=12)",
+      "youtube slot medians: morning (06-12 IST) 1209 (n=15), night (18-24 IST) 305 (n=15)",
+      "instagram: 4 of 31 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0041 score 0.96 (youtube 1952 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0046 score 0.86 (youtube 1606 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0042 score 0.82 (youtube 1538 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0049 score 0.74 (instagram 1688, youtube 1092 views): Jesus... I hurt her, and I never said sorry. 😔",
-      "JR-0040 score 0.74 (instagram 1661, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔"
+      "JR-0041 score 0.93 (youtube 1952 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0046 score 0.83 (youtube 1606 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0042 score 0.79 (youtube 1538 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0049 score 0.73 (instagram 1688, youtube 1092 views): Jesus... I hurt her, and I never said sorry. 😔",
+      "JR-0040 score 0.73 (instagram 1661, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔"
     ]
   }
 }
