@@ -1,11 +1,28 @@
 {
-  "taken_at": "2026-10-22T04:50:12.611153+00:00",
+  "taken_at": "2026-10-22T04:53:49.563810+00:00",
   "source": "Buffer GraphQL posts list",
   "list_status": {
     "instagram": "TRUNCATED",
     "youtube": "OK"
   },
   "rows": [
+    {
+      "platform": "instagram",
+      "post_id": "6ad996d0282deeeeb2cc3719",
+      "status": "draft",
+      "due_at": "2026-12-31T00:00:00.000Z",
+      "sent_at": null,
+      "external_link": null,
+      "asset": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0073/JR-0073.mp4",
+      "episode_id": "JR-0073",
+      "match_score": 1.0,
+      "kind": "jesus_replies_or_other",
+      "metrics": {},
+      "metrics_updated_at": "2026-10-22T04:53:36.536Z",
+      "youtube_category": null,
+      "age_hours": null,
+      "checkpoint": null
+    },
     {
       "platform": "instagram",
       "post_id": "6ad995f8deacf5d2532d6cdd",
@@ -77,7 +94,7 @@
       },
       "metrics_updated_at": "2026-10-21T05:51:27.597Z",
       "youtube_category": null,
-      "age_hours": 46.9,
+      "age_hours": 47.0,
       "checkpoint": "24h"
     },
     {
@@ -259,7 +276,7 @@
       },
       "metrics_updated_at": "2026-10-18T05:22:34.876Z",
       "youtube_category": null,
-      "age_hours": 119.3,
+      "age_hours": 119.4,
       "checkpoint": "72h"
     },
     {
@@ -285,7 +302,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.547Z",
       "youtube_category": null,
-      "age_hours": 143.6,
+      "age_hours": 143.7,
       "checkpoint": "72h"
     },
     {
@@ -440,7 +457,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.647Z",
       "youtube_category": null,
-      "age_hours": 13.7,
+      "age_hours": 13.8,
       "checkpoint": "pre-24h"
     },
     {
@@ -492,7 +509,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.643Z",
       "youtube_category": null,
-      "age_hours": 213.6,
+      "age_hours": 213.7,
       "checkpoint": "168h"
     },
     {
@@ -518,7 +535,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.550Z",
       "youtube_category": null,
-      "age_hours": 238.1,
+      "age_hours": 238.2,
       "checkpoint": "168h"
     },
     {
@@ -545,7 +562,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.661Z",
       "youtube_category": null,
-      "age_hours": 26.3,
+      "age_hours": 26.4,
       "checkpoint": "24h"
     },
     {
@@ -572,7 +589,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.655Z",
       "youtube_category": null,
-      "age_hours": 61.7,
+      "age_hours": 61.8,
       "checkpoint": "24h"
     },
     {
@@ -599,7 +616,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.659Z",
       "youtube_category": null,
-      "age_hours": 50.3,
+      "age_hours": 50.4,
       "checkpoint": "24h"
     },
     {
@@ -626,7 +643,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.589Z",
       "youtube_category": null,
-      "age_hours": 37.7,
+      "age_hours": 37.8,
       "checkpoint": "24h"
     },
     {
@@ -653,7 +670,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.591Z",
       "youtube_category": null,
-      "age_hours": 74.3,
+      "age_hours": 74.4,
       "checkpoint": "72h"
     },
     {
@@ -707,7 +724,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.624Z",
       "youtube_category": null,
-      "age_hours": 98.3,
+      "age_hours": 98.4,
       "checkpoint": "72h"
     },
     {
@@ -734,7 +751,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.670Z",
       "youtube_category": null,
-      "age_hours": 122.3,
+      "age_hours": 122.4,
       "checkpoint": "72h"
     },
     {
@@ -760,7 +777,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.652Z",
       "youtube_category": null,
-      "age_hours": 262.2,
+      "age_hours": 262.3,
       "checkpoint": "168h"
     },
     {
@@ -814,7 +831,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.631Z",
       "youtube_category": null,
-      "age_hours": 133.7,
+      "age_hours": 133.8,
       "checkpoint": "72h"
     },
     {
@@ -841,7 +858,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.629Z",
       "youtube_category": null,
-      "age_hours": 146.3,
+      "age_hours": 146.4,
       "checkpoint": "72h"
     },
     {
@@ -868,7 +885,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.610Z",
       "youtube_category": null,
-      "age_hours": 242.3,
+      "age_hours": 242.4,
       "checkpoint": "168h"
     },
     {
@@ -894,7 +911,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.666Z",
       "youtube_category": null,
-      "age_hours": 286.3,
+      "age_hours": 286.4,
       "checkpoint": "168h"
     },
     {
@@ -947,7 +964,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.627Z",
       "youtube_category": null,
-      "age_hours": 157.7,
+      "age_hours": 157.8,
       "checkpoint": "72h"
     },
     {
@@ -974,7 +991,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.664Z",
       "youtube_category": null,
-      "age_hours": 170.3,
+      "age_hours": 170.4,
       "checkpoint": "168h"
     },
     {
@@ -1001,7 +1018,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.668Z",
       "youtube_category": null,
-      "age_hours": 181.7,
+      "age_hours": 181.8,
       "checkpoint": "168h"
     },
     {
@@ -1028,7 +1045,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.596Z",
       "youtube_category": null,
-      "age_hours": 194.3,
+      "age_hours": 194.4,
       "checkpoint": "168h"
     },
     {
@@ -1081,7 +1098,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.606Z",
       "youtube_category": null,
-      "age_hours": 205.7,
+      "age_hours": 205.8,
       "checkpoint": "168h"
     },
     {
@@ -1108,7 +1125,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.649Z",
       "youtube_category": null,
-      "age_hours": 218.3,
+      "age_hours": 218.4,
       "checkpoint": "168h"
     },
     {
@@ -1135,7 +1152,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.584Z",
       "youtube_category": null,
-      "age_hours": 229.7,
+      "age_hours": 229.8,
       "checkpoint": "168h"
     },
     {
@@ -1215,7 +1232,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.583Z",
       "youtube_category": null,
-      "age_hours": 266.3,
+      "age_hours": 266.4,
       "checkpoint": "168h"
     },
     {
@@ -1321,7 +1338,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 430.3,
+      "age_hours": 430.4,
       "checkpoint": "168h"
     },
     {
@@ -1348,7 +1365,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.577Z",
       "youtube_category": null,
-      "age_hours": 301.7,
+      "age_hours": 301.8,
       "checkpoint": "168h"
     },
     {
@@ -1375,7 +1392,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.544Z",
       "youtube_category": null,
-      "age_hours": 314.3,
+      "age_hours": 314.4,
       "checkpoint": "168h"
     },
     {
@@ -1402,7 +1419,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.587Z",
       "youtube_category": null,
-      "age_hours": 325.7,
+      "age_hours": 325.8,
       "checkpoint": "168h"
     },
     {
@@ -1429,7 +1446,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.642Z",
       "youtube_category": null,
-      "age_hours": 338.3,
+      "age_hours": 338.4,
       "checkpoint": "168h"
     },
     {
@@ -1456,7 +1473,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.608Z",
       "youtube_category": null,
-      "age_hours": 349.7,
+      "age_hours": 349.8,
       "checkpoint": "168h"
     },
     {
@@ -1483,7 +1500,7 @@
       },
       "metrics_updated_at": "2026-10-22T00:18:18.633Z",
       "youtube_category": null,
-      "age_hours": 362.3,
+      "age_hours": 362.4,
       "checkpoint": "168h"
     },
     {
@@ -1510,7 +1527,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 373.7,
+      "age_hours": 373.8,
       "checkpoint": "168h"
     },
     {
@@ -1537,7 +1554,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 386.3,
+      "age_hours": 386.4,
       "checkpoint": "168h"
     },
     {
@@ -1564,7 +1581,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 397.7,
+      "age_hours": 397.8,
       "checkpoint": "168h"
     },
     {
@@ -1591,7 +1608,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 410.3,
+      "age_hours": 410.4,
       "checkpoint": "168h"
     },
     {
@@ -1617,7 +1634,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 454.9,
+      "age_hours": 455.0,
       "checkpoint": "168h"
     },
     {
@@ -1643,7 +1660,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 478.4,
+      "age_hours": 478.5,
       "checkpoint": "168h"
     },
     {
@@ -1687,7 +1704,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 458.3,
+      "age_hours": 458.4,
       "checkpoint": "168h"
     },
     {
@@ -1739,7 +1756,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 526.7,
+      "age_hours": 526.8,
       "checkpoint": "168h"
     },
     {
@@ -1766,7 +1783,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 503.7,
+      "age_hours": 503.8,
       "checkpoint": "168h"
     },
     {
@@ -1820,7 +1837,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 528.8,
+      "age_hours": 528.9,
       "checkpoint": "168h"
     },
     {
@@ -1874,7 +1891,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 544.8,
+      "age_hours": 544.9,
       "checkpoint": "168h"
     },
     {
@@ -1900,7 +1917,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 550.5,
+      "age_hours": 550.6,
       "checkpoint": "168h"
     },
     {
@@ -1926,7 +1943,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 574.8,
+      "age_hours": 574.9,
       "checkpoint": "168h"
     },
     {
@@ -2030,7 +2047,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 671.2,
+      "age_hours": 671.3,
       "checkpoint": "168h"
     },
     {
@@ -2056,7 +2073,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.789Z",
       "youtube_category": null,
-      "age_hours": 695.5,
+      "age_hours": 695.6,
       "checkpoint": "168h"
     },
     {
@@ -2189,7 +2206,7 @@
       },
       "metrics_updated_at": "2026-10-20T10:32:07.833Z",
       "youtube_category": null,
-      "age_hours": 743.2,
+      "age_hours": 743.3,
       "checkpoint": "168h"
     },
     {
@@ -2215,7 +2232,7 @@
       },
       "metrics_updated_at": "2026-10-19T11:31:54.071Z",
       "youtube_category": null,
-      "age_hours": 767.3,
+      "age_hours": 767.4,
       "checkpoint": "168h"
     },
     {
@@ -2242,7 +2259,7 @@
       },
       "metrics_updated_at": "2026-10-20T10:32:07.833Z",
       "youtube_category": null,
-      "age_hours": 756.2,
+      "age_hours": 756.3,
       "checkpoint": "168h"
     },
     {
@@ -2348,7 +2365,7 @@
       },
       "metrics_updated_at": "2026-10-20T10:32:07.833Z",
       "youtube_category": null,
-      "age_hours": 756.5,
+      "age_hours": 756.6,
       "checkpoint": "168h"
     },
     {
@@ -2429,7 +2446,7 @@
       },
       "metrics_updated_at": "2026-10-18T12:31:44.550Z",
       "youtube_category": null,
-      "age_hours": 804.4,
+      "age_hours": 804.5,
       "checkpoint": "168h"
     },
     {
@@ -2456,34 +2473,7 @@
       },
       "metrics_updated_at": "2026-10-17T13:31:34.963Z",
       "youtube_category": null,
-      "age_hours": 818.4,
-      "checkpoint": "168h"
-    },
-    {
-      "platform": "instagram",
-      "post_id": "6aaa67b1e412663b953e073b",
-      "status": "sent",
-      "due_at": "2026-09-17T06:22:00.000Z",
-      "sent_at": "2026-09-17T06:22:56.787Z",
-      "external_link": "https://www.instagram.com/reel/DdYNL8xlHn9/",
-      "asset": "https://buffer-media-uploads.s3.amazonaws.com/6a9fa8e30c5f1c944f3692b6/6aaa67466a0589d09ad3db4d_transcoded.mp4",
-      "episode_id": "JR-0006",
-      "match_score": 0.818,
-      "kind": "jesus_replies_or_other",
-      "metrics": {
-        "reactions": 182,
-        "comments": 2,
-        "engagementRate": 15.41,
-        "views": 1954,
-        "shares": 18,
-        "saves": 46,
-        "totalTimeWatched": 302.72,
-        "averageTimeWatched": 10.67,
-        "reach": 1668
-      },
-      "metrics_updated_at": "2026-10-16T14:31:27.511Z",
-      "youtube_category": null,
-      "age_hours": 838.5,
+      "age_hours": 818.5,
       "checkpoint": "168h"
     },
     {
@@ -2659,7 +2649,7 @@
       },
       "metrics_updated_at": "2026-10-22T02:32:43.569Z",
       "youtube_category": "27",
-      "age_hours": 2.3,
+      "age_hours": 2.4,
       "checkpoint": "pre-24h"
     },
     {
@@ -2703,7 +2693,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.885Z",
       "youtube_category": "27",
-      "age_hours": 26.3,
+      "age_hours": 26.4,
       "checkpoint": "24h"
     },
     {
@@ -2747,7 +2737,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.885Z",
       "youtube_category": "27",
-      "age_hours": 50.3,
+      "age_hours": 50.4,
       "checkpoint": "24h"
     },
     {
@@ -2769,7 +2759,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 61.8,
+      "age_hours": 61.9,
       "checkpoint": "24h"
     },
     {
@@ -2791,7 +2781,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 74.3,
+      "age_hours": 74.4,
       "checkpoint": "72h"
     },
     {
@@ -2813,7 +2803,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 85.8,
+      "age_hours": 85.9,
       "checkpoint": "72h"
     },
     {
@@ -2835,7 +2825,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 98.3,
+      "age_hours": 98.4,
       "checkpoint": "72h"
     },
     {
@@ -2857,7 +2847,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 109.8,
+      "age_hours": 109.9,
       "checkpoint": "72h"
     },
     {
@@ -2879,7 +2869,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 122.3,
+      "age_hours": 122.4,
       "checkpoint": "72h"
     },
     {
@@ -2923,7 +2913,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 146.3,
+      "age_hours": 146.4,
       "checkpoint": "72h"
     },
     {
@@ -2967,7 +2957,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 170.3,
+      "age_hours": 170.4,
       "checkpoint": "168h"
     },
     {
@@ -3011,7 +3001,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 194.3,
+      "age_hours": 194.4,
       "checkpoint": "168h"
     },
     {
@@ -3033,7 +3023,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 205.8,
+      "age_hours": 205.9,
       "checkpoint": "168h"
     },
     {
@@ -3055,7 +3045,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 218.3,
+      "age_hours": 218.4,
       "checkpoint": "168h"
     },
     {
@@ -3077,7 +3067,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 229.8,
+      "age_hours": 229.9,
       "checkpoint": "168h"
     },
     {
@@ -3099,7 +3089,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 242.3,
+      "age_hours": 242.4,
       "checkpoint": "168h"
     },
     {
@@ -3121,7 +3111,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 253.8,
+      "age_hours": 253.9,
       "checkpoint": "168h"
     },
     {
@@ -3143,7 +3133,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 266.3,
+      "age_hours": 266.4,
       "checkpoint": "168h"
     },
     {
@@ -3165,7 +3155,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 277.8,
+      "age_hours": 277.9,
       "checkpoint": "168h"
     },
     {
@@ -3187,7 +3177,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 290.3,
+      "age_hours": 290.4,
       "checkpoint": "168h"
     },
     {
@@ -3231,7 +3221,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 314.3,
+      "age_hours": 314.4,
       "checkpoint": "168h"
     },
     {
@@ -3275,7 +3265,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.886Z",
       "youtube_category": "27",
-      "age_hours": 338.3,
+      "age_hours": 338.4,
       "checkpoint": "168h"
     },
     {
@@ -3297,7 +3287,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.887Z",
       "youtube_category": "27",
-      "age_hours": 349.8,
+      "age_hours": 349.9,
       "checkpoint": "168h"
     },
     {
@@ -3319,7 +3309,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.887Z",
       "youtube_category": "27",
-      "age_hours": 362.3,
+      "age_hours": 362.4,
       "checkpoint": "168h"
     },
     {
@@ -3341,7 +3331,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.887Z",
       "youtube_category": "27",
-      "age_hours": 373.8,
+      "age_hours": 373.9,
       "checkpoint": "168h"
     },
     {
@@ -3363,7 +3353,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.887Z",
       "youtube_category": "27",
-      "age_hours": 386.3,
+      "age_hours": 386.4,
       "checkpoint": "168h"
     },
     {
@@ -3385,7 +3375,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.887Z",
       "youtube_category": "27",
-      "age_hours": 397.8,
+      "age_hours": 397.9,
       "checkpoint": "168h"
     },
     {
@@ -3407,7 +3397,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.887Z",
       "youtube_category": "27",
-      "age_hours": 410.3,
+      "age_hours": 410.4,
       "checkpoint": "168h"
     },
     {
@@ -3451,7 +3441,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.887Z",
       "youtube_category": "27",
-      "age_hours": 516.6,
+      "age_hours": 516.7,
       "checkpoint": "168h"
     },
     {
@@ -3495,7 +3485,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.887Z",
       "youtube_category": "27",
-      "age_hours": 541.0,
+      "age_hours": 541.1,
       "checkpoint": "168h"
     },
     {
@@ -3517,7 +3507,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.887Z",
       "youtube_category": "27",
-      "age_hours": 541.7,
+      "age_hours": 541.8,
       "checkpoint": "168h"
     },
     {
@@ -3539,7 +3529,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.887Z",
       "youtube_category": "27",
-      "age_hours": 709.0,
+      "age_hours": 709.1,
       "checkpoint": "168h"
     },
     {
@@ -3583,7 +3573,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.887Z",
       "youtube_category": "27",
-      "age_hours": 732.5,
+      "age_hours": 732.6,
       "checkpoint": "168h"
     },
     {
@@ -3715,7 +3705,7 @@
       },
       "metrics_updated_at": "2026-10-17T15:00:08.228Z",
       "youtube_category": "27",
-      "age_hours": 807.4,
+      "age_hours": 807.5,
       "checkpoint": "168h"
     },
     {
@@ -3737,7 +3727,7 @@
       },
       "metrics_updated_at": "2026-10-17T15:00:08.229Z",
       "youtube_category": "27",
-      "age_hours": 828.7,
+      "age_hours": 828.8,
       "checkpoint": "168h"
     },
     {
@@ -3781,7 +3771,7 @@
       },
       "metrics_updated_at": "2026-10-16T15:58:37.588Z",
       "youtube_category": "27",
-      "age_hours": 852.6,
+      "age_hours": 852.7,
       "checkpoint": "168h"
     },
     {
@@ -3825,7 +3815,7 @@
       },
       "metrics_updated_at": "2026-10-16T11:17:06.641Z",
       "youtube_category": "27",
-      "age_hours": 879.0,
+      "age_hours": 879.1,
       "checkpoint": "168h"
     },
     {
@@ -3847,7 +3837,7 @@
       },
       "metrics_updated_at": "2026-10-16T11:17:06.784Z",
       "youtube_category": "22",
-      "age_hours": 1009.8,
+      "age_hours": 1009.9,
       "checkpoint": "168h"
     },
     {
@@ -3869,7 +3859,7 @@
       },
       "metrics_updated_at": "2026-10-16T11:17:06.701Z",
       "youtube_category": "27",
-      "age_hours": 887.3,
+      "age_hours": 887.4,
       "checkpoint": "168h"
     }
   ]
