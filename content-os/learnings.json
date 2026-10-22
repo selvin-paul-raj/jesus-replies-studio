@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-22T04:56:42.262729+00:00",
+  "as_of": "2026-10-22T11:45:13.069281+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -14,14 +14,14 @@
       ],
       "stall_rate": 0.13,
       "median_views": 1518,
-      "max_views": 2271,
+      "max_views": 2272,
       "saves_per_1k_reach_median": 14.2,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 15,
-            "median_views": 1454
+            "median_views": 1455
           },
           "night (18-24 IST)": {
             "n": 12,
@@ -32,7 +32,7 @@
       "top": [
         {
           "episode_id": "JR-0045",
-          "views": 2271,
+          "views": 2272,
           "saves": 66,
           "shares": 16,
           "theme": "being the last single friend",
@@ -54,7 +54,7 @@
         },
         {
           "episode_id": "JR-0025",
-          "views": 1786,
+          "views": 1787,
           "saves": 19,
           "shares": 10,
           "theme": "friendship betrayal",
@@ -65,7 +65,7 @@
         },
         {
           "episode_id": "JR-0029",
-          "views": 1744,
+          "views": 1745,
           "saves": 16,
           "shares": 5,
           "theme": "jealousy of a sibling",
@@ -139,15 +139,15 @@
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 501.0,
-      "max_views": 3480,
+      "median_views": 502.5,
+      "max_views": 3593,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 15,
-            "median_views": 1209
+            "median_views": 1208
           },
           "night (18-24 IST)": {
             "n": 15,
@@ -158,7 +158,7 @@
       "top": [
         {
           "episode_id": "JR-0053",
-          "views": 3480,
+          "views": 3593,
           "saves": null,
           "shares": null,
           "theme": "father in the ICU while he is stuck in another city",
@@ -169,7 +169,7 @@
         },
         {
           "episode_id": "JR-0038",
-          "views": 2777,
+          "views": 2845,
           "saves": null,
           "shares": null,
           "theme": "alone in the hostel during the festival holidays",
@@ -180,7 +180,7 @@
         },
         {
           "episode_id": "JR-0041",
-          "views": 1952,
+          "views": 1957,
           "saves": null,
           "shares": null,
           "theme": "people-pleasing and not being able to say no",
@@ -191,7 +191,7 @@
         },
         {
           "episode_id": "JR-0054",
-          "views": 1793,
+          "views": 1798,
           "saves": null,
           "shares": null,
           "theme": "comparing her career to her batchmates' online updates",
@@ -251,7 +251,7 @@
         },
         {
           "episode_id": "JR-0045",
-          "views": 54,
+          "views": 55,
           "theme": "being the last single friend",
           "emotion": "sad",
           "hook": "Jesus... my last single friend got engaged today. I smiled in every photo. 😔",
@@ -435,7 +435,7 @@
         "episode_id": "JR-0041",
         "score": 0.931,
         "views": {
-          "youtube": 1952
+          "youtube": 1957
         },
         "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔"
       },
@@ -443,7 +443,7 @@
         "episode_id": "JR-0046",
         "score": 0.828,
         "views": {
-          "youtube": 1606
+          "youtube": 1614
         },
         "hook": "Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔"
       },
@@ -451,7 +451,7 @@
         "episode_id": "JR-0042",
         "score": 0.793,
         "views": {
-          "youtube": 1538
+          "youtube": 1541
         },
         "hook": "Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔"
       },
@@ -460,7 +460,7 @@
         "score": 0.731,
         "views": {
           "instagram": 1688,
-          "youtube": 1092
+          "youtube": 1099
         },
         "hook": "Jesus... I hurt her, and I never said sorry. 😔"
       },
@@ -469,7 +469,7 @@
         "score": 0.729,
         "views": {
           "instagram": 1661,
-          "youtube": 1209
+          "youtube": 1208
         },
         "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔"
       }
@@ -481,17 +481,17 @@
     ],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1454 (n=15), night (18-24 IST) 1614 (n=12)",
-      "youtube slot medians: morning (06-12 IST) 1209 (n=15), night (18-24 IST) 305 (n=15)",
+      "instagram slot medians: morning (06-12 IST) 1455 (n=15), night (18-24 IST) 1614 (n=12)",
+      "youtube slot medians: morning (06-12 IST) 1208 (n=15), night (18-24 IST) 305 (n=15)",
       "instagram: 4 of 31 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0041 score 0.93 (youtube 1952 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0046 score 0.83 (youtube 1606 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0042 score 0.79 (youtube 1538 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0049 score 0.73 (instagram 1688, youtube 1092 views): Jesus... I hurt her, and I never said sorry. 😔",
-      "JR-0040 score 0.73 (instagram 1661, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔"
+      "JR-0041 score 0.93 (youtube 1957 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0046 score 0.83 (youtube 1614 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0042 score 0.79 (youtube 1541 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0049 score 0.73 (instagram 1688, youtube 1099 views): Jesus... I hurt her, and I never said sorry. 😔",
+      "JR-0040 score 0.73 (instagram 1661, youtube 1208 views): Jesus... why do my parents only fight when they think I'm asleep? 😔"
     ]
   }
 }

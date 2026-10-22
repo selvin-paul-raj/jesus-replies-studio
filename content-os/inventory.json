@@ -1,7 +1,7 @@
 {
   "counts": {
-    "PUBLISHED": 55,
-    "UNUSED": 3,
+    "PUBLISHED": 54,
+    "UNUSED": 4,
     "SCHEDULED": 7,
     "READY": 10
   },
@@ -130,17 +130,15 @@
     },
     {
       "episode_id": "JR-0008",
-      "status": "PUBLISHED",
-      "why": "published before hosted assets were tracked",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
       "platforms": {
-        "instagram": "PUBLISHED (seen in Buffer, not tracked by the OS)",
+        "instagram": "NONE",
         "youtube": "NONE"
       },
       "asset_url": null,
       "duration_s": null,
-      "published_on": [
-        "instagram"
-      ]
+      "published_on": []
     },
     {
       "episode_id": "JR-0009",
@@ -1071,5 +1069,5 @@
       "published_on": []
     }
   ],
-  "as_of": "2026-10-22T04:56:42.262729+00:00"
+  "as_of": "2026-10-22T11:45:13.069281+00:00"
 }
