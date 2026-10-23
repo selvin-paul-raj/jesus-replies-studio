@@ -1,0 +1,43 @@
+{
+  "episode_id": "JR-0065",
+  "platforms": {
+    "instagram": {
+      "state": "SCHEDULED",
+      "post_id": "6ad5a1e10a208cb323951409",
+      "due_at": "2026-10-23T15:00:00.000Z",
+      "sent_at": null,
+      "external_link": null,
+      "pending_mutation": null,
+      "attempts": 1,
+      "error": null,
+      "history": [
+        {
+          "at": "Fri 2026-10-23 8:52 AM IST (UTC+05:30)",
+          "from": "NONE",
+          "to": "SCHEDULED",
+          "run": "39894605441",
+          "evidence": "CEO 2026-10-23 promote: post 6ad5a1e10a208cb323951409 (own draft) scheduled 2026-10-23T15:00:00.000Z (run 39894605441)"
+        }
+      ]
+    },
+    "youtube": {
+      "state": "SCHEDULED",
+      "post_id": "6ad52ded769b457934db6b7b",
+      "due_at": "2026-10-23T15:00:00.000Z",
+      "sent_at": null,
+      "external_link": null,
+      "pending_mutation": null,
+      "attempts": 1,
+      "error": null,
+      "history": [
+        {
+          "at": "Fri 2026-10-23 8:53 AM IST (UTC+05:30)",
+          "from": "NONE",
+          "to": "SCHEDULED",
+          "run": "39894605441",
+          "evidence": "CEO 2026-10-23 promote: post 6ad52ded769b457934db6b7b (re-used from JR-0060) scheduled 2026-10-23T15:00:00.000Z (run 39894605441)"
+        }
+      ]
+    }
+  }
+}

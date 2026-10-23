@@ -25,13 +25,13 @@
       }
     },
     "youtube": {
-      "state": "SCHEDULED",
-      "post_id": "6ad52ded769b457934db6b7b",
-      "due_at": "2026-10-23T15:00:00.000Z",
+      "state": "NONE",
+      "post_id": null,
+      "due_at": null,
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
-      "attempts": 1,
+      "attempts": 0,
       "error": null,
       "history": [
         {
@@ -40,8 +40,16 @@
           "to": "SCHEDULED",
           "run": "39164095254",
           "evidence": "create_scheduled read back: scheduled 2026-10-23T15:00:00.000Z"
+        },
+        {
+          "at": "Fri 2026-10-23 8:53 AM IST (UTC+05:30)",
+          "from": "SCHEDULED",
+          "to": "NONE",
+          "run": "39894605441",
+          "evidence": "post 6ad52ded769b457934db6b7b handed to JR-0065 (old long render pulled; awaiting rewrite)"
         }
-      ]
+      ],
+      "last_read_error": null
     }
   }
 }
