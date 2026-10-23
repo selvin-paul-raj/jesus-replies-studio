@@ -1,0 +1,47 @@
+name: JR promote short episodes into blocked slots
+
+# CEO decision 2026-10-23 08:46 IST. Re-uses the SAME Buffer posts (no deletion): edits each
+# post recorded for the old episode to the new episode's video/text/title at the slot time.
+
+on:
+  workflow_dispatch:
+    inputs:
+      plan:
+        description: 'JSON list of {"slot","new","old"}'
+        required: true
+      mode:
+        description: dry | apply
+        required: true
+        default: dry
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jr-content-os
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Promote
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          PLAN: ${{ inputs.plan }}
+          MODE: ${{ inputs.mode }}
+        run: python3 scripts/jr_promote.py
+      - name: Commit state
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content-os episodes 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "automation: promote ${{ inputs.mode }} [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
