@@ -1,23 +1,20 @@
 {
   "counts": {
     "PUBLISHED": 55,
-    "UNUSED": 4,
-    "SCHEDULED": 6,
-    "READY": 10
+    "UNUSED": 12,
+    "SCHEDULED": 5,
+    "READY": 7
   },
   "next_ready": [
-    "JR-0065",
-    "JR-0066",
-    "JR-0067",
-    "JR-0068",
     "JR-0069",
     "JR-0070",
     "JR-0071",
     "JR-0072",
     "JR-0073",
-    "JR-0074"
+    "JR-0074",
+    "JR-0075"
   ],
-  "ready_total": 10,
+  "ready_total": 7,
   "items": [
     {
       "episode_id": "JR-0001",
@@ -142,17 +139,15 @@
     },
     {
       "episode_id": "JR-0009",
-      "status": "PUBLISHED",
-      "why": "published before hosted assets were tracked",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
       "platforms": {
-        "instagram": "PUBLISHED (seen in Buffer, not tracked by the OS)",
+        "instagram": "NONE",
         "youtube": "NONE"
       },
       "asset_url": null,
       "duration_s": null,
-      "published_on": [
-        "instagram"
-      ]
+      "published_on": []
     },
     {
       "episode_id": "JR-0010",
@@ -881,62 +876,65 @@
     },
     {
       "episode_id": "JR-0059",
-      "status": "SCHEDULED",
-      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
+      "status": "PUBLISHED",
+      "why": "all platforms",
       "platforms": {
-        "instagram": "SCHEDULED",
-        "youtube": "SCHEDULED"
+        "instagram": "PUBLISHED_VERIFIED",
+        "youtube": "PUBLISHED_VERIFIED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-d/JR-0059.mp4",
       "duration_s": 51.29,
-      "published_on": []
+      "published_on": [
+        "instagram",
+        "youtube"
+      ]
     },
     {
       "episode_id": "JR-0060",
-      "status": "SCHEDULED",
-      "why": "instagram=DRAFT, youtube=SCHEDULED",
+      "status": "UNUSED",
+      "why": "held: CEO 2026-10-23: old long render pulled; hold until rewritten to ~110 words, re-rendered and QA-passed, then queue at the back",
       "platforms": {
         "instagram": "DRAFT",
-        "youtube": "SCHEDULED"
+        "youtube": "NONE"
       },
-      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0060/JR-0060.mp4",
-      "duration_s": 88.15,
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-e/JR-0060.mp4",
+      "duration_s": 53.46,
       "published_on": []
     },
     {
       "episode_id": "JR-0061",
-      "status": "SCHEDULED",
-      "why": "instagram=DRAFT, youtube=SCHEDULED",
+      "status": "UNUSED",
+      "why": "held: CEO 2026-10-23: old long render pulled; hold until rewritten to ~110 words, re-rendered and QA-passed, then queue at the back",
       "platforms": {
         "instagram": "DRAFT",
-        "youtube": "SCHEDULED"
+        "youtube": "NONE"
       },
-      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0061/JR-0061.mp4",
-      "duration_s": 80.79,
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-e/JR-0061.mp4",
+      "duration_s": 55.21,
       "published_on": []
     },
     {
       "episode_id": "JR-0062",
-      "status": "SCHEDULED",
-      "why": "instagram=DRAFT, youtube=SCHEDULED",
+      "status": "UNUSED",
+      "why": "held: CEO 2026-10-23: old long render pulled; hold until rewritten to ~110 words, re-rendered and QA-passed, then queue at the back",
       "platforms": {
         "instagram": "DRAFT",
-        "youtube": "SCHEDULED"
+        "youtube": "NONE"
       },
-      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0062/JR-0062.mp4",
-      "duration_s": 86.89,
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-e/JR-0062.mp4",
+      "duration_s": 57.32,
       "published_on": []
     },
     {
       "episode_id": "JR-0063",
-      "status": "SCHEDULED",
-      "why": "instagram=DRAFT, youtube=SCHEDULED",
+      "status": "UNUSED",
+      "why": "held: CEO 2026-10-23: old long render pulled; hold until rewritten to ~110 words, re-rendered and QA-passed, then queue at the back",
       "platforms": {
         "instagram": "DRAFT",
-        "youtube": "SCHEDULED"
+        "youtube": "NONE"
       },
-      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0063/JR-0063.mp4",
-      "duration_s": 85.01,
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-e/JR-0063.mp4",
+      "duration_s": 54.29,
       "published_on": []
     },
     {
@@ -953,11 +951,11 @@
     },
     {
       "episode_id": "JR-0065",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "SCHEDULED",
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0065/JR-0065.mp4",
       "duration_s": 56.02,
@@ -965,11 +963,11 @@
     },
     {
       "episode_id": "JR-0066",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "SCHEDULED",
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0066/JR-0066.mp4",
       "duration_s": 51.71,
@@ -977,11 +975,11 @@
     },
     {
       "episode_id": "JR-0067",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "SCHEDULED",
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0067/JR-0067.mp4",
       "duration_s": 55.55,
@@ -989,11 +987,11 @@
     },
     {
       "episode_id": "JR-0068",
-      "status": "READY",
-      "why": "instagram=NONE, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "SCHEDULED",
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0068/JR-0068.mp4",
       "duration_s": 52.1,
@@ -1070,7 +1068,55 @@
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0074/JR-0074.mp4",
       "duration_s": 59.16,
       "published_on": []
+    },
+    {
+      "episode_id": "JR-0075",
+      "status": "READY",
+      "why": "instagram=NONE, youtube=NONE",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0075/JR-0075.mp4",
+      "duration_s": 53.48,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0076",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0077",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0078",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
     }
   ],
-  "as_of": "2026-10-23T01:46:39.428435+00:00"
+  "as_of": "2026-10-23T04:42:53.415334+00:00"
 }
