@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-22T21:31:42.269667+00:00",
+  "as_of": "2026-10-23T01:46:39.428435+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -13,9 +13,9 @@
         "JR-0033"
       ],
       "stall_rate": 0.12,
-      "median_views": 1497.5,
-      "max_views": 2272,
-      "saves_per_1k_reach_median": 14.1,
+      "median_views": 1502.0,
+      "max_views": 2273,
+      "saves_per_1k_reach_median": 14.0,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
@@ -32,7 +32,7 @@
       "top": [
         {
           "episode_id": "JR-0045",
-          "views": 2272,
+          "views": 2273,
           "saves": 66,
           "shares": 16,
           "theme": "being the last single friend",
@@ -54,7 +54,7 @@
         },
         {
           "episode_id": "JR-0025",
-          "views": 1787,
+          "views": 1788,
           "saves": 19,
           "shares": 10,
           "theme": "friendship betrayal",
@@ -76,7 +76,7 @@
         },
         {
           "episode_id": "JR-0047",
-          "views": 1720,
+          "views": 1721,
           "saves": 21,
           "shares": 8,
           "theme": "hating how she looks in every photo of herself",
