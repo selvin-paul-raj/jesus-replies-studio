@@ -790,5 +790,49 @@
     "size_bytes": 6238373,
     "sha256": "5b6b3a5e481b91cac60c22b491211446f0d59f47f752835aa441e71ae7ad8c58",
     "qa_status": "PASS"
+  },
+  {
+    "release_tag": "jr-fix-2026-10-23-short",
+    "created_at": "2026-10-23T03:19:40Z",
+    "episode_id": "JR-0060",
+    "asset_name": "JR-0060.mp4",
+    "public_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-short/JR-0060.mp4",
+    "duration_seconds": 53.46,
+    "size_bytes": 5650454,
+    "sha256": "2519bdfafb1e6cd72e5d7d3967500a0ce2129834e75eca8c13a63069bc9f7617",
+    "qa_status": "PASS"
+  },
+  {
+    "release_tag": "jr-fix-2026-10-23-short",
+    "created_at": "2026-10-23T03:19:40Z",
+    "episode_id": "JR-0061",
+    "asset_name": "JR-0061.mp4",
+    "public_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-short/JR-0061.mp4",
+    "duration_seconds": 59.12,
+    "size_bytes": 6008459,
+    "sha256": "1ff909af14b42ab6893b27e5013b7b730cde6de1b29801e4b46a96a53ed78788",
+    "qa_status": "PASS"
+  },
+  {
+    "release_tag": "jr-fix-2026-10-23-short",
+    "created_at": "2026-10-23T03:19:40Z",
+    "episode_id": "JR-0062",
+    "asset_name": "JR-0062.mp4",
+    "public_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-short/JR-0062.mp4",
+    "duration_seconds": 59.48,
+    "size_bytes": 6289692,
+    "sha256": "f34611150ea7efb2911f581876890b837c4b3c5bbb042d2e760735117335a6c5",
+    "qa_status": "PASS"
+  },
+  {
+    "release_tag": "jr-fix-2026-10-23-short",
+    "created_at": "2026-10-23T03:19:40Z",
+    "episode_id": "JR-0063",
+    "asset_name": "JR-0063.mp4",
+    "public_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-short/JR-0063.mp4",
+    "duration_seconds": 56.02,
+    "size_bytes": 6040317,
+    "sha256": "86934307274d25c0e94dfbbd5aef4ba0828dcb32a709d40d6b8c2f2ffab70f5a",
+    "qa_status": "PASS"
   }
 ]
