@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-23T11:32:35.372111+00:00",
+  "as_of": "2026-10-23T17:02:46.545098+00:00",
   "slots": [
     "08:00",
     "20:30"
@@ -13,69 +13,69 @@
     "instagram": {
       "n_7d": {
         "08:00": 13,
-        "20:30": 11
+        "20:30": 12
       },
       "medians_7d": {
         "reach": {
           "08:00": 1100,
-          "20:30": 1297
+          "20:30": 1321.0
         },
         "views": {
           "08:00": 1284,
-          "20:30": 1280
+          "20:30": 1394.5
         },
         "shares": {
           "08:00": 3,
-          "20:30": 5
+          "20:30": 5.0
         },
         "saves": {
           "08:00": 11,
-          "20:30": 19
+          "20:30": 19.0
         },
         "comments": {
           "08:00": 0,
-          "20:30": 0
+          "20:30": 0.0
         },
         "likes": {
           "08:00": 94,
-          "20:30": 106
+          "20:30": 96.0
         },
         "engagement_rate": {
           "08:00": 11.38,
-          "20:30": 12.29
+          "20:30": 12.195
         }
       },
       "ahead_on": {
         "reach": "20:30",
-        "views": "08:00",
+        "views": "20:30",
         "shares": "20:30",
         "saves": "20:30",
         "likes": "20:30",
         "engagement_rate": "20:30"
       },
-      "verdict": "current evidence suggests 20:30 ahead on reach, 08:00 ahead on views, 20:30 ahead on shares, 20:30 ahead on saves, 20:30 ahead on likes, 20:30 ahead on engagement_rate"
+      "verdict": "current evidence suggests 20:30 ahead on reach, 20:30 ahead on views, 20:30 ahead on shares, 20:30 ahead on saves, 20:30 ahead on likes, 20:30 ahead on engagement_rate"
     },
     "youtube": {
       "n_7d": {
         "08:00": 12,
-        "20:30": 15
+        "20:30": 16
       },
       "medians_7d": {
         "views": {
           "08:00": 768.0,
-          "20:30": 145
+          "20:30": 147.5
         },
         "comments": {
           "08:00": 1.0,
-          "20:30": 0
+          "20:30": 0.0
         },
         "likes": {
           "08:00": 99.0,
-          "20:30": 14
+          "20:30": 16.5
         },
         "engagement_rate": {
           "08:00": 15.125,
-          "20:30": 15.03
+          "20:30": 14.27
         }
       },
       "ahead_on": {

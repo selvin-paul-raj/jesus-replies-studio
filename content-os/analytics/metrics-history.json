@@ -5235,6 +5235,16 @@
         },
         "observed_age_hours": 79.3,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "168h": {
+        "metrics": {
+          "reactions": 67,
+          "comments": 0,
+          "engagementRate": 13.51,
+          "views": 496
+        },
+        "observed_age_hours": 170.0,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -5269,6 +5279,21 @@
           "reach": 1483
         },
         "observed_age_hours": 79.2,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "168h": {
+        "metrics": {
+          "reactions": 86,
+          "comments": 2,
+          "engagementRate": 7.96,
+          "views": 1721,
+          "shares": 8,
+          "saves": 21,
+          "totalTimeWatched": 308.3,
+          "averageTimeWatched": 12.32,
+          "reach": 1483
+        },
+        "observed_age_hours": 169.9,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
@@ -5812,6 +5837,16 @@
         },
         "observed_age_hours": 26.1,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "72h": {
+        "metrics": {
+          "reactions": 168,
+          "comments": 0,
+          "engagementRate": 13.91,
+          "views": 1208
+        },
+        "observed_age_hours": 74.0,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -5833,6 +5868,21 @@
           "reach": 1220
         },
         "observed_age_hours": 26.0,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "72h": {
+        "metrics": {
+          "reactions": 75,
+          "comments": 1,
+          "engagementRate": 7.8,
+          "views": 1487,
+          "shares": 6,
+          "saves": 18,
+          "totalTimeWatched": 259.31,
+          "averageTimeWatched": 12,
+          "reach": 1295
+        },
+        "observed_age_hours": 74.0,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
@@ -5976,13 +6026,40 @@
     "episode_id": "JR-0058",
     "platform": "youtube",
     "sent_at": "2026-10-22T15:03:32.913Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 177,
+          "comments": 1,
+          "engagementRate": 16.7,
+          "views": 1066
+        },
+        "observed_age_hours": 26.0,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "instagram:6ad05bee0d0df6a75bc47e38": {
     "episode_id": "JR-0058",
     "platform": "instagram",
     "sent_at": "2026-10-22T15:09:04.921Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 85,
+          "comments": 0,
+          "engagementRate": 8.25,
+          "views": 1289,
+          "shares": 1,
+          "saves": 9,
+          "totalTimeWatched": 174.22,
+          "averageTimeWatched": 9,
+          "reach": 1164
+        },
+        "observed_age_hours": 25.9,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "youtube:6ad44a4d0b0d72757a08aa8a": {
     "episode_id": "JR-0059",
@@ -6000,6 +6077,12 @@
     "episode_id": "JR-0059",
     "platform": "instagram",
     "sent_at": "2026-10-23T02:31:40.346Z",
+    "checkpoints": {}
+  },
+  "youtube:6ad52ded769b457934db6b7b": {
+    "episode_id": "JR-0065",
+    "platform": "youtube",
+    "sent_at": "2026-10-23T15:03:28.274Z",
     "checkpoints": {}
   }
 }
