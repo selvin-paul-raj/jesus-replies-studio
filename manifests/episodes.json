@@ -531,5 +531,18 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0078",
+    "created_at": "2026-10-23T04:49:57Z",
+    "title": "Jesus... Appa Went Diwali Shopping Alone",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0078/JR-0078.mp4",
+    "buffer_post_id": "6adae7d5cc1b7cdc08cf4c05",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]
