@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-23T04:51:46.053108+00:00",
+  "as_of": "2026-10-23T11:32:35.372111+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -13,8 +13,8 @@
         "JR-0033"
       ],
       "stall_rate": 0.12,
-      "median_views": 1486,
-      "max_views": 2273,
+      "median_views": 1487,
+      "max_views": 2275,
       "saves_per_1k_reach_median": 13.9,
       "avg_watch_time_available": true,
       "by_dimension": {
@@ -32,8 +32,8 @@
       "top": [
         {
           "episode_id": "JR-0045",
-          "views": 2273,
-          "saves": 66,
+          "views": 2275,
+          "saves": 65,
           "shares": 16,
           "theme": "being the last single friend",
           "emotion": "sad",
@@ -140,14 +140,14 @@
       "stalled": [],
       "stall_rate": 0.0,
       "median_views": 524.5,
-      "max_views": 3593,
+      "max_views": 3646,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 16,
-            "median_views": 1108.5
+            "median_views": 1110.5
           },
           "night (18-24 IST)": {
             "n": 16,
@@ -158,7 +158,7 @@
       "top": [
         {
           "episode_id": "JR-0053",
-          "views": 3593,
+          "views": 3646,
           "saves": null,
           "shares": null,
           "theme": "father in the ICU while he is stuck in another city",
@@ -169,7 +169,7 @@
         },
         {
           "episode_id": "JR-0038",
-          "views": 2845,
+          "views": 2877,
           "saves": null,
           "shares": null,
           "theme": "alone in the hostel during the festival holidays",
@@ -180,7 +180,7 @@
         },
         {
           "episode_id": "JR-0041",
-          "views": 1957,
+          "views": 1958,
           "saves": null,
           "shares": null,
           "theme": "people-pleasing and not being able to say no",
@@ -312,7 +312,7 @@
         },
         "girl": {
           "n": 16,
-          "median_score": 0.4755
+          "median_score": 0.47350000000000003
         }
       },
       "hook_type": {
@@ -322,7 +322,7 @@
         },
         "question": {
           "n": 20,
-          "median_score": 0.46699999999999997
+          "median_score": 0.4605
         },
         "statement": {
           "n": 2,
@@ -340,7 +340,7 @@
         },
         ">60s": {
           "n": 15,
-          "median_score": 0.464
+          "median_score": 0.456
         }
       },
       "bible_book": {
@@ -394,7 +394,7 @@
         },
         "John": {
           "n": 1,
-          "median_score": 0.469
+          "median_score": 0.453
         },
         "Joshua": {
           "n": 1,
@@ -414,7 +414,7 @@
         },
         "Proverbs": {
           "n": 3,
-          "median_score": 0.435
+          "median_score": 0.451
         },
         "Psalms": {
           "n": 6,
@@ -435,7 +435,7 @@
         "episode_id": "JR-0041",
         "score": 0.935,
         "views": {
-          "youtube": 1957
+          "youtube": 1958
         },
         "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔"
       },
@@ -451,7 +451,7 @@
         "episode_id": "JR-0042",
         "score": 0.806,
         "views": {
-          "youtube": 1541
+          "youtube": 1542
         },
         "hook": "Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔"
       },
@@ -460,7 +460,7 @@
         "score": 0.748,
         "views": {
           "instagram": 1661,
-          "youtube": 1208
+          "youtube": 1209
         },
         "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔"
       },
@@ -480,15 +480,15 @@
     "avoid": [],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1371 (n=16), night (18-24 IST) 1575 (n=13)",
-      "youtube slot medians: morning (06-12 IST) 1108 (n=16), night (18-24 IST) 321 (n=16)",
+      "youtube slot medians: morning (06-12 IST) 1110 (n=16), night (18-24 IST) 321 (n=16)",
       "instagram: 4 of 33 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0041 score 0.94 (youtube 1957 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0041 score 0.94 (youtube 1958 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
       "JR-0046 score 0.84 (youtube 1614 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0042 score 0.81 (youtube 1541 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0040 score 0.75 (instagram 1661, youtube 1208 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
+      "JR-0042 score 0.81 (youtube 1542 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0040 score 0.75 (instagram 1661, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
       "JR-0049 score 0.73 (instagram 1688, youtube 1099 views): Jesus... I hurt her, and I never said sorry. 😔"
     ]
   }
