@@ -140,11 +140,11 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-24T10:52Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-24T15:53Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=31, median views 1492, best 2277, saves per 1k reach 13.4, stalled 4 (excluded)
-- **youtube**: n=34, median views 630, best 3696, saves per 1k reach None, stalled 0 (excluded)
-- **episodes scored** (IG + YT percentile): 35, 30 with both platforms
+- **instagram**: n=32, median views 1480, best 2277, saves per 1k reach 13.0, stalled 4 (excluded)
+- **youtube**: n=35, median views 719, best 3696, saves per 1k reach None, stalled 0 (excluded)
+- **episodes scored** (IG + YT percentile): 36, 31 with both platforms
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
@@ -157,12 +157,12 @@ _Last computed 2026-10-24T10:52Z from Buffer analytics, last 28 days, posts at l
 - JR-0046 score 0.85 (youtube 1615 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔
 - JR-0042 score 0.82 (youtube 1543 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔
 - JR-0048 score 0.74 (instagram 1632, youtube 1465 views): Jesus... why does my mind get loud the moment I lie down? 😔
-- JR-0040 score 0.73 (instagram 1662, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔
+- JR-0034 score 0.73 (instagram 1525, youtube 1689 views): Jesus, what if I stopped believing tomorrow?
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1456 (n=17), night (18-24 IST) 1548 (n=14)
-- youtube slot medians: morning (06-12 IST) 1156 (n=17), night (18-24 IST) 337 (n=17)
-- instagram: 4 of 35 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033
+- instagram slot medians: morning (06-12 IST) 1456 (n=17), night (18-24 IST) 1519 (n=15)
+- youtube slot medians: morning (06-12 IST) 1156 (n=17), night (18-24 IST) 416 (n=18)
+- instagram: 4 of 36 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->
