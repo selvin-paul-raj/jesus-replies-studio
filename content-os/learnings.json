@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-23T21:21:35.636064+00:00",
+  "as_of": "2026-10-24T01:51:42.643806+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -13,26 +13,26 @@
         "JR-0033"
       ],
       "stall_rate": 0.12,
-      "median_views": 1477.0,
-      "max_views": 2275,
+      "median_views": 1479.5,
+      "max_views": 2277,
       "saves_per_1k_reach_median": 13.7,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 16,
-            "median_views": 1371.0
+            "median_views": 1372.0
           },
           "night (18-24 IST)": {
             "n": 14,
-            "median_views": 1546.5
+            "median_views": 1547.5
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0045",
-          "views": 2275,
+          "views": 2277,
           "saves": 65,
           "shares": 16,
           "theme": "being the last single friend",
@@ -65,7 +65,7 @@
         },
         {
           "episode_id": "JR-0029",
-          "views": 1745,
+          "views": 1746,
           "saves": 16,
           "shares": 5,
           "theme": "jealousy of a sibling",
@@ -76,7 +76,7 @@
         },
         {
           "episode_id": "JR-0047",
-          "views": 1721,
+          "views": 1723,
           "saves": 21,
           "shares": 8,
           "theme": "hating how she looks in every photo of herself",
@@ -89,7 +89,7 @@
       "bottom": [
         {
           "episode_id": "JR-0054",
-          "views": 174,
+          "views": 175,
           "theme": "comparing her career to her batchmates' online updates",
           "emotion": "neutral",
           "hook": "Jesus... I liked every batchmate's promotion post today. Then I sat in the bathroom feeling sick. 😔",
@@ -125,7 +125,7 @@
         },
         {
           "episode_id": "JR-0038",
-          "views": 360,
+          "views": 361,
           "theme": "alone in the hostel during the festival holidays",
           "emotion": "sad",
           "hook": "Jesus... everyone in my hostel went home for the holidays. I'm the only one left. 😔",
@@ -394,7 +394,7 @@
         },
         "John": {
           "n": 2,
-          "median_score": 0.502
+          "median_score": 0.49749999999999994
         },
         "Joshua": {
           "n": 1,
@@ -414,7 +414,7 @@
         },
         "Proverbs": {
           "n": 3,
-          "median_score": 0.436
+          "median_score": 0.445
         },
         "Psalms": {
           "n": 6,
@@ -459,7 +459,7 @@
         "episode_id": "JR-0040",
         "score": 0.74,
         "views": {
-          "instagram": 1661,
+          "instagram": 1662,
           "youtube": 1209
         },
         "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔"
@@ -468,7 +468,7 @@
         "episode_id": "JR-0048",
         "score": 0.737,
         "views": {
-          "instagram": 1629,
+          "instagram": 1632,
           "youtube": 1465
         },
         "hook": "Jesus... why does my mind get loud the moment I lie down? 😔"
@@ -479,7 +479,7 @@
     "lean_towards": [],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1371 (n=16), night (18-24 IST) 1546 (n=14)",
+      "instagram slot medians: morning (06-12 IST) 1372 (n=16), night (18-24 IST) 1548 (n=14)",
       "youtube slot medians: morning (06-12 IST) 1110 (n=16), night (18-24 IST) 337 (n=17)",
       "instagram: 4 of 34 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
@@ -488,8 +488,8 @@
       "JR-0041 score 0.94 (youtube 1958 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
       "JR-0046 score 0.84 (youtube 1614 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
       "JR-0042 score 0.81 (youtube 1542 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0040 score 0.74 (instagram 1661, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
-      "JR-0048 score 0.74 (instagram 1629, youtube 1465 views): Jesus... why does my mind get loud the moment I lie down? 😔"
+      "JR-0040 score 0.74 (instagram 1662, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
+      "JR-0048 score 0.74 (instagram 1632, youtube 1465 views): Jesus... why does my mind get loud the moment I lie down? 😔"
     ]
   }
 }

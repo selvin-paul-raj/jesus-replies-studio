@@ -140,9 +140,9 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-23T21:21Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-24T01:51Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=30, median views 1477, best 2275, saves per 1k reach 13.7, stalled 4 (excluded)
+- **instagram**: n=30, median views 1480, best 2277, saves per 1k reach 13.7, stalled 4 (excluded)
 - **youtube**: n=33, median views 540, best 3646, saves per 1k reach None, stalled 0 (excluded)
 - **episodes scored** (IG + YT percentile): 34, 29 with both platforms
 
@@ -156,11 +156,11 @@ _Last computed 2026-10-23T21:21Z from Buffer analytics, last 28 days, posts at l
 - JR-0041 score 0.94 (youtube 1958 views): Jesus... I said yes again. I didn't want to. I never do. 😔
 - JR-0046 score 0.84 (youtube 1614 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔
 - JR-0042 score 0.81 (youtube 1542 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔
-- JR-0040 score 0.74 (instagram 1661, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔
-- JR-0048 score 0.74 (instagram 1629, youtube 1465 views): Jesus... why does my mind get loud the moment I lie down? 😔
+- JR-0040 score 0.74 (instagram 1662, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔
+- JR-0048 score 0.74 (instagram 1632, youtube 1465 views): Jesus... why does my mind get loud the moment I lie down? 😔
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1371 (n=16), night (18-24 IST) 1546 (n=14)
+- instagram slot medians: morning (06-12 IST) 1372 (n=16), night (18-24 IST) 1548 (n=14)
 - youtube slot medians: morning (06-12 IST) 1110 (n=16), night (18-24 IST) 337 (n=17)
 - instagram: 4 of 34 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
