@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0077",
+  "theme": "her friend keeps borrowing money and she cannot bring herself to say no even though it weighs on her",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... my friend asked to borrow money again. Why can't I say no? 💸",
+  "story_type": "one_pushback",
+  "audience_problem": "her friend keeps borrowing money and she cannot bring herself to say no even though it weighs on her",
+  "bible_theme": "Matthew 5:37",
+  "bible_book": "Matthew",
+  "cta_type": "comment_question_plus_action",
+  "duration": 47.79,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0077/JR-0077.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

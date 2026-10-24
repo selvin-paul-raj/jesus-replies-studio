@@ -1,0 +1,671 @@
+{
+  "plan_version": 1,
+  "week_start": "2026-10-26",
+  "week_end": "2026-11-01",
+  "timezone": "Asia/Kolkata",
+  "generated_at": "2026-10-24T16:06:09.000Z",
+  "status": "PROPOSED",
+  "requires_authorization": false,
+  "targets": {
+    "unique_videos": 14,
+    "instagram": 14,
+    "youtube": 14,
+    "platform_publications": 28
+  },
+  "generation_needed": 4,
+  "carry_over_ready": [],
+  "inventory_counts": {
+    "PUBLISHED": 58,
+    "UNUSED": 9,
+    "SCHEDULED": 2,
+    "READY": 10
+  },
+  "analytics_summary": {
+    "instagram": {
+      "jr_posts_sent": 48,
+      "dimensions": {
+        "reach": {
+          "metric": "reach",
+          "n": 47,
+          "median": 1100,
+          "max": 2045
+        },
+        "retention": {
+          "metric": "averageTimeWatched",
+          "n": 47,
+          "median": 11.87,
+          "max": 22.77
+        },
+        "shares": {
+          "metric": "shares",
+          "n": 47,
+          "median": 3,
+          "max": 17
+        },
+        "saves": {
+          "metric": "saves",
+          "n": 47,
+          "median": 9,
+          "max": 65
+        },
+        "comments": {
+          "metric": "comments",
+          "n": 47,
+          "median": 0,
+          "max": 2
+        },
+        "follows": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "likes": {
+          "metric": "reactions",
+          "n": 47,
+          "median": 76,
+          "max": 163
+        },
+        "views": {
+          "metric": "views",
+          "n": 47,
+          "median": 1281,
+          "max": 2277
+        }
+      }
+    },
+    "youtube": {
+      "jr_posts_sent": 55,
+      "dimensions": {
+        "reach": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "retention": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "shares": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "saves": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "comments": {
+          "metric": "comments",
+          "n": 55,
+          "median": 1,
+          "max": 6
+        },
+        "follows": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "likes": {
+          "metric": "reactions",
+          "n": 55,
+          "median": 83,
+          "max": 413
+        },
+        "views": {
+          "metric": "views",
+          "n": 55,
+          "median": 691,
+          "max": 3696
+        }
+      }
+    }
+  },
+  "timing": {
+    "hypotheses": [
+      {
+        "platform": "instagram",
+        "window": "06:00-09:00",
+        "median": 1168.5,
+        "n": 14,
+        "metric": "reach",
+        "confidence": "medium"
+      },
+      {
+        "platform": "youtube",
+        "window": "06:00-09:00",
+        "median": 111,
+        "n": 13,
+        "metric": "reactions",
+        "confidence": "medium"
+      }
+    ],
+    "caveats": [
+      "metrics are cumulative and confounded by topic, hook and account momentum",
+      "Buffer reports no audience-activity-by-hour; Instagram/YouTube native insights are not wired",
+      "only posts at least 7 days old are compared so totals are roughly comparable"
+    ],
+    "coordination": "same_slot"
+  },
+  "research_ref": "content-os/research/2026-10-26.research.json",
+  "research_opportunities": [
+    "Festive money pressure: shopping vs budget guilt (LocalCircles/Saarva both point to spend-with-caution), first salary giving decisions, and comparing what relatives can afford.",
+    "Festive-table interrogation: salary/marriage questions from relatives are a viral national theme right now; fits the confession register without copying any story.",
+    "Unseen home effort in the run-up to Diwali (cleaning, decorating, planning) going unnoticed; pairs with the family-coordination window."
+  ],
+  "experiments_active": [
+    "EXP-004"
+  ],
+  "slots": [
+    {
+      "episode_id": "JR-0069",
+      "date": "2026-10-26",
+      "weekday": "Monday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-26T02:30:00.000Z",
+        "youtube": "2026-10-26T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "his dog died on Tuesday and at work he told everyone his long weekend was good",
+      "hook_strategy": "statement",
+      "hook": "Jesus... our dog died Tuesday. At work I said \"weekend was good\" and kept typing. 🐕",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Psalms 30:5",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 53.38,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 53.38s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0070",
+      "date": "2026-10-26",
+      "weekday": "Monday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-26T15:00:00.000Z",
+        "youtube": "2026-10-26T15:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "he snapped at his little sister over a charger, then laughed it off and never apologised",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Lamentations 3:22",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 55.13,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 55.13s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0071",
+      "date": "2026-10-27",
+      "weekday": "Tuesday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-27T02:30:00.000Z",
+        "youtube": "2026-10-27T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "relatives asking salary questions at the Diwali table while her job hunt is still going nowhere",
+      "hook_strategy": "question",
+      "hook": "Jesus... every aunty at Diwali asked what I earn. What do I even say? 😔",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Matthew 6:33",
+      "story_type": "one_pushback",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 53.06,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 53.06s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0072",
+      "date": "2026-10-27",
+      "weekday": "Tuesday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-27T15:00:00.000Z",
+        "youtube": "2026-10-27T15:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "told his mother he is too busy to come home for Diwali when really he does not want her to see how his year went",
+      "hook_strategy": "statement",
+      "hook": "Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Exodus 20:12",
+      "story_type": "one_pushback",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 56.51,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 56.51s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0073",
+      "date": "2026-10-28",
+      "weekday": "Wednesday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-28T02:30:00.000Z",
+        "youtube": "2026-10-28T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "spent three days decorating the house for Diwali and nobody noticed her effort",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I strung every light on our house for Diwali. Amma praised my sister’s rangoli. ✨",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Galatians 6:9",
+      "story_type": "one_pushback",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 58.75,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 58.75s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0074",
+      "date": "2026-10-28",
+      "weekday": "Wednesday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-28T15:00:00.000Z",
+        "youtube": "2026-10-28T15:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "his first salary lands in Diwali week and he cannot decide how much to send home without leaving himself stuck",
+      "hook_strategy": "question",
+      "hook": "Jesus... my first salary landed in Diwali week. How much should I send home? 🙏",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "2 Corinthians 9:7",
+      "story_type": "one_pushback",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 59.16,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 59.16s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0075",
+      "date": "2026-10-29",
+      "weekday": "Thursday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-29T02:30:00.000Z",
+        "youtube": "2026-10-29T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "she told her athai her Diwali gift is her favourite when it is not, and the small lie is eating at her",
+      "hook_strategy": "question",
+      "hook": "Jesus... Athai's Diwali gift. Why did I call it my favourite? 🎁",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Ephesians 4:25",
+      "story_type": "one_pushback",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 53.48,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 53.48s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0076",
+      "date": "2026-10-29",
+      "weekday": "Thursday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-29T15:00:00.000Z",
+        "youtube": "2026-10-29T15:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "his office set a release deadline the day after Diwali and he is missing the festival at home for it",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... my office set a deadline for the day after Diwali. I opened my laptop on the train home. 💻",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Ecclesiastes 4:6",
+      "story_type": "one_pushback",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 52.63,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 52.63s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0077",
+      "date": "2026-10-30",
+      "weekday": "Friday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-30T02:30:00.000Z",
+        "youtube": "2026-10-30T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "her friend keeps borrowing money and she cannot bring herself to say no even though it weighs on her",
+      "hook_strategy": "question",
+      "hook": "Jesus... my friend asked to borrow money again. Why can't I say no? 💸",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Matthew 5:37",
+      "story_type": "one_pushback",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 47.79,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 47.79s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0078",
+      "date": "2026-10-30",
+      "weekday": "Friday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-30T15:00:00.000Z",
+        "youtube": "2026-10-30T15:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "he ordered everything online instead of walking the bazaar with his Appa like they used to, and realised it too late",
+      "hook_strategy": "question",
+      "hook": "Jesus... Appa wanted us to shop for Diwali together. Why did I order everything online instead? 🛒",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Matthew 6:21",
+      "story_type": "one_pushback",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 46.06,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 46.06s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0079",
+      "date": "2026-10-31",
+      "weekday": "Saturday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-10-31T02:30:00.000Z",
+        "youtube": "2026-10-31T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": null,
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0080",
+      "date": "2026-10-31",
+      "weekday": "Saturday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-10-31T15:00:00.000Z",
+        "youtube": "2026-10-31T15:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": null,
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0081",
+      "date": "2026-11-01",
+      "weekday": "Sunday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-01T02:30:00.000Z",
+        "youtube": "2026-11-01T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": null,
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0082",
+      "date": "2026-11-01",
+      "weekday": "Sunday",
+      "slot": 2,
+      "time": "20:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "20:30",
+        "youtube": "20:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-01T15:00:00.000Z",
+        "youtube": "2026-11-01T15:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": null,
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    }
+  ],
+  "plan_sha256": "4413ab1e01974fe37f3454a5feb0495b7fe2dc3a3e28b11f5d43bc9527a9fae7"
+}

@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0072",
+  "theme": "told his mother he is too busy to come home for Diwali when really he does not want her to see how his year went",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "statement",
+  "hook": "Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱",
+  "story_type": "one_pushback",
+  "audience_problem": "told his mother he is too busy to come home for Diwali when really he does not want her to see how his year went",
+  "bible_theme": "Exodus 20:12",
+  "bible_book": "Exodus",
+  "cta_type": "comment_question_plus_action",
+  "duration": 56.51,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0072/JR-0072.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

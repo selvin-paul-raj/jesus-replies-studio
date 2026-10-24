@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0069",
+  "theme": "his dog died on Tuesday and at work he told everyone his long weekend was good",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "statement",
+  "hook": "Jesus... our dog died Tuesday. At work I said \"weekend was good\" and kept typing. 🐕",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "his dog died on Tuesday and at work he told everyone his long weekend was good",
+  "bible_theme": "Psalms 30:5",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question_plus_action",
+  "duration": 53.38,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0069/JR-0069.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

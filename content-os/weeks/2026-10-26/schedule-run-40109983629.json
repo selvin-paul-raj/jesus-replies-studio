@@ -1,0 +1,181 @@
+{
+  "status": "DONE",
+  "results": [
+    {
+      "episode_id": "JR-0069",
+      "platform": "instagram",
+      "due_at": "2026-10-26T02:30:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ad6cba22fcafd0f184710dd"
+    },
+    {
+      "episode_id": "JR-0069",
+      "platform": "youtube",
+      "due_at": "2026-10-26T02:30:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6adcd7750b5343d070900266"
+    },
+    {
+      "episode_id": "JR-0070",
+      "platform": "instagram",
+      "due_at": "2026-10-26T15:00:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ad6cbeeb81183413daa0d93"
+    },
+    {
+      "episode_id": "JR-0070",
+      "platform": "youtube",
+      "due_at": "2026-10-26T15:00:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6adcd777e4be8a4d8668bf32"
+    },
+    {
+      "episode_id": "JR-0071",
+      "platform": "instagram",
+      "due_at": "2026-10-27T02:30:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ad995471093844846df4b96"
+    },
+    {
+      "episode_id": "JR-0071",
+      "platform": "youtube",
+      "due_at": "2026-10-27T02:30:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6adcd77a3d5b27036b916fcd"
+    },
+    {
+      "episode_id": "JR-0072",
+      "platform": "instagram",
+      "due_at": "2026-10-27T15:00:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ad995f8deacf5d2532d6cdd"
+    },
+    {
+      "episode_id": "JR-0072",
+      "platform": "youtube",
+      "due_at": "2026-10-27T15:00:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6adcd77c0b5343d070900532"
+    },
+    {
+      "episode_id": "JR-0073",
+      "platform": "instagram",
+      "due_at": "2026-10-28T02:30:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ad996d0282deeeeb2cc3719"
+    },
+    {
+      "episode_id": "JR-0073",
+      "platform": "youtube",
+      "due_at": "2026-10-28T02:30:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6adcd77f8b3d437ddcc9506c"
+    },
+    {
+      "episode_id": "JR-0074",
+      "platform": "instagram",
+      "due_at": "2026-10-28T15:00:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6ad9977cb086d40f57337715"
+    },
+    {
+      "episode_id": "JR-0074",
+      "platform": "youtube",
+      "due_at": "2026-10-28T15:00:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6adcd781e4be8a4d8668c1a9"
+    },
+    {
+      "episode_id": "JR-0075",
+      "platform": "instagram",
+      "due_at": "2026-10-29T02:30:00.000Z",
+      "result": "QUOTA_DEFERRED",
+      "state": "DRAFT",
+      "post_id": "6adae5bfcc1b7cdc08cee5a2"
+    },
+    {
+      "episode_id": "JR-0075",
+      "platform": "youtube",
+      "due_at": "2026-10-29T02:30:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6adcd7838b3d437ddcc95172"
+    },
+    {
+      "episode_id": "JR-0076",
+      "platform": "instagram",
+      "due_at": "2026-10-29T15:00:00.000Z",
+      "result": "QUOTA_DEFERRED",
+      "state": "DRAFT",
+      "post_id": "6adae6749ef33e7811ba37e8"
+    },
+    {
+      "episode_id": "JR-0076",
+      "platform": "youtube",
+      "due_at": "2026-10-29T15:00:00.000Z",
+      "result": "SCHEDULED",
+      "state": "SCHEDULED",
+      "post_id": "6adcd7858b3d437ddcc951f2"
+    },
+    {
+      "episode_id": "JR-0077",
+      "platform": "instagram",
+      "due_at": "2026-10-30T02:30:00.000Z",
+      "result": "QUOTA_DEFERRED",
+      "state": "DRAFT",
+      "post_id": "6adae71a1dc335d347f49f90"
+    },
+    {
+      "episode_id": "JR-0077",
+      "platform": "youtube",
+      "due_at": "2026-10-30T02:30:00.000Z",
+      "result": "QUOTA_DEFERRED",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0078",
+      "platform": "instagram",
+      "due_at": "2026-10-30T15:00:00.000Z",
+      "result": "QUOTA_DEFERRED",
+      "state": "DRAFT",
+      "post_id": "6adae7d5cc1b7cdc08cf4c05"
+    },
+    {
+      "episode_id": "JR-0078",
+      "platform": "youtube",
+      "due_at": "2026-10-30T15:00:00.000Z",
+      "result": "QUOTA_DEFERRED",
+      "state": "NONE",
+      "post_id": null
+    },
+    {
+      "episode_id": "JR-0079",
+      "result": "AWAITING_GENERATION"
+    },
+    {
+      "episode_id": "JR-0080",
+      "result": "AWAITING_GENERATION"
+    },
+    {
+      "episode_id": "JR-0081",
+      "result": "AWAITING_GENERATION"
+    },
+    {
+      "episode_id": "JR-0082",
+      "result": "AWAITING_GENERATION"
+    }
+  ]
+}

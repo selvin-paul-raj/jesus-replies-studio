@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0068",
+  "theme": "she types a long honest message to her best friend, deletes it and sends \"haha nothing\"",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I typed a whole paragraph about how I feel. I deleted it and sent \"haha nothing\". 💬",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "she types a long honest message to her best friend, deletes it and sends \"haha nothing\"",
+  "bible_theme": "Psalms 55:22",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question_plus_action",
+  "duration": 52.1,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0068/JR-0068.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0076",
+  "theme": "his office set a release deadline the day after Diwali and he is missing the festival at home for it",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... my office set a deadline for the day after Diwali. I opened my laptop on the train home. 💻",
+  "story_type": "one_pushback",
+  "audience_problem": "his office set a release deadline the day after Diwali and he is missing the festival at home for it",
+  "bible_theme": "Ecclesiastes 4:6",
+  "bible_book": "Ecclesiastes",
+  "cta_type": "comment_question_plus_action",
+  "duration": 52.63,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0076/JR-0076.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

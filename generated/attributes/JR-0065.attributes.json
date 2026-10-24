@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0065",
+  "theme": "she cries in the bathroom with the tap running so her family won't hear",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I ran the tap so my family wouldn't hear me cry. Then I came out and ate dinner. 🚿",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "she cries in the bathroom with the tap running so her family won't hear",
+  "bible_theme": "Psalms 56:8",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question_plus_action",
+  "duration": 56.02,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0065/JR-0065.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

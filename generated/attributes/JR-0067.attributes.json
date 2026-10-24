@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0067",
+  "theme": "she promises one more reel at 2 a.m. every night and hides her exhaustion at work",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "statement",
+  "hook": "Jesus... it's 2 a.m. again. I said one more reel an hour ago, and I'll smile at work anyway. 📱",
+  "story_type": "full_arc_two_pushbacks",
+  "audience_problem": "she promises one more reel at 2 a.m. every night and hides her exhaustion at work",
+  "bible_theme": "Psalms 127:2",
+  "bible_book": "Psalms",
+  "cta_type": "comment_question_plus_action",
+  "duration": 55.55,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0067/JR-0067.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}
