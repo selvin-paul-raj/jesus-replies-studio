@@ -2,11 +2,11 @@
   "episode_id": "JR-0066",
   "platforms": {
     "instagram": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6ad5a23e8206df0c0fb32a5c",
       "due_at": "2026-10-24T02:30:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-10-24T02:31:29.556Z",
+      "external_link": "https://www.instagram.com/reel/De3EElEDG1m/",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -17,15 +17,29 @@
           "to": "SCHEDULED",
           "run": "39894605441",
           "evidence": "CEO 2026-10-23 promote: post 6ad5a23e8206df0c0fb32a5c (own draft) scheduled 2026-10-24T02:30:00.000Z (run 39894605441)"
+        },
+        {
+          "at": "2026-10-24T04:30:35.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "40062607185",
+          "evidence": "read 6ad5a23e8206df0c0fb32a5c: status sent at 2026-10-24T02:31:29.556Z"
+        },
+        {
+          "at": "2026-10-24T04:30:35.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "40062607185",
+          "evidence": "permalink http=200 metricsUpdatedAt=2026-10-19T04:53:18.590Z"
         }
       ]
     },
     "youtube": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6ad59ddd938409f1d0fc8b05",
       "due_at": "2026-10-24T02:30:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-10-24T02:30:15.775Z",
+      "external_link": "https://www.youtube.com/shorts/2cNzvH3QKR4",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -36,6 +50,20 @@
           "to": "SCHEDULED",
           "run": "39894605441",
           "evidence": "CEO 2026-10-23 promote: post 6ad59ddd938409f1d0fc8b05 (re-used from JR-0061) scheduled 2026-10-24T02:30:00.000Z (run 39894605441)"
+        },
+        {
+          "at": "2026-10-24T04:30:35.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "40062607185",
+          "evidence": "read 6ad59ddd938409f1d0fc8b05: status sent at 2026-10-24T02:30:15.775Z"
+        },
+        {
+          "at": "2026-10-24T04:30:35.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "40062607185",
+          "evidence": "permalink http=200"
         }
       ]
     }
