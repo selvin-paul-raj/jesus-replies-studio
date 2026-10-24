@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-24T04:30:35.902615+00:00",
+  "as_of": "2026-10-24T10:52:51.767350+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -15,7 +15,7 @@
       "stall_rate": 0.11,
       "median_views": 1492,
       "max_views": 2277,
-      "saves_per_1k_reach_median": 13.5,
+      "saves_per_1k_reach_median": 13.4,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
@@ -43,7 +43,7 @@
         },
         {
           "episode_id": "JR-0020",
-          "views": 1914,
+          "views": 1915,
           "saves": 48,
           "shares": 15,
           "theme": "comparison",
@@ -54,7 +54,7 @@
         },
         {
           "episode_id": "JR-0025",
-          "views": 1788,
+          "views": 1789,
           "saves": 19,
           "shares": 10,
           "theme": "friendship betrayal",
@@ -98,7 +98,7 @@
         },
         {
           "episode_id": "JR-0037",
-          "views": 198,
+          "views": 199,
           "theme": "returning to church after years away",
           "emotion": "worried",
           "hook": "Jesus... I parked outside church this morning. I never went in. 😔",
@@ -107,7 +107,7 @@
         },
         {
           "episode_id": "JR-0022",
-          "views": 223,
+          "views": 224,
           "theme": "reconciliation",
           "emotion": "happy",
           "hook": "Jesus... my brother texted back after two years of silence. Why am I so scared to be happy about it?",
@@ -116,7 +116,7 @@
         },
         {
           "episode_id": "JR-0024",
-          "views": 247,
+          "views": 248,
           "theme": "money anxiety",
           "emotion": "worried",
           "hook": "Jesus, will there be enough money this month?",
@@ -140,14 +140,14 @@
       "stalled": [],
       "stall_rate": 0.0,
       "median_views": 629.5,
-      "max_views": 3646,
+      "max_views": 3696,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 17,
-            "median_views": 1063
+            "median_views": 1156
           },
           "night (18-24 IST)": {
             "n": 17,
@@ -158,7 +158,7 @@
       "top": [
         {
           "episode_id": "JR-0053",
-          "views": 3646,
+          "views": 3696,
           "saves": null,
           "shares": null,
           "theme": "father in the ICU while he is stuck in another city",
@@ -169,7 +169,7 @@
         },
         {
           "episode_id": "JR-0038",
-          "views": 2877,
+          "views": 2875,
           "saves": null,
           "shares": null,
           "theme": "alone in the hostel during the festival holidays",
@@ -180,7 +180,7 @@
         },
         {
           "episode_id": "JR-0041",
-          "views": 1958,
+          "views": 1967,
           "saves": null,
           "shares": null,
           "theme": "people-pleasing and not being able to say no",
@@ -191,7 +191,7 @@
         },
         {
           "episode_id": "JR-0054",
-          "views": 1798,
+          "views": 1795,
           "saves": null,
           "shares": null,
           "theme": "comparing her career to her batchmates' online updates",
@@ -233,7 +233,7 @@
         },
         {
           "episode_id": "JR-0023",
-          "views": 23,
+          "views": 25,
           "theme": "family expectations",
           "emotion": "crying",
           "hook": "Jesus... tomorrow I have to tell my parents I am leaving the course they paid for. 😭",
@@ -298,7 +298,7 @@
         },
         "sad": {
           "n": 19,
-          "median_score": 0.583
+          "median_score": 0.598
         },
         "worried": {
           "n": 4,
@@ -326,7 +326,7 @@
         },
         "statement": {
           "n": 4,
-          "median_score": 0.5734999999999999
+          "median_score": 0.581
         }
       },
       "duration": {
@@ -336,7 +336,7 @@
         },
         "<=55s": {
           "n": 12,
-          "median_score": 0.583
+          "median_score": 0.5905
         },
         ">60s": {
           "n": 15,
@@ -386,7 +386,7 @@
         },
         "Isaiah": {
           "n": 4,
-          "median_score": 0.6655
+          "median_score": 0.6579999999999999
         },
         "James": {
           "n": 1,
@@ -418,11 +418,11 @@
         },
         "Psalms": {
           "n": 7,
-          "median_score": 0.583
+          "median_score": 0.598
         },
         "Romans": {
           "n": 1,
-          "median_score": 0.735
+          "median_score": 0.72
         },
         "Ruth": {
           "n": 1,
@@ -435,7 +435,7 @@
         "episode_id": "JR-0041",
         "score": 0.939,
         "views": {
-          "youtube": 1958
+          "youtube": 1967
         },
         "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔"
       },
@@ -443,7 +443,7 @@
         "episode_id": "JR-0046",
         "score": 0.848,
         "views": {
-          "youtube": 1614
+          "youtube": 1615
         },
         "hook": "Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔"
       },
@@ -451,18 +451,9 @@
         "episode_id": "JR-0042",
         "score": 0.818,
         "views": {
-          "youtube": 1542
+          "youtube": 1543
         },
         "hook": "Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔"
-      },
-      {
-        "episode_id": "JR-0040",
-        "score": 0.748,
-        "views": {
-          "instagram": 1662,
-          "youtube": 1209
-        },
-        "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔"
       },
       {
         "episode_id": "JR-0048",
@@ -472,6 +463,15 @@
           "youtube": 1465
         },
         "hook": "Jesus... why does my mind get loud the moment I lie down? 😔"
+      },
+      {
+        "episode_id": "JR-0040",
+        "score": 0.733,
+        "views": {
+          "instagram": 1662,
+          "youtube": 1209
+        },
+        "hook": "Jesus... why do my parents only fight when they think I'm asleep? 😔"
       }
     ]
   },
@@ -480,16 +480,16 @@
     "avoid": [],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1456 (n=17), night (18-24 IST) 1548 (n=14)",
-      "youtube slot medians: morning (06-12 IST) 1063 (n=17), night (18-24 IST) 337 (n=17)",
+      "youtube slot medians: morning (06-12 IST) 1156 (n=17), night (18-24 IST) 337 (n=17)",
       "instagram: 4 of 35 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0041 score 0.94 (youtube 1958 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0046 score 0.85 (youtube 1614 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0042 score 0.82 (youtube 1542 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0040 score 0.75 (instagram 1662, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔",
-      "JR-0048 score 0.74 (instagram 1632, youtube 1465 views): Jesus... why does my mind get loud the moment I lie down? 😔"
+      "JR-0041 score 0.94 (youtube 1967 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0046 score 0.85 (youtube 1615 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0042 score 0.82 (youtube 1543 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0048 score 0.74 (instagram 1632, youtube 1465 views): Jesus... why does my mind get loud the moment I lie down? 😔",
+      "JR-0040 score 0.73 (instagram 1662, youtube 1209 views): Jesus... why do my parents only fight when they think I'm asleep? 😔"
     ]
   }
 }
