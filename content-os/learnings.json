@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-10-25T01:27:42.554124+00:00",
+  "as_of": "2026-10-25T04:35:21.719907+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
     "instagram": {
-      "n": 32,
+      "n": 33,
       "n_stalled": 4,
       "stalled": [
         "JR-0046",
@@ -13,15 +13,15 @@
         "JR-0033"
       ],
       "stall_rate": 0.11,
-      "median_views": 1482.0,
+      "median_views": 1496,
       "max_views": 2278,
-      "saves_per_1k_reach_median": 13.0,
+      "saves_per_1k_reach_median": 13.4,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 17,
-            "median_views": 1456
+            "n": 18,
+            "median_views": 1462.0
           },
           "night (18-24 IST)": {
             "n": 15,
@@ -40,6 +40,17 @@
           "hook": "Jesus... my last single friend got engaged today. I smiled in every photo. 😔",
           "slot": "night (18-24 IST)",
           "duration": ">60s"
+        },
+        {
+          "episode_id": "JR-0059",
+          "views": 2264,
+          "saves": 32,
+          "shares": 17,
+          "theme": "waiting for tomorrow's result that decides his future",
+          "emotion": "sad",
+          "hook": "Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔",
+          "slot": "morning (06-12 IST)",
+          "duration": "<=55s"
         },
         {
           "episode_id": "JR-0020",
@@ -73,17 +84,6 @@
           "hook": "Jesus, why does everything come easy for her?",
           "slot": "night (18-24 IST)",
           "duration": "56-60s"
-        },
-        {
-          "episode_id": "JR-0047",
-          "views": 1723,
-          "saves": 21,
-          "shares": 8,
-          "theme": "hating how she looks in every photo of herself",
-          "emotion": "sad",
-          "hook": "Jesus... why do I hate every photo of myself? 😔",
-          "slot": "night (18-24 IST)",
-          "duration": "<=55s"
         }
       ],
       "bottom": [
@@ -135,19 +135,19 @@
       ]
     },
     "youtube": {
-      "n": 35,
+      "n": 36,
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 719,
+      "median_views": 816.5,
       "max_views": 3696,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 17,
-            "median_views": 1156
+            "n": 18,
+            "median_views": 1084.0
           },
           "night (18-24 IST)": {
             "n": 18,
@@ -271,169 +271,169 @@
   "stall_rule": "Instagram reach < followers (88) = stalled, excluded from content learning",
   "scoring": "mean of Instagram and YouTube view percentiles where data exists",
   "content": {
-    "n_episodes": 36,
-    "both_platforms": 31,
-    "median_score": 0.5145,
+    "n_episodes": 37,
+    "both_platforms": 32,
+    "median_score": 0.501,
     "by_dimension": {
       "emotion": {
         "angry": {
           "n": 1,
-          "median_score": 0.555
+          "median_score": 0.537
         },
         "crying": {
           "n": 4,
-          "median_score": 0.431
+          "median_score": 0.4175
         },
         "happy": {
           "n": 2,
-          "median_score": 0.443
+          "median_score": 0.437
         },
         "heartbroken": {
           "n": 1,
-          "median_score": 0.484
+          "median_score": 0.469
         },
         "neutral": {
           "n": 4,
-          "median_score": 0.4585
+          "median_score": 0.4515
         },
         "sad": {
-          "n": 20,
-          "median_score": 0.5934999999999999
+          "n": 21,
+          "median_score": 0.593
         },
         "worried": {
           "n": 4,
-          "median_score": 0.275
+          "median_score": 0.2665
         }
       },
       "character": {
         "boy": {
-          "n": 18,
-          "median_score": 0.5335000000000001
+          "n": 19,
+          "median_score": 0.548
         },
         "girl": {
           "n": 18,
-          "median_score": 0.498
+          "median_score": 0.4825
         }
       },
       "hook_type": {
         "confession_statement": {
-          "n": 12,
-          "median_score": 0.5700000000000001
+          "n": 13,
+          "median_score": 0.578
         },
         "question": {
           "n": 20,
-          "median_score": 0.4655
+          "median_score": 0.4505
         },
         "statement": {
           "n": 4,
-          "median_score": 0.5794999999999999
+          "median_score": 0.5765
         }
       },
       "duration": {
         "56-60s": {
           "n": 7,
-          "median_score": 0.512
+          "median_score": 0.496
         },
         "<=55s": {
-          "n": 13,
-          "median_score": 0.591
+          "n": 14,
+          "median_score": 0.5905
         },
         ">60s": {
           "n": 15,
-          "median_score": 0.461
+          "median_score": 0.446
         }
       },
       "bible_book": {
         "1 Corinthians": {
           "n": 1,
-          "median_score": 0.484
+          "median_score": 0.469
         },
         "1 John": {
           "n": 1,
-          "median_score": 0.417
+          "median_score": 0.404
         },
         "1 Peter": {
           "n": 1,
-          "median_score": 0.721
+          "median_score": 0.714
         },
         "2 Corinthians": {
           "n": 1,
-          "median_score": 0.512
+          "median_score": 0.496
         },
         "2 Timothy": {
           "n": 1,
-          "median_score": 0.731
+          "median_score": 0.724
         },
         "Ecclesiastes": {
           "n": 1,
-          "median_score": 0.517
+          "median_score": 0.501
         },
         "Ephesians": {
           "n": 1,
-          "median_score": 0.555
+          "median_score": 0.537
         },
         "Galatians": {
           "n": 3,
-          "median_score": 0.484
+          "median_score": 0.469
         },
         "Genesis": {
           "n": 1,
-          "median_score": 0.165
+          "median_score": 0.16
         },
         "Hebrews": {
           "n": 1,
-          "median_score": 0.137
+          "median_score": 0.133
         },
         "Isaiah": {
           "n": 4,
-          "median_score": 0.6539999999999999
+          "median_score": 0.6485
         },
         "James": {
           "n": 1,
-          "median_score": 0.376
+          "median_score": 0.379
         },
         "John": {
           "n": 2,
-          "median_score": 0.483
+          "median_score": 0.47550000000000003
         },
         "Joshua": {
           "n": 1,
-          "median_score": 0.413
+          "median_score": 0.4
         },
         "Lamentations": {
           "n": 1,
-          "median_score": 0.47
+          "median_score": 0.455
         },
         "Micah": {
           "n": 1,
-          "median_score": 0.353
+          "median_score": 0.343
         },
         "Philippians": {
-          "n": 1,
-          "median_score": 0.461
+          "n": 2,
+          "median_score": 0.594
         },
         "Proverbs": {
           "n": 3,
-          "median_score": 0.418
+          "median_score": 0.42
         },
         "Psalms": {
           "n": 8,
-          "median_score": 0.5934999999999999
+          "median_score": 0.5905
         },
         "Romans": {
           "n": 1,
-          "median_score": 0.713
+          "median_score": 0.706
         },
         "Ruth": {
           "n": 1,
-          "median_score": 0.392
+          "median_score": 0.38
         }
       }
     },
     "top": [
       {
         "episode_id": "JR-0041",
-        "score": 0.941,
+        "score": 0.943,
         "views": {
           "youtube": 1967
         },
@@ -441,7 +441,7 @@
       },
       {
         "episode_id": "JR-0046",
-        "score": 0.853,
+        "score": 0.857,
         "views": {
           "youtube": 1615
         },
@@ -449,29 +449,29 @@
       },
       {
         "episode_id": "JR-0042",
-        "score": 0.824,
+        "score": 0.829,
         "views": {
           "youtube": 1543
         },
         "hook": "Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔"
       },
       {
+        "episode_id": "JR-0059",
+        "score": 0.742,
+        "views": {
+          "instagram": 2264,
+          "youtube": 914
+        },
+        "hook": "Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔"
+      },
+      {
         "episode_id": "JR-0048",
-        "score": 0.739,
+        "score": 0.731,
         "views": {
           "instagram": 1632,
           "youtube": 1465
         },
         "hook": "Jesus... why does my mind get loud the moment I lie down? 😔"
-      },
-      {
-        "episode_id": "JR-0034",
-        "score": 0.731,
-        "views": {
-          "instagram": 1525,
-          "youtube": 1689
-        },
-        "hook": "Jesus, what if I stopped believing tomorrow?"
       }
     ]
   },
@@ -479,17 +479,17 @@
     "lean_towards": [],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1456 (n=17), night (18-24 IST) 1519 (n=15)",
-      "youtube slot medians: morning (06-12 IST) 1156 (n=17), night (18-24 IST) 416 (n=18)",
-      "instagram: 4 of 36 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
+      "instagram slot medians: morning (06-12 IST) 1462 (n=18), night (18-24 IST) 1519 (n=15)",
+      "youtube slot medians: morning (06-12 IST) 1084 (n=18), night (18-24 IST) 416 (n=18)",
+      "instagram: 4 of 37 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
       "JR-0041 score 0.94 (youtube 1967 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0046 score 0.85 (youtube 1615 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0042 score 0.82 (youtube 1543 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0048 score 0.74 (instagram 1632, youtube 1465 views): Jesus... why does my mind get loud the moment I lie down? 😔",
-      "JR-0034 score 0.73 (instagram 1525, youtube 1689 views): Jesus, what if I stopped believing tomorrow?"
+      "JR-0046 score 0.86 (youtube 1615 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0042 score 0.83 (youtube 1543 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0059 score 0.74 (instagram 2264, youtube 914 views): Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔",
+      "JR-0048 score 0.73 (instagram 1632, youtube 1465 views): Jesus... why does my mind get loud the moment I lie down? 😔"
     ]
   }
 }

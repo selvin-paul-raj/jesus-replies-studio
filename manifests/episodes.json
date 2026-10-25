@@ -408,12 +408,12 @@
     "title": "Jesus... I Deleted The Message And Sent \"Haha Nothing\"",
     "slot": null,
     "target_date": null,
-    "state": "SCHEDULED",
+    "state": "PUBLISHED_VERIFIED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0068/JR-0068.mp4",
     "buffer_post_id": "6ad5a2ff769b457934f250d0",
     "scheduled_at": "2026-10-25T02:30:00.000Z",
-    "published_at": null,
-    "verification_status": "NOT_VERIFIED"
+    "published_at": "2026-10-25T02:33:19.051Z",
+    "verification_status": "PUBLISHED_VERIFIED"
   },
   {
     "episode_id": "JR-0069",
@@ -499,10 +499,10 @@
     "title": "Jesus... I Called Her Gift My Favourite",
     "slot": null,
     "target_date": null,
-    "state": "APPROVED",
+    "state": "SCHEDULED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0075/JR-0075.mp4",
     "buffer_post_id": "6adae5bfcc1b7cdc08cee5a2",
-    "scheduled_at": null,
+    "scheduled_at": "2026-10-29T02:30:00.000Z",
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
   },

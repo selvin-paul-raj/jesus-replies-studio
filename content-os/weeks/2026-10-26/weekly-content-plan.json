@@ -523,7 +523,7 @@
       ]
     },
     {
-      "episode_id": "JR-0079",
+      "episode_id": "JR-0060",
       "date": "2026-10-31",
       "weekday": "Saturday",
       "slot": 1,
@@ -552,14 +552,16 @@
         "instagram",
         "youtube"
       ],
-      "status": "NEEDS_GENERATION",
+      "status": "READY",
       "experiments": [],
       "rationale": [
-        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
-      ]
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates",
+        "autopilot 2026-10-25T04:35:21.719907+00:00: JR-0079 was UNAUTHORED; substituted by READY spare JR-0060 so the slot is not empty"
+      ],
+      "substituted_for": "JR-0079"
     },
     {
-      "episode_id": "JR-0080",
+      "episode_id": "JR-0061",
       "date": "2026-10-31",
       "weekday": "Saturday",
       "slot": 2,
@@ -588,14 +590,16 @@
         "instagram",
         "youtube"
       ],
-      "status": "NEEDS_GENERATION",
+      "status": "READY",
       "experiments": [],
       "rationale": [
-        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
-      ]
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates",
+        "autopilot 2026-10-25T04:35:21.719907+00:00: JR-0080 was UNAUTHORED; substituted by READY spare JR-0061 so the slot is not empty"
+      ],
+      "substituted_for": "JR-0080"
     },
     {
-      "episode_id": "JR-0081",
+      "episode_id": "JR-0062",
       "date": "2026-11-01",
       "weekday": "Sunday",
       "slot": 1,
@@ -624,14 +628,16 @@
         "instagram",
         "youtube"
       ],
-      "status": "NEEDS_GENERATION",
+      "status": "READY",
       "experiments": [],
       "rationale": [
-        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
-      ]
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates",
+        "autopilot 2026-10-25T04:35:21.719907+00:00: JR-0081 was UNAUTHORED; substituted by READY spare JR-0062 so the slot is not empty"
+      ],
+      "substituted_for": "JR-0081"
     },
     {
-      "episode_id": "JR-0082",
+      "episode_id": "JR-0063",
       "date": "2026-11-01",
       "weekday": "Sunday",
       "slot": 2,
@@ -660,12 +666,22 @@
         "instagram",
         "youtube"
       ],
-      "status": "NEEDS_GENERATION",
+      "status": "READY",
       "experiments": [],
       "rationale": [
-        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
-      ]
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates",
+        "autopilot 2026-10-25T04:35:21.719907+00:00: JR-0082 was UNAUTHORED; substituted by READY spare JR-0063 so the slot is not empty"
+      ],
+      "substituted_for": "JR-0082"
     }
   ],
-  "plan_sha256": "4413ab1e01974fe37f3454a5feb0495b7fe2dc3a3e28b11f5d43bc9527a9fae7"
+  "plan_sha256": "9ad5ca73d0ea99ced3b104f6fbcf49bb62a7922443b459bf685f753dd56d143f",
+  "revisions": [
+    {
+      "at": "2026-10-25T04:35:21.719907+00:00",
+      "by": "autopilot",
+      "previous_sha256": "4413ab1e01974fe37f3454a5feb0495b7fe2dc3a3e28b11f5d43bc9527a9fae7",
+      "reason": "slot substitution (self-correction)"
+    }
+  ]
 }
