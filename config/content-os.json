@@ -32,11 +32,7 @@
   "duration_note": "Duration lives only in config/publishing-rules.json duration (target 50-62 s, ceiling 75 s since 2026-10-16, DEC-JR-007). Buffer's 90 s Reels limit is no longer the working ceiling.",
   "held_episodes": {
     "JR-0035": "existing resource; not modified without explicit authorization",
-    "JR-0036": "existing draft; not modified without explicit authorization",
-    "JR-0060": "CEO 2026-10-23: old long render pulled; hold until rewritten to ~110 words, re-rendered and QA-passed, then queue at the back",
-    "JR-0061": "CEO 2026-10-23: old long render pulled; hold until rewritten to ~110 words, re-rendered and QA-passed, then queue at the back",
-    "JR-0062": "CEO 2026-10-23: old long render pulled; hold until rewritten to ~110 words, re-rendered and QA-passed, then queue at the back",
-    "JR-0063": "CEO 2026-10-23: old long render pulled; hold until rewritten to ~110 words, re-rendered and QA-passed, then queue at the back"
+    "JR-0036": "existing draft; not modified without explicit authorization"
   },
   "pinned_first": [
     "JR-0037"
