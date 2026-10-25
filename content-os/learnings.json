@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-24T20:43:30.976400+00:00",
+  "as_of": "2026-10-25T01:27:42.554124+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -13,8 +13,8 @@
         "JR-0033"
       ],
       "stall_rate": 0.11,
-      "median_views": 1480.0,
-      "max_views": 2277,
+      "median_views": 1482.0,
+      "max_views": 2278,
       "saves_per_1k_reach_median": 13.0,
       "avg_watch_time_available": true,
       "by_dimension": {
@@ -32,7 +32,7 @@
       "top": [
         {
           "episode_id": "JR-0045",
-          "views": 2277,
+          "views": 2278,
           "saves": 65,
           "shares": 16,
           "theme": "being the last single friend",
@@ -89,7 +89,7 @@
       "bottom": [
         {
           "episode_id": "JR-0054",
-          "views": 175,
+          "views": 177,
           "theme": "comparing her career to her batchmates' online updates",
           "emotion": "neutral",
           "hook": "Jesus... I liked every batchmate's promotion post today. Then I sat in the bathroom feeling sick. 😔",
