@@ -1,11 +1,34 @@
 {
-  "taken_at": "2026-10-25T04:35:21.719907+00:00",
+  "taken_at": "2026-10-25T11:18:59.815632+00:00",
   "source": "Buffer GraphQL posts list",
   "list_status": {
     "instagram": "TRUNCATED",
     "youtube": "OK"
   },
   "rows": [
+    {
+      "platform": "instagram",
+      "post_id": "6add99d98b3d437ddcf2cf15",
+      "status": "sent",
+      "due_at": "2026-10-25T05:57:36.689Z",
+      "sent_at": "2026-10-25T05:57:52.125Z",
+      "external_link": "https://www.instagram.com/stories/jesusrepliesofficial/4015524681314832988",
+      "asset": null,
+      "episode_id": null,
+      "match_score": 0.0,
+      "kind": "jesus_replies_or_other",
+      "metrics": {
+        "views": 19,
+        "reach": 15,
+        "comments": 0,
+        "engagementRate": 6.67,
+        "reactions": 1
+      },
+      "metrics_updated_at": "2026-10-25T08:50:16.475Z",
+      "youtube_category": null,
+      "age_hours": 5.4,
+      "checkpoint": "pre-24h"
+    },
     {
       "platform": "instagram",
       "post_id": "6adc44e18b3d437ddca28c57",
@@ -18,16 +41,16 @@
       "match_score": 0.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "views": 41,
-        "reach": 32,
+        "views": 43,
+        "reach": 33,
         "comments": 0,
         "engagementRate": 9.38,
         "reactions": 3
       },
-      "metrics_updated_at": "2026-10-25T02:46:10.176Z",
+      "metrics_updated_at": "2026-10-25T05:33:07.025Z",
       "youtube_category": null,
-      "age_hours": 22.9,
-      "checkpoint": "pre-24h"
+      "age_hours": 29.6,
+      "checkpoint": "24h"
     },
     {
       "platform": "instagram",
@@ -49,7 +72,7 @@
       },
       "metrics_updated_at": "2026-10-24T05:48:21.176Z",
       "youtube_category": null,
-      "age_hours": 46.6,
+      "age_hours": 53.3,
       "checkpoint": "24h"
     },
     {
@@ -106,8 +129,8 @@
     {
       "platform": "instagram",
       "post_id": "6adae5bfcc1b7cdc08cee5a2",
-      "status": "draft",
-      "due_at": "2026-12-31T00:00:00.000Z",
+      "status": "scheduled",
+      "due_at": "2026-10-29T02:30:00.000Z",
       "sent_at": null,
       "external_link": null,
       "asset": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0075/JR-0075.mp4",
@@ -140,8 +163,8 @@
       },
       "metrics_updated_at": "2026-10-23T05:52:31.031Z",
       "youtube_category": null,
-      "age_hours": 70.5,
-      "checkpoint": "24h"
+      "age_hours": 77.3,
+      "checkpoint": "72h"
     },
     {
       "platform": "instagram",
@@ -248,7 +271,7 @@
       },
       "metrics_updated_at": "2026-10-21T05:51:27.597Z",
       "youtube_category": null,
-      "age_hours": 118.6,
+      "age_hours": 125.4,
       "checkpoint": "72h"
     },
     {
@@ -305,7 +328,7 @@
       },
       "metrics_updated_at": "2026-10-20T05:53:03.823Z",
       "youtube_category": null,
-      "age_hours": 142.5,
+      "age_hours": 149.3,
       "checkpoint": "72h"
     },
     {
@@ -319,10 +342,20 @@
       "episode_id": "JR-0068",
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
-      "metrics": {},
-      "metrics_updated_at": "2026-10-19T04:56:31.873Z",
+      "metrics": {
+        "reactions": 13,
+        "comments": 0,
+        "engagementRate": 7.78,
+        "views": 212,
+        "shares": 0,
+        "saves": 1,
+        "totalTimeWatched": 21.34,
+        "averageTimeWatched": 7.19,
+        "reach": 180
+      },
+      "metrics_updated_at": "2026-10-25T05:32:55.973Z",
       "youtube_category": null,
-      "age_hours": 2.0,
+      "age_hours": 8.8,
       "checkpoint": "pre-24h"
     },
     {
@@ -339,17 +372,17 @@
       "metrics": {
         "reactions": 10,
         "comments": 0,
-        "engagementRate": 5.65,
-        "views": 214,
+        "engagementRate": 4.76,
+        "views": 255,
         "shares": 0,
         "saves": 0,
-        "totalTimeWatched": 21.5,
-        "averageTimeWatched": 7.29,
-        "reach": 177
+        "totalTimeWatched": 25.55,
+        "averageTimeWatched": 7.23,
+        "reach": 210
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.246Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.973Z",
       "youtube_category": null,
-      "age_hours": 13.5,
+      "age_hours": 20.2,
       "checkpoint": "pre-24h"
     },
     {
@@ -364,19 +397,19 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 61,
+        "reactions": 62,
         "comments": 0,
-        "engagementRate": 7.1,
-        "views": 1199,
+        "engagementRate": 7,
+        "views": 1230,
         "shares": 6,
         "saves": 9,
-        "totalTimeWatched": 161.74,
+        "totalTimeWatched": 165.94,
         "averageTimeWatched": 8.94,
-        "reach": 1085
+        "reach": 1115
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.252Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.973Z",
       "youtube_category": null,
-      "age_hours": 26.1,
+      "age_hours": 32.8,
       "checkpoint": "24h"
     },
     {
@@ -393,17 +426,17 @@
       "metrics": {
         "reactions": 39,
         "comments": 0,
-        "engagementRate": 13.74,
-        "views": 382,
+        "engagementRate": 13.7,
+        "views": 383,
         "shares": 2,
         "saves": 6,
-        "totalTimeWatched": 52.1,
-        "averageTimeWatched": 9.14,
-        "reach": 342
+        "totalTimeWatched": 52.11,
+        "averageTimeWatched": 9.12,
+        "reach": 343
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.210Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 37.5,
+      "age_hours": 44.2,
       "checkpoint": "24h"
     },
     {
@@ -437,17 +470,17 @@
       "metrics": {
         "reactions": 143,
         "comments": 0,
-        "engagementRate": 9.47,
-        "views": 2264,
+        "engagementRate": 9.46,
+        "views": 2265,
         "shares": 17,
         "saves": 32,
-        "totalTimeWatched": 335.7,
-        "averageTimeWatched": 9.9,
-        "reach": 2060
+        "totalTimeWatched": 335.72,
+        "averageTimeWatched": 9.89,
+        "reach": 2061
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.230Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 50.1,
+      "age_hours": 56.8,
       "checkpoint": "24h"
     },
     {
@@ -470,7 +503,7 @@
       },
       "metrics_updated_at": "2026-10-18T05:22:34.876Z",
       "youtube_category": null,
-      "age_hours": 191.0,
+      "age_hours": 197.8,
       "checkpoint": "168h"
     },
     {
@@ -494,9 +527,9 @@
         "follows": 0,
         "reach": 19
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.265Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 215.4,
+      "age_hours": 222.1,
       "checkpoint": "168h"
     },
     {
@@ -588,9 +621,9 @@
         "follows": 0,
         "reach": 28
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.213Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 228.3,
+      "age_hours": 235.0,
       "checkpoint": "168h"
     },
     {
@@ -615,9 +648,9 @@
         "averageTimeWatched": 9.05,
         "reach": 1184
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.226Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 61.4,
+      "age_hours": 68.2,
       "checkpoint": "24h"
     },
     {
@@ -642,9 +675,9 @@
         "averageTimeWatched": 13.01,
         "reach": 1383
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.263Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 74.0,
+      "age_hours": 80.8,
       "checkpoint": "72h"
     },
     {
@@ -662,16 +695,16 @@
         "reactions": 98,
         "comments": 0,
         "engagementRate": 8.98,
-        "views": 1404,
+        "views": 1407,
         "shares": 3,
         "saves": 11,
-        "totalTimeWatched": 218.73,
-        "averageTimeWatched": 10.52,
+        "totalTimeWatched": 218.76,
+        "averageTimeWatched": 10.51,
         "reach": 1247
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.248Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 85.5,
+      "age_hours": 92.2,
       "checkpoint": "72h"
     },
     {
@@ -695,9 +728,9 @@
         "follows": 0,
         "reach": 19
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.221Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 263.0,
+      "age_hours": 269.7,
       "checkpoint": "168h"
     },
     {
@@ -721,9 +754,9 @@
         "follows": 0,
         "reach": 16
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.250Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 285.4,
+      "age_hours": 292.1,
       "checkpoint": "168h"
     },
     {
@@ -747,9 +780,9 @@
         "follows": 0,
         "reach": 18
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.219Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 309.9,
+      "age_hours": 316.6,
       "checkpoint": "168h"
     },
     {
@@ -774,9 +807,9 @@
         "averageTimeWatched": 9.91,
         "reach": 1126
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.205Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 98.1,
+      "age_hours": 104.8,
       "checkpoint": "72h"
     },
     {
@@ -801,9 +834,9 @@
         "averageTimeWatched": 7.45,
         "reach": 147
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.322Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 133.5,
+      "age_hours": 140.2,
       "checkpoint": "72h"
     },
     {
@@ -828,9 +861,9 @@
         "averageTimeWatched": 9.15,
         "reach": 366
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.268Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 122.1,
+      "age_hours": 128.8,
       "checkpoint": "72h"
     },
     {
@@ -855,9 +888,9 @@
         "averageTimeWatched": 11.94,
         "reach": 1297
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.217Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 109.5,
+      "age_hours": 116.2,
       "checkpoint": "72h"
     },
     {
@@ -882,9 +915,9 @@
         "averageTimeWatched": 11.01,
         "reach": 317
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.202Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 146.1,
+      "age_hours": 152.8,
       "checkpoint": "72h"
     },
     {
@@ -909,9 +942,9 @@
         "averageTimeWatched": 14.53,
         "reach": 1907
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.207Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 157.5,
+      "age_hours": 164.3,
       "checkpoint": "72h"
     },
     {
@@ -936,9 +969,9 @@
         "averageTimeWatched": 9.85,
         "reach": 1442
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.261Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 170.1,
+      "age_hours": 176.8,
       "checkpoint": "168h"
     },
     {
@@ -956,16 +989,16 @@
         "reactions": 132,
         "comments": 1,
         "engagementRate": 11.44,
-        "views": 1632,
+        "views": 1634,
         "shares": 9,
         "saves": 21,
-        "totalTimeWatched": 248.69,
+        "totalTimeWatched": 248.85,
         "averageTimeWatched": 10.2,
         "reach": 1460
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.233Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 194.1,
+      "age_hours": 200.8,
       "checkpoint": "168h"
     },
     {
@@ -982,16 +1015,16 @@
       "metrics": {
         "reactions": 2,
         "comments": 0,
-        "engagementRate": 12.5,
-        "views": 48,
+        "engagementRate": 11.76,
+        "views": 50,
         "shares": 0,
         "saves": 0,
         "follows": 0,
-        "reach": 16
+        "reach": 17
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.195Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 334.0,
+      "age_hours": 340.7,
       "checkpoint": "168h"
     },
     {
@@ -1016,9 +1049,9 @@
         "averageTimeWatched": 15.84,
         "reach": 1495
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.242Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 181.5,
+      "age_hours": 188.2,
       "checkpoint": "168h"
     },
     {
@@ -1036,16 +1069,16 @@
         "reactions": 87,
         "comments": 2,
         "engagementRate": 8.02,
-        "views": 1723,
+        "views": 1724,
         "shares": 8,
         "saves": 21,
-        "totalTimeWatched": 308.55,
-        "averageTimeWatched": 12.31,
+        "totalTimeWatched": 308.59,
+        "averageTimeWatched": 12.3,
         "reach": 1483
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.234Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 205.5,
+      "age_hours": 212.2,
       "checkpoint": "168h"
     },
     {
@@ -1070,9 +1103,9 @@
         "averageTimeWatched": 17.63,
         "reach": 40
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.223Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 218.1,
+      "age_hours": 224.8,
       "checkpoint": "168h"
     },
     {
@@ -1097,9 +1130,9 @@
         "averageTimeWatched": 14.38,
         "reach": 1338
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.301Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 314.1,
+      "age_hours": 320.8,
       "checkpoint": "168h"
     },
     {
@@ -1123,9 +1156,9 @@
         "follows": 0,
         "reach": 28
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.215Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 358.1,
+      "age_hours": 364.8,
       "checkpoint": "168h"
     },
     {
@@ -1149,9 +1182,9 @@
         "follows": 0,
         "reach": 24
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.374Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 381.7,
+      "age_hours": 388.4,
       "checkpoint": "168h"
     },
     {
@@ -1169,16 +1202,16 @@
         "reactions": 153,
         "comments": 0,
         "engagementRate": 12.23,
-        "views": 2278,
+        "views": 2279,
         "shares": 16,
         "saves": 65,
-        "totalTimeWatched": 612.8,
-        "averageTimeWatched": 18.64,
+        "totalTimeWatched": 612.88,
+        "averageTimeWatched": 18.63,
         "reach": 1938
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.325Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 229.5,
+      "age_hours": 236.2,
       "checkpoint": "168h"
     },
     {
@@ -1203,9 +1236,9 @@
         "averageTimeWatched": 11.34,
         "reach": 444
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.228Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 242.1,
+      "age_hours": 248.8,
       "checkpoint": "168h"
     },
     {
@@ -1230,9 +1263,9 @@
         "averageTimeWatched": 11,
         "reach": 521
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.243Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 253.5,
+      "age_hours": 260.2,
       "checkpoint": "168h"
     },
     {
@@ -1257,9 +1290,9 @@
         "averageTimeWatched": 9.66,
         "reach": 31
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.258Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 266.1,
+      "age_hours": 272.8,
       "checkpoint": "168h"
     },
     {
@@ -1283,9 +1316,9 @@
         "follows": 0,
         "reach": 18
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.411Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 405.8,
+      "age_hours": 412.6,
       "checkpoint": "168h"
     },
     {
@@ -1310,9 +1343,9 @@
         "averageTimeWatched": 9.59,
         "reach": 34
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.225Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 277.5,
+      "age_hours": 284.2,
       "checkpoint": "168h"
     },
     {
@@ -1337,9 +1370,9 @@
         "averageTimeWatched": 10.46,
         "reach": 1526
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.236Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 290.1,
+      "age_hours": 296.8,
       "checkpoint": "168h"
     },
     {
@@ -1364,9 +1397,9 @@
         "averageTimeWatched": 16.95,
         "reach": 1100
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.240Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 301.5,
+      "age_hours": 308.2,
       "checkpoint": "168h"
     },
     {
@@ -1391,9 +1424,9 @@
         "averageTimeWatched": 11.85,
         "reach": 45
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.256Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 325.5,
+      "age_hours": 332.3,
       "checkpoint": "168h"
     },
     {
@@ -1417,9 +1450,9 @@
         "follows": 0,
         "reach": 22
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.411Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 429.9,
+      "age_hours": 436.6,
       "checkpoint": "168h"
     },
     {
@@ -1444,9 +1477,9 @@
         "averageTimeWatched": 14.96,
         "reach": 1382
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.199Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 338.1,
+      "age_hours": 344.8,
       "checkpoint": "168h"
     },
     {
@@ -1471,9 +1504,9 @@
         "averageTimeWatched": 11.81,
         "reach": 1349
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.254Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.974Z",
       "youtube_category": null,
-      "age_hours": 349.5,
+      "age_hours": 356.2,
       "checkpoint": "168h"
     },
     {
@@ -1497,9 +1530,9 @@
         "follows": 0,
         "reach": 21
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.411Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 453.6,
+      "age_hours": 460.3,
       "checkpoint": "168h"
     },
     {
@@ -1524,9 +1557,9 @@
         "averageTimeWatched": 10.11,
         "reach": 1103
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.266Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 362.0,
+      "age_hours": 368.8,
       "checkpoint": "168h"
     },
     {
@@ -1550,9 +1583,9 @@
         "follows": 0,
         "reach": 14
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.411Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 502.1,
+      "age_hours": 508.8,
       "checkpoint": "168h"
     },
     {
@@ -1577,9 +1610,9 @@
         "averageTimeWatched": 18.35,
         "reach": 1497
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.259Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 373.5,
+      "age_hours": 380.2,
       "checkpoint": "168h"
     },
     {
@@ -1604,9 +1637,9 @@
         "averageTimeWatched": 15.6,
         "reach": 1234
       },
-      "metrics_updated_at": "2026-10-25T00:18:46.270Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 386.1,
+      "age_hours": 392.8,
       "checkpoint": "168h"
     },
     {
@@ -1631,9 +1664,9 @@
         "averageTimeWatched": 11.87,
         "reach": 1303
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.411Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 397.5,
+      "age_hours": 404.2,
       "checkpoint": "168h"
     },
     {
@@ -1658,9 +1691,9 @@
         "averageTimeWatched": 13.15,
         "reach": 1372
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.411Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 410.1,
+      "age_hours": 416.8,
       "checkpoint": "168h"
     },
     {
@@ -1685,9 +1718,9 @@
         "averageTimeWatched": 14.49,
         "reach": 1524
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.411Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 421.5,
+      "age_hours": 428.2,
       "checkpoint": "168h"
     },
     {
@@ -1712,9 +1745,9 @@
         "averageTimeWatched": 7.66,
         "reach": 222
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.411Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 434.1,
+      "age_hours": 440.8,
       "checkpoint": "168h"
     },
     {
@@ -1739,9 +1772,9 @@
         "averageTimeWatched": 13.41,
         "reach": 593
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.411Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 445.5,
+      "age_hours": 452.2,
       "checkpoint": "168h"
     },
     {
@@ -1766,9 +1799,9 @@
         "averageTimeWatched": 4.38,
         "reach": 206
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.411Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 458.1,
+      "age_hours": 464.8,
       "checkpoint": "168h"
     },
     {
@@ -1793,9 +1826,9 @@
         "averageTimeWatched": 15.73,
         "reach": 1452
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.411Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 469.5,
+      "age_hours": 476.2,
       "checkpoint": "168h"
     },
     {
@@ -1820,9 +1853,9 @@
         "averageTimeWatched": 8.68,
         "reach": 173
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.411Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 482.1,
+      "age_hours": 488.8,
       "checkpoint": "168h"
     },
     {
@@ -1846,9 +1879,9 @@
         "follows": 0,
         "reach": 13
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 526.7,
+      "age_hours": 533.4,
       "checkpoint": "168h"
     },
     {
@@ -1872,9 +1905,9 @@
         "follows": 0,
         "reach": 16
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 550.2,
+      "age_hours": 556.9,
       "checkpoint": "168h"
     },
     {
@@ -1916,9 +1949,9 @@
         "averageTimeWatched": 15.78,
         "reach": 1264
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 530.1,
+      "age_hours": 536.8,
       "checkpoint": "168h"
     },
     {
@@ -1942,9 +1975,9 @@
         "follows": 0,
         "reach": 17
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 573.9,
+      "age_hours": 580.6,
       "checkpoint": "168h"
     },
     {
@@ -1968,9 +2001,9 @@
         "follows": 0,
         "reach": 11
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 598.5,
+      "age_hours": 605.2,
       "checkpoint": "168h"
     },
     {
@@ -1985,19 +2018,19 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 163,
+        "reactions": 164,
         "comments": 0,
-        "engagementRate": 15.36,
-        "views": 1915,
+        "engagementRate": 15.41,
+        "views": 1918,
         "shares": 15,
         "saves": 48,
-        "totalTimeWatched": 600.48,
-        "averageTimeWatched": 22.77,
-        "reach": 1510
+        "totalTimeWatched": 600.56,
+        "averageTimeWatched": 22.75,
+        "reach": 1512
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 575.5,
+      "age_hours": 582.2,
       "checkpoint": "168h"
     },
     {
@@ -2022,9 +2055,9 @@
         "averageTimeWatched": 11.98,
         "reach": 20
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 591.4,
+      "age_hours": 598.1,
       "checkpoint": "168h"
     },
     {
@@ -2049,9 +2082,9 @@
         "averageTimeWatched": 15.87,
         "reach": 31
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 600.5,
+      "age_hours": 607.3,
       "checkpoint": "168h"
     },
     {
@@ -2076,9 +2109,9 @@
         "averageTimeWatched": 9.52,
         "reach": 24
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 614.1,
+      "age_hours": 620.9,
       "checkpoint": "168h"
     },
     {
@@ -2103,9 +2136,9 @@
         "averageTimeWatched": 14.55,
         "reach": 27
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 616.6,
+      "age_hours": 623.3,
       "checkpoint": "168h"
     },
     {
@@ -2129,9 +2162,9 @@
         "follows": 0,
         "reach": 11
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 622.2,
+      "age_hours": 629.0,
       "checkpoint": "168h"
     },
     {
@@ -2155,9 +2188,9 @@
         "follows": 0,
         "reach": 12
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 646.5,
+      "age_hours": 653.3,
       "checkpoint": "168h"
     },
     {
@@ -2181,9 +2214,9 @@
         "follows": 0,
         "reach": 13
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 670.6,
+      "age_hours": 677.4,
       "checkpoint": "168h"
     },
     {
@@ -2207,9 +2240,9 @@
         "follows": 0,
         "reach": 14
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 694.9,
+      "age_hours": 701.6,
       "checkpoint": "168h"
     },
     {
@@ -2233,9 +2266,9 @@
         "follows": 0,
         "reach": 11
       },
-      "metrics_updated_at": "2026-10-24T06:32:46.412Z",
+      "metrics_updated_at": "2026-10-25T05:32:55.975Z",
       "youtube_category": null,
-      "age_hours": 719.0,
+      "age_hours": 725.7,
       "checkpoint": "168h"
     },
     {
@@ -2261,7 +2294,7 @@
       },
       "metrics_updated_at": "2026-10-23T07:32:35.767Z",
       "youtube_category": null,
-      "age_hours": 743.0,
+      "age_hours": 749.7,
       "checkpoint": "168h"
     },
     {
@@ -2287,7 +2320,7 @@
       },
       "metrics_updated_at": "2026-10-22T08:32:26.540Z",
       "youtube_category": null,
-      "age_hours": 767.2,
+      "age_hours": 774.0,
       "checkpoint": "168h"
     },
     {
@@ -2313,7 +2346,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.790Z",
       "youtube_category": null,
-      "age_hours": 791.0,
+      "age_hours": 797.8,
       "checkpoint": "168h"
     },
     {
@@ -2340,7 +2373,7 @@
       },
       "metrics_updated_at": "2026-10-22T08:32:26.540Z",
       "youtube_category": null,
-      "age_hours": 782.1,
+      "age_hours": 788.9,
       "checkpoint": "168h"
     },
     {
@@ -2367,7 +2400,7 @@
       },
       "metrics_updated_at": "2026-10-22T08:32:26.540Z",
       "youtube_category": null,
-      "age_hours": 784.5,
+      "age_hours": 791.3,
       "checkpoint": "168h"
     },
     {
@@ -2394,7 +2427,7 @@
       },
       "metrics_updated_at": "2026-10-21T09:32:15.790Z",
       "youtube_category": null,
-      "age_hours": 807.3,
+      "age_hours": 814.0,
       "checkpoint": "168h"
     },
     {
@@ -2420,7 +2453,7 @@
       },
       "metrics_updated_at": "2026-10-20T10:32:07.833Z",
       "youtube_category": null,
-      "age_hours": 815.0,
+      "age_hours": 821.7,
       "checkpoint": "168h"
     },
     {
@@ -2446,35 +2479,30 @@
       },
       "metrics_updated_at": "2026-10-19T11:31:54.071Z",
       "youtube_category": null,
-      "age_hours": 839.1,
+      "age_hours": 845.8,
       "checkpoint": "168h"
     },
     {
-      "platform": "instagram",
-      "post_id": "6aaeb6ba07392f3c89cb87f5",
-      "status": "sent",
-      "due_at": "2026-09-20T16:35:00.000Z",
-      "sent_at": "2026-09-20T16:35:58.263Z",
-      "external_link": "https://www.instagram.com/reel/DdhBt17mMPS/",
-      "asset": "https://buffer-media-uploads.s3.amazonaws.com/6a9fa8e30c5f1c944f3692b6/6aaeb5f503cec42c80b02b58_transcoded.mp4",
-      "episode_id": "JR-0012",
+      "platform": "youtube",
+      "post_id": "6add870f0b5343d070b62056",
+      "status": "scheduled",
+      "due_at": "2026-10-30T02:30:00.000Z",
+      "sent_at": null,
+      "external_link": null,
+      "asset": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0077/JR-0077.mp4",
+      "episode_id": "JR-0077",
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 26,
+        "reactions": 0,
         "comments": 0,
-        "engagementRate": 12.95,
-        "views": 334,
-        "shares": 4,
-        "saves": 6,
-        "totalTimeWatched": 58.61,
-        "averageTimeWatched": 12.65,
-        "reach": 278
+        "engagementRate": 0,
+        "views": 0
       },
-      "metrics_updated_at": "2026-10-20T10:32:07.833Z",
-      "youtube_category": null,
-      "age_hours": 828.0,
-      "checkpoint": "168h"
+      "metrics_updated_at": "2026-10-25T04:35:27.467Z",
+      "youtube_category": "27",
+      "age_hours": null,
+      "checkpoint": null
     },
     {
       "platform": "youtube",
@@ -2686,14 +2714,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 0,
+        "reactions": 47,
         "comments": 0,
-        "engagementRate": 0,
-        "views": 0
+        "engagementRate": 13.09,
+        "views": 359
       },
-      "metrics_updated_at": "2026-10-25T02:32:49.388Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 2.1,
+      "age_hours": 8.8,
       "checkpoint": "pre-24h"
     },
     {
@@ -2708,14 +2736,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 0,
+        "reactions": 126,
         "comments": 0,
-        "engagementRate": 0,
-        "views": 0
+        "engagementRate": 12.19,
+        "views": 1034
       },
-      "metrics_updated_at": "2026-10-24T15:05:38.569Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 13.5,
+      "age_hours": 20.3,
       "checkpoint": "pre-24h"
     },
     {
@@ -2730,14 +2758,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 83,
+        "reactions": 178,
         "comments": 2,
-        "engagementRate": 8.28,
-        "views": 1026
+        "engagementRate": 12.95,
+        "views": 1390
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.002Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 26.1,
+      "age_hours": 32.8,
       "checkpoint": "24h"
     },
     {
@@ -2752,14 +2780,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 102,
+        "reactions": 158,
         "comments": 0,
-        "engagementRate": 14.45,
-        "views": 706
+        "engagementRate": 14.25,
+        "views": 1109
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 37.5,
+      "age_hours": 44.3,
       "checkpoint": "24h"
     },
     {
@@ -2774,14 +2802,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 141,
-        "comments": 1,
-        "engagementRate": 15.54,
-        "views": 914
+        "reactions": 198,
+        "comments": 2,
+        "engagementRate": 18.62,
+        "views": 1074
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 50.1,
+      "age_hours": 56.8,
       "checkpoint": "24h"
     },
     {
@@ -2796,14 +2824,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 361,
+        "reactions": 392,
         "comments": 2,
-        "engagementRate": 23.69,
-        "views": 1532
+        "engagementRate": 24.55,
+        "views": 1605
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 61.5,
+      "age_hours": 68.3,
       "checkpoint": "24h"
     },
     {
@@ -2818,14 +2846,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 138,
+        "reactions": 158,
         "comments": 1,
-        "engagementRate": 12.02,
-        "views": 1156
+        "engagementRate": 12.98,
+        "views": 1225
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 74.1,
+      "age_hours": 80.8,
       "checkpoint": "72h"
     },
     {
@@ -2840,14 +2868,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 224,
+        "reactions": 252,
         "comments": 3,
-        "engagementRate": 16.43,
-        "views": 1382
+        "engagementRate": 17.57,
+        "views": 1451
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 85.5,
+      "age_hours": 92.3,
       "checkpoint": "72h"
     },
     {
@@ -2862,14 +2890,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 104,
+        "reactions": 110,
         "comments": 2,
-        "engagementRate": 10.72,
-        "views": 989
+        "engagementRate": 11.07,
+        "views": 1012
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 98.1,
+      "age_hours": 104.8,
       "checkpoint": "72h"
     },
     {
@@ -2884,14 +2912,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 183,
+        "reactions": 185,
         "comments": 0,
-        "engagementRate": 14.68,
-        "views": 1247
+        "engagementRate": 14.76,
+        "views": 1253
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 109.5,
+      "age_hours": 116.3,
       "checkpoint": "72h"
     },
     {
@@ -2908,12 +2936,12 @@
       "metrics": {
         "reactions": 413,
         "comments": 3,
-        "engagementRate": 11.26,
-        "views": 3696
+        "engagementRate": 11.27,
+        "views": 3692
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 122.1,
+      "age_hours": 128.8,
       "checkpoint": "72h"
     },
     {
@@ -2930,12 +2958,12 @@
       "metrics": {
         "reactions": 88,
         "comments": 1,
-        "engagementRate": 4.96,
-        "views": 1795
+        "engagementRate": 4.95,
+        "views": 1799
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 133.5,
+      "age_hours": 140.3,
       "checkpoint": "72h"
     },
     {
@@ -2952,12 +2980,12 @@
       "metrics": {
         "reactions": 318,
         "comments": 1,
-        "engagementRate": 11.1,
-        "views": 2875
+        "engagementRate": 11.09,
+        "views": 2877
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 146.1,
+      "age_hours": 152.8,
       "checkpoint": "72h"
     },
     {
@@ -2977,9 +3005,9 @@
         "engagementRate": 10.98,
         "views": 1539
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 157.6,
+      "age_hours": 164.3,
       "checkpoint": "72h"
     },
     {
@@ -2994,14 +3022,14 @@
       "match_score": 0.429,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 257,
+        "reactions": 258,
         "comments": 1,
-        "engagementRate": 15.08,
-        "views": 1711
+        "engagementRate": 15.11,
+        "views": 1714
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 170.1,
+      "age_hours": 176.8,
       "checkpoint": "168h"
     },
     {
@@ -3021,9 +3049,9 @@
         "engagementRate": 10.56,
         "views": 1099
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 181.6,
+      "age_hours": 188.3,
       "checkpoint": "168h"
     },
     {
@@ -3040,12 +3068,12 @@
       "metrics": {
         "reactions": 216,
         "comments": 2,
-        "engagementRate": 14.88,
-        "views": 1465
+        "engagementRate": 14.87,
+        "views": 1466
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 194.1,
+      "age_hours": 200.8,
       "checkpoint": "168h"
     },
     {
@@ -3062,12 +3090,12 @@
       "metrics": {
         "reactions": 67,
         "comments": 0,
-        "engagementRate": 13.51,
-        "views": 496
+        "engagementRate": 13.48,
+        "views": 497
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 205.5,
+      "age_hours": 212.3,
       "checkpoint": "168h"
     },
     {
@@ -3082,14 +3110,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 277,
+        "reactions": 276,
         "comments": 1,
-        "engagementRate": 17.21,
-        "views": 1615
+        "engagementRate": 17.13,
+        "views": 1617
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 218.1,
+      "age_hours": 224.8,
       "checkpoint": "168h"
     },
     {
@@ -3106,12 +3134,12 @@
       "metrics": {
         "reactions": 10,
         "comments": 0,
-        "engagementRate": 18.18,
-        "views": 55
+        "engagementRate": 17.86,
+        "views": 56
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 229.5,
+      "age_hours": 236.3,
       "checkpoint": "168h"
     },
     {
@@ -3131,9 +3159,9 @@
         "engagementRate": 17,
         "views": 1012
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 242.1,
+      "age_hours": 248.8,
       "checkpoint": "168h"
     },
     {
@@ -3153,9 +3181,9 @@
         "engagementRate": 11.98,
         "views": 509
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 253.5,
+      "age_hours": 260.3,
       "checkpoint": "168h"
     },
     {
@@ -3170,14 +3198,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 206,
+        "reactions": 207,
         "comments": 4,
-        "engagementRate": 13.61,
-        "views": 1543
+        "engagementRate": 13.65,
+        "views": 1546
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 266.1,
+      "age_hours": 272.8,
       "checkpoint": "168h"
     },
     {
@@ -3192,14 +3220,14 @@
       "match_score": 1.0,
       "kind": "jesus_replies_or_other",
       "metrics": {
-        "reactions": 405,
+        "reactions": 407,
         "comments": 6,
-        "engagementRate": 20.89,
-        "views": 1967
+        "engagementRate": 20.76,
+        "views": 1989
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 277.6,
+      "age_hours": 284.3,
       "checkpoint": "168h"
     },
     {
@@ -3219,9 +3247,9 @@
         "engagementRate": 9.59,
         "views": 1209
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 290.1,
+      "age_hours": 296.8,
       "checkpoint": "168h"
     },
     {
@@ -3241,9 +3269,9 @@
         "engagementRate": 17.94,
         "views": 719
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 301.5,
+      "age_hours": 308.3,
       "checkpoint": "168h"
     },
     {
@@ -3263,9 +3291,9 @@
         "engagementRate": 16.58,
         "views": 1689
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 314.1,
+      "age_hours": 320.8,
       "checkpoint": "168h"
     },
     {
@@ -3285,9 +3313,9 @@
         "engagementRate": 14.84,
         "views": 337
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 325.6,
+      "age_hours": 332.3,
       "checkpoint": "168h"
     },
     {
@@ -3307,9 +3335,9 @@
         "engagementRate": 21.69,
         "views": 1489
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 338.1,
+      "age_hours": 344.8,
       "checkpoint": "168h"
     },
     {
@@ -3329,9 +3357,9 @@
         "engagementRate": 10.82,
         "views": 305
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 349.6,
+      "age_hours": 356.3,
       "checkpoint": "168h"
     },
     {
@@ -3351,9 +3379,9 @@
         "engagementRate": 16.48,
         "views": 540
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 362.1,
+      "age_hours": 368.8,
       "checkpoint": "168h"
     },
     {
@@ -3373,9 +3401,9 @@
         "engagementRate": 12.58,
         "views": 151
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.382Z",
       "youtube_category": "27",
-      "age_hours": 373.5,
+      "age_hours": 380.3,
       "checkpoint": "168h"
     },
     {
@@ -3395,9 +3423,9 @@
         "engagementRate": 17.56,
         "views": 484
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 386.1,
+      "age_hours": 392.8,
       "checkpoint": "168h"
     },
     {
@@ -3417,9 +3445,9 @@
         "engagementRate": 9.62,
         "views": 156
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 397.5,
+      "age_hours": 404.3,
       "checkpoint": "168h"
     },
     {
@@ -3439,9 +3467,9 @@
         "engagementRate": 7.28,
         "views": 316
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.003Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 410.1,
+      "age_hours": 416.8,
       "checkpoint": "168h"
     },
     {
@@ -3461,9 +3489,9 @@
         "engagementRate": 5.13,
         "views": 39
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.004Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 421.6,
+      "age_hours": 428.3,
       "checkpoint": "168h"
     },
     {
@@ -3483,9 +3511,9 @@
         "engagementRate": 13.53,
         "views": 133
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.004Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 434.1,
+      "age_hours": 440.8,
       "checkpoint": "168h"
     },
     {
@@ -3505,9 +3533,9 @@
         "engagementRate": 12,
         "views": 25
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.004Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 445.5,
+      "age_hours": 452.3,
       "checkpoint": "168h"
     },
     {
@@ -3527,9 +3555,9 @@
         "engagementRate": 9.18,
         "views": 207
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.004Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 458.1,
+      "age_hours": 464.8,
       "checkpoint": "168h"
     },
     {
@@ -3549,9 +3577,9 @@
         "engagementRate": 18.64,
         "views": 59
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.004Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 469.6,
+      "age_hours": 476.3,
       "checkpoint": "168h"
     },
     {
@@ -3571,9 +3599,9 @@
         "engagementRate": 13.64,
         "views": 22
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.004Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 482.1,
+      "age_hours": 488.8,
       "checkpoint": "168h"
     },
     {
@@ -3590,12 +3618,12 @@
       "metrics": {
         "reactions": 3,
         "comments": 0,
-        "engagementRate": 17.65,
-        "views": 17
+        "engagementRate": 15.79,
+        "views": 19
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.004Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 565.7,
+      "age_hours": 572.4,
       "checkpoint": "168h"
     },
     {
@@ -3615,9 +3643,9 @@
         "engagementRate": 14.29,
         "views": 14
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.004Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 588.4,
+      "age_hours": 595.1,
       "checkpoint": "168h"
     },
     {
@@ -3637,9 +3665,9 @@
         "engagementRate": 15.15,
         "views": 33
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.004Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 589.1,
+      "age_hours": 595.8,
       "checkpoint": "168h"
     },
     {
@@ -3656,12 +3684,12 @@
       "metrics": {
         "reactions": 7,
         "comments": 1,
-        "engagementRate": 24.24,
-        "views": 33
+        "engagementRate": 23.53,
+        "views": 34
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.004Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 612.8,
+      "age_hours": 619.5,
       "checkpoint": "168h"
     },
     {
@@ -3681,9 +3709,9 @@
         "engagementRate": 22.22,
         "views": 36
       },
-      "metrics_updated_at": "2026-10-24T08:18:07.004Z",
+      "metrics_updated_at": "2026-10-25T07:20:05.383Z",
       "youtube_category": "27",
-      "age_hours": 613.5,
+      "age_hours": 620.2,
       "checkpoint": "168h"
     },
     {
@@ -3705,7 +3733,7 @@
       },
       "metrics_updated_at": "2026-10-22T10:14:20.883Z",
       "youtube_category": "27",
-      "age_hours": 780.8,
+      "age_hours": 787.5,
       "checkpoint": "168h"
     },
     {
@@ -3727,7 +3755,7 @@
       },
       "metrics_updated_at": "2026-10-22T10:14:20.884Z",
       "youtube_category": "27",
-      "age_hours": 781.5,
+      "age_hours": 788.2,
       "checkpoint": "168h"
     },
     {
@@ -3749,7 +3777,7 @@
       },
       "metrics_updated_at": "2026-10-21T14:55:55.887Z",
       "youtube_category": "27",
-      "age_hours": 804.3,
+      "age_hours": 811.0,
       "checkpoint": "168h"
     },
     {
@@ -3771,7 +3799,7 @@
       },
       "metrics_updated_at": "2026-10-20T12:08:18.550Z",
       "youtube_category": "27",
-      "age_hours": 830.7,
+      "age_hours": 837.4,
       "checkpoint": "168h"
     },
     {
@@ -3793,7 +3821,7 @@
       },
       "metrics_updated_at": "2026-10-16T15:58:37.588Z",
       "youtube_category": "27",
-      "age_hours": 912.4,
+      "age_hours": 919.1,
       "checkpoint": "168h"
     },
     {
@@ -3815,7 +3843,7 @@
       },
       "metrics_updated_at": "2026-10-19T13:05:29.231Z",
       "youtube_category": "27",
-      "age_hours": 854.5,
+      "age_hours": 861.2,
       "checkpoint": "168h"
     },
     {
@@ -3837,7 +3865,7 @@
       },
       "metrics_updated_at": "2026-10-18T14:01:12.942Z",
       "youtube_category": "27",
-      "age_hours": 864.5,
+      "age_hours": 871.3,
       "checkpoint": "168h"
     },
     {
@@ -3859,7 +3887,7 @@
       },
       "metrics_updated_at": "2026-10-17T15:00:08.228Z",
       "youtube_category": "27",
-      "age_hours": 878.9,
+      "age_hours": 885.6,
       "checkpoint": "168h"
     },
     {
@@ -3881,7 +3909,7 @@
       },
       "metrics_updated_at": "2026-10-17T15:00:08.228Z",
       "youtube_category": "27",
-      "age_hours": 879.2,
+      "age_hours": 885.9,
       "checkpoint": "168h"
     },
     {
@@ -3903,7 +3931,7 @@
       },
       "metrics_updated_at": "2026-10-17T15:00:08.229Z",
       "youtube_category": "27",
-      "age_hours": 900.5,
+      "age_hours": 907.2,
       "checkpoint": "168h"
     },
     {
@@ -3925,7 +3953,7 @@
       },
       "metrics_updated_at": "2026-10-16T15:58:37.588Z",
       "youtube_category": "27",
-      "age_hours": 901.7,
+      "age_hours": 908.4,
       "checkpoint": "168h"
     },
     {
@@ -3947,7 +3975,7 @@
       },
       "metrics_updated_at": "2026-10-16T15:58:37.588Z",
       "youtube_category": "27",
-      "age_hours": 924.4,
+      "age_hours": 931.1,
       "checkpoint": "168h"
     },
     {
@@ -3969,7 +3997,7 @@
       },
       "metrics_updated_at": "2026-10-16T11:17:06.657Z",
       "youtube_category": "27",
-      "age_hours": 925.0,
+      "age_hours": 931.8,
       "checkpoint": "168h"
     },
     {
@@ -3991,7 +4019,7 @@
       },
       "metrics_updated_at": "2026-10-16T11:17:06.641Z",
       "youtube_category": "27",
-      "age_hours": 950.8,
+      "age_hours": 957.5,
       "checkpoint": "168h"
     },
     {
@@ -4013,7 +4041,7 @@
       },
       "metrics_updated_at": "2026-10-16T11:17:06.784Z",
       "youtube_category": "22",
-      "age_hours": 1081.6,
+      "age_hours": 1088.3,
       "checkpoint": "168h"
     },
     {
@@ -4035,7 +4063,7 @@
       },
       "metrics_updated_at": "2026-10-16T11:17:06.701Z",
       "youtube_category": "27",
-      "age_hours": 959.1,
+      "age_hours": 965.8,
       "checkpoint": "168h"
     }
   ]
