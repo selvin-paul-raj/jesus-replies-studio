@@ -434,12 +434,12 @@
     "title": "Jesus... I Shouted At My Little Sister Over A Charger",
     "slot": null,
     "target_date": null,
-    "state": "SCHEDULED",
+    "state": "PUBLISHED_VERIFIED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0070/JR-0070.mp4",
     "buffer_post_id": "6ad6cbeeb81183413daa0d93",
     "scheduled_at": "2026-10-26T15:00:00.000Z",
-    "published_at": null,
-    "verification_status": "NOT_VERIFIED"
+    "published_at": "2026-10-26T15:07:03.919Z",
+    "verification_status": "PUBLISHED_VERIFIED"
   },
   {
     "episode_id": "JR-0071",
@@ -538,10 +538,10 @@
     "title": "Jesus... Appa Went Diwali Shopping Alone",
     "slot": null,
     "target_date": null,
-    "state": "APPROVED",
+    "state": "SCHEDULED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0078/JR-0078.mp4",
     "buffer_post_id": "6adae7d5cc1b7cdc08cf4c05",
-    "scheduled_at": null,
+    "scheduled_at": "2026-10-30T15:00:00.000Z",
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
   }
