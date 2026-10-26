@@ -1,17 +1,16 @@
 {
   "counts": {
-    "PUBLISHED": 60,
+    "PUBLISHED": 61,
     "UNUSED": 5,
-    "READY": 4,
-    "SCHEDULED": 10
+    "SCHEDULED": 10,
+    "READY": 3
   },
   "next_ready": [
-    "JR-0060",
     "JR-0061",
     "JR-0062",
     "JR-0063"
   ],
-  "ready_total": 4,
+  "ready_total": 3,
   "items": [
     {
       "episode_id": "JR-0001",
@@ -884,11 +883,11 @@
     },
     {
       "episode_id": "JR-0060",
-      "status": "READY",
-      "why": "instagram=DRAFT, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
         "instagram": "DRAFT",
-        "youtube": "NONE"
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-e/JR-0060.mp4",
       "duration_s": 53.46,
@@ -1007,15 +1006,18 @@
     },
     {
       "episode_id": "JR-0069",
-      "status": "SCHEDULED",
-      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
+      "status": "PUBLISHED",
+      "why": "all platforms",
       "platforms": {
-        "instagram": "SCHEDULED",
-        "youtube": "SCHEDULED"
+        "instagram": "PUBLISHED_VERIFIED",
+        "youtube": "PUBLISHED_VERIFIED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0069/JR-0069.mp4",
       "duration_s": 53.38,
-      "published_on": []
+      "published_on": [
+        "instagram",
+        "youtube"
+      ]
     },
     {
       "episode_id": "JR-0070",
@@ -1104,9 +1106,9 @@
     {
       "episode_id": "JR-0077",
       "status": "SCHEDULED",
-      "why": "instagram=DRAFT, youtube=SCHEDULED",
+      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "DRAFT",
+        "instagram": "SCHEDULED",
         "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0077/JR-0077.mp4",
@@ -1126,5 +1128,5 @@
       "published_on": []
     }
   ],
-  "as_of": "2026-10-26T01:31:26.070844+00:00"
+  "as_of": "2026-10-26T04:40:13.247248+00:00"
 }

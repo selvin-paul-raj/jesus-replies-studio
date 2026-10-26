@@ -421,12 +421,12 @@
     "title": "Jesus... Our Dog Died And I Told Work My Weekend Was Good",
     "slot": null,
     "target_date": null,
-    "state": "SCHEDULED",
+    "state": "PUBLISHED_VERIFIED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0069/JR-0069.mp4",
     "buffer_post_id": "6ad6cba22fcafd0f184710dd",
     "scheduled_at": "2026-10-26T02:30:00.000Z",
-    "published_at": null,
-    "verification_status": "NOT_VERIFIED"
+    "published_at": "2026-10-26T02:31:44.108Z",
+    "verification_status": "PUBLISHED_VERIFIED"
   },
   {
     "episode_id": "JR-0070",
@@ -525,10 +525,10 @@
     "title": "Jesus... My Friend Borrowed Money Again",
     "slot": null,
     "target_date": null,
-    "state": "APPROVED",
+    "state": "SCHEDULED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0077/JR-0077.mp4",
     "buffer_post_id": "6adae71a1dc335d347f49f90",
-    "scheduled_at": null,
+    "scheduled_at": "2026-10-30T02:30:00.000Z",
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
   },
