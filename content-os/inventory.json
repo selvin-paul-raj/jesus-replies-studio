@@ -1,14 +1,11 @@
 {
   "counts": {
-    "PUBLISHED": 63,
+    "PUBLISHED": 64,
     "UNUSED": 5,
-    "SCHEDULED": 10,
-    "READY": 1
+    "SCHEDULED": 10
   },
-  "next_ready": [
-    "JR-0063"
-  ],
-  "ready_total": 1,
+  "next_ready": [],
+  "ready_total": 0,
   "items": [
     {
       "episode_id": "JR-0001",
@@ -894,9 +891,9 @@
     {
       "episode_id": "JR-0061",
       "status": "SCHEDULED",
-      "why": "instagram=DRAFT, youtube=SCHEDULED",
+      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "DRAFT",
+        "instagram": "SCHEDULED",
         "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-e/JR-0061.mp4",
@@ -917,11 +914,11 @@
     },
     {
       "episode_id": "JR-0063",
-      "status": "READY",
-      "why": "instagram=DRAFT, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
         "instagram": "DRAFT",
-        "youtube": "NONE"
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-e/JR-0063.mp4",
       "duration_s": 54.29,
@@ -1049,15 +1046,18 @@
     },
     {
       "episode_id": "JR-0072",
-      "status": "SCHEDULED",
-      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
+      "status": "PUBLISHED",
+      "why": "all platforms",
       "platforms": {
-        "instagram": "SCHEDULED",
-        "youtube": "SCHEDULED"
+        "instagram": "PUBLISHED_VERIFIED",
+        "youtube": "PUBLISHED_VERIFIED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0072/JR-0072.mp4",
       "duration_s": 56.51,
-      "published_on": []
+      "published_on": [
+        "instagram",
+        "youtube"
+      ]
     },
     {
       "episode_id": "JR-0073",
@@ -1132,5 +1132,5 @@
       "published_on": []
     }
   ],
-  "as_of": "2026-10-27T12:04:48.722999+00:00"
+  "as_of": "2026-10-27T17:57:14.935559+00:00"
 }

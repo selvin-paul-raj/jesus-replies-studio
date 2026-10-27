@@ -25,13 +25,13 @@
       }
     },
     "youtube": {
-      "state": "NONE",
-      "post_id": null,
-      "due_at": null,
+      "state": "SCHEDULED",
+      "post_id": "6ae0e603049681f2b00a1921",
+      "due_at": "2026-11-01T15:00:00.000Z",
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
-      "attempts": 0,
+      "attempts": 1,
       "error": null,
       "history": [
         {
@@ -47,6 +47,13 @@
           "to": "NONE",
           "run": "39894605441",
           "evidence": "post 6ad6f16e9d034d7aedda0232 handed to JR-0068 (old long render pulled; awaiting rewrite)"
+        },
+        {
+          "at": "2026-10-27T17:57:14.000Z",
+          "from": "NONE",
+          "to": "SCHEDULED",
+          "run": "40555364548",
+          "evidence": "create_scheduled read back: scheduled 2026-11-01T15:00:00.000Z"
         }
       ],
       "last_read_error": null
