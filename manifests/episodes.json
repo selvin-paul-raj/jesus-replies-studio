@@ -304,10 +304,10 @@
     "title": "Jesus... Everyone At The Wedding Asked When It's My Turn",
     "slot": null,
     "target_date": null,
-    "state": "APPROVED",
-    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0060/JR-0060.mp4",
+    "state": "SCHEDULED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-e/JR-0060.mp4",
     "buffer_post_id": "6ad1aa80fb64fffcf1b4ef06",
-    "scheduled_at": null,
+    "scheduled_at": "2026-10-31T02:30:00.000Z",
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
   },
@@ -447,12 +447,12 @@
     "title": "Jesus... Every Aunty At Diwali Asked What I Earn",
     "slot": null,
     "target_date": null,
-    "state": "SCHEDULED",
+    "state": "PUBLISHED_VERIFIED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0071/JR-0071.mp4",
     "buffer_post_id": "6ad995471093844846df4b96",
     "scheduled_at": "2026-10-27T02:30:00.000Z",
-    "published_at": null,
-    "verification_status": "NOT_VERIFIED"
+    "published_at": "2026-10-27T02:31:37.072Z",
+    "verification_status": "PUBLISHED_VERIFIED"
   },
   {
     "episode_id": "JR-0072",

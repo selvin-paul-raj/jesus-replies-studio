@@ -140,11 +140,11 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-27T02:20Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-27T04:57Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=36, median views 1462, best 2285, saves per 1k reach 13.0, stalled 4 (excluded)
-- **youtube**: n=39, median views 1015, best 3695, saves per 1k reach None, stalled 0 (excluded)
-- **episodes scored** (IG + YT percentile): 40, 35 with both platforms
+- **instagram**: n=37, median views 1469, best 2285, saves per 1k reach 12.5, stalled 4 (excluded)
+- **youtube**: n=40, median views 1014, best 3695, saves per 1k reach None, stalled 0 (excluded)
+- **episodes scored** (IG + YT percentile): 41, 36 with both platforms
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
@@ -154,15 +154,15 @@ _Last computed 2026-10-27T02:20Z from Buffer analytics, last 28 days, posts at l
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
 - JR-0041 score 0.95 (youtube 1993 views): Jesus... I said yes again. I didn't want to. I never do. 😔
-- JR-0046 score 0.84 (youtube 1619 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔
+- JR-0046 score 0.85 (youtube 1619 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔
 - JR-0042 score 0.82 (youtube 1554 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔
-- JR-0059 score 0.76 (instagram 2273, youtube 1151 views): Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔
+- JR-0059 score 0.77 (instagram 2273, youtube 1151 views): Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔
 - JR-0034 score 0.73 (instagram 1526, youtube 1689 views): Jesus, what if I stopped believing tomorrow?
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1456 (n=19), night (18-24 IST) 1497 (n=17)
-- youtube slot medians: morning (06-12 IST) 1210 (n=19), night (18-24 IST) 503 (n=20)
-- instagram: 4 of 40 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033
+- instagram slot medians: morning (06-12 IST) 1462 (n=20), night (18-24 IST) 1497 (n=17)
+- youtube slot medians: morning (06-12 IST) 1180 (n=20), night (18-24 IST) 503 (n=20)
+- instagram: 4 of 41 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->
