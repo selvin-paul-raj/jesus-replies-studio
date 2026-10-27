@@ -140,9 +140,9 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-26T22:37Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-10-27T02:20Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=36, median views 1462, best 2284, saves per 1k reach 13.0, stalled 4 (excluded)
+- **instagram**: n=36, median views 1462, best 2285, saves per 1k reach 13.0, stalled 4 (excluded)
 - **youtube**: n=39, median views 1015, best 3695, saves per 1k reach None, stalled 0 (excluded)
 - **episodes scored** (IG + YT percentile): 40, 35 with both platforms
 
@@ -156,11 +156,11 @@ _Last computed 2026-10-26T22:37Z from Buffer analytics, last 28 days, posts at l
 - JR-0041 score 0.95 (youtube 1993 views): Jesus... I said yes again. I didn't want to. I never do. 😔
 - JR-0046 score 0.84 (youtube 1619 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔
 - JR-0042 score 0.82 (youtube 1554 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔
-- JR-0059 score 0.76 (instagram 2269, youtube 1151 views): Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔
+- JR-0059 score 0.76 (instagram 2273, youtube 1151 views): Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔
 - JR-0034 score 0.73 (instagram 1526, youtube 1689 views): Jesus, what if I stopped believing tomorrow?
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1456 (n=19), night (18-24 IST) 1496 (n=17)
+- instagram slot medians: morning (06-12 IST) 1456 (n=19), night (18-24 IST) 1497 (n=17)
 - youtube slot medians: morning (06-12 IST) 1210 (n=19), night (18-24 IST) 503 (n=20)
 - instagram: 4 of 40 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033
 - rules need n>=8 episodes per bucket; smaller buckets are reported only

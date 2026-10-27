@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-26T22:37:07.267439+00:00",
+  "as_of": "2026-10-27T02:20:48.611383+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -14,7 +14,7 @@
       ],
       "stall_rate": 0.1,
       "median_views": 1462.0,
-      "max_views": 2284,
+      "max_views": 2285,
       "saves_per_1k_reach_median": 13.0,
       "avg_watch_time_available": true,
       "by_dimension": {
@@ -25,14 +25,14 @@
           },
           "night (18-24 IST)": {
             "n": 17,
-            "median_views": 1496
+            "median_views": 1497
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0045",
-          "views": 2284,
+          "views": 2285,
           "saves": 65,
           "shares": 16,
           "theme": "being the last single friend",
@@ -43,7 +43,7 @@
         },
         {
           "episode_id": "JR-0059",
-          "views": 2269,
+          "views": 2273,
           "saves": 33,
           "shares": 17,
           "theme": "waiting for tomorrow's result that decides his future",
@@ -125,7 +125,7 @@
         },
         {
           "episode_id": "JR-0067",
-          "views": 304,
+          "views": 309,
           "theme": "she promises one more reel at 2 a.m. every night and hides her exhaustion at work",
           "emotion": "sad",
           "hook": "Jesus... it's 2 a.m. again. I said one more reel an hour ago, and I'll smile at work anyway. 📱",
@@ -459,7 +459,7 @@
         "episode_id": "JR-0059",
         "score": 0.762,
         "views": {
-          "instagram": 2269,
+          "instagram": 2273,
           "youtube": 1151
         },
         "hook": "Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔"
@@ -479,7 +479,7 @@
     "lean_towards": [],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1456 (n=19), night (18-24 IST) 1496 (n=17)",
+      "instagram slot medians: morning (06-12 IST) 1456 (n=19), night (18-24 IST) 1497 (n=17)",
       "youtube slot medians: morning (06-12 IST) 1210 (n=19), night (18-24 IST) 503 (n=20)",
       "instagram: 4 of 40 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
@@ -488,7 +488,7 @@
       "JR-0041 score 0.95 (youtube 1993 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
       "JR-0046 score 0.84 (youtube 1619 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
       "JR-0042 score 0.82 (youtube 1554 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0059 score 0.76 (instagram 2269, youtube 1151 views): Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔",
+      "JR-0059 score 0.76 (instagram 2273, youtube 1151 views): Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔",
       "JR-0034 score 0.73 (instagram 1526, youtube 1689 views): Jesus, what if I stopped believing tomorrow?"
     ]
   }
