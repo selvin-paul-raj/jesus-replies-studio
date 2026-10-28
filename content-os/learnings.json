@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-28T02:31:54.623762+00:00",
+  "as_of": "2026-10-28T05:34:05.636468+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -65,7 +65,7 @@
         },
         {
           "episode_id": "JR-0068",
-          "views": 1830,
+          "views": 1831,
           "saves": 14,
           "shares": 8,
           "theme": "she types a long honest message to her best friend, deletes it and sends \"haha nothing\"",
@@ -76,7 +76,7 @@
         },
         {
           "episode_id": "JR-0025",
-          "views": 1790,
+          "views": 1791,
           "saves": 19,
           "shares": 10,
           "theme": "friendship betrayal",
@@ -139,15 +139,15 @@
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 1017.5,
-      "max_views": 3697,
+      "median_views": 1043.0,
+      "max_views": 3700,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 21,
-            "median_views": 1202
+            "median_views": 1205
           },
           "night (18-24 IST)": {
             "n": 21,
@@ -158,7 +158,7 @@
       "top": [
         {
           "episode_id": "JR-0053",
-          "views": 3697,
+          "views": 3700,
           "saves": null,
           "shares": null,
           "theme": "father in the ICU while he is stuck in another city",
@@ -169,7 +169,7 @@
         },
         {
           "episode_id": "JR-0038",
-          "views": 2879,
+          "views": 2882,
           "saves": null,
           "shares": null,
           "theme": "alone in the hostel during the festival holidays",
@@ -180,7 +180,7 @@
         },
         {
           "episode_id": "JR-0041",
-          "views": 1998,
+          "views": 1999,
           "saves": null,
           "shares": null,
           "theme": "people-pleasing and not being able to say no",
@@ -202,7 +202,7 @@
         },
         {
           "episode_id": "JR-0058",
-          "views": 1746,
+          "views": 1747,
           "saves": null,
           "shares": null,
           "theme": "said she forgave him but the hurt keeps returning every night",
@@ -308,7 +308,7 @@
       "character": {
         "boy": {
           "n": 22,
-          "median_score": 0.563
+          "median_score": 0.569
         },
         "girl": {
           "n": 21,
@@ -318,7 +318,7 @@
       "hook_type": {
         "confession_statement": {
           "n": 16,
-          "median_score": 0.582
+          "median_score": 0.588
         },
         "question": {
           "n": 21,
@@ -362,7 +362,7 @@
         },
         "2 Timothy": {
           "n": 1,
-          "median_score": 0.728
+          "median_score": 0.716
         },
         "Ecclesiastes": {
           "n": 1,
@@ -390,7 +390,7 @@
         },
         "James": {
           "n": 1,
-          "median_score": 0.361
+          "median_score": 0.349
         },
         "John": {
           "n": 2,
@@ -418,7 +418,7 @@
         },
         "Proverbs": {
           "n": 4,
-          "median_score": 0.49349999999999994
+          "median_score": 0.4935
         },
         "Psalms": {
           "n": 12,
@@ -426,7 +426,7 @@
         },
         "Romans": {
           "n": 1,
-          "median_score": 0.688
+          "median_score": 0.676
         },
         "Ruth": {
           "n": 1,
@@ -439,7 +439,7 @@
         "episode_id": "JR-0041",
         "score": 0.951,
         "views": {
-          "youtube": 1998
+          "youtube": 1999
         },
         "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔"
       },
@@ -447,7 +447,7 @@
         "episode_id": "JR-0046",
         "score": 0.829,
         "views": {
-          "youtube": 1623
+          "youtube": 1624
         },
         "hook": "Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔"
       },
@@ -464,7 +464,7 @@
         "score": 0.78,
         "views": {
           "instagram": 2275,
-          "youtube": 1202
+          "youtube": 1205
         },
         "hook": "Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔"
       },
@@ -484,15 +484,15 @@
     "avoid": [],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1469 (n=21), night (18-24 IST) 1454 (n=18)",
-      "youtube slot medians: morning (06-12 IST) 1202 (n=21), night (18-24 IST) 509 (n=21)",
+      "youtube slot medians: morning (06-12 IST) 1205 (n=21), night (18-24 IST) 509 (n=21)",
       "instagram: 4 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0041 score 0.95 (youtube 1998 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0046 score 0.83 (youtube 1623 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0041 score 0.95 (youtube 1999 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0046 score 0.83 (youtube 1624 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
       "JR-0042 score 0.81 (youtube 1556 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0059 score 0.78 (instagram 2275, youtube 1202 views): Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔",
+      "JR-0059 score 0.78 (instagram 2275, youtube 1205 views): Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔",
       "JR-0048 score 0.73 (instagram 1639, youtube 1466 views): Jesus... why does my mind get loud the moment I lie down? 😔"
     ]
   }
