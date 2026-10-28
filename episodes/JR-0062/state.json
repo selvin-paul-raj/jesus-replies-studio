@@ -1,7 +1,7 @@
 {
   "episode_id": "JR-0062",
-  "state": "APPROVED",
-  "updated_at": "2026-10-16T04:55:32Z",
+  "state": "SCHEDULED",
+  "updated_at": "2026-10-28T02:32:01Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
@@ -28,8 +28,8 @@
   },
   "buffer": {
     "post_id": "6ad1ae439597cd166268c8f8",
-    "status": "draft",
-    "due_at": "2026-12-31T00:00:00.000Z",
+    "status": "scheduled",
+    "due_at": "2026-11-01T02:30:00.000Z",
     "sent_at": null,
     "pending_mutation": null,
     "create_attempts": 1
@@ -39,7 +39,7 @@
     "approved_at": "2026-10-16T04:55:32Z",
     "approved_by": "standing authorization",
     "slot_local": null,
-    "due_at": null,
+    "due_at": "2026-11-01T02:30:00.000Z",
     "evidence": "2026-10-11 20:48 IST, Selvin in chat: dont stop it continus complete automous running system i wnat it bi-weelky review it and enhance the content and enagament , qually and follow ups and crack chnaging algorthim of thsoe social medias build life long running system self correction , feeadbackloop "
   },
   "verification": {
@@ -117,6 +117,13 @@
       "to": "APPROVED",
       "run": "38852820366",
       "evidence": "auto-approved after all QA gates under standing authorization 2026-10-11 20:48 IST, Selvin in chat; slot time comes from the weekly plan"
+    },
+    {
+      "at": "2026-10-28T02:32:01Z",
+      "from": "APPROVED",
+      "to": "SCHEDULED",
+      "run": "40621396996",
+      "evidence": "distributor scheduled instagram 6ad1ae439597cd166268c8f8 at 2026-11-01T02:30:00.000Z"
     }
   ]
 }
