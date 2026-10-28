@@ -343,10 +343,10 @@
     "title": "Jesus... I'm Always The One Who Texts First",
     "slot": null,
     "target_date": null,
-    "state": "APPROVED",
-    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0063/JR-0063.mp4",
+    "state": "SCHEDULED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-23-e/JR-0063.mp4",
     "buffer_post_id": "6ad1af3e4ed7d375a4467ccb",
-    "scheduled_at": null,
+    "scheduled_at": "2026-11-01T15:00:00.000Z",
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
   },
@@ -486,12 +486,12 @@
     "title": "Jesus... My First Salary Came On Diwali Week",
     "slot": null,
     "target_date": null,
-    "state": "SCHEDULED",
+    "state": "PUBLISHED_VERIFIED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0074/JR-0074.mp4",
     "buffer_post_id": "6ad9977cb086d40f57337715",
     "scheduled_at": "2026-10-28T15:00:00.000Z",
-    "published_at": null,
-    "verification_status": "NOT_VERIFIED"
+    "published_at": "2026-10-28T15:07:31.345Z",
+    "verification_status": "PUBLISHED_VERIFIED"
   },
   {
     "episode_id": "JR-0075",
