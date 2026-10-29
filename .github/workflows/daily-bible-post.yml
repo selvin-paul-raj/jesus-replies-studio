@@ -2,10 +2,10 @@ name: Daily Bible Verse Post
 
 on:
   schedule:
-    # 06:37 IST (01:07 UTC): off the top of the hour, when GitHub's scheduler is busiest and
-    # delays runs (cards used to land 10:45-12:30 IST). Posts as an Instagram Story
+    # 08:05 IST (02:35 UTC), just after the 08:00 Reel (DEC-JR-015, 2026-10-29; was 06:37).
+    # Off the top of the hour because GitHub's scheduler delays :00 runs. Posts as an Instagram Story
     # (config/publishing-rules.json daily_verse).
-    - cron: "7 1 * * *"
+    - cron: "35 2 * * *"
   workflow_dispatch:
     inputs:
       force:

@@ -118,3 +118,8 @@ Selvin (2026-10-29 11:53 IST), after a YouTube comment objecting to Diwali episo
 - Comment rule: answer "is this AI?" with a plain yes (comment-replies.md). Native platform labels (YouTube "altered or synthetic content", Instagram "AI info") are set where the tools allow.
 - Fits Mosseri 2026-10-23: AI content isn't throttled, but label it.
 - 2026-10-29 addendum: Buffer API supports `isAiGenerated` on Instagram and YouTube post metadata, which makes the platform apply its native AI label. Every createPost/editPost path now sends `isAiGenerated: true` (content_os/client.py, daily/buffer.py, buffer_edit_due.py, publish-buffer.ts). The 21 queued Buffer posts (14 scheduled, 7 drafts) were edited to carry it. The 70 published YouTube Shorts were set to "AI use: Yes" in Studio. Published Instagram Reels can't be relabeled via API; that's done in the app.
+
+## DEC-JR-015 — 2026-10-29 — Slots 08:00 + 19:30 IST, verse Story 08:05
+- Selvin moved the evening slot from 20:30 to 19:30 IST on Instagram and YouTube, and dropped the 6-7 AM posts. The verse Story moves from 06:37 to 08:05 (daily-bible-post.yml cron 35 2 * * *).
+- Buffer posting schedule on both channels is now 08:00 and 19:30 every day (Asia/Kolkata). The 8 already-scheduled 20:30 posts (Oct 29 to Nov 1) were moved to 19:30 via editPost, and episode state and the week plan were updated.
+- Supersedes EXP-003 (YT 13:00). Self-evaluated under EXP-005: a bi-weekly self-review reads own-account results plus official algorithm updates and applies the experiments.json decision rule automatically.

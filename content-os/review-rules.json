@@ -63,13 +63,19 @@
       "id": "EXP-003-yt-midday",
       "since": "2026-10-29",
       "plan": "YouTube: second Short at 13:00 IST instead of 20:30 for 14 days; keep IG at 08:00/20:30. Compare 7-day engaged-view medians vs 20:30 baseline (611).",
-      "status": "proposed"
+      "status": "superseded by EXP-005 (DEC-JR-015, 2026-10-29)"
     },
     {
       "id": "EXP-004-ig-ai-dubbing",
       "since": "2026-10-29",
       "plan": "Enable Instagram AI translations/dubbing (opt-in in app) for reels with speech; compare reach and non-follower share for 14 days.",
       "status": "needs_user_toggle"
+    },
+    {
+      "id": "EXP-005-evening-1930",
+      "since": "2026-10-29",
+      "plan": "Evening slot 19:30 IST on both platforms vs 20:30 baseline (IG 1,358, YT 611). Read 2026-11-12, decision rule in experiments.json.",
+      "status": "active"
     }
   ]
 }

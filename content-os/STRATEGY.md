@@ -21,7 +21,7 @@ trends and experiment readings in `content-os/reviews/`.
   `config/publishing-rules.json` duration; the validator rejects longer scripts before rendering).
 - **Saves/shares** are highest on comparison and heartbreak episodes (JR-0006, JR-0020):
   end with a line people want to keep or send to a friend.
-- **Slots:** 08:00 and 20:30 IST (EXP-002). On Instagram the night slot has the steadier
+- **Slots:** 08:00 and 19:30 IST since 2026-10-29 (DEC-JR-015, self-evaluated by EXP-005; was 20:30 under EXP-002). On Instagram the night slot has the steadier
   median; three early morning posts (JR-0022/0024/0037, ~200 views) underperformed, but
   later mornings (JR-0026/0028/0030) reached 1.2K–1.6K, so the slot alone does not explain
   it. On YouTube the morning slot currently does better. Slot times only change when the

@@ -4,7 +4,7 @@
     "instagram": {
       "state": "SCHEDULED",
       "post_id": "6ad1af3e4ed7d375a4467ccb",
-      "due_at": "2026-11-01T15:00:00.000Z",
+      "due_at": "2026-11-01T14:00:00.000Z",
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
@@ -23,7 +23,7 @@
           "from": "DRAFT",
           "to": "SCHEDULED",
           "run": "40780574744",
-          "evidence": "schedule_draft read back: scheduled 2026-11-01T15:00:00.000Z"
+          "evidence": "schedule_draft read back: scheduled 2026-11-01T14:00:00.000Z"
         }
       ],
       "last_read_error": {
@@ -34,7 +34,7 @@
     "youtube": {
       "state": "SCHEDULED",
       "post_id": "6ae0e603049681f2b00a1921",
-      "due_at": "2026-11-01T15:00:00.000Z",
+      "due_at": "2026-11-01T14:00:00.000Z",
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
@@ -60,7 +60,7 @@
           "from": "NONE",
           "to": "SCHEDULED",
           "run": "40555364548",
-          "evidence": "create_scheduled read back: scheduled 2026-11-01T15:00:00.000Z"
+          "evidence": "create_scheduled read back: scheduled 2026-11-01T14:00:00.000Z"
         }
       ],
       "last_read_error": null

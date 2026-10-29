@@ -86,6 +86,25 @@
       "min_n_per_arm": 7,
       "success": "variant IG (saves+shares)/1k reach >= 1.2x control median AND YT median views >= control median, at n>=7; read at the 2026-11-01 review",
       "result": null
+    },
+    {
+      "id": "EXP-005",
+      "status": "active",
+      "started": "2026-10-29",
+      "variable": "evening_slot",
+      "hypothesis": "An evening slot at 19:30 IST matches or beats 20:30 on both platforms (Selvin's schedule change, DEC-JR-015).",
+      "control": "20:30 IST, weeks 41-43 medians: Instagram views 1,358, YouTube views 611",
+      "variant": "19:30 IST on Instagram and YouTube (08:00 unchanged); verse Story at 08:05",
+      "metrics": [
+        "views",
+        "shares_per_1k_reach",
+        "avg_watch_time_s",
+        "engaged_views"
+      ],
+      "min_n_per_arm": 10,
+      "read_at": "2026-11-12 bi-weekly self-review, then every 14 days",
+      "decision_rule": "Per platform, only posts >=7 days old. Keep 19:30 if its median views >= 0.9x control. If < 0.8x control at n>=10, revert that platform's evening slot to 20:30. YouTube only: if 08:00 still beats the evening slot by >=2x at n>=10, test 13:00 IST next (old EXP-003 idea). Never change slots on n<10. Re-read official Instagram (Mosseri) and YouTube Creator Insider/Help updates before each read and note any ranking change that should override timing.",
+      "result": null
     }
   ]
 }
