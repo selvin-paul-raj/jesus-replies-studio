@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-29T05:41:03.819292+00:00",
+  "as_of": "2026-10-29T12:54:45.110507+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -139,26 +139,26 @@
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 1043.0,
-      "max_views": 3700,
+      "median_views": 1060.5,
+      "max_views": 3702,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 22,
-            "median_views": 1166.5
+            "median_views": 1184.0
           },
           "night (18-24 IST)": {
             "n": 22,
-            "median_views": 616.0
+            "median_views": 616.5
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0053",
-          "views": 3700,
+          "views": 3702,
           "saves": null,
           "shares": null,
           "theme": "father in the ICU while he is stuck in another city",
@@ -169,7 +169,7 @@
         },
         {
           "episode_id": "JR-0038",
-          "views": 2882,
+          "views": 2881,
           "saves": null,
           "shares": null,
           "theme": "alone in the hostel during the festival holidays",
@@ -180,7 +180,7 @@
         },
         {
           "episode_id": "JR-0041",
-          "views": 1999,
+          "views": 2003,
           "saves": null,
           "shares": null,
           "theme": "people-pleasing and not being able to say no",
@@ -191,7 +191,7 @@
         },
         {
           "episode_id": "JR-0054",
-          "views": 1799,
+          "views": 1800,
           "saves": null,
           "shares": null,
           "theme": "comparing her career to her batchmates' online updates",
@@ -202,7 +202,7 @@
         },
         {
           "episode_id": "JR-0058",
-          "views": 1747,
+          "views": 1748,
           "saves": null,
           "shares": null,
           "theme": "said she forgave him but the hurt keeps returning every night",
@@ -233,7 +233,7 @@
         },
         {
           "episode_id": "JR-0023",
-          "views": 26,
+          "views": 27,
           "theme": "family expectations",
           "emotion": "crying",
           "hook": "Jesus... tomorrow I have to tell my parents I am leaving the course they paid for. 😭",
@@ -402,7 +402,7 @@
         },
         "Lamentations": {
           "n": 2,
-          "median_score": 0.6405
+          "median_score": 0.6465
         },
         "Matthew": {
           "n": 2,
@@ -426,7 +426,7 @@
         },
         "Romans": {
           "n": 1,
-          "median_score": 0.665
+          "median_score": 0.653
         },
         "Ruth": {
           "n": 1,
@@ -439,16 +439,16 @@
         "episode_id": "JR-0041",
         "score": 0.953,
         "views": {
-          "youtube": 1999
+          "youtube": 2003
         },
         "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔"
       },
       {
         "episode_id": "JR-0070",
-        "score": 0.857,
+        "score": 0.869,
         "views": {
           "instagram": 2184,
-          "youtube": 1499
+          "youtube": 1608
         },
         "hook": "Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌"
       },
@@ -456,15 +456,15 @@
         "episode_id": "JR-0046",
         "score": 0.837,
         "views": {
-          "youtube": 1624
+          "youtube": 1627
         },
         "hook": "Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔"
       },
       {
         "episode_id": "JR-0042",
-        "score": 0.814,
+        "score": 0.791,
         "views": {
-          "youtube": 1556
+          "youtube": 1557
         },
         "hook": "Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔"
       },
@@ -473,7 +473,7 @@
         "score": 0.765,
         "views": {
           "instagram": 2277,
-          "youtube": 1205
+          "youtube": 1206
         },
         "hook": "Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔"
       }
@@ -484,16 +484,16 @@
     "avoid": [],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1470 (n=21), night (18-24 IST) 1502 (n=19)",
-      "youtube slot medians: morning (06-12 IST) 1166 (n=22), night (18-24 IST) 616 (n=22)",
+      "youtube slot medians: morning (06-12 IST) 1184 (n=22), night (18-24 IST) 616 (n=22)",
       "instagram: 4 of 44 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0041 score 0.95 (youtube 1999 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0070 score 0.86 (instagram 2184, youtube 1499 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
-      "JR-0046 score 0.84 (youtube 1624 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0042 score 0.81 (youtube 1556 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0059 score 0.77 (instagram 2277, youtube 1205 views): Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔"
+      "JR-0041 score 0.95 (youtube 2003 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0070 score 0.87 (instagram 2184, youtube 1608 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
+      "JR-0046 score 0.84 (youtube 1627 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0042 score 0.79 (youtube 1557 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0059 score 0.77 (instagram 2277, youtube 1206 views): Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔"
     ]
   }
 }
