@@ -247,7 +247,7 @@ class T26Slots(unittest.TestCase):
         self.assertNotIn("initial_test_slots", cos)
         from content_os import cli as cocli
         c = cocli.cfg_load()
-        self.assertEqual(c["initial_test_slots"], ["08:00", "20:30"])
+        self.assertEqual(c["initial_test_slots"], ["08:00", "19:30"])
 
     def test_no_top_of_hour_crons(self):
         for wf in (ROOT / ".github/workflows").glob("*.yml"):
