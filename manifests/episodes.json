@@ -570,5 +570,18 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0081",
+    "created_at": "2026-10-29T04:59:20Z",
+    "title": "Jesus... I Can't Ask Anyone For Help 😔",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0081/JR-0081.mp4",
+    "buffer_post_id": "6ae2d3126ffb9bb0dcce98df",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]
