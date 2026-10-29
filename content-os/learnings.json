@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-10-29T05:04:20.704309+00:00",
+  "as_of": "2026-10-29T05:41:03.819292+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
     "instagram": {
-      "n": 41,
+      "n": 40,
       "n_stalled": 4,
       "stalled": [
         "JR-0046",
@@ -13,15 +13,15 @@
         "JR-0033"
       ],
       "stall_rate": 0.09,
-      "median_views": 1502,
+      "median_views": 1486.0,
       "max_views": 5060,
-      "saves_per_1k_reach_median": 12.3,
+      "saves_per_1k_reach_median": 11.6,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 22,
-            "median_views": 1498.0
+            "n": 21,
+            "median_views": 1470
           },
           "night (18-24 IST)": {
             "n": 19,
@@ -75,15 +75,15 @@
           "duration": "56-60s"
         },
         {
-          "episode_id": "JR-0020",
-          "views": 1920,
-          "saves": 48,
-          "shares": 15,
-          "theme": "comparison",
-          "emotion": "heartbroken",
-          "hook": "Jesus... can I be honest? I'm tired of pretending I'm happy for everyone. 😭",
+          "episode_id": "JR-0068",
+          "views": 1836,
+          "saves": 14,
+          "shares": 8,
+          "theme": "she types a long honest message to her best friend, deletes it and sends \"haha nothing\"",
+          "emotion": "sad",
+          "hook": "Jesus... I typed a whole paragraph about how I feel. I deleted it and sent \"haha nothing\". 💬",
           "slot": "morning (06-12 IST)",
-          "duration": null
+          "duration": "<=55s"
         }
       ],
       "bottom": [
@@ -272,105 +272,105 @@
   "scoring": "mean of Instagram and YouTube view percentiles where data exists",
   "content": {
     "n_episodes": 45,
-    "both_platforms": 40,
-    "median_score": 0.494,
+    "both_platforms": 39,
+    "median_score": 0.504,
     "by_dimension": {
       "emotion": {
         "angry": {
           "n": 1,
-          "median_score": 0.494
+          "median_score": 0.504
         },
         "crying": {
           "n": 4,
-          "median_score": 0.386
+          "median_score": 0.393
         },
         "happy": {
           "n": 2,
-          "median_score": 0.413
+          "median_score": 0.417
         },
         "heartbroken": {
           "n": 1,
-          "median_score": 0.45
+          "median_score": 0.0
         },
         "neutral": {
           "n": 4,
-          "median_score": 0.437
+          "median_score": 0.4455
         },
         "sad": {
           "n": 29,
-          "median_score": 0.585
+          "median_score": 0.59
         },
         "worried": {
           "n": 4,
-          "median_score": 0.23399999999999999
+          "median_score": 0.237
         }
       },
       "character": {
         "boy": {
           "n": 23,
-          "median_score": 0.579
+          "median_score": 0.583
         },
         "girl": {
           "n": 22,
-          "median_score": 0.4625
+          "median_score": 0.46799999999999997
         }
       },
       "hook_type": {
         "confession_statement": {
           "n": 17,
-          "median_score": 0.588
+          "median_score": 0.59
         },
         "question": {
           "n": 22,
-          "median_score": 0.421
+          "median_score": 0.425
         },
         "statement": {
           "n": 6,
-          "median_score": 0.5745
+          "median_score": 0.58
         }
       },
       "duration": {
         "56-60s": {
           "n": 10,
-          "median_score": 0.4345
+          "median_score": 0.4425
         },
         "<=55s": {
           "n": 19,
-          "median_score": 0.588
+          "median_score": 0.59
         },
         ">60s": {
           "n": 15,
-          "median_score": 0.421
+          "median_score": 0.43
         }
       },
       "bible_book": {
         "1 Corinthians": {
           "n": 1,
-          "median_score": 0.475
+          "median_score": 0.487
         },
         "1 John": {
           "n": 1,
-          "median_score": 0.376
+          "median_score": 0.382
         },
         "1 Peter": {
           "n": 1,
-          "median_score": 0.696
+          "median_score": 0.704
         },
         "2 Corinthians": {
           "n": 1,
-          "median_score": 0.46
+          "median_score": 0.471
         },
         "2 Timothy": {
           "n": 1,
-          "median_score": 0.705
+          "median_score": 0.712
         },
         "Ecclesiastes": {
           "n": 1,
-          "median_score": 0.453
+          "median_score": 0.461
         },
         "Ephesians": {
           "n": 1,
-          "median_score": 0.494
+          "median_score": 0.504
         },
         "Galatians": {
           "n": 3,
@@ -382,31 +382,31 @@
         },
         "Hebrews": {
           "n": 1,
-          "median_score": 0.107
+          "median_score": 0.108
         },
         "Isaiah": {
           "n": 4,
-          "median_score": 0.6325000000000001
+          "median_score": 0.6385000000000001
         },
         "James": {
           "n": 1,
-          "median_score": 0.344
+          "median_score": 0.347
         },
         "John": {
           "n": 2,
-          "median_score": 0.46649999999999997
+          "median_score": 0.471
         },
         "Joshua": {
           "n": 1,
-          "median_score": 0.361
+          "median_score": 0.366
         },
         "Lamentations": {
           "n": 2,
-          "median_score": 0.637
+          "median_score": 0.6405
         },
         "Matthew": {
           "n": 2,
-          "median_score": 0.565
+          "median_score": 0.5675
         },
         "Micah": {
           "n": 1,
@@ -414,23 +414,23 @@
         },
         "Philippians": {
           "n": 2,
-          "median_score": 0.5935
+          "median_score": 0.5975
         },
         "Proverbs": {
           "n": 4,
-          "median_score": 0.487
+          "median_score": 0.491
         },
         "Psalms": {
           "n": 12,
-          "median_score": 0.5634999999999999
+          "median_score": 0.5714999999999999
         },
         "Romans": {
           "n": 1,
-          "median_score": 0.655
+          "median_score": 0.665
         },
         "Ruth": {
           "n": 1,
-          "median_score": 0.356
+          "median_score": 0.362
         }
       }
     },
@@ -445,7 +445,7 @@
       },
       {
         "episode_id": "JR-0070",
-        "score": 0.858,
+        "score": 0.857,
         "views": {
           "instagram": 2184,
           "youtube": 1499
@@ -470,7 +470,7 @@
       },
       {
         "episode_id": "JR-0059",
-        "score": 0.766,
+        "score": 0.765,
         "views": {
           "instagram": 2277,
           "youtube": 1205
@@ -483,9 +483,9 @@
     "lean_towards": [],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1498 (n=22), night (18-24 IST) 1502 (n=19)",
+      "instagram slot medians: morning (06-12 IST) 1470 (n=21), night (18-24 IST) 1502 (n=19)",
       "youtube slot medians: morning (06-12 IST) 1166 (n=22), night (18-24 IST) 616 (n=22)",
-      "instagram: 4 of 45 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
+      "instagram: 4 of 44 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
