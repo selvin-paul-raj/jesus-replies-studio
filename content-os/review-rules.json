@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-29 (R5 added by Selvin's instruction)",
+  "as_of": "2026-10-29",
   "_note": "Written only by the bi-weekly growth review. Embedded in every brief as review_rules. Each rule cites its evidence; the next review keeps, changes or drops it.",
   "rules": [
     {
@@ -37,9 +37,39 @@
       "since": "2026-10-29",
       "rule": "Keep total spoken words (all lines + verse) at 95-120. Over 130 words is a rewrite, not a trim. Split any line that runs past ~4s (about 10 words at 150 wpm) and change the frame inside it.",
       "evidence": "skill_review calibration 2026-10-29 (n=47 per platform): IG top quartile median 110 words (~44s, 1,836 views) vs bottom quartile 157 words (~63s, 199 views); r(length, log views) = -0.43 IG, -0.22 YT. YT top quartile 115 words. Generic ig-reel hookscore does NOT predict our views (IG r=0.19, YT r=-0.30), so it stays advisory only."
+    },
+    {
+      "id": "R7-send-worthy",
+      "since": "2026-10-29",
+      "rule": "Every script names in its brief WHO would send it and TO WHOM (e.g. 'a friend going through a breakup'). If nobody would forward it, rewrite the angle. No comment-bait or 'type amen' CTAs.",
+      "evidence": "Mosseri 2026-10-23: sends matter far more than comments, especially for non-followers. Our IG sends/reach r=0.27 with log views vs likes/reach r=-0.06."
+    },
+    {
+      "id": "R8-first-frame",
+      "since": "2026-10-29",
+      "rule": "Frame 1 shows the viewer's problem as on-screen text readable without sound, within 1s. The first spoken line states the topic. No logo, title card or slow fade-in.",
+      "evidence": "YouTube Shorts gate = viewed vs swiped away. IG avg watch time 11.1s median is our strongest view predictor (r=0.40)."
+    },
+    {
+      "id": "R9-follow-reason",
+      "since": "2026-10-29",
+      "rule": "The last line gives a reason to follow, tied to the series (e.g. 'Jesus replies to a new struggle every morning'). Never beg. One line, under 3s.",
+      "evidence": "0 followers gained across 35 IG reels with ~1.2K median reach: strangers watch but don't convert."
     }
   ],
   "experiments": [
-    "EXP-004 hidden-feeling hook (see content-os/experiments.json)"
+    "EXP-004 hidden-feeling hook (see content-os/experiments.json)",
+    {
+      "id": "EXP-003-yt-midday",
+      "since": "2026-10-29",
+      "plan": "YouTube: second Short at 13:00 IST instead of 20:30 for 14 days; keep IG at 08:00/20:30. Compare 7-day engaged-view medians vs 20:30 baseline (611).",
+      "status": "proposed"
+    },
+    {
+      "id": "EXP-004-ig-ai-dubbing",
+      "since": "2026-10-29",
+      "plan": "Enable Instagram AI translations/dubbing (opt-in in app) for reels with speech; compare reach and non-follower share for 14 days.",
+      "status": "needs_user_toggle"
+    }
   ]
 }

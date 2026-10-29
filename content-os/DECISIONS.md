@@ -105,3 +105,9 @@ Selvin (2026-10-29 11:53 IST), after a YouTube comment objecting to Diwali episo
   comment replies posted and logged.
 - Not done: hook score is not a gate (it does not predict our views). Instagram comments pending
   (Meta reCAPTCHA blocked the cloud browser on 2026-10-29).
+
+## DEC-JR-0xx — 2026-10-29 — Algorithm & timing review
+- IG ranks on watch time, likes and sends, with sends the key to non-followers (Mosseri, 2026-10-23). Our data agrees: watch time r=0.40, sends/reach r=0.27, likes ~0.
+- IG timing stays 08:00/20:30 (AM vs PM flat; scheduling and hashtags don't change reach). YouTube morning beats night about 2x, so EXP-003 tests 13:00 IST instead of 20:30.
+- Added R7 send-worthy, R8 first frame, R9 follow reason. Bottleneck: 0 followers gained per reel.
+- Full notes: content-os/research/algorithms-and-timing-2026-10-29.md
