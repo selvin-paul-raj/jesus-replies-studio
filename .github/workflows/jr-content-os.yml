@@ -61,6 +61,7 @@ jobs:
           [ -n "$EP" ] && args="$args --episode $EP --platform $PL"
           [ "$CMD" = "review" ] && [ -z "$SCHED" ] && args="$args --force"
           python3 scripts/content_os/cli.py $args
+          python3 scripts/content_os/hark_brief.py || true   # token-saving brief for Hark runs
       - name: Commit state
         if: always()
         run: |
