@@ -111,3 +111,9 @@ Selvin (2026-10-29 11:53 IST), after a YouTube comment objecting to Diwali episo
 - IG timing stays 08:00/20:30 (AM vs PM flat; scheduling and hashtags don't change reach). YouTube morning beats night about 2x, so EXP-003 tests 13:00 IST instead of 20:30.
 - Added R7 send-worthy, R8 first frame, R9 follow reason. Bottleneck: 0 followers gained per reel.
 - Full notes: content-os/research/algorithms-and-timing-2026-10-29.md
+
+## DEC-JR-014 — 2026-10-29 — Open AI disclosure
+- Viewers asked whether the videos are AI. The user chose to say yes openly and to label it.
+- The honesty line in every new caption and YouTube description is now "An imagined reply with AI-made visuals. The Scripture is quoted as written." (safety.HONESTY_LINE). Older packages keep their old line so their Buffer drafts still verify.
+- Comment rule: answer "is this AI?" with a plain yes (comment-replies.md). Native platform labels (YouTube "altered or synthetic content", Instagram "AI info") are set where the tools allow.
+- Fits Mosseri 2026-10-23: AI content isn't throttled, but label it.

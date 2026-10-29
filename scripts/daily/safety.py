@@ -12,7 +12,15 @@ The classifier is deliberately simple and errs towards holding: a held episode c
 slot swap; a missed one can hurt a vulnerable viewer."""
 import re
 
-HONESTY_LINE = "An imagined reply. The Scripture is quoted as written."
+# 2026-10-29 (DEC-JR-014): visuals are AI-generated and now say so openly (user decision after viewers asked).
+HONESTY_LINE = "An imagined reply with AI-made visuals. The Scripture is quoted as written."
+# Packages written before the AI line keep their old line: their Buffer drafts already carry that text,
+# and check_draft compares text exactly, so they are accepted as-is rather than rewritten.
+LEGACY_HONESTY_LINES = ("An imagined reply. The Scripture is quoted as written.",)
+
+
+def has_honesty_line(text):
+    return any(x in (text or "") for x in (HONESTY_LINE,) + LEGACY_HONESTY_LINES)
 # Numbers verified on official pages 2026-10-16 (Research; DEC-JR-010): 988lifeline.org, samaritans.org, telemanas.mohfw.gov.in
 CRISIS_LINE = ("If you are in danger, please reach a local crisis line: US 988 (call or text), "
                "UK & Ireland Samaritans 116 123, India Tele-MANAS 14416.")
@@ -123,7 +131,7 @@ def package_problems(pkg, crisis=False):
     probs = []
     for field in ("instagram_caption", "youtube_description"):
         v = pkg.get(field) or ""
-        if HONESTY_LINE not in v:
+        if not has_honesty_line(v):
             probs.append(f"honesty line missing from {field}")
         if crisis and CRISIS_LINE not in v:
             probs.append(f"crisis line missing from {field} (sensitive episode)")
@@ -146,7 +154,7 @@ def fix_package(pkg, crisis=False):
                 v = re.sub(re.escape(b), r, v, flags=re.I)
                 fixes.append(f"{field}: '{b}' -> '{r}'")
         if field != "youtube_title":
-            need = [HONESTY_LINE] + ([CRISIS_LINE] if crisis else [])
+            need = ([] if has_honesty_line(v) else [HONESTY_LINE]) + ([CRISIS_LINE] if crisis else [])
             add = [x for x in need if x not in v]
             if add:
                 v = v.rstrip() + "\n\n" + "\n".join(add)

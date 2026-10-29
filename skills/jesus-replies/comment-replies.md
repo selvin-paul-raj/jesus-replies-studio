@@ -15,3 +15,6 @@ Triage, then write (voice.md rules):
 
 Never: promise a video, invent facts, paste links, "type amen", copy-paste identical replies.
 Log every batch in `content-os/community/replies-log.md` (date, platform, handle, bucket, 1-line gist).
+
+## "Is this AI?" (decided 2026-10-29, DEC-JR-014)
+Say yes, plainly and warmly. Don't get defensive and don't argue. Say the visuals are AI-made, that the verse is quoted as written from the BSB, and that a real person writes the stories and reads the comments. Never deny or dodge it. Captions carry the line "An imagined reply with AI-made visuals. The Scripture is quoted as written."
