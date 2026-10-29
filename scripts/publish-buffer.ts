@@ -115,8 +115,8 @@ export type BufferVideoResult =
 function videoPostMutation(input: BufferVideoPostInput): string {
   const metadata =
     input.platform === "instagram"
-      ? "metadata: { instagram: { type: reel, shouldShareToFeed: true } }"
-      : `metadata: { youtube: { title: ${JSON.stringify(input.youtubeTitle ?? "")} } }`;
+      ? "metadata: { instagram: { type: reel, shouldShareToFeed: true, isAiGenerated: true } }"
+      : `metadata: { youtube: { isAiGenerated: true, title: ${JSON.stringify(input.youtubeTitle ?? "")} } }`;
   return `
     mutation {
       createPost(input: {

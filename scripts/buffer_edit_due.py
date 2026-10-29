@@ -35,7 +35,7 @@ q=f"""mutation {{ editPost(input: {{
   mode: {cur['shareMode']}
   schedulingType: {cur['schedulingType']}
   assets: [{{ video: {{ url: {json.dumps(src)}, metadata: {{ thumbnailOffset: {off} }} }} }}]
-  metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true }} }}{undraft_line}
+  metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true, isAiGenerated: true }} }}{undraft_line}
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
 print(f"[mutation] editPost {ep} id={pid} dueAt={due} (text/asset/metadata resent unchanged, saveToDraft={'false' if UNDRAFT else 'not sent'})")
 try:

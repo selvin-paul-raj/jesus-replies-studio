@@ -83,8 +83,8 @@ class Buffer:
 
     def _meta(self, platform, yt):
         if platform == "instagram":
-            return "{ instagram: { type: reel, shouldShareToFeed: true } }"
-        return ("{ youtube: { title: %s, privacy: %s, madeForKids: %s, notifySubscribers: %s, categoryId: %s } }"
+            return "{ instagram: { type: reel, shouldShareToFeed: true, isAiGenerated: true } }"
+        return ("{ youtube: { isAiGenerated: true, title: %s, privacy: %s, madeForKids: %s, notifySubscribers: %s, categoryId: %s } }"
                 % (json.dumps(yt["title"]), yt["privacy"], str(yt["made_for_kids"]).lower(),
                    str(yt["notify_subscribers"]).lower(), json.dumps(yt["category_id"])))
 

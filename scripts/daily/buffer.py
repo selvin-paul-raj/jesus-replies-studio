@@ -109,7 +109,7 @@ class Buffer:
   mode: customScheduled
   dueAt: {json.dumps(due_at)}
   assets: {self._video(url)}
-  metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true }} }}
+  metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true, isAiGenerated: true }} }}
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
         return self._mutate("createPost", q)
 
@@ -123,7 +123,7 @@ class Buffer:
   mode: customScheduled
   schedulingType: automatic
   assets: {self._video(url)}
-  metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true }} }}
+  metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true, isAiGenerated: true }} }}
   saveToDraft: false
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
         return self._mutate("editPost", q)
