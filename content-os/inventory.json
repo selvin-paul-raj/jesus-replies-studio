@@ -1,11 +1,14 @@
 {
   "counts": {
     "PUBLISHED": 67,
-    "UNUSED": 5,
-    "SCHEDULED": 7
+    "UNUSED": 8,
+    "SCHEDULED": 7,
+    "READY": 1
   },
-  "next_ready": [],
-  "ready_total": 0,
+  "next_ready": [
+    "JR-0079"
+  ],
+  "ready_total": 1,
   "items": [
     {
       "episode_id": "JR-0001",
@@ -200,13 +203,12 @@
       "status": "PUBLISHED",
       "why": "published before hosted assets were tracked",
       "platforms": {
-        "instagram": "PUBLISHED (seen in Buffer, not tracked by the OS)",
+        "instagram": "NONE",
         "youtube": "PUBLISHED (seen in Buffer, not tracked by the OS)"
       },
       "asset_url": null,
       "duration_s": null,
       "published_on": [
-        "instagram",
         "youtube"
       ]
     },
@@ -1138,7 +1140,55 @@
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0078/JR-0078.mp4",
       "duration_s": 46.06,
       "published_on": []
+    },
+    {
+      "episode_id": "JR-0079",
+      "status": "READY",
+      "why": "instagram=NONE, youtube=NONE",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0079/JR-0079.mp4",
+      "duration_s": 59.58,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0080",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0081",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0082",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
     }
   ],
-  "as_of": "2026-10-29T02:41:37.651074+00:00"
+  "as_of": "2026-10-29T04:54:40.853885+00:00"
 }
