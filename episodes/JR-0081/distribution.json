@@ -1,0 +1,50 @@
+{
+  "episode_id": "JR-0081",
+  "platforms": {
+    "instagram": {
+      "state": "SCHEDULED",
+      "post_id": "6ae2d3126ffb9bb0dcce98df",
+      "due_at": "2026-10-30T15:00:00.000Z",
+      "sent_at": null,
+      "external_link": null,
+      "pending_mutation": null,
+      "attempts": 1,
+      "error": null,
+      "history": [
+        {
+          "at": "2026-10-29T06:25:09.000Z",
+          "from": "NONE",
+          "to": "DRAFT",
+          "run": "hark-local",
+          "evidence": "adopted existing 6ae2d3126ffb9bb0dcce98df: Buffer status draft"
+        },
+        {
+          "at": "2026-10-29T06:25:54.000Z",
+          "from": "DRAFT",
+          "to": "SCHEDULED",
+          "run": "hark-local",
+          "evidence": "schedule_draft read back: scheduled 2026-10-30T15:00:00.000Z"
+        }
+      ]
+    },
+    "youtube": {
+      "state": "SCHEDULED",
+      "post_id": "6ae2e6d88d517922b233e5bc",
+      "due_at": "2026-10-30T15:00:00.000Z",
+      "sent_at": null,
+      "external_link": null,
+      "pending_mutation": null,
+      "attempts": 1,
+      "error": null,
+      "history": [
+        {
+          "at": "2026-10-29T06:25:20.000Z",
+          "from": "NONE",
+          "to": "SCHEDULED",
+          "run": "hark-local",
+          "evidence": "create_scheduled read back: scheduled 2026-10-30T15:00:00.000Z"
+        }
+      ]
+    }
+  }
+}

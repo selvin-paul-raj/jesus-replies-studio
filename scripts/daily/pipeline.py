@@ -371,7 +371,7 @@ def step_package_qa(ctx, st):
         others = set(re.findall(r"JR-\d{4}", json.dumps(pk))) - {eid}
         if others: probs.append(f"references other episodes {sorted(others)}")
         crisis, found = safety.crisis_check(ep, pk)
-        lint = safety.jesus_lint(ep)
+        lint = {**safety.jesus_lint(ep), **safety.faith_framing(ep, pk)}
         sp = safety.package_problems(pk, crisis=crisis)
         if not v2:      # queued legacy packages are already in Buffer: only the crisis line is enforced
             sp = [p for p in sp if p.startswith("crisis line")]

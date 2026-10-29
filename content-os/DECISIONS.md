@@ -88,3 +88,11 @@ Selvin's STRATEGY.md playbook wins where it differs from the master plan. Length
 - 2026-10-18 New content-os/review-rules.json, embedded in every brief as review_rules (pipeline.brief).
 - 2026-10-18 Root-cause fix for the recurring Buffer 24h RATE_LIMIT_EXCEEDED (again at 10:22 IST today): Distributor.reconcile now reads open posts from the one per-platform list call it already makes, and only falls back to a single-post read when the post is missing from the list, the list failed, or the run has already changed Buffer. Test T04cListCache added; 108 tests pass.
 - 2026-10-18 analytics.instagram_followers 68 -> 88 (public profile count read during the review; +20 in 2 days).
+
+## DEC-JR-012 — Faith-framing rule R5 and Diwali pull (2026-10-29, Selvin in chat)
+Selvin (2026-10-29 11:53 IST), after a YouTube comment objecting to Diwali episodes: fix it, rework the content strategy, and review all schedules before planning ahead.
+- JR-0076 (due 2026-10-29 20:30) and JR-0078 (due 2026-10-30 20:30) held to Buffer draft on Instagram and YouTube; JR-0079 and JR-0081 scheduled into those slots on both platforms. JR-0064, JR-0076, JR-0078, JR-0080 added to held_episodes (never scheduled).
+- Rule R5 (STRATEGY.md, review-rules.json, writer rules): no other-faith festivals, rituals or practices; enforced by safety.faith_framing (any hit holds for review).
+- Published Diwali episodes JR-0071..JR-0075 are left up (published posts are never deleted automatically); removing them needs Selvin's explicit go.
+- Weekly plans from 2026-11-02 use the Christian calendar (Global Bible Month, Thanksgiving, Advent) for at most 2 seasonal episodes a week and rotate emotions away from all-"sad".
+

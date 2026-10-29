@@ -32,7 +32,11 @@
   "duration_note": "Duration lives only in config/publishing-rules.json duration (target 50-62 s, ceiling 75 s since 2026-10-16, DEC-JR-007). Buffer's 90 s Reels limit is no longer the working ceiling.",
   "held_episodes": {
     "JR-0035": "existing resource; not modified without explicit authorization",
-    "JR-0036": "existing draft; not modified without explicit authorization"
+    "JR-0036": "existing draft; not modified without explicit authorization",
+    "JR-0064": "2026-10-29 Selvin: pulled for Diwali/Hindu-festival framing (viewers objected; brand rule R5 no other-faith festivals or rituals). Never schedule.",
+    "JR-0076": "2026-10-29 Selvin: pulled for Diwali/Hindu-festival framing (viewers objected; brand rule R5 no other-faith festivals or rituals). Never schedule.",
+    "JR-0078": "2026-10-29 Selvin: pulled for Diwali/Hindu-festival framing (viewers objected; brand rule R5 no other-faith festivals or rituals). Never schedule.",
+    "JR-0080": "2026-10-29 Selvin: pulled for Diwali/Hindu-festival framing (viewers objected; brand rule R5 no other-faith festivals or rituals). Never schedule."
   },
   "pinned_first": [
     "JR-0037"

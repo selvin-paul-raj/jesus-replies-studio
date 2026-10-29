@@ -137,6 +137,24 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
   each). Platforms disagree → both slots kept; DEC-JR-010's 07:30 / 17:30 move is the next test.
 - Rules R1-R4 live in `content-os/review-rules.json` and are embedded in every brief as `review_rules`.
 
+## Faith-framing rule R5 (2026-10-29, Selvin) — no other-faith festivals or rituals
+
+- **What happened:** JR-0071..JR-0078 ran five Diwali-framed episodes in a row; JR-0076 had Jesus say "You missed the
+  puja" and "The lamps need you". A YouTube viewer (2026-10-28): "Why would Jesus be ok with stuff to do with Diwali...
+  let go of the first commandment." The audience is Christian (YouTube ~44% US); a Jesus reply set inside another
+  faith's worship reads as Jesus endorsing it (Exodus 20:3).
+- **Rule:** never set an episode in another faith's festival, ritual or practice (Diwali, puja, festival lamps, rangoli,
+  Holi, Navratri, Eid, temple, karma, astrology). `safety.faith_framing` holds any hit for review; held episodes never
+  auto-publish and a READY spare fills the slot. JR-0064/0076/0078/0080 are in `held_episodes`.
+- **Keep:** Indian family life is the account's voice and stays (Amma, Appa, aunties, salary day, trains home, office,
+  hostel). Seasonal hooks come from secular life (exams, results, salary day, monsoon, New Year) or the Christian year.
+- **Christian calendar ahead:** Global Bible Month (all of November), US Thanksgiving Thu 2026-11-26 (gratitude when
+  life is hard; YouTube is US-led), Advent from Sun 2026-11-29 (waiting, hope), Christmas Fri 2026-12-25 (going home,
+  loneliness at Christmas, family tension at the table), New Year. At most 2 seasonal episodes a week; the rest stay
+  universal.
+- **Variety fix:** the last 14 episodes were all emotion "sad" and 9 were family. Rotate emotions (hurt, ashamed,
+  lonely, jealous, tired, angry, afraid) and follow the weekly mix (heartbreak 5, burnout 3, jealousy 3, family 2, faith 1).
+
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->

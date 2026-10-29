@@ -60,6 +60,27 @@ JESUS_LINT = {
 }
 
 
+# R5 (2026-10-29, Selvin): no other-faith festivals, rituals or practices. Viewers read a Jesus reply set
+# around Diwali/puja/lamps as Jesus endorsing another religion's worship (Exodus 20:3 comment on YouTube,
+# JR-0071..JR-0078). Any hit holds the episode for review; a READY spare fills the slot.
+FAITH_FRAMING = [
+    r"\bdiwali\b", r"\bdeepavali\b", r"\bdhanteras\b", r"\bbhai dooj\b", r"\bpu?ja\b", r"\bpooja\b",
+    r"\brangoli\b", r"\bdiyas?\b", r"\bnavratri\b", r"\bdurga\b", r"\bganesh\w*", r"\bganpati\b",
+    r"\bdussehra\b", r"\bholi\b", r"\bkarva chauth\b", r"\braksha bandhan\b", r"\brakhi\b", r"\bonam\b",
+    r"\bpongal\b", r"\bsankranti\b", r"\bchhath\b", r"\blakshmi\b", r"\beid\b", r"\bramadan\b", r"\biftar\b",
+    r"\btemple\b", r"\bmandir\b", r"\baarti\b", r"\bprasad\w*", r"\bkarma\b", r"\bastrolog\w*",
+    r"\bhoroscope\w*", r"\bkundli\b", r"\bmuhurat\w*", r"\bfestival lamps?\b", r"\blit the lamps\b"]
+
+
+def faith_framing(ep, pkg=None):
+    """-> {"faith_framing": [matched patterns]} over the whole episode and package, or {}."""
+    text = episode_text(ep, pkg)
+    if pkg:
+        text += "\n" + " ".join(pkg.get("instagram_hashtags") or [])
+    h = _hits(text, FAITH_FRAMING)
+    return {"faith_framing": h} if h else {}
+
+
 def _hits(text, patterns):
     t = text.lower()
     return sorted({p for p in patterns if re.search(p, t)})
@@ -141,5 +162,6 @@ WRITER_RULES = [
     "Jesus's lines never give medical, mental-health, legal or financial advice and never tell anyone to stop treatment or avoid a doctor; point gently to trusted people and real help instead.",
     "Jesus's lines never invent doctrine: stay inside what the quoted Scripture and the plain Gospel say; no new teachings, no karma/reincarnation, no 'God no longer judges'.",
     "Jesus's words are an imagined reply, not a quotation; only the verse block is quoted Scripture.",
+    "R5 (2026-10-29): never set an episode in another faith's festival, ritual or practice (Diwali, puja, lamps for a festival, rangoli, Holi, Navratri, Eid, temple visits, karma, astrology). The audience is Christian and reads it as Jesus approving other worship. Indian family life is welcome (Amma, Appa, aunties, trains home, office life); use neutral moments or the Christian calendar (Sunday church, Advent, Christmas, Good Friday, Easter, a church wedding).",
     f"Self-harm, suicide or abuse stories are held for Selvin's review before publishing and their caption and description must also carry: \"{CRISIS_LINE}\". Prefer other themes for the daily slots.",
 ]
