@@ -544,5 +544,18 @@
     "scheduled_at": "2026-10-30T15:00:00.000Z",
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0079",
+    "created_at": "2026-10-29T04:52:35Z",
+    "title": "Jesus... Why Do I Feel Guilty For Cancelling Plans? 😔",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0079/JR-0079.mp4",
+    "buffer_post_id": "6ae2d181c4bbd0de4b4d01a6",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]
