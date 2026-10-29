@@ -1,0 +1,68 @@
+{
+ "week_start": "2026-11-02",
+ "compiled_at": "2026-10-29",
+ "_rule": "External research says what the wider ecosystem does. It never overrides own-account analytics; disagreements are recorded.",
+ "findings": [
+  {
+   "claim": "Diwali 2026 spans five days Nov 6-10 with Lakshmi Puja on Sunday Nov 8; outbound travel from metro hubs peaks Nov 5-7, so week 2026-11-02 is the in-week homecoming window and its last day IS Diwali.",
+   "type": "SOURCE_CLAIM",
+   "source": "LastBerth Diwali special-train guide (Sep 2026)",
+   "url": "https://lastberth.com/blog/diwali-special-train-2026-booking-dates-routes-list"
+  },
+  {
+   "claim": "Northern Railway planned 6,200+ special train trips for the Diwali/Chhath rush, about 30% more than last year's 4,666, because trains on homebound routes sell out fast (Oct 27, 2026).",
+   "type": "SOURCE_CLAIM",
+   "source": "The Economic Times (Oct 27, 2026)",
+   "url": "https://economictimes.indiatimes.com/industry/transportation/railways/6200-special-train-trips-for-festive-travel-railways-boosts-services-by-30-for-diwali-chhath-puja-check-delhi-patna-delhi-howrah-other-routes/articleshow/135228610.cms"
+  },
+  {
+   "claim": "Diwali homecoming got costlier: trains full, one-way airfares crossing Rs 19,000 at preferred timings, private sleeper buses Rs 4,000-7,000, roughly Rs 2,000 above last year; working professionals are carpooling or skipping the trip (Oct 28, 2026).",
+   "type": "SOURCE_CLAIM",
+   "source": "The Times of India, Nagpur (Oct 28, 2026)",
+   "url": "https://timesofindia.indiatimes.com/city/nagpur/diwali-homecoming-gets-costlier-trains-full-airfares-cross-rs19000-bus-fares-touch-rs7000/articleshow/135278489.cms"
+  },
+  {
+   "claim": "Mpower 'Unpack Your Emotional Baggage' 2026 survey: nearly half of young Indians navigate emotional distress alone and only 9.2% seek professional help, yet 62.2% say they would listen without judgment if a friend reached out (Oct 1, 2026).",
+   "type": "SOURCE_CLAIM",
+   "source": "Startup Success Stories coverage of Mpower 2026 survey (Oct 1, 2026)",
+   "url": "https://startupsuccessstories.in/mpower-2026-survey-nearly-half-of-young-people-navigate-emotional-distress-alone-with-only-9-2-percent-seeking-professional-help/"
+  },
+  {
+   "claim": "Cancelling plans has become a guilt-relief tension in friendships: the relief of a cancelled plan used to be a guilty secret hidden behind elaborate apologies; writers argue good friendships survive honest 'I need to save my energy' (Feb 2026).",
+   "type": "SOURCE_CLAIM",
+   "source": "Vogue India (Feb 11, 2026)",
+   "url": "https://www.vogue.in/content/is-cancelling-plans-the-new-friendship-love-language"
+  },
+  {
+   "claim": "Instagram's own ranking signals that matter most for Reels are watch time, likes per reach and sends per reach, per Adam Mosseri; staying on-topic keeps audience signals working (Oct 19, 2026).",
+   "type": "SOURCE_CLAIM",
+   "source": "Buffer, How the Instagram Algorithm Works 2026 (Oct 19, 2026)",
+   "url": "https://buffer.com/resources/instagram-algorithms/"
+  }
+ ],
+ "opportunities": [
+  {
+   "topic": "homecoming cost guilt — can't afford the trip home and ashamed to tell family",
+   "why": "fares tripled and trains sold out exactly this week; universal driver is money shame vs family love",
+   "source": "findings 2-3",
+   "_note": "INFERENCE: frame as ticket-home, only ONE Diwali-framed episode this week (topics stay universal, never festival-specific)"
+  },
+  {
+   "topic": "rest guilt — cancelling plans and feeling like a bad friend",
+   "why": "cancel-plans guilt is a live friendship tension; rest-guilt pairs with Mark 6:31",
+   "source": "finding 5",
+   "_note": "INFERENCE"
+  },
+  {
+   "topic": "asking for help — carrying it alone rather than being a burden",
+   "why": "half of young people sit on distress alone while most friends say they'd listen; the gap is the ask, not the listener",
+   "source": "finding 4",
+   "_note": "INFERENCE"
+  },
+  {
+   "topic": "lunch-alone loneliness — calling it a choice when nobody asked",
+   "why": "workplace loneliness is year-round and unclaimed in the topic history",
+   "source": "INFERENCE from avoidance scan"
+  }
+ ]
+}
