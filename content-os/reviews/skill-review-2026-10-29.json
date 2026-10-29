@@ -1,0 +1,229 @@
+{
+  "as_of": "2026-10-29",
+  "wpm": 150,
+  "target_s": 50,
+  "advisory": true,
+  "episodes": [
+    {
+      "id": "JR-0079",
+      "title": "Jesus... Why Do I Feel Guilty For Cancelling Plans? 😔",
+      "hook": "Jesus... why do I feel guilty every time I cancel plans? 😔",
+      "hook_score": 19.2,
+      "hook_verdict": "WEAK",
+      "hook_weakest": "SPECIFICITY",
+      "hook_flags": [
+        "Emoji in the hook. On-screen text at hook size has room for words or for an emoji, not both."
+      ],
+      "seconds_est": 48.0,
+      "words": 120,
+      "long_beats": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "loops_to_hook": false,
+      "notes": [
+        "Beat 1 takes 4.4s to say. Cut it to 7 words or fewer, or the hook lands after the decision has been made.",
+        "Beat 1 has no number and no name in it. Hooks without something checkable are the ones that get scrolled.",
+        "Beat(s) 1, 2, 4, 5, 6, 7, 8 run past 4s. Either split the line or change what is on screen inside it. A static frame is where people leave.",
+        "No loop. The last beat shares no word with the hook, so the video ends flat. Echoing one word from beat 1 is the cheapest replay you get.",
+        "Length is on target (48.0s against 50s)."
+      ]
+    },
+    {
+      "id": "JR-0081",
+      "title": "Jesus... I Can't Ask Anyone For Help 😔",
+      "hook": "Jesus... why can't I ask anyone for help even when I'm drowning? 😔",
+      "hook_score": 32.2,
+      "hook_verdict": "WEAK",
+      "hook_weakest": "SPECIFICITY",
+      "hook_flags": [
+        "Emoji in the hook. On-screen text at hook size has room for words or for an emoji, not both."
+      ],
+      "seconds_est": 42.4,
+      "words": 106,
+      "long_beats": [
+        1,
+        3,
+        5,
+        8
+      ],
+      "loops_to_hook": true,
+      "notes": [
+        "Beat 1 takes 4.8s to say. Cut it to 7 words or fewer, or the hook lands after the decision has been made.",
+        "Beat 1 has no number and no name in it. Hooks without something checkable are the ones that get scrolled.",
+        "Beat(s) 1, 3, 5, 8 run past 4s. Either split the line or change what is on screen inside it. A static frame is where people leave.",
+        "Loops: the last beat repeats \"help\" from the hook. Second watches are free reach.",
+        "7.6s under target. Either add 18 words or shoot it short. Short is usually right."
+      ]
+    },
+    {
+      "id": "JR-0083",
+      "title": "Jesus... I Liked His Photo With Her 💔",
+      "hook": "Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔",
+      "hook_score": 12.5,
+      "hook_verdict": "WEAK",
+      "hook_weakest": "SPECIFICITY",
+      "hook_flags": [
+        "Emoji in the hook. On-screen text at hook size has room for words or for an emoji, not both."
+      ],
+      "seconds_est": 36.8,
+      "words": 92,
+      "long_beats": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "loops_to_hook": false,
+      "notes": [
+        "Beat 1 takes 3.2s to say. Cut it to 7 words or fewer, or the hook lands after the decision has been made.",
+        "Beat 1 has no number and no name in it. Hooks without something checkable are the ones that get scrolled.",
+        "Beat(s) 3, 6, 8 run past 4s. Either split the line or change what is on screen inside it. A static frame is where people leave.",
+        "Beats 5-7 have nothing concrete in them. Put a number, a name or a price in one of them.",
+        "No loop. The last beat shares no word with the hook, so the video ends flat. Echoing one word from beat 1 is the cheapest replay you get.",
+        "13.2s under target. Either add 33 words or shoot it short. Short is usually right."
+      ]
+    },
+    {
+      "id": "JR-0084",
+      "title": "Jesus... I Fell Asleep In The Office Washroom 😮‍💨",
+      "hook": "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+      "hook_score": 9.6,
+      "hook_verdict": "WEAK",
+      "hook_weakest": "LENGTH",
+      "hook_flags": [
+        "Emoji in the hook. On-screen text at hook size has room for words or for an emoji, not both."
+      ],
+      "seconds_est": 39.6,
+      "words": 99,
+      "long_beats": [
+        9,
+        10
+      ],
+      "loops_to_hook": false,
+      "notes": [
+        "Beat 1 has no number and no name in it. Hooks without something checkable are the ones that get scrolled.",
+        "Beat(s) 9, 10 run past 4s. Either split the line or change what is on screen inside it. A static frame is where people leave.",
+        "Beats 1-3 have nothing concrete in them. Put a number, a name or a price in one of them.",
+        "Beats 10-12 have nothing concrete in them. Put a number, a name or a price in one of them.",
+        "No loop. The last beat shares no word with the hook, so the video ends flat. Echoing one word from beat 1 is the cheapest replay you get.",
+        "10.4s under target. Either add 25 words or shoot it short. Short is usually right."
+      ]
+    },
+    {
+      "id": "JR-0085",
+      "title": "Jesus... She Got The Promotion I Trained Her For 👏",
+      "hook": "Jesus... my best friend got the promotion I trained her for. I clapped first. 👏",
+      "hook_score": 22.3,
+      "hook_verdict": "WEAK",
+      "hook_weakest": "SPECIFICITY",
+      "hook_flags": [
+        "Emoji in the hook. On-screen text at hook size has room for words or for an emoji, not both."
+      ],
+      "seconds_est": 36.4,
+      "words": 91,
+      "long_beats": [
+        1,
+        2,
+        7
+      ],
+      "loops_to_hook": true,
+      "notes": [
+        "Beat 1 takes 5.6s to say. Cut it to 7 words or fewer, or the hook lands after the decision has been made.",
+        "Beat 1 has no number and no name in it. Hooks without something checkable are the ones that get scrolled.",
+        "Beat(s) 1, 2, 7 run past 4s. Either split the line or change what is on screen inside it. A static frame is where people leave.",
+        "Beats 6-8 have nothing concrete in them. Put a number, a name or a price in one of them.",
+        "Loops: the last beat repeats \"first, friend\" from the hook. Second watches are free reach.",
+        "13.6s under target. Either add 34 words or shoot it short. Short is usually right."
+      ]
+    },
+    {
+      "id": "JR-0086",
+      "title": "Jesus... She Sent My Hoodie Back. No Note. 📦",
+      "hook": "Jesus... she sent my hoodie back by courier today. No note. I still checked the pockets. 📦",
+      "hook_score": 23.3,
+      "hook_verdict": "WEAK",
+      "hook_weakest": "SPECIFICITY",
+      "hook_flags": [
+        "Emoji in the hook. On-screen text at hook size has room for words or for an emoji, not both."
+      ],
+      "seconds_est": 36.4,
+      "words": 91,
+      "long_beats": [
+        1,
+        3,
+        6,
+        7
+      ],
+      "loops_to_hook": false,
+      "notes": [
+        "Beat 1 takes 3.6s to say. Cut it to 7 words or fewer, or the hook lands after the decision has been made.",
+        "Beat 1 has no number and no name in it. Hooks without something checkable are the ones that get scrolled.",
+        "Beat(s) 3, 6, 7 run past 4s. Either split the line or change what is on screen inside it. A static frame is where people leave.",
+        "Beats 1-3 have nothing concrete in them. Put a number, a name or a price in one of them.",
+        "No loop. The last beat shares no word with the hook, so the video ends flat. Echoing one word from beat 1 is the cheapest replay you get.",
+        "13.6s under target. Either add 34 words or shoot it short. Short is usually right."
+      ]
+    },
+    {
+      "id": "JR-0087",
+      "title": "Jesus... My Bible App Says 412 Days 📖",
+      "hook": "Jesus... my Bible app says 412 days since I last read. I swiped the reminder away. 📖",
+      "hook_score": 29.5,
+      "hook_verdict": "WEAK",
+      "hook_weakest": "STAKES",
+      "hook_flags": [
+        "Emoji in the hook. On-screen text at hook size has room for words or for an emoji, not both."
+      ],
+      "seconds_est": 37.6,
+      "words": 94,
+      "long_beats": [
+        4,
+        7,
+        10,
+        11
+      ],
+      "loops_to_hook": false,
+      "notes": [
+        "Beat 1 has no number and no name in it. Hooks without something checkable are the ones that get scrolled.",
+        "Beat(s) 4, 7, 10, 11 run past 4s. Either split the line or change what is on screen inside it. A static frame is where people leave.",
+        "No loop. The last beat shares no word with the hook, so the video ends flat. Echoing one word from beat 1 is the cheapest replay you get.",
+        "12.4s under target. Either add 30 words or shoot it short. Short is usually right."
+      ]
+    },
+    {
+      "id": "JR-0088",
+      "title": "Jesus... My Younger Cousin Bought A Car 🚗",
+      "hook": "Jesus... my younger cousin drove to the family lunch in his new car. I said I prefer the metro. 🚗",
+      "hook_score": 6.9,
+      "hook_verdict": "WEAK",
+      "hook_weakest": "LENGTH",
+      "hook_flags": [
+        "Emoji in the hook. On-screen text at hook size has room for words or for an emoji, not both."
+      ],
+      "seconds_est": 45.2,
+      "words": 113,
+      "long_beats": [
+        2,
+        5,
+        7,
+        8,
+        10
+      ],
+      "loops_to_hook": false,
+      "notes": [
+        "Beat 1 has no number and no name in it. Hooks without something checkable are the ones that get scrolled.",
+        "Beat(s) 2, 5, 7, 8, 10 run past 4s. Either split the line or change what is on screen inside it. A static frame is where people leave.",
+        "Beats 1-3 have nothing concrete in them. Put a number, a name or a price in one of them.",
+        "Beats 9-11 have nothing concrete in them. Put a number, a name or a price in one of them.",
+        "No loop. The last beat shares no word with the hook, so the video ends flat. Echoing one word from beat 1 is the cheapest replay you get.",
+        "Length is on target (45.2s against 50s)."
+      ]
+    }
+  ]
+}

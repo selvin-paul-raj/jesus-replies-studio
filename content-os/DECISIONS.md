@@ -96,3 +96,12 @@ Selvin (2026-10-29 11:53 IST), after a YouTube comment objecting to Diwali episo
 - Published Diwali episodes JR-0071..JR-0075 are left up (published posts are never deleted automatically); removing them needs Selvin's explicit go.
 - Weekly plans from 2026-11-02 use the Christian calendar (Global Bible Month, Thanksgiving, Advent) for at most 2 seasonal episodes a week and rotate emotions away from all-"sad".
 
+
+## DEC-JR-013 — Skill library, self-calibrating review, R6 length cap, comment replies (2026-10-29)
+- Why: Selvin asked for a full strategist loop using the Instagram/YouTube agent skills and the
+  creator-skill list, with genuine comment replies, all saved to GitHub for reuse.
+- What: vendored skill packs (MIT/Apache, licenses kept) in `skills/`; JR playbooks; `skill_review.py`
+  (advisory) with `--calibrate`; R6 (95–120 spoken words) from calibration evidence; first 4 YouTube
+  comment replies posted and logged.
+- Not done: hook score is not a gate (it does not predict our views). Instagram comments pending
+  (Meta reCAPTCHA blocked the cloud browser on 2026-10-29).

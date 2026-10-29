@@ -31,6 +31,12 @@
       "since": "2026-10-29",
       "rule": "Never set an episode in another faith's festival, ritual or practice (Diwali, puja, festival lamps, rangoli, Holi, Navratri, Eid, temple visits, karma, astrology). Indian family life stays welcome (Amma, Appa, aunties, trains home, office, hostel); use neutral everyday moments or the Christian calendar (Sunday service, Advent, Christmas, Good Friday, Easter, a church wedding). Seasonal hooks come from the Christian year or from secular life (exams, salary day, monsoon, new year), never from another religion's worship. Enforced: safety.faith_framing holds any hit for review.",
       "evidence": "JR-0071..JR-0078 ran five Diwali-framed episodes in a row (JR-0076 had Jesus saying 'You missed the puja' and 'The lamps need you'). YouTube viewer, 2026-10-28: 'Why would Jesus be ok with stuff to do with Diwali. The makers of this video gladly let go off the first commandment' (Exodus 20:3). Selvin, 2026-10-29: fix it, rework the strategy and schedules."
+    },
+    {
+      "id": "R6-spoken-words-cap",
+      "since": "2026-10-29",
+      "rule": "Keep total spoken words (all lines + verse) at 95-120. Over 130 words is a rewrite, not a trim. Split any line that runs past ~4s (about 10 words at 150 wpm) and change the frame inside it.",
+      "evidence": "skill_review calibration 2026-10-29 (n=47 per platform): IG top quartile median 110 words (~44s, 1,836 views) vs bottom quartile 157 words (~63s, 199 views); r(length, log views) = -0.43 IG, -0.22 YT. YT top quartile 115 words. Generic ig-reel hookscore does NOT predict our views (IG r=0.19, YT r=-0.30), so it stays advisory only."
     }
   ],
   "experiments": [

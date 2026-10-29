@@ -1,0 +1,21 @@
+{
+  "as_of": "2026-10-29",
+  "metric": "pearson r vs log(views+1)",
+  "platforms": {
+    "instagram": {
+      "n": 47,
+      "hook_score": 0.19,
+      "seconds_est": -0.43,
+      "long_beats": -0.17,
+      "loops_to_hook": 0.11
+    },
+    "youtube": {
+      "n": 47,
+      "hook_score": -0.3,
+      "seconds_est": -0.22,
+      "long_beats": -0.28,
+      "loops_to_hook": -0.01
+    }
+  },
+  "reading": "Only treat a signal as a rule when |r| >= 0.3 on n >= 30 on that platform; otherwise it stays advisory. The generic hookscore was built for business Reels."
+}

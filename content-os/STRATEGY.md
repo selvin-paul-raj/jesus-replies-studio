@@ -184,3 +184,15 @@ _Last computed 2026-10-29T05:41Z from Buffer analytics, last 28 days, posts at l
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->
+
+## Skill library + self-calibration (2026-10-29, DEC-JR-013)
+
+- Creator skill packs now live in `skills/` (Instagram + YouTube agent skills, instagram-skills,
+  avoid-ai-writing, persona, brainstorming, research). Playbooks adapted to this channel:
+  `skills/jesus-replies/{voice,reel-script,comment-replies,strategist}.md`.
+- `scripts/content_os/skill_review.py` scores every episode with the packs' hook and beat tools
+  and calibrates them against our real views. On n=47 per platform the generic hook score does
+  not predict our views; **script length does**: IG top quartile ~110 spoken words (~44s) vs
+  bottom quartile ~157 words (~63s). New rule **R6: 95–120 spoken words**.
+- Comments are answered from the team voice (see `comment-replies.md`), logged in
+  `content-os/community/`; repeated questions become episode ideas.
