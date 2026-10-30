@@ -1,0 +1,110 @@
+{
+ "episode_id": "JR-0092",
+ "schema": "generated/JR-0036.json (id,title,character,topic,emotion,bible{book,chapter,verse,version=BSB,text},lines[{speaker,text}])",
+ "package_schema": "generated/JR-0036.package.json",
+ "honesty_line": "An imagined reply with AI-made visuals. The Scripture is quoted as written.",
+ "writer_rules": [
+  "End every instagram_caption and youtube_description with the honesty line (exact words; hashtags are added after it automatically).",
+  "Never write 'answered in His words'; say 'answered from Scripture'.",
+  "Jesus's lines never promise an outcome (a job, a healing, a person coming back, an exam result).",
+  "Jesus's lines never give medical, mental-health, legal or financial advice and never tell anyone to stop treatment or avoid a doctor; point gently to trusted people and real help instead.",
+  "Jesus's lines never invent doctrine: stay inside what the quoted Scripture and the plain Gospel say.",
+  "R5: never set an episode in another faith's festival, ritual or practice.",
+  "R6: keep total spoken words (all lines + verse) at 95-120; split any line that runs past ~4s.",
+  "R7: the script names who would send it and to whom; no comment-bait CTAs.",
+  "R8: the first spoken line states the topic; frame 1 readable without sound.",
+  "R9: the last line gives a reason to follow ('New question every morning and night.'), never begging.",
+  "DEC-JR-015: slots 08:00 + 19:30 IST.",
+  "Self-harm, suicide or abuse stories are held for Selvin's review before publishing and their caption and description must also carry: \"If you are in danger, please reach a local crisis line: US 988 (call or text), UK & Ireland Samaritans 116 123, India Tele-MANAS 14416.\". Prefer other themes for the daily slots."
+ ],
+ "send_to": "an overthinking friend, sent by a colleague who works with them late",
+ "avoid_titles": [
+  "Jesus... I Liked His Photo With Her 💔",
+  "Jesus... I Fell Asleep In The Office Washroom 😮‍💨",
+  "Jesus... She Got The Promotion I Trained Her For 👏",
+  "Jesus... She Sent My Hoodie Back. No Note. 📦",
+  "Jesus... My Bible App Says 412 Days 📖",
+  "Jesus... My Younger Cousin Bought A Car 🚗",
+  "Jesus... Why Do I Feel Guilty For Cancelling Plans? 😔",
+  "Jesus... I Can't Afford The Ticket Home This Year 🚆",
+  "Jesus... I Can't Ask Anyone For Help 😔",
+  "Jesus... I Eat Lunch On The Staircase Every Day 🍱",
+  "Jesus... My Deadline Is The Day After Diwali",
+  "Jesus... My Friend Borrowed Money Again"
+ ],
+ "avoid_scripture": [
+  "Psalms 147:3",
+  "Isaiah 40:29",
+  "Proverbs 14:30",
+  "Psalms 34:18",
+  "John 6:68",
+  "Hebrews 13:5",
+  "Mark 6:31",
+  "Philippians 4:19",
+  "Galatians 6:2",
+  "Matthew 25:35",
+  "Ecclesiastes 4:6",
+  "Matthew 6:33",
+  "Exodus 20:12",
+  "Galatians 6:9",
+  "2 Corinthians 9:7"
+ ],
+ "avoid_note": "Full avoidance list rebuilt from all 88 prior episodes (titles, hooks, topics, verses); no prior title, hook, topic or verse is reused. New verses here verified UNUSED in the 2026-10-30 manifest scan.",
+ "review_rules": [
+  {
+   "id": "R1-hidden-feeling-hook",
+   "since": "2026-10-18",
+   "rule": "First line = one concrete moment + what the person pretended or hid in it (\"I smiled in every photo\", \"he told us he was at work\", \"I replied okay so he wouldn't see me cry\"). Keep it under ~18 words so it can be read on mute in the first 2-3 seconds.",
+   "evidence": "Last 14 days: JR-0045 (IG 2,251 views, 67 saves, best of the window), JR-0020 earlier (1,909 / 48 saves), JR-0040 (IG 1,659 + YT 1,201), JR-0046 (YT 1,315) all open on a hidden feeling. Mosseri: watch time and the first seconds gate distribution (kompozy.io, 2026-09-25); YouTube Shorts: viewed vs swiped away is the core signal (outlierkit.com, 2026-10-03)."
+  },
+  {
+   "id": "R2-no-worried-future",
+   "since": "2026-10-18",
+   "rule": "Avoid 'worried about the future' episodes (money next month, will I belong, going back to church someday). If the topic is a worry, set it in a present, concrete scene that already happened today, and label the emotion sad/hurt, not worried. At most 1 per week.",
+   "evidence": "emotion=worried: JR-0024 247, JR-0037 198, JR-0030 1,287 IG views vs window median 1,370; flagged already on 2026-10-11 (IG median 280, n=4)."
+  },
+  {
+   "id": "R3-send-line-names-a-person",
+   "since": "2026-10-18",
+   "rule": "The engagement line is a send line that names one specific person (\"Send this to the friend who...\"). Never 'type a prayer', 'comment amen', 'tag a friend'.",
+   "evidence": "Sends per reach is Instagram's strongest signal for non-followers (Mosseri, restated 2026-09-25, kompozy.io). JR-0053 old version still said 'Type a prayer...' and was fixed in this review."
+  },
+  {
+   "id": "R4-youtube-comments-are-the-conversation",
+   "since": "2026-10-18",
+   "rule": "Write the closing question so it can be answered in one line on YouTube too; the review replies to YouTube comments from Studio.",
+   "evidence": "Last 14 days: 32 comments on 26 YouTube Shorts vs 4 on 26 Instagram Reels."
+  },
+  {
+   "id": "R5-no-other-faith-framing",
+   "since": "2026-10-29",
+   "rule": "Never set an episode in another faith's festival, ritual or practice (Diwali, puja, festival lamps, rangoli, Holi, Navratri, Eid, temple visits, karma, astrology). Indian family life stays welcome (Amma, Appa, aunties, trains home, office, hostel); use neutral everyday moments or the Christian calendar (Sunday service, Advent, Christmas, Good Friday, Easter, a church wedding). Seasonal hooks come from the Christian year or from secular life (exams, salary day, monsoon, new year), never from another religion's worship. Enforced: safety.faith_framing holds any hit for review.",
+   "evidence": "JR-0071..JR-0078 ran five Diwali-framed episodes in a row (JR-0076 had Jesus saying 'You missed the puja' and 'The lamps need you'). YouTube viewer, 2026-10-28: 'Why would Jesus be ok with stuff to do with Diwali. The makers of this video gladly let go off the first commandment' (Exodus 20:3). Selvin, 2026-10-29: fix it, rework the strategy and schedules."
+  },
+  {
+   "id": "R6-spoken-words-cap",
+   "since": "2026-10-29",
+   "rule": "Keep total spoken words (all lines + verse) at 95-120. Over 130 words is a rewrite, not a trim. Split any line that runs past ~4s (about 10 words at 150 wpm) and change the frame inside it.",
+   "evidence": "skill_review calibration 2026-10-29 (n=47 per platform): IG top quartile median 110 words (~44s, 1,836 views) vs bottom quartile 157 words (~63s, 199 views); r(length, log views) = -0.43 IG, -0.22 YT. YT top quartile 115 words. Generic ig-reel hookscore does NOT predict our views (IG r=0.19, YT r=-0.30), so it stays advisory only."
+  },
+  {
+   "id": "R7-send-worthy",
+   "since": "2026-10-29",
+   "rule": "Every script names in its brief WHO would send it and TO WHOM (e.g. 'a friend going through a breakup'). If nobody would forward it, rewrite the angle. No comment-bait or 'type amen' CTAs.",
+   "evidence": "Mosseri 2026-10-23: sends matter far more than comments, especially for non-followers. Our IG sends/reach r=0.27 with log views vs likes/reach r=-0.06."
+  },
+  {
+   "id": "R8-first-frame",
+   "since": "2026-10-29",
+   "rule": "Frame 1 shows the viewer's problem as on-screen text readable without sound, within 1s. The first spoken line states the topic. No logo, title card or slow fade-in.",
+   "evidence": "YouTube Shorts gate = viewed vs swiped away. IG avg watch time 11.1s median is our strongest view predictor (r=0.40)."
+  },
+  {
+   "id": "R9-follow-reason",
+   "since": "2026-10-29",
+   "rule": "The last line gives a reason to follow, tied to the series (e.g. 'Jesus replies to a new struggle every morning'). Never beg. One line, under 3s.",
+   "evidence": "0 followers gained across 35 IG reels with ~1.2K median reach: strangers watch but don't convert."
+  }
+ ],
+ "strategy_note": "EXP-001 rebalance after Selvin's six statement hooks (JR-0083..0088): 3 question + 1 statement. DEC-JR-012: rotate away from all-sad (hopeful/angry/sad/neutral). DEC-JR-014 honesty line. R5: no other-faith festivals; no Diwali framing."
+}
