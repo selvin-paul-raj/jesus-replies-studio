@@ -125,3 +125,5 @@ Selvin (2026-10-29 11:53 IST), after a YouTube comment objecting to Diwali episo
 - Supersedes EXP-003 (YT 13:00). Self-evaluated under EXP-005: a bi-weekly self-review reads own-account results plus official algorithm updates and applies the experiments.json decision rule automatically.
 
 - 2026-10-30 (Selvin): Global Bible Month 2026 runs as Stories only (no extra Reels/posts). The 08:05 verse Story uses content-os/series/global-bible-month-2026.json for Nov 1-30 (Genesis to Revelation, Day N of 30); cards are built by build-series-posts.yml into release bible-month-2026.
+
+- 2026-10-30: JR-0077 misused Matthew 5:37 (oaths) for a lending-boundary story; IG commenter called it out. Added R10 (verse must mean it in context). Corrected draft JR-0077R uses 2 Corinthians 9:7; it stays a draft until Selvin approves replacing the live Reel.

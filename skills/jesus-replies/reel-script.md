@@ -7,7 +7,7 @@
    concrete moment + what they pretended. Score with `hookscore.py`, but treat the score as advisory:
    calibration shows it does not predict our views (`content-os/reviews/skill-calibration.json`).
 4. Script: 9 lines, 95–120 spoken words incl. the verse (R6), no line over ~10 words where possible.
-   Jesus names the hidden thing; verse verbatim BSB; last line "Send this to <specific person>" (R3).
+   Jesus names the hidden thing; verse verbatim BSB and meaning in its own passage what the episode uses it for (R10); last line "Send this to <specific person>" (R3).
    Echo one word from the hook in the closing Jesus line (loop).
 5. Run `beats.py --wpm 150 --target 50`, fix long beats, then `/ig-human` / avoid-ai-writing pass.
 6. Package: YouTube title `Jesus... <moment> <emoji> | <Ref> #Shorts` (≤100 chars); IG caption opens
