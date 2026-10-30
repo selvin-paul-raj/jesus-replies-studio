@@ -1,0 +1,37 @@
+name: Build Series Verse Cards
+
+# Renders dated verse-series Story cards (Global Bible Month 2026) whenever the series file
+# changes, and uploads them to the series release that daily-bible-post.ts reads.
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - content-os/series/**
+      - scripts/build-series-posts.ts
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jr-build-series-posts
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - name: Render series cards
+        run: npx tsx scripts/build-series-posts.ts
+      - name: Upload to release
+        env:
+          GH_TOKEN: ${{ secrets.ACTION_GITHUB }}
+        run: |
+          TAG=$(node -p "require('./content-os/series/global-bible-month-2026.json').release_tag")
+          gh release view "$TAG" || gh release create "$TAG" --title "$TAG" --notes "Global Bible Month 2026 verse Story cards"
+          gh release upload "$TAG" output/series/*.png --clobber

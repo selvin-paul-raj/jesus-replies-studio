@@ -1,0 +1,189 @@
+{
+  "_note": "Global Bible Month 2026 (Nov 1-30). Overrides the daily verse Story for these dates with a Genesis-to-Revelation arc. BSB text verbatim from bereanbible.com/bsb.txt (public domain). Cards render via build-series-posts.yml into release bible-month-2026; daily-bible-post.ts posts them. Stories only, no Reels (Selvin, 2026-10-30).",
+  "series": "global-bible-month-2026",
+  "release_tag": "bible-month-2026",
+  "eyebrow": "GLOBAL BIBLE MONTH · DAY {day} OF 30",
+  "hashtags": "#GlobalBibleMonth",
+  "days": [
+    {
+      "date": "2026-11-01",
+      "day": 1,
+      "reference": "Genesis 1:1",
+      "text": "In the beginning God created the heavens and the earth."
+    },
+    {
+      "date": "2026-11-02",
+      "day": 2,
+      "reference": "Genesis 50:20",
+      "text": "As for you, what you intended against me for evil, God intended for good, in order to accomplish a day like this—to preserve the lives of many people."
+    },
+    {
+      "date": "2026-11-03",
+      "day": 3,
+      "reference": "Exodus 14:14",
+      "text": "The LORD will fight for you; you need only to be still."
+    },
+    {
+      "date": "2026-11-04",
+      "day": 4,
+      "reference": "Deuteronomy 31:8",
+      "text": "The LORD Himself goes before you; He will be with you. He will never leave you nor forsake you. Do not be afraid or discouraged."
+    },
+    {
+      "date": "2026-11-05",
+      "day": 5,
+      "reference": "Joshua 1:9",
+      "text": "Have I not commanded you to be strong and courageous? Do not be afraid; do not be discouraged, for the LORD your God is with you wherever you go."
+    },
+    {
+      "date": "2026-11-06",
+      "day": 6,
+      "reference": "Ruth 1:16",
+      "text": "But Ruth replied: “Do not urge me to leave you or to turn from following you. For wherever you go, I will go, and wherever you live, I will live; your people will be my people, and your God will be my God."
+    },
+    {
+      "date": "2026-11-07",
+      "day": 7,
+      "reference": "1 Samuel 16:7",
+      "text": "But the LORD said to Samuel, “Do not consider his appearance or height, for I have rejected him; the LORD does not see as man does. For man sees the outward appearance, but the LORD sees the heart.”"
+    },
+    {
+      "date": "2026-11-08",
+      "day": 8,
+      "reference": "Psalm 23:1",
+      "text": "The LORD is my shepherd; I shall not want."
+    },
+    {
+      "date": "2026-11-09",
+      "day": 9,
+      "reference": "Psalm 46:10",
+      "text": "“Be still and know that I am God; I will be exalted among the nations, I will be exalted over the earth.”"
+    },
+    {
+      "date": "2026-11-10",
+      "day": 10,
+      "reference": "Psalm 119:105",
+      "text": "Your word is a lamp to my feet and a light to my path."
+    },
+    {
+      "date": "2026-11-11",
+      "day": 11,
+      "reference": "Proverbs 3:5",
+      "text": "Trust in the LORD with all your heart, and lean not on your own understanding;"
+    },
+    {
+      "date": "2026-11-12",
+      "day": 12,
+      "reference": "Ecclesiastes 3:1",
+      "text": "To everything there is a season, and a time for every purpose under heaven:"
+    },
+    {
+      "date": "2026-11-13",
+      "day": 13,
+      "reference": "Isaiah 41:10",
+      "text": "Do not fear, for I am with you; do not be afraid, for I am your God. I will strengthen you; I will surely help you; I will uphold you with My righteous right hand."
+    },
+    {
+      "date": "2026-11-14",
+      "day": 14,
+      "reference": "Isaiah 53:5",
+      "text": "But He was pierced for our transgressions, He was crushed for our iniquities; the punishment that brought us peace was upon Him, and by His stripes we are healed."
+    },
+    {
+      "date": "2026-11-15",
+      "day": 15,
+      "reference": "Jeremiah 29:11",
+      "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope."
+    },
+    {
+      "date": "2026-11-16",
+      "day": 16,
+      "reference": "Lamentations 3:22-23",
+      "text": "Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness!"
+    },
+    {
+      "date": "2026-11-17",
+      "day": 17,
+      "reference": "Micah 6:8",
+      "text": "He has shown you, O man, what is good. And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?"
+    },
+    {
+      "date": "2026-11-18",
+      "day": 18,
+      "reference": "Matthew 11:28",
+      "text": "Come to Me, all you who are weary and burdened, and I will give you rest."
+    },
+    {
+      "date": "2026-11-19",
+      "day": 19,
+      "reference": "Mark 4:39",
+      "text": "Then Jesus got up and rebuked the wind and the sea. “Silence!” He commanded. “Be still!” And the wind died down, and it was perfectly calm."
+    },
+    {
+      "date": "2026-11-20",
+      "day": 20,
+      "reference": "Luke 15:20",
+      "text": "So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him."
+    },
+    {
+      "date": "2026-11-21",
+      "day": 21,
+      "reference": "John 3:16",
+      "text": "For God so loved the world that He gave His one and only Son, that everyone who believes in Him shall not perish but have eternal life."
+    },
+    {
+      "date": "2026-11-22",
+      "day": 22,
+      "reference": "Acts 2:42",
+      "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+    },
+    {
+      "date": "2026-11-23",
+      "day": 23,
+      "reference": "Romans 8:28",
+      "text": "And we know that God works all things together for the good of those who love Him, who are called according to His purpose."
+    },
+    {
+      "date": "2026-11-24",
+      "day": 24,
+      "reference": "1 Corinthians 13:4",
+      "text": "Love is patient, love is kind. It does not envy, it does not boast, it is not proud."
+    },
+    {
+      "date": "2026-11-25",
+      "day": 25,
+      "reference": "Galatians 5:22-23",
+      "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. Against such things there is no law."
+    },
+    {
+      "date": "2026-11-26",
+      "day": 26,
+      "reference": "Philippians 4:6",
+      "text": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God."
+    },
+    {
+      "date": "2026-11-27",
+      "day": 27,
+      "reference": "Hebrews 11:1",
+      "text": "Now faith is the assurance of what we hope for and the certainty of what we do not see."
+    },
+    {
+      "date": "2026-11-28",
+      "day": 28,
+      "reference": "James 1:5",
+      "text": "Now if any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him."
+    },
+    {
+      "date": "2026-11-29",
+      "day": 29,
+      "reference": "Revelation 3:20",
+      "text": "Behold, I stand at the door and knock. If anyone hears My voice and opens the door, I will come in and dine with him, and he with Me."
+    },
+    {
+      "date": "2026-11-30",
+      "day": 30,
+      "reference": "Revelation 21:4",
+      "text": "‘He will wipe away every tear from their eyes,’ and there will be no more death or mourning or crying or pain, for the former things have passed away."
+    }
+  ]
+}

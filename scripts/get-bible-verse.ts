@@ -8,6 +8,7 @@
  * ============================================================================
  */
 import bibleData from "./bible.json";
+import seriesData from "../content-os/series/global-bible-month-2026.json";
 
 interface VerseEntry {
   id: number;
@@ -25,6 +26,31 @@ export interface DailyVerse {
    * matching pre-built image from scripts/build-all-bible-posts.ts's batch
    * (see assetFileName there) without re-deriving the day-of-year math. */
   dayIndex: number;
+  /** Set when a dated series (content-os/series) overrides this date. */
+  series?: { tag: string; releaseTag: string; day: number; eyebrow: string; hashtags: string };
+}
+
+interface SeriesDay { date: string; day: number; reference: string; text: string }
+const SERIES = seriesData as { series: string; release_tag: string; eyebrow: string; hashtags: string; days: SeriesDay[] };
+
+/** Dated override (Global Bible Month 2026). Date is the UTC calendar day, matching the poster. */
+export function seriesVerseForDate(date: Date): DailyVerse | null {
+  const iso = date.toISOString().slice(0, 10);
+  const hit = SERIES.days.find((d) => d.date === iso);
+  if (!hit) return null;
+  return {
+    reference: hit.reference,
+    version: "BSB",
+    text: hit.text.replace(/\s+/g, " ").trim(),
+    dayIndex: -1,
+    series: {
+      tag: SERIES.series,
+      releaseTag: SERIES.release_tag,
+      day: hit.day,
+      eyebrow: SERIES.eyebrow.replace("{day}", String(hit.day)),
+      hashtags: SERIES.hashtags,
+    },
+  };
 }
 
 function dayIndexForDate(date: Date): number {
@@ -35,6 +61,8 @@ function dayIndexForDate(date: Date): number {
 }
 
 export async function getDailyVerse(date: Date = new Date()): Promise<DailyVerse> {
+  const seriesHit = seriesVerseForDate(date);
+  if (seriesHit) return seriesHit;
   const dayIndex = dayIndexForDate(date);
   const picked = VERSES[dayIndex];
   return {

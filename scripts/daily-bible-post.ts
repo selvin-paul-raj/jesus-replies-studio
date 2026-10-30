@@ -68,15 +68,19 @@ const CAPTION_TEMPLATE = `✨ Today's blessing:
 #Bible #Jesus #Faith #Blessed #Scripture #DailyVerse #JesusRepliesOfficial`;
 
 function buildCaption(verse: DailyVerse): string {
-  return CAPTION_TEMPLATE.replace("{{text}}", verse.text)
+  const base = CAPTION_TEMPLATE.replace("{{text}}", verse.text)
     .replace("{{reference}}", verse.reference)
     .replace("{{version}}", verse.version);
+  return verse.series ? `${base}\n\nGlobal Bible Month, Day ${verse.series.day} of 30 ${verse.series.hashtags}` : base;
 }
 
 /** The pre-built image's public URL -- no rendering, no `gh` CLI, no auth
  * needed; GitHub Release asset URLs are publicly fetchable as-is. */
 function batchAssetUrl(verse: DailyVerse): string {
   const repo = process.env.GITHUB_REPOSITORY || DEFAULT_REPO;
+  if (verse.series) {
+    return `https://github.com/${repo}/releases/download/${verse.series.releaseTag}/${verse.series.tag}-day-${verse.series.day}.png`;
+  }
   return `https://github.com/${repo}/releases/download/${BATCH_RELEASE_TAG}/${assetFileName(verse.dayIndex)}`;
 }
 
