@@ -1,0 +1,123 @@
+{
+  "episode_id": "JR-0088",
+  "state": "APPROVED",
+  "updated_at": "2026-10-31T02:42:25Z",
+  "slot": null,
+  "target_date": null,
+  "generation": "PASS",
+  "validation": "PASS",
+  "render": "PASS",
+  "render_qa": "PASS",
+  "package": "PASS",
+  "package_qa": "PASS",
+  "asset_hosting": "VERIFIED",
+  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0088/JR-0088.mp4",
+  "render_facts": {
+    "estimated_seconds": 56.4,
+    "command": "npm run jr -- render generated/JR-0088.json --out-dir output",
+    "exit": 0,
+    "path": "output/videos/JR-0088.mp4",
+    "size_bytes": 6014821,
+    "how": "RENDERED",
+    "duration_s": 56.45,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "resolution": "1080x1920",
+    "warnings": [
+      "duration 56.45s above target [45, 55] but under ceiling"
+    ]
+  },
+  "buffer": {
+    "post_id": "6ae55590b84259308bb3fb93",
+    "status": "draft",
+    "due_at": "2026-12-31T00:00:00.000Z",
+    "sent_at": null,
+    "pending_mutation": null,
+    "create_attempts": 1
+  },
+  "approval": {
+    "status": "APPROVED",
+    "approved_at": "2026-10-31T02:42:25Z",
+    "approved_by": "standing authorization",
+    "slot_local": null,
+    "due_at": null,
+    "evidence": "2026-10-11 20:48 IST, Selvin in chat: dont stop it continus complete automous running system i wnat it bi-weelky review it and enhance the content and enagament , qually and follow ups and crack chnaging algorthim of thsoe social medias build life long running system self correction , feeadbackloop "
+  },
+  "verification": {
+    "status": "NOT_VERIFIED",
+    "verified_at": null
+  },
+  "errors": [],
+  "history": [
+    {
+      "at": "2026-10-31T02:41:03Z",
+      "from": "NEW",
+      "to": "GENERATED",
+      "run": "41160957310",
+      "evidence": "generated/JR-0088.json present (1321 B)"
+    },
+    {
+      "at": "2026-10-31T02:41:03Z",
+      "from": "GENERATED",
+      "to": "VALIDATED",
+      "run": "41160957310",
+      "evidence": "schema PASS, originality PASS, BSB Hebrews 13:5 verbatim match"
+    },
+    {
+      "at": "2026-10-31T02:42:20Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "41160957310",
+      "evidence": "RENDERED JR-0088.mp4 6014821 B"
+    },
+    {
+      "at": "2026-10-31T02:42:20Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "41160957310",
+      "evidence": "56.45s 1080x1920 h264/aac duration 56.45s above target [45, 55] but under ceiling"
+    },
+    {
+      "at": "2026-10-31T02:42:20Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "41160957310",
+      "evidence": "JR-0088.package.json present"
+    },
+    {
+      "at": "2026-10-31T02:42:20Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_PASSED",
+      "run": "41160957310",
+      "evidence": "caption 835 chars, 5 hashtags, title 64, thumbnail JR-0088-thumb.png, honesty line OK"
+    },
+    {
+      "at": "2026-10-31T02:42:24Z",
+      "from": "PACKAGE_QA_PASSED",
+      "to": "ASSET_HOSTED",
+      "run": "41160957310",
+      "evidence": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0088/JR-0088.mp4 http=206 ftyp=True bytes=6014821/6014821"
+    },
+    {
+      "at": "2026-10-31T02:42:25Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_DRAFT",
+      "run": "41160957310",
+      "evidence": "draft 6ae55590b84259308bb3fb93 read back: status draft, asset, caption, duration, channel OK"
+    },
+    {
+      "at": "2026-10-31T02:42:25Z",
+      "from": "BUFFER_DRAFT",
+      "to": "WAITING_FOR_USER",
+      "run": "41160957310",
+      "evidence": "approval required: episode, date, time, timezone"
+    },
+    {
+      "at": "2026-10-31T02:42:25Z",
+      "from": "WAITING_FOR_USER",
+      "to": "APPROVED",
+      "run": "41160957310",
+      "evidence": "auto-approved after all QA gates under standing authorization 2026-10-11 20:48 IST, Selvin in chat; slot time comes from the weekly plan"
+    }
+  ]
+}

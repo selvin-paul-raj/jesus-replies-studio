@@ -648,5 +648,31 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0087",
+    "created_at": "2026-10-31T02:39:45Z",
+    "title": "Jesus... My Bible App Says 412 Days 📖",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0087/JR-0087.mp4",
+    "buffer_post_id": "6ae5553eb84259308bb3da6f",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0088",
+    "created_at": "2026-10-31T02:41:03Z",
+    "title": "Jesus... My Younger Cousin Bought A Car 🚗",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0088/JR-0088.mp4",
+    "buffer_post_id": "6ae55590b84259308bb3fb93",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]

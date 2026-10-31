@@ -1,0 +1,209 @@
+{
+  "episode_id": "JR-0088",
+  "schema": "generated/JR-0036.json (id,title,character,topic,emotion,bible{book,chapter,verse,version=BSB,text},lines[{speaker,text}])",
+  "package_schema": "generated/JR-0036.package.json",
+  "honesty_line": "An imagined reply with AI-made visuals. The Scripture is quoted as written.",
+  "writer_rules": [
+    "End every instagram_caption and youtube_description with the line: \"An imagined reply with AI-made visuals. The Scripture is quoted as written.\" (exact words; hashtags are added after it automatically).",
+    "Never write 'answered in His words'; say 'answered from Scripture'.",
+    "Jesus's lines never promise an outcome (a job, a healing, a person coming back, an exam result).",
+    "Jesus's lines never give medical, mental-health, legal or financial advice and never tell anyone to stop treatment or avoid a doctor; point gently to trusted people and real help instead.",
+    "Jesus's lines never invent doctrine: stay inside what the quoted Scripture and the plain Gospel say; no new teachings, no karma/reincarnation, no 'God no longer judges'.",
+    "Jesus's words are an imagined reply, not a quotation; only the verse block is quoted Scripture.",
+    "R5 (2026-10-29): never set an episode in another faith's festival, ritual or practice (Diwali, puja, lamps for a festival, rangoli, Holi, Navratri, Eid, temple visits, karma, astrology). The audience is Christian and reads it as Jesus approving other worship. Indian family life is welcome (Amma, Appa, aunties, trains home, office life); use neutral moments or the Christian calendar (Sunday church, Advent, Christmas, Good Friday, Easter, a church wedding).",
+    "Self-harm, suicide or abuse stories are held for Selvin's review before publishing and their caption and description must also carry: \"If you are in danger, please reach a local crisis line: US 988 (call or text), UK & Ireland Samaritans 116 123, India Tele-MANAS 14416.\". Prefer other themes for the daily slots."
+  ],
+  "avoid_titles": [
+    "Jesus... My First Salary Came On Diwali Week",
+    "Jesus... I Called Her Gift My Favourite",
+    "Jesus... My Deadline Is The Day After Diwali",
+    "Jesus... My Friend Borrowed Money Again",
+    "Jesus... Appa Went Diwali Shopping Alone",
+    "Jesus... Why Do I Feel Guilty For Cancelling Plans? 😔",
+    "Jesus... I Can't Afford The Ticket Home This Year 🚆",
+    "Jesus... I Can't Ask Anyone For Help 😔",
+    "Jesus... I Eat Lunch On The Staircase Every Day 🍱",
+    "Jesus... I Liked His Photo With Her 💔",
+    "Jesus... I Fell Asleep In The Office Washroom 😮‍💨",
+    "Jesus... She Got The Promotion I Trained Her For 👏",
+    "Jesus... She Sent My Hoodie Back. No Note. 📦",
+    "Jesus... My Bible App Says 412 Days 📖"
+  ],
+  "avoid_scripture": [
+    "2 Corinthians 9:7",
+    "Ephesians 4:25",
+    "Ecclesiastes 4:6",
+    "Matthew 5:37",
+    "Matthew 6:21",
+    "Mark 6:31",
+    "Philippians 4:19",
+    "Galatians 6:2",
+    "Matthew 25:35",
+    "Psalms 147:3",
+    "Isaiah 40:29",
+    "Proverbs 14:30",
+    "Psalms 34:18",
+    "John 6:68"
+  ],
+  "avoid_hooks": [
+    "Jesus... my first salary landed in Diwali week. How much should I send home? 🙏",
+    "Jesus... Athai's Diwali gift. Why did I call it my favourite? 🎁",
+    "Jesus... my office set a deadline for the day after Diwali. I opened my laptop on the train home. 💻",
+    "Jesus... my friend asked to borrow money again. Why can't I say no? 💸",
+    "Jesus... Appa wanted us to shop for Diwali together. Why did I order everything online instead? 🛒",
+    "Jesus... why do I feel guilty every time I cancel plans? 😔",
+    "Jesus... trains are full and flight tickets cost three months of my savings. 🚆",
+    "Jesus... why can't I ask anyone for help even when I'm drowning? 😔",
+    "Jesus... I eat lunch on the office staircase every day. 🍱",
+    "Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔",
+    "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+    "Jesus... my best friend got the promotion I trained her for. I clapped first. 👏",
+    "Jesus... she sent my hoodie back by courier today. No note. I still checked the pockets. 📦",
+    "Jesus... my Bible app says 412 days since I last read. I swiped the reminder away. 📖"
+  ],
+  "recent_topics": [
+    "his first salary lands in Diwali week and he cannot decide how much to send home without leaving himself stuck",
+    "she told her athai her Diwali gift is her favourite when it is not, and the small lie is eating at her",
+    "his office set a release deadline the day after Diwali and he is missing the festival at home for it",
+    "her friend keeps borrowing money and she cannot bring herself to say no even though it weighs on her",
+    "he ordered everything online instead of walking the bazaar with his Appa like they used to, and realised it too late",
+    "she cancelled on her friend three weekends in a row to rest and then spent the whole Sunday feeling guilty about it",
+    "trains are full and flight fares cost three months of his savings, so he can't afford to go home for Diwali and is ashamed to tell his Amma",
+    "she'd rather carry her struggles alone than risk being a burden, even when she's close to breaking",
+    "he eats lunch on the office staircase every day and calls it a choice, but really no one ever asked him to join",
+    "her ex posted a photo with his new girlfriend and she liked it so he would think she is fine",
+    "exhausted after a third late night, he fell asleep in the office washroom and told his manager he was on a call",
+    "her best friend at work got the promotion she trained her for, and she clapped first while envy ate at her",
+    "his ex returned his hoodie by courier with no note, and he still checked the pockets for a message",
+    "her Bible app says it has been 412 days since she last read, and she swiped the reminder away in shame"
+  ],
+  "recent_emotions": [
+    "sad",
+    "sad",
+    "sad",
+    "sad",
+    "sad",
+    "sad",
+    "sad",
+    "sad",
+    "sad",
+    "crying",
+    "neutral",
+    "angry",
+    "hopeful",
+    "sad"
+  ],
+  "duration_target_seconds": [
+    45,
+    55
+  ],
+  "duration_ceiling_seconds": 60,
+  "duration_rule": "aim for 45-55 s (about 112 spoken words across all lines incl. the verse); the validator estimates the length before rendering and rejects anything over 60 s",
+  "scripture_rule": "Berean Standard Bible (BSB, public domain), version=\"BSB\", text copied verbatim from data/bible/bsb.json (get it with `python3 scripts/daily/jr_daily.py verse \"Psalm 23:1\"`); label it (BSB) in captions and descriptions; never NIV/ESV/NLT; unverifiable -> BLOCKED",
+  "strategy": {
+    "source": "content-os/learnings.json + content-os/STRATEGY.md",
+    "as_of": "2026-10-30T22:14:52.302272+00:00",
+    "lean_towards": [],
+    "avoid": [],
+    "evidence_notes": [
+      "instagram slot medians: morning (06-12 IST) 1463 (n=22), night (18-24 IST) 1522 (n=21)",
+      "youtube slot medians: morning (06-12 IST) 1205 (n=23), night (18-24 IST) 724 (n=23)",
+      "instagram: 4 of 47 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
+      "rules need n>=8 episodes per bucket; smaller buckets are reported only"
+    ],
+    "top_hooks_to_learn_from": [
+      "JR-0041 score 0.96 (youtube 2003 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0070 score 0.88 (instagram 2187, youtube 1641 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
+      "JR-0046 score 0.80 (youtube 1627 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0042 score 0.78 (youtube 1557 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0059 score 0.75 (instagram 2278, youtube 1205 views): Jesus... my result comes out tomorrow at ten. I told my parents I'm not nervous. 😔"
+    ]
+  },
+  "review_rules": {
+    "source": "content-os/review-rules.json",
+    "as_of": "2026-10-29",
+    "rules": [
+      {
+        "id": "R1-hidden-feeling-hook",
+        "since": "2026-10-18",
+        "rule": "First line = one concrete moment + what the person pretended or hid in it (\"I smiled in every photo\", \"he told us he was at work\", \"I replied okay so he wouldn't see me cry\"). Keep it under ~18 words so it can be read on mute in the first 2-3 seconds.",
+        "evidence": "Last 14 days: JR-0045 (IG 2,251 views, 67 saves, best of the window), JR-0020 earlier (1,909 / 48 saves), JR-0040 (IG 1,659 + YT 1,201), JR-0046 (YT 1,315) all open on a hidden feeling. Mosseri: watch time and the first seconds gate distribution (kompozy.io, 2026-09-25); YouTube Shorts: viewed vs swiped away is the core signal (outlierkit.com, 2026-10-03)."
+      },
+      {
+        "id": "R2-no-worried-future",
+        "since": "2026-10-18",
+        "rule": "Avoid 'worried about the future' episodes (money next month, will I belong, going back to church someday). If the topic is a worry, set it in a present, concrete scene that already happened today, and label the emotion sad/hurt, not worried. At most 1 per week.",
+        "evidence": "emotion=worried: JR-0024 247, JR-0037 198, JR-0030 1,287 IG views vs window median 1,370; flagged already on 2026-10-11 (IG median 280, n=4)."
+      },
+      {
+        "id": "R3-send-line-names-a-person",
+        "since": "2026-10-18",
+        "rule": "The engagement line is a send line that names one specific person (\"Send this to the friend who...\"). Never 'type a prayer', 'comment amen', 'tag a friend'.",
+        "evidence": "Sends per reach is Instagram's strongest signal for non-followers (Mosseri, restated 2026-09-25, kompozy.io). JR-0053 old version still said 'Type a prayer...' and was fixed in this review."
+      },
+      {
+        "id": "R4-youtube-comments-are-the-conversation",
+        "since": "2026-10-18",
+        "rule": "Write the closing question so it can be answered in one line on YouTube too; the review replies to YouTube comments from Studio.",
+        "evidence": "Last 14 days: 32 comments on 26 YouTube Shorts vs 4 on 26 Instagram Reels."
+      },
+      {
+        "id": "R5-no-other-faith-framing",
+        "since": "2026-10-29",
+        "rule": "Never set an episode in another faith's festival, ritual or practice (Diwali, puja, festival lamps, rangoli, Holi, Navratri, Eid, temple visits, karma, astrology). Indian family life stays welcome (Amma, Appa, aunties, trains home, office, hostel); use neutral everyday moments or the Christian calendar (Sunday service, Advent, Christmas, Good Friday, Easter, a church wedding). Seasonal hooks come from the Christian year or from secular life (exams, salary day, monsoon, new year), never from another religion's worship. Enforced: safety.faith_framing holds any hit for review.",
+        "evidence": "JR-0071..JR-0078 ran five Diwali-framed episodes in a row (JR-0076 had Jesus saying 'You missed the puja' and 'The lamps need you'). YouTube viewer, 2026-10-28: 'Why would Jesus be ok with stuff to do with Diwali. The makers of this video gladly let go off the first commandment' (Exodus 20:3). Selvin, 2026-10-29: fix it, rework the strategy and schedules."
+      },
+      {
+        "id": "R6-spoken-words-cap",
+        "since": "2026-10-29",
+        "rule": "Keep total spoken words (all lines + verse) at 95-120. Over 130 words is a rewrite, not a trim. Split any line that runs past ~4s (about 10 words at 150 wpm) and change the frame inside it.",
+        "evidence": "skill_review calibration 2026-10-29 (n=47 per platform): IG top quartile median 110 words (~44s, 1,836 views) vs bottom quartile 157 words (~63s, 199 views); r(length, log views) = -0.43 IG, -0.22 YT. YT top quartile 115 words. Generic ig-reel hookscore does NOT predict our views (IG r=0.19, YT r=-0.30), so it stays advisory only."
+      },
+      {
+        "id": "R7-send-worthy",
+        "since": "2026-10-29",
+        "rule": "Every script names in its brief WHO would send it and TO WHOM (e.g. 'a friend going through a breakup'). If nobody would forward it, rewrite the angle. No comment-bait or 'type amen' CTAs.",
+        "evidence": "Mosseri 2026-10-23: sends matter far more than comments, especially for non-followers. Our IG sends/reach r=0.27 with log views vs likes/reach r=-0.06."
+      },
+      {
+        "id": "R8-first-frame",
+        "since": "2026-10-29",
+        "rule": "Frame 1 shows the viewer's problem as on-screen text readable without sound, within 1s. The first spoken line states the topic. No logo, title card or slow fade-in.",
+        "evidence": "YouTube Shorts gate = viewed vs swiped away. IG avg watch time 11.1s median is our strongest view predictor (r=0.40)."
+      },
+      {
+        "id": "R9-follow-reason",
+        "since": "2026-10-29",
+        "rule": "The last line gives a reason to follow, tied to the series (e.g. 'Jesus replies to a new struggle every morning'). Never beg. One line, under 3s.",
+        "evidence": "0 followers gained across 35 IG reels with ~1.2K median reach: strangers watch but don't convert."
+      },
+      {
+        "id": "R10-verse-means-it-in-context",
+        "since": "2026-10-30",
+        "rule": "The verse must mean, in its own passage, what the episode uses it for. Read the 3-5 verses around it before pairing. No proof-texting (e.g. Matthew 5:37 is about oaths, not lending boundaries). If no verse fits honestly, change the topic, not the meaning.",
+        "evidence": "JR-0077 (IG, 2026-10-30) paired Matthew 5:37 (oaths, Matt 5:33-37) with saying no to a friend borrowing money; top comment: 'worst translation of Matthew 5:37'. The wording was verbatim BSB; the misuse was the context."
+      }
+    ],
+    "experiments": [
+      "EXP-004 hidden-feeling hook (see content-os/experiments.json)",
+      {
+        "id": "EXP-003-yt-midday",
+        "since": "2026-10-29",
+        "plan": "YouTube: second Short at 13:00 IST instead of 20:30 for 14 days; keep IG at 08:00/20:30. Compare 7-day engaged-view medians vs 20:30 baseline (611).",
+        "status": "superseded by EXP-005 (DEC-JR-015, 2026-10-29)"
+      },
+      {
+        "id": "EXP-004-ig-ai-dubbing",
+        "since": "2026-10-29",
+        "plan": "Enable Instagram AI translations/dubbing (opt-in in app) for reels with speech; compare reach and non-follower share for 14 days.",
+        "status": "needs_user_toggle"
+      },
+      {
+        "id": "EXP-005-evening-1930",
+        "since": "2026-10-29",
+        "plan": "Evening slot 19:30 IST on both platforms vs 20:30 baseline (IG 1,358, YT 611). Read 2026-11-12, decision rule in experiments.json.",
+        "status": "active"
+      }
+    ]
+  }
+}
