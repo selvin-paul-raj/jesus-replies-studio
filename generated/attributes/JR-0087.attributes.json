@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0087",
+  "theme": "her Bible app says it has been 412 days since she last read, and she swiped the reminder away in shame",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... my Bible app says 412 days since I last read. I swiped the reminder away. 📖",
+  "story_type": "one_pushback",
+  "audience_problem": "her Bible app says it has been 412 days since she last read, and she swiped the reminder away in shame",
+  "bible_theme": "John 6:68",
+  "bible_book": "John",
+  "cta_type": "reflection_statement",
+  "duration": 48.19,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0087/JR-0087.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

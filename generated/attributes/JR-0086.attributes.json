@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0086",
+  "theme": "his ex returned his hoodie by courier with no note, and he still checked the pockets for a message",
+  "emotion": "hopeful",
+  "character": "boy",
+  "hook_type": "statement",
+  "hook": "Jesus... she sent my hoodie back by courier today. No note. I still checked the pockets. 📦",
+  "story_type": "one_pushback",
+  "audience_problem": "his ex returned his hoodie by courier with no note, and he still checked the pockets for a message",
+  "bible_theme": "Psalms 34:18",
+  "bible_book": "Psalms",
+  "cta_type": "reflection_statement",
+  "duration": 46.89,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0086/JR-0086.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

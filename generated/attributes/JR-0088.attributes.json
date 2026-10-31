@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0088",
+  "theme": "at the family lunch his younger cousin showed off a new car, and he stayed inside pretending he prefers the metro",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... my younger cousin drove to the family lunch in his new car. I said I prefer the metro. 🚗",
+  "story_type": "one_pushback",
+  "audience_problem": "at the family lunch his younger cousin showed off a new car, and he stayed inside pretending he prefers the metro",
+  "bible_theme": "Hebrews 13:5",
+  "bible_book": "Hebrews",
+  "cta_type": "reflection_statement",
+  "duration": 56.45,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0088/JR-0088.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

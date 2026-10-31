@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0079",
+  "theme": "she cancelled on her friend three weekends in a row to rest and then spent the whole Sunday feeling guilty about it",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... why do I feel guilty every time I cancel plans? 😔",
+  "story_type": "one_pushback",
+  "audience_problem": "she cancelled on her friend three weekends in a row to rest and then spent the whole Sunday feeling guilty about it",
+  "bible_theme": "Mark 6:31",
+  "bible_book": "Mark",
+  "cta_type": "comment_question_plus_action",
+  "duration": 59.58,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0079/JR-0079.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

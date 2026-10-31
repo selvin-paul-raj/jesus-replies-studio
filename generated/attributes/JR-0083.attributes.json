@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0083",
+  "theme": "her ex posted a photo with his new girlfriend and she liked it so he would think she is fine",
+  "emotion": "crying",
+  "character": "girl",
+  "hook_type": "statement",
+  "hook": "Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔",
+  "story_type": "one_pushback",
+  "audience_problem": "her ex posted a photo with his new girlfriend and she liked it so he would think she is fine",
+  "bible_theme": "Psalms 147:3",
+  "bible_book": "Psalms",
+  "cta_type": "reflection_statement",
+  "duration": 47.36,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0083/JR-0083.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "episode_id": "JR-0082",
+  "theme": "he eats lunch on the office staircase every day and calls it a choice, but really no one ever asked him to join",
+  "emotion": "sad",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I eat lunch on the office staircase every day. 🍱",
+  "story_type": "one_pushback",
+  "audience_problem": "he eats lunch on the office staircase every day and calls it a choice, but really no one ever asked him to join",
+  "bible_theme": "Matthew 25:35",
+  "bible_book": "Matthew",
+  "cta_type": "comment_question_plus_action",
+  "duration": 54.72,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0082/JR-0082.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}
