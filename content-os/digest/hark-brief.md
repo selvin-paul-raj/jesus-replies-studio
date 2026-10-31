@@ -1,4 +1,4 @@
-# Hark brief (as of 2026-10-31T17:17:52.092661+00:00)
+# Hark brief (as of 2026-10-31T21:29:12.903893+00:00)
 
 ## instagram: median views 1456 (n=53)
 - JR-0075 2026-10-29 08:00: 200 views (0.1x), likes 4, shares 0, comments 0, hook question

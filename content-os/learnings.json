@@ -1,10 +1,10 @@
 {
-  "as_of": "2026-10-31T12:18:22.528282+00:00",
+  "as_of": "2026-10-31T21:29:12.903893+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
     "instagram": {
-      "n": 43,
+      "n": 44,
       "n_stalled": 4,
       "stalled": [
         "JR-0046",
@@ -12,10 +12,10 @@
         "JR-0041",
         "JR-0033"
       ],
-      "stall_rate": 0.09,
-      "median_views": 1511,
+      "stall_rate": 0.08,
+      "median_views": 1502.0,
       "max_views": 5214,
-      "saves_per_1k_reach_median": 9.6,
+      "saves_per_1k_reach_median": 9.3,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
@@ -24,8 +24,8 @@
             "median_views": 1372.5
           },
           "night (18-24 IST)": {
-            "n": 21,
-            "median_views": 1522
+            "n": 22,
+            "median_views": 1516.5
           }
         }
       },
@@ -135,11 +135,11 @@
       ]
     },
     "youtube": {
-      "n": 47,
+      "n": 48,
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 1099,
+      "median_views": 1062.0,
       "max_views": 3705,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
@@ -147,11 +147,11 @@
         "slot": {
           "morning (06-12 IST)": {
             "n": 24,
-            "median_views": 1195.0
+            "median_views": 1195.5
           },
           "night (18-24 IST)": {
-            "n": 23,
-            "median_views": 731
+            "n": 24,
+            "median_views": 738.5
           }
         }
       },
@@ -169,7 +169,7 @@
         },
         {
           "episode_id": "JR-0038",
-          "views": 2886,
+          "views": 2888,
           "saves": null,
           "shares": null,
           "theme": "alone in the hostel during the festival holidays",
@@ -180,7 +180,7 @@
         },
         {
           "episode_id": "JR-0041",
-          "views": 2005,
+          "views": 2008,
           "saves": null,
           "shares": null,
           "theme": "people-pleasing and not being able to say no",
@@ -271,122 +271,122 @@
   "stall_rule": "Instagram reach < followers (88) = stalled, excluded from content learning",
   "scoring": "mean of Instagram and YouTube view percentiles where data exists",
   "content": {
-    "n_episodes": 47,
-    "both_platforms": 43,
-    "median_score": 0.545,
+    "n_episodes": 48,
+    "both_platforms": 44,
+    "median_score": 0.5375000000000001,
     "by_dimension": {
       "emotion": {
         "angry": {
           "n": 1,
-          "median_score": 0.47
+          "median_score": 0.471
         },
         "crying": {
           "n": 4,
-          "median_score": 0.372
+          "median_score": 0.3805
         },
         "happy": {
           "n": 2,
-          "median_score": 0.4065
+          "median_score": 0.4085
         },
         "neutral": {
           "n": 4,
-          "median_score": 0.42100000000000004
+          "median_score": 0.42800000000000005
         },
         "sad": {
-          "n": 33,
-          "median_score": 0.596
+          "n": 34,
+          "median_score": 0.59
         },
         "worried": {
           "n": 3,
-          "median_score": 0.102
+          "median_score": 0.1
         }
       },
       "character": {
         "boy": {
           "n": 24,
-          "median_score": 0.6
+          "median_score": 0.6034999999999999
         },
         "girl": {
-          "n": 23,
-          "median_score": 0.467
+          "n": 24,
+          "median_score": 0.454
         }
       },
       "hook_type": {
         "confession_statement": {
           "n": 17,
-          "median_score": 0.595
+          "median_score": 0.593
         },
         "question": {
-          "n": 23,
-          "median_score": 0.406
+          "n": 24,
+          "median_score": 0.41100000000000003
         },
         "statement": {
           "n": 7,
-          "median_score": 0.596
+          "median_score": 0.593
         }
       },
       "duration": {
         "56-60s": {
-          "n": 13,
-          "median_score": 0.441
+          "n": 14,
+          "median_score": 0.4465
         },
         "<=55s": {
           "n": 20,
-          "median_score": 0.5954999999999999
+          "median_score": 0.593
         },
         ">60s": {
           "n": 14,
-          "median_score": 0.376
+          "median_score": 0.3785
         }
       },
       "bible_book": {
         "1 John": {
           "n": 1,
-          "median_score": 0.379
+          "median_score": 0.381
         },
         "1 Peter": {
           "n": 1,
-          "median_score": 0.69
+          "median_score": 0.697
         },
         "2 Corinthians": {
           "n": 2,
-          "median_score": 0.537
+          "median_score": 0.542
         },
         "2 Timothy": {
           "n": 1,
-          "median_score": 0.698
+          "median_score": 0.705
         },
         "Ecclesiastes": {
           "n": 1,
-          "median_score": 0.441
+          "median_score": 0.453
         },
         "Ephesians": {
           "n": 2,
-          "median_score": 0.296
+          "median_score": 0.295
         },
         "Exodus": {
           "n": 1,
-          "median_score": 0.768
+          "median_score": 0.773
         },
         "Galatians": {
           "n": 3,
-          "median_score": 0.589
+          "median_score": 0.586
         },
         "Genesis": {
           "n": 1,
-          "median_score": 0.123
+          "median_score": 0.12
         },
         "Hebrews": {
           "n": 1,
-          "median_score": 0.102
+          "median_score": 0.1
         },
         "Isaiah": {
           "n": 4,
-          "median_score": 0.629
+          "median_score": 0.6315
         },
         "James": {
           "n": 1,
-          "median_score": 0.346
+          "median_score": 0.349
         },
         "John": {
           "n": 2,
@@ -394,39 +394,43 @@
         },
         "Joshua": {
           "n": 1,
-          "median_score": 0.364
+          "median_score": 0.367
         },
         "Lamentations": {
           "n": 2,
-          "median_score": 0.6415
+          "median_score": 0.6495
+        },
+        "Mark": {
+          "n": 1,
+          "median_score": 0.351
         },
         "Matthew": {
           "n": 2,
-          "median_score": 0.5695
+          "median_score": 0.573
         },
         "Micah": {
           "n": 1,
-          "median_score": 0.261
+          "median_score": 0.277
         },
         "Philippians": {
           "n": 2,
-          "median_score": 0.5800000000000001
+          "median_score": 0.5835
         },
         "Proverbs": {
           "n": 4,
-          "median_score": 0.49849999999999994
+          "median_score": 0.49749999999999994
         },
         "Psalms": {
           "n": 12,
-          "median_score": 0.5575000000000001
+          "median_score": 0.5615
         },
         "Romans": {
           "n": 1,
-          "median_score": 0.631
+          "median_score": 0.639
         },
         "Ruth": {
           "n": 1,
-          "median_score": 0.338
+          "median_score": 0.342
         }
       }
     },
@@ -435,30 +439,30 @@
         "episode_id": "JR-0041",
         "score": 0.957,
         "views": {
-          "youtube": 2005
+          "youtube": 2008
         },
         "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔"
       },
       {
         "episode_id": "JR-0070",
-        "score": 0.877,
+        "score": 0.88,
         "views": {
           "instagram": 2190,
-          "youtube": 1653
+          "youtube": 1652
         },
         "hook": "Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌"
       },
       {
         "episode_id": "JR-0046",
-        "score": 0.804,
+        "score": 0.809,
         "views": {
-          "youtube": 1630
+          "youtube": 1631
         },
         "hook": "Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔"
       },
       {
         "episode_id": "JR-0042",
-        "score": 0.783,
+        "score": 0.787,
         "views": {
           "youtube": 1557
         },
@@ -466,10 +470,10 @@
       },
       {
         "episode_id": "JR-0072",
-        "score": 0.768,
+        "score": 0.773,
         "views": {
           "instagram": 2089,
-          "youtube": 1268
+          "youtube": 1309
         },
         "hook": "Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱"
       }
@@ -478,20 +482,20 @@
   "authoring_guidance": {
     "lean_towards": [],
     "avoid": [
-      "duration=>60s (episode score 0.38 vs 0.55, n=14, IG+YT percentile)"
+      "duration=>60s (episode score 0.38 vs 0.54, n=14, IG+YT percentile)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1372 (n=22), night (18-24 IST) 1522 (n=21)",
-      "youtube slot medians: morning (06-12 IST) 1195 (n=24), night (18-24 IST) 731 (n=23)",
-      "instagram: 4 of 47 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
+      "instagram slot medians: morning (06-12 IST) 1372 (n=22), night (18-24 IST) 1516 (n=22)",
+      "youtube slot medians: morning (06-12 IST) 1196 (n=24), night (18-24 IST) 738 (n=24)",
+      "instagram: 4 of 48 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0041 score 0.96 (youtube 2005 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0070 score 0.88 (instagram 2190, youtube 1653 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
-      "JR-0046 score 0.80 (youtube 1630 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0042 score 0.78 (youtube 1557 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0072 score 0.77 (instagram 2089, youtube 1268 views): Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱"
+      "JR-0041 score 0.96 (youtube 2008 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0070 score 0.88 (instagram 2190, youtube 1652 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
+      "JR-0046 score 0.81 (youtube 1631 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0042 score 0.79 (youtube 1557 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0072 score 0.77 (instagram 2089, youtube 1309 views): Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱"
     ]
   }
 }
