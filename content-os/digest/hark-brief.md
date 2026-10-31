@@ -1,6 +1,6 @@
-# Hark brief (as of 2026-10-31T05:33:21.488004+00:00)
+# Hark brief (as of 2026-10-31T12:18:22.528282+00:00)
 
-## instagram: median views 1436 (n=54)
+## instagram: median views 1456 (n=53)
 - JR-0075 2026-10-29 08:00: 200 views (0.1x), likes 4, shares 0, comments 0, hook question
 - slot 08:00: median 1288 n=20
 - slot 20:30: median 1463 n=18

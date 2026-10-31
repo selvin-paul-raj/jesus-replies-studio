@@ -265,13 +265,12 @@
       "status": "PUBLISHED",
       "why": "published before hosted assets were tracked",
       "platforms": {
-        "instagram": "PUBLISHED (seen in Buffer, not tracked by the OS)",
+        "instagram": "NONE",
         "youtube": "PUBLISHED (seen in Buffer, not tracked by the OS)"
       },
       "asset_url": null,
       "duration_s": null,
       "published_on": [
-        "instagram",
         "youtube"
       ]
     },
@@ -1277,5 +1276,5 @@
       "published_on": []
     }
   ],
-  "as_of": "2026-10-31T05:33:21.488004+00:00"
+  "as_of": "2026-10-31T12:18:22.528282+00:00"
 }
