@@ -10,3 +10,7 @@
 ## 2026-10-29 (Buffer Community)
 - Instagram: 5 replied (pravallika.atava, _legend.110_, debora197701, chinnu._.pvt_.18, rahul_kl_06); support/"same story" gist. Skipped "send me this post" bait x3.
 - YouTube: ~30 replied (mostly support/Amen; pain/prayer: KaraniPrasanthi, YeThoughIWalk144, MChaitra-b8n2h; testimony-ish BeautifulButterfly111). Not replied: AI-accusation comments (flower_man4, I8I9-l7) held, emoji-only.
+
+## 2026-10-31 (Buffer Community)
+- YouTube: 16 replied (pain: sherrilmortensen6575 [helpline/trusted person nudge], KaraniPrasanthi; critic: mikebezuidenhoudt7783 "heretic" conceded imagined-reply framing; thanks: amaldavid3886; rest support/Amen). Skipped: emoji-only, spam, flower_man4/I8I9-l7 (handled 10-29), thread chatter, song-name ask.
+- Instagram: 0 replied (3 "send me this post" bait, 2 emoji-only).
