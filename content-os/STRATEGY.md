@@ -158,9 +158,9 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-10-31T21:29Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-01T02:29Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=44, median views 1502, best 5214, saves per 1k reach 9.3, stalled 4 (excluded)
+- **instagram**: n=44, median views 1510, best 5283, saves per 1k reach 9.3, stalled 4 (excluded)
 - **youtube**: n=48, median views 1062, best 3705, saves per 1k reach None, stalled 0 (excluded)
 - **episodes scored** (IG + YT percentile): 48, 44 with both platforms
 
@@ -171,15 +171,15 @@ _Last computed 2026-10-31T21:29Z from Buffer analytics, last 28 days, posts at l
 - duration=>60s (episode score 0.38 vs 0.54, n=14, IG+YT percentile)
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
-- JR-0041 score 0.96 (youtube 2008 views): Jesus... I said yes again. I didn't want to. I never do. 😔
-- JR-0070 score 0.88 (instagram 2190, youtube 1652 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌
+- JR-0041 score 0.96 (youtube 2009 views): Jesus... I said yes again. I didn't want to. I never do. 😔
+- JR-0070 score 0.88 (instagram 2196, youtube 1653 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌
 - JR-0046 score 0.81 (youtube 1631 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔
 - JR-0042 score 0.79 (youtube 1557 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔
-- JR-0072 score 0.77 (instagram 2089, youtube 1309 views): Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱
+- JR-0072 score 0.78 (instagram 2098, youtube 1322 views): Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1372 (n=22), night (18-24 IST) 1516 (n=22)
-- youtube slot medians: morning (06-12 IST) 1196 (n=24), night (18-24 IST) 738 (n=24)
+- instagram slot medians: morning (06-12 IST) 1374 (n=22), night (18-24 IST) 1518 (n=22)
+- youtube slot medians: morning (06-12 IST) 1196 (n=24), night (18-24 IST) 745 (n=24)
 - instagram: 4 of 48 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
