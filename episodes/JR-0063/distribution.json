@@ -2,11 +2,11 @@
   "episode_id": "JR-0063",
   "platforms": {
     "instagram": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6ad1af3e4ed7d375a4467ccb",
       "due_at": "2026-11-01T14:00:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-11-01T14:06:14.581Z",
+      "external_link": "https://www.instagram.com/reel/DfM594gj4_B/",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -24,6 +24,20 @@
           "to": "SCHEDULED",
           "run": "40780574744",
           "evidence": "schedule_draft read back: scheduled 2026-11-01T14:00:00.000Z"
+        },
+        {
+          "at": "2026-11-01T21:58:36.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "41354709255",
+          "evidence": "read 6ad1af3e4ed7d375a4467ccb: status sent at 2026-11-01T14:06:14.581Z"
+        },
+        {
+          "at": "2026-11-01T21:58:36.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "41354709255",
+          "evidence": "permalink http=200 metricsUpdatedAt=2026-11-01T21:34:15.755Z"
         }
       ],
       "last_read_error": {
@@ -32,11 +46,11 @@
       }
     },
     "youtube": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6ae0e603049681f2b00a1921",
       "due_at": "2026-11-01T14:00:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-11-01T14:02:44.476Z",
+      "external_link": "https://www.youtube.com/shorts/WVD4XehdmKw",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -61,6 +75,20 @@
           "to": "SCHEDULED",
           "run": "40555364548",
           "evidence": "create_scheduled read back: scheduled 2026-11-01T14:00:00.000Z"
+        },
+        {
+          "at": "2026-11-01T21:58:36.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "41354709255",
+          "evidence": "read 6ae0e603049681f2b00a1921: status sent at 2026-11-01T14:02:44.476Z"
+        },
+        {
+          "at": "2026-11-01T21:58:36.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "41354709255",
+          "evidence": "permalink http=200"
         }
       ],
       "last_read_error": null

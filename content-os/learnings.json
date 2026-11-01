@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-01T18:52:22.510720+00:00",
+  "as_of": "2026-11-01T21:58:36.544678+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -13,27 +13,27 @@
         "JR-0033"
       ],
       "stall_rate": 0.08,
-      "median_views": 1509.5,
-      "max_views": 5283,
+      "median_views": 1516.0,
+      "max_views": 5339,
       "saves_per_1k_reach_median": 9.3,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 23,
-            "median_views": 1456
+            "median_views": 1457
           },
           "night (18-24 IST)": {
             "n": 23,
-            "median_views": 1515
+            "median_views": 1523
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0071",
-          "views": 5283,
-          "saves": 64,
+          "views": 5339,
+          "saves": 65,
           "shares": 25,
           "theme": "relatives asking salary questions at the Diwali table while her job hunt is still going nowhere",
           "emotion": "sad",
@@ -43,9 +43,9 @@
         },
         {
           "episode_id": "JR-0045",
-          "views": 2292,
+          "views": 2293,
           "saves": 64,
-          "shares": 16,
+          "shares": 17,
           "theme": "being the last single friend",
           "emotion": "sad",
           "hook": "Jesus... my last single friend got engaged today. I smiled in every photo. 😔",
@@ -54,7 +54,7 @@
         },
         {
           "episode_id": "JR-0059",
-          "views": 2284,
+          "views": 2285,
           "saves": 34,
           "shares": 17,
           "theme": "waiting for tomorrow's result that decides his future",
@@ -65,7 +65,7 @@
         },
         {
           "episode_id": "JR-0070",
-          "views": 2196,
+          "views": 2200,
           "saves": 13,
           "shares": 11,
           "theme": "he snapped at his little sister over a charger, then laughed it off and never apologised",
@@ -76,7 +76,7 @@
         },
         {
           "episode_id": "JR-0072",
-          "views": 2098,
+          "views": 2100,
           "saves": 5,
           "shares": 3,
           "theme": "told his mother he is too busy to come home for Diwali when really he does not want her to see how his year went",
@@ -89,7 +89,7 @@
       "bottom": [
         {
           "episode_id": "JR-0054",
-          "views": 187,
+          "views": 191,
           "theme": "comparing her career to her batchmates' online updates",
           "emotion": "neutral",
           "hook": "Jesus... I liked every batchmate's promotion post today. Then I sat in the bathroom feeling sick. 😔",
@@ -107,7 +107,7 @@
         },
         {
           "episode_id": "JR-0075",
-          "views": 210,
+          "views": 216,
           "theme": "she told her athai her Diwali gift is her favourite when it is not, and the small lie is eating at her",
           "emotion": "sad",
           "hook": "Jesus... Athai's Diwali gift. Why did I call it my favourite? 🎁",
@@ -140,25 +140,25 @@
       "stalled": [],
       "stall_rate": 0.0,
       "median_views": 1062.0,
-      "max_views": 3705,
+      "max_views": 3706,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 25,
-            "median_views": 1188
+            "median_views": 1190
           },
           "night (18-24 IST)": {
             "n": 25,
-            "median_views": 766
+            "median_views": 792
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0053",
-          "views": 3705,
+          "views": 3706,
           "saves": null,
           "shares": null,
           "theme": "father in the ICU while he is stuck in another city",
@@ -169,7 +169,7 @@
         },
         {
           "episode_id": "JR-0038",
-          "views": 2888,
+          "views": 2893,
           "saves": null,
           "shares": null,
           "theme": "alone in the hostel during the festival holidays",
@@ -180,7 +180,7 @@
         },
         {
           "episode_id": "JR-0041",
-          "views": 2009,
+          "views": 2010,
           "saves": null,
           "shares": null,
           "theme": "people-pleasing and not being able to say no",
@@ -191,7 +191,7 @@
         },
         {
           "episode_id": "JR-0054",
-          "views": 1803,
+          "views": 1804,
           "saves": null,
           "shares": null,
           "theme": "comparing her career to her batchmates' online updates",
@@ -202,7 +202,7 @@
         },
         {
           "episode_id": "JR-0073",
-          "views": 1751,
+          "views": 1758,
           "saves": null,
           "shares": null,
           "theme": "spent three days decorating the house for Diwali and nobody noticed her effort",
@@ -273,7 +273,7 @@
   "content": {
     "n_episodes": 50,
     "both_platforms": 46,
-    "median_score": 0.5365,
+    "median_score": 0.5545,
     "by_dimension": {
       "emotion": {
         "angry": {
@@ -282,11 +282,11 @@
         },
         "crying": {
           "n": 4,
-          "median_score": 0.375
+          "median_score": 0.3695
         },
         "happy": {
           "n": 2,
-          "median_score": 0.407
+          "median_score": 0.40199999999999997
         },
         "neutral": {
           "n": 4,
@@ -294,7 +294,7 @@
         },
         "sad": {
           "n": 36,
-          "median_score": 0.5965
+          "median_score": 0.5914999999999999
         },
         "worried": {
           "n": 3,
@@ -318,11 +318,11 @@
         },
         "question": {
           "n": 26,
-          "median_score": 0.424
+          "median_score": 0.4185
         },
         "statement": {
           "n": 7,
-          "median_score": 0.6
+          "median_score": 0.59
         }
       },
       "duration": {
@@ -332,7 +332,7 @@
         },
         "<=55s": {
           "n": 22,
-          "median_score": 0.5945
+          "median_score": 0.5894999999999999
         },
         ">60s": {
           "n": 14,
@@ -346,7 +346,7 @@
         },
         "1 Peter": {
           "n": 1,
-          "median_score": 0.699
+          "median_score": 0.689
         },
         "2 Corinthians": {
           "n": 2,
@@ -366,11 +366,11 @@
         },
         "Exodus": {
           "n": 1,
-          "median_score": 0.792
+          "median_score": 0.782
         },
         "Galatians": {
           "n": 4,
-          "median_score": 0.5495
+          "median_score": 0.5905
         },
         "Genesis": {
           "n": 1,
@@ -390,7 +390,7 @@
         },
         "John": {
           "n": 2,
-          "median_score": 0.46950000000000003
+          "median_score": 0.4645
         },
         "Joshua": {
           "n": 1,
@@ -406,7 +406,7 @@
         },
         "Matthew": {
           "n": 3,
-          "median_score": 0.603
+          "median_score": 0.613
         },
         "Micah": {
           "n": 1,
@@ -422,7 +422,7 @@
         },
         "Psalms": {
           "n": 12,
-          "median_score": 0.5640000000000001
+          "median_score": 0.5645
         },
         "Romans": {
           "n": 1,
@@ -430,7 +430,7 @@
         },
         "Ruth": {
           "n": 1,
-          "median_score": 0.338
+          "median_score": 0.327
         }
       }
     },
@@ -439,7 +439,7 @@
         "episode_id": "JR-0041",
         "score": 0.959,
         "views": {
-          "youtube": 2009
+          "youtube": 2010
         },
         "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔"
       },
@@ -447,8 +447,8 @@
         "episode_id": "JR-0070",
         "score": 0.885,
         "views": {
-          "instagram": 2196,
-          "youtube": 1653
+          "instagram": 2200,
+          "youtube": 1655
         },
         "hook": "Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌"
       },
@@ -456,7 +456,7 @@
         "episode_id": "JR-0046",
         "score": 0.816,
         "views": {
-          "youtube": 1631
+          "youtube": 1632
         },
         "hook": "Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔"
       },
@@ -464,16 +464,16 @@
         "episode_id": "JR-0042",
         "score": 0.796,
         "views": {
-          "youtube": 1557
+          "youtube": 1558
         },
         "hook": "Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔"
       },
       {
         "episode_id": "JR-0072",
-        "score": 0.792,
+        "score": 0.782,
         "views": {
-          "instagram": 2098,
-          "youtube": 1322
+          "instagram": 2100,
+          "youtube": 1324
         },
         "hook": "Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱"
       }
@@ -482,20 +482,20 @@
   "authoring_guidance": {
     "lean_towards": [],
     "avoid": [
-      "duration=>60s (episode score 0.37 vs 0.54, n=14, IG+YT percentile)"
+      "duration=>60s (episode score 0.37 vs 0.55, n=14, IG+YT percentile)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1456 (n=23), night (18-24 IST) 1515 (n=23)",
-      "youtube slot medians: morning (06-12 IST) 1188 (n=25), night (18-24 IST) 766 (n=25)",
+      "instagram slot medians: morning (06-12 IST) 1457 (n=23), night (18-24 IST) 1523 (n=23)",
+      "youtube slot medians: morning (06-12 IST) 1190 (n=25), night (18-24 IST) 792 (n=25)",
       "instagram: 4 of 50 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0041 score 0.96 (youtube 2009 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0070 score 0.89 (instagram 2196, youtube 1653 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
-      "JR-0046 score 0.82 (youtube 1631 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0042 score 0.80 (youtube 1557 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
-      "JR-0072 score 0.79 (instagram 2098, youtube 1322 views): Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱"
+      "JR-0041 score 0.96 (youtube 2010 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0070 score 0.89 (instagram 2200, youtube 1655 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
+      "JR-0046 score 0.82 (youtube 1632 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0042 score 0.80 (youtube 1558 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0072 score 0.78 (instagram 2100, youtube 1324 views): Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱"
     ]
   }
 }

@@ -7105,6 +7105,16 @@
         },
         "observed_age_hours": 79.5,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "168h": {
+        "metrics": {
+          "reactions": 102,
+          "comments": 2,
+          "engagementRate": 0,
+          "views": 982
+        },
+        "observed_age_hours": 174.9,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -7141,6 +7151,21 @@
           "reach": 1251
         },
         "observed_age_hours": 79.5,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "168h": {
+        "metrics": {
+          "reactions": 83,
+          "comments": 0,
+          "engagementRate": 7.86,
+          "views": 1414,
+          "shares": 6,
+          "saves": 9,
+          "totalTimeWatched": 221.31,
+          "averageTimeWatched": 10.58,
+          "reach": 1272
+        },
+        "observed_age_hours": 174.9,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
@@ -7686,6 +7711,16 @@
         },
         "observed_age_hours": 32.2,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "72h": {
+        "metrics": {
+          "reactions": 41,
+          "comments": 2,
+          "engagementRate": 0,
+          "views": 279
+        },
+        "observed_age_hours": 80.0,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -7707,6 +7742,21 @@
           "reach": 1177
         },
         "observed_age_hours": 32.2,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "72h": {
+        "metrics": {
+          "reactions": 86,
+          "comments": 0,
+          "engagementRate": 7.13,
+          "views": 1509,
+          "shares": 4,
+          "saves": 7,
+          "totalTimeWatched": 182.21,
+          "averageTimeWatched": 7.88,
+          "reach": 1360
+        },
+        "observed_age_hours": 79.9,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
@@ -7883,13 +7933,40 @@
     "episode_id": "JR-0061",
     "platform": "youtube",
     "sent_at": "2026-10-31T14:03:12.508Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 133,
+          "comments": 1,
+          "engagementRate": 0,
+          "views": 1026
+        },
+        "observed_age_hours": 31.9,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "instagram:6ad1ab64fb64fffcf1b524ed": {
     "episode_id": "JR-0061",
     "platform": "instagram",
     "sent_at": "2026-10-31T14:06:49.668Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 2,
+          "comments": 0,
+          "engagementRate": 8.33,
+          "views": 59,
+          "shares": 0,
+          "saves": 1,
+          "totalTimeWatched": 4.9,
+          "averageTimeWatched": 7.54,
+          "reach": 36
+        },
+        "observed_age_hours": 31.9,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "instagram:6ad1aa80fb64fffcf1b4ef06": {
     "episode_id": "JR-0060",
@@ -7923,6 +8000,24 @@
     "episode_id": null,
     "platform": "instagram",
     "sent_at": "2026-11-01T09:39:21.572Z",
+    "checkpoints": {}
+  },
+  "instagram:6ad1af3e4ed7d375a4467ccb": {
+    "episode_id": "JR-0063",
+    "platform": "instagram",
+    "sent_at": "2026-11-01T14:06:14.581Z",
+    "checkpoints": {}
+  },
+  "instagram:6ad1ae439597cd166268c8f8": {
+    "episode_id": "JR-0062",
+    "platform": "instagram",
+    "sent_at": "2026-11-01T02:31:30.035Z",
+    "checkpoints": {}
+  },
+  "youtube:6ae0e603049681f2b00a1921": {
+    "episode_id": "JR-0063",
+    "platform": "youtube",
+    "sent_at": "2026-11-01T14:02:44.476Z",
     "checkpoints": {}
   }
 }
