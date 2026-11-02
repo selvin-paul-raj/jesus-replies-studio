@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-02T02:41:55.738090+00:00",
+  "as_of": "2026-11-02T05:55:59.068116+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -139,7 +139,7 @@
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 1062.0,
+      "median_views": 1062.5,
       "max_views": 3706,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
@@ -151,7 +151,7 @@
           },
           "night (18-24 IST)": {
             "n": 25,
-            "median_views": 792
+            "median_views": 796
           }
         }
       },
@@ -180,7 +180,7 @@
         },
         {
           "episode_id": "JR-0041",
-          "views": 2010,
+          "views": 2011,
           "saves": null,
           "shares": null,
           "theme": "people-pleasing and not being able to say no",
@@ -294,7 +294,7 @@
         },
         "sad": {
           "n": 37,
-          "median_score": 0.581
+          "median_score": 0.598
         },
         "worried": {
           "n": 2,
@@ -332,7 +332,7 @@
         },
         "<=55s": {
           "n": 23,
-          "median_score": 0.578
+          "median_score": 0.598
         },
         ">60s": {
           "n": 13,
@@ -370,7 +370,7 @@
         },
         "Galatians": {
           "n": 4,
-          "median_score": 0.579
+          "median_score": 0.594
         },
         "Genesis": {
           "n": 1,
@@ -398,7 +398,7 @@
         },
         "Lamentations": {
           "n": 2,
-          "median_score": 0.6325000000000001
+          "median_score": 0.6275
         },
         "Mark": {
           "n": 1,
@@ -439,13 +439,13 @@
         "episode_id": "JR-0041",
         "score": 0.959,
         "views": {
-          "youtube": 2010
+          "youtube": 2011
         },
         "hook": "Jesus... I said yes again. I didn't want to. I never do. 😔"
       },
       {
         "episode_id": "JR-0070",
-        "score": 0.874,
+        "score": 0.864,
         "views": {
           "instagram": 2200,
           "youtube": 1655
@@ -454,7 +454,7 @@
       },
       {
         "episode_id": "JR-0046",
-        "score": 0.816,
+        "score": 0.796,
         "views": {
           "youtube": 1632
         },
@@ -462,7 +462,7 @@
       },
       {
         "episode_id": "JR-0042",
-        "score": 0.796,
+        "score": 0.776,
         "views": {
           "youtube": 1558
         },
@@ -487,15 +487,15 @@
     ],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1527 (n=23), night (18-24 IST) 1523 (n=23)",
-      "youtube slot medians: morning (06-12 IST) 1190 (n=25), night (18-24 IST) 792 (n=25)",
+      "youtube slot medians: morning (06-12 IST) 1190 (n=25), night (18-24 IST) 796 (n=25)",
       "instagram: 4 of 50 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0041 score 0.96 (youtube 2010 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0070 score 0.87 (instagram 2200, youtube 1655 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
-      "JR-0046 score 0.82 (youtube 1632 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0042 score 0.80 (youtube 1558 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
+      "JR-0041 score 0.96 (youtube 2011 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0070 score 0.86 (instagram 2200, youtube 1655 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
+      "JR-0046 score 0.80 (youtube 1632 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0042 score 0.78 (youtube 1558 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔",
       "JR-0072 score 0.77 (instagram 2100, youtube 1324 views): Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱"
     ]
   }
