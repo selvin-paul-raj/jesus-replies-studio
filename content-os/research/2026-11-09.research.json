@@ -1,0 +1,37 @@
+{
+  "week_start": "2026-11-09",
+  "compiled_at": "2026-11-02",
+  "_rule": "External research says what the wider ecosystem does. It never overrides own-account analytics; disagreements are recorded.",
+  "findings": [
+    {
+      "claim": "November is widely framed by Christian writers as a gratitude-and-remembering month (thanking God while still waiting), and church-year planning puts the First Sunday of Advent at the end of November 2026, so week 2026-11-09 sits in the quiet stretch between the Diwali season and Advent.",
+      "type": "SOURCE_CLAIM",
+      "source": "Ken Kalis, 'Looking Ahead to November: Seven Journeys, One Faith' (2026-11-01)",
+      "url": "https://www.kenkalis.com/post/looking-ahead-to-november-seven-journeys-one-faith"
+    },
+    {
+      "claim": "The dominant November gratitude framing is 'gratitude while waiting / gratitude is not denial' \u2014 thanksgiving that does not pretend everything is fine.",
+      "type": "SOURCE_CLAIM",
+      "source": "Dr Traci L. Cain, 'November Theme: God Will Fix My Gratitude' (2026-10-31); The Graceful Chapter (2026-11-01)",
+      "url": "https://drtracilcain.substack.com/p/november-theme-god-will-fix-my-gratitude"
+    },
+    {
+      "claim": "Unanswered or seemingly unheard prayer is one of the questions Christians struggle with most but rarely ask out loud; commonly taught answers are yes/no/wait and 'trust His timing', and writers warn against treating prayer like a slot machine.",
+      "type": "SOURCE_CLAIM",
+      "source": "Housely, '15 Questions Christians Struggle With but Rarely Ask' (2025-09-15); GotQuestions.org; christianity.org.uk (Andy Bannister)",
+      "url": "https://housely.com/questions-christians-struggle-with-but-rarely-ask/"
+    },
+    {
+      "claim": "INFERENCE: our channel has never covered crying without a reason, night-shift work keeping someone from Sunday service, or being unable to enjoy good news \u2014 all three are everyday, send-worthy moments that fit the R1 hidden-feeling pattern and none collides with a prior topic.",
+      "type": "INFERENCE",
+      "source": "Own episode corpus scan (generated/*.json, 2026-11-02)",
+      "url": "https://github.com/selvin-paul-raj/jesus-replies-studio"
+    },
+    {
+      "claim": "Short-form sweet spot for engagement remains roughly 30s-2min even as platform length caps keep rising (Reels/Shorts to 3min); audiences reward shorter, and soundless-captioned viewing stays a core pattern.",
+      "type": "SOURCE_CLAIM",
+      "source": "Kapwing short-form statistics 2026 (2026-07-08); Postplanify 2026 stats roundup citing Buffer's 2026 analysis",
+      "url": "https://www.kapwing.com/resources/short-form-video-statistics-tiktok-reels-and-shorts-by-the-numbers-in-2026/"
+    }
+  ]
+}
