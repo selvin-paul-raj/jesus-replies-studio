@@ -28,11 +28,11 @@
       ]
     },
     "youtube": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6ae622cbcf3a3112f3b456f2",
       "due_at": "2026-11-03T14:00:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-11-03T14:03:00.476Z",
+      "external_link": "https://www.youtube.com/watch?v=F9Dzla4eUxU",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -43,6 +43,20 @@
           "to": "SCHEDULED",
           "run": "41223812228",
           "evidence": "create_scheduled read back: scheduled 2026-11-03T14:00:00.000Z"
+        },
+        {
+          "at": "2026-11-03T14:04:31.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "41650100103",
+          "evidence": "read 6ae622cbcf3a3112f3b456f2: status sent at 2026-11-03T14:03:00.476Z"
+        },
+        {
+          "at": "2026-11-03T14:04:31.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "41650100103",
+          "evidence": "permalink http=200"
         }
       ]
     }
