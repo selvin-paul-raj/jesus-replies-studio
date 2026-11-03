@@ -158,28 +158,28 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-03T14:04Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-03T23:16Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=45, median views 1527, best 12328, saves per 1k reach 9.0, stalled 5 (excluded)
-- **youtube**: n=51, median views 1190, best 3706, saves per 1k reach None, stalled 0 (excluded)
-- **episodes scored** (IG + YT percentile): 51, 45 with both platforms
+- **instagram**: n=45, median views 1541, best 12908, saves per 1k reach 9.0, stalled 5 (excluded)
+- **youtube**: n=50, median views 1197, best 3706, saves per 1k reach None, stalled 0 (excluded)
+- **episodes scored** (IG + YT percentile): 50, 45 with both platforms
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
 
 **Avoid / de-emphasise:**
-- hook_type=question (episode score 0.39 vs 0.55, n=24, IG+YT percentile)
+- hook_type=question (episode score 0.37 vs 0.54, n=24, IG+YT percentile)
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
-- JR-0041 score 0.96 (youtube 2012 views): Jesus... I said yes again. I didn't want to. I never do. 😔
-- JR-0063 score 0.94 (youtube 1878 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔
-- JR-0070 score 0.85 (instagram 2201, youtube 1655 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌
-- JR-0046 score 0.78 (youtube 1632 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔
+- JR-0041 score 0.94 (youtube 2014 views): Jesus... I said yes again. I didn't want to. I never do. 😔
+- JR-0063 score 0.91 (instagram 1902, youtube 3624 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔
+- JR-0070 score 0.85 (instagram 2203, youtube 1655 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌
+- JR-0046 score 0.78 (youtube 1635 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔
 - JR-0042 score 0.76 (youtube 1558 views): Jesus... my grandmother didn't know who I was today. She called me by my uncle's name. 😔
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1551 (n=23), night (18-24 IST) 1518 (n=22)
-- youtube slot medians: morning (06-12 IST) 1204 (n=25), night (18-24 IST) 1043 (n=26)
+- instagram slot medians: morning (06-12 IST) 1556 (n=23), night (18-24 IST) 1532 (n=22)
+- youtube slot medians: morning (06-12 IST) 1204 (n=25), night (18-24 IST) 1099 (n=25)
 - instagram: 5 of 50 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061, JR-0046, JR-0042, JR-0041, JR-0033
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)

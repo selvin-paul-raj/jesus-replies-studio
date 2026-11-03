@@ -2,11 +2,11 @@
   "episode_id": "JR-0085",
   "platforms": {
     "instagram": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6ae406c16385db216a1f63bf",
       "due_at": "2026-11-03T14:00:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-11-03T14:05:51.316Z",
+      "external_link": "https://www.instagram.com/reel/DfSDYjSDD-K/",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -24,6 +24,20 @@
           "to": "SCHEDULED",
           "run": "41223812228",
           "evidence": "schedule_draft read back: scheduled 2026-11-03T14:00:00.000Z"
+        },
+        {
+          "at": "2026-11-03T23:16:20.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "41737790858",
+          "evidence": "read 6ae406c16385db216a1f63bf: status sent at 2026-11-03T14:05:51.316Z"
+        },
+        {
+          "at": "2026-11-03T23:16:20.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "41737790858",
+          "evidence": "permalink http=200 metricsUpdatedAt=2026-11-03T19:34:36.107Z"
         }
       ]
     },
