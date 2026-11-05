@@ -21,3 +21,7 @@
 
 ## 2026-11-03 (YouTube Studio fallback)
 - YouTube: 11 replied (support/Amen x7: ShadyGaurav, trangdinh3842, brianacaldwell214, ricviewz1, NoName-c6h, glennisaac3699, Abrahamforbless; pain: samarium102 "texts first", Prettyprincesssparkle lonely lunch, user6840-z6h self-care; fair critic: ip25ip "be grateful" conceded). Skipped 2 emoji-only.
+
+## 2026-11-05 (Buffer Community)
+- YouTube: 7 replied (support: ericlarson4325 x2, LeoPearson-zv3vc, tinawilliams2995, AnicaIvankovic-cx4dt x2, elijahpiere5324). Skipped: emoji-only, song-name ask, "I am kehlani", davidmunoz7385, church/Halloween thread (s.r.8564, amaldavid3886).
+- Instagram: 1 replied (amitha.doria.p). Skipped 3 "send me this post" spam, emoji-only.
