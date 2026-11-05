@@ -102,7 +102,7 @@
   "scripture_rule": "Berean Standard Bible (BSB, public domain), version=\"BSB\", text copied verbatim from data/bible/bsb.json (get it with `python3 scripts/daily/jr_daily.py verse \"Psalm 23:1\"`); label it (BSB) in captions and descriptions; never NIV/ESV/NLT; unverifiable -> BLOCKED",
   "strategy": {
     "source": "content-os/learnings.json + content-os/STRATEGY.md",
-    "as_of": "2026-11-05T04:39:12.482464+00:00",
+    "as_of": "2026-11-05T04:48:28.409749+00:00",
     "lean_towards": [],
     "avoid": [
       "hook_type=question (episode score 0.31 vs 0.52, n=21, IG+YT percentile)"
