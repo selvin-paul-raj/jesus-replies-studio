@@ -1,9 +1,8 @@
 {
-  "as_of": "2026-11-05T06:38:20.021649+00:00",
+  "as_of": "2026-11-05T19:53:32.929244+00:00",
   "target": 6,
   "ready_unscheduled": [],
   "scheduled_not_yet_published": [
-    "JR-0089",
     "JR-0090",
     "JR-0091",
     "JR-0092",
@@ -11,13 +10,18 @@
   ],
   "authored_in_pipeline": [
     "JR-0094",
-    "JR-0095"
+    "JR-0095",
+    "JR-0096",
+    "JR-0097",
+    "JR-0098",
+    "JR-0099",
+    "JR-0100"
   ],
   "upcoming_slots_unauthored": [],
-  "ready_buffer": 5,
+  "ready_buffer": 4,
   "scheduled_by_platform": {
-    "instagram": 5,
-    "youtube": 5
+    "instagram": 4,
+    "youtube": 4
   },
   "parked_drafts_by_platform": {
     "instagram": [
@@ -29,11 +33,28 @@
       "JR-0078"
     ]
   },
-  "authoring_needed": [
-    "JR-0096",
-    "JR-0097",
-    "JR-0098",
-    "JR-0099"
+  "authoring_needed": [],
+  "lane_gaps": [
+    {
+      "lane": "comment-replies",
+      "week_start": "2026-11-02",
+      "file": "content-os/series/comment-replies.json"
+    },
+    {
+      "lane": "family-pressure",
+      "week_start": "2026-11-02",
+      "file": "content-os/series/family-pressure.json"
+    },
+    {
+      "lane": "subtitles-hi",
+      "week_start": "2026-11-02",
+      "file": "content-os/series/subtitles-hi.json"
+    },
+    {
+      "lane": "subtitles-ta",
+      "week_start": "2026-11-02",
+      "file": "content-os/series/subtitles-ta.json"
+    }
   ],
   "authoring_rule": "author each id with generated/<id>.json + <id>.package.json, run `python3 scripts/daily/jr_daily.py brief <id>` for constraints, read content-os/STRATEGY.md and content-os/learnings.json, then push; the daily generator validates, renders and schedules"
 }

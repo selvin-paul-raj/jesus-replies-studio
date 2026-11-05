@@ -1,8 +1,8 @@
 {
   "counts": {
-    "PUBLISHED": 80,
-    "UNUSED": 11,
-    "SCHEDULED": 5
+    "PUBLISHED": 81,
+    "UNUSED": 16,
+    "SCHEDULED": 4
   },
   "next_ready": [],
   "ready_total": 0,
@@ -304,7 +304,6 @@
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0021.mp4",
       "duration_s": 84.33,
       "published_on": [
-        "instagram",
         "youtube"
       ]
     },
@@ -319,7 +318,6 @@
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-week-2026-10-05/JR-0022.mp4",
       "duration_s": 87.32,
       "published_on": [
-        "instagram",
         "youtube"
       ]
     },
@@ -1293,15 +1291,18 @@
     },
     {
       "episode_id": "JR-0089",
-      "status": "SCHEDULED",
-      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
+      "status": "PUBLISHED",
+      "why": "all platforms",
       "platforms": {
-        "instagram": "SCHEDULED",
-        "youtube": "SCHEDULED"
+        "instagram": "PUBLISHED_VERIFIED",
+        "youtube": "PUBLISHED_VERIFIED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0089/JR-0089.mp4",
       "duration_s": 50.33,
-      "published_on": []
+      "published_on": [
+        "instagram",
+        "youtube"
+      ]
     },
     {
       "episode_id": "JR-0090",
@@ -1374,7 +1375,67 @@
       "asset_url": null,
       "duration_s": null,
       "published_on": []
+    },
+    {
+      "episode_id": "JR-0096",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0097",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0098",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0099",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0100",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
     }
   ],
-  "as_of": "2026-11-05T06:38:20.021649+00:00"
+  "as_of": "2026-11-05T19:53:32.929244+00:00"
 }

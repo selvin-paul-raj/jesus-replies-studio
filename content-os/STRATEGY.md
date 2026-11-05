@@ -163,28 +163,28 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-05T06:38Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-05T19:53Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=45, median views 1560, best 13199, saves per 1k reach 8.7, stalled 5 (excluded)
-- **youtube**: n=50, median views 1288, best 3770, saves per 1k reach None, stalled 0 (excluded)
+- **instagram**: n=45, median views 1582, best 13366, saves per 1k reach 8.6, stalled 5 (excluded)
+- **youtube**: n=50, median views 1316, best 3804, saves per 1k reach None, stalled 0 (excluded)
 - **episodes scored** (IG + YT percentile): 50, 45 with both platforms
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
 
 **Avoid / de-emphasise:**
-- hook_type=question (episode score 0.31 vs 0.52, n=21, IG+YT percentile)
+- hook_type=question (episode score 0.33 vs 0.51, n=20, IG+YT percentile)
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
 - JR-0041 score 0.94 (youtube 2036 views): Jesus... I said yes again. I didn't want to. I never do. 😔
-- JR-0063 score 0.90 (instagram 1913, youtube 3770 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔
-- JR-0070 score 0.83 (instagram 2204, youtube 1655 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌
-- JR-0046 score 0.80 (youtube 1662 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔
-- JR-0082 score 0.75 (instagram 1863, youtube 1623 views): Jesus... I eat lunch on the office staircase every day. 🍱
+- JR-0063 score 0.89 (instagram 1915, youtube 3804 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔
+- JR-0070 score 0.82 (instagram 2204, youtube 1655 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌
+- JR-0082 score 0.78 (instagram 1865, youtube 1734 views): Jesus... I eat lunch on the office staircase every day. 🍱
+- JR-0084 score 0.78 (instagram 2269, youtube 1486 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1606 (n=23), night (18-24 IST) 1534 (n=22)
-- youtube slot medians: morning (06-12 IST) 1339 (n=25), night (18-24 IST) 1255 (n=25)
+- instagram slot medians: morning (06-12 IST) 1606 (n=23), night (18-24 IST) 1564 (n=22)
+- youtube slot medians: morning (06-12 IST) 1339 (n=25), night (18-24 IST) 1310 (n=25)
 - instagram: 5 of 50 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061, JR-0046, JR-0042, JR-0041, JR-0033
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
