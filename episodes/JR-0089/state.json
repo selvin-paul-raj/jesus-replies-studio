@@ -1,0 +1,69 @@
+{
+  "episode_id": "JR-0089",
+  "state": "VALIDATION_FAILED",
+  "updated_at": "2026-11-05T04:39:00Z",
+  "slot": null,
+  "target_date": null,
+  "generation": "PASS",
+  "validation": "FAIL",
+  "render": "NOT_STARTED",
+  "render_qa": "NOT_STARTED",
+  "package": "NOT_STARTED",
+  "package_qa": "NOT_STARTED",
+  "asset_hosting": "NOT_STARTED",
+  "asset_url": null,
+  "render_facts": {},
+  "buffer": {
+    "post_id": null,
+    "status": null,
+    "due_at": null,
+    "sent_at": null,
+    "pending_mutation": null
+  },
+  "approval": {
+    "status": "NOT_REQUESTED",
+    "approved_at": null,
+    "approved_by": null,
+    "slot_local": null,
+    "due_at": null,
+    "evidence": null
+  },
+  "verification": {
+    "status": "NOT_VERIFIED",
+    "verified_at": null
+  },
+  "errors": [
+    {
+      "at": "2026-11-05T04:39:00Z",
+      "state": "VALIDATION_FAILED",
+      "detail": "schema validator: [validate] FAIL [\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"lines\",\n      5,\n      \"text\"\n    ],\n    \"message\": \"Invalid input: expected string, received null\"\n  }\n]"
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-11-05T04:38:59Z",
+      "from": "NEW",
+      "to": "GENERATED",
+      "run": "41969045790",
+      "evidence": "generated/JR-0089.json present (1335 B)"
+    },
+    {
+      "at": "2026-11-05T04:39:00Z",
+      "from": "GENERATED",
+      "to": "VALIDATION_FAILED",
+      "run": "41969045790",
+      "evidence": "schema validator: [validate] FAIL [\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"lines\",\n      5,\n      \"text\"\n    ],\n    \"message\": \"Invalid input: expected string, received null\"\n  }\n]"
+    }
+  ],
+  "heal": {
+    "attempts": 0,
+    "exhausted": true,
+    "log": [
+      {
+        "at": "2026-11-05T04:39:00Z",
+        "run": "41969045790",
+        "action": "not auto-repairable: VALIDATION_FAILED: schema validator: [validate] FAIL [\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"lines\",\n      5,\n      \"text\"\n    ],\n    \"message\": \"Invalid input: expected string, "
+      }
+    ]
+  }
+}
