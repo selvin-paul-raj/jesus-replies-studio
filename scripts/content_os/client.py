@@ -6,7 +6,8 @@ from daily.redact import redact
 
 NODE_FULL = ("id status dueAt sentAt createdAt channelId channelService text externalLink metricsUpdatedAt "
              "metrics { type value unit } assets { ... on VideoAsset { source video { durationMs } } } "
-             "metadata { ... on YoutubePostMetadata { title privacy madeForKids category { categoryId title } } }")
+             "metadata { ... on YoutubePostMetadata { title privacy madeForKids category { categoryId title } } "
+             "... on InstagramPostMetadata { firstComment } }")
 NODE_MIN = "id status dueAt sentAt channelId channelService text externalLink assets { ... on VideoAsset { source } }"
 
 
@@ -15,6 +16,7 @@ def norm_post(n):
     n["_asset"] = a.get("source")
     n["_duration_ms"] = (a.get("video") or {}).get("durationMs")
     n["_metrics"] = {m["type"]: m["value"] for m in (n.get("metrics") or []) if m.get("type")}
+    n["_first_comment"] = (n.get("metadata") or {}).get("firstComment") if isinstance(n.get("metadata"), dict) else None
     return n
 
 
@@ -81,14 +83,17 @@ class Buffer:
         off = self.cfg.get("buffer", {}).get("thumbnail_offset_ms", 1500)
         return f'[{{ video: {{ url: {json.dumps(url)}, metadata: {{ thumbnailOffset: {off} }} }} }}]'
 
-    def _meta(self, platform, yt):
+    def _meta(self, platform, yt, first_comment=None):
         if platform == "instagram":
-            return "{ instagram: { type: reel, shouldShareToFeed: true, isAiGenerated: true } }"
+            # R13 (DEC-JR-017): Buffer's InstagramPostMetadataInput has firstComment (introspected 2026-11-05);
+            # YouTube's metadata input has none, so YouTube's first comment is posted and pinned by the comment run.
+            fc = f", firstComment: {json.dumps(first_comment)}" if first_comment else ""
+            return "{ instagram: { type: reel, shouldShareToFeed: true, isAiGenerated: true%s } }" % fc
         return ("{ youtube: { isAiGenerated: true, title: %s, privacy: %s, madeForKids: %s, notifySubscribers: %s, categoryId: %s } }"
                 % (json.dumps(yt["title"]), yt["privacy"], str(yt["made_for_kids"]).lower(),
                    str(yt["notify_subscribers"]).lower(), json.dumps(yt["category_id"])))
 
-    def create_scheduled(self, platform, text, url, due_at, yt=None):
+    def create_scheduled(self, platform, text, url, due_at, yt=None, first_comment=None):
         q = f"""mutation {{ createPost(input: {{
   text: {json.dumps(text)}
   channelId: {json.dumps(self.channel(platform))}
@@ -97,11 +102,11 @@ class Buffer:
   mode: customScheduled
   dueAt: {json.dumps(due_at)}
   assets: {self._video(url)}
-  metadata: {self._meta(platform, yt)}
+  metadata: {self._meta(platform, yt, first_comment)}
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
         return self._mutate("createPost", q)
 
-    def schedule_draft(self, post_id, platform, text, url, due_at, yt=None):
+    def schedule_draft(self, post_id, platform, text, url, due_at, yt=None, first_comment=None):
         """Whole-post edit (Buffer validates edits as whole posts). Only dueAt and saveToDraft differ."""
         q = f"""mutation {{ editPost(input: {{
   id: {json.dumps(post_id)}
@@ -110,12 +115,12 @@ class Buffer:
   mode: customScheduled
   schedulingType: automatic
   assets: {self._video(url)}
-  metadata: {self._meta(platform, yt)}
+  metadata: {self._meta(platform, yt, first_comment)}
   saveToDraft: false
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
         return self._mutate("editPost", q)
 
-    def to_draft(self, post_id, platform, text, url, due_at, yt=None):
+    def to_draft(self, post_id, platform, text, url, due_at, yt=None, first_comment=None):
         """Whole-post edit back to draft (frees a scheduled slot; the post id is kept)."""
         q = f"""mutation {{ editPost(input: {{
   id: {json.dumps(post_id)}
@@ -124,7 +129,7 @@ class Buffer:
   mode: customScheduled
   schedulingType: automatic
   assets: {self._video(url)}
-  metadata: {self._meta(platform, yt)}
+  metadata: {self._meta(platform, yt, first_comment)}
   saveToDraft: true
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
         return self._mutate("editPost", q)

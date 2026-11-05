@@ -220,14 +220,16 @@ class Distributor:
         if self.dry:
             return ("WOULD_SCHEDULE_DRAFT" if s == "DRAFT" else "WOULD_CREATE"), blk
         kind = "schedule_draft" if s == "DRAFT" else "create_scheduled"
+        # R13: the Instagram first comment rides on the post metadata (whole-post edits resend it).
+        fc_kw = {"first_comment": ctx["first_comment"]} if platform == "instagram" and ctx.get("first_comment") else {}
         blk["pending_mutation"] = {"kind": kind, "at": iso(self.now), "run": self.run, "due_at": due_at}
         self.store.save(d)
         if kind == "schedule_draft":
             self.mutated = True
-            out = self.buf.schedule_draft(blk["post_id"], platform, text, ctx["asset_url"], due_at, yt)
+            out = self.buf.schedule_draft(blk["post_id"], platform, text, ctx["asset_url"], due_at, yt, **fc_kw)
         else:
             self.mutated = True
-            out = self.buf.create_scheduled(platform, text, ctx["asset_url"], due_at, yt)
+            out = self.buf.create_scheduled(platform, text, ctx["asset_url"], due_at, yt, **fc_kw)
         blk["attempts"] += 1
         if out.kind == "OK":
             post, det = self.buf.read(out.post["id"])
@@ -235,6 +237,10 @@ class Distributor:
             if post and post.get("status") == "scheduled" and abs((parse(post["dueAt"]) - parse(due_at)).total_seconds()) < 60 \
                     and post.get("_asset") == ctx["asset_url"]:
                 blk.update(post_id=post["id"], due_at=post["dueAt"])
+                if fc_kw:
+                    got = post.get("_first_comment")
+                    blk["first_comment"] = ("SET" if got == fc_kw["first_comment"] else
+                                            "NOT_READABLE" if got is None else f"MISMATCH {got!r}"[:120])
                 move(blk, "SCHEDULED", f"{kind} read back: scheduled {post['dueAt']}", self.run, self.now)
                 # Keep the cached listing truthful for BOTH paths so the quota count
                 # sees this post as scheduled (2026-10-05: a draft->scheduled edit was
@@ -283,7 +289,8 @@ class Distributor:
             return "WOULD_HOLD", blk
         yt = dict(self.cfg["youtube"], title=ctx["youtube_title"]) if platform == "youtube" else None
         self.mutated = True
-        out = self.buf.to_draft(blk["post_id"], platform, self.expected_text(platform, ctx), ctx["asset_url"], blk["due_at"], yt)
+        fc_kw = {"first_comment": ctx["first_comment"]} if platform == "instagram" and ctx.get("first_comment") else {}
+        out = self.buf.to_draft(blk["post_id"], platform, self.expected_text(platform, ctx), ctx["asset_url"], blk["due_at"], yt, **fc_kw)
         post, det = self.buf.read(blk["post_id"])
         if post and post.get("status") == "draft":
             move(blk, "DRAFT", f"held to draft ({out.kind}); read back draft", self.run, self.now)

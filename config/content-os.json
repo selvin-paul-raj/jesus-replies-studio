@@ -146,5 +146,14 @@
     "faith_doubt": 1,
     "bible_trivia": 0,
     "real_question_fridays_per_week": 2
+  },
+  "series_lanes": {
+    "family-pressure": {
+      "file": "content-os/series/family-pressure.json",
+      "per_week": 1,
+      "weekday": 0,
+      "slot": "MORNING",
+      "_why": "2026-11-05 Selvin approved (DEC-JR-017): one family-pressure Reel a week, Monday 08:00 IST (the slot both family winners JR-0060 and JR-0071 went out in). brain.build_plan reserves this slot from the backlog in the file; the episode then goes through every normal gate and the distributor."
+    }
   }
 }

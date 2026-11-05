@@ -18,3 +18,11 @@ Each cycle (the weekly review, plus any time on request):
 6. **Author.** New episodes via `reel-script.md`; run `skill_review.py` + validator before commit.
 7. **Review published work.** At 72h, compare each episode to the platform median; write the
    lesson into the next review, not into a one-off rule.
+
+## Standing items (DEC-JR-017, 2026-11-05)
+- Hooks: confession or statement only (R11). Re-check the hook-type medians per platform at each review.
+- Family-pressure lane: one per week, Monday 08:00 (`content-os/series/family-pressure.json`). Keep at least
+  2 weeks of backlog with context-checked verses (R10). Mark items DONE once published.
+- EXP-005 read (2026-11-12): also weigh moving YouTube's evening post to 05:00 IST against 19:30 (see the
+  experiments.json EXP-005 review_notes). Change slots only at n>=10, only for posts not yet in Buffer, and never
+  touch the Instagram slots in this read.

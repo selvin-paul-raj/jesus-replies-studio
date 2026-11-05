@@ -54,7 +54,7 @@ def derive_attributes(ep, pkg=None, asset=None, platforms=("instagram", "youtube
     b = ep.get("bible") or {}
     return {
         "episode_id": ep["id"], "theme": ep.get("topic"), "emotion": ep.get("emotion"),
-        "character": ep.get("character"), "hook_type": hook_type, "hook": hook,
+        "character": ep.get("character"), "hook_type": hook_type, "hook": hook, "series": ep.get("series"),
         "story_type": story_type, "audience_problem": ep.get("topic"),
         "bible_theme": f"{b.get('book')} {b.get('chapter')}:{b.get('verse')}" if b else None,
         "bible_book": b.get("book"), "cta_type": cta_type,

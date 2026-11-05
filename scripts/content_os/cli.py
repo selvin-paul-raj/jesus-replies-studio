@@ -49,6 +49,9 @@ def cfg_load():
     c["slots"] = rules["slots"]
     c["initial_test_slots"] = sorted(rules["slots"].values())
     c["held_episodes"] = {**review_holds(), **(c.get("held_episodes") or {})}
+    for name, lane in (c.get("series_lanes") or {}).items():     # weekly series lanes (DEC-JR-017)
+        f = ROOT / lane["file"]
+        lane["backlog"] = (json.loads(f.read_text()).get("backlog") or []) if f.exists() else []
     return c
 
 
@@ -107,6 +110,7 @@ def ctx_for_factory(eps, pkgs, assets):
         pk, a = pkgs.get(eid) or {}, assets.get(eid) or {}
         return {"asset_url": a.get("public_url"), "instagram_text": pl.caption_text(pk) if pk else "",
                 "youtube_text": pk.get("youtube_description", ""), "youtube_title": pk.get("youtube_title", ""),
+                "first_comment": pk.get("first_comment"),
                 "asset_check": asset_check(a.get("public_url"), a.get("size_bytes")) if a else (lambda: (False, "no asset"))}
     return ctx_for
 
@@ -153,7 +157,10 @@ def main():
         wjson(OS_DIR / "analytics/metrics-history.json", hist)
         led = ledger.build(rows, hist, attrs, cfg)
         wjson(OS_DIR / "analytics/publications.json", {"as_of": now.isoformat(), "publications": led})
-        wjson(OS_DIR / "analytics/slot-test.json", {"as_of": now.isoformat(), **ledger.slot_test(led, cfg)})
+        exp_notes = [n for x in rjson(OS_DIR / "experiments.json", {"experiments": []}).get("experiments", [])
+                     if x.get("id") == "EXP-005" for n in x.get("review_notes") or []]   # survive every rewrite (DEC-JR-017)
+        wjson(OS_DIR / "analytics/slot-test.json", {"as_of": now.isoformat(), **ledger.slot_test(led, cfg),
+                                                    **({"review_notes": exp_notes} if exp_notes else {})})
         jr = [r for r in rows if r["episode_id"]]
         cats = sorted({r["youtube_category"] for r in rows if r.get("youtube_category")})
         print(f"[snapshot] rows={len(rows)} jr_matched={len(jr)} lists={notes} history_added={added} youtube_categories_seen={cats}")

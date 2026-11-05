@@ -10,7 +10,9 @@ avoid-ai-writing). For the Claude/Codex packs, copy or symlink this file to
   concrete moment of hidden pain; Jesus replies in short lines, with one verbatim KJV verse.
 - **Who we talk to:** Christians 16–35 who look "fine" and aren't. YouTube is US-led (~44% of
   views); Instagram skews India + US. Indian family settings are welcome; the faith is Christian.
-- **What we sell:** nothing. The ask is a send ("Send this to the friend who…") or a follow.
+- **What we sell:** nothing. The ask is a send ("Send this to the friend who…") or a follow. Every Reel/Short
+  ends on a share line, worded freshly each time (R12). The first comment is one easy, warm question (R13).
+- **Openers:** a confession or a statement, never a question (R11).
 
 ## How it sounds
 - Person lines: lowercase-feeling, honest, specific, a little broken. Numbers and objects

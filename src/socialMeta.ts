@@ -48,7 +48,8 @@ function sceneText(script: Script, speaker: string): string | undefined {
 }
 
 function engagementText(script: Script): string {
-  return sceneText(script, "engagement") ?? "What do you think? Share your answer in the comments.";
+  // R12 (DEC-JR-017): the closing line is a share line, never comment bait.
+  return sceneText(script, "engagement") ?? "Send this to someone who needs it today.";
 }
 
 function bibleRef(script: Script): string {

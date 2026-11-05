@@ -64,6 +64,48 @@ def new_rules(eid):
     return bool(m) and int(m.group(1)) >= RULES_V2_FROM
 
 
+RULES_V3_FROM = 94  # 2026-11-05 (DEC-JR-017): R11 no question hook, R12 share line last, R13 first_comment.
+# JR-0094 is the first episode not yet in Buffer when these rules landed (JR-0089..JR-0093 were
+# already scheduled and are left exactly as they are).
+
+
+def rules_v3(eid):
+    m = re.search(r"JR-(\d{4})", eid or "")
+    return bool(m) and int(m.group(1)) >= RULES_V3_FROM
+
+
+def hook_line(ep):
+    """The opener: the first person line (what the viewer reads in the first second)."""
+    return next((l.get("text", "") for l in ep.get("lines") or [] if l.get("speaker") == "person" and l.get("text")), "")
+
+
+def closing_line(ep):
+    """Last spoken line of the script (the verse block has no text)."""
+    spoken = [l for l in ep.get("lines") or [] if l.get("text") and l.get("speaker") not in ("bible_verse", "verse", "reference")]
+    return spoken[-1] if spoken else {}
+
+
+def v3_script_problems(ctx, ep):
+    """R11 hook + R12 share line on the script itself (validator stage, before rendering)."""
+    probs = []
+    hook = hook_line(ep)
+    if safety.hook_kind(hook) == "question":
+        probs.append(f"R11 question hook {hook!r}: open with a confession or a statement (YouTube question hooks: median 382 views "
+                     "vs 1,270 statement / 1,440 confession; one script feeds both platforms)")
+    last = closing_line(ep)
+    if last.get("speaker") != "engagement" or not safety.is_share_line(last.get("text")):
+        probs.append(f"R12 last line must be a share line (speaker 'engagement', e.g. 'Send this to someone who needs it today.'), "
+                     f"got {last.get('speaker')}: {last.get('text')!r}")
+    else:
+        recent = sorted(corpus(ctx, exclude=ep.get("id")), key=lambda e: _jr_num(e.get("id", "")) or 0)[-7:]
+        mine = norm_text(last["text"]).lower()
+        for o in recent:
+            ol = closing_line(o)
+            if ol.get("speaker") == "engagement" and norm_text(ol.get("text")).lower() == mine:
+                probs.append(f"R12 share line repeats {o.get('id')} word for word; vary it")
+    return probs
+
+
 def held_for_review(st):
     return (st.get("review") or {}).get("status") == "HELD_FOR_REVIEW"
 
@@ -193,7 +235,28 @@ def brief(ctx, eid):
                             f"verbatim, character for character, from {scripture.PATH.relative_to(scripture.ROOT)} (get it with "
                             "`python3 scripts/daily/jr_daily.py verse \"Psalm 23:1\"`); never paraphrase or modernise the "
                             f"wording; label it ({scripture.VERSION}) in captions and descriptions; never NIV/ESV/NLT/BSB or any "
-                            "other translation; the verse must fit its context (review rule R10); unverifiable -> BLOCKED")}
+                            "other translation; the verse must fit its context (review rule R10); unverifiable -> BLOCKED"),
+         "hook_rule": ("R11: line 1 is a confession or a statement, never a question (no '?', no 'why/how/what/is/does...' "
+                       "opener). YouTube median views by hook: question 382 (n=41), statement 1,270 (n=11), confession 1,440 "
+                       "(n=24); Instagram is neutral. One script feeds both platforms, so the rule holds for both. The validator fails a question opener."),
+         "allowed_hook_types": list(safety.HOOK_TYPES_ALLOWED),
+         "script_template": ["person: hook (confession or statement; concrete moment + what they hid, <=18 words)",
+                             "person: one concrete detail", "jesus: names the hidden thing", "person: pushback",
+                             "jesus: the turn", "bible_verse (KJV verbatim, R10 context)", "jesus: payoff, echoes a word from the hook",
+                             "engagement: SHARE LINE (last line, R12): who needs it, fresh wording each episode, no bait"],
+         "share_line_rule": ("R12: the script's last line (speaker 'engagement') is a share line in the channel voice that names "
+                             "who needs it, worded differently from recent episodes; the caption carries a share line too. Examples, "
+                             f"never copied verbatim every time: {list(safety.SHARE_LINE_EXAMPLES)}. Never 'type amen', 'comment', 'tag'."),
+         "first_comment_rule": ("R13: package field first_comment = one easy, warm question tied to this episode, <=150 chars, "
+                                "no links/hashtags/bait, e.g. 'Has someone in your family ever said this to you?'. Buffer posts it "
+                                "as the Instagram first comment; the comment run posts and pins it on YouTube."),
+         "caption_template": ["1 the hurt + one searchable phrase", "2 the story in a line, Jesus's reply, the verse with (KJV) and reference",
+                              "3 one small, easy question", "4 SHARE LINE (R12, may match the script's last line)",
+                              "5 series line", "6 honesty line (exact words, last)", "hashtags: exactly 5, in instagram_hashtags only"],
+         "package_fields": ["instagram_caption", "instagram_hashtags", "youtube_title", "youtube_description", "thumbnail_text", "first_comment"]}
+    lane = series_assignment(ctx, eid)
+    if lane:                      # weekly series lane (e.g. family-pressure, DEC-JR-017)
+        b["series"] = lane
     lp = ctx.root / "content-os/learnings.json"
     if lp.exists():               # feedback loop: analytics -> learnings -> every new brief
         L = json.loads(lp.read_text())
@@ -209,6 +272,29 @@ def brief(ctx, eid):
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(json.dumps(b, indent=2, ensure_ascii=False) + "\n")
     return b
+
+
+def series_assignment(ctx, eid):
+    """The series-lane backlog entry reserved for this episode id, if any (content-os/series/*.json)."""
+    for p in sorted((ctx.root / "content-os/series").glob("*.json")):
+        try:
+            S = json.loads(p.read_text())
+        except Exception:
+            continue
+        for item in S.get("backlog") or []:
+            if item.get("episode_id") == eid:
+                return {"series": S.get("series"), "source": str(p.relative_to(ctx.root)), **item}
+    for p in sorted((ctx.root / "content-os/weeks").glob("*/weekly-content-plan.json")):   # id reserved by the planner
+        try:
+            plan = json.loads(p.read_text())
+        except Exception:
+            continue
+        for sl in plan.get("slots") or []:
+            if sl.get("episode_id") == eid and sl.get("series"):
+                return {"series": sl["series"], "source": str(p.relative_to(ctx.root)), "date": sl.get("date"),
+                        "slot": sl.get("slot"), "idea": sl.get("theme"), "verse": sl.get("bible_reference"),
+                        "hook_strategy": sl.get("hook_strategy")}
+    return None
 
 
 # ---------------------------------------------------------------- pre-Buffer steps
@@ -244,6 +330,8 @@ def step_validated(ctx, st):
                          f"(target {d['target_seconds'][0]}-{d['target_seconds'][1]}s); cut lines before rendering")
     ok, issues = originality(ctx, ep)
     if not ok: probs += [f"originality: {i}" for i in issues]
+    if rules_v3(eid):
+        probs += v3_script_problems(ctx, ep)
     if probs:
         st["validation"] = "FAIL"
         return ctx.store.transition(st, "VALIDATION_FAILED", "; ".join(probs), ctx.run_id)
@@ -373,6 +461,12 @@ def step_package_qa(ctx, st):
             probs.append(f"Bible reference {book} not in caption or description")
         wrong = sorted({t for t in re.findall(r"\b(NIV|BSB|ESV|NLT|NKJV|NASB|CSB|MSG)\b", json.dumps(pk))} - {scripture.VERSION})
         if v2 and wrong: probs.append(f"package labels another translation {wrong}; Scripture is {scripture.VERSION} only")
+        if rules_v3(eid):
+            probs += safety.first_comment_problems(pk.get("first_comment"))
+            if not safety.share_line_of(pk["instagram_caption"]):
+                probs.append("R12 share line missing from instagram_caption (e.g. 'Send this to someone who needs it today.')")
+            if any(re.search(b, pk.get("first_comment") or "", re.I) for b in BAIT_PATTERNS):
+                probs.append("engagement bait in first_comment")
         others = set(re.findall(r"JR-\d{4}", json.dumps(pk))) - {eid}
         if others: probs.append(f"references other episodes {sorted(others)}")
         crisis, found = safety.crisis_check(ep, pk)
@@ -463,7 +557,9 @@ def step_buffer_draft(ctx, st):
     if B.get("pending_mutation"):
         return ctx.store.transition(st, "BLOCKED", f"an earlier {B['pending_mutation']['kind']} has an UNRESOLVED outcome; "
                                     "reconcile in Buffer before anything else", ctx.run_id)
-    text = caption_text(json.loads(ctx.pkg_path(eid).read_text()))
+    pkg = json.loads(ctx.pkg_path(eid).read_text())
+    text = caption_text(pkg)
+    fc_kw = {"first_comment": pkg["first_comment"]} if pkg.get("first_comment") else {}
     if B.get("post_id"):
         if ctx.buffer is None:
             ctx.log(f"[buffer] {eid} has post {B['post_id']}; not readable in this run, no create")
@@ -487,7 +583,7 @@ def step_buffer_draft(ctx, st):
     B["create_attempts"] = attempts + 1
     B["pending_mutation"] = {"kind": "createPost", "at": now_iso(), "run": ctx.run_id}
     ctx.store.save(st)
-    out = ctx.buffer.create_draft(text, st["asset_url"], ctx.rules["buffer"]["draft_due_at"])
+    out = ctx.buffer.create_draft(text, st["asset_url"], ctx.rules["buffer"]["draft_due_at"], **fc_kw)
     ctx.log(f"[buffer] createPost {eid} -> {out.kind} {out.detail}")
     if out.kind == "REJECTED":
         B["pending_mutation"] = None
@@ -641,7 +737,9 @@ def schedule(ctx, eid):
         due = A["due_at"]
         if dt.datetime.fromisoformat(due.replace("Z", "+00:00")) <= ctx.now():
             return ctx.store.transition(st, "BLOCKED", f"approved time {due} has passed; needs a new approval", ctx.run_id)
-        text = caption_text(json.loads(ctx.pkg_path(eid).read_text()))
+        pkg = json.loads(ctx.pkg_path(eid).read_text())
+        text = caption_text(pkg)
+        fc_kw = {"first_comment": pkg["first_comment"]} if pkg.get("first_comment") else {}
         post, d = ctx.buffer.read(B["post_id"]) if ctx.buffer else (None, "no Buffer access")
         if not post:
             return ctx.store.transition(st, "BLOCKED", f"pre-read of {B['post_id']} failed ({d})", ctx.run_id)
@@ -660,7 +758,7 @@ def schedule(ctx, eid):
         B["schedule_attempts"] = attempts + 1
         B["pending_mutation"] = {"kind": "editPost", "at": now_iso(), "run": ctx.run_id}
         ctx.store.save(st)
-        out = ctx.buffer.schedule(B["post_id"], text, st["asset_url"], due)
+        out = ctx.buffer.schedule(B["post_id"], text, st["asset_url"], due, **fc_kw)
         ctx.log(f"[buffer] editPost {eid} -> {out.kind} {out.detail}")
         post, d = ctx.buffer.read(B["post_id"])
         if post and _is_scheduled(post, due) and not check_after(ctx, st, post, text):

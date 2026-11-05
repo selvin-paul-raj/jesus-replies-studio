@@ -100,9 +100,15 @@ class Autopilot:
     def reserved_ids(self):
         return {s["episode_id"] for _, _, s, _ in self.upcoming()}
 
+    def lane_ids(self):
+        """Episodes written for a weekly series lane (DEC-JR-017): they wait for their own lane slot
+        and are never used as a substitute for another slot."""
+        return {b.get("episode_id") for l in (self.cfg.get("series_lanes") or {}).values() for b in l.get("backlog") or []
+                if b.get("episode_id") and b.get("status") not in ("DONE", "DROPPED")}
+
     def spares(self):
         """READY episodes nobody upcoming owns, never published or scheduled anywhere."""
-        res = self.reserved_ids()
+        res = self.reserved_ids() | self.lane_ids()
         return [e for e in sorted(self.eps) if e not in res and self.status(e) == "READY"
                 and all(v in ("NONE", "DRAFT") for v in self.platform_states(e).values())]
 

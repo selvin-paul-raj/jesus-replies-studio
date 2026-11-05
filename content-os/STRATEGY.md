@@ -201,3 +201,24 @@ _Last computed 2026-11-05T06:38Z from Buffer analytics, last 28 days, posts at l
   bottom quartile ~157 words (~63s). New rule **R6: 95–120 spoken words**.
 - Comments are answered from the team voice (see `comment-replies.md`), logged in
   `content-os/community/`; repeated questions become episode ideas.
+
+## 2026-11-05 upgrades (DEC-JR-017): hooks, share line, first comment, family lane
+
+- **R11, no question hooks.** Line 1 is a confession ("Jesus... I said yes again.") or a statement, never a
+  question. YouTube median views: question 382 (n=41), statement 1,270 (n=11), confession 1,440 (n=24). Instagram
+  is neutral (1,526 / 1,559 / 1,319). One script feeds both platforms, so it holds for both. The validator fails a
+  question opener (JR-0094 on), and the weekly planner only assigns confession/statement hook strategies.
+- **R12, share line last.** The script ends on a share line (speaker `engagement`) that names who needs it,
+  worded freshly each time ("Send this to someone who needs it today.", "Pass this to the daughter still sitting at
+  that table."). The caption carries a share line too. No "type amen", "comment", "tag" or other bait. The closing
+  question moves to the first comment.
+- **R13, first comment.** Package field `first_comment`: one easy, warm question tied to the episode ("Has someone in
+  your family ever said this to you?"). Instagram: Buffer posts it (metadata.instagram.firstComment). YouTube: the
+  comment run posts it from the channel and pins it.
+- **Caption order now:** 1 the hurt plus one searchable phrase, 2 story, reply, verse (KJV), 3 one small question,
+  4 share line, 5 series line, 6 honesty line, hashtags (5) added from `instagram_hashtags`.
+- **Family-pressure lane:** one Reel a week, Monday 08:00 IST (both family winners, JR-0060 12.9K and JR-0071 5.4K
+  IG views, went out at 08:00). Backlog with context-checked verses: `content-os/series/family-pressure.json`. First:
+  JR-0096 (Psalm 27:10) on 2026-11-09. Counts inside the weekly mix as the family slot.
+- **Slots unchanged.** YouTube stays at 08:00/19:30 until EXP-005 is read on 2026-11-12. That read also weighs a
+  05:00 IST YouTube evening-post move (YouTube 08:00 median 1,198, n=24, vs old 20:30 median 725, n=27).

@@ -1,0 +1,73 @@
+{
+  "series": "family-pressure",
+  "since": "2026-11-05",
+  "decision": "content-os/DECISIONS.md DEC-JR-017",
+  "per_week": 1,
+  "weekday": "Monday",
+  "slot": "MORNING",
+  "slot_why": "One Reel a week. Both family-pressure winners went out in the 08:00 slot (JR-0060 'when is it your turn' at a wedding, 12.9K Instagram views, Sat 2026-10-31 08:00; JR-0071 relatives asking salary questions, 5.4K, Tue 2026-10-27 08:00). Monday 08:00 is the first slot of each plan week, so the lane never displaces an episode already in Buffer. Instagram slot times are unchanged; the same video also goes to YouTube in its MORNING slot (coordination same_slot).",
+  "rules": "Every episode follows R1-R13. The verse is quoted verbatim from the KJV and must mean in its own passage what the episode uses it for (R10). No other-faith festival framing (R5): weddings, family lunches, baby showers and phone calls stay; pujas and festival tables do not. Jesus never gives financial, medical or legal advice and never promises an outcome (a reconciliation, a child, a match).",
+  "source": "content-os/community/ideas.md, '2026-11-04 family-pressure lane' (commit fed5f77), six ideas with context-checked verses",
+  "backlog": [
+    {
+      "week_start": "2026-11-09",
+      "date": "2026-11-09",
+      "slot": "MORNING",
+      "episode_id": "JR-0096",
+      "status": "AUTHORED",
+      "idea": "Refused a match whose family wanted her to quit her job; her mother hasn't spoken to her in 4 days.",
+      "verse": "Psalms 27:10",
+      "r10_context": "Psalm 27 is David's confidence in the LORD when surrounded and abandoned; v10: even if father and mother forsake me, the LORD will take me up. Used for: a parent's silence is not the last word on whether you are held. Not used to call the mother wicked or to cut her off."
+    },
+    {
+      "week_start": "2026-11-16",
+      "date": "2026-11-16",
+      "slot": "MORNING",
+      "episode_id": null,
+      "status": "IDEA",
+      "idea": "Aunty at the wedding says 'you've put on weight' in front of everyone; she laughs it off and stops eating.",
+      "verse": "1 Samuel 16:7",
+      "r10_context": "1 Samuel 16:6-13: the LORD tells Samuel not to judge Jesse's sons by appearance or height when choosing a king; the LORD looks on the heart. Used for: how God sees her is not how the table sees her. Not used to dismiss health."
+    },
+    {
+      "week_start": "2026-11-23",
+      "date": "2026-11-23",
+      "slot": "MORNING",
+      "episode_id": null,
+      "status": "IDEA",
+      "idea": "Grandmother asks to see a great-grandchild 'before I go'; he smiles and changes the subject.",
+      "verse": "Ecclesiastes 3:1",
+      "r10_context": "Ecclesiastes 3:1-8: God has appointed times for every matter under heaven. Used for: his life's timing is not a race set by the family's clock. Not a promise that marriage or a child will come."
+    },
+    {
+      "week_start": "2026-11-30",
+      "date": "2026-11-30",
+      "slot": "MORNING",
+      "episode_id": null,
+      "status": "IDEA",
+      "idea": "Finds her father's loan papers for her wedding; he says 'don't worry about it'.",
+      "verse": "Psalms 103:13",
+      "r10_context": "Psalm 103:8-14: the LORD's compassion is like a father's pity for his children; He knows our frame. Used for: a father's quiet sacrifice is a picture of the Father's compassion. Jesus gives no financial advice about the loan."
+    },
+    {
+      "week_start": "2026-12-07",
+      "date": "2026-12-07",
+      "slot": "MORNING",
+      "episode_id": null,
+      "status": "IDEA",
+      "idea": "The earning son abroad is asked again to fund his brother's house; he sends it and eats Maggi for the month.",
+      "verse": "Galatians 6:5",
+      "r10_context": "Galatians 6:1-5: each one tests his own work and carries his own load, alongside 6:2 'bear ye one another's burdens'. Used for: love helps carry a brother's burden, but he is not meant to carry the whole house alone. Balance with 6:2; Jesus gives no money advice (the lint flags it)."
+    },
+    {
+      "week_start": "2026-12-14",
+      "date": "2026-12-14",
+      "slot": "MORNING",
+      "episode_id": null,
+      "status": "IDEA",
+      "idea": "At a baby shower a relative whispers that God is punishing the childless couple.",
+      "verse": "John 9:3",
+      "r10_context": "John 9:1-7: the disciples assume the man's blindness is punishment for sin; Jesus says neither he nor his parents sinned. Used for: their childlessness is not God's punishment. Never promise a child (the lint flags promised outcomes)."
+    }
+  ]
+}

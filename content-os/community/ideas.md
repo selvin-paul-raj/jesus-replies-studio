@@ -13,3 +13,5 @@
 - Finds her father's loan papers for her wedding; he says "don't worry about it". Psalm 103:13.
 - At a baby shower, a relative whispers that God is punishing the childless couple. John 9:3.
 - Grandmother asks to see a great-grandchild "before I go"; he smiles and changes the subject. Ecclesiastes 3:1.
+
+_2026-11-05: the six family-pressure ideas above are now the weekly lane backlog in `content-os/series/family-pressure.json` (DEC-JR-017). The first (refused match, Psalm 27:10) is JR-0096 for Mon 2026-11-09 08:00 IST._

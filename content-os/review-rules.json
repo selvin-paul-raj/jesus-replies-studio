@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-29",
+  "as_of": "2026-11-05",
   "_note": "Written only by the bi-weekly growth review. Embedded in every brief as review_rules. Each rule cites its evidence; the next review keeps, changes or drops it.",
   "rules": [
     {
@@ -24,7 +24,8 @@
       "id": "R4-youtube-comments-are-the-conversation",
       "since": "2026-10-18",
       "rule": "Write the closing question so it can be answered in one line on YouTube too; the review replies to YouTube comments from Studio.",
-      "evidence": "Last 14 days: 32 comments on 26 YouTube Shorts vs 4 on 26 Instagram Reels."
+      "evidence": "Last 14 days: 32 comments on 26 YouTube Shorts vs 4 on 26 Instagram Reels.",
+      "note": "2026-11-05 (R13): the answerable question now goes in first_comment (pinned on YouTube by the comment run, posted by Buffer on Instagram); the caption may still carry one small question."
     },
     {
       "id": "R5-no-other-faith-framing",
@@ -54,13 +55,32 @@
       "id": "R9-follow-reason",
       "since": "2026-10-29",
       "rule": "The last line gives a reason to follow, tied to the series (e.g. 'Jesus replies to a new struggle every morning'). Never beg. One line, under 3s.",
-      "evidence": "0 followers gained across 35 IG reels with ~1.2K median reach: strangers watch but don't convert."
+      "evidence": "0 followers gained across 35 IG reels with ~1.2K median reach: strangers watch but don't convert.",
+      "note": "2026-11-05 (R12): the script's last line is now the share line; the follow reason lives in the caption's series line ('New question every morning and night.')."
     },
     {
       "id": "R10-verse-means-it-in-context",
       "since": "2026-10-30",
       "rule": "The verse must mean, in its own passage, what the episode uses it for. Read the 3-5 verses around it before pairing. No proof-texting (e.g. Matthew 5:37 is about oaths, not lending boundaries). If no verse fits honestly, change the topic, not the meaning. Scripture is the KJV, quoted verbatim (DEC-JR-016); a correct quotation never excuses a wrong context.",
       "evidence": "JR-0077 (IG, 2026-10-30) paired Matthew 5:37 (oaths, Matt 5:33-37) with saying no to a friend borrowing money; top comment: 'worst translation of Matthew 5:37'. The wording was verbatim (BSB at the time; KJV since 2026-11-05); the misuse was the context."
+    },
+    {
+      "id": "R11-no-question-hook",
+      "since": "2026-11-05",
+      "rule": "Line 1 is a confession (\"Jesus... I said yes again.\") or a statement (\"Jesus... my brother's EMI is on my card now.\"), never a question: no '?' and no why/how/what/is/does opener. One script feeds Instagram and YouTube, so it holds for both. The validator fails a question opener from JR-0094 on, and the planner only assigns confession/statement hook strategies.",
+      "evidence": "YouTube median views by hook type: question 382 (n=41), statement 1,270 (n=11), confession 1,440 (n=24). Instagram is neutral: question 1,526, statement 1,559, confession 1,319. learnings.json already listed hook_type=question under avoid (episode score 0.31 vs 0.52, n=21). Selvin approved 2026-11-05."
+    },
+    {
+      "id": "R12-share-line-last",
+      "since": "2026-11-05",
+      "rule": "The script's last line (speaker 'engagement') is a share line in the channel voice that names who needs it (\"Send this to someone who needs it today.\"), worded freshly each episode (the validator rejects a word-for-word repeat of the last 7). The caption carries a share line too. Never 'type amen', 'comment', 'tag' or other bait. Replaces the closing question; the question moves to the first comment (R13). Builds on R3.",
+      "evidence": "Sends per reach is Instagram's strongest signal for reaching non-followers (Mosseri 2026-10-23); our sends/reach r=0.27 with log views vs likes/reach r=-0.06. Selvin approved 2026-11-05."
+    },
+    {
+      "id": "R13-first-comment",
+      "since": "2026-11-05",
+      "rule": "Every new package has first_comment: one easy, warm question tied to the episode, at most 150 characters, no links, hashtags or bait (\"Has someone in your family ever said this to you?\"). Instagram: sent through Buffer as metadata.instagram.firstComment. YouTube: Buffer has no first-comment field, so the every-2-days comment run posts it from the channel and pins it (comment-replies.md).",
+      "evidence": "Comments are near zero on Instagram (4 on 26 Reels) but YouTube is where people answer (R4). A seeded, answerable question gives viewers an easy first reply. Selvin approved 2026-11-05."
     }
   ],
   "experiments": [
@@ -81,7 +101,8 @@
       "id": "EXP-005-evening-1930",
       "since": "2026-10-29",
       "plan": "Evening slot 19:30 IST on both platforms vs 20:30 baseline (IG 1,358, YT 611). Read 2026-11-12, decision rule in experiments.json.",
-      "status": "active"
+      "status": "active",
+      "note": "2026-11-05 (Selvin, DEC-JR-017): no slot change now (never change slots on n<10). At the 2026-11-12 read, also weigh moving YouTube's evening post to a morning slot at 05:00 IST against 19:30: 05:00 is 3 h before the 08:00 post and 18:30 US Eastern (YouTube's audience is US-led, ~44%). Evidence to carry into that read: YouTube 08:00 median 1,198 views (n=24) vs the old 20:30 median 725 (n=27); 19:30 has n=2 so far. Instagram slots stay 08:00/19:30. A move applies only to posts not yet in Buffer and needs n>=10 on the YouTube evening arm."
     }
   ]
 }

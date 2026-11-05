@@ -163,6 +163,70 @@ def fix_package(pkg, crisis=False):
     return fixes
 
 
+# ---------------------------------------------------------------- 2026-11-05 upgrades (DEC-JR-017)
+# R11: no question hooks. One script feeds both platforms, so the opener is a confession or a
+# statement everywhere. YouTube Shorts by hook type (median views): question 382 (n=41),
+# statement 1,270 (n=11), confession 1,440 (n=24). Instagram is neutral (question 1,526,
+# statement 1,559, confession 1,319), so nothing is lost there.
+HOOK_TYPES_ALLOWED = ("confession", "statement")
+_QWORDS = r"(?:why|how|what|when|where|who|whom|whose|which|is|am|are|was|were|do|does|did|can|could|should|would|will|shall|have|has|may|might|must)"
+
+
+def hook_kind(text):
+    """-> 'question' | 'confession' | 'statement' for an opening line ("Jesus... <hook>")."""
+    t = re.sub(r"^\s*jesus\s*[.\u2026,!:-]*\s*", "", (text or "").strip(), flags=re.I)
+    t = re.sub(r"[\U0001F000-\U0001FFFF\u2600-\u27BF\uFE0F\u200d]", "", t).strip()
+    if "?" in t or re.match(rf"^{_QWORDS}(?:n'?t)?\b", t, re.I):
+        return "question"
+    if re.match(r"^(?:i|i'm|i've|i'd|i'll|im|my|me|we|we're|our|today i|tonight i|last night i)\b", t, re.I):
+        return "confession"
+    return "statement"
+
+
+# R12: every Reel/Short ends on a share line in the channel voice, worded differently each time.
+SHARE_LINE_EXAMPLES = (
+    "Send this to someone who needs it today.",
+    "Send this to the friend who always says she's fine.",
+    "Share this with the brother who carries it alone.",
+    "Pass this to the daughter still sitting at that table.",
+)
+_SHARE_RE = re.compile(r"^\W*(?:send|share|pass|forward)\s+(?:this|it)\s+(?:to|with)\b", re.I)
+_BAIT_WORDS = re.compile(r"\b(?:amen|comment|comments|type|tag|like this|double tap|follow for)\b", re.I)
+
+
+def is_share_line(text):
+    """A share line names who to send it to and carries no engagement bait."""
+    t = (text or "").strip()
+    return bool(_SHARE_RE.search(t)) and not _BAIT_WORDS.search(t) and 4 <= len(t.split()) <= 18
+
+
+def share_line_of(text_block):
+    """First share line found in a caption/description, or None."""
+    for ln in (text_block or "").splitlines():
+        if is_share_line(ln):
+            return ln.strip()
+    return None
+
+
+# R13: each new post carries a first comment: one easy, warm question tied to the episode.
+def first_comment_problems(fc):
+    probs = []
+    fc = (fc or "").strip()
+    if not fc:
+        return ["first_comment missing (one easy, warm question tied to the episode)"]
+    if not fc.endswith(("?", "?\U0001F447", "? \U0001F447")) and "?" not in fc[-3:]:
+        probs.append("first_comment must be one question ending in '?'")
+    if fc.count("?") > 1:
+        probs.append("first_comment asks more than one question")
+    if len(fc) > 150:
+        probs.append(f"first_comment {len(fc)} chars (max 150)")
+    if re.search(r"https?://|#\w|@\w", fc):
+        probs.append("first_comment has a link, hashtag or mention")
+    if _BAIT_WORDS.search(fc):
+        probs.append("first_comment is engagement bait (no 'amen / comment / type / tag')")
+    return probs
+
+
 WRITER_RULES = [
     f"End every instagram_caption and youtube_description with the line: \"{HONESTY_LINE}\" (exact words; hashtags are added after it automatically).",
     "Never write 'answered in His words'; say 'answered from Scripture'.",
@@ -171,5 +235,8 @@ WRITER_RULES = [
     "Jesus's lines never invent doctrine: stay inside what the quoted Scripture and the plain Gospel say; no new teachings, no karma/reincarnation, no 'God no longer judges'.",
     "Jesus's words are an imagined reply, not a quotation; only the verse block is quoted Scripture.",
     "R5 (2026-10-29): never set an episode in another faith's festival, ritual or practice (Diwali, puja, lamps for a festival, rangoli, Holi, Navratri, Eid, temple visits, karma, astrology). The audience is Christian and reads it as Jesus approving other worship. Indian family life is welcome (Amma, Appa, aunties, trains home, office life); use neutral moments or the Christian calendar (Sunday church, Advent, Christmas, Good Friday, Easter, a church wedding).",
+    "R11 (2026-11-05): the first line is a confession (\"Jesus... I said yes again.\") or a statement (\"Jesus... my brother's EMI is on my card now.\"), never a question. On YouTube question hooks get about a third of the views (median 382 vs 1,270 statement, 1,440 confession); one script feeds both platforms. The validator fails a question opener.",
+    "R12 (2026-11-05): the last line of the script is a share line (speaker 'engagement') in the channel voice, worded freshly each time and naming who needs it (\"Send this to someone who needs it today.\", \"Pass this to the daughter still sitting at that table.\"). The caption carries a share line too. Never 'type amen', 'comment', 'tag', or any engagement bait.",
+    "R13 (2026-11-05): the package has first_comment: one easy, warm question tied to the episode, under 150 characters, no links/hashtags/bait (\"Has someone in your family ever said this to you?\"). Instagram posts it through Buffer; on YouTube the comment run posts and pins it.",
     f"Self-harm, suicide or abuse stories are held for Selvin's review before publishing and their caption and description must also carry: \"{CRISIS_LINE}\". Prefer other themes for the daily slots.",
 ]

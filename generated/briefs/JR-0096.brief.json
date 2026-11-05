@@ -1,0 +1,281 @@
+{
+  "episode_id": "JR-0096",
+  "schema": "generated/JR-0036.json (id,title,character,topic,emotion,bible{book,chapter,verse,version=KJV,text},lines[{speaker,text}])",
+  "package_schema": "generated/JR-0036.package.json",
+  "honesty_line": "An imagined reply with AI-made visuals. The Scripture is quoted as written.",
+  "writer_rules": [
+    "End every instagram_caption and youtube_description with the line: \"An imagined reply with AI-made visuals. The Scripture is quoted as written.\" (exact words; hashtags are added after it automatically).",
+    "Never write 'answered in His words'; say 'answered from Scripture'.",
+    "Jesus's lines never promise an outcome (a job, a healing, a person coming back, an exam result).",
+    "Jesus's lines never give medical, mental-health, legal or financial advice and never tell anyone to stop treatment or avoid a doctor; point gently to trusted people and real help instead.",
+    "Jesus's lines never invent doctrine: stay inside what the quoted Scripture and the plain Gospel say; no new teachings, no karma/reincarnation, no 'God no longer judges'.",
+    "Jesus's words are an imagined reply, not a quotation; only the verse block is quoted Scripture.",
+    "R5 (2026-10-29): never set an episode in another faith's festival, ritual or practice (Diwali, puja, lamps for a festival, rangoli, Holi, Navratri, Eid, temple visits, karma, astrology). The audience is Christian and reads it as Jesus approving other worship. Indian family life is welcome (Amma, Appa, aunties, trains home, office life); use neutral moments or the Christian calendar (Sunday church, Advent, Christmas, Good Friday, Easter, a church wedding).",
+    "R11 (2026-11-05): the first line is a confession (\"Jesus... I said yes again.\") or a statement (\"Jesus... my brother's EMI is on my card now.\"), never a question. On YouTube question hooks get about a third of the views (median 382 vs 1,270 statement, 1,440 confession); one script feeds both platforms. The validator fails a question opener.",
+    "R12 (2026-11-05): the last line of the script is a share line (speaker 'engagement') in the channel voice, worded freshly each time and naming who needs it (\"Send this to someone who needs it today.\", \"Pass this to the daughter still sitting at that table.\"). The caption carries a share line too. Never 'type amen', 'comment', 'tag', or any engagement bait.",
+    "R13 (2026-11-05): the package has first_comment: one easy, warm question tied to the episode, under 150 characters, no links/hashtags/bait (\"Has someone in your family ever said this to you?\"). Instagram posts it through Buffer; on YouTube the comment run posts and pins it.",
+    "Self-harm, suicide or abuse stories are held for Selvin's review before publishing and their caption and description must also carry: \"If you are in danger, please reach a local crisis line: US 988 (call or text), UK & Ireland Samaritans 116 123, India Tele-MANAS 14416.\". Prefer other themes for the daily slots."
+  ],
+  "avoid_titles": [
+    "Jesus... I Eat Lunch On The Staircase Every Day 🍱",
+    "Jesus... I Liked His Photo With Her 💔",
+    "Jesus... I Fell Asleep In The Office Washroom 😮‍💨",
+    "Jesus... She Got The Promotion I Trained Her For 👏",
+    "Jesus... She Sent My Hoodie Back. No Note. 📦",
+    "Jesus... My Bible App Says 412 Days 📖",
+    "Jesus... My Younger Cousin Bought A Car 🚗",
+    "Jesus... Why Am I Nervous To Serve At Church Again? 😊",
+    "Jesus... Why Did I Stay Quiet When She Took My Credit? 😤",
+    "Jesus... Why Does An Empty Room Feel This Loud? 😔",
+    "Jesus... I Replayed This Morning's Meeting In My Head All Night. 😵‍💫",
+    "Jesus... Why Am I Crying When Nothing's Wrong? 😭",
+    "Jesus... I've Missed Every Sunday This Month 🌙",
+    "Jesus... Good News Came And I Can't Enjoy It 🙂"
+  ],
+  "avoid_scripture": [
+    "Matthew 25:35",
+    "Psalms 147:3",
+    "Isaiah 40:29",
+    "Proverbs 14:30",
+    "Psalms 34:18",
+    "John 6:68",
+    "Hebrews 13:5",
+    "Ephesians 2:10",
+    "Proverbs 15:1",
+    "Ecclesiastes 4:10",
+    "Matthew 6:34",
+    "Romans 8:26",
+    "Hebrews 10:25",
+    "James 1:17"
+  ],
+  "avoid_hooks": [
+    "Jesus... I eat lunch on the office staircase every day. 🍱",
+    "Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔",
+    "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+    "Jesus... my best friend got the promotion I trained her for. I clapped first. 👏",
+    "Jesus... she sent my hoodie back by courier today. No note. I still checked the pockets. 📦",
+    "Jesus... my Bible app says 412 days since I last read. I swiped the reminder away. 📖",
+    "Jesus... my younger cousin drove to the family lunch in his new car. I said I prefer the metro. 🚗",
+    "Jesus... I signed up to serve at church again. Sunday. 😊",
+    "Jesus... my teammate read out my fix in the standup. My name wasn't said. 😤",
+    "Jesus... why does an empty room feel this loud? 😔",
+    "Jesus... I've replayed this morning's meeting in my head all night. 😵‍💫",
+    "Jesus... why am I crying when nothing's wrong? 😭",
+    "Jesus... I've missed every Sunday this month. 🌙",
+    "Jesus... good news came. I can't enjoy it. 🙂"
+  ],
+  "recent_topics": [
+    "he eats lunch on the office staircase every day and calls it a choice, but really no one ever asked him to join",
+    "her ex posted a photo with his new girlfriend and she liked it so he would think she is fine",
+    "exhausted after a third late night, he fell asleep in the office washroom and told his manager he was on a call",
+    "her best friend at work got the promotion she trained her for, and she clapped first while envy ate at her",
+    "his ex returned his hoodie by courier with no note, and he still checked the pockets for a message",
+    "her Bible app says it has been 412 days since she last read, and she swiped the reminder away in shame",
+    "at the family lunch his younger cousin showed off a new car, and he stayed inside pretending he prefers the metro",
+    "she signed up to serve at her church again after months away, and keeps telling herself she is busy, not scared",
+    "his teammate presented the fix he built as her own at the morning standup, and he stayed quiet all day",
+    "her roommate moved out this morning with two suitcases and one long hug, and the room feels loud tonight",
+    "he replays every meeting at night hunting for the sentence he got wrong, and calls it preparing for tomorrow",
+    "she cried in the car after a genuinely good day and cannot explain the tears to anyone, least of all herself",
+    "she works night shifts and has missed church for a month, and feels like God now works a different shift",
+    "good things finally arrived for him and he cannot enjoy any of it, always waiting for the catch"
+  ],
+  "recent_emotions": [
+    "sad",
+    "crying",
+    "neutral",
+    "angry",
+    "hopeful",
+    "sad",
+    "sad",
+    "hopeful",
+    "angry",
+    "sad",
+    "neutral",
+    "crying",
+    "hopeful",
+    "happy"
+  ],
+  "duration_target_seconds": [
+    45,
+    55
+  ],
+  "duration_ceiling_seconds": 60,
+  "duration_rule": "aim for 45-55 s (about 112 spoken words across all lines incl. the verse); the validator estimates the length before rendering and rejects anything over 60 s",
+  "scripture_rule": "King James Version (KJV, public domain), version=\"KJV\", text copied verbatim, character for character, from data/bible/kjv.json (get it with `python3 scripts/daily/jr_daily.py verse \"Psalm 23:1\"`); never paraphrase or modernise the wording; label it (KJV) in captions and descriptions; never NIV/ESV/NLT/BSB or any other translation; the verse must fit its context (review rule R10); unverifiable -> BLOCKED",
+  "hook_rule": "R11: line 1 is a confession or a statement, never a question (no '?', no 'why/how/what/is/does...' opener). YouTube median views by hook: question 382 (n=41), statement 1,270 (n=11), confession 1,440 (n=24); Instagram is neutral. One script feeds both platforms, so the rule holds for both. The validator fails a question opener.",
+  "allowed_hook_types": [
+    "confession",
+    "statement"
+  ],
+  "script_template": [
+    "person: hook (confession or statement; concrete moment + what they hid, <=18 words)",
+    "person: one concrete detail",
+    "jesus: names the hidden thing",
+    "person: pushback",
+    "jesus: the turn",
+    "bible_verse (KJV verbatim, R10 context)",
+    "jesus: payoff, echoes a word from the hook",
+    "engagement: SHARE LINE (last line, R12): who needs it, fresh wording each episode, no bait"
+  ],
+  "share_line_rule": "R12: the script's last line (speaker 'engagement') is a share line in the channel voice that names who needs it, worded differently from recent episodes; the caption carries a share line too. Examples, never copied verbatim every time: ['Send this to someone who needs it today.', \"Send this to the friend who always says she's fine.\", 'Share this with the brother who carries it alone.', 'Pass this to the daughter still sitting at that table.']. Never 'type amen', 'comment', 'tag'.",
+  "first_comment_rule": "R13: package field first_comment = one easy, warm question tied to this episode, <=150 chars, no links/hashtags/bait, e.g. 'Has someone in your family ever said this to you?'. Buffer posts it as the Instagram first comment; the comment run posts and pins it on YouTube.",
+  "caption_template": [
+    "1 the hurt + one searchable phrase",
+    "2 the story in a line, Jesus's reply, the verse with (KJV) and reference",
+    "3 one small, easy question",
+    "4 SHARE LINE (R12, may match the script's last line)",
+    "5 series line",
+    "6 honesty line (exact words, last)",
+    "hashtags: exactly 5, in instagram_hashtags only"
+  ],
+  "package_fields": [
+    "instagram_caption",
+    "instagram_hashtags",
+    "youtube_title",
+    "youtube_description",
+    "thumbnail_text",
+    "first_comment"
+  ],
+  "series": {
+    "series": "family-pressure",
+    "source": "content-os/series/family-pressure.json",
+    "week_start": "2026-11-09",
+    "date": "2026-11-09",
+    "slot": "MORNING",
+    "episode_id": "JR-0096",
+    "status": "AUTHORED",
+    "idea": "Refused a match whose family wanted her to quit her job; her mother hasn't spoken to her in 4 days.",
+    "verse": "Psalms 27:10",
+    "r10_context": "Psalm 27 is David's confidence in the LORD when surrounded and abandoned; v10: even if father and mother forsake me, the LORD will take me up. Used for: a parent's silence is not the last word on whether you are held. Not used to call the mother wicked or to cut her off."
+  },
+  "strategy": {
+    "source": "content-os/learnings.json + content-os/STRATEGY.md",
+    "as_of": "2026-11-05T06:38:20.021649+00:00",
+    "lean_towards": [],
+    "avoid": [
+      "hook_type=question (episode score 0.31 vs 0.52, n=21, IG+YT percentile)"
+    ],
+    "evidence_notes": [
+      "instagram slot medians: morning (06-12 IST) 1606 (n=23), night (18-24 IST) 1534 (n=22)",
+      "youtube slot medians: morning (06-12 IST) 1339 (n=25), night (18-24 IST) 1255 (n=25)",
+      "instagram: 5 of 50 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061, JR-0046, JR-0042, JR-0041, JR-0033",
+      "rules need n>=8 episodes per bucket; smaller buckets are reported only"
+    ],
+    "top_hooks_to_learn_from": [
+      "JR-0041 score 0.94 (youtube 2036 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0063 score 0.90 (instagram 1913, youtube 3770 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
+      "JR-0070 score 0.83 (instagram 2204, youtube 1655 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
+      "JR-0046 score 0.80 (youtube 1662 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
+      "JR-0082 score 0.75 (instagram 1863, youtube 1623 views): Jesus... I eat lunch on the office staircase every day. 🍱"
+    ]
+  },
+  "review_rules": {
+    "source": "content-os/review-rules.json",
+    "as_of": "2026-11-05",
+    "rules": [
+      {
+        "id": "R1-hidden-feeling-hook",
+        "since": "2026-10-18",
+        "rule": "First line = one concrete moment + what the person pretended or hid in it (\"I smiled in every photo\", \"he told us he was at work\", \"I replied okay so he wouldn't see me cry\"). Keep it under ~18 words so it can be read on mute in the first 2-3 seconds.",
+        "evidence": "Last 14 days: JR-0045 (IG 2,251 views, 67 saves, best of the window), JR-0020 earlier (1,909 / 48 saves), JR-0040 (IG 1,659 + YT 1,201), JR-0046 (YT 1,315) all open on a hidden feeling. Mosseri: watch time and the first seconds gate distribution (kompozy.io, 2026-09-25); YouTube Shorts: viewed vs swiped away is the core signal (outlierkit.com, 2026-10-03)."
+      },
+      {
+        "id": "R2-no-worried-future",
+        "since": "2026-10-18",
+        "rule": "Avoid 'worried about the future' episodes (money next month, will I belong, going back to church someday). If the topic is a worry, set it in a present, concrete scene that already happened today, and label the emotion sad/hurt, not worried. At most 1 per week.",
+        "evidence": "emotion=worried: JR-0024 247, JR-0037 198, JR-0030 1,287 IG views vs window median 1,370; flagged already on 2026-10-11 (IG median 280, n=4)."
+      },
+      {
+        "id": "R3-send-line-names-a-person",
+        "since": "2026-10-18",
+        "rule": "The engagement line is a send line that names one specific person (\"Send this to the friend who...\"). Never 'type a prayer', 'comment amen', 'tag a friend'.",
+        "evidence": "Sends per reach is Instagram's strongest signal for non-followers (Mosseri, restated 2026-09-25, kompozy.io). JR-0053 old version still said 'Type a prayer...' and was fixed in this review."
+      },
+      {
+        "id": "R4-youtube-comments-are-the-conversation",
+        "since": "2026-10-18",
+        "rule": "Write the closing question so it can be answered in one line on YouTube too; the review replies to YouTube comments from Studio.",
+        "evidence": "Last 14 days: 32 comments on 26 YouTube Shorts vs 4 on 26 Instagram Reels.",
+        "note": "2026-11-05 (R13): the answerable question now goes in first_comment (pinned on YouTube by the comment run, posted by Buffer on Instagram); the caption may still carry one small question."
+      },
+      {
+        "id": "R5-no-other-faith-framing",
+        "since": "2026-10-29",
+        "rule": "Never set an episode in another faith's festival, ritual or practice (Diwali, puja, festival lamps, rangoli, Holi, Navratri, Eid, temple visits, karma, astrology). Indian family life stays welcome (Amma, Appa, aunties, trains home, office, hostel); use neutral everyday moments or the Christian calendar (Sunday service, Advent, Christmas, Good Friday, Easter, a church wedding). Seasonal hooks come from the Christian year or from secular life (exams, salary day, monsoon, new year), never from another religion's worship. Enforced: safety.faith_framing holds any hit for review.",
+        "evidence": "JR-0071..JR-0078 ran five Diwali-framed episodes in a row (JR-0076 had Jesus saying 'You missed the puja' and 'The lamps need you'). YouTube viewer, 2026-10-28: 'Why would Jesus be ok with stuff to do with Diwali. The makers of this video gladly let go off the first commandment' (Exodus 20:3). Selvin, 2026-10-29: fix it, rework the strategy and schedules."
+      },
+      {
+        "id": "R6-spoken-words-cap",
+        "since": "2026-10-29",
+        "rule": "Keep total spoken words (all lines + verse) at 95-120. Over 130 words is a rewrite, not a trim. Split any line that runs past ~4s (about 10 words at 150 wpm) and change the frame inside it.",
+        "evidence": "skill_review calibration 2026-10-29 (n=47 per platform): IG top quartile median 110 words (~44s, 1,836 views) vs bottom quartile 157 words (~63s, 199 views); r(length, log views) = -0.43 IG, -0.22 YT. YT top quartile 115 words. Generic ig-reel hookscore does NOT predict our views (IG r=0.19, YT r=-0.30), so it stays advisory only."
+      },
+      {
+        "id": "R7-send-worthy",
+        "since": "2026-10-29",
+        "rule": "Every script names in its brief WHO would send it and TO WHOM (e.g. 'a friend going through a breakup'). If nobody would forward it, rewrite the angle. No comment-bait or 'type amen' CTAs.",
+        "evidence": "Mosseri 2026-10-23: sends matter far more than comments, especially for non-followers. Our IG sends/reach r=0.27 with log views vs likes/reach r=-0.06."
+      },
+      {
+        "id": "R8-first-frame",
+        "since": "2026-10-29",
+        "rule": "Frame 1 shows the viewer's problem as on-screen text readable without sound, within 1s. The first spoken line states the topic. No logo, title card or slow fade-in.",
+        "evidence": "YouTube Shorts gate = viewed vs swiped away. IG avg watch time 11.1s median is our strongest view predictor (r=0.40)."
+      },
+      {
+        "id": "R9-follow-reason",
+        "since": "2026-10-29",
+        "rule": "The last line gives a reason to follow, tied to the series (e.g. 'Jesus replies to a new struggle every morning'). Never beg. One line, under 3s.",
+        "evidence": "0 followers gained across 35 IG reels with ~1.2K median reach: strangers watch but don't convert.",
+        "note": "2026-11-05 (R12): the script's last line is now the share line; the follow reason lives in the caption's series line ('New question every morning and night.')."
+      },
+      {
+        "id": "R10-verse-means-it-in-context",
+        "since": "2026-10-30",
+        "rule": "The verse must mean, in its own passage, what the episode uses it for. Read the 3-5 verses around it before pairing. No proof-texting (e.g. Matthew 5:37 is about oaths, not lending boundaries). If no verse fits honestly, change the topic, not the meaning. Scripture is the KJV, quoted verbatim (DEC-JR-016); a correct quotation never excuses a wrong context.",
+        "evidence": "JR-0077 (IG, 2026-10-30) paired Matthew 5:37 (oaths, Matt 5:33-37) with saying no to a friend borrowing money; top comment: 'worst translation of Matthew 5:37'. The wording was verbatim (BSB at the time; KJV since 2026-11-05); the misuse was the context."
+      },
+      {
+        "id": "R11-no-question-hook",
+        "since": "2026-11-05",
+        "rule": "Line 1 is a confession (\"Jesus... I said yes again.\") or a statement (\"Jesus... my brother's EMI is on my card now.\"), never a question: no '?' and no why/how/what/is/does opener. One script feeds Instagram and YouTube, so it holds for both. The validator fails a question opener from JR-0094 on, and the planner only assigns confession/statement hook strategies.",
+        "evidence": "YouTube median views by hook type: question 382 (n=41), statement 1,270 (n=11), confession 1,440 (n=24). Instagram is neutral: question 1,526, statement 1,559, confession 1,319. learnings.json already listed hook_type=question under avoid (episode score 0.31 vs 0.52, n=21). Selvin approved 2026-11-05."
+      },
+      {
+        "id": "R12-share-line-last",
+        "since": "2026-11-05",
+        "rule": "The script's last line (speaker 'engagement') is a share line in the channel voice that names who needs it (\"Send this to someone who needs it today.\"), worded freshly each episode (the validator rejects a word-for-word repeat of the last 7). The caption carries a share line too. Never 'type amen', 'comment', 'tag' or other bait. Replaces the closing question; the question moves to the first comment (R13). Builds on R3.",
+        "evidence": "Sends per reach is Instagram's strongest signal for reaching non-followers (Mosseri 2026-10-23); our sends/reach r=0.27 with log views vs likes/reach r=-0.06. Selvin approved 2026-11-05."
+      },
+      {
+        "id": "R13-first-comment",
+        "since": "2026-11-05",
+        "rule": "Every new package has first_comment: one easy, warm question tied to the episode, at most 150 characters, no links, hashtags or bait (\"Has someone in your family ever said this to you?\"). Instagram: sent through Buffer as metadata.instagram.firstComment. YouTube: Buffer has no first-comment field, so the every-2-days comment run posts it from the channel and pins it (comment-replies.md).",
+        "evidence": "Comments are near zero on Instagram (4 on 26 Reels) but YouTube is where people answer (R4). A seeded, answerable question gives viewers an easy first reply. Selvin approved 2026-11-05."
+      }
+    ],
+    "experiments": [
+      "EXP-004 hidden-feeling hook (see content-os/experiments.json)",
+      {
+        "id": "EXP-003-yt-midday",
+        "since": "2026-10-29",
+        "plan": "YouTube: second Short at 13:00 IST instead of 20:30 for 14 days; keep IG at 08:00/20:30. Compare 7-day engaged-view medians vs 20:30 baseline (611).",
+        "status": "superseded by EXP-005 (DEC-JR-015, 2026-10-29)"
+      },
+      {
+        "id": "EXP-004-ig-ai-dubbing",
+        "since": "2026-10-29",
+        "plan": "Enable Instagram AI translations/dubbing (opt-in in app) for reels with speech; compare reach and non-follower share for 14 days.",
+        "status": "needs_user_toggle"
+      },
+      {
+        "id": "EXP-005-evening-1930",
+        "since": "2026-10-29",
+        "plan": "Evening slot 19:30 IST on both platforms vs 20:30 baseline (IG 1,358, YT 611). Read 2026-11-12, decision rule in experiments.json.",
+        "status": "active",
+        "note": "2026-11-05 (Selvin, DEC-JR-017): no slot change now (never change slots on n<10). At the 2026-11-12 read, also weigh moving YouTube's evening post to a morning slot at 05:00 IST against 19:30: 05:00 is 3 h before the 08:00 post and 18:30 US Eastern (YouTube's audience is US-led, ~44%). Evidence to carry into that read: YouTube 08:00 median 1,198 views (n=24) vs the old 20:30 median 725 (n=27); 19:30 has n=2 so far. Instagram slots stay 08:00/19:30. A move applies only to posts not yet in Buffer and needs n>=10 on the YouTube evening arm."
+      }
+    ]
+  }
+}

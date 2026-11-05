@@ -98,7 +98,14 @@ class Buffer:
         off = self.rules.get("buffer", {}).get("thumbnail_offset_ms", 1500)
         return f'[{{ video: {{ url: {json.dumps(url)}, metadata: {{ thumbnailOffset: {off} }} }} }}]'
 
-    def create_draft(self, text, url, due_at):
+    @staticmethod
+    def _ig_meta(first_comment=None):
+        """Instagram reel metadata. firstComment (Buffer GraphQL InstagramPostMetadataInput, checked by
+        introspection 2026-11-05) posts the package's first_comment right after the Reel (R13, DEC-JR-017)."""
+        fc = f", firstComment: {json.dumps(first_comment)}" if first_comment else ""
+        return f"{{ instagram: {{ type: reel, shouldShareToFeed: true, isAiGenerated: true{fc} }} }}"
+
+    def create_draft(self, text, url, due_at, first_comment=None):
         if not self.channel_id:
             return Outcome("REJECTED", detail="no Instagram channel id available")
         q = f"""mutation {{ createPost(input: {{
@@ -109,11 +116,11 @@ class Buffer:
   mode: customScheduled
   dueAt: {json.dumps(due_at)}
   assets: {self._video(url)}
-  metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true, isAiGenerated: true }} }}
+  metadata: {self._ig_meta(first_comment)}
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
         return self._mutate("createPost", q)
 
-    def schedule(self, post_id, text, url, due_at):
+    def schedule(self, post_id, text, url, due_at, first_comment=None):
         """Whole-post edit (Buffer validates edits as whole posts); only dueAt and
         saveToDraft:false differ from the draft."""
         q = f"""mutation {{ editPost(input: {{
@@ -123,7 +130,7 @@ class Buffer:
   mode: customScheduled
   schedulingType: automatic
   assets: {self._video(url)}
-  metadata: {{ instagram: {{ type: reel, shouldShareToFeed: true, isAiGenerated: true }} }}
+  metadata: {self._ig_meta(first_comment)}
   saveToDraft: false
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
         return self._mutate("editPost", q)

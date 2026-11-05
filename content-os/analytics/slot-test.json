@@ -24,5 +24,8 @@
       },
       "verdict": "insufficient data"
     }
-  }
+  },
+  "review_notes": [
+    "2026-11-05 (Selvin, DEC-JR-017): no slot change now (never change slots on n<10). At the 2026-11-12 read, also weigh moving YouTube's evening post to a morning slot at 05:00 IST against 19:30: 05:00 is 3 h before the 08:00 post and 18:30 US Eastern (YouTube's audience is US-led, ~44%). Evidence to carry into that read: YouTube 08:00 median 1,198 views (n=24) vs the old 20:30 median 725 (n=27); 19:30 has n=2 so far. Instagram slots stay 08:00/19:30. A move applies only to posts not yet in Buffer and needs n>=10 on the YouTube evening arm."
+  ]
 }
