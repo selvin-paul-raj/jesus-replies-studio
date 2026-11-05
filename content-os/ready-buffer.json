@@ -1,23 +1,23 @@
 {
-  "as_of": "2026-11-05T05:04:26.866791+00:00",
+  "as_of": "2026-11-05T05:07:30.611875+00:00",
   "target": 6,
   "ready_unscheduled": [],
   "scheduled_not_yet_published": [
     "JR-0089",
     "JR-0090",
     "JR-0091",
-    "JR-0092"
+    "JR-0092",
+    "JR-0093"
   ],
   "authored_in_pipeline": [
-    "JR-0093",
     "JR-0094",
     "JR-0095"
   ],
   "upcoming_slots_unauthored": [],
-  "ready_buffer": 4,
+  "ready_buffer": 5,
   "scheduled_by_platform": {
-    "instagram": 4,
-    "youtube": 4
+    "instagram": 5,
+    "youtube": 5
   },
   "parked_drafts_by_platform": {
     "instagram": [
@@ -32,7 +32,8 @@
   "authoring_needed": [
     "JR-0096",
     "JR-0097",
-    "JR-0098"
+    "JR-0098",
+    "JR-0099"
   ],
   "authoring_rule": "author each id with generated/<id>.json + <id>.package.json, run `python3 scripts/daily/jr_daily.py brief <id>` for constraints, read content-os/STRATEGY.md and content-os/learnings.json, then push; the daily generator validates, renders and schedules"
 }
