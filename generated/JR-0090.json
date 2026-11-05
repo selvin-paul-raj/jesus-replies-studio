@@ -1,48 +1,47 @@
 {
- "id": "JR-0090",
- "title": "Jesus... Why Did I Stay Quiet When She Took My Credit? 😤",
- "character": "boy",
- "topic": "his teammate presented the fix he built as her own at the morning standup, and he stayed quiet all day",
- "emotion": "angry",
- "bible": {
-  "book": "Proverbs",
-  "chapter": 15,
-  "verse": 1,
-  "version": "BSB",
-  "text": "A gentle answer turns away wrath, but a harsh word stirs up anger."
- },
- "lines": [
-  {
-   "speaker": "person",
-   "text": "Jesus... my teammate read out my fix in the standup. My name wasn't said. 😤"
+  "id": "JR-0090",
+  "title": "Jesus... Why Did I Stay Quiet When She Took My Credit? 😤",
+  "character": "boy",
+  "topic": "his teammate presented the fix he built as her own at the morning standup, and he stayed quiet all day",
+  "emotion": "angry",
+  "bible": {
+    "book": "Proverbs",
+    "chapter": 15,
+    "verse": 1,
+    "version": "BSB",
+    "text": "A gentle answer turns away wrath, but a harsh word stirs up anger."
   },
-  {
-   "speaker": "person",
-   "text": "I corrected her in my head the whole rest of the day."
-  },
-  {
-   "speaker": "jesus",
-   "text": "Anger at unfairness isn't the enemy. Silence that swallows it is."
-  },
-  {
-   "speaker": "person",
-   "text": "If I speak up, I look petty. If I don't, my work walks away wearing her name."
-  },
-  {
-   "speaker": "jesus",
-   "text": "A gentle answer can still be a clear one. Clarity costs less than resentment."
-  },
-  {
-   "speaker": "bible_verse",
-   "text": null
-  },
-  {
-   "speaker": "jesus",
-   "text": "Say it once, calmly, in the room where it happened. That's enough."
-  },
-  {
-   "speaker": "engagement",
-   "text": "Have you ever had your credit taken? 👇"
-  }
- ]
+  "lines": [
+    {
+      "speaker": "person",
+      "text": "Jesus... my teammate read out my fix in the standup. My name wasn't said. 😤"
+    },
+    {
+      "speaker": "person",
+      "text": "I corrected her in my head the whole rest of the day."
+    },
+    {
+      "speaker": "jesus",
+      "text": "Anger at unfairness isn't the enemy. Silence that swallows it is."
+    },
+    {
+      "speaker": "person",
+      "text": "If I speak up, I look petty. If I don't, my work walks away wearing her name."
+    },
+    {
+      "speaker": "jesus",
+      "text": "A gentle answer can still be a clear one. Clarity costs less than resentment."
+    },
+    {
+      "speaker": "bible_verse"
+    },
+    {
+      "speaker": "jesus",
+      "text": "Say it once, calmly, in the room where it happened. That's enough."
+    },
+    {
+      "speaker": "engagement",
+      "text": "Have you ever had your credit taken? 👇"
+    }
+  ]
 }
