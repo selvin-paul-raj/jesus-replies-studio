@@ -1,6 +1,8 @@
 {
   "_note": "Content OS settings. Ids only; the Buffer key lives only in secrets.BUFFER_API_KEY.",
   "timezone": "Asia/Kolkata",
+  "scripture_version": "KJV",
+  "_scripture_why": "KJV (King James Version, 1769, public domain) since 2026-11-05, Selvin: 'NIV or KJV, like original normal english'. NIV ruled out (Biblica 500-verse cap per platform, licence needed for AI-made/voiced content). Text bundled at data/bible/kjv.json; scripts/daily/scripture.py reads this key. DEC-JR-016.",
   "videos_per_day": 2,
   "platforms": [
     "instagram",
@@ -21,7 +23,7 @@
     "full_autonomy": {
       "given": "2026-10-11 20:48 IST, Selvin in chat",
       "quote": "dont stop it continus complete automous running system i wnat it bi-weelky review it and enhance the content and enagament , qually and follow ups and crack chnaging algorthim of thsoe social medias build life long running system self correction , feeadbackloop system",
-      "effect": "human approval step removed: an episode that passes every automated gate (BSB verse verbatim check (NIV until 2026-10-16), originality, render QA, package QA, hosting check, Buffer draft read-back) is approved and scheduled into its reserved slot on Instagram and YouTube without waiting for Selvin. Gates stay; failures self-heal (bounded) or the slot is filled from READY spares.",
+      "effect": "human approval step removed: an episode that passes every automated gate (KJV verse verbatim check (NIV until 2026-10-16, BSB until 2026-11-04), originality, render QA, package QA, hosting check, Buffer draft read-back) is approved and scheduled into its reserved slot on Instagram and YouTube without waiting for Selvin. Gates stay; failures self-heal (bounded) or the slot is filled from READY spares.",
       "limits": "never spends money, never deletes published posts, never changes a Buffer plan; held_episodes stay held; crisis-gate holds (episodes/<id>/state.json review.status HELD_FOR_REVIEW, DEC-JR-007) are never auto-approved or published",
       "decision": "content-os/DECISIONS.md DEC-JR-005"
     }

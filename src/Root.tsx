@@ -64,8 +64,8 @@ export const Root: React.FC = () => {
         width={1080}
         height={1440}
         defaultProps={BibleVersePostPropsSchema.parse({
-          verseText: "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope.",
-          referenceText: "Jeremiah 29:11\nBSB",
+          verseText: "For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.",
+          referenceText: "Jeremiah 29:11\nKJV",
         })}
       />
       {/* Same card, full-screen 9:16 for Instagram Stories (config daily_verse.instagram_post_type) */}
@@ -76,8 +76,8 @@ export const Root: React.FC = () => {
         width={1080}
         height={1920}
         defaultProps={BibleVersePostPropsSchema.parse({
-          verseText: "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope.",
-          referenceText: "Jeremiah 29:11\nBSB",
+          verseText: "For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.",
+          referenceText: "Jeremiah 29:11\nKJV",
         })}
       />
     </>

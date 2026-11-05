@@ -8,6 +8,7 @@ import path from "node:path";
 import { bundle } from "@remotion/bundler";
 import { renderStill, selectComposition, openBrowser } from "@remotion/renderer";
 import seriesData from "../content-os/series/global-bible-month-2026.json";
+import contentOs from "../config/content-os.json";
 import { BibleVersePostPropsSchema } from "../src/schema";
 import { verseInstagramType, verseCompositionId } from "./lib/verseConfig";
 
@@ -21,10 +22,16 @@ async function main(): Promise<void> {
   const bundleLocation = await bundle({ entryPoint: ENTRY_POINT });
   const puppeteerInstance = await openBrowser("chrome");
   try {
-    for (const d of seriesData.days) {
+    const version = (contentOs as { scripture_version: string }).scripture_version;
+    for (const d of seriesData.days as Array<{ day: number; reference: string; text: string; version?: string; posted?: boolean }>) {
+      if (d.posted) {
+        console.log(`[build-series] day ${d.day} already posted; skipped`);
+        continue;
+      }
+      if (d.version !== version) throw new Error(`series day ${d.day} is ${d.version}, expected ${version}`);
       const inputProps = BibleVersePostPropsSchema.parse({
         verseText: d.text.replace(/\s+/g, " ").trim(),
-        referenceText: `${d.reference}\nBSB`,
+        referenceText: `${d.reference}\n${version}`,
         eyebrowLabel: seriesData.eyebrow.replace("{day}", String(d.day)),
       });
       const composition = await selectComposition({ serveUrl: bundleLocation, id: compositionId, inputProps, puppeteerInstance });

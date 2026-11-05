@@ -33,5 +33,5 @@ jobs:
           GH_TOKEN: ${{ secrets.ACTION_GITHUB }}
         run: |
           TAG=$(node -p "require('./content-os/series/global-bible-month-2026.json').release_tag")
-          gh release view "$TAG" || gh release create "$TAG" --title "$TAG" --notes "Global Bible Month 2026 verse Story cards"
+          gh release view "$TAG" || gh release create "$TAG" --title "$TAG" --notes "Global Bible Month 2026 verse Story cards, King James Version (days 6-30; days 1-5 were posted in BSB from bible-month-2026)"
           gh release upload "$TAG" output/series/*.png --clobber

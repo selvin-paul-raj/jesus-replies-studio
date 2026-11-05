@@ -1,11 +1,12 @@
 """Steps of the daily post system. Every step reads state first, moves it along one
 legal edge, records evidence, and stops at the first failure. External effects
 (subprocess, scripture lookup, ffprobe, HTTP, Buffer) are injectable for tests.
-Scripture is the public-domain Berean Standard Bible bundled at data/bible/bsb.json
-(scripts/daily/bsb.py); there is no network scripture source any more (DEC-JR-007)."""
+Scripture is the public-domain translation named by config/content-os.json scripture_version
+(KJV since 2026-11-05, DEC-JR-016), bundled at data/bible/ and read by scripts/daily/scripture.py;
+there is no network scripture source (DEC-JR-007)."""
 import datetime as dt, json, pathlib, re, subprocess, urllib.request
 from zoneinfo import ZoneInfo
-from . import states, bsb, safety
+from . import states, scripture, safety
 from .redact import redact
 from .store import Store, now_iso, ID_RE
 
@@ -76,7 +77,7 @@ class Ctx:
         self.store = store or Store(root)
         self.run_id, self.dry_run, self.buffer, self.repo = run_id, dry_run, buffer, repo
         self.run = run or (lambda cmd, env=None: subprocess.run(cmd, capture_output=True, text=True, env=env))
-        self.fetch_scripture = fetch_scripture or bsb.lookup
+        self.fetch_scripture = fetch_scripture or scripture.lookup
         self.probe, self.http_get = probe, http_get
         self.now = now or (lambda: dt.datetime.now(dt.timezone.utc))
         self.log = lambda m: log(redact(m))
@@ -176,7 +177,7 @@ def words_budget(rules):
 def brief(ctx, eid):
     """Authoring constraints for one slot. Writes no dialogue."""
     recent = sorted(corpus(ctx, exclude=eid), key=lambda e: _jr_num(e.get("id", "")) or 0)[-14:]
-    b = {"episode_id": eid, "schema": "generated/JR-0036.json (id,title,character,topic,emotion,bible{book,chapter,verse,version=BSB,text},lines[{speaker,text}])",
+    b = {"episode_id": eid, "schema": f"generated/JR-0036.json (id,title,character,topic,emotion,bible{{book,chapter,verse,version={scripture.VERSION},text}},lines[{{speaker,text}}])",
          "package_schema": "generated/JR-0036.package.json",
          "honesty_line": safety.HONESTY_LINE,
          "writer_rules": safety.WRITER_RULES,
@@ -188,9 +189,11 @@ def brief(ctx, eid):
          "duration_rule": (f"aim for {ctx.rules['duration']['target_seconds'][0]}-{ctx.rules['duration']['target_seconds'][1]} s "
                            f"(about {words_budget(ctx.rules)} spoken words across all lines incl. the verse); the validator "
                            f"estimates the length before rendering and rejects anything over {ctx.rules['duration']['ceiling_seconds']} s"),
-         "scripture_rule": ("Berean Standard Bible (BSB, public domain), version=\"BSB\", text copied verbatim from "
-                            "data/bible/bsb.json (get it with `python3 scripts/daily/jr_daily.py verse \"Psalm 23:1\"`); "
-                            "label it (BSB) in captions and descriptions; never NIV/ESV/NLT; unverifiable -> BLOCKED")}
+         "scripture_rule": (f"{scripture.LABEL} ({scripture.VERSION}, public domain), version=\"{scripture.VERSION}\", text copied "
+                            f"verbatim, character for character, from {scripture.PATH.relative_to(scripture.ROOT)} (get it with "
+                            "`python3 scripts/daily/jr_daily.py verse \"Psalm 23:1\"`); never paraphrase or modernise the "
+                            f"wording; label it ({scripture.VERSION}) in captions and descriptions; never NIV/ESV/NLT/BSB or any "
+                            "other translation; the verse must fit its context (review rule R10); unverifiable -> BLOCKED")}
     lp = ctx.root / "content-os/learnings.json"
     if lp.exists():               # feedback loop: analytics -> learnings -> every new brief
         L = json.loads(lp.read_text())
@@ -229,7 +232,7 @@ def step_validated(ctx, st):
     for f in ("title", "character", "topic", "emotion"):
         if not ep.get(f): probs.append(f"missing {f}")
     b = ep.get("bible") or {}
-    if b.get("version") != bsb.VERSION or not b.get("text"): probs.append("scripture missing or not BSB")
+    if b.get("version") != scripture.VERSION or not b.get("text"): probs.append(f"scripture missing or not {scripture.VERSION}")
     r = ctx.run(["npx", "tsx", "scripts/daily/validate-episode.ts", str(ctx.ep_path(eid))])
     if r.returncode != 0: probs.append(f"schema validator: {(r.stdout or r.stderr).strip()[-300:]}")
     est = estimated_seconds(r.stdout)
@@ -252,12 +255,12 @@ def step_validated(ctx, st):
         ctx.log(f"[scripture] fetch error {type(e).__name__}")
     if not fetched:
         st["validation"] = "BLOCKED"
-        return ctx.store.transition(st, "BLOCKED", f"scripture {ref} not found in the bundled BSB text; not rendering", ctx.run_id)
-    if norm_text(fetched).lower() != norm_text(b["text"]).lower():
+        return ctx.store.transition(st, "BLOCKED", f"scripture {ref} not found in the bundled {scripture.VERSION} text; not rendering", ctx.run_id)
+    if norm_text(fetched) != norm_text(b["text"]):          # exact wording and case (LORD), fail closed
         st["validation"] = "FAIL"
-        return ctx.store.transition(st, "VALIDATION_FAILED", f"scripture {ref} text does not match BSB source", ctx.run_id)
+        return ctx.store.transition(st, "VALIDATION_FAILED", f"scripture {ref} text does not match {scripture.VERSION} source", ctx.run_id)
     st["validation"] = "PASS"
-    return ctx.store.transition(st, "VALIDATED", f"schema PASS, originality PASS, BSB {ref} verbatim match", ctx.run_id)
+    return ctx.store.transition(st, "VALIDATED", f"schema PASS, originality PASS, {scripture.VERSION} {ref} verbatim match", ctx.run_id)
 
 
 def video_path(ctx, eid):
@@ -368,6 +371,8 @@ def step_package_qa(ctx, st):
         names = {book.lower(), book.lower()[:-1] if book.lower() == "psalms" else book.lower()}
         if book and not any(n in hay for n in names):
             probs.append(f"Bible reference {book} not in caption or description")
+        wrong = sorted({t for t in re.findall(r"\b(NIV|BSB|ESV|NLT|NKJV|NASB|CSB|MSG)\b", json.dumps(pk))} - {scripture.VERSION})
+        if v2 and wrong: probs.append(f"package labels another translation {wrong}; Scripture is {scripture.VERSION} only")
         others = set(re.findall(r"JR-\d{4}", json.dumps(pk))) - {eid}
         if others: probs.append(f"references other episodes {sorted(others)}")
         crisis, found = safety.crisis_check(ep, pk)
@@ -777,7 +782,7 @@ def heal(ctx, st, max_attempts=3):
         return st, None
     action, reopen_to = None, None
     B = st["buffer"]
-    if s == "VALIDATION_FAILED" and "does not match BSB source" in last and "originality" not in last:
+    if s == "VALIDATION_FAILED" and "source" in last and "does not match" in last and "originality" not in last:
         ep = json.loads(ctx.ep_path(eid).read_text())
         try:
             fetched = ctx.fetch_scripture(ref_of(ep)) if ctx.fetch_scripture else None
@@ -789,7 +794,7 @@ def heal(ctx, st, max_attempts=3):
             ep["bible"]["text"] = fetched
             ctx.ep_path(eid).write_text(json.dumps(ep, indent=2, ensure_ascii=False) + "\n")
             _replace_in_package(ctx, eid, old, fetched)
-            action = f"scripture text for {ref_of(ep)} replaced with the BSB source wording (episode + package)"
+            action = f"scripture text for {ref_of(ep)} replaced with the {scripture.VERSION} source wording (episode + package)"
     elif s == "BLOCKED" and st.get("validation") == "BLOCKED" and not B.get("post_id") and not B.get("pending_mutation"):
         action, reopen_to = "scripture lookup failed; retrying validation", "GENERATED"
     elif s in ("RENDER_FAILED", "RENDER_QA_FAILED"):
@@ -818,10 +823,14 @@ def heal(ctx, st, max_attempts=3):
             if any(k in last for k in ("honesty line", "crisis line", "banned phrase")):
                 crisis, _ = safety.crisis_check(json.loads(ctx.ep_path(eid).read_text()), pk)
                 fixes += safety.fix_package(pk, crisis=crisis)
+            if "labels another translation" in last:
+                for k, v in list(pk.items()):
+                    if isinstance(v, str): pk[k] = scripture.label(v)
+                fixes.append(f"translation labels set to {scripture.VERSION}")
             if "Bible reference" in last:
                 ep = json.loads(ctx.ep_path(eid).read_text())
                 ref = ref_of(ep)
-                pk["youtube_description"] = pk.get("youtube_description", "") + f"\n\n{ref} (BSB)"
+                pk["youtube_description"] = pk.get("youtube_description", "") + f"\n\n{ref} ({scripture.VERSION})"
                 fixes.append(f"reference {ref} added to the description")
             if fixes:
                 p.write_text(json.dumps(pk, indent=2, ensure_ascii=False) + "\n")

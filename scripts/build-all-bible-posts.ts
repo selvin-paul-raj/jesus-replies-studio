@@ -19,6 +19,7 @@ import path from "node:path";
 import { bundle } from "@remotion/bundler";
 import { renderStill, selectComposition, openBrowser } from "@remotion/renderer";
 import bibleData from "./bible.json";
+import contentOs from "../config/content-os.json";
 import { BibleVersePostPropsSchema } from "../src/schema";
 import { verseInstagramType, verseCompositionId } from "./lib/verseConfig";
 
@@ -33,12 +34,16 @@ interface VerseEntry {
 }
 
 const VERSES = (bibleData as { promises: VerseEntry[] }).promises;
+const SCRIPTURE_VERSION: string = (contentOs as { scripture_version: string }).scripture_version;
+if ((bibleData as { translation: string }).translation !== SCRIPTURE_VERSION) {
+  throw new Error(`scripts/bible.json is ${(bibleData as { translation: string }).translation}, expected ${SCRIPTURE_VERSION}`);
+}
 
 /** GitHub Release tag holding all 365 pre-built images as assets -- both
  * this script (uploader) and scripts/daily-bible-post.ts (consumer) need to
  * agree on it. Bump the suffix if bible.json's verses are ever reordered in
  * a way that changes which index maps to which verse. */
-export const BATCH_RELEASE_TAG = "bible-posts-v2"; // v2 = BSB text (2026-10-16); v1 held NIV cards
+export const BATCH_RELEASE_TAG = "bible-posts-v3-kjv"; // v3 = KJV text (2026-11-05, DEC-JR-016); v2 held BSB, v1 NIV
 
 /** File name for a given 0-based index into VERSES -- get-bible-verse.ts's
  * dayIndex (dayOfYear % VERSES.length) is exactly that index, so
@@ -65,7 +70,7 @@ async function main(): Promise<void> {
       const outputPath = path.join(OUT_DIR, assetFileName(i));
       const inputProps = BibleVersePostPropsSchema.parse({
         verseText: verse.text.replace(/\s+/g, " ").trim(),
-        referenceText: `${verse.reference}\nBSB`,
+        referenceText: `${verse.reference}\n${SCRIPTURE_VERSION}`,
       });
 
       console.log(`[build-all] (${i + 1}/${VERSES.length}) ${verse.reference}...`);

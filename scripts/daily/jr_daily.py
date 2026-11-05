@@ -14,9 +14,11 @@
   status EID
   release-review EID --by NAME --evidence "words"
                                            a human read a crisis-gate hold and lets it continue
-  verse "Psalm 23:1"                       print the exact BSB text for a reference (authoring)
-  to-bsb EID                               switch an UNPUBLISHED, not-yet-in-Buffer episode from NIV to BSB
-                                           (episode text + package labels); refuses anything already drafted
+  verse "Psalm 23:1"                       print the exact KJV text for a reference (authoring); the
+                                           translation is config/content-os.json scripture_version
+  to-kjv EID                               switch an UNPUBLISHED, not-yet-in-Buffer episode to the KJV
+                                           (same reference; episode text + package text and labels);
+                                           refuses anything already drafted in Buffer
 
 --dry-run copies state to a scratch directory and never uploads, creates, schedules or
 publishes. Secrets are redacted from every printed line."""
@@ -25,7 +27,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 from daily import pipeline as pl                      # noqa: E402
 from daily.store import Store                         # noqa: E402
 from daily.buffer import Buffer                       # noqa: E402
-from daily import bsb                                 # noqa: E402
+from daily import scripture                           # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 
@@ -55,7 +57,7 @@ def main():
     buffer = None
     if os.environ.get("BUFFER_API_KEY"):
         buffer = Buffer.from_env(rules)
-    ctx = pl.Ctx(ROOT, rules, store, run_id, a.dry_run, buffer, fetch_scripture=bsb.lookup)
+    ctx = pl.Ctx(ROOT, rules, store, run_id, a.dry_run, buffer, fetch_scripture=scripture.lookup)
 
     if a.cmd == "next-id":
         print(pl.next_episode_id(ctx)); return 0
@@ -126,38 +128,47 @@ def main():
         store.save(st)
         print(f"[review] {a.eid} RELEASED by {a.by}; the next daily run continues it"); return 0
     if a.cmd == "verse":
-        t = bsb.lookup(a.eid)
-        print(t if t else f"[verse] {a.eid} not found in the BSB text")
+        t = scripture.lookup(a.eid)
+        print(t if t else f"[verse] {a.eid} not found in the {scripture.VERSION} text")
         return 0 if t else 1
+    if a.cmd in ("to-kjv", "to-version"):
+        return to_version(a.eid, store)
     if a.cmd == "to-bsb":
-        return to_bsb(a.eid, store)
+        print(f"[to-bsb] retired 2026-11-05 (DEC-JR-016): Scripture is {scripture.VERSION} now; use to-kjv"); return 1
     if a.cmd == "status":
         print(pl.report(store.load(a.eid))); return 0
     ap.error(f"unknown command {a.cmd}")
 
 
-def to_bsb(eid, store):
+def to_version(eid, store):
+    """Reference unchanged; verse text replaced by the active translation's exact wording, in the
+    episode and in every package text field, and older translation labels swapped. Never touches an
+    episode that is already approved, drafted in Buffer, scheduled or published."""
+    tag = f"[to-{scripture.VERSION.lower()}]"
     st = store.load(eid)
     if st["buffer"].get("post_id") or st["state"] in ("SCHEDULED", "PUBLISHED", "PUBLISHED_VERIFIED", "APPROVED"):
-        print(f"[to-bsb] {eid} is {st['state']} with Buffer post {st['buffer'].get('post_id')}; not touched")
+        print(f"{tag} {eid} is {st['state']} with Buffer post {st['buffer'].get('post_id')}; not touched")
         return 1
     ep_p, pk_p = ROOT / f"generated/{eid}.json", ROOT / f"generated/{eid}.package.json"
     ep = json.loads(ep_p.read_text())
     b = ep.get("bible") or {}
-    text = bsb.lookup(bsb.ref_from_bible(b))
+    ref = scripture.ref_from_bible(b)
+    text = scripture.lookup(ref)
     if not text:
-        print(f"[to-bsb] {eid} {bsb.ref_from_bible(b)} not in BSB"); return 1
+        print(f"{tag} {eid} {ref} not in the {scripture.VERSION} text; not touched"); return 1
     old = b.get("text")
-    b.update({"version": bsb.VERSION, "text": text})
+    b.update({"version": scripture.VERSION, "text": text})
     ep_p.write_text(json.dumps(ep, indent=2, ensure_ascii=False) + "\n")
     if pk_p.exists():
         pk = json.loads(pk_p.read_text())
-        for k in ("instagram_caption", "youtube_description", "thumbnail_text"):
-            if isinstance(pk.get(k), str):
-                v = pk[k].replace("(NIV)", "(BSB)").replace(" NIV", " BSB")
-                pk[k] = v.replace(old, text) if old else v
+        for k, v in list(pk.items()):
+            if isinstance(v, str):
+                for cand in ([old, old.strip("\u201c\u201d\""), pl.norm_text(old), pl.norm_text(old).strip('"')] if old else []):
+                    if cand and cand in v:
+                        v = v.replace(cand, text); break
+                pk[k] = scripture.label(v)
         pk_p.write_text(json.dumps(pk, indent=2, ensure_ascii=False) + "\n")
-    print(f"[to-bsb] {eid} now BSB {bsb.ref_from_bible(b)}; re-run advance to validate and re-render")
+    print(f"{tag} {eid} now {scripture.VERSION} {ref}; re-run advance to validate and re-render")
     return 0
 
 

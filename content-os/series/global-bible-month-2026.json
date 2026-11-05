@@ -1,7 +1,7 @@
 {
-  "_note": "Global Bible Month 2026 (Nov 1-30). Overrides the daily verse Story for these dates with a Genesis-to-Revelation arc. BSB text verbatim from bereanbible.com/bsb.txt (public domain). Cards render via build-series-posts.yml into release bible-month-2026; daily-bible-post.ts posts them. Stories only, no Reels (Selvin, 2026-10-30).",
+  "_note": "Global Bible Month 2026 (Nov 1-30). Overrides the daily verse Story for these dates with a Genesis-to-Revelation arc. Days 6-30: King James Version (KJV, public domain) verbatim from data/bible/kjv.json (DEC-JR-016, 2026-11-05), rendered by build-series-posts.yml into release bible-month-2026-kjv. Days 1-5 were already posted in BSB from release bible-month-2026; they keep their posted text and are marked posted (never rebuilt or reposted). Stories only, no Reels (Selvin, 2026-10-30).",
   "series": "global-bible-month-2026",
-  "release_tag": "bible-month-2026",
+  "release_tag": "bible-month-2026-kjv",
   "eyebrow": "GLOBAL BIBLE MONTH · DAY {day} OF 30",
   "hashtags": "#GlobalBibleMonth",
   "days": [
@@ -9,181 +9,216 @@
       "date": "2026-11-01",
       "day": 1,
       "reference": "Genesis 1:1",
-      "text": "In the beginning God created the heavens and the earth."
+      "text": "In the beginning God created the heavens and the earth.",
+      "posted": true,
+      "version": "BSB"
     },
     {
       "date": "2026-11-02",
       "day": 2,
       "reference": "Genesis 50:20",
-      "text": "As for you, what you intended against me for evil, God intended for good, in order to accomplish a day like this—to preserve the lives of many people."
+      "text": "As for you, what you intended against me for evil, God intended for good, in order to accomplish a day like this—to preserve the lives of many people.",
+      "posted": true,
+      "version": "BSB"
     },
     {
       "date": "2026-11-03",
       "day": 3,
       "reference": "Exodus 14:14",
-      "text": "The LORD will fight for you; you need only to be still."
+      "text": "The LORD will fight for you; you need only to be still.",
+      "posted": true,
+      "version": "BSB"
     },
     {
       "date": "2026-11-04",
       "day": 4,
       "reference": "Deuteronomy 31:8",
-      "text": "The LORD Himself goes before you; He will be with you. He will never leave you nor forsake you. Do not be afraid or discouraged."
+      "text": "The LORD Himself goes before you; He will be with you. He will never leave you nor forsake you. Do not be afraid or discouraged.",
+      "posted": true,
+      "version": "BSB"
     },
     {
       "date": "2026-11-05",
       "day": 5,
       "reference": "Joshua 1:9",
-      "text": "Have I not commanded you to be strong and courageous? Do not be afraid; do not be discouraged, for the LORD your God is with you wherever you go."
+      "text": "Have I not commanded you to be strong and courageous? Do not be afraid; do not be discouraged, for the LORD your God is with you wherever you go.",
+      "posted": true,
+      "version": "BSB"
     },
     {
       "date": "2026-11-06",
       "day": 6,
       "reference": "Ruth 1:16",
-      "text": "But Ruth replied: “Do not urge me to leave you or to turn from following you. For wherever you go, I will go, and wherever you live, I will live; your people will be my people, and your God will be my God."
+      "text": "And Ruth said, Intreat me not to leave thee, or to return from following after thee: for whither thou goest, I will go; and where thou lodgest, I will lodge: thy people shall be my people, and thy God my God:",
+      "version": "KJV"
     },
     {
       "date": "2026-11-07",
       "day": 7,
       "reference": "1 Samuel 16:7",
-      "text": "But the LORD said to Samuel, “Do not consider his appearance or height, for I have rejected him; the LORD does not see as man does. For man sees the outward appearance, but the LORD sees the heart.”"
+      "text": "But the LORD said unto Samuel, Look not on his countenance, or on the height of his stature; because I have refused him: for the LORD seeth not as man seeth; for man looketh on the outward appearance, but the LORD looketh on the heart.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-08",
       "day": 8,
       "reference": "Psalm 23:1",
-      "text": "The LORD is my shepherd; I shall not want."
+      "text": "The LORD is my shepherd; I shall not want.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-09",
       "day": 9,
       "reference": "Psalm 46:10",
-      "text": "“Be still and know that I am God; I will be exalted among the nations, I will be exalted over the earth.”"
+      "text": "Be still, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-10",
       "day": 10,
       "reference": "Psalm 119:105",
-      "text": "Your word is a lamp to my feet and a light to my path."
+      "text": "Thy word is a lamp unto my feet, and a light unto my path.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-11",
       "day": 11,
       "reference": "Proverbs 3:5",
-      "text": "Trust in the LORD with all your heart, and lean not on your own understanding;"
+      "text": "Trust in the LORD with all thine heart; and lean not unto thine own understanding.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-12",
       "day": 12,
       "reference": "Ecclesiastes 3:1",
-      "text": "To everything there is a season, and a time for every purpose under heaven:"
+      "text": "To every thing there is a season, and a time to every purpose under the heaven:",
+      "version": "KJV"
     },
     {
       "date": "2026-11-13",
       "day": 13,
       "reference": "Isaiah 41:10",
-      "text": "Do not fear, for I am with you; do not be afraid, for I am your God. I will strengthen you; I will surely help you; I will uphold you with My righteous right hand."
+      "text": "Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-14",
       "day": 14,
       "reference": "Isaiah 53:5",
-      "text": "But He was pierced for our transgressions, He was crushed for our iniquities; the punishment that brought us peace was upon Him, and by His stripes we are healed."
+      "text": "But he was wounded for our transgressions, he was bruised for our iniquities: the chastisement of our peace was upon him; and with his stripes we are healed.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-15",
       "day": 15,
       "reference": "Jeremiah 29:11",
-      "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope."
+      "text": "For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-16",
       "day": 16,
       "reference": "Lamentations 3:22-23",
-      "text": "Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness!"
+      "text": "It is of the LORD’s mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-17",
       "day": 17,
       "reference": "Micah 6:8",
-      "text": "He has shown you, O man, what is good. And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?"
+      "text": "He hath shewed thee, O man, what is good; and what doth the LORD require of thee, but to do justly, and to love mercy, and to walk humbly with thy God?",
+      "version": "KJV"
     },
     {
       "date": "2026-11-18",
       "day": 18,
       "reference": "Matthew 11:28",
-      "text": "Come to Me, all you who are weary and burdened, and I will give you rest."
+      "text": "Come unto me, all ye that labour and are heavy laden, and I will give you rest.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-19",
       "day": 19,
       "reference": "Mark 4:39",
-      "text": "Then Jesus got up and rebuked the wind and the sea. “Silence!” He commanded. “Be still!” And the wind died down, and it was perfectly calm."
+      "text": "And he arose, and rebuked the wind, and said unto the sea, Peace, be still. And the wind ceased, and there was a great calm.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-20",
       "day": 20,
       "reference": "Luke 15:20",
-      "text": "So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him."
+      "text": "And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-21",
       "day": 21,
       "reference": "John 3:16",
-      "text": "For God so loved the world that He gave His one and only Son, that everyone who believes in Him shall not perish but have eternal life."
+      "text": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-22",
       "day": 22,
       "reference": "Acts 2:42",
-      "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+      "text": "And they continued stedfastly in the apostles’ doctrine and fellowship, and in breaking of bread, and in prayers.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-23",
       "day": 23,
       "reference": "Romans 8:28",
-      "text": "And we know that God works all things together for the good of those who love Him, who are called according to His purpose."
+      "text": "And we know that all things work together for good to them that love God, to them who are the called according to his purpose.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-24",
       "day": 24,
       "reference": "1 Corinthians 13:4",
-      "text": "Love is patient, love is kind. It does not envy, it does not boast, it is not proud."
+      "text": "Charity suffereth long, and is kind; charity envieth not; charity vaunteth not itself, is not puffed up,",
+      "version": "KJV"
     },
     {
       "date": "2026-11-25",
       "day": 25,
       "reference": "Galatians 5:22-23",
-      "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. Against such things there is no law."
+      "text": "But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, Meekness, temperance: against such there is no law.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-26",
       "day": 26,
       "reference": "Philippians 4:6",
-      "text": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God."
+      "text": "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-27",
       "day": 27,
       "reference": "Hebrews 11:1",
-      "text": "Now faith is the assurance of what we hope for and the certainty of what we do not see."
+      "text": "Now faith is the substance of things hoped for, the evidence of things not seen.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-28",
       "day": 28,
       "reference": "James 1:5",
-      "text": "Now if any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him."
+      "text": "If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-29",
       "day": 29,
       "reference": "Revelation 3:20",
-      "text": "Behold, I stand at the door and knock. If anyone hears My voice and opens the door, I will come in and dine with him, and he with Me."
+      "text": "Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.",
+      "version": "KJV"
     },
     {
       "date": "2026-11-30",
       "day": 30,
       "reference": "Revelation 21:4",
-      "text": "‘He will wipe away every tear from their eyes,’ and there will be no more death or mourning or crying or pain, for the former things have passed away."
+      "text": "And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away.",
+      "version": "KJV"
     }
   ]
 }

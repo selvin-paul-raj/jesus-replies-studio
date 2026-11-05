@@ -1,17 +1,18 @@
 """Tests for the 2026-10-16 deep-review fixes (DEC-JR-007): honesty line, crisis gate,
-one duration setting, bundled BSB scripture, original audio rotation.
+one duration setting, bundled public-domain scripture (KJV since 2026-11-05, DEC-JR-016), original audio rotation.
 No network, no Buffer. Run: python3 -m unittest discover -s tests -v"""
 import json, os, pathlib, re, shutil, subprocess, sys, unittest
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from daily import pipeline as pl, bsb, safety                  # noqa: E402
+from daily import pipeline as pl, scripture, safety            # noqa: E402
+bsb = scripture   # old name used below; it is the ACTIVE (KJV) text
 from test_daily import Base, ep, GOOD_PROBE, VERSE             # noqa: E402
 
 EID = "JR-0064"
-GOOD_PKG = {"instagram_caption": "He asks Jesus why. Psalm 23:1 (BSB)\n\n" + safety.HONESTY_LINE,
+GOOD_PKG = {"instagram_caption": "He asks Jesus why. Psalm 23:1 (KJV)\n\n" + safety.HONESTY_LINE,
             "instagram_hashtags": ["#a", "#b", "#c", "#d", "#e"], "youtube_title": "My Father Left",
-            "youtube_description": "Psalm 23 reply (BSB)\n\n" + safety.HONESTY_LINE, "thumbnail_text": "He Left."}
+            "youtube_description": "Psalm 23 reply (KJV)\n\n" + safety.HONESTY_LINE, "thumbnail_text": "He Left."}
 
 
 class NewEpisode(Base):
@@ -175,27 +176,68 @@ class T22Duration(Base):
         self.assertEqual(st["state"], "RENDER_QA_FAILED")
 
 
-class T23BSB(unittest.TestCase):
+KJV_SPOT = {   # checked against eBible.org eng-kjv, scrollmapper KJV and bible-api.com (2026-11-05)
+    "John 3:16": "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
+    "Psalm 23:1": "The LORD is my shepherd; I shall not want.",
+    "Genesis 1:1": "In the beginning God created the heaven and the earth.",
+    "Matthew 5:37": "But let your communication be, Yea, yea; Nay, nay: for whatsoever is more than these cometh of evil.",
+    "2 Corinthians 9:7": "Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a cheerful giver.",
+    "Romans 8:28": "And we know that all things work together for good to them that love God, to them who are the called according to his purpose.",
+}
+
+
+class T23Scripture(unittest.TestCase):
+    def test_single_setting_is_kjv(self):
+        self.assertEqual(json.loads((ROOT / "config/content-os.json").read_text())["scripture_version"], "KJV")
+        self.assertEqual(scripture.VERSION, "KJV")
+        self.assertTrue(str(scripture.PATH).endswith("data/bible/kjv.json"))
+
     def test_lookup(self):
-        self.assertTrue(bsb.lookup("John 3:16").startswith("For God so loved the world"))
-        self.assertEqual(bsb.lookup("Psalms 23:1"), bsb.lookup("Psalm 23:1"))
-        self.assertIn("The LORD is my shepherd", bsb.lookup("Psalms 23:1"))
-        two = bsb.lookup("Romans 8:28-29")
-        self.assertTrue(two.startswith(bsb.lookup("Romans 8:28")) and two.endswith(bsb.lookup("Romans 8:29")))
-        self.assertIsNone(bsb.lookup("Hezekiah 1:1"))
-        self.assertIsNone(bsb.lookup("John 3:999"))
-        self.assertIsNone(bsb.lookup("John three"))
+        for ref, text in KJV_SPOT.items():
+            self.assertEqual(scripture.lookup(ref), text, ref)
+        self.assertEqual(scripture.lookup("Psalms 23:1"), scripture.lookup("Psalm 23:1"))
+        two = scripture.lookup("Romans 8:28-29")
+        self.assertTrue(two.startswith(scripture.lookup("Romans 8:28")) and two.endswith(scripture.lookup("Romans 8:29")))
+        self.assertIsNone(scripture.lookup("Hezekiah 1:1"))
+        self.assertIsNone(scripture.lookup("John 3:999"))
+        self.assertIsNone(scripture.lookup("John three"))
 
-    def test_bundle_is_complete_and_public_domain(self):
-        d = json.loads((ROOT / "data/bible/bsb.json").read_text())
-        self.assertGreater(len(d["verses"]), 31000)
+    def test_bundle_is_complete_clean_and_public_domain(self):
+        d = json.loads((ROOT / "data/bible/kjv.json").read_text())
+        b = json.loads((ROOT / "data/bible/bsb.json").read_text())
+        self.assertEqual(len(d["verses"]), 31102)
+        self.assertEqual(set(d["verses"]), set(b["verses"]))          # references map 1:1
         self.assertIn("public domain", d["license"].lower())
+        self.assertIn("ebible.org", d["source"])
+        for k, t in d["verses"].items():
+            self.assertTrue(t and not re.search(r"[\[\]\u00b6<>|]|strong=", t), k)
+        self.assertFalse(d["verses"]["Psalm 3:1"].startswith("A Psalm"))   # titles are not verse text
 
-    def test_daily_cards_are_bsb(self):
+    def test_daily_cards_are_kjv(self):
         d = json.loads((ROOT / "scripts/bible.json").read_text())
-        self.assertEqual(d["translation"], "BSB")
+        self.assertEqual(d["translation"], "KJV")
+        self.assertEqual(len(d["promises"]), 365)
         for e in d["promises"]:
-            self.assertEqual(e["text"], bsb.lookup(e["reference"]), e["reference"])
+            self.assertEqual(e["text"], scripture.lookup(e["reference"]), e["reference"])
+
+    def test_bible_month_upcoming_days_are_kjv(self):
+        d = json.loads((ROOT / "content-os/series/global-bible-month-2026.json").read_text())
+        self.assertTrue(d["release_tag"].endswith("-kjv"))
+        for day in d["days"]:
+            if day.get("posted"):
+                continue                                           # already on Instagram; kept as posted
+            self.assertEqual(day.get("version"), "KJV", day["day"])
+            self.assertEqual(day["text"], scripture.lookup(day["reference"]), day["reference"])
+
+    def test_verse_cards_fail_closed_on_kjv_release(self):
+        src = (ROOT / "scripts/daily-bible-post.ts").read_text()
+        self.assertIn('"bible-posts-v3-kjv"', src)
+        self.assertNotIn('"bible-posts-v2"', src)
+        self.assertIn("-kjv", src)
+        for f in ("scripts/build-all-bible-posts.ts", "scripts/build-series-posts.ts", "scripts/get-bible-verse.ts"):
+            src = (ROOT / f).read_text()
+            self.assertNotIn('"BSB"', src, f)
+            self.assertNotIn("\\nBSB`", src, f)                     # no BSB label on a card
 
     def test_no_niv_or_scraper_left_in_the_pipeline(self):
         self.assertFalse((ROOT / "scripts/fetch-passage.py").exists())
@@ -205,27 +247,36 @@ class T23BSB(unittest.TestCase):
             src = (ROOT / f).read_text()
             self.assertNotIn("biblegateway", src.lower(), f)
             self.assertNotIn('"NIV"', src, f)
+            self.assertNotIn('"BSB"', src, f)
 
 
-class T23BSBValidation(Base):
-    def test_default_lookup_verifies_and_rejects_niv_wording(self):
+class T23ScriptureValidation(Base):
+    def test_default_lookup_verifies_and_rejects_other_wording(self):
         g = self.root / "generated"
         e = ep("JR-0002", "My Father Left", "Jesus, my dad packed his bags last night.")
-        e["bible"].update(book="Psalms", chapter=23, verse="1", version="BSB", text=bsb.lookup("Psalm 23:1"))
+        e["bible"].update(book="Psalms", chapter=23, verse="1", version="KJV", text=scripture.lookup("Psalm 23:1"))
         (g / "JR-0002.json").write_text(json.dumps(e))
-        self.ctx.fetch_scripture = bsb.lookup
+        self.ctx.fetch_scripture = scripture.lookup
         s = self.ctx.store.transition(self.ctx.store.load("JR-0002"), "GENERATED", "t")
         self.assertEqual(pl.step_validated(self.ctx, s)["state"], "VALIDATED")
-        e["bible"]["text"] = "The LORD is my shepherd, I lack nothing."          # NIV wording
-        (g / "JR-0002.json").write_text(json.dumps(e))
-        s = self.ctx.store.load("JR-0002"); s["state"] = "GENERATED"; self.ctx.store.save(s)
-        st = pl.step_validated(self.ctx, s)
-        self.assertEqual(st["state"], "VALIDATION_FAILED")
-        self.assertIn("does not match BSB source", st["errors"][-1]["detail"])
-        e["bible"]["version"] = "NIV"
-        (g / "JR-0002.json").write_text(json.dumps(e))
-        s = self.ctx.store.load("JR-0002"); s["state"] = "GENERATED"; self.ctx.store.save(s)
-        self.assertIn("not BSB", pl.step_validated(self.ctx, s)["errors"][-1]["detail"])
+        for wrong in ("The LORD is my shepherd; I shall not be in want.",     # paraphrase
+                      "The Lord is my shepherd; I shall not want.",            # LORD small caps lost
+                      "The LORD is my shepherd; I lack nothing."):             # BSB wording
+            e["bible"]["text"] = wrong
+            (g / "JR-0002.json").write_text(json.dumps(e))
+            s = self.ctx.store.load("JR-0002"); s["state"] = "GENERATED"; self.ctx.store.save(s)
+            st = pl.step_validated(self.ctx, s)
+            self.assertEqual(st["state"], "VALIDATION_FAILED", wrong)
+            self.assertIn("does not match KJV source", st["errors"][-1]["detail"])
+        for v in ("NIV", "BSB", None):
+            e["bible"]["version"] = v
+            (g / "JR-0002.json").write_text(json.dumps(e))
+            s = self.ctx.store.load("JR-0002"); s["state"] = "GENERATED"; self.ctx.store.save(s)
+            self.assertIn("not KJV", pl.step_validated(self.ctx, s)["errors"][-1]["detail"])
+
+    def test_label_swap(self):
+        self.assertEqual(scripture.label("Psalm 23:1 (BSB)"), "Psalm 23:1 (KJV)")
+        self.assertEqual(scripture.label("Romans 8:28 (NIV)\nmore"), "Romans 8:28 (KJV)\nmore")
 
 
 class T25VerseStory(unittest.TestCase):

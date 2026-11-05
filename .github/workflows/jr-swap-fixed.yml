@@ -1,7 +1,7 @@
 name: JR swap fixed versions into Buffer queue
 
 # DEC-JR-009 (2026-10-16, Selvin yes via CEO 15:54 IST). Re-renders already-written episodes with the
-# deep-review fixes (original music, BSB, honesty line), uploads them to a NEW release tag (old assets
+# deep-review fixes (original music, BSB at the time -- KJV since 2026-11-05 DEC-JR-016, honesty line), uploads them to a NEW release tag (old assets
 # are kept), then edits the SAME queued Buffer posts in the SAME slots. Published posts are never touched.
 # mode=dry renders + uploads + prints the swap plan without Buffer mutations.
 

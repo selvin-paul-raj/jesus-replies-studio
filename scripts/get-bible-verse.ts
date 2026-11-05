@@ -1,14 +1,23 @@
 /**
  * ============================================================================
  * DAILY BIBLE VERSE -- picks one entry from the curated scripts/bible.json
- * (365 promises, one for every day of the year, Berean Standard Bible wording,
- * public domain since 2023) by day-of-year,
+ * (365 promises, one for every day of the year, King James Version wording,
+ * public domain; translation set by config/content-os.json scripture_version) by day-of-year,
  * so the same date always yields the same verse (reruns are idempotent).
  * Local data, no network call -- used only by scripts/daily-bible-post.ts.
  * ============================================================================
  */
 import bibleData from "./bible.json";
 import seriesData from "../content-os/series/global-bible-month-2026.json";
+import contentOs from "../config/content-os.json";
+
+/** The one Scripture setting (KJV since 2026-11-05, DEC-JR-016). */
+export const SCRIPTURE_VERSION: string = (contentOs as { scripture_version: string }).scripture_version;
+
+// Fail closed: the card text must be the configured translation, never an older one.
+if ((bibleData as { translation: string }).translation !== SCRIPTURE_VERSION) {
+  throw new Error(`scripts/bible.json is ${(bibleData as { translation: string }).translation}, expected ${SCRIPTURE_VERSION}`);
+}
 
 interface VerseEntry {
   id: number;
@@ -30,7 +39,7 @@ export interface DailyVerse {
   series?: { tag: string; releaseTag: string; day: number; eyebrow: string; hashtags: string };
 }
 
-interface SeriesDay { date: string; day: number; reference: string; text: string }
+interface SeriesDay { date: string; day: number; reference: string; text: string; version?: string; posted?: boolean }
 const SERIES = seriesData as { series: string; release_tag: string; eyebrow: string; hashtags: string; days: SeriesDay[] };
 
 /** Dated override (Global Bible Month 2026). Date is the UTC calendar day, matching the poster. */
@@ -38,9 +47,12 @@ export function seriesVerseForDate(date: Date): DailyVerse | null {
   const iso = date.toISOString().slice(0, 10);
   const hit = SERIES.days.find((d) => d.date === iso);
   if (!hit) return null;
+  if (hit.posted || hit.version !== SCRIPTURE_VERSION) {
+    throw new Error(`series day ${hit.day} is ${hit.posted ? "already posted" : hit.version}; refusing (expected ${SCRIPTURE_VERSION})`);
+  }
   return {
     reference: hit.reference,
-    version: "BSB",
+    version: SCRIPTURE_VERSION,
     text: hit.text.replace(/\s+/g, " ").trim(),
     dayIndex: -1,
     series: {
@@ -67,7 +79,7 @@ export async function getDailyVerse(date: Date = new Date()): Promise<DailyVerse
   const picked = VERSES[dayIndex];
   return {
     reference: picked.reference,
-    version: "BSB",
+    version: SCRIPTURE_VERSION,
     text: picked.text.replace(/\s+/g, " ").trim(),
     dayIndex,
   };

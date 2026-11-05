@@ -12,7 +12,7 @@ Each cycle (the weekly review, plus any time on request):
    are the strongest qualitative signal (e.g. the Diwali critique led to R5).
 4. **Read trends.** Christian calendar ahead (Global Bible Month in Nov, Thanksgiving, Advent,
    Christmas), and what is rising in Christian Shorts/Reels (deep-research / web search), filtered
-   through R1–R6. Never chase a trend that breaks R5 or the verbatim-scripture rule.
+   through R1–R6. Never chase a trend that breaks R5 or the verbatim-scripture rule (KJV, exact wording, DEC-JR-016).
 5. **Decide.** Update `review-rules.json` (each rule cites evidence; keep / change / drop),
    `STRATEGY.md`, and log the decision in `DECISIONS.md` with its reason.
 6. **Author.** New episodes via `reel-script.md`; run `skill_review.py` + validator before commit.

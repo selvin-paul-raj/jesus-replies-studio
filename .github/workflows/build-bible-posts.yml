@@ -1,11 +1,18 @@
 name: Build Bible Posts
 
-# Manual only -- this is the one-off (or "whenever bible.json changes") batch
-# render. It bundles Remotion once and renders all 365 verse cards, then
+# Batch render, run whenever bible.json (or this build) changes, or by hand.
+# It bundles Remotion once and renders all 365 verse cards, then
 # uploads them to a single GitHub Release so the daily workflow can post
 # from a pre-built image instead of rendering every day.
+# Push trigger added 2026-11-05 (DEC-JR-016) so the KJV switch rebuilds the cards on merge.
 on:
   workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - scripts/bible.json
+      - scripts/build-all-bible-posts.ts
+      - .github/workflows/build-bible-posts.yml
 
 permissions:
   contents: write
@@ -37,6 +44,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.ACTION_GITHUB }}
         run: |
-          TAG="bible-posts-v2"   # BSB cards (2026-10-16); v1 held NIV cards
-          gh release view "$TAG" || gh release create "$TAG" --title "$TAG" --notes "Pre-built daily Bible verse cards (see scripts/build-all-bible-posts.ts)"
+          TAG="bible-posts-v3-kjv"   # KJV cards (2026-11-05, DEC-JR-016); v2 held BSB, v1 NIV -- never reused
+          gh release view "$TAG" || gh release create "$TAG" --title "$TAG" --notes "Pre-built daily Bible verse cards, King James Version (public domain). See scripts/build-all-bible-posts.ts"
           gh release upload "$TAG" output/bible_verse_batch/*.png --clobber

@@ -3,6 +3,7 @@
 deep-review rules before they are re-rendered: BSB verse text, (BSB) labels, honesty line,
 'answered from Scripture', no 'in the comments' bait. Idempotent. Never touches published posts."""
 import json, pathlib, re, sys
+sys.exit("retired one-off (DEC-JR-009). Scripture is KJV since 2026-11-05 (DEC-JR-016): use `python3 scripts/daily/jr_daily.py to-kjv EID`")
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from daily import bsb, safety
 from daily.pipeline import norm_text

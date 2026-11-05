@@ -65,8 +65,13 @@ trends and experiment readings in `content-os/reviews/`.
 
 ## Deep review 2026-10-16 (DEC-JR-007) — rules every episode follows
 
-- **Scripture:** Berean Standard Bible (public domain), copied verbatim from `data/bible/bsb.json`
-  (`python3 scripts/daily/jr_daily.py verse "Psalm 23:1"`). Label it **(BSB)**. NIV is no longer used.
+- **Scripture (since 2026-11-05, DEC-JR-016):** King James Version (1769, public domain), copied
+  verbatim, character for character, from `data/bible/kjv.json`
+  (`python3 scripts/daily/jr_daily.py verse "Psalm 23:1"`). Label it **(KJV)**. Never modernise,
+  paraphrase or trim the wording (keep "thee", "LORD", the archaic spelling). The translation is the
+  single setting `config/content-os.json` `scripture_version`; NIV and BSB are no longer used. The
+  verse must still mean, in its own passage, what the episode uses it for (R10). KJV verses run
+  longer, so leave room for them inside the R6 word cap; never cut Scripture to fit.
 - **Length:** 50–62 s target, 75 s hard ceiling (`config/publishing-rules.json` duration, the only
   place it is set). The validator estimates the length before rendering.
 - **Honesty line** at the end of every Instagram caption and YouTube description:
@@ -85,7 +90,7 @@ trends and experiment readings in `content-os/reviews/`.
 Instagram link):
 1. First line: the hurt plus one searchable phrase people type ("Bible verse for jealousy",
    "prayer for anxiety", "when God feels silent").
-2. The story in a line or two, Jesus's reply, the verse with **(BSB)**.
+2. The story in a line or two, Jesus's reply, the verse with **(KJV)**.
 3. One small, easy question: "Which line hit you?" / "What would you have said to her?" Never a
    big reflective one ("Who in your family is carrying something?").
 4. One send line: "Send this to the sister who needs it." (name a specific person.)
