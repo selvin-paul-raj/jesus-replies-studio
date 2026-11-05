@@ -1,0 +1,121 @@
+{
+  "episode_id": "JR-0091",
+  "state": "APPROVED",
+  "updated_at": "2026-11-05T05:00:40Z",
+  "slot": null,
+  "target_date": null,
+  "generation": "PASS",
+  "validation": "PASS",
+  "render": "PASS",
+  "render_qa": "PASS",
+  "package": "PASS",
+  "package_qa": "PASS",
+  "asset_hosting": "VERIFIED",
+  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0091/JR-0091.mp4",
+  "render_facts": {
+    "estimated_seconds": 49.43,
+    "command": "npm run jr -- render generated/JR-0091.json --out-dir output",
+    "exit": 0,
+    "path": "output/videos/JR-0091.mp4",
+    "size_bytes": 5492314,
+    "how": "RENDERED",
+    "duration_s": 49.49,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "resolution": "1080x1920",
+    "warnings": []
+  },
+  "buffer": {
+    "post_id": "6aec0d7880f7fd0537eef20f",
+    "status": "draft",
+    "due_at": "2026-12-31T00:00:00.000Z",
+    "sent_at": null,
+    "pending_mutation": null,
+    "create_attempts": 1
+  },
+  "approval": {
+    "status": "APPROVED",
+    "approved_at": "2026-11-05T05:00:40Z",
+    "approved_by": "standing authorization",
+    "slot_local": null,
+    "due_at": null,
+    "evidence": "2026-10-11 20:48 IST, Selvin in chat: dont stop it continus complete automous running system i wnat it bi-weelky review it and enhance the content and enagament , qually and follow ups and crack chnaging algorthim of thsoe social medias build life long running system self correction , feeadbackloop "
+  },
+  "verification": {
+    "status": "NOT_VERIFIED",
+    "verified_at": null
+  },
+  "errors": [],
+  "history": [
+    {
+      "at": "2026-11-05T04:58:54Z",
+      "from": "NEW",
+      "to": "GENERATED",
+      "run": "41971033881",
+      "evidence": "generated/JR-0091.json present (1361 B)"
+    },
+    {
+      "at": "2026-11-05T04:58:55Z",
+      "from": "GENERATED",
+      "to": "VALIDATED",
+      "run": "41971033881",
+      "evidence": "schema PASS, originality PASS, BSB Ecclesiastes 4:10 verbatim match"
+    },
+    {
+      "at": "2026-11-05T05:00:35Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "41971033881",
+      "evidence": "RENDERED JR-0091.mp4 5492314 B"
+    },
+    {
+      "at": "2026-11-05T05:00:35Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "41971033881",
+      "evidence": "49.49s 1080x1920 h264/aac "
+    },
+    {
+      "at": "2026-11-05T05:00:35Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "41971033881",
+      "evidence": "JR-0091.package.json present"
+    },
+    {
+      "at": "2026-11-05T05:00:35Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_PASSED",
+      "run": "41971033881",
+      "evidence": "caption 734 chars, 5 hashtags, title 77, thumbnail JR-0091-thumb.png, honesty line OK"
+    },
+    {
+      "at": "2026-11-05T05:00:39Z",
+      "from": "PACKAGE_QA_PASSED",
+      "to": "ASSET_HOSTED",
+      "run": "41971033881",
+      "evidence": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0091/JR-0091.mp4 http=206 ftyp=True bytes=5492314/5492314"
+    },
+    {
+      "at": "2026-11-05T05:00:40Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_DRAFT",
+      "run": "41971033881",
+      "evidence": "draft 6aec0d7880f7fd0537eef20f read back: status draft, asset, caption, duration, channel OK"
+    },
+    {
+      "at": "2026-11-05T05:00:40Z",
+      "from": "BUFFER_DRAFT",
+      "to": "WAITING_FOR_USER",
+      "run": "41971033881",
+      "evidence": "approval required: episode, date, time, timezone"
+    },
+    {
+      "at": "2026-11-05T05:00:40Z",
+      "from": "WAITING_FOR_USER",
+      "to": "APPROVED",
+      "run": "41971033881",
+      "evidence": "auto-approved after all QA gates under standing authorization 2026-10-11 20:48 IST, Selvin in chat; slot time comes from the weekly plan"
+    }
+  ]
+}
