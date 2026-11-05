@@ -1,7 +1,7 @@
 {
   "counts": {
     "PUBLISHED": 81,
-    "UNUSED": 8
+    "UNUSED": 15
   },
   "next_ready": [],
   "ready_total": 0,
@@ -1292,7 +1292,91 @@
         "instagram",
         "youtube"
       ]
+    },
+    {
+      "episode_id": "JR-0089",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0090",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0091",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0092",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0093",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0094",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0095",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
     }
   ],
-  "as_of": "2026-11-05T03:39:16.410489+00:00"
+  "as_of": "2026-11-05T04:39:12.482464+00:00"
 }
