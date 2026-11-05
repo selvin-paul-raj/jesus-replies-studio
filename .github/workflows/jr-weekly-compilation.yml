@@ -1,0 +1,66 @@
+name: JR weekly YouTube compilation
+
+# DEC-JR-018 (2026-11-05): every Sunday 21:00 IST, stitch this week's published Shorts into one 6-8 min
+# horizontal (16:9) video with chapters, and store it as a release asset with its title/description.
+# Buffer publishes YouTube Shorts only, so nothing is posted: the release is for a manual YouTube Studio upload
+# (config/content-os.json weekly_compilation.buffer_youtube_longform_supported = false). First run: Sun 2026-11-08.
+on:
+  schedule:
+    - cron: '30 15 * * 0'   # Sun 21:00 IST, after the 19:30 slot
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Monday of the week (YYYY-MM-DD, IST); default = this week"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jr-weekly-compilation
+  cancel-in-progress: false
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tests
+        run: python3 -m unittest discover -s tests
+      - name: ffmpeg
+        run: which ffprobe || (sudo apt-get update -q && sudo apt-get install -y -q ffmpeg)
+      - name: Week (IST)
+        id: wk
+        run: |
+          W="${{ inputs.week }}"
+          if [ -z "$W" ]; then
+            W=$(python3 -c "import datetime as d,zoneinfo as z;t=d.datetime.now(z.ZoneInfo('Asia/Kolkata')).date();print(t-d.timedelta(days=t.weekday()))")
+          fi
+          echo "week=$W" >> "$GITHUB_OUTPUT"
+      - name: Compile
+        id: build
+        run: |
+          set +e
+          python3 scripts/content_os/compilation.py --week "${{ steps.wk.outputs.week }}"
+          rc=$?
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          # 0 = 6-8 min, 3 = rendered but outside 6-8 min (still stored, flagged), 2 = fewer than 3 Shorts
+          [ $rc -eq 0 ] || [ $rc -eq 3 ] || [ $rc -eq 2 ]
+      - name: Store as release asset (no posting)
+        if: steps.build.outputs.rc != '2'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          W="${{ steps.wk.outputs.week }}"; D="output/compilations/$W"; TAG="jr-compilation-$W"
+          TITLE=$(python3 -c "import json;print(json.load(open('$D/compilation.json'))['title'])")
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "$D/jr-compilation-$W.mp4" "$D/compilation.json" "$D/description.txt" --clobber
+          else
+            gh release create "$TAG" "$D/jr-compilation-$W.mp4" "$D/compilation.json" "$D/description.txt" \
+              --title "$TITLE" --notes-file "$D/description.txt"
+          fi
+          echo "Stored $TAG. Upload manually in YouTube Studio (Buffer supports Shorts only)."

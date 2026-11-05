@@ -1,0 +1,23 @@
+{
+  "series": "comment-replies",
+  "since": "2026-11-05",
+  "decision": "content-os/DECISIONS.md DEC-JR-018",
+  "per_week": 1,
+  "weekday": "Thursday",
+  "slot": "NIGHT",
+  "rules": "Built from a real viewer comment logged in content-os/community/replies-log.md or ideas.md. Respectful pain or question comments only: never a crisis comment (self-harm, suicide, abuse: those get the helpline reply, not a video), never a critique, AI accusation, song-name ask or bait. The comment text is shown on screen with the handle hidden (comment_reply.show_handle false). Same gates as every episode (R1-R13). Posted as a normal Reel/Short: Instagram's native 'reply with Reel' is not available through the Buffer API.",
+  "backlog": [
+    {
+      "week_start": "2026-11-09",
+      "date": "2026-11-12",
+      "slot": "NIGHT",
+      "episode_id": "JR-0098",
+      "status": "AUTHORED",
+      "comment": "I forgave her but I can't let her back in, and it left me hollow",
+      "comment_platform": "YouTube",
+      "comment_date": "2026-10-29",
+      "verse": "Romans 12:18",
+      "r10_context": "Romans 12:17-21: do not repay evil for evil; if it be possible, as much as lieth in you, live peaceably with all men; leave vengeance to God. The 'if it be possible' and 'as much as lieth in you' admit that peace has limits on our side. Used for: forgiving (not paying back) does not oblige her to hand back full trust at once. Not used to tell her to cut the person off or to reconcile against wisdom."
+    }
+  ]
+}

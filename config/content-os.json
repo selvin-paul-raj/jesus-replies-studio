@@ -154,6 +154,87 @@
       "weekday": 0,
       "slot": "MORNING",
       "_why": "2026-11-05 Selvin approved (DEC-JR-017): one family-pressure Reel a week, Monday 08:00 IST (the slot both family winners JR-0060 and JR-0071 went out in). brain.build_plan reserves this slot from the backlog in the file; the episode then goes through every normal gate and the distributor."
+    },
+    "sequels": {
+      "file": "content-os/series/sequels.json",
+      "per_week": 0,
+      "weekday": 1,
+      "slot": "MORNING",
+      "_why": "2026-11-05 DEC-JR-018: on-demand Part 2s of breakout episodes. Each backlog item pins its own weekday/slot (first: JR-0097, Part 2 of JR-0060, Tue 2026-11-10 08:00 IST, the next open 08:00 slot after the Monday family-pressure slot). per_week 0 = only weeks that have an item."
+    },
+    "comment-replies": {
+      "file": "content-os/series/comment-replies.json",
+      "per_week": 1,
+      "weekday": 3,
+      "slot": "NIGHT",
+      "_why": "2026-11-05 DEC-JR-018: 'Jesus replies to your comment', one a week, Thursday 19:30 IST (evening, when YouTube commenters are active; never a Monday family slot). Built only from respectful, non-crisis comments logged in content-os/community/; handle hidden (comment_reply.show_handle). Posted as a normal Reel/Short: Instagram's native 'reply with Reel' is not in the Buffer API."
+    },
+    "subtitles-ta": {
+      "file": "content-os/series/subtitles-ta.json",
+      "per_week": 1,
+      "weekday": 2,
+      "slot": "NIGHT",
+      "_why": "2026-11-05 DEC-JR-018: weekly Tamil-subtitle version of a recent best performer, Wednesday 19:30 IST. Opt-in through subtitle_versions (default ON, one per week per language)."
+    },
+    "subtitles-hi": {
+      "file": "content-os/series/subtitles-hi.json",
+      "per_week": 1,
+      "weekday": 5,
+      "slot": "NIGHT",
+      "_why": "2026-11-05 DEC-JR-018: weekly Hindi-subtitle version of a recent best performer, Saturday 19:30 IST. Opt-in through subtitle_versions (default ON, one per week per language)."
     }
+  },
+  "subtitle_versions": {
+    "enabled": true,
+    "languages": {
+      "ta": {
+        "enabled": true,
+        "per_week": 1,
+        "bible": "data/bible/ta-irv.json",
+        "label": "IRV Tamil"
+      },
+      "hi": {
+        "enabled": true,
+        "per_week": 1,
+        "bible": "data/bible/hi-irv.json",
+        "label": "IRV Hindi"
+      }
+    },
+    "_why": "2026-11-05 DEC-JR-018. Burned-in Tamil/Hindi captions on a weekly re-cut of a recent best performer (separate post, its own episode id with variant_of). Story lines are human translations; the verse caption is quoted verbatim from the bundled IRV text (CC BY-SA 4.0, Bridge Connectivity Solutions, eBible.org) with its attribution line in caption and description; the spoken/English verse stays KJV. Set enabled=false (or a language's enabled=false) to drop the lanes; nothing else changes.",
+    "pick_rule": "best combined IG+YT views in the last 7 days, excluding held episodes, episodes already subtitled in that language, and any whose verse fails a fresh R10 read; the English verse is re-quoted in KJV."
+  },
+  "comment_reply": {
+    "show_handle": false,
+    "sources": [
+      "content-os/community/replies-log.md",
+      "content-os/community/ideas.md"
+    ],
+    "_why": "2026-11-05 DEC-JR-018: the comment is shown on screen with the handle hidden by default; set show_handle true only with the commenter's permission recorded in the episode. Comment text must appear in a community log; crisis comments (safety.crisis_check) are never used; critiques and bait are not material."
+  },
+  "weekly_compilation": {
+    "enabled": true,
+    "weekday": 6,
+    "time": "21:00",
+    "format": "16:9 letterbox 1920x1080",
+    "min_seconds": 360,
+    "max_seconds": 480,
+    "release_tag_pattern": "jr-compilation-{week_start}",
+    "buffer_youtube_longform_supported": false,
+    "_why": "2026-11-05 DEC-JR-018: each Sunday 21:00 IST (.github/workflows/jr-weekly-compilation.yml) stitch the week's published Shorts into one 6-8 min horizontal video with chapters. Horizontal so YouTube treats it as long-form. Buffer publishes YouTube Shorts only ('Buffer currently supports YouTube Shorts only. We do not support long-form YouTube videos at this time.' support.buffer.com, checked 2026-11-05), so the file is stored as a GitHub release asset with its title/description/chapters for a manual YouTube Studio upload.",
+    "exclude": {
+      "JR-0077": "R10 miss (Matthew 5:37 used for lending boundaries; viewers flagged it 2026-10-30): never re-published"
+    }
+  },
+  "weekly_carousel": {
+    "enabled": true,
+    "platform": "instagram",
+    "weekday": 5,
+    "time": "12:30",
+    "slides": [
+      5,
+      7
+    ],
+    "dir": "content-os/carousels",
+    "_why": "2026-11-05 DEC-JR-018: one save-worthy KJV verse carousel a week on Instagram, Saturday 12:30 IST (no Reel, Story or other post near it: Reels 08:00/19:30, verse Story 08:05). Buffer GraphQL: InstagramPostMetadataInput.type has 'carousel' and createPost takes an ordered assets list of image entries (introspected 2026-11-05)."
   }
 }

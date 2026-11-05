@@ -1,0 +1,22 @@
+{
+  "series": "subtitles-hi",
+  "since": "2026-11-05",
+  "decision": "content-os/DECISIONS.md DEC-JR-018",
+  "per_week": 1,
+  "weekday": "Saturday",
+  "slot": "NIGHT",
+  "pick_rule": "config/content-os.json subtitle_versions.pick_rule",
+  "backlog": [
+    {
+      "week_start": "2026-11-09",
+      "date": "2026-11-14",
+      "slot": "NIGHT",
+      "episode_id": "JR-0100",
+      "status": "AUTHORED",
+      "variant_of": "JR-0084",
+      "why": "Third best of 2026-10-29..11-05 (IG 2,261 + YT 1,389); a different episode from the Tamil one so the same week never repeats a video twice.",
+      "verse": "Isaiah 40:29",
+      "r10_context": "Isaiah 40:27-31: Israel complains its way is hidden from God; the everlasting God does not faint and gives power to the faint and strength to those with no might. Used for: an exhausted worker's strength comes from God, not overtime. Matches."
+    }
+  ]
+}

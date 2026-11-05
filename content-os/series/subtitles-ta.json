@@ -1,0 +1,22 @@
+{
+  "series": "subtitles-ta",
+  "since": "2026-11-05",
+  "decision": "content-os/DECISIONS.md DEC-JR-018",
+  "per_week": 1,
+  "weekday": "Wednesday",
+  "slot": "NIGHT",
+  "pick_rule": "config/content-os.json subtitle_versions.pick_rule",
+  "backlog": [
+    {
+      "week_start": "2026-11-09",
+      "date": "2026-11-11",
+      "slot": "NIGHT",
+      "episode_id": "JR-0099",
+      "status": "AUTHORED",
+      "variant_of": "JR-0063",
+      "why": "Best performer of 2026-10-29..11-05 after JR-0060 (YT 3,770 + IG 1,913). JR-0060 (13.2K IG) skipped: it gets a Part 2 the day before, and its verse Psalm 37:4 reads as a promise of marriage in that story (R10 risk).",
+      "verse": "Isaiah 49:15",
+      "r10_context": "Isaiah 49:14-16: Zion says the LORD has forgotten her; the LORD answers that even if a mother could forget her child, He will not forget. Used for: feeling unnoticed by friends is not being forgotten by God. Matches the episode's use."
+    }
+  ]
+}

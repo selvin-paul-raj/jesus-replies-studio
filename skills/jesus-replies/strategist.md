@@ -26,3 +26,10 @@ Each cycle (the weekly review, plus any time on request):
 - EXP-005 read (2026-11-12): also weigh moving YouTube's evening post to 05:00 IST against 19:30 (see the
   experiments.json EXP-005 review_notes). Change slots only at n>=10, only for posts not yet in Buffer, and never
   touch the Instagram slots in this read.
+
+## Standing items (DEC-JR-018, 2026-11-05)
+- Weekly lanes: comment-replies (Thu 19:30), subtitles-ta (Wed 19:30), subtitles-hi (Sat 19:30). Check `ready-buffer.json lane_gaps`
+  each cycle and author the missing week (see `growth-formats.md`). Part 2s go in `content-os/series/sequels.json` when an episode breaks out.
+- Saturday 12:30 Instagram carousel: author + render + push one `content-os/carousels/CAR-<date>.json` each week.
+- Sunday: the compilation release appears as `jr-compilation-<week>`; tell Selvin it is ready for a YouTube Studio upload.
+- After 4 weeks, read subtitle versions and comment replies against the weekly median; drop or keep with evidence.

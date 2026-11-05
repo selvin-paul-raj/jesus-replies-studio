@@ -81,6 +81,18 @@
       "since": "2026-11-05",
       "rule": "Every new package has first_comment: one easy, warm question tied to the episode, at most 150 characters, no links, hashtags or bait (\"Has someone in your family ever said this to you?\"). Instagram: sent through Buffer as metadata.instagram.firstComment. YouTube: Buffer has no first-comment field, so the every-2-days comment run posts it from the channel and pins it (comment-replies.md).",
       "evidence": "Comments are near zero on Instagram (4 on 26 Reels) but YouTube is where people answer (R4). A seeded, answerable question gives viewers an easy first reply. Selvin approved 2026-11-05."
+    },
+    {
+      "id": "R14-comment-replies",
+      "since": "2026-11-05",
+      "rule": "A 'Jesus replies to your comment' episode uses a real comment logged in content-os/community/, quoted exactly, respectful, never a crisis comment, critique or bait; the handle is hidden on screen unless config comment_reply.show_handle allows it. One a week (Thursday 19:30). Enforced by daily/formats.comment_problems.",
+      "evidence": "YouTube is where viewers talk (R4: 32 comments vs 4 on IG in 14 days); answering one on screen rewards commenting. Selvin approved 2026-11-05 (DEC-JR-018)."
+    },
+    {
+      "id": "R15-translated-subtitles",
+      "since": "2026-11-05",
+      "rule": "Tamil/Hindi subtitle versions: story lines are natural human translations; the verse caption is the bundled IRV text (CC BY-SA 4.0, Bridge Connectivity Solutions) for the same reference, verbatim, never machine-translated; the attribution line is in caption and description. The spoken/English verse stays KJV. Enforced by daily/formats.subtitle_problems + package_problems.",
+      "evidence": "Audience is largely Indian (Tamil/Hindi family themes perform best: JR-0060, JR-0071). Selvin approved 2026-11-05 (DEC-JR-018)."
     }
   ],
   "experiments": [

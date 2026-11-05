@@ -32,20 +32,23 @@ HOOK_PLAN = ("confession", "statement")   # R11 (DEC-JR-017): no question hooks 
 
 
 def lane_slots(week_start, cfg):
-    """{slot position in the week: (lane name, backlog item)} for weekly series lanes (DEC-JR-017).
-    A lane takes its weekday/slot only in weeks its backlog has an entry for."""
+    """{slot position in the week: (lane name, backlog item)} for series lanes (DEC-JR-017, DEC-JR-018).
+    A lane takes its weekday/slot only in weeks its backlog has an entry for. A backlog item may carry its
+    own "weekday" (0=Mon) and "slot" (MORNING/NIGHT) to pin a one-off episode (e.g. a Part 2) to one slot.
+    Lanes are taken in name order; a slot already taken by an earlier lane is never double-booked."""
     per_day = cfg["videos_per_day"]
     names = sorted(cfg["slots"], key=lambda k: cfg["slots"][k]) if isinstance(cfg.get("slots"), dict) else []
     out = {}
     for name, lane in sorted((cfg.get("series_lanes") or {}).items()):
-        item = next((b for b in lane.get("backlog") or [] if b.get("week_start") == week_start
-                     and b.get("status") not in ("DONE", "DROPPED")), None)
-        if not item:
-            continue
-        si = names.index(lane.get("slot", "MORNING")) if lane.get("slot", "MORNING") in names else 0
-        pos = int(lane.get("weekday", 0)) * per_day + si
-        if pos not in out:
-            out[pos] = (name, item)
+        items = [b for b in lane.get("backlog") or [] if b.get("week_start") == week_start
+                 and b.get("status") not in ("DONE", "DROPPED")]
+        for item in items[: max(1, int(lane.get("per_week", 1) or 1))]:
+            slot = item.get("slot") or lane.get("slot", "MORNING")
+            si = names.index(slot) if slot in names else 0
+            wd = int(item["weekday"]) if item.get("weekday") is not None else int(lane.get("weekday", 0))
+            pos = wd * per_day + si
+            if pos not in out:
+                out[pos] = (name, item)
     return out
 
 

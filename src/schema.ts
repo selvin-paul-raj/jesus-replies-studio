@@ -171,6 +171,8 @@ export const ScriptLineSchema = z.object({
   text: z.string(),
   /** Optional override, in seconds. If omitted, auto-timed from word count. */
   durationInSeconds: z.number().min(0).optional(),
+  /** Optional burned-in translated caption for this line (DEC-JR-018 subtitle versions). */
+  subtitle: z.string().optional(),
 });
 export type ScriptLine = z.infer<typeof ScriptLineSchema>;
 
@@ -188,6 +190,11 @@ export const EpisodeSchema = z.object({
   lines: z.array(ScriptLineSchema),
   /** Optional closing card: the final logo shown after the dialogue ends. */
   finalLogo: FinalLogoConfigSchema.optional(),
+  /** DEC-JR-018: burned-in Tamil/Hindi captions. Line texts live on lines[].subtitle. */
+  subtitles: z.object({ lang: z.enum(["ta", "hi"]) }).optional(),
+  /** DEC-JR-018 "Jesus replies to your comment": the viewer's comment shown on screen,
+   * handle hidden by default (label carries no @handle unless policy allows it). */
+  commentCard: z.object({ label: z.string(), text: z.string() }).optional(),
 });
 export type Episode = z.infer<typeof EpisodeSchema>;
 

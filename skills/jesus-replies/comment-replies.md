@@ -27,3 +27,9 @@ Each new package has `first_comment` (generated/<id>.package.json): one easy, wa
   the last run: Studio > Content > the Short > Comments, post the package's `first_comment` exactly as written,
   as the channel, then pin it (⋮ > Pin). Skip it if a pinned channel comment already exists. Never post it twice.
 - Log each one in `content-os/community/replies-log.md` (date, platform, episode id, "first comment posted/pinned").
+
+## Comments that become episodes (DEC-JR-018)
+Respectful PAIN/QUESTION comments may become a weekly "Jesus replies to your comment" episode (`growth-formats.md`). Log the
+comment text exactly in `replies-log.md` or `ideas.md` (the validator only accepts logged text). Never a crisis comment, critique,
+AI accusation or bait. The handle is hidden on screen. Instagram's native "reply with Reel" is not in the Buffer API, so the episode
+posts as a normal Reel; once live, a short reply under the original comment that the video is up is fine (no links on Instagram).

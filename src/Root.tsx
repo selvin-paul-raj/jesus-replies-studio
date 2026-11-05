@@ -4,6 +4,7 @@ import { getAudioDurationInSeconds } from "@remotion/media-utils";
 import { EpisodeComposition, THUMBNAIL_LEAD_FRAMES } from "./Episode";
 import { ThumbnailComposition } from "./Thumbnail";
 import { BibleVersePostComposition } from "./BibleVersePost";
+import { CarouselCardComposition, CarouselCardPropsSchema } from "./CarouselCard";
 import { EpisodePropsSchema, ThumbnailPropsSchema, BibleVersePostPropsSchema } from "./schema";
 import { buildRevealFrames } from "./timeline";
 import defaultEpisode from "./episodes/porch_conversation.json";
@@ -79,6 +80,26 @@ export const Root: React.FC = () => {
           verseText: "For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.",
           referenceText: "Jeremiah 29:11\nKJV",
         })}
+      />
+      {/* DEC-JR-018 weekly Instagram verse carousel, 4:5 portrait (1080x1350) */}
+      <Still
+        id="CarouselVerse"
+        component={BibleVersePostComposition}
+        schema={BibleVersePostPropsSchema}
+        width={1080}
+        height={1350}
+        defaultProps={BibleVersePostPropsSchema.parse({
+          verseText: "A soft answer turneth away wrath: but grievous words stir up anger.",
+          referenceText: "Proverbs 15:1\nKJV",
+        })}
+      />
+      <Still
+        id="CarouselCard"
+        component={CarouselCardComposition}
+        schema={CarouselCardPropsSchema}
+        width={1080}
+        height={1350}
+        defaultProps={CarouselCardPropsSchema.parse({ title: "5 verses for when family pressure hits" })}
       />
     </>
   );

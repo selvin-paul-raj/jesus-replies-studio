@@ -12,12 +12,13 @@
   cycle                 every 6h: snapshot, verify, learnings, autopilot (authorise, sync, fill slots),
                         schedule top-up for this + next week, ready-buffer report / authoring queue
   autopilot-targets     print episode ids the daily generator should advance now
+  carousel [--dry-run]  DEC-JR-018: schedule authored weekly verse carousels (content-os/carousels/CAR-*.json)
   learn                 recompute content-os/learnings.json + STRATEGY.md auto block
   review [--force]      bi-weekly review (even ISO weeks) -> content-os/reviews/<date>.json
 Buffer mutations happen only in `schedule` without --dry-run, and only for an authorized plan."""
 import argparse, datetime as dt, json, os, pathlib, sys, urllib.request
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
-from content_os import analytics, timing, inventory as inv_mod, brain, learn, episodes, ledger, strategy
+from content_os import analytics, timing, inventory as inv_mod, brain, learn, episodes, ledger, strategy, carousel
 from content_os.autopilot import Autopilot
 from daily.store import Store as DailyStore
 from content_os.distribute import Distributor, DistStore
@@ -49,6 +50,12 @@ def cfg_load():
     c["slots"] = rules["slots"]
     c["initial_test_slots"] = sorted(rules["slots"].values())
     c["held_episodes"] = {**review_holds(), **(c.get("held_episodes") or {})}
+    sv = c.get("subtitle_versions") or {}
+    for name in list(c.get("series_lanes") or {}):          # DEC-JR-018: subtitle lanes are opt-in by config flag
+        if name.startswith("subtitles-"):
+            lang = name.split("-", 1)[1]
+            if not (sv.get("enabled") and (sv.get("languages") or {}).get(lang, {}).get("enabled")):
+                del c["series_lanes"][name]
     for name, lane in (c.get("series_lanes") or {}).items():     # weekly series lanes (DEC-JR-017)
         f = ROOT / lane["file"]
         lane["backlog"] = (json.loads(f.read_text()).get("backlog") or []) if f.exists() else []
@@ -170,6 +177,21 @@ def main():
         return Autopilot(ROOT, cfg, eps, pkgs, assets, store, DailyStore(ROOT), now, run)
 
     full_auth = cfg["autonomy"].get("full_autonomy")
+
+    def carousels(dry_run):
+        """DEC-JR-018 weekly Instagram verse carousel: schedule authored, rendered, committed carousels."""
+        if not (cfg.get("weekly_carousel") or {}).get("enabled") or not cfg["autonomy"]["scheduler_enabled"]:
+            return
+        buf = None
+        for path, c in carousel.pending(ROOT):
+            if (c.get("buffer") or {}).get("state") in ("SCHEDULED", "SENT"):
+                continue
+            buf = buf or Buffer.from_env(cfg)
+            res, rec = carousel.schedule(ROOT, c, buf, now, http_status, dry_run=dry_run, min_lead_minutes=cfg["min_lead_minutes"])
+            print(f"[carousel] {c['id']} {c['slot']['due_at']} {res} post={rec.get('post_id')}")
+            if not dry_run and res in ("SCHEDULED", "ADOPTED"):
+                c["status"] = "SCHEDULED"
+                wjson(path, c)
 
     def next_id():
         nums = [int(e[3:7]) for e in eps if e[3:7].isdigit()]
@@ -302,6 +324,10 @@ def main():
         if full_auth:
             for c in autopilot().sync_states(full_auth):
                 print(f"[sync] {c[0]} {c[1]} -> {c[2]}")
+        try:
+            carousels(dry_run=False)
+        except Exception as e:      # a carousel problem never stops the Reel pipeline
+            print(f"[carousel] skipped: {type(e).__name__}: {str(e)[:200]}")
         dists = {x["episode_id"]: x for x in store.all()}
         inv = inv_mod.build(eps, assets, dists, snap["rows"], cfg)
         inv["as_of"] = now.isoformat()
@@ -312,6 +338,9 @@ def main():
               f"authoring_needed={rb['authoring_needed']} scheduled_by_platform={rb['scheduled_by_platform']} "
               f"parked_drafts={ {k: len(v) for k, v in rb['parked_drafts_by_platform'].items()} }")
         return rc
+    if a.cmd == "carousel":
+        carousels(dry_run=a.dry_run)
+        return 0
     if a.cmd == "hold":
         d = Distributor(ROOT, Buffer.from_env(cfg), cfg, http_status, run, now, dry_run=a.dry_run)
         r, blk = d.hold(a.episode, a.platform, ctx_for_factory(eps, pkgs, assets)(a.episode))

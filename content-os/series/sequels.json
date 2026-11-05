@@ -1,0 +1,21 @@
+{
+  "series": "sequels",
+  "since": "2026-11-05",
+  "decision": "content-os/DECISIONS.md DEC-JR-018",
+  "per_week": 0,
+  "rules": "A Part 2 continues a breakout episode (>= 5x the platform median) with the same character and a NEW KJV verse that passes R10. Hook is a confession or statement (R11), share line last (R12), first_comment (R13). Caption and description point back to Part 1 by its title (never by episode id; package QA rejects other ids); the YouTube description links the Part 1 Short. Never the Monday family-pressure slot.",
+  "backlog": [
+    {
+      "week_start": "2026-11-09",
+      "date": "2026-11-10",
+      "weekday": 1,
+      "slot": "MORNING",
+      "episode_id": "JR-0097",
+      "status": "AUTHORED",
+      "part_of": "JR-0060 'Everyone At The Wedding Asked When It's My Turn' (IG 13,199 + YT 1,065 views as of 2026-11-05)",
+      "idea": "She finally answers the aunty who keeps asking when she will marry: gently, without shame.",
+      "verse": "Colossians 4:6",
+      "r10_context": "Colossians 4:5-6: walk in wisdom, let your speech be always with grace, seasoned with salt, 'that ye may know how ye ought to answer every man'. Paul is teaching how believers answer the people around them. Used for: when the question came again, she answered with grace and honesty instead of anger or tears. Not used to call her relatives outsiders or to say she owed them an answer. (Proverbs 15:1 was the first choice but JR-0090 used it within the last 14.)"
+    }
+  ]
+}

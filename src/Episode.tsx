@@ -7,6 +7,8 @@ import { EndCard } from "./EndCard";
 import { ThumbnailComposition } from "./Thumbnail";
 import { EpisodeProps } from "./schema";
 import { buildRevealFrames, toSpeakerSegments } from "./timeline";
+import { SubtitleTrack } from "./SubtitleTrack";
+import { CommentCard } from "./CommentCard";
 
 /** Frame 0 of the rendered mp4 is the thumbnail card itself (so scrubbing to
  * 0:00, or any player showing a static "poster" frame, shows the same title
@@ -24,6 +26,8 @@ export const EpisodeComposition: React.FC<EpisodeProps> = ({
   styles,
   audioDurationInFrames,
   finalLogo,
+  subtitles,
+  commentCard,
 }) => {
   const { fps, durationInFrames } = useVideoConfig();
   const currentFrame = useCurrentFrame();
@@ -94,6 +98,20 @@ export const EpisodeComposition: React.FC<EpisodeProps> = ({
           </Sequence>
         );
       })}
+
+      {commentCard &&
+        (() => {
+          // the opening exchange: until the first jesus line leaves the screen (DEC-JR-018)
+          const firstJesus = segments.find((s) => s.speaker === "jesus");
+          const end = firstJesus ? firstJesus.startFrame + firstJesus.durationInFrames : Math.round(4 * fps);
+          return (
+            <Sequence from={THUMBNAIL_LEAD_FRAMES} durationInFrames={end} layout="none">
+              <CommentCard label={commentCard.label} text={commentCard.text} durationInFrames={end} />
+            </Sequence>
+          );
+        })()}
+
+      {subtitles && <SubtitleTrack frames={frames} lines={lines} lang={subtitles.lang} offset={THUMBNAIL_LEAD_FRAMES} />}
 
       {finalLogo &&
         (() => {

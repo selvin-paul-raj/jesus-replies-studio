@@ -1,0 +1,66 @@
+{
+  "id": "JR-0100",
+  "title": "Jesus... I Fell Asleep In The Office Washroom 😮‍💨 (हिंदी)",
+  "character": "boy",
+  "topic": "exhausted after a third late night, he fell asleep in the office washroom and told his manager he was on a call",
+  "emotion": "neutral",
+  "variant_of": "JR-0084",
+  "series": "subtitles-hi",
+  "bible": {
+    "book": "Isaiah",
+    "chapter": 40,
+    "verse": 29,
+    "version": "KJV",
+    "text": "He giveth power to the faint; and to them that have no might he increaseth strength."
+  },
+  "lines": [
+    {
+      "speaker": "person",
+      "text": "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨"
+    },
+    {
+      "speaker": "person",
+      "text": "Third late night this week. I answer emails at 1 a.m. and still say I'm good."
+    },
+    {
+      "speaker": "jesus",
+      "text": "You're not good. You're running on other people's approval."
+    },
+    {
+      "speaker": "person",
+      "text": "If I slow down, someone else takes my place."
+    },
+    {
+      "speaker": "jesus",
+      "text": "Your place with Me was never earned by overtime. Even I stepped away to rest."
+    },
+    {
+      "speaker": "bible_verse"
+    },
+    {
+      "speaker": "jesus",
+      "text": "Going home on time isn't quitting. It's trusting."
+    },
+    {
+      "speaker": "engagement",
+      "text": "Send this to the coworker who's always online. 💻"
+    }
+  ],
+  "subtitles": {
+    "lang": "hi",
+    "bible": "data/bible/hi-irv.json",
+    "attribution": "Hindi Scripture: IRV Hindi © 2017-2019 Bridge Connectivity Solutions, CC BY-SA 4.0 (ebible.org); cross-references omitted.",
+    "verse_text": "वह थके हुए को बल देता है और शक्तिहीन को बहुत सामर्थ्य देता है।",
+    "verse_label": "Isaiah 40:29 (IRV Hindi)",
+    "lines": [
+      "यीशु... मैं ऑफ़िस के वॉशरूम में दस मिनट सो गया। मैनेजर से कह दिया कि कॉल पर था।",
+      "इस हफ़्ते तीसरी बार देर रात तक काम। रात एक बजे ईमेल भेजता हूँ, फिर भी कहता हूँ कि सब ठीक है।",
+      "तुम ठीक नहीं हो। तुम दूसरों की वाहवाही के सहारे दौड़ रहे हो।",
+      "अगर मैं धीमा पड़ा, तो मेरी जगह कोई और ले लेगा।",
+      "मेरे पास तुम्हारी जगह ओवरटाइम से नहीं कमाई जाती। मैं भी आराम करने के लिए अलग जाता था।",
+      null,
+      "समय पर घर जाना हार मानना नहीं है। यह भरोसा करना है।",
+      "यह उस साथी को भेजो जो हमेशा ऑनलाइन रहता है।"
+    ]
+  }
+}

@@ -106,6 +106,25 @@ class Buffer:
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
         return self._mutate("createPost", q)
 
+    def create_carousel(self, platform, text, image_urls, due_at, first_comment=None):
+        """DEC-JR-018 weekly verse carousel: Instagram post of type carousel with an ordered list of image assets
+        (Buffer GraphQL AssetInput.image; InstagramPostMetadataInput.type = carousel, introspected 2026-11-05)."""
+        if platform != "instagram":
+            raise ValueError("carousels are Instagram only")
+        assets = "[" + ", ".join("{ image: { url: %s } }" % json.dumps(u) for u in image_urls) + "]"
+        fc = f", firstComment: {json.dumps(first_comment)}" if first_comment else ""
+        q = f"""mutation {{ createPost(input: {{
+  text: {json.dumps(text)}
+  channelId: {json.dumps(self.channel(platform))}
+  saveToDraft: false
+  schedulingType: automatic
+  mode: customScheduled
+  dueAt: {json.dumps(due_at)}
+  assets: {assets}
+  metadata: {{ instagram: {{ type: carousel, shouldShareToFeed: true{fc} }} }}
+}}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
+        return self._mutate("createPost", q)
+
     def schedule_draft(self, post_id, platform, text, url, due_at, yt=None, first_comment=None):
         """Whole-post edit (Buffer validates edits as whole posts). Only dueAt and saveToDraft differ."""
         q = f"""mutation {{ editPost(input: {{

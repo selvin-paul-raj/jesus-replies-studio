@@ -80,6 +80,34 @@ export const EpisodeInputSchema = z.object({
   // same auto-resolve-then-override pattern as `background`. Any field here
   // overrides just that one.
   finalLogo: FinalLogoConfigSchema.partial().optional(),
+  /** DEC-JR-018 subtitle version: lines[] aligned 1:1 with `lines` (null for bible_verse);
+   * verse_text is the bundled IRV text (checked verbatim by the Python validator). */
+  subtitles: z
+    .object({
+      lang: z.enum(["ta", "hi"]),
+      bible: z.string().optional(),
+      attribution: z.string().optional(),
+      verse_text: z.string(),
+      verse_label: z.string(),
+      lines: z.array(z.string().nullable()),
+    })
+    .optional(),
+  variant_of: z.string().optional(),
+  /** DEC-JR-018 "Jesus replies to your comment". */
+  format: z.string().optional(),
+  comment: z
+    .object({
+      text: z.string().min(1),
+      platform: z.string().optional(),
+      date: z.string().optional(),
+      handle: z.string().nullable().optional(),
+      show_handle: z.boolean().default(false),
+      source: z.string().optional(),
+    })
+    .optional(),
+  series: z.string().optional(),
+  part: z.number().optional(),
+  part_of: z.string().optional(),
 });
 export type EpisodeInput = z.infer<typeof EpisodeInputSchema>;
 
@@ -110,17 +138,27 @@ function mergeStyles(overrides: NonNullable<EpisodeInput["styles"]> | undefined)
 export function buildEpisodeAndThumbnail(input: EpisodeInput) {
   const lines: z.input<typeof EpisodeSchema>["lines"] = [];
 
-  for (const line of input.lines) {
+  const subs = input.subtitles;
+  if (subs && subs.lines.length !== input.lines.length) {
+    throw new Error(`subtitles.lines has ${subs.lines.length} entries for ${input.lines.length} lines (must align 1:1)`);
+  }
+  input.lines.forEach((line, i) => {
+    const sub = subs ? subs.lines[i] ?? undefined : undefined;
     if (line.speaker === "bible_verse") {
       if (!input.bible) {
         throw new Error(`line "bible_verse" used but no top-level "bible" object was given`);
       }
-      lines.push({ speaker: "verse", text: input.bible.text, durationInSeconds: line.durationInSeconds });
-      lines.push({ speaker: "reference", text: formatBibleRef(input.bible) });
+      lines.push({ speaker: "verse", text: input.bible.text, durationInSeconds: line.durationInSeconds, subtitle: subs?.verse_text });
+      lines.push({ speaker: "reference", text: formatBibleRef(input.bible), subtitle: subs?.verse_label });
     } else {
-      lines.push({ speaker: line.speaker, text: requireLineText(line), durationInSeconds: line.durationInSeconds });
+      if (subs && !sub) throw new Error(`subtitles.lines[${i}] missing for a ${line.speaker} line`);
+      lines.push({ speaker: line.speaker, text: requireLineText(line), durationInSeconds: line.durationInSeconds, subtitle: sub });
     }
-  }
+  });
+  const c = input.comment;
+  const commentCard = c
+    ? { label: c.show_handle && c.handle ? `${c.handle} commented` : `A viewer commented${c.platform ? ` on ${c.platform}` : ""}`, text: c.text }
+    : undefined;
 
   const bg = input.background;
   const background = {
@@ -148,6 +186,8 @@ export function buildEpisodeAndThumbnail(input: EpisodeInput) {
       ctaLabel: input.finalLogo?.ctaLabel ?? "Stay with Jesus",
       secondaryCtaLabel: input.finalLogo?.secondaryCtaLabel ?? "Carry this with you",
     },
+    subtitles: subs ? { lang: subs.lang } : undefined,
+    commentCard,
   } satisfies z.input<typeof EpisodeSchema>);
 
   const thumbnail = ThumbnailPropsSchema.parse({ title: input.title, image: background.image });

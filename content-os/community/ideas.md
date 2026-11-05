@@ -15,3 +15,5 @@
 - Grandmother asks to see a great-grandchild "before I go"; he smiles and changes the subject. Ecclesiastes 3:1.
 
 _2026-11-05: the six family-pressure ideas above are now the weekly lane backlog in `content-os/series/family-pressure.json` (DEC-JR-017). The first (refused match, Psalm 27:10) is JR-0096 for Mon 2026-11-09 08:00 IST._
+
+_2026-11-05 (DEC-JR-018): the 2026-10-29 "I forgave her but I can't let her back in" comment is the first "Jesus replies to your comment" episode, JR-0098 (Romans 12:18, Thu 2026-11-12 19:30 IST), handle hidden._

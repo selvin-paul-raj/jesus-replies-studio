@@ -1,0 +1,34 @@
+{
+  "as_of": "2026-11-05",
+  "wpm": 150,
+  "target_s": 50,
+  "advisory": true,
+  "episodes": [
+    {
+      "id": "JR-0100",
+      "title": "Jesus... I Fell Asleep In The Office Washroom 😮‍💨 (हिंदी)",
+      "hook": "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+      "hook_score": 9.6,
+      "hook_verdict": "WEAK",
+      "hook_weakest": "LENGTH",
+      "hook_flags": [
+        "Emoji in the hook. On-screen text at hook size has room for words or for an emoji, not both."
+      ],
+      "seconds_est": 40.8,
+      "words": 102,
+      "long_beats": [
+        9,
+        10
+      ],
+      "loops_to_hook": false,
+      "notes": [
+        "Beat 1 has no number and no name in it. Hooks without something checkable are the ones that get scrolled.",
+        "Beat(s) 9, 10 run past 4s. Either split the line or change what is on screen inside it. A static frame is where people leave.",
+        "Beats 1-3 have nothing concrete in them. Put a number, a name or a price in one of them.",
+        "Beats 10-12 have nothing concrete in them. Put a number, a name or a price in one of them.",
+        "No loop. The last beat shares no word with the hook, so the video ends flat. Echoing one word from beat 1 is the cheapest replay you get.",
+        "9.2s under target. Either add 22 words or shoot it short. Short is usually right."
+      ]
+    }
+  ]
+}

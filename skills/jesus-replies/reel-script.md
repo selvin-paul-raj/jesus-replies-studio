@@ -21,4 +21,6 @@
    Instagram; the comment run pins it on YouTube.
 6b. Family-pressure lane (Monday 08:00): take the week's idea and verse from `content-os/series/family-pressure.json`
    (the brief shows it as `series`), then set that backlog item's `episode_id`/`status` when you author it.
+6c. Growth formats (DEC-JR-018): Part 2s, comment replies, Tamil/Hindi subtitle versions and the weekly carousel follow
+   `growth-formats.md`. A comment-reply episode posts as a normal Reel (Instagram's 'reply with Reel' is not in the Buffer API).
 7. `python3 scripts/content_os/skill_review.py <id>` then the pipeline validator.

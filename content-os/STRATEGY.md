@@ -222,3 +222,10 @@ _Last computed 2026-11-05T06:38Z from Buffer analytics, last 28 days, posts at l
   JR-0096 (Psalm 27:10) on 2026-11-09. Counts inside the weekly mix as the family slot.
 - **Slots unchanged.** YouTube stays at 08:00/19:30 until EXP-005 is read on 2026-11-12. That read also weighs a
   05:00 IST YouTube evening-post move (YouTube 08:00 median 1,198, n=24, vs old 20:30 median 725, n=27).
+
+## 2026-11-05 growth formats (DEC-JR-018)
+- **Part 2s.** When an episode breaks out (>= 5x the platform median), write a Part 2 with the same character and a new R10-checked KJV verse, pinned to the next open slot through `content-os/series/sequels.json` (never the Monday family slot). Caption: "Part 2" + "Missed Part 1?" by title; YouTube description links Part 1.
+- **Jesus replies to your comment** (Thursday 19:30). One a week from a respectful, logged, non-crisis comment; the comment shows on screen, handle hidden. It tells commenters they are heard and gives YouTube's conversation (R4) a payoff. Caption line: "Your words might be the next reply."
+- **Tamil / Hindi subtitle versions** (Wed 19:30 Tamil, Sat 19:30 Hindi). Re-cut a recent best performer with burned-in captions for the Indian audience; the verse caption is the IRV text verbatim (CC BY-SA 4.0, attribution in caption/description), never machine-translated. Pick rule: config `subtitle_versions.pick_rule`. Read after 4 weeks: keep a language only if its median views are >= the week's median.
+- **Weekly YouTube compilation** (Sunday). 6-8 min horizontal compilation of the week's Shorts with chapters, stored as a release for manual upload (Buffer is Shorts-only). Watch time on long-form feeds channel-level recommendations.
+- **Weekly verse carousel** (Saturday 12:30, Instagram). Save-worthy 5-7 slides in the verse-card style; saves and sends are the target metrics. Theme follows what is resonating (family pressure first).

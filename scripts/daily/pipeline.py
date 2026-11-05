@@ -6,7 +6,7 @@ Scripture is the public-domain translation named by config/content-os.json scrip
 there is no network scripture source (DEC-JR-007)."""
 import datetime as dt, json, pathlib, re, subprocess, urllib.request
 from zoneinfo import ZoneInfo
-from . import states, scripture, safety
+from . import states, scripture, safety, formats
 from .redact import redact
 from .store import Store, now_iso, ID_RE
 
@@ -97,7 +97,9 @@ def v3_script_problems(ctx, ep):
         probs.append(f"R12 last line must be a share line (speaker 'engagement', e.g. 'Send this to someone who needs it today.'), "
                      f"got {last.get('speaker')}: {last.get('text')!r}")
     else:
-        recent = sorted(corpus(ctx, exclude=ep.get("id")), key=lambda e: _jr_num(e.get("id", "")) or 0)[-7:]
+        src = formats.source_of(ep)
+        recent = sorted([o for o in corpus(ctx, exclude=ep.get("id")) if not src or o.get("id") != src],
+                        key=lambda e: _jr_num(e.get("id", "")) or 0)[-7:]
         mine = norm_text(last["text"]).lower()
         for o in recent:
             ol = closing_line(o)
@@ -187,7 +189,9 @@ def corpus(ctx, exclude=None):
 
 
 def originality(ctx, ep):
-    issues, recent = [], corpus(ctx, exclude=ep.get("id"))
+    # DEC-JR-018: a subtitle version re-cuts its source, so it is not compared with that one episode
+    src = formats.source_of(ep)
+    issues, recent = [], [o for o in corpus(ctx, exclude=ep.get("id")) if not src or o.get("id") != src]
     last14 = sorted(recent, key=lambda e: _jr_num(e.get("id", "")) or 0)[-14:]
     hook = (ep.get("lines") or [{}])[0].get("text", "")
     for o in recent:
@@ -332,6 +336,7 @@ def step_validated(ctx, st):
     if not ok: probs += [f"originality: {i}" for i in issues]
     if rules_v3(eid):
         probs += v3_script_problems(ctx, ep)
+    probs += formats.script_problems(ep, ctx.root)      # DEC-JR-018 growth formats
     if probs:
         st["validation"] = "FAIL"
         return ctx.store.transition(st, "VALIDATION_FAILED", "; ".join(probs), ctx.run_id)
@@ -467,6 +472,7 @@ def step_package_qa(ctx, st):
                 probs.append("R12 share line missing from instagram_caption (e.g. 'Send this to someone who needs it today.')")
             if any(re.search(b, pk.get("first_comment") or "", re.I) for b in BAIT_PATTERNS):
                 probs.append("engagement bait in first_comment")
+        probs += formats.package_problems(ep, pk, ctx.root)     # DEC-JR-018
         others = set(re.findall(r"JR-\d{4}", json.dumps(pk))) - {eid}
         if others: probs.append(f"references other episodes {sorted(others)}")
         crisis, found = safety.crisis_check(ep, pk)

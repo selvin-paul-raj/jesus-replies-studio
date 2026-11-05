@@ -106,6 +106,21 @@ class Autopilot:
         return {b.get("episode_id") for l in (self.cfg.get("series_lanes") or {}).values() for b in l.get("backlog") or []
                 if b.get("episode_id") and b.get("status") not in ("DONE", "DROPPED")}
 
+    def lane_gaps(self, weeks_ahead=2):
+        """DEC-JR-018 planner rule: weekly lanes (per_week >= 1) need a backlog item for this week and the
+        next ones; a gap is reported here so the review authors it (the planner never invents one)."""
+        d0 = self.now.date() - dt.timedelta(days=self.now.weekday())
+        out = []
+        for name, lane in sorted((self.cfg.get("series_lanes") or {}).items()):
+            if int(lane.get("per_week", 0) or 0) < 1:
+                continue
+            have = {b.get("week_start") for b in lane.get("backlog") or [] if b.get("status") not in ("DROPPED",)}
+            for k in range(weeks_ahead):
+                wk = (d0 + dt.timedelta(days=7 * k)).isoformat()
+                if wk not in have:
+                    out.append({"lane": name, "week_start": wk, "file": lane.get("file")})
+        return out
+
     def spares(self):
         """READY episodes nobody upcoming owns, never published or scheduled anywhere."""
         res = self.reserved_ids() | self.lane_ids()
@@ -247,6 +262,7 @@ class Autopilot:
                                                          and self.platform_states(e).get(pl) == "DRAFT")
                                               for pl in ("instagram", "youtube")},
                 "authoring_needed": ids,
+                "lane_gaps": self.lane_gaps(),
                 "authoring_rule": "author each id with generated/<id>.json + <id>.package.json, run "
                                   "`python3 scripts/daily/jr_daily.py brief <id>` for constraints, read content-os/STRATEGY.md "
                                   "and content-os/learnings.json, then push; the daily generator validates, renders and schedules"}
