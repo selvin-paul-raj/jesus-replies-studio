@@ -76,5 +76,22 @@
     "#Faith"
   ],
   "first_comment": "Which verse would you send to someone in your family today?",
-  "status": "AUTHORED"
+  "status": "SCHEDULED",
+  "buffer": {
+    "post_id": "6aec74a51c4d995fa9b262ae",
+    "state": "SCHEDULED",
+    "due_at": "2026-11-07T07:00:00.000Z",
+    "first_comment": "UNVERIFIED",
+    "read_back": "OK",
+    "image_urls": [
+      "https://raw.githubusercontent.com/selvin-paul-raj/jesus-replies-studio/be1b092651b86ea3af7c075ad97b09823dc8b46e/content-os/carousels/CAR-2026-11-07/slide-1.png",
+      "https://raw.githubusercontent.com/selvin-paul-raj/jesus-replies-studio/be1b092651b86ea3af7c075ad97b09823dc8b46e/content-os/carousels/CAR-2026-11-07/slide-2.png",
+      "https://raw.githubusercontent.com/selvin-paul-raj/jesus-replies-studio/be1b092651b86ea3af7c075ad97b09823dc8b46e/content-os/carousels/CAR-2026-11-07/slide-3.png",
+      "https://raw.githubusercontent.com/selvin-paul-raj/jesus-replies-studio/be1b092651b86ea3af7c075ad97b09823dc8b46e/content-os/carousels/CAR-2026-11-07/slide-4.png",
+      "https://raw.githubusercontent.com/selvin-paul-raj/jesus-replies-studio/be1b092651b86ea3af7c075ad97b09823dc8b46e/content-os/carousels/CAR-2026-11-07/slide-5.png",
+      "https://raw.githubusercontent.com/selvin-paul-raj/jesus-replies-studio/be1b092651b86ea3af7c075ad97b09823dc8b46e/content-os/carousels/CAR-2026-11-07/slide-6.png",
+      "https://raw.githubusercontent.com/selvin-paul-raj/jesus-replies-studio/be1b092651b86ea3af7c075ad97b09823dc8b46e/content-os/carousels/CAR-2026-11-07/slide-7.png"
+    ],
+    "at": "2026-11-05T12:20:51.995870+00:00"
+  }
 }

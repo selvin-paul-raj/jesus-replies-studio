@@ -565,7 +565,7 @@ def step_buffer_draft(ctx, st):
                                     "reconcile in Buffer before anything else", ctx.run_id)
     pkg = json.loads(ctx.pkg_path(eid).read_text())
     text = caption_text(pkg)
-    fc_kw = {"first_comment": pkg["first_comment"]} if pkg.get("first_comment") else {}
+    fc_kw = {"first_comment": pkg["first_comment"]} if pkg.get("first_comment") and ctx.rules.get("buffer", {}).get("instagram_first_comment") else {}
     if B.get("post_id"):
         if ctx.buffer is None:
             ctx.log(f"[buffer] {eid} has post {B['post_id']}; not readable in this run, no create")
@@ -745,7 +745,7 @@ def schedule(ctx, eid):
             return ctx.store.transition(st, "BLOCKED", f"approved time {due} has passed; needs a new approval", ctx.run_id)
         pkg = json.loads(ctx.pkg_path(eid).read_text())
         text = caption_text(pkg)
-        fc_kw = {"first_comment": pkg["first_comment"]} if pkg.get("first_comment") else {}
+        fc_kw = {"first_comment": pkg["first_comment"]} if pkg.get("first_comment") and ctx.rules.get("buffer", {}).get("instagram_first_comment") else {}
         post, d = ctx.buffer.read(B["post_id"]) if ctx.buffer else (None, "no Buffer access")
         if not post:
             return ctx.store.transition(st, "BLOCKED", f"pre-read of {B['post_id']} failed ({d})", ctx.run_id)

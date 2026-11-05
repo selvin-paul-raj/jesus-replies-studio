@@ -108,11 +108,15 @@ class Buffer:
 
     def create_carousel(self, platform, text, image_urls, due_at, first_comment=None):
         """DEC-JR-018 weekly verse carousel: Instagram post of type carousel with an ordered list of image assets
-        (Buffer GraphQL AssetInput.image; InstagramPostMetadataInput.type = carousel, introspected 2026-11-05)."""
+        (Buffer GraphQL AssetInput.image). The PostType enum lists 'carousel', but Buffer rejects it for Instagram
+        ("Valid types are post, story, or reel", 2026-11-05): an Instagram carousel is type post with several images.
+        firstComment is a paid Buffer feature (rejected on this plan 2026-11-05); pass it only when
+        publishing-rules buffer.instagram_first_comment is true."""
         if platform != "instagram":
             raise ValueError("carousels are Instagram only")
         assets = "[" + ", ".join("{ image: { url: %s } }" % json.dumps(u) for u in image_urls) + "]"
-        fc = f", firstComment: {json.dumps(first_comment)}" if first_comment else ""
+        ok_fc = first_comment and (self.cfg.get("buffer") or {}).get("instagram_first_comment")
+        fc = f", firstComment: {json.dumps(first_comment)}" if ok_fc else ""
         q = f"""mutation {{ createPost(input: {{
   text: {json.dumps(text)}
   channelId: {json.dumps(self.channel(platform))}
@@ -121,7 +125,7 @@ class Buffer:
   mode: customScheduled
   dueAt: {json.dumps(due_at)}
   assets: {assets}
-  metadata: {{ instagram: {{ type: carousel, shouldShareToFeed: true{fc} }} }}
+  metadata: {{ instagram: {{ type: post, shouldShareToFeed: true{fc} }} }}
 }}) {{ ... on PostActionSuccess {{ post {{ id status dueAt }} }} ... on MutationError {{ message }} }} }}"""
         return self._mutate("createPost", q)
 

@@ -221,7 +221,8 @@ class Distributor:
             return ("WOULD_SCHEDULE_DRAFT" if s == "DRAFT" else "WOULD_CREATE"), blk
         kind = "schedule_draft" if s == "DRAFT" else "create_scheduled"
         # R13: the Instagram first comment rides on the post metadata (whole-post edits resend it).
-        fc_kw = {"first_comment": ctx["first_comment"]} if platform == "instagram" and ctx.get("first_comment") else {}
+        fc_kw = {"first_comment": ctx["first_comment"]} if platform == "instagram" and ctx.get("first_comment") \
+            and (self.cfg.get("buffer") or {}).get("instagram_first_comment") else {}   # paid-plan feature (DEC-JR-018)
         blk["pending_mutation"] = {"kind": kind, "at": iso(self.now), "run": self.run, "due_at": due_at}
         self.store.save(d)
         if kind == "schedule_draft":
@@ -289,7 +290,8 @@ class Distributor:
             return "WOULD_HOLD", blk
         yt = dict(self.cfg["youtube"], title=ctx["youtube_title"]) if platform == "youtube" else None
         self.mutated = True
-        fc_kw = {"first_comment": ctx["first_comment"]} if platform == "instagram" and ctx.get("first_comment") else {}
+        fc_kw = {"first_comment": ctx["first_comment"]} if platform == "instagram" and ctx.get("first_comment") \
+            and (self.cfg.get("buffer") or {}).get("instagram_first_comment") else {}   # paid-plan feature (DEC-JR-018)
         out = self.buf.to_draft(blk["post_id"], platform, self.expected_text(platform, ctx), ctx["asset_url"], blk["due_at"], yt, **fc_kw)
         post, det = self.buf.read(blk["post_id"])
         if post and post.get("status") == "draft":

@@ -42,7 +42,9 @@
       "instagram": "6a9fa9f3cd8b9c702c2a8102",
       "youtube": "6a9faa25cd8b9c702c2a823b"
     },
-    "note": "ids, not credentials; the API key stays only in secrets.BUFFER_API_KEY"
+    "note": "ids, not credentials; the API key stays only in secrets.BUFFER_API_KEY",
+    "instagram_first_comment": false,
+    "_first_comment_note": "2026-11-05 (DEC-JR-018): Buffer rejected createPost with metadata.instagram.firstComment: 'First comment requires a paid plan.' So the R13 first_comment is NOT sent through Buffer on this plan; the comment run posts it under each new Reel on Instagram and pins it on YouTube (skills/jesus-replies/comment-replies.md). Set true only after a Buffer plan upgrade (never changed by automation)."
   },
   "lock_ttl_minutes": 90,
   "_approval_note": "2026-10-11: human gate removed under Selvin's full-autonomy authorization (config/content-os.json autonomy.full_autonomy). All automated QA gates remain.",

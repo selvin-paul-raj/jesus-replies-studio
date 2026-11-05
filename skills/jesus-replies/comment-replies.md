@@ -21,8 +21,9 @@ Say yes, plainly and warmly. Don't get defensive and don't argue. Say the visual
 
 ## First comment (R13, DEC-JR-017, from JR-0094)
 Each new package has `first_comment` (generated/<id>.package.json): one easy, warm question tied to the episode.
-- **Instagram:** Buffer posts it with the Reel (`metadata.instagram.firstComment`). On each run, check it is there
-  under the newest Reels. If the app/browser lets you, pin it. If it is missing, post it once as a comment.
+- **Instagram:** Buffer's first comment is a paid feature (rejected on this plan 2026-11-05, DEC-JR-018), so it is not sent
+  (`publishing-rules.json buffer.instagram_first_comment: false`). On each run, post the package's `first_comment` once under each
+  new Reel as the account, and pin it if the app/browser allows. Never post it twice.
 - **YouTube:** Buffer's API has no first-comment field. On every run (every 2 days), for each Short published since
   the last run: Studio > Content > the Short > Comments, post the package's `first_comment` exactly as written,
   as the channel, then pin it (⋮ > Pin). Skip it if a pinned channel comment already exists. Never post it twice.

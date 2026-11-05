@@ -165,8 +165,17 @@ class Carousel(unittest.TestCase):
                      {"buffer": {"channels": {"instagram": "ig"}}})
         out = b.create_carousel("instagram", "t", ["https://a/1.png", "https://a/2.png"], "2026-11-07T12:30:00+05:30", first_comment="q?")
         self.assertEqual(out.kind, "OK")
-        self.assertIn("type: carousel", sent[0]); self.assertEqual(sent[0].count("image: { url:"), 2)
-        self.assertIn('firstComment: "q?"', sent[0])
+        self.assertIn("type: post", sent[0]); self.assertEqual(sent[0].count("image: { url:"), 2)
+        self.assertNotIn("firstComment", sent[0])          # paid Buffer feature; off on this plan
+        b.cfg["buffer"]["instagram_first_comment"] = True
+        b.create_carousel("instagram", "t", ["https://a/1.png"], "2026-11-07T12:30:00+05:30", first_comment="q?")
+        self.assertIn('firstComment: "q?"', sent[1])
+
+
+class FirstCommentPaidPlan(unittest.TestCase):
+    def test_flag_off_on_this_plan(self):
+        rules = json.loads((ROOT / "config/publishing-rules.json").read_text())
+        self.assertFalse(rules["buffer"]["instagram_first_comment"])   # "First comment requires a paid plan" (2026-11-05)
 
 
 class Compilation(unittest.TestCase):

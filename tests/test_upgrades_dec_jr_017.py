@@ -97,7 +97,9 @@ class R13FirstComment(unittest.TestCase):
                                                   "metadata": {"firstComment": kw.get("first_comment")}}), _pl=platform)
                 return Outcome("OK", post={"id": pid})
 
+        # DEC-JR-018: firstComment is a paid Buffer feature, sent only when buffer.instagram_first_comment is true
         cfg = {"platforms": ["instagram", "youtube"], "min_lead_minutes": 45, "publish_grace_minutes": 30,
+               "buffer": {"instagram_first_comment": True},
                "youtube": {"privacy": "public", "category_id": "27", "made_for_kids": False, "notify_subscribers": True}}
         ctx = {"asset_url": "https://x.test/a.mp4", "instagram_text": "cap", "youtube_text": "desc", "youtube_title": "T",
                "first_comment": "Has someone in your family ever said this to you?", "asset_check": lambda: (True, "ok")}
