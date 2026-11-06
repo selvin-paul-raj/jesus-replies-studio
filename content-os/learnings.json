@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-06T06:34:17.257600+00:00",
+  "as_of": "2026-11-06T19:19:32.994584+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -14,9 +14,9 @@
         "JR-0033"
       ],
       "stall_rate": 0.1,
-      "median_views": 1582,
-      "max_views": 13401,
-      "saves_per_1k_reach_median": 8.6,
+      "median_views": 1560,
+      "max_views": 13482,
+      "saves_per_1k_reach_median": 8.5,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
@@ -26,14 +26,14 @@
           },
           "night (18-24 IST)": {
             "n": 22,
-            "median_views": 1564.0
+            "median_views": 1532.5
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0060",
-          "views": 13401,
+          "views": 13482,
           "saves": 366,
           "shares": 178,
           "theme": "relatives asking when it is her turn at a family wedding",
@@ -66,7 +66,7 @@
         },
         {
           "episode_id": "JR-0059",
-          "views": 2289,
+          "views": 2290,
           "saves": 34,
           "shares": 17,
           "theme": "waiting for tomorrow's result that decides his future",
@@ -125,13 +125,13 @@
           "duration": ">60s"
         },
         {
-          "episode_id": "JR-0065",
-          "views": 407,
-          "theme": "she cries in the bathroom with the tap running so her family won't hear",
+          "episode_id": "JR-0087",
+          "views": 369,
+          "theme": "her Bible app says it has been 412 days since she last read, and she swiped the reminder away in shame",
           "emotion": "sad",
-          "hook": "Jesus... I ran the tap so my family wouldn't hear me cry. Then I came out and ate dinner. 🚿",
+          "hook": "Jesus... my Bible app says 412 days since I last read. I swiped the reminder away. 📖",
           "slot": "night (18-24 IST)",
-          "duration": "56-60s"
+          "duration": "<=55s"
         }
       ]
     },
@@ -224,21 +224,21 @@
           "duration": ">60s"
         },
         {
-          "episode_id": "JR-0029",
-          "views": 152,
-          "theme": "jealousy of a sibling",
-          "emotion": "angry",
-          "hook": "Jesus, why does everything come easy for her?",
-          "slot": "night (18-24 IST)",
-          "duration": "56-60s"
-        },
-        {
           "episode_id": "JR-0075",
           "views": 259,
           "theme": "she told her athai her Diwali gift is her favourite when it is not, and the small lie is eating at her",
           "emotion": "sad",
           "hook": "Jesus... Athai's Diwali gift. Why did I call it my favourite? 🎁",
           "slot": "morning (06-12 IST)",
+          "duration": "<=55s"
+        },
+        {
+          "episode_id": "JR-0087",
+          "views": 278,
+          "theme": "her Bible app says it has been 412 days since she last read, and she swiped the reminder away in shame",
+          "emotion": "sad",
+          "hook": "Jesus... my Bible app says 412 days since I last read. I swiped the reminder away. 📖",
+          "slot": "night (18-24 IST)",
           "duration": "<=55s"
         },
         {
@@ -274,80 +274,80 @@
   "content": {
     "n_episodes": 50,
     "both_platforms": 45,
-    "median_score": 0.512,
+    "median_score": 0.518,
     "by_dimension": {
       "emotion": {
         "angry": {
-          "n": 2,
-          "median_score": 0.518
+          "n": 1,
+          "median_score": 0.685
         },
         "crying": {
           "n": 3,
-          "median_score": 0.547
+          "median_score": 0.558
         },
         "happy": {
           "n": 1,
-          "median_score": 0.588
+          "median_score": 0.599
         },
         "hopeful": {
           "n": 1,
-          "median_score": 0.314
+          "median_score": 0.326
         },
         "neutral": {
           "n": 3,
           "median_score": 0.449
         },
         "sad": {
-          "n": 39,
-          "median_score": 0.514
+          "n": 40,
+          "median_score": 0.518
         },
         "worried": {
           "n": 1,
-          "median_score": 0.218
+          "median_score": 0.229
         }
       },
       "character": {
         "boy": {
           "n": 24,
-          "median_score": 0.5635
+          "median_score": 0.5745
         },
         "girl": {
           "n": 26,
-          "median_score": 0.4785
+          "median_score": 0.4845
         }
       },
       "hook_type": {
         "confession_statement": {
-          "n": 21,
-          "median_score": 0.67
+          "n": 22,
+          "median_score": 0.632
         },
         "question": {
-          "n": 19,
-          "median_score": 0.351
+          "n": 18,
+          "median_score": 0.35350000000000004
         },
         "statement": {
           "n": 10,
-          "median_score": 0.5015000000000001
+          "median_score": 0.5125
         }
       },
       "duration": {
         "56-60s": {
-          "n": 12,
-          "median_score": 0.5205
+          "n": 11,
+          "median_score": 0.552
         },
         "<=55s": {
-          "n": 29,
-          "median_score": 0.533
+          "n": 30,
+          "median_score": 0.5255000000000001
         },
         ">60s": {
           "n": 9,
-          "median_score": 0.51
+          "median_score": 0.514
         }
       },
       "bible_book": {
         "1 Peter": {
           "n": 1,
-          "median_score": 0.588
+          "median_score": 0.599
         },
         "2 Corinthians": {
           "n": 1,
@@ -355,11 +355,11 @@
         },
         "2 Timothy": {
           "n": 1,
-          "median_score": 0.614
+          "median_score": 0.625
         },
         "Ephesians": {
-          "n": 2,
-          "median_score": 0.1915
+          "n": 1,
+          "median_score": 0.022
         },
         "Exodus": {
           "n": 1,
@@ -367,7 +367,7 @@
         },
         "Galatians": {
           "n": 4,
-          "median_score": 0.5855
+          "median_score": 0.5965
         },
         "Isaiah": {
           "n": 5,
@@ -375,19 +375,19 @@
         },
         "James": {
           "n": 1,
-          "median_score": 0.211
+          "median_score": 0.222
         },
         "John": {
-          "n": 2,
-          "median_score": 0.352
+          "n": 3,
+          "median_score": 0.217
         },
         "Joshua": {
           "n": 1,
-          "median_score": 0.218
+          "median_score": 0.229
         },
         "Lamentations": {
           "n": 2,
-          "median_score": 0.5559999999999999
+          "median_score": 0.5615
         },
         "Luke": {
           "n": 1,
@@ -395,7 +395,7 @@
         },
         "Mark": {
           "n": 1,
-          "median_score": 0.235
+          "median_score": 0.247
         },
         "Matthew": {
           "n": 5,
@@ -411,15 +411,15 @@
         },
         "Proverbs": {
           "n": 5,
-          "median_score": 0.533
+          "median_score": 0.545
         },
         "Psalms": {
           "n": 14,
-          "median_score": 0.4905
+          "median_score": 0.496
         },
         "Romans": {
           "n": 1,
-          "median_score": 0.48
+          "median_score": 0.492
         }
       }
     },
@@ -463,7 +463,7 @@
         "episode_id": "JR-0082",
         "score": 0.787,
         "views": {
-          "instagram": 1865,
+          "instagram": 1867,
           "youtube": 1754
         },
         "hook": "Jesus... I eat lunch on the office staircase every day. 🍱"
@@ -471,14 +471,12 @@
     ]
   },
   "authoring_guidance": {
-    "lean_towards": [
-      "hook_type=confession_statement (episode score 0.67 vs 0.51, n=21, IG+YT percentile)"
-    ],
+    "lean_towards": [],
     "avoid": [
-      "hook_type=question (episode score 0.35 vs 0.51, n=19, IG+YT percentile)"
+      "hook_type=question (episode score 0.35 vs 0.52, n=18, IG+YT percentile)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1606 (n=23), night (18-24 IST) 1564 (n=22)",
+      "instagram slot medians: morning (06-12 IST) 1606 (n=23), night (18-24 IST) 1532 (n=22)",
       "youtube slot medians: morning (06-12 IST) 1339 (n=25), night (18-24 IST) 1322 (n=25)",
       "instagram: 5 of 50 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061, JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
@@ -488,7 +486,7 @@
       "JR-0063 score 0.89 (instagram 1915, youtube 3812 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
       "JR-0070 score 0.82 (instagram 2204, youtube 1655 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
       "JR-0084 score 0.79 (instagram 2270, youtube 1506 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
-      "JR-0082 score 0.79 (instagram 1865, youtube 1754 views): Jesus... I eat lunch on the office staircase every day. 🍱"
+      "JR-0082 score 0.79 (instagram 1867, youtube 1754 views): Jesus... I eat lunch on the office staircase every day. 🍱"
     ]
   }
 }
