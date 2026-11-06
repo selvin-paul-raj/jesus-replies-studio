@@ -17,10 +17,6 @@
     "Self-harm, suicide or abuse stories are held for Selvin's review before publishing and their caption and description must also carry: \"If you are in danger, please reach a local crisis line: US 988 (call or text), UK & Ireland Samaritans 116 123, India Tele-MANAS 14416.\". Prefer other themes for the daily slots."
   ],
   "avoid_titles": [
-    "Jesus... I Eat Lunch On The Staircase Every Day 🍱",
-    "Jesus... I Liked His Photo With Her 💔",
-    "Jesus... I Fell Asleep In The Office Washroom 😮‍💨",
-    "Jesus... She Got The Promotion I Trained Her For 👏",
     "Jesus... She Sent My Hoodie Back. No Note. 📦",
     "Jesus... My Bible App Says 412 Days 📖",
     "Jesus... My Younger Cousin Bought A Car 🚗",
@@ -30,13 +26,13 @@
     "Jesus... I Replayed This Morning's Meeting In My Head All Night. 😵‍💫",
     "Jesus... Why Am I Crying When Nothing's Wrong? 😭",
     "Jesus... I've Missed Every Sunday This Month 🌙",
-    "Jesus... Good News Came And I Can't Enjoy It 🙂"
+    "Jesus... Good News Came And I Can't Enjoy It 🙂",
+    "Jesus... I Finally Answered The Aunty 💍 Part 2",
+    "Jesus... I Forgave Her But I Can't Let Her Back In 🥀",
+    "Jesus... I'm Always The One Who Texts First (தமிழ்)",
+    "Jesus... I Fell Asleep In The Office Washroom 😮‍💨 (हिंदी)"
   ],
   "avoid_scripture": [
-    "Matthew 25:35",
-    "Psalms 147:3",
-    "Isaiah 40:29",
-    "Proverbs 14:30",
     "Psalms 34:18",
     "John 6:68",
     "Hebrews 13:5",
@@ -46,13 +42,13 @@
     "Matthew 6:34",
     "Romans 8:26",
     "Hebrews 10:25",
-    "James 1:17"
+    "James 1:17",
+    "Colossians 4:6",
+    "Romans 12:18",
+    "Isaiah 49:15",
+    "Isaiah 40:29"
   ],
   "avoid_hooks": [
-    "Jesus... I eat lunch on the office staircase every day. 🍱",
-    "Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔",
-    "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
-    "Jesus... my best friend got the promotion I trained her for. I clapped first. 👏",
     "Jesus... she sent my hoodie back by courier today. No note. I still checked the pockets. 📦",
     "Jesus... my Bible app says 412 days since I last read. I swiped the reminder away. 📖",
     "Jesus... my younger cousin drove to the family lunch in his new car. I said I prefer the metro. 🚗",
@@ -62,13 +58,13 @@
     "Jesus... I've replayed this morning's meeting in my head all night. 😵‍💫",
     "Jesus... why am I crying when nothing's wrong? 😭",
     "Jesus... I've missed every Sunday this month. 🌙",
-    "Jesus... good news came. I can't enjoy it. 🙂"
+    "Jesus... good news came. I can't enjoy it. 🙂",
+    "Jesus... Aunty asked when I'm getting married. This time I answered her. 💍",
+    "Jesus... I forgave her. I just can't let her back in. 🥀",
+    "Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
+    "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨"
   ],
   "recent_topics": [
-    "he eats lunch on the office staircase every day and calls it a choice, but really no one ever asked him to join",
-    "her ex posted a photo with his new girlfriend and she liked it so he would think she is fine",
-    "exhausted after a third late night, he fell asleep in the office washroom and told his manager he was on a call",
-    "her best friend at work got the promotion she trained her for, and she clapped first while envy ate at her",
     "his ex returned his hoodie by courier with no note, and he still checked the pockets for a message",
     "her Bible app says it has been 412 days since she last read, and she swiped the reminder away in shame",
     "at the family lunch his younger cousin showed off a new car, and he stayed inside pretending he prefers the metro",
@@ -78,13 +74,13 @@
     "he replays every meeting at night hunting for the sentence he got wrong, and calls it preparing for tomorrow",
     "she cried in the car after a genuinely good day and cannot explain the tears to anyone, least of all herself",
     "she works night shifts and has missed church for a month, and feels like God now works a different shift",
-    "good things finally arrived for him and he cannot enjoy any of it, always waiting for the catch"
+    "good things finally arrived for him and he cannot enjoy any of it, always waiting for the catch",
+    "part 2: at the next family lunch she finally answers the aunty who keeps asking when she will marry, gently and without shame",
+    "a viewer's comment: she forgave someone close but cannot trust her again, and feels hollow",
+    "she always texts first and wonders if anyone would notice if she stopped",
+    "exhausted after a third late night, he fell asleep in the office washroom and told his manager he was on a call"
   ],
   "recent_emotions": [
-    "sad",
-    "crying",
-    "neutral",
-    "angry",
     "hopeful",
     "sad",
     "sad",
@@ -94,7 +90,11 @@
     "neutral",
     "crying",
     "hopeful",
-    "happy"
+    "happy",
+    "hopeful",
+    "sad",
+    "sad",
+    "neutral"
   ],
   "duration_target_seconds": [
     45,
@@ -151,23 +151,23 @@
   },
   "strategy": {
     "source": "content-os/learnings.json + content-os/STRATEGY.md",
-    "as_of": "2026-11-05T06:38:20.021649+00:00",
+    "as_of": "2026-11-05T19:53:32.929244+00:00",
     "lean_towards": [],
     "avoid": [
-      "hook_type=question (episode score 0.31 vs 0.52, n=21, IG+YT percentile)"
+      "hook_type=question (episode score 0.33 vs 0.51, n=20, IG+YT percentile)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1606 (n=23), night (18-24 IST) 1534 (n=22)",
-      "youtube slot medians: morning (06-12 IST) 1339 (n=25), night (18-24 IST) 1255 (n=25)",
+      "instagram slot medians: morning (06-12 IST) 1606 (n=23), night (18-24 IST) 1564 (n=22)",
+      "youtube slot medians: morning (06-12 IST) 1339 (n=25), night (18-24 IST) 1310 (n=25)",
       "instagram: 5 of 50 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061, JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
       "JR-0041 score 0.94 (youtube 2036 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0063 score 0.90 (instagram 1913, youtube 3770 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
-      "JR-0070 score 0.83 (instagram 2204, youtube 1655 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
-      "JR-0046 score 0.80 (youtube 1662 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔",
-      "JR-0082 score 0.75 (instagram 1863, youtube 1623 views): Jesus... I eat lunch on the office staircase every day. 🍱"
+      "JR-0063 score 0.89 (instagram 1915, youtube 3804 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
+      "JR-0070 score 0.82 (instagram 2204, youtube 1655 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
+      "JR-0082 score 0.78 (instagram 1865, youtube 1734 views): Jesus... I eat lunch on the office staircase every day. 🍱",
+      "JR-0084 score 0.78 (instagram 2269, youtube 1486 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨"
     ]
   },
   "review_rules": {
@@ -251,8 +251,20 @@
       {
         "id": "R13-first-comment",
         "since": "2026-11-05",
-        "rule": "Every new package has first_comment: one easy, warm question tied to the episode, at most 150 characters, no links, hashtags or bait (\"Has someone in your family ever said this to you?\"). Instagram: sent through Buffer as metadata.instagram.firstComment. YouTube: Buffer has no first-comment field, so the every-2-days comment run posts it from the channel and pins it (comment-replies.md).",
+        "rule": "Every new package has first_comment: one easy, warm question tied to the episode, at most 150 characters, no links, hashtags or bait (\"Has someone in your family ever said this to you?\"). Instagram: Buffer's firstComment is a paid feature (rejected 2026-11-05), so the comment run posts it under each new Reel by hand until publishing-rules buffer.instagram_first_comment is true. YouTube: Buffer has no first-comment field, so the every-2-days comment run posts it from the channel and pins it (comment-replies.md).",
         "evidence": "Comments are near zero on Instagram (4 on 26 Reels) but YouTube is where people answer (R4). A seeded, answerable question gives viewers an easy first reply. Selvin approved 2026-11-05."
+      },
+      {
+        "id": "R14-comment-replies",
+        "since": "2026-11-05",
+        "rule": "A 'Jesus replies to your comment' episode uses a real comment logged in content-os/community/, quoted exactly, respectful, never a crisis comment, critique or bait; the handle is hidden on screen unless config comment_reply.show_handle allows it. One a week (Thursday 19:30). Enforced by daily/formats.comment_problems.",
+        "evidence": "YouTube is where viewers talk (R4: 32 comments vs 4 on IG in 14 days); answering one on screen rewards commenting. Selvin approved 2026-11-05 (DEC-JR-018)."
+      },
+      {
+        "id": "R15-translated-subtitles",
+        "since": "2026-11-05",
+        "rule": "Tamil/Hindi subtitle versions: story lines are natural human translations; the verse caption is the bundled IRV text (CC BY-SA 4.0, Bridge Connectivity Solutions) for the same reference, verbatim, never machine-translated; the attribution line is in caption and description. The spoken/English verse stays KJV. Enforced by daily/formats.subtitle_problems + package_problems.",
+        "evidence": "Audience is largely Indian (Tamil/Hindi family themes perform best: JR-0060, JR-0071). Selvin approved 2026-11-05 (DEC-JR-018)."
       }
     ],
     "experiments": [
