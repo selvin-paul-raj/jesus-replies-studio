@@ -139,23 +139,25 @@
   ],
   "strategy": {
     "source": "content-os/learnings.json + content-os/STRATEGY.md",
-    "as_of": "2026-11-05T19:53:32.929244+00:00",
-    "lean_towards": [],
+    "as_of": "2026-11-06T03:41:24.733589+00:00",
+    "lean_towards": [
+      "hook_type=confession_statement (episode score 0.67 vs 0.51, n=21, IG+YT percentile)"
+    ],
     "avoid": [
-      "hook_type=question (episode score 0.33 vs 0.51, n=20, IG+YT percentile)"
+      "hook_type=question (episode score 0.35 vs 0.51, n=19, IG+YT percentile)"
     ],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1606 (n=23), night (18-24 IST) 1564 (n=22)",
-      "youtube slot medians: morning (06-12 IST) 1339 (n=25), night (18-24 IST) 1310 (n=25)",
+      "youtube slot medians: morning (06-12 IST) 1339 (n=25), night (18-24 IST) 1322 (n=25)",
       "instagram: 5 of 50 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061, JR-0046, JR-0042, JR-0041, JR-0033",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0041 score 0.94 (youtube 2036 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
-      "JR-0063 score 0.89 (instagram 1915, youtube 3804 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
+      "JR-0041 score 0.94 (youtube 2038 views): Jesus... I said yes again. I didn't want to. I never do. 😔",
+      "JR-0063 score 0.89 (instagram 1915, youtube 3812 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
       "JR-0070 score 0.82 (instagram 2204, youtube 1655 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
-      "JR-0082 score 0.78 (instagram 1865, youtube 1734 views): Jesus... I eat lunch on the office staircase every day. 🍱",
-      "JR-0084 score 0.78 (instagram 2269, youtube 1486 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨"
+      "JR-0084 score 0.79 (instagram 2270, youtube 1506 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+      "JR-0082 score 0.79 (instagram 1865, youtube 1754 views): Jesus... I eat lunch on the office staircase every day. 🍱"
     ]
   },
   "review_rules": {
