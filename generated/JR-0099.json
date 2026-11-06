@@ -1,47 +1,71 @@
 {
   "id": "JR-0099",
-  "title": "Jesus... Two Years Of Praying The Same Prayer 😔",
-  "character": "boy",
-  "topic": "he has prayed the same prayer every night for two years, nothing has changed, and he started to wonder if it even reaches God",
-  "emotion": "hopeful",
+  "title": "Jesus... I'm Always The One Who Texts First (தமிழ்)",
+  "character": "girl",
+  "topic": "she always texts first and wonders if anyone would notice if she stopped",
+  "emotion": "sad",
+  "variant_of": "JR-0063",
+  "series": "subtitles-ta",
   "bible": {
-    "book": "Lamentations",
-    "chapter": 3,
-    "verse": 25,
+    "book": "Isaiah",
+    "chapter": 49,
+    "verse": 15,
     "version": "KJV",
-    "text": "The LORD is good unto them that wait for him, to the soul that seeketh him."
+    "text": "Can a woman forget her sucking child, that she should not have compassion on the son of her womb? yea, they may forget, yet will I not forget thee."
   },
   "lines": [
     {
       "speaker": "person",
-      "text": "Jesus... I've prayed the same prayer for two years. Still nothing. 😔"
-    },
-    {
-      "speaker": "person",
-      "text": "Every night. Same words. I'm starting to wonder if they're even reaching You."
+      "text": "Jesus... I stopped texting first for a day. Nobody checked on me. 💔"
     },
     {
       "speaker": "jesus",
-      "text": "They reached Me the first night. And every night since. Nothing you prayed was lost."
+      "text": "You were hoping someone would prove you matter."
     },
     {
       "speaker": "person",
-      "text": "Then why does heaven feel quiet? Other people get answers in weeks."
+      "text": "Does nobody noticing mean nobody loves me?"
     },
     {
       "speaker": "jesus",
-      "text": "Quiet isn't silence. Some answers grow slow because what they're becoming is bigger than the ask."
+      "text": "It means they got comfortable being carried. It still hurts."
+    },
+    {
+      "speaker": "person",
+      "text": "So do I just stop trying?"
+    },
+    {
+      "speaker": "jesus",
+      "text": "Keep being you. And tell one friend: I miss being asked too."
     },
     {
       "speaker": "bible_verse"
     },
     {
       "speaker": "jesus",
-      "text": "I'm not late. Stay in the waiting with Me. I'm good to those who seek Me."
+      "text": "I've never once been too tired to reach for you first."
     },
     {
       "speaker": "engagement",
-      "text": "Send this to someone whose prayer is still open."
+      "text": "Send this to the friend who always texts first. Who would notice if you went quiet? 👇"
     }
-  ]
+  ],
+  "subtitles": {
+    "lang": "ta",
+    "bible": "data/bible/ta-irv.json",
+    "attribution": "Tamil Scripture: IRV Tamil © 2017, 2019 Bridge Connectivity Solutions, CC BY-SA 4.0 (ebible.org).",
+    "verse_text": "ஒரு பெண் தன் கர்ப்பத்தின் குழந்தைக்கு இரங்காமல், தன் மகனை மறப்பாளோ? அவர்கள் மறந்தாலும், நான் உன்னை மறப்பதில்லை.",
+    "verse_label": "Isaiah 49:15 (IRV Tamil)",
+    "lines": [
+      "இயேசுவே... ஒரு நாள் நான் முதல்ல மெசேஜ் பண்ணல. யாருமே என்னை விசாரிக்கல.",
+      "நீ முக்கியம்னு யாராவது நிரூபிக்கணும்னு நீ காத்திருந்த.",
+      "யாரும் கவனிக்கலன்னா, யாருமே என்னை நேசிக்கலன்னு அர்த்தமா?",
+      "நீ சுமந்துகிட்டே இருக்கிறதுக்கு அவங்க பழகிட்டாங்க. அது வலிக்கத்தான் செய்யும்.",
+      "அப்போ நான் முயற்சி பண்றதையே நிறுத்திடணுமா?",
+      "நீ நீயாவே இரு. ஒரு நண்பர்கிட்ட சொல்லு: 'என்னையும் யாராவது கேக்கணும்னு ஏங்குறேன்.'",
+      null,
+      "உன்னை முதல்ல தேடி வர நான் ஒருநாளும் சோர்ந்ததில்லை.",
+      "எப்பவும் முதல்ல மெசேஜ் பண்ற நண்பருக்கு இதை அனுப்பு. நீ அமைதியானா யார் கவனிப்பாங்க?"
+    ]
+  }
 }
