@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0096",
+  "theme": "she turned down a match whose family wanted her to quit her job, and her mother hasn't spoken to her in four days",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I said no to the match. Amma hasn't spoken to me in four days. 💔",
+  "series": "family-pressure",
+  "story_type": "one_pushback",
+  "audience_problem": "she turned down a match whose family wanted her to quit her job, and her mother hasn't spoken to her in four days",
+  "bible_theme": "Psalms 27:10",
+  "bible_book": "Psalms",
+  "cta_type": "reflection_statement",
+  "duration": 53.91,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0096/JR-0096.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

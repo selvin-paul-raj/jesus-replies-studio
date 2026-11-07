@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0093",
+  "theme": "she cried in the car after a genuinely good day and cannot explain the tears to anyone, least of all herself",
+  "emotion": "crying",
+  "character": "girl",
+  "hook_type": "question",
+  "hook": "Jesus... why am I crying when nothing's wrong? 😭",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "she cried in the car after a genuinely good day and cannot explain the tears to anyone, least of all herself",
+  "bible_theme": "Romans 8:26",
+  "bible_book": "Romans",
+  "cta_type": "comment_question_plus_action",
+  "duration": 54.29,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0093/JR-0093.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

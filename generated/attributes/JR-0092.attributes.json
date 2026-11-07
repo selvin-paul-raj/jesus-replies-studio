@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0092",
+  "theme": "he replays every meeting at night hunting for the sentence he got wrong, and calls it preparing for tomorrow",
+  "emotion": "neutral",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I've replayed this morning's meeting in my head all night. 😵‍💫",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "he replays every meeting at night hunting for the sentence he got wrong, and calls it preparing for tomorrow",
+  "bible_theme": "Matthew 6:34",
+  "bible_book": "Matthew",
+  "cta_type": "comment_question_plus_action",
+  "duration": 49.11,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0092/JR-0092.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

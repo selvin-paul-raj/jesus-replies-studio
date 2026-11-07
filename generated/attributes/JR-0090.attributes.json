@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0090",
+  "theme": "his teammate presented the fix he built as her own at the morning standup, and he stayed quiet all day",
+  "emotion": "angry",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... my teammate read out my fix in the standup. My name wasn't said. 😤",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "his teammate presented the fix he built as her own at the morning standup, and he stayed quiet all day",
+  "bible_theme": "Proverbs 15:1",
+  "bible_book": "Proverbs",
+  "cta_type": "comment_question_plus_action",
+  "duration": 50.88,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0090/JR-0090.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

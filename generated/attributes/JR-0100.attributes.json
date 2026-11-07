@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0100",
+  "theme": "exhausted after a third late night, he fell asleep in the office washroom and told his manager he was on a call",
+  "emotion": "neutral",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+  "series": "subtitles-hi",
+  "story_type": "one_pushback",
+  "audience_problem": "exhausted after a third late night, he fell asleep in the office washroom and told his manager he was on a call",
+  "bible_theme": "Isaiah 40:29",
+  "bible_book": "Isaiah",
+  "cta_type": "reflection_statement",
+  "duration": 51.24,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0100/JR-0100.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

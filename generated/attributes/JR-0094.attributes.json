@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0094",
+  "theme": "she works night shifts and has missed church for a month, and feels like God now works a different shift",
+  "emotion": "hopeful",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I've missed every Sunday this month. 🌙",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "she works night shifts and has missed church for a month, and feels like God now works a different shift",
+  "bible_theme": "Hebrews 10:25",
+  "bible_book": "Hebrews",
+  "cta_type": "reflection_statement",
+  "duration": 56.04,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0094/JR-0094.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

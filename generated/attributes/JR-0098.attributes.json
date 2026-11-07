@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0098",
+  "theme": "a viewer's comment: she forgave someone close but cannot trust her again, and feels hollow",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I forgave her. I just can't let her back in. 🥀",
+  "series": "comment-replies",
+  "story_type": "one_pushback",
+  "audience_problem": "a viewer's comment: she forgave someone close but cannot trust her again, and feels hollow",
+  "bible_theme": "Romans 12:18",
+  "bible_book": "Romans",
+  "cta_type": "reflection_statement",
+  "duration": 52.18,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0098/JR-0098.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

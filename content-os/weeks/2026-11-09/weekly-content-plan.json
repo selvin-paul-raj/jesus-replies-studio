@@ -1,0 +1,663 @@
+{
+  "plan_version": 1,
+  "week_start": "2026-11-09",
+  "week_end": "2026-11-15",
+  "timezone": "Asia/Kolkata",
+  "generated_at": "2026-11-07T17:47:48.000Z",
+  "status": "PROPOSED",
+  "requires_authorization": false,
+  "targets": {
+    "unique_videos": 14,
+    "instagram": 14,
+    "youtube": 14,
+    "platform_publications": 28
+  },
+  "generation_needed": 9,
+  "carry_over_ready": [],
+  "inventory_counts": {
+    "PUBLISHED": 84,
+    "UNUSED": 9,
+    "SCHEDULED": 3,
+    "READY": 5
+  },
+  "analytics_summary": {
+    "instagram": {
+      "jr_posts_sent": 55,
+      "dimensions": {
+        "reach": {
+          "metric": "reach",
+          "n": 55,
+          "median": 1271,
+          "max": 11812
+        },
+        "retention": {
+          "metric": "averageTimeWatched",
+          "n": 55,
+          "median": 9.91,
+          "max": 18.56
+        },
+        "shares": {
+          "metric": "shares",
+          "n": 55,
+          "median": 4,
+          "max": 179
+        },
+        "saves": {
+          "metric": "saves",
+          "n": 55,
+          "median": 9,
+          "max": 369
+        },
+        "comments": {
+          "metric": "comments",
+          "n": 55,
+          "median": 0,
+          "max": 4
+        },
+        "follows": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "likes": {
+          "metric": "reactions",
+          "n": 55,
+          "median": 86,
+          "max": 755
+        },
+        "views": {
+          "metric": "views",
+          "n": 55,
+          "median": 1421,
+          "max": 13569
+        }
+      }
+    },
+    "youtube": {
+      "jr_posts_sent": 83,
+      "dimensions": {
+        "reach": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "retention": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "shares": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "saves": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "comments": {
+          "metric": "comments",
+          "n": 83,
+          "median": 2,
+          "max": 13
+        },
+        "follows": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "likes": {
+          "metric": "reactions",
+          "n": 83,
+          "median": 116,
+          "max": 1439
+        },
+        "views": {
+          "metric": "views",
+          "n": 83,
+          "median": 993,
+          "max": 3821
+        }
+      }
+    }
+  },
+  "timing": {
+    "hypotheses": [
+      {
+        "platform": "instagram",
+        "window": "06:00-09:00",
+        "median": 1361.5,
+        "n": 20,
+        "metric": "reach",
+        "confidence": "medium"
+      },
+      {
+        "platform": "youtube",
+        "window": "06:00-09:00",
+        "median": 188.5,
+        "n": 26,
+        "metric": "reactions",
+        "confidence": "medium"
+      }
+    ],
+    "caveats": [
+      "metrics are cumulative and confounded by topic, hook and account momentum",
+      "Buffer reports no audience-activity-by-hour; Instagram/YouTube native insights are not wired",
+      "only posts at least 7 days old are compared so totals are roughly comparable"
+    ],
+    "coordination": "same_slot"
+  },
+  "research_ref": "content-os/research/2026-11-09.research.json",
+  "research_opportunities": [],
+  "experiments_active": [
+    "EXP-004",
+    "EXP-005"
+  ],
+  "slots": [
+    {
+      "episode_id": "JR-0096",
+      "date": "2026-11-09",
+      "weekday": "Monday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-09T02:30:00.000Z",
+        "youtube": "2026-11-09T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "she turned down a match whose family wanted her to quit her job, and her mother hasn't spoken to her in four days",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I said no to the match. Amma hasn't spoken to me in four days. 💔",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Psalms 27:10",
+      "story_type": "one_pushback",
+      "cta_type": "reflection_statement",
+      "duration_s": 53.91,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "weekly series lane 'family-pressure' (DEC-JR-017): Refused a match whose family wanted her to quit her job; her mother hasn't spoken to her in 4 days. Verse Psalms 27:10 (context-checked, R10). Goes through every normal gate before it is scheduled."
+      ],
+      "series": "family-pressure"
+    },
+    {
+      "episode_id": "JR-0101",
+      "date": "2026-11-09",
+      "weekday": "Monday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-09T14:00:00.000Z",
+        "youtube": "2026-11-09T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "confession",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0097",
+      "date": "2026-11-10",
+      "weekday": "Tuesday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-10T02:30:00.000Z",
+        "youtube": "2026-11-10T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "part 2: at the next family lunch she finally answers the aunty who keeps asking when she will marry, gently and without shame",
+      "hook_strategy": "statement",
+      "hook": "Jesus... Aunty asked when I'm getting married. This time I answered her. 💍",
+      "emotional_angle": "hopeful",
+      "character": "girl",
+      "bible_reference": "Colossians 4:6",
+      "story_type": "one_pushback",
+      "cta_type": "reflection_statement",
+      "duration_s": 52.16,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "weekly series lane 'sequels' (DEC-JR-017): She finally answers the aunty who keeps asking when she will marry: gently, without shame. Verse Colossians 4:6 (context-checked, R10). Goes through every normal gate before it is scheduled."
+      ],
+      "series": "sequels"
+    },
+    {
+      "episode_id": "JR-0102",
+      "date": "2026-11-10",
+      "weekday": "Tuesday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-10T14:00:00.000Z",
+        "youtube": "2026-11-10T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "statement",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0103",
+      "date": "2026-11-11",
+      "weekday": "Wednesday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-11T02:30:00.000Z",
+        "youtube": "2026-11-11T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "confession",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0099",
+      "date": "2026-11-11",
+      "weekday": "Wednesday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-11T14:00:00.000Z",
+        "youtube": "2026-11-11T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "she always texts first and wonders if anyone would notice if she stopped",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Isaiah 49:15",
+      "story_type": "full_arc_two_pushbacks",
+      "cta_type": "comment_question_plus_action",
+      "duration_s": 55.59,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "weekly series lane 'subtitles-ta' (DEC-JR-017): None Verse Isaiah 49:15 (context-checked, R10). Goes through every normal gate before it is scheduled."
+      ],
+      "series": "subtitles-ta"
+    },
+    {
+      "episode_id": "JR-0104",
+      "date": "2026-11-12",
+      "weekday": "Thursday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-12T02:30:00.000Z",
+        "youtube": "2026-11-12T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "statement",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0098",
+      "date": "2026-11-12",
+      "weekday": "Thursday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-12T14:00:00.000Z",
+        "youtube": "2026-11-12T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "a viewer's comment: she forgave someone close but cannot trust her again, and feels hollow",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I forgave her. I just can't let her back in. 🥀",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Romans 12:18",
+      "story_type": "one_pushback",
+      "cta_type": "reflection_statement",
+      "duration_s": 52.18,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "weekly series lane 'comment-replies' (DEC-JR-017): None Verse Romans 12:18 (context-checked, R10). Goes through every normal gate before it is scheduled."
+      ],
+      "series": "comment-replies"
+    },
+    {
+      "episode_id": "JR-0105",
+      "date": "2026-11-13",
+      "weekday": "Friday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-13T02:30:00.000Z",
+        "youtube": "2026-11-13T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "confession",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0106",
+      "date": "2026-11-13",
+      "weekday": "Friday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-13T14:00:00.000Z",
+        "youtube": "2026-11-13T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "statement",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0107",
+      "date": "2026-11-14",
+      "weekday": "Saturday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-14T02:30:00.000Z",
+        "youtube": "2026-11-14T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "confession",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0100",
+      "date": "2026-11-14",
+      "weekday": "Saturday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-14T14:00:00.000Z",
+        "youtube": "2026-11-14T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "exhausted after a third late night, he fell asleep in the office washroom and told his manager he was on a call",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+      "emotional_angle": "neutral",
+      "character": "boy",
+      "bible_reference": "Isaiah 40:29",
+      "story_type": "one_pushback",
+      "cta_type": "reflection_statement",
+      "duration_s": 51.24,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "weekly series lane 'subtitles-hi' (DEC-JR-017): None Verse Isaiah 40:29 (context-checked, R10). Goes through every normal gate before it is scheduled."
+      ],
+      "series": "subtitles-hi"
+    },
+    {
+      "episode_id": "JR-0108",
+      "date": "2026-11-15",
+      "weekday": "Sunday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-15T02:30:00.000Z",
+        "youtube": "2026-11-15T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "statement",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0109",
+      "date": "2026-11-15",
+      "weekday": "Sunday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-15T14:00:00.000Z",
+        "youtube": "2026-11-15T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "confession",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    }
+  ],
+  "plan_sha256": "b90ccf6df84cf9d8a8ad5d50adbbb7f5d4e9f70076ea73eb6b00f59b07d85031"
+}
