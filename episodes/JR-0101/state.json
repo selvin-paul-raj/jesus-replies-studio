@@ -1,6 +1,6 @@
 {
   "episode_id": "JR-0101",
-  "state": "PACKAGE_QA_FAILED",
+  "state": "VALIDATED",
   "updated_at": "2026-11-08T04:58:07Z",
   "slot": null,
   "target_date": null,
@@ -140,6 +140,13 @@
       "to": "PACKAGE_QA_FAILED",
       "run": "42448844976",
       "evidence": "thumbnail image not rendered"
+    },
+    {
+      "at": "2026-11-08T05:02:25+00:00",
+      "from": "PACKAGE_QA_FAILED",
+      "to": "VALIDATED",
+      "run": "fo-20261108-rerender",
+      "evidence": "cross-run retry: PACKAGE_QA_FAILED->RENDER_QA_PASSED reopen skipped the render on a fresh runner, so the QA thumb glob found nothing; reopen to VALIDATED to force a full re-render (video + thumbnail) in the same run"
     }
   ],
   "heal": {
