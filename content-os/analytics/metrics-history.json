@@ -8541,6 +8541,17 @@
         },
         "observed_age_hours": 76.8,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "168h": {
+        "metrics": {
+          "views": 61,
+          "reach": 50,
+          "comments": 0,
+          "engagementRate": 0,
+          "reactions": 0
+        },
+        "observed_age_hours": 171.6,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -9173,6 +9184,17 @@
         },
         "observed_age_hours": 33.5,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "72h": {
+        "metrics": {
+          "views": 61,
+          "reach": 48,
+          "comments": 0,
+          "engagementRate": 0,
+          "reactions": 0
+        },
+        "observed_age_hours": 75.4,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -9351,13 +9373,40 @@
     "episode_id": null,
     "platform": "instagram",
     "sent_at": "2026-11-07T09:11:22.069Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "views": 69,
+          "reach": 53,
+          "comments": 0,
+          "engagementRate": 0,
+          "reactions": 0
+        },
+        "observed_age_hours": 28.1,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "instagram:6aec74a51c4d995fa9b262ae": {
     "episode_id": null,
     "platform": "instagram",
     "sent_at": "2026-11-07T07:02:27.395Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 1,
+          "comments": 0,
+          "engagementRate": 8,
+          "views": 77,
+          "shares": 0,
+          "saves": 1,
+          "follows": 0,
+          "reach": 25
+        },
+        "observed_age_hours": 30.2,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "instagram:6aec0f077877e0eab276e07f": {
     "episode_id": "JR-0093",

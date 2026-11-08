@@ -1,4 +1,4 @@
-# Hark brief (as of 2026-11-08T05:55:14.570170+00:00)
+# Hark brief (as of 2026-11-08T13:16:10.193548+00:00)
 
 ## instagram: median views 1421 (n=53)
 - JR-0090 2026-11-06 08:03: 680 views (0.5x), likes 28, shares 1, comments 0, hook confession_statement
