@@ -1,25 +1,23 @@
 {
   "counts": {
-    "PUBLISHED": 86,
     "UNUSED": 10,
-    "SCHEDULED": 9
+    "PUBLISHED": 85,
+    "SCHEDULED": 10
   },
   "next_ready": [],
   "ready_total": 0,
   "items": [
     {
       "episode_id": "JR-0001",
-      "status": "PUBLISHED",
-      "why": "published before hosted assets were tracked",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
       "platforms": {
         "instagram": "NONE",
-        "youtube": "PUBLISHED (seen in Buffer, not tracked by the OS)"
+        "youtube": "NONE"
       },
       "asset_url": null,
       "duration_s": null,
-      "published_on": [
-        "youtube"
-      ]
+      "published_on": []
     },
     {
       "episode_id": "JR-0002",
@@ -1479,16 +1477,16 @@
     },
     {
       "episode_id": "JR-0104",
-      "status": "UNUSED",
-      "why": "no hosted QA-passed asset",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "NONE",
-        "youtube": "NONE"
+        "instagram": "DRAFT",
+        "youtube": "SCHEDULED"
       },
-      "asset_url": null,
-      "duration_s": null,
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0104/JR-0104.mp4",
+      "duration_s": 59.52,
       "published_on": []
     }
   ],
-  "as_of": "2026-11-08T05:12:21.354178+00:00"
+  "as_of": "2026-11-08T05:15:53.315005+00:00"
 }
