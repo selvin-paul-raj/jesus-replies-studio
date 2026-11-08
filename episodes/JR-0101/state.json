@@ -1,6 +1,6 @@
 {
   "episode_id": "JR-0101",
-  "state": "VALIDATION_FAILED",
+  "state": "GENERATED",
   "updated_at": "2026-11-08T04:51:05Z",
   "slot": null,
   "target_date": null,
@@ -55,6 +55,13 @@
       "to": "VALIDATION_FAILED",
       "run": "42448390869",
       "evidence": "estimated length 66.0s is over the 60s ceiling (target 45-55s); cut lines before rendering"
+    },
+    {
+      "at": "2026-11-08T04:53:09+00:00",
+      "from": "VALIDATION_FAILED",
+      "to": "GENERATED",
+      "run": "fo-20261108-trim",
+      "evidence": "manual reopen: script trimmed from 109 to 87 spoken words (est ~50s) to fit 45-55s/60s ceiling; package + brief updated; validators pass"
     }
   ],
   "heal": {

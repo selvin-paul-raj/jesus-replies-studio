@@ -273,11 +273,11 @@
     "hopeful": 4
   },
   "duration_target_seconds": [
-    70,
-    80
+    45,
+    55
   ],
-  "duration_ceiling_seconds": 90,
-  "duration_rule": "70-80s target, 90s hard ceiling; spoken words 95-120 (R6).",
+  "duration_ceiling_seconds": 60,
+  "duration_rule": "45-55s target, 60s ceiling (repo convention; est ~0.57s/word).",
   "scripture_rule": "King James Version (KJV, public domain), version=\"KJV\", text copied verbatim from data/bible/kjv.json; never paraphrase; label (KJV); never NIV/ESV/NLT/BSB.",
   "hook_rule": "Plan hook strategy for this slot: confession.",
   "allowed_hook_types": [
