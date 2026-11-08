@@ -101,7 +101,7 @@
     55
   ],
   "duration_ceiling_seconds": 60,
-  "duration_rule": "45-55s target, 60s ceiling (repo convention; est ~0.57s/word).",
+  "duration_rule": "aim for 45-55 s (about 112 spoken words across all lines incl. the verse); the validator estimates the length before rendering and rejects anything over 60 s",
   "scripture_rule": "King James Version (KJV, public domain), version=\"KJV\", text copied verbatim, character for character, from data/bible/kjv.json (get it with `python3 scripts/daily/jr_daily.py verse \"Psalm 23:1\"`); never paraphrase or modernise the wording; label it (KJV) in captions and descriptions; never NIV/ESV/NLT/BSB or any other translation; the verse must fit its context (review rule R10); unverifiable -> BLOCKED",
   "hook_rule": "R11: line 1 is a confession or a statement, never a question (no '?', no 'why/how/what/is/does...' opener). YouTube median views by hook: question 382 (n=41), statement 1,270 (n=11), confession 1,440 (n=24); Instagram is neutral. One script feeds both platforms, so the rule holds for both. The validator fails a question opener.",
   "allowed_hook_types": [
@@ -139,7 +139,7 @@
   ],
   "strategy": {
     "source": "content-os/learnings.json + content-os/STRATEGY.md",
-    "as_of": "2026-11-08T02:39:22.503678+00:00",
+    "as_of": "2026-11-08T04:51:18.930984+00:00",
     "lean_towards": [],
     "avoid": [],
     "evidence_notes": [

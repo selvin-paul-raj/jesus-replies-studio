@@ -1,19 +1,31 @@
 {
   "episode_id": "JR-0101",
-  "state": "GENERATED",
-  "updated_at": "2026-11-08T04:51:05Z",
+  "state": "PACKAGE_QA_FAILED",
+  "updated_at": "2026-11-08T04:56:07Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
-  "validation": "FAIL",
-  "render": "NOT_STARTED",
-  "render_qa": "NOT_STARTED",
-  "package": "NOT_STARTED",
-  "package_qa": "NOT_STARTED",
+  "validation": "PASS",
+  "render": "PASS",
+  "render_qa": "PASS",
+  "package": "PASS",
+  "package_qa": "FAIL",
   "asset_hosting": "NOT_STARTED",
   "asset_url": null,
   "render_facts": {
-    "estimated_seconds": 66.0
+    "estimated_seconds": 56.47,
+    "command": "npm run jr -- render generated/JR-0101.json --out-dir output",
+    "exit": 0,
+    "path": "output/videos/JR-0101.mp4",
+    "size_bytes": 6057328,
+    "how": "RENDERED",
+    "duration_s": 56.51,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "resolution": "1080x1920",
+    "warnings": [
+      "duration 56.51s above target [45, 55] but under ceiling"
+    ]
   },
   "buffer": {
     "post_id": null,
@@ -39,6 +51,11 @@
       "at": "2026-11-08T04:51:05Z",
       "state": "VALIDATION_FAILED",
       "detail": "estimated length 66.0s is over the 60s ceiling (target 45-55s); cut lines before rendering"
+    },
+    {
+      "at": "2026-11-08T04:56:07Z",
+      "state": "PACKAGE_QA_FAILED",
+      "detail": "first_comment asks more than one question"
     }
   ],
   "history": [
@@ -62,6 +79,41 @@
       "to": "GENERATED",
       "run": "fo-20261108-trim",
       "evidence": "manual reopen: script trimmed from 109 to 87 spoken words (est ~50s) to fit 45-55s/60s ceiling; package + brief updated; validators pass"
+    },
+    {
+      "at": "2026-11-08T04:54:29Z",
+      "from": "GENERATED",
+      "to": "VALIDATED",
+      "run": "42448601150",
+      "evidence": "schema PASS, originality PASS, KJV 1 Thessalonians 5:18 verbatim match"
+    },
+    {
+      "at": "2026-11-08T04:56:07Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "42448601150",
+      "evidence": "RENDERED JR-0101.mp4 6057328 B"
+    },
+    {
+      "at": "2026-11-08T04:56:07Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "42448601150",
+      "evidence": "56.51s 1080x1920 h264/aac duration 56.51s above target [45, 55] but under ceiling"
+    },
+    {
+      "at": "2026-11-08T04:56:07Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "42448601150",
+      "evidence": "JR-0101.package.json present"
+    },
+    {
+      "at": "2026-11-08T04:56:07Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_FAILED",
+      "run": "42448601150",
+      "evidence": "first_comment asks more than one question"
     }
   ],
   "heal": {
