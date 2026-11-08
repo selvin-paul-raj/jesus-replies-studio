@@ -1,6 +1,6 @@
 {
   "episode_id": "JR-0101",
-  "state": "PACKAGE_QA_FAILED",
+  "state": "RENDER_QA_PASSED",
   "updated_at": "2026-11-08T04:56:07Z",
   "slot": null,
   "target_date": null,
@@ -114,6 +114,13 @@
       "to": "PACKAGE_QA_FAILED",
       "run": "42448601150",
       "evidence": "first_comment asks more than one question"
+    },
+    {
+      "at": "2026-11-08T04:57:24+00:00",
+      "from": "PACKAGE_QA_FAILED",
+      "to": "RENDER_QA_PASSED",
+      "run": "fo-20261108-fc-fix",
+      "evidence": "manual reopen: first_comment asked two questions; replaced with a single question in all four 0101-0104 packages; package validator passes"
     }
   ],
   "heal": {
