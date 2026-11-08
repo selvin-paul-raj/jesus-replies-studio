@@ -1,7 +1,7 @@
 {
   "episode_id": "JR-0101",
-  "state": "RENDER_QA_PASSED",
-  "updated_at": "2026-11-08T04:56:07Z",
+  "state": "PACKAGE_QA_FAILED",
+  "updated_at": "2026-11-08T04:58:07Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
@@ -56,6 +56,11 @@
       "at": "2026-11-08T04:56:07Z",
       "state": "PACKAGE_QA_FAILED",
       "detail": "first_comment asks more than one question"
+    },
+    {
+      "at": "2026-11-08T04:58:07Z",
+      "state": "PACKAGE_QA_FAILED",
+      "detail": "thumbnail image not rendered"
     }
   ],
   "history": [
@@ -121,6 +126,20 @@
       "to": "RENDER_QA_PASSED",
       "run": "fo-20261108-fc-fix",
       "evidence": "manual reopen: first_comment asked two questions; replaced with a single question in all four 0101-0104 packages; package validator passes"
+    },
+    {
+      "at": "2026-11-08T04:58:07Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "42448844976",
+      "evidence": "JR-0101.package.json present"
+    },
+    {
+      "at": "2026-11-08T04:58:07Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_FAILED",
+      "run": "42448844976",
+      "evidence": "thumbnail image not rendered"
     }
   ],
   "heal": {
