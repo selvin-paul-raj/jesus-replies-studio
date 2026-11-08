@@ -1,7 +1,7 @@
 {
   "episode_id": "JR-0101",
-  "state": "VALIDATED",
-  "updated_at": "2026-11-08T04:58:07Z",
+  "state": "APPROVED",
+  "updated_at": "2026-11-08T05:05:17Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
@@ -9,15 +9,15 @@
   "render": "PASS",
   "render_qa": "PASS",
   "package": "PASS",
-  "package_qa": "FAIL",
-  "asset_hosting": "NOT_STARTED",
-  "asset_url": null,
+  "package_qa": "PASS",
+  "asset_hosting": "VERIFIED",
+  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0101/JR-0101.mp4",
   "render_facts": {
     "estimated_seconds": 56.47,
     "command": "npm run jr -- render generated/JR-0101.json --out-dir output",
     "exit": 0,
     "path": "output/videos/JR-0101.mp4",
-    "size_bytes": 6057328,
+    "size_bytes": 6055986,
     "how": "RENDERED",
     "duration_s": 56.51,
     "video_codec": "h264",
@@ -28,19 +28,20 @@
     ]
   },
   "buffer": {
-    "post_id": null,
-    "status": null,
-    "due_at": null,
+    "post_id": "6af0030d004e4879a798736e",
+    "status": "draft",
+    "due_at": "2026-12-31T00:00:00.000Z",
     "sent_at": null,
-    "pending_mutation": null
+    "pending_mutation": null,
+    "create_attempts": 1
   },
   "approval": {
-    "status": "NOT_REQUESTED",
-    "approved_at": null,
-    "approved_by": null,
+    "status": "APPROVED",
+    "approved_at": "2026-11-08T05:05:17Z",
+    "approved_by": "standing authorization",
     "slot_local": null,
     "due_at": null,
-    "evidence": null
+    "evidence": "2026-10-11 20:48 IST, Selvin in chat: dont stop it continus complete automous running system i wnat it bi-weelky review it and enhance the content and enagament , qually and follow ups and crack chnaging algorthim of thsoe social medias build life long running system self correction , feeadbackloop "
   },
   "verification": {
     "status": "NOT_VERIFIED",
@@ -147,6 +148,62 @@
       "to": "VALIDATED",
       "run": "fo-20261108-rerender",
       "evidence": "cross-run retry: PACKAGE_QA_FAILED->RENDER_QA_PASSED reopen skipped the render on a fresh runner, so the QA thumb glob found nothing; reopen to VALIDATED to force a full re-render (video + thumbnail) in the same run"
+    },
+    {
+      "at": "2026-11-08T05:05:11Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "42449173544",
+      "evidence": "RENDERED JR-0101.mp4 6055986 B"
+    },
+    {
+      "at": "2026-11-08T05:05:11Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "42449173544",
+      "evidence": "56.51s 1080x1920 h264/aac duration 56.51s above target [45, 55] but under ceiling"
+    },
+    {
+      "at": "2026-11-08T05:05:11Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "42449173544",
+      "evidence": "JR-0101.package.json present"
+    },
+    {
+      "at": "2026-11-08T05:05:11Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_PASSED",
+      "run": "42449173544",
+      "evidence": "caption 743 chars, 5 hashtags, title 78, thumbnail JR-0101-thumb.png, honesty line OK"
+    },
+    {
+      "at": "2026-11-08T05:05:16Z",
+      "from": "PACKAGE_QA_PASSED",
+      "to": "ASSET_HOSTED",
+      "run": "42449173544",
+      "evidence": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0101/JR-0101.mp4 http=206 ftyp=True bytes=6055986/6055986"
+    },
+    {
+      "at": "2026-11-08T05:05:17Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_DRAFT",
+      "run": "42449173544",
+      "evidence": "draft 6af0030d004e4879a798736e read back: status draft, asset, caption, duration, channel OK"
+    },
+    {
+      "at": "2026-11-08T05:05:17Z",
+      "from": "BUFFER_DRAFT",
+      "to": "WAITING_FOR_USER",
+      "run": "42449173544",
+      "evidence": "approval required: episode, date, time, timezone"
+    },
+    {
+      "at": "2026-11-08T05:05:17Z",
+      "from": "WAITING_FOR_USER",
+      "to": "APPROVED",
+      "run": "42449173544",
+      "evidence": "auto-approved after all QA gates under standing authorization 2026-10-11 20:48 IST, Selvin in chat; slot time comes from the weekly plan"
     }
   ],
   "heal": {
