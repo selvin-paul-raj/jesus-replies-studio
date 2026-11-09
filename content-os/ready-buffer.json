@@ -1,9 +1,8 @@
 {
-  "as_of": "2026-11-08T21:58:55.000840+00:00",
+  "as_of": "2026-11-09T02:55:26.840288+00:00",
   "target": 6,
   "ready_unscheduled": [],
   "scheduled_not_yet_published": [
-    "JR-0096",
     "JR-0097",
     "JR-0098",
     "JR-0099",
@@ -21,16 +20,15 @@
     "JR-0108",
     "JR-0109"
   ],
-  "ready_buffer": 9,
+  "ready_buffer": 8,
   "scheduled_by_platform": {
     "instagram": 8,
-    "youtube": 9
+    "youtube": 8
   },
   "parked_drafts_by_platform": {
     "instagram": [
       "JR-0076",
-      "JR-0078",
-      "JR-0104"
+      "JR-0078"
     ],
     "youtube": [
       "JR-0076",
@@ -53,22 +51,17 @@
   "lane_gaps": [
     {
       "lane": "comment-replies",
-      "week_start": "2026-11-02",
+      "week_start": "2026-11-16",
       "file": "content-os/series/comment-replies.json"
     },
     {
-      "lane": "family-pressure",
-      "week_start": "2026-11-02",
-      "file": "content-os/series/family-pressure.json"
-    },
-    {
       "lane": "subtitles-hi",
-      "week_start": "2026-11-02",
+      "week_start": "2026-11-16",
       "file": "content-os/series/subtitles-hi.json"
     },
     {
       "lane": "subtitles-ta",
-      "week_start": "2026-11-02",
+      "week_start": "2026-11-16",
       "file": "content-os/series/subtitles-ta.json"
     }
   ],
