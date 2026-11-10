@@ -32,7 +32,11 @@
           "run": "hark-local",
           "evidence": "held to draft (OK); read back draft"
         }
-      ]
+      ],
+      "last_read_error": {
+        "at": "2026-11-10T04:44:32.000Z",
+        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1"
+      }
     },
     "youtube": {
       "state": "DRAFT",
@@ -58,7 +62,11 @@
           "run": "hark-local",
           "evidence": "held to draft (OK); read back draft"
         }
-      ]
+      ],
+      "last_read_error": {
+        "at": "2026-11-10T04:44:32.000Z",
+        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1"
+      }
     }
   }
 }

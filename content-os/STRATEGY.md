@@ -163,9 +163,9 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-09T22:16Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-10T04:44Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=46, median views 1532, best 13735, saves per 1k reach 7.5, stalled 4 (excluded)
+- **instagram**: n=46, median views 1474, best 13735, saves per 1k reach 7.3, stalled 4 (excluded)
 - **youtube**: n=50, median views 1327, best 3822, saves per 1k reach None, stalled 0 (excluded)
 - **episodes scored** (IG + YT percentile): 50, 46 with both platforms
 
@@ -173,7 +173,7 @@ _Last computed 2026-11-09T22:16Z from Buffer analytics, last 28 days, posts at l
 - not enough evidence yet
 
 **Avoid / de-emphasise:**
-- hook_type=question (episode score 0.36 vs 0.52, n=14, IG+YT percentile)
+- nothing with enough evidence
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
 - JR-0041 score 0.94 (youtube 2052 views): Jesus... I said yes again. I didn't want to. I never do. 😔
@@ -183,7 +183,7 @@ _Last computed 2026-11-09T22:16Z from Buffer analytics, last 28 days, posts at l
 - JR-0082 score 0.81 (instagram 1867, youtube 1773 views): Jesus... I eat lunch on the office staircase every day. 🍱
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1560 (n=23), night (18-24 IST) 1522 (n=23)
+- instagram slot medians: morning (06-12 IST) 1300 (n=23), night (18-24 IST) 1522 (n=23)
 - youtube slot medians: morning (06-12 IST) 1340 (n=25), night (18-24 IST) 1325 (n=25)
 - instagram: 4 of 50 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061, JR-0046, JR-0042, JR-0041
 - rules need n>=8 episodes per bucket; smaller buckets are reported only

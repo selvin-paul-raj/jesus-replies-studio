@@ -25,7 +25,11 @@
           "run": "42398050945",
           "evidence": "schedule_draft read back: scheduled 2026-11-12T14:00:00.000Z"
         }
-      ]
+      ],
+      "last_read_error": {
+        "at": "2026-11-10T04:44:32.000Z",
+        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1"
+      }
     },
     "youtube": {
       "state": "SCHEDULED",
@@ -44,7 +48,11 @@
           "run": "42398050945",
           "evidence": "create_scheduled read back: scheduled 2026-11-12T14:00:00.000Z"
         }
-      ]
+      ],
+      "last_read_error": {
+        "at": "2026-11-10T04:44:32.000Z",
+        "detail": "UNREADABLE [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1"
+      }
     }
   }
 }
