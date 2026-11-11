@@ -163,11 +163,11 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-10T19:40Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-11T02:56Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=47, median views 1426, best 13735, saves per 1k reach 7.3, stalled 3 (excluded)
-- **youtube**: n=50, median views 1290, best 3822, saves per 1k reach None, stalled 0 (excluded)
-- **episodes scored** (IG + YT percentile): 50, 47 with both platforms
+- **instagram**: n=48, median views 1424, best 13735, saves per 1k reach 7.3, stalled 2 (excluded)
+- **youtube**: n=50, median views 1230, best 3822, saves per 1k reach None, stalled 0 (excluded)
+- **episodes scored** (IG + YT percentile): 50, 48 with both platforms
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
@@ -183,9 +183,9 @@ _Last computed 2026-11-10T19:40Z from Buffer analytics, last 28 days, posts at l
 - JR-0046 score 0.82 (youtube 1666 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1300 (n=23), night (18-24 IST) 1474 (n=24)
-- youtube slot medians: morning (06-12 IST) 1340 (n=25), night (18-24 IST) 1256 (n=25)
-- instagram: 3 of 50 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061, JR-0046, JR-0042
+- instagram slot medians: morning (06-12 IST) 1302 (n=24), night (18-24 IST) 1474 (n=24)
+- youtube slot medians: morning (06-12 IST) 1205 (n=25), night (18-24 IST) 1256 (n=25)
+- instagram: 2 of 50 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061, JR-0046
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->
