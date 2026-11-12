@@ -1,7 +1,7 @@
 {
   "episode_id": "JR-0105",
-  "state": "BUFFER_FAILED",
-  "updated_at": "2026-11-12T04:53:13Z",
+  "state": "ASSET_HOSTED",
+  "updated_at": "2026-11-12T04:53:58Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
@@ -148,6 +148,13 @@
       "to": "BUFFER_FAILED",
       "run": "43157440742",
       "evidence": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1&upgradePathName=apiRateLimit-upgrade\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"30d\"}}]"
+    },
+    {
+      "at": "2026-11-12T04:53:58Z",
+      "from": "BUFFER_FAILED",
+      "to": "ASSET_HOSTED",
+      "run": "fo-20261112-buffer429",
+      "evidence": "reopen: heal: Buffer createPost rejected 429 rate limit; asset already hosted, resuming at buffer step"
     }
   ],
   "heal": {
