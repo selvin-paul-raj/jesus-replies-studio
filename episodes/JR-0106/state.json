@@ -1,7 +1,7 @@
 {
   "episode_id": "JR-0106",
-  "state": "VALIDATION_FAILED",
-  "updated_at": "2026-11-12T04:56:25Z",
+  "state": "GENERATED",
+  "updated_at": "2026-11-12T05:01:06Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
@@ -74,6 +74,13 @@
       "to": "VALIDATION_FAILED",
       "run": "43157958558",
       "evidence": "estimated length 60.8s is over the 60s ceiling (target 45-55s); cut lines before rendering"
+    },
+    {
+      "at": "2026-11-12T05:01:06Z",
+      "from": "VALIDATION_FAILED",
+      "to": "GENERATED",
+      "run": "fo-20261112-trim2",
+      "evidence": "reopen: fix: trimmed line 2 to fit the 60s ceiling after 60.8s estimate"
     }
   ],
   "heal": {
