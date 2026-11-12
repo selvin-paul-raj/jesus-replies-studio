@@ -1,26 +1,39 @@
 {
   "episode_id": "JR-0105",
-  "state": "GENERATED",
-  "updated_at": "2026-11-12T04:50:50Z",
+  "state": "BUFFER_FAILED",
+  "updated_at": "2026-11-12T04:53:13Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
-  "validation": "FAIL",
-  "render": "NOT_STARTED",
-  "render_qa": "NOT_STARTED",
-  "package": "NOT_STARTED",
-  "package_qa": "NOT_STARTED",
-  "asset_hosting": "NOT_STARTED",
-  "asset_url": null,
+  "validation": "PASS",
+  "render": "PASS",
+  "render_qa": "PASS",
+  "package": "PASS",
+  "package_qa": "PASS",
+  "asset_hosting": "VERIFIED",
+  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0105/JR-0105.mp4",
   "render_facts": {
-    "estimated_seconds": 58.57
+    "estimated_seconds": 58.57,
+    "command": "npm run jr -- render generated/JR-0105.json --out-dir output",
+    "exit": 0,
+    "path": "output/videos/JR-0105.mp4",
+    "size_bytes": 6395118,
+    "how": "RENDERED",
+    "duration_s": 58.62,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "resolution": "1080x1920",
+    "warnings": [
+      "duration 58.62s above target [45, 55] but under ceiling"
+    ]
   },
   "buffer": {
     "post_id": null,
     "status": null,
     "due_at": null,
     "sent_at": null,
-    "pending_mutation": null
+    "pending_mutation": null,
+    "create_attempts": 1
   },
   "approval": {
     "status": "NOT_REQUESTED",
@@ -44,6 +57,11 @@
       "at": "2026-11-12T04:49:33Z",
       "state": "VALIDATION_FAILED",
       "detail": "R12 last line must be a share line (speaker 'engagement', e.g. 'Send this to someone who needs it today.'), got engagement: 'What do you tell yourself when gratitude feels heavy tonight?'"
+    },
+    {
+      "at": "2026-11-12T04:53:13Z",
+      "state": "BUFFER_FAILED",
+      "detail": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1&upgradePathName=apiRateLimit-upgrade\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"30d\"}}]"
     }
   ],
   "history": [
@@ -81,6 +99,55 @@
       "to": "GENERATED",
       "run": "fo-20261112-r12",
       "evidence": "reopen: fix: engagement line was a question, not a share line (R12); replaced and re-dispatching"
+    },
+    {
+      "at": "2026-11-12T04:51:31Z",
+      "from": "GENERATED",
+      "to": "VALIDATED",
+      "run": "43157440742",
+      "evidence": "schema PASS, originality PASS, KJV Isaiah 9:2 verbatim match"
+    },
+    {
+      "at": "2026-11-12T04:53:10Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "43157440742",
+      "evidence": "RENDERED JR-0105.mp4 6395118 B"
+    },
+    {
+      "at": "2026-11-12T04:53:10Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "43157440742",
+      "evidence": "58.62s 1080x1920 h264/aac duration 58.62s above target [45, 55] but under ceiling"
+    },
+    {
+      "at": "2026-11-12T04:53:10Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "43157440742",
+      "evidence": "JR-0105.package.json present"
+    },
+    {
+      "at": "2026-11-12T04:53:10Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_PASSED",
+      "run": "43157440742",
+      "evidence": "caption 874 chars, 5 hashtags, title 68, thumbnail JR-0105-thumb.png, honesty line OK"
+    },
+    {
+      "at": "2026-11-12T04:53:13Z",
+      "from": "PACKAGE_QA_PASSED",
+      "to": "ASSET_HOSTED",
+      "run": "43157440742",
+      "evidence": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0105/JR-0105.mp4 http=206 ftyp=True bytes=6395118/6395118"
+    },
+    {
+      "at": "2026-11-12T04:53:13Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_FAILED",
+      "run": "43157440742",
+      "evidence": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1&upgradePathName=apiRateLimit-upgrade\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"30d\"}}]"
     }
   ],
   "heal": {
