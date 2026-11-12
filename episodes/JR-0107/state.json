@@ -1,7 +1,7 @@
 {
   "episode_id": "JR-0107",
-  "state": "BLOCKED",
-  "updated_at": "2026-11-12T04:59:23Z",
+  "state": "ASSET_HOSTED",
+  "updated_at": "2026-11-12T05:08:04Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
@@ -33,7 +33,7 @@
     "due_at": null,
     "sent_at": null,
     "pending_mutation": null,
-    "create_attempts": 2
+    "create_attempts": 0
   },
   "approval": {
     "status": "NOT_REQUESTED",
@@ -148,6 +148,13 @@
       "to": "BLOCKED",
       "run": "43158087753",
       "evidence": "draft creation already failed twice; human review needed"
+    },
+    {
+      "at": "2026-11-12T05:08:04Z",
+      "from": "BLOCKED",
+      "to": "ASSET_HOSTED",
+      "run": "fo-20261112-429review",
+      "evidence": "review: draft-creation failures were Buffer 429 rate limit review (standing autonomous-loop authorization): last 4 createPost attempts all returned Buffer HTTP 429 'Too many requests from this client' at 04:53-05:07 UTC — a transient rate limit, not a content or credential failure; assets"
     }
   ],
   "heal": {

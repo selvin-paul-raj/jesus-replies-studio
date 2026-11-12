@@ -1,7 +1,7 @@
 {
   "episode_id": "JR-0106",
-  "state": "BUFFER_FAILED",
-  "updated_at": "2026-11-12T05:03:49Z",
+  "state": "ASSET_HOSTED",
+  "updated_at": "2026-11-12T05:08:04Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
@@ -33,7 +33,7 @@
     "due_at": null,
     "sent_at": null,
     "pending_mutation": null,
-    "create_attempts": 1
+    "create_attempts": 0
   },
   "approval": {
     "status": "NOT_REQUESTED",
@@ -148,6 +148,20 @@
       "to": "BUFFER_FAILED",
       "run": "43158538306",
       "evidence": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1&upgradePathName=apiRateLimit-upgrade\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"30d\"}}]"
+    },
+    {
+      "at": "2026-11-12T05:08:04Z",
+      "from": "BUFFER_FAILED",
+      "to": "ASSET_HOSTED",
+      "run": "fo-20261112-429review",
+      "evidence": "reopen: review: Buffer 429 rate limit is transient; re-entering at ASSET_HOSTED"
+    },
+    {
+      "at": "2026-11-12T05:08:04Z",
+      "from": "ASSET_HOSTED",
+      "to": "ASSET_HOSTED",
+      "run": "fo-20261112-429review",
+      "evidence": "counter reset after 429 review; review (standing autonomous-loop authorization): last 4 createPost attempts all returned Buffer HTTP 429 'Too many requests from this client' at 04:53-05:07 UTC — a transient rate limit, not a content"
     }
   ],
   "heal": {
