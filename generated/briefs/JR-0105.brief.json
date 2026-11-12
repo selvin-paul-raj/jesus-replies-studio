@@ -139,7 +139,7 @@
   ],
   "strategy": {
     "source": "content-os/learnings.json + content-os/STRATEGY.md",
-    "as_of": "2026-11-12T04:49:44.809412+00:00",
+    "as_of": "2026-11-12T04:53:26.505816+00:00",
     "lean_towards": [],
     "avoid": [
       "duration=56-60s (episode score 0.35 vs 0.52, n=13, IG+YT percentile)"
