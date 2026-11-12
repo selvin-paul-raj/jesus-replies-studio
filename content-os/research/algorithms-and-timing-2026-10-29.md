@@ -35,3 +35,17 @@ YouTube (n=64):
 3. New review rules R7 (send-worthy), R8 (first frame), R9 (follow reason). See review-rules.json.
 4. Turn on Instagram AI dubbing (Hindi/Spanish/Portuguese where offered) as EXP-004. The user has to enable it in the app because it is opt-in.
 5. Track sends/reach and watch time as the IG north-star metrics. Views and comments come second.
+
+## Review 2026-11-12 (official changes since 2026-10-29)
+**Instagram**
+- 2026-10-21 Meta Q3 call (Susan Li, via smmtoolbox.com/meta-q3-reels-sequence-ranking, fetched 2026-11-12): Reels are now ranked in sequences, not one at a time; **nearly 45% of recommended Reels are under 1 day old** (+11 pts vs Q2). A Reel's first 24 h matter more than ever. Supports posting when our viewers are awake; no new "best time" rule.
+- 2026-10-28 to 11-03 Mosseri with Colin & Samir (uppbeat.io/blog/creator-news/whats-working-on-instagram-right-now-carousels-and-sends-says-adam-mosseri, fetched 2026-11-12): **sends per reach** is the key metric for reaching non-followers and is coming to Insights (already in Edits). **Carousels with music now show in the Reels viewer** and can resurface on slide 2. Watch time weighed less than on rival apps. Original creators get more reach. Accounts built around an AI-generated *person* must label themselves (AI-generated profile label, creators.instagram.com/blog/ai-generated-profile-label, 2026-08-31); AI tools in the creative process don't need it. Consistent with R7/R12; no rule contradicted.
+- Linked Reels in a series ended 2026-10-28 (metricool.com/instagram-news). Our series continuity relies on captions, not linked Reels, so no change.
+
+**YouTube Shorts**
+- No new Shorts ranking change since the 2026-10-01 originality update (we are original). View counting from frame one (2026-08-24) unchanged; recommendations use engaged views.
+- 2026-11-03 Data API: `thumbnails.set` now supports **custom thumbnails for Shorts** (developers.google.com/youtube/v3/revision_history). Possible small lever for Shorts shelf/search; not a ranking change.
+
+**Rules:** R1-R15 unchanged; nothing official contradicts them.
+
+**Timing (EXP-005 interim, n<10):** IG 19:30 1,466 (n=8) = 1.08x the 20:30 control; IG 08:00 1,804.5 (n=8). YT 19:30 1,463 (n=7) = 2.39x control and above YT 08:00 1,260 (n=8). Keep 08:00 + 19:30 on both. No 13:00 test; the 05:00 YouTube idea is not supported. Next read 2026-11-26.
