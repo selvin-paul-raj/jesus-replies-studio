@@ -908,5 +908,18 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0107",
+    "created_at": "2026-11-12T04:57:38Z",
+    "title": "Jesus, I Found My Old Prayer Journal 📔",
+    "slot": null,
+    "target_date": null,
+    "state": "BLOCKED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0107/JR-0107.mp4",
+    "buffer_post_id": null,
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]

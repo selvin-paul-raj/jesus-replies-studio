@@ -1,0 +1,169 @@
+{
+  "episode_id": "JR-0107",
+  "state": "BLOCKED",
+  "updated_at": "2026-11-12T04:59:23Z",
+  "slot": null,
+  "target_date": null,
+  "generation": "PASS",
+  "validation": "PASS",
+  "render": "PASS",
+  "render_qa": "PASS",
+  "package": "PASS",
+  "package_qa": "PASS",
+  "asset_hosting": "VERIFIED",
+  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0107/JR-0107.mp4",
+  "render_facts": {
+    "estimated_seconds": 58.67,
+    "command": "npm run jr -- render generated/JR-0107.json --out-dir output",
+    "exit": 0,
+    "path": "output/videos/JR-0107.mp4",
+    "size_bytes": 6316307,
+    "how": "RENDERED",
+    "duration_s": 58.71,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "resolution": "1080x1920",
+    "warnings": [
+      "duration 58.71s above target [45, 55] but under ceiling"
+    ]
+  },
+  "buffer": {
+    "post_id": null,
+    "status": null,
+    "due_at": null,
+    "sent_at": null,
+    "pending_mutation": null,
+    "create_attempts": 2
+  },
+  "approval": {
+    "status": "NOT_REQUESTED",
+    "approved_at": null,
+    "approved_by": null,
+    "slot_local": null,
+    "due_at": null,
+    "evidence": null
+  },
+  "verification": {
+    "status": "NOT_VERIFIED",
+    "verified_at": null
+  },
+  "errors": [
+    {
+      "at": "2026-11-12T04:59:22Z",
+      "state": "BUFFER_FAILED",
+      "detail": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1&upgradePathName=apiRateLimit-upgrade\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"30d\"}}]"
+    },
+    {
+      "at": "2026-11-12T04:59:23Z",
+      "state": "BUFFER_FAILED",
+      "detail": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1&upgradePathName=apiRateLimit-upgrade\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"30d\"}}]"
+    },
+    {
+      "at": "2026-11-12T04:59:23Z",
+      "state": "BLOCKED",
+      "detail": "draft creation already failed twice; human review needed"
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-11-12T04:57:38Z",
+      "from": "NEW",
+      "to": "GENERATED",
+      "run": "43158087753",
+      "evidence": "generated/JR-0107.json present (1451 B)"
+    },
+    {
+      "at": "2026-11-12T04:57:39Z",
+      "from": "GENERATED",
+      "to": "VALIDATED",
+      "run": "43158087753",
+      "evidence": "schema PASS, originality PASS, KJV Jeremiah 33:14 verbatim match"
+    },
+    {
+      "at": "2026-11-12T04:59:18Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "43158087753",
+      "evidence": "RENDERED JR-0107.mp4 6316307 B"
+    },
+    {
+      "at": "2026-11-12T04:59:18Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "43158087753",
+      "evidence": "58.71s 1080x1920 h264/aac duration 58.71s above target [45, 55] but under ceiling"
+    },
+    {
+      "at": "2026-11-12T04:59:18Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "43158087753",
+      "evidence": "JR-0107.package.json present"
+    },
+    {
+      "at": "2026-11-12T04:59:18Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_PASSED",
+      "run": "43158087753",
+      "evidence": "caption 780 chars, 5 hashtags, title 63, thumbnail JR-0107-thumb.png, honesty line OK"
+    },
+    {
+      "at": "2026-11-12T04:59:22Z",
+      "from": "PACKAGE_QA_PASSED",
+      "to": "ASSET_HOSTED",
+      "run": "43158087753",
+      "evidence": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0107/JR-0107.mp4 http=206 ftyp=True bytes=6316307/6316307"
+    },
+    {
+      "at": "2026-11-12T04:59:22Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_FAILED",
+      "run": "43158087753",
+      "evidence": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1&upgradePathName=apiRateLimit-upgrade\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"30d\"}}]"
+    },
+    {
+      "at": "2026-11-12T04:59:22Z",
+      "from": "BUFFER_FAILED",
+      "to": "ASSET_HOSTED",
+      "run": "43158087753",
+      "evidence": "reopen: heal: transient step failure; retrying the same step"
+    },
+    {
+      "at": "2026-11-12T04:59:23Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_FAILED",
+      "run": "43158087753",
+      "evidence": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1&upgradePathName=apiRateLimit-upgrade\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"30d\"}}]"
+    },
+    {
+      "at": "2026-11-12T04:59:23Z",
+      "from": "BUFFER_FAILED",
+      "to": "ASSET_HOSTED",
+      "run": "43158087753",
+      "evidence": "reopen: heal: transient step failure; retrying the same step"
+    },
+    {
+      "at": "2026-11-12T04:59:23Z",
+      "from": "ASSET_HOSTED",
+      "to": "BLOCKED",
+      "run": "43158087753",
+      "evidence": "draft creation already failed twice; human review needed"
+    }
+  ],
+  "heal": {
+    "attempts": 2,
+    "exhausted": false,
+    "log": [
+      {
+        "at": "2026-11-12T04:59:22Z",
+        "run": "43158087753",
+        "action": "transient step failure; retrying the same step"
+      },
+      {
+        "at": "2026-11-12T04:59:23Z",
+        "run": "43158087753",
+        "action": "transient step failure; retrying the same step"
+      }
+    ]
+  }
+}
