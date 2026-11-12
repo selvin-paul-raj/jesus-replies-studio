@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-12T04:02:49.549800+00:00",
+  "as_of": "2026-11-12T04:42:47.331708+00:00",
   "target": 6,
   "ready_unscheduled": [],
   "scheduled_not_yet_published": [
@@ -11,12 +11,12 @@
     "JR-0103",
     "JR-0104"
   ],
-  "authored_in_pipeline": [],
-  "upcoming_slots_unauthored": [
-    "JR-0105",
+  "authored_in_pipeline": [
     "JR-0106",
     "JR-0107",
-    "JR-0108",
+    "JR-0108"
+  ],
+  "upcoming_slots_unauthored": [
     "JR-0109"
   ],
   "ready_buffer": 7,
@@ -35,17 +35,10 @@
     ]
   },
   "authoring_needed": [
-    "JR-0105",
-    "JR-0106",
-    "JR-0107",
-    "JR-0108",
     "JR-0109",
     "JR-0110",
     "JR-0111",
-    "JR-0112",
-    "JR-0113",
-    "JR-0114",
-    "JR-0115"
+    "JR-0112"
   ],
   "lane_gaps": [
     {

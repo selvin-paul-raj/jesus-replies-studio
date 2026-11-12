@@ -1,6 +1,6 @@
 {
   "counts": {
-    "UNUSED": 10,
+    "UNUSED": 14,
     "PUBLISHED": 88,
     "SCHEDULED": 7
   },
@@ -1494,7 +1494,55 @@
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0104/JR-0104.mp4",
       "duration_s": 59.52,
       "published_on": []
+    },
+    {
+      "episode_id": "JR-0105",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0106",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0107",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0108",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
     }
   ],
-  "as_of": "2026-11-12T04:02:49.549800+00:00"
+  "as_of": "2026-11-12T04:42:47.331708+00:00"
 }
