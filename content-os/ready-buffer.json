@@ -1,8 +1,9 @@
 {
-  "as_of": "2026-11-12T04:59:35.106626+00:00",
+  "as_of": "2026-11-12T05:04:02.896290+00:00",
   "target": 6,
   "ready_unscheduled": [
     "JR-0105",
+    "JR-0106",
     "JR-0107"
   ],
   "scheduled_not_yet_published": [
@@ -20,7 +21,7 @@
   "upcoming_slots_unauthored": [
     "JR-0109"
   ],
-  "ready_buffer": 9,
+  "ready_buffer": 10,
   "scheduled_by_platform": {
     "instagram": 7,
     "youtube": 7
@@ -38,8 +39,7 @@
   "authoring_needed": [
     "JR-0109",
     "JR-0110",
-    "JR-0111",
-    "JR-0112"
+    "JR-0111"
   ],
   "lane_gaps": [
     {
