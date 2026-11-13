@@ -1,0 +1,169 @@
+{
+  "episode_id": "JR-0112",
+  "state": "BUFFER_FAILED",
+  "updated_at": "2026-11-13T04:56:05Z",
+  "slot": null,
+  "target_date": null,
+  "generation": "PASS",
+  "validation": "PASS",
+  "render": "PASS",
+  "render_qa": "PASS",
+  "package": "PASS",
+  "package_qa": "PASS",
+  "asset_hosting": "VERIFIED",
+  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0112/JR-0112.mp4",
+  "render_facts": {
+    "estimated_seconds": 56.87,
+    "command": "npm run jr -- render generated/JR-0112.json --out-dir output",
+    "exit": 0,
+    "path": "output/videos/JR-0112.mp4",
+    "size_bytes": 6135594,
+    "how": "RENDERED",
+    "duration_s": 56.92,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "resolution": "1080x1920",
+    "warnings": [
+      "duration 56.92s above target [45, 55] but under ceiling"
+    ]
+  },
+  "buffer": {
+    "post_id": null,
+    "status": null,
+    "due_at": null,
+    "sent_at": null,
+    "pending_mutation": null,
+    "create_attempts": 2
+  },
+  "approval": {
+    "status": "NOT_REQUESTED",
+    "approved_at": null,
+    "approved_by": null,
+    "slot_local": null,
+    "due_at": null,
+    "evidence": null
+  },
+  "verification": {
+    "status": "NOT_VERIFIED",
+    "verified_at": null
+  },
+  "errors": [
+    {
+      "at": "2026-11-13T04:54:10Z",
+      "state": "VALIDATION_FAILED",
+      "detail": "scripture Proverbs 3:5-6 text does not match KJV source"
+    },
+    {
+      "at": "2026-11-13T04:56:05Z",
+      "state": "BUFFER_FAILED",
+      "detail": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1&upgradePathName=apiRateLimit-upgrade\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"30d\"}}]"
+    },
+    {
+      "at": "2026-11-13T04:56:05Z",
+      "state": "BUFFER_FAILED",
+      "detail": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1&upgradePathName=apiRateLimit-upgrade\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"30d\"}}]"
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-11-13T04:54:09Z",
+      "from": "NEW",
+      "to": "GENERATED",
+      "run": "43368395610",
+      "evidence": "generated/JR-0112.json present (1485 B)"
+    },
+    {
+      "at": "2026-11-13T04:54:10Z",
+      "from": "GENERATED",
+      "to": "VALIDATION_FAILED",
+      "run": "43368395610",
+      "evidence": "scripture Proverbs 3:5-6 text does not match KJV source"
+    },
+    {
+      "at": "2026-11-13T04:54:10Z",
+      "from": "VALIDATION_FAILED",
+      "to": "GENERATED",
+      "run": "43368395610",
+      "evidence": "reopen: heal: scripture text for Proverbs 3:5-6 replaced with the KJV source wording (episode + package)"
+    },
+    {
+      "at": "2026-11-13T04:54:11Z",
+      "from": "GENERATED",
+      "to": "VALIDATED",
+      "run": "43368395610",
+      "evidence": "schema PASS, originality PASS, KJV Proverbs 3:5-6 verbatim match"
+    },
+    {
+      "at": "2026-11-13T04:56:01Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "43368395610",
+      "evidence": "RENDERED JR-0112.mp4 6135594 B"
+    },
+    {
+      "at": "2026-11-13T04:56:02Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "43368395610",
+      "evidence": "56.92s 1080x1920 h264/aac duration 56.92s above target [45, 55] but under ceiling"
+    },
+    {
+      "at": "2026-11-13T04:56:02Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "43368395610",
+      "evidence": "JR-0112.package.json present"
+    },
+    {
+      "at": "2026-11-13T04:56:02Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_PASSED",
+      "run": "43368395610",
+      "evidence": "caption 804 chars, 5 hashtags, title 76, thumbnail JR-0112-thumb.png, honesty line OK"
+    },
+    {
+      "at": "2026-11-13T04:56:05Z",
+      "from": "PACKAGE_QA_PASSED",
+      "to": "ASSET_HOSTED",
+      "run": "43368395610",
+      "evidence": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0112/JR-0112.mp4 http=206 ftyp=True bytes=6135594/6135594"
+    },
+    {
+      "at": "2026-11-13T04:56:05Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_FAILED",
+      "run": "43368395610",
+      "evidence": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1&upgradePathName=apiRateLimit-upgrade\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"30d\"}}]"
+    },
+    {
+      "at": "2026-11-13T04:56:05Z",
+      "from": "BUFFER_FAILED",
+      "to": "ASSET_HOSTED",
+      "run": "43368395610",
+      "evidence": "reopen: heal: transient step failure; retrying the same step"
+    },
+    {
+      "at": "2026-11-13T04:56:05Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_FAILED",
+      "run": "43368395610",
+      "evidence": "createPost rejected, no object expected: http=429 [{\"message\": \"Too many requests from this client. Please try again later. You can raise your Buffer API limit: https://publish.buffer.com/settings/api?cta=publicApi-rateLimit-hint-upgrade-1&upgradePathName=apiRateLimit-upgrade\", \"extensions\": {\"code\": \"RATE_LIMIT_EXCEEDED\", \"window\": \"30d\"}}]"
+    }
+  ],
+  "heal": {
+    "attempts": 2,
+    "exhausted": false,
+    "log": [
+      {
+        "at": "2026-11-13T04:54:10Z",
+        "run": "43368395610",
+        "action": "scripture text for Proverbs 3:5-6 replaced with the KJV source wording (episode + package)"
+      },
+      {
+        "at": "2026-11-13T04:56:05Z",
+        "run": "43368395610",
+        "action": "transient step failure; retrying the same step"
+      }
+    ]
+  }
+}
