@@ -1,16 +1,15 @@
 {
-  "as_of": "2026-11-12T23:33:36.530614+00:00",
+  "as_of": "2026-11-13T03:32:30.663238+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
     "instagram": {
       "n": 45,
-      "n_stalled": 2,
+      "n_stalled": 1,
       "stalled": [
-        "JR-0061",
-        "JR-0046"
+        "JR-0061"
       ],
-      "stall_rate": 0.04,
+      "stall_rate": 0.02,
       "median_views": 1426,
       "max_views": 13735,
       "saves_per_1k_reach_median": 7.2,
@@ -133,19 +132,19 @@
       ]
     },
     "youtube": {
-      "n": 48,
+      "n": 47,
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 1290.5,
+      "median_views": 1256,
       "max_views": 3822,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 24,
-            "median_views": 1272.5
+            "n": 23,
+            "median_views": 1205
           },
           "night (18-24 IST)": {
             "n": 24,
@@ -269,14 +268,14 @@
   "stall_rule": "Instagram reach < followers (88) = stalled, excluded from content learning",
   "scoring": "mean of Instagram and YouTube view percentiles where data exists",
   "content": {
-    "n_episodes": 48,
+    "n_episodes": 47,
     "both_platforms": 45,
     "median_score": 0.525,
     "by_dimension": {
       "emotion": {
         "angry": {
           "n": 2,
-          "median_score": 0.586
+          "median_score": 0.593
         },
         "crying": {
           "n": 3,
@@ -284,57 +283,57 @@
         },
         "happy": {
           "n": 1,
-          "median_score": 0.344
+          "median_score": 0.346
         },
         "hopeful": {
           "n": 3,
-          "median_score": 0.266
+          "median_score": 0.268
         },
         "neutral": {
           "n": 3,
           "median_score": 0.457
         },
         "sad": {
-          "n": 36,
-          "median_score": 0.548
+          "n": 35,
+          "median_score": 0.535
         }
       },
       "character": {
         "boy": {
-          "n": 22,
-          "median_score": 0.5705
+          "n": 21,
+          "median_score": 0.569
         },
         "girl": {
           "n": 26,
-          "median_score": 0.48450000000000004
+          "median_score": 0.486
         }
       },
       "hook_type": {
         "confession_statement": {
-          "n": 26,
-          "median_score": 0.5674999999999999
+          "n": 25,
+          "median_score": 0.569
         },
         "question": {
           "n": 11,
-          "median_score": 0.394
+          "median_score": 0.395
         },
         "statement": {
           "n": 11,
-          "median_score": 0.53
+          "median_score": 0.535
         }
       },
       "duration": {
         "56-60s": {
           "n": 13,
-          "median_score": 0.344
+          "median_score": 0.346
         },
         "<=55s": {
           "n": 33,
-          "median_score": 0.53
+          "median_score": 0.535
         },
         ">60s": {
-          "n": 2,
-          "median_score": 0.661
+          "n": 1,
+          "median_score": 0.512
         }
       },
       "bible_book": {
@@ -344,7 +343,7 @@
         },
         "2 Corinthians": {
           "n": 1,
-          "median_score": 0.515
+          "median_score": 0.518
         },
         "Ecclesiastes": {
           "n": 1,
@@ -352,63 +351,63 @@
         },
         "Ephesians": {
           "n": 2,
-          "median_score": 0.1105
+          "median_score": 0.1115
         },
         "Exodus": {
           "n": 1,
-          "median_score": 0.698
+          "median_score": 0.704
         },
         "Galatians": {
           "n": 3,
-          "median_score": 0.584
+          "median_score": 0.583
         },
         "Hebrews": {
           "n": 2,
-          "median_score": 0.252
+          "median_score": 0.255
         },
         "Isaiah": {
           "n": 3,
-          "median_score": 0.838
+          "median_score": 0.846
         },
         "James": {
           "n": 1,
-          "median_score": 0.344
+          "median_score": 0.346
         },
         "John": {
           "n": 2,
-          "median_score": 0.33399999999999996
+          "median_score": 0.33799999999999997
         },
         "Lamentations": {
           "n": 1,
-          "median_score": 0.848
+          "median_score": 0.857
         },
         "Luke": {
           "n": 1,
-          "median_score": 0.748
+          "median_score": 0.756
         },
         "Mark": {
           "n": 1,
-          "median_score": 0.293
+          "median_score": 0.294
         },
         "Matthew": {
           "n": 6,
-          "median_score": 0.5589999999999999
+          "median_score": 0.5615
         },
         "Philippians": {
           "n": 1,
-          "median_score": 0.711
+          "median_score": 0.716
         },
         "Proverbs": {
           "n": 5,
-          "median_score": 0.574
+          "median_score": 0.572
         },
         "Psalms": {
-          "n": 14,
-          "median_score": 0.5295000000000001
+          "n": 13,
+          "median_score": 0.534
         },
         "Romans": {
           "n": 2,
-          "median_score": 0.4395
+          "median_score": 0.4425
         }
       }
     },
@@ -424,7 +423,7 @@
       },
       {
         "episode_id": "JR-0070",
-        "score": 0.848,
+        "score": 0.857,
         "views": {
           "instagram": 2204,
           "youtube": 1656
@@ -433,7 +432,7 @@
       },
       {
         "episode_id": "JR-0084",
-        "score": 0.838,
+        "score": 0.846,
         "views": {
           "instagram": 2283,
           "youtube": 1587
@@ -442,7 +441,7 @@
       },
       {
         "episode_id": "JR-0082",
-        "score": 0.822,
+        "score": 0.821,
         "views": {
           "instagram": 1867,
           "youtube": 1773
@@ -450,32 +449,33 @@
         "hook": "Jesus... I eat lunch on the office staircase every day. 🍱"
       },
       {
-        "episode_id": "JR-0046",
-        "score": 0.809,
+        "episode_id": "JR-0083",
+        "score": 0.802,
         "views": {
-          "youtube": 1666
+          "instagram": 2117,
+          "youtube": 1513
         },
-        "hook": "Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔"
+        "hook": "Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔"
       }
     ]
   },
   "authoring_guidance": {
     "lean_towards": [],
     "avoid": [
-      "duration=56-60s (episode score 0.34 vs 0.53, n=13, IG+YT percentile)"
+      "duration=56-60s (episode score 0.35 vs 0.53, n=13, IG+YT percentile)"
     ],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1303 (n=23), night (18-24 IST) 1474 (n=22)",
-      "youtube slot medians: morning (06-12 IST) 1272 (n=24), night (18-24 IST) 1290 (n=24)",
-      "instagram: 2 of 47 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061, JR-0046",
+      "youtube slot medians: morning (06-12 IST) 1205 (n=23), night (18-24 IST) 1290 (n=24)",
+      "instagram: 1 of 46 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
       "JR-0063 score 0.90 (instagram 1917, youtube 3822 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
-      "JR-0070 score 0.85 (instagram 2204, youtube 1656 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
-      "JR-0084 score 0.84 (instagram 2283, youtube 1587 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+      "JR-0070 score 0.86 (instagram 2204, youtube 1656 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
+      "JR-0084 score 0.85 (instagram 2283, youtube 1587 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
       "JR-0082 score 0.82 (instagram 1867, youtube 1773 views): Jesus... I eat lunch on the office staircase every day. 🍱",
-      "JR-0046 score 0.81 (youtube 1666 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔"
+      "JR-0083 score 0.80 (instagram 2117, youtube 1513 views): Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔"
     ]
   }
 }
