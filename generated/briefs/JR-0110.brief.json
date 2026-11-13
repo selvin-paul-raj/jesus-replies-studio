@@ -17,10 +17,6 @@
     "Self-harm, suicide or abuse stories are held for Selvin's review before publishing and their caption and description must also carry: \"If you are in danger, please reach a local crisis line: US 988 (call or text), UK & Ireland Samaritans 116 123, India Tele-MANAS 14416.\". Prefer other themes for the daily slots."
   ],
   "avoid_titles": [
-    "Jesus... I've Missed Every Sunday This Month 🌙",
-    "Jesus... Good News Came And I Can't Enjoy It 🙂",
-    "Jesus... I Said No To The Match. Amma Went Silent. 💔",
-    "Jesus... I Finally Answered The Aunty 💍 Part 2",
     "Jesus... I Forgave Her But I Can't Let Her Back In 🥀",
     "Jesus... I'm Always The One Who Texts First (தமிழ்)",
     "Jesus... I Fell Asleep In The Office Washroom 😮‍💨 (हिंदी)",
@@ -28,18 +24,15 @@
     "Jesus... Two Years Of Praying The Same Prayer 🕯️",
     "Jesus... I Read The Chapter And Forget It By Noon 📖",
     "Jesus... I'm The Strong One. Nobody Ever Asks Me. 🪨",
+    "Jesus, I'm Tired Of Being Told To Be Grateful 😔",
     "Jesus, The Visa Got Rejected Again ✈️",
     "Jesus, I Found My Old Prayer Journal 📔",
     "Jesus, The Shop Hasn't Made A Profit In A Year 🏪",
-    "Jesus, The Visa Got Rejected Again ✈️",
-    "Jesus, I Found My Old Prayer Journal 📔",
-    "Jesus, The Shop Hasn't Made A Profit In A Year 🏪"
+    "Jesus... I Scroll Till 2 AM And Wake Up Hating It. 📱",
+    "Jesus... Starting Over At 30 Feels Like Admitting I Failed. 🌱",
+    "Jesus... Two Doors Are Open And I Can't Hear You. 🚪"
   ],
   "avoid_scripture": [
-    "Hebrews 10:25",
-    "James 1:17",
-    "Psalms 27:10",
-    "Colossians 4:6",
     "Romans 12:18",
     "Isaiah 49:15",
     "Isaiah 40:29",
@@ -47,18 +40,15 @@
     "Lamentations 3:25",
     "Psalm 119:11",
     "Isaiah 43:19",
+    "Isaiah 9:2",
     "Isaiah 40:31",
     "Jeremiah 33:14",
     "Romans 15:13",
-    "Isaiah 40:31",
-    "Jeremiah 33:14",
-    "Romans 15:13"
+    "Psalms 119:37",
+    "2 Corinthians 5:17",
+    "Proverbs 3:5-6"
   ],
   "avoid_hooks": [
-    "Jesus... I've missed every Sunday this month. 🌙",
-    "Jesus... good news came. I can't enjoy it. 🙂",
-    "Jesus... I said no to the match. Amma hasn't spoken to me in four days. 💔",
-    "Jesus... Aunty asked when I'm getting married. This time I answered her. 💍",
     "Jesus... I forgave her. I just can't let her back in. 🥀",
     "Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
     "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
@@ -66,18 +56,15 @@
     "Jesus... Two years. The same prayer. Nothing has moved. 🕯️",
     "Jesus... I read the chapter. By noon it's gone. 📖",
     "Jesus... I'm the strong one. Nobody ever asks me. 🪨",
+    "Jesus... every reel tonight said count your blessings. 😔",
     "Jesus... the visa got rejected again. ✈️",
     "Jesus... I found my old prayer journal tonight. 📔",
     "Jesus... the shop hasn't made a profit in a year. 🏪",
-    "Jesus... the visa got rejected again. ✈️",
-    "Jesus... I found my old prayer journal tonight. 📔",
-    "Jesus... the shop hasn't made a profit in a year. 🏪"
+    "Jesus... I scroll till 2 AM and wake up hating it. 📱",
+    "Jesus... starting over at 30 feels like admitting I failed. 🌱",
+    "Jesus... two doors are open and I can't hear You. 🚪"
   ],
   "recent_topics": [
-    "she works night shifts and has missed church for a month, and feels like God now works a different shift",
-    "good things finally arrived for him and he cannot enjoy any of it, always waiting for the catch",
-    "she turned down a match whose family wanted her to quit her job, and her mother hasn't spoken to her in four days",
-    "part 2: at the next family lunch she finally answers the aunty who keeps asking when she will marry, gently and without shame",
     "a viewer's comment: she forgave someone close but cannot trust her again, and feels hollow",
     "she always texts first and wonders if anyone would notice if she stopped",
     "exhausted after a third late night, he fell asleep in the office washroom and told his manager he was on a call",
@@ -85,15 +72,15 @@
     "he has prayed the same prayer for two years with no change and wonders if God is tired of hearing it",
     "she reads her Bible every morning and forgets it by lunch, and feels like a bad Christian",
     "she is the person everyone brings their problems to, and she has nowhere to put her own",
+    "she is in a long low season and every post telling her to count her blessings makes the dark feel worse",
     "his visa was rejected a second time and he can't tell if he's still waiting on a door or banging on a wall",
     "she found her two-year-old prayer journal and the still-blank pages nearly made her stop hoping",
-    "his small shop hasn't turned a profit in a year and he can't tell hope apart from stubbornness"
+    "his small shop hasn't turned a profit in a year and he can't tell hope apart from stubbornness",
+    "he scrolls his phone till 2 AM every night chasing a quiet he never finds, and wakes up ashamed of the hours he lost",
+    "at thirty he is restarting his career from the bottom and calls the fresh start an admission of failure",
+    "she must choose between two job offers in two cities and every voice around her is louder than the peace she is praying for"
   ],
   "recent_emotions": [
-    "hopeful",
-    "happy",
-    "sad",
-    "hopeful",
     "sad",
     "sad",
     "neutral",
@@ -101,8 +88,12 @@
     "hopeful",
     "worried",
     "hopeful",
+    "sad",
     "worried",
     "hopeful",
+    "hopeful",
+    "sad",
+    "worried",
     "hopeful"
   ],
   "duration_target_seconds": [
@@ -148,23 +139,23 @@
   ],
   "strategy": {
     "source": "content-os/learnings.json + content-os/STRATEGY.md",
-    "as_of": "2026-11-12T04:53:26.505816+00:00",
+    "as_of": "2026-11-13T04:45:30.103697+00:00",
     "lean_towards": [],
     "avoid": [
-      "duration=56-60s (episode score 0.35 vs 0.52, n=13, IG+YT percentile)"
+      "duration=56-60s (episode score 0.35 vs 0.53, n=13, IG+YT percentile)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1303 (n=23), night (18-24 IST) 1522 (n=23)",
-      "youtube slot medians: morning (06-12 IST) 1272 (n=24), night (18-24 IST) 1256 (n=25)",
-      "instagram: 2 of 48 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061, JR-0046",
+      "instagram slot medians: morning (06-12 IST) 1303 (n=23), night (18-24 IST) 1474 (n=22)",
+      "youtube slot medians: morning (06-12 IST) 1205 (n=23), night (18-24 IST) 1290 (n=24)",
+      "instagram: 1 of 46 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0063 score 0.89 (instagram 1917, youtube 3822 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
-      "JR-0070 score 0.84 (instagram 2204, youtube 1656 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
-      "JR-0084 score 0.83 (instagram 2283, youtube 1587 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
-      "JR-0082 score 0.81 (instagram 1867, youtube 1773 views): Jesus... I eat lunch on the office staircase every day. 🍱",
-      "JR-0046 score 0.81 (youtube 1666 views): Jesus... I saw my dad sitting alone in the park at noon today. He told us he was at work. 😔"
+      "JR-0063 score 0.90 (instagram 1917, youtube 3822 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
+      "JR-0070 score 0.86 (instagram 2204, youtube 1656 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
+      "JR-0084 score 0.85 (instagram 2283, youtube 1587 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+      "JR-0082 score 0.82 (instagram 1867, youtube 1773 views): Jesus... I eat lunch on the office staircase every day. 🍱",
+      "JR-0083 score 0.80 (instagram 2117, youtube 1513 views): Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔"
     ]
   },
   "review_rules": {
