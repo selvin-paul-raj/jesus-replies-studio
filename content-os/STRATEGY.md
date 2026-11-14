@@ -163,17 +163,17 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-14T13:29Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-14T22:18Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=43, median views 1421, best 13735, saves per 1k reach 7.0, stalled 1 (excluded)
-- **youtube**: n=45, median views 1256, best 3822, saves per 1k reach None, stalled 0 (excluded)
-- **episodes scored** (IG + YT percentile): 45, 43 with both platforms
+- **instagram**: n=42, median views 1416, best 13735, saves per 1k reach 7.0, stalled 1 (excluded)
+- **youtube**: n=44, median views 1290, best 3822, saves per 1k reach None, stalled 0 (excluded)
+- **episodes scored** (IG + YT percentile): 44, 42 with both platforms
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
 
 **Avoid / de-emphasise:**
-- duration=56-60s (episode score 0.35 vs 0.53, n=13, IG+YT percentile)
+- duration=56-60s (episode score 0.36 vs 0.53, n=13, IG+YT percentile)
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
 - JR-0063 score 0.89 (instagram 1917, youtube 3822 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔
@@ -183,9 +183,9 @@ _Last computed 2026-11-14T13:29Z from Buffer analytics, last 28 days, posts at l
 - JR-0083 score 0.79 (instagram 2117, youtube 1513 views): Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1302 (n=22), night (18-24 IST) 1426 (n=21)
-- youtube slot medians: morning (06-12 IST) 1198 (n=22), night (18-24 IST) 1325 (n=23)
-- instagram: 1 of 44 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061
+- instagram slot medians: morning (06-12 IST) 1302 (n=22), night (18-24 IST) 1424 (n=20)
+- youtube slot medians: morning (06-12 IST) 1198 (n=22), night (18-24 IST) 1327 (n=22)
+- instagram: 1 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->
