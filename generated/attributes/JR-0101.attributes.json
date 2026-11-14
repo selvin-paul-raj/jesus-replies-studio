@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0101",
+  "theme": "she thanked God in advance for an answer she is still waiting on, and the thank you felt like a transaction",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I thanked You early. And it felt fake. 🙏",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "she thanked God in advance for an answer she is still waiting on, and the thank you felt like a transaction",
+  "bible_theme": "1 Thessalonians 5:18",
+  "bible_book": "1 Thessalonians",
+  "cta_type": "reflection_statement",
+  "duration": 56.51,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0101/JR-0101.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

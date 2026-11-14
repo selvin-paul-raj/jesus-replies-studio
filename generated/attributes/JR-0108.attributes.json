@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0108",
+  "theme": "his small shop hasn't turned a profit in a year and he can't tell hope apart from stubbornness",
+  "emotion": "hopeful",
+  "character": "boy",
+  "hook_type": "statement",
+  "hook": "Jesus... the shop hasn't made a profit in a year. 🏪",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "his small shop hasn't turned a profit in a year and he can't tell hope apart from stubbornness",
+  "bible_theme": "Romans 15:13",
+  "bible_book": "Romans",
+  "cta_type": "reflection_statement",
+  "duration": 57.81,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0108/JR-0108.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

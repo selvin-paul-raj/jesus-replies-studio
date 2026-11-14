@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0106",
+  "theme": "his visa was rejected a second time and he can't tell if he's still waiting on a door or banging on a wall",
+  "emotion": "worried",
+  "character": "boy",
+  "hook_type": "statement",
+  "hook": "Jesus... the visa got rejected again. ✈️",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "his visa was rejected a second time and he can't tell if he's still waiting on a door or banging on a wall",
+  "bible_theme": "Isaiah 40:31",
+  "bible_book": "Isaiah",
+  "cta_type": "reflection_statement",
+  "duration": 56.96,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0106/JR-0106.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

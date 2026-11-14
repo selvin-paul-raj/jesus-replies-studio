@@ -1,0 +1,3745 @@
+{
+  "week_start": "2026-11-09",
+  "week_end": "2026-11-15",
+  "generated_at": "2026-11-14T18:20:33.876571+00:00",
+  "planned_posts": [
+    {
+      "episode_id": "JR-0096",
+      "date": "2026-11-09",
+      "slot": 1
+    },
+    {
+      "episode_id": "JR-0101",
+      "date": "2026-11-09",
+      "slot": 2
+    },
+    {
+      "episode_id": "JR-0097",
+      "date": "2026-11-10",
+      "slot": 1
+    },
+    {
+      "episode_id": "JR-0102",
+      "date": "2026-11-10",
+      "slot": 2
+    },
+    {
+      "episode_id": "JR-0103",
+      "date": "2026-11-11",
+      "slot": 1
+    },
+    {
+      "episode_id": "JR-0099",
+      "date": "2026-11-11",
+      "slot": 2
+    },
+    {
+      "episode_id": "JR-0104",
+      "date": "2026-11-12",
+      "slot": 1
+    },
+    {
+      "episode_id": "JR-0098",
+      "date": "2026-11-12",
+      "slot": 2
+    },
+    {
+      "episode_id": "JR-0105",
+      "date": "2026-11-13",
+      "slot": 1
+    },
+    {
+      "episode_id": "JR-0106",
+      "date": "2026-11-13",
+      "slot": 2
+    },
+    {
+      "episode_id": "JR-0107",
+      "date": "2026-11-14",
+      "slot": 1
+    },
+    {
+      "episode_id": "JR-0100",
+      "date": "2026-11-14",
+      "slot": 2
+    },
+    {
+      "episode_id": "JR-0108",
+      "date": "2026-11-15",
+      "slot": 1
+    },
+    {
+      "episode_id": "JR-0105",
+      "date": "2026-11-15",
+      "slot": 2
+    }
+  ],
+  "published_posts": [
+    {
+      "platform": "instagram",
+      "episode_id": "JR-0101",
+      "post_id": "6af0030d004e4879a798736e",
+      "sent_at": "2026-11-09T14:04:27.126Z",
+      "metrics": {}
+    },
+    {
+      "platform": "instagram",
+      "episode_id": "JR-0096",
+      "post_id": "6aed4c0907f945cca93adb4c",
+      "sent_at": "2026-11-09T02:30:53.219Z",
+      "metrics": {
+        "reactions": 65,
+        "comments": 0,
+        "engagementRate": 6.56,
+        "views": 1303,
+        "shares": 5,
+        "saves": 7,
+        "totalTimeWatched": 211.92,
+        "averageTimeWatched": 10.78,
+        "reach": 1189
+      }
+    },
+    {
+      "platform": "youtube",
+      "episode_id": "JR-0101",
+      "post_id": "6af0032151492b796e1a5047",
+      "sent_at": "2026-11-09T14:02:14.910Z",
+      "metrics": {
+        "reactions": 10,
+        "comments": 0,
+        "engagementRate": 13.89,
+        "views": 72
+      }
+    },
+    {
+      "platform": "youtube",
+      "episode_id": "JR-0096",
+      "post_id": "6aef644851492b796eefcbdd",
+      "sent_at": "2026-11-09T02:30:08.507Z",
+      "metrics": {
+        "reactions": 90,
+        "comments": 0,
+        "engagementRate": 15.54,
+        "views": 579
+      }
+    }
+  ],
+  "failed_posts": [],
+  "totals_by_platform": {
+    "instagram": {
+      "reactions": 65,
+      "comments": 0,
+      "views": 1303,
+      "shares": 5,
+      "saves": 7,
+      "totalTimeWatched": 211.92,
+      "averageTimeWatched": 10.78,
+      "reach": 1189
+    },
+    "youtube": {
+      "reactions": 100,
+      "comments": 0,
+      "views": 651
+    }
+  },
+  "patterns": [
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 1339
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 1164
+        },
+        "statement": {
+          "n": 10,
+          "median": 1364.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "statement",
+      "weaker": "confession_statement"
+    },
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 42,
+          "median": 1305.0
+        },
+        "angry": {
+          "n": 2,
+          "median": 1220.5
+        },
+        "hopeful": {
+          "n": 2,
+          "median": 800.0
+        },
+        "neutral": {
+          "n": 2,
+          "median": 1110.0
+        },
+        "crying": {
+          "n": 2,
+          "median": 1111.0
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 1364
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 1218.5
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 380
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 1218.5
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 1333
+        },
+        "none": {
+          "n": 1,
+          "median": 1339
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "comment_question_plus_action"
+    },
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 26,
+          "median": 1263.5
+        },
+        "boy": {
+          "n": 24,
+          "median": 1308.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "boy",
+      "weaker": "girl"
+    },
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 1271
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 1339
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "06:00-09:00",
+      "weaker": "18:00-21:00"
+    },
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 1183.0
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 1133.0
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 839.0
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 1669.5
+        },
+        "Monday": {
+          "n": 8,
+          "median": 1402.5
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 1677.5
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 1315.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Sunday",
+      "weaker": "Wednesday"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 10.56
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 9.34
+        },
+        "statement": {
+          "n": 10,
+          "median": 10.655
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "statement",
+      "weaker": "confession_statement"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 42,
+          "median": 10.035
+        },
+        "angry": {
+          "n": 2,
+          "median": 9.405000000000001
+        },
+        "hopeful": {
+          "n": 2,
+          "median": 8.035
+        },
+        "neutral": {
+          "n": 2,
+          "median": 9.690000000000001
+        },
+        "crying": {
+          "n": 2,
+          "median": 10.01
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 9.9
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 10.05
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 8.99
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "full_arc_two_pushbacks",
+      "weaker": "one_pushback"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 9.504999999999999
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 10.33
+        },
+        "none": {
+          "n": 1,
+          "median": 14.36
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "comment_question_plus_action"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 26,
+          "median": 9.455
+        },
+        "boy": {
+          "n": 24,
+          "median": 10.035
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "boy",
+      "weaker": "girl"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 9.53
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 10.17
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "06:00-09:00",
+      "weaker": "18:00-21:00"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 9.36
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 10.195
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 9.585
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 10.395
+        },
+        "Monday": {
+          "n": 8,
+          "median": 10.95
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 9.325
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 9.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Monday",
+      "weaker": "Sunday"
+    },
+    {
+      "platform": "instagram",
+      "objective": "shares",
+      "metric": "shares",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 6
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 3
+        },
+        "statement": {
+          "n": 10,
+          "median": 4.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "question",
+      "weaker": "confession_statement"
+    },
+    {
+      "platform": "instagram",
+      "objective": "shares",
+      "metric": "shares",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 42,
+          "median": 5.0
+        },
+        "angry": {
+          "n": 2,
+          "median": 3.5
+        },
+        "hopeful": {
+          "n": 2,
+          "median": 2.0
+        },
+        "neutral": {
+          "n": 2,
+          "median": 1.5
+        },
+        "crying": {
+          "n": 2,
+          "median": 5.0
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "shares",
+      "metric": "shares",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 4
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 5.0
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 1
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "full_arc_two_pushbacks",
+      "weaker": "one_pushback"
+    },
+    {
+      "platform": "instagram",
+      "objective": "shares",
+      "metric": "shares",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 4.0
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 6
+        },
+        "none": {
+          "n": 1,
+          "median": 7
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "comment_question_plus_action"
+    },
+    {
+      "platform": "instagram",
+      "objective": "shares",
+      "metric": "shares",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 26,
+          "median": 4.5
+        },
+        "boy": {
+          "n": 24,
+          "median": 4.5
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "shares",
+      "metric": "shares",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 4
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "06:00-09:00",
+      "weaker": "18:00-21:00"
+    },
+    {
+      "platform": "instagram",
+      "objective": "shares",
+      "metric": "shares",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 3.5
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 3.5
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 3.0
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 3.0
+        },
+        "Monday": {
+          "n": 8,
+          "median": 6.5
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 6.5
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 6.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Monday",
+      "weaker": "Wednesday"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 11
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 9
+        },
+        "statement": {
+          "n": 10,
+          "median": 8.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "question",
+      "weaker": "statement"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 42,
+          "median": 10.0
+        },
+        "angry": {
+          "n": 2,
+          "median": 7.0
+        },
+        "hopeful": {
+          "n": 2,
+          "median": 7.5
+        },
+        "neutral": {
+          "n": 2,
+          "median": 8.0
+        },
+        "crying": {
+          "n": 2,
+          "median": 15.5
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 10
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 9.5
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 4
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 9.0
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 11
+        },
+        "none": {
+          "n": 1,
+          "median": 19
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "comment_question_plus_action"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 26,
+          "median": 11.0
+        },
+        "boy": {
+          "n": 24,
+          "median": 8.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "girl",
+      "weaker": "boy"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 10
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 9
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "18:00-21:00",
+      "weaker": "06:00-09:00"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 9.0
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 7.0
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 8.5
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 11.5
+        },
+        "Monday": {
+          "n": 8,
+          "median": 11.5
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 12.5
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 10.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Sunday",
+      "weaker": "Thursday"
+    },
+    {
+      "platform": "instagram",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 0
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 0
+        },
+        "statement": {
+          "n": 10,
+          "median": 0.0
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 42,
+          "median": 0.0
+        },
+        "angry": {
+          "n": 2,
+          "median": 0.0
+        },
+        "hopeful": {
+          "n": 2,
+          "median": 0.0
+        },
+        "neutral": {
+          "n": 2,
+          "median": 1.0
+        },
+        "crying": {
+          "n": 2,
+          "median": 0.0
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 0
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 0.0
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 0
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 0.0
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 0
+        },
+        "none": {
+          "n": 1,
+          "median": 0
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 26,
+          "median": 0.0
+        },
+        "boy": {
+          "n": 24,
+          "median": 0.0
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 0
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 0
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 0.0
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 0.0
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 0.0
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 0.0
+        },
+        "Monday": {
+          "n": 8,
+          "median": 0.0
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 0.0
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 0.0
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 87
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 86
+        },
+        "statement": {
+          "n": 10,
+          "median": 88.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "statement",
+      "weaker": "confession_statement"
+    },
+    {
+      "platform": "instagram",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 42,
+          "median": 86.5
+        },
+        "angry": {
+          "n": 2,
+          "median": 63.5
+        },
+        "hopeful": {
+          "n": 2,
+          "median": 64.0
+        },
+        "neutral": {
+          "n": 2,
+          "median": 63.0
+        },
+        "crying": {
+          "n": 2,
+          "median": 64.0
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 87
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 84.5
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 30
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "instagram",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 84.5
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 98
+        },
+        "none": {
+          "n": 1,
+          "median": 125
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "comment_question_plus_action"
+    },
+    {
+      "platform": "instagram",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 26,
+          "median": 86.5
+        },
+        "boy": {
+          "n": 24,
+          "median": 86.5
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 87
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 86
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "18:00-21:00",
+      "weaker": "06:00-09:00"
+    },
+    {
+      "platform": "instagram",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 75.0
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 86.0
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 52.5
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 93.5
+        },
+        "Monday": {
+          "n": 8,
+          "median": 97.0
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 117.0
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 97.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Sunday",
+      "weaker": "Wednesday"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 1522
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 1286
+        },
+        "statement": {
+          "n": 10,
+          "median": 1553.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "statement",
+      "weaker": "confession_statement"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 42,
+          "median": 1474.0
+        },
+        "angry": {
+          "n": 2,
+          "median": 1375.5
+        },
+        "hopeful": {
+          "n": 2,
+          "median": 876.5
+        },
+        "neutral": {
+          "n": 2,
+          "median": 1238.5
+        },
+        "crying": {
+          "n": 2,
+          "median": 1282.0
+        }
+      },
+      "finding": "insufficient data"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 1546
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 1348.0
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 447
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 1348.0
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 1546
+        },
+        "none": {
+          "n": 1,
+          "median": 1527
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "comment_question_plus_action"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 26,
+          "median": 1418.0
+        },
+        "boy": {
+          "n": 24,
+          "median": 1474.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "boy",
+      "weaker": "girl"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 1421
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 1527
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "06:00-09:00",
+      "weaker": "18:00-21:00"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 1304.0
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 1250.0
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 935.0
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 1866.5
+        },
+        "Monday": {
+          "n": 8,
+          "median": 1585.0
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 1866.0
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 1465.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Tuesday",
+      "weaker": "Wednesday"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 41,
+          "median": 0
+        },
+        "confession_statement": {
+          "n": 28,
+          "median": 2.5
+        },
+        "statement": {
+          "n": 11,
+          "median": 2
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "confession_statement",
+      "weaker": "question"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 49,
+          "median": 2
+        },
+        "angry": {
+          "n": 5,
+          "median": 0
+        },
+        "hopeful": {
+          "n": 4,
+          "median": 0.0
+        },
+        "neutral": {
+          "n": 6,
+          "median": 1.5
+        },
+        "crying": {
+          "n": 6,
+          "median": 1.0
+        },
+        "happy": {
+          "n": 2,
+          "median": 1.5
+        },
+        "worried": {
+          "n": 7,
+          "median": 0
+        },
+        "heartbroken": {
+          "n": 1,
+          "median": 0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "sad",
+      "weaker": "angry"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 31,
+          "median": 2
+        },
+        "full_arc_two_pushbacks": {
+          "n": 48,
+          "median": 1.0
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 10
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 44,
+          "median": 2.0
+        },
+        "reflection_statement": {
+          "n": 20,
+          "median": 2.0
+        },
+        "none": {
+          "n": 11,
+          "median": 0
+        },
+        "comment_question": {
+          "n": 5,
+          "median": 0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "comment_question_plus_action",
+      "weaker": "none"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 40,
+          "median": 1.0
+        },
+        "boy": {
+          "n": 40,
+          "median": 2.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "boy",
+      "weaker": "girl"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 39,
+          "median": 2
+        },
+        "06:00-09:00": {
+          "n": 32,
+          "median": 2.0
+        },
+        "21:00-24:00": {
+          "n": 7,
+          "median": 0
+        },
+        "09:00-12:00": {
+          "n": 2,
+          "median": 0.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "18:00-21:00",
+      "weaker": "21:00-24:00"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 10,
+          "median": 0.5
+        },
+        "Thursday": {
+          "n": 14,
+          "median": 0.0
+        },
+        "Wednesday": {
+          "n": 14,
+          "median": 2.5
+        },
+        "Tuesday": {
+          "n": 14,
+          "median": 1.0
+        },
+        "Monday": {
+          "n": 11,
+          "median": 2
+        },
+        "Sunday": {
+          "n": 7,
+          "median": 2
+        },
+        "Saturday": {
+          "n": 10,
+          "median": 2.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Wednesday",
+      "weaker": "Thursday"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 41,
+          "median": 48
+        },
+        "confession_statement": {
+          "n": 28,
+          "median": 244.5
+        },
+        "statement": {
+          "n": 11,
+          "median": 235
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "confession_statement",
+      "weaker": "question"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 49,
+          "median": 184
+        },
+        "angry": {
+          "n": 5,
+          "median": 145
+        },
+        "hopeful": {
+          "n": 4,
+          "median": 85.5
+        },
+        "neutral": {
+          "n": 6,
+          "median": 52.5
+        },
+        "crying": {
+          "n": 6,
+          "median": 82.5
+        },
+        "happy": {
+          "n": 2,
+          "median": 169.5
+        },
+        "worried": {
+          "n": 7,
+          "median": 17
+        },
+        "heartbroken": {
+          "n": 1,
+          "median": 3
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "sad",
+      "weaker": "worried"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 31,
+          "median": 178
+        },
+        "full_arc_two_pushbacks": {
+          "n": 48,
+          "median": 66.0
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 412
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 44,
+          "median": 138.0
+        },
+        "reflection_statement": {
+          "n": 20,
+          "median": 193.5
+        },
+        "none": {
+          "n": 11,
+          "median": 33
+        },
+        "comment_question": {
+          "n": 5,
+          "median": 132
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "none"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 40,
+          "median": 78.0
+        },
+        "boy": {
+          "n": 40,
+          "median": 166.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "boy",
+      "weaker": "girl"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 39,
+          "median": 89
+        },
+        "06:00-09:00": {
+          "n": 32,
+          "median": 209.5
+        },
+        "21:00-24:00": {
+          "n": 7,
+          "median": 18
+        },
+        "09:00-12:00": {
+          "n": 2,
+          "median": 46.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "06:00-09:00",
+      "weaker": "21:00-24:00"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 10,
+          "median": 203.5
+        },
+        "Thursday": {
+          "n": 14,
+          "median": 75.0
+        },
+        "Wednesday": {
+          "n": 14,
+          "median": 110.0
+        },
+        "Tuesday": {
+          "n": 14,
+          "median": 88.0
+        },
+        "Monday": {
+          "n": 11,
+          "median": 151
+        },
+        "Sunday": {
+          "n": 7,
+          "median": 212
+        },
+        "Saturday": {
+          "n": 10,
+          "median": 166.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Sunday",
+      "weaker": "Thursday"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 41,
+          "median": 338
+        },
+        "confession_statement": {
+          "n": 28,
+          "median": 1537.5
+        },
+        "statement": {
+          "n": 11,
+          "median": 1340
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "confession_statement",
+      "weaker": "question"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 49,
+          "median": 1192
+        },
+        "angry": {
+          "n": 5,
+          "median": 839
+        },
+        "hopeful": {
+          "n": 4,
+          "median": 642.0
+        },
+        "neutral": {
+          "n": 6,
+          "median": 360.0
+        },
+        "crying": {
+          "n": 6,
+          "median": 658.5
+        },
+        "happy": {
+          "n": 2,
+          "median": 849.0
+        },
+        "worried": {
+          "n": 7,
+          "median": 133
+        },
+        "heartbroken": {
+          "n": 1,
+          "median": 19
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "sad",
+      "weaker": "worried"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 31,
+          "median": 1205
+        },
+        "full_arc_two_pushbacks": {
+          "n": 48,
+          "median": 526.5
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 3707
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 44,
+          "median": 1049.0
+        },
+        "reflection_statement": {
+          "n": 20,
+          "median": 1298.0
+        },
+        "none": {
+          "n": 11,
+          "median": 316
+        },
+        "comment_question": {
+          "n": 5,
+          "median": 839
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "none"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 40,
+          "median": 659.5
+        },
+        "boy": {
+          "n": 40,
+          "median": 1127.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "boy",
+      "weaker": "girl"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 39,
+          "median": 726
+        },
+        "06:00-09:00": {
+          "n": 32,
+          "median": 1209.5
+        },
+        "21:00-24:00": {
+          "n": 7,
+          "median": 119
+        },
+        "09:00-12:00": {
+          "n": 2,
+          "median": 443.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "06:00-09:00",
+      "weaker": "21:00-24:00"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 10,
+          "median": 1131.5
+        },
+        "Thursday": {
+          "n": 14,
+          "median": 454.5
+        },
+        "Wednesday": {
+          "n": 14,
+          "median": 821.0
+        },
+        "Tuesday": {
+          "n": 14,
+          "median": 1074.5
+        },
+        "Monday": {
+          "n": 11,
+          "median": 1513
+        },
+        "Sunday": {
+          "n": 7,
+          "median": 1106
+        },
+        "Saturday": {
+          "n": 10,
+          "median": 1084.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Monday",
+      "weaker": "Thursday"
+    }
+  ],
+  "best_performing_patterns": [
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 1339
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 1164
+        },
+        "statement": {
+          "n": 10,
+          "median": 1364.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "statement",
+      "weaker": "confession_statement"
+    },
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 1364
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 1218.5
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 380
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 1218.5
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 1333
+        },
+        "none": {
+          "n": 1,
+          "median": 1339
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "comment_question_plus_action"
+    },
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 26,
+          "median": 1263.5
+        },
+        "boy": {
+          "n": 24,
+          "median": 1308.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "boy",
+      "weaker": "girl"
+    },
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 1271
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 1339
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "06:00-09:00",
+      "weaker": "18:00-21:00"
+    },
+    {
+      "platform": "instagram",
+      "objective": "reach",
+      "metric": "reach",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 1183.0
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 1133.0
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 839.0
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 1669.5
+        },
+        "Monday": {
+          "n": 8,
+          "median": 1402.5
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 1677.5
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 1315.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Sunday",
+      "weaker": "Wednesday"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 10.56
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 9.34
+        },
+        "statement": {
+          "n": 10,
+          "median": 10.655
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "statement",
+      "weaker": "confession_statement"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 9.9
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 10.05
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 8.99
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "full_arc_two_pushbacks",
+      "weaker": "one_pushback"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 9.504999999999999
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 10.33
+        },
+        "none": {
+          "n": 1,
+          "median": 14.36
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "comment_question_plus_action"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 26,
+          "median": 9.455
+        },
+        "boy": {
+          "n": 24,
+          "median": 10.035
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "boy",
+      "weaker": "girl"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 9.53
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 10.17
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "06:00-09:00",
+      "weaker": "18:00-21:00"
+    },
+    {
+      "platform": "instagram",
+      "objective": "retention",
+      "metric": "averageTimeWatched",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 9.36
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 10.195
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 9.585
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 10.395
+        },
+        "Monday": {
+          "n": 8,
+          "median": 10.95
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 9.325
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 9.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Monday",
+      "weaker": "Sunday"
+    },
+    {
+      "platform": "instagram",
+      "objective": "shares",
+      "metric": "shares",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 6
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 3
+        },
+        "statement": {
+          "n": 10,
+          "median": 4.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "question",
+      "weaker": "confession_statement"
+    },
+    {
+      "platform": "instagram",
+      "objective": "shares",
+      "metric": "shares",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 4
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 5.0
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 1
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "full_arc_two_pushbacks",
+      "weaker": "one_pushback"
+    },
+    {
+      "platform": "instagram",
+      "objective": "shares",
+      "metric": "shares",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 4.0
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 6
+        },
+        "none": {
+          "n": 1,
+          "median": 7
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "comment_question_plus_action"
+    },
+    {
+      "platform": "instagram",
+      "objective": "shares",
+      "metric": "shares",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 4
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "06:00-09:00",
+      "weaker": "18:00-21:00"
+    },
+    {
+      "platform": "instagram",
+      "objective": "shares",
+      "metric": "shares",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 3.5
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 3.5
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 3.0
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 3.0
+        },
+        "Monday": {
+          "n": 8,
+          "median": 6.5
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 6.5
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 6.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Monday",
+      "weaker": "Wednesday"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 11
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 9
+        },
+        "statement": {
+          "n": 10,
+          "median": 8.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "question",
+      "weaker": "statement"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 10
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 9.5
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 4
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 9.0
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 11
+        },
+        "none": {
+          "n": 1,
+          "median": 19
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "comment_question_plus_action"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 26,
+          "median": 11.0
+        },
+        "boy": {
+          "n": 24,
+          "median": 8.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "girl",
+      "weaker": "boy"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 10
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 9
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "18:00-21:00",
+      "weaker": "06:00-09:00"
+    },
+    {
+      "platform": "instagram",
+      "objective": "saves",
+      "metric": "saves",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 9.0
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 7.0
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 8.5
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 11.5
+        },
+        "Monday": {
+          "n": 8,
+          "median": 11.5
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 12.5
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 10.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Sunday",
+      "weaker": "Thursday"
+    },
+    {
+      "platform": "instagram",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 87
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 86
+        },
+        "statement": {
+          "n": 10,
+          "median": 88.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "statement",
+      "weaker": "confession_statement"
+    },
+    {
+      "platform": "instagram",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 87
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 84.5
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 30
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "instagram",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 84.5
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 98
+        },
+        "none": {
+          "n": 1,
+          "median": 125
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "comment_question_plus_action"
+    },
+    {
+      "platform": "instagram",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 87
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 86
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "18:00-21:00",
+      "weaker": "06:00-09:00"
+    },
+    {
+      "platform": "instagram",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 75.0
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 86.0
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 52.5
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 93.5
+        },
+        "Monday": {
+          "n": 8,
+          "median": 97.0
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 117.0
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 97.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Sunday",
+      "weaker": "Wednesday"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 15,
+          "median": 1522
+        },
+        "confession_statement": {
+          "n": 25,
+          "median": 1286
+        },
+        "statement": {
+          "n": 10,
+          "median": 1553.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "statement",
+      "weaker": "confession_statement"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 27,
+          "median": 1546
+        },
+        "full_arc_two_pushbacks": {
+          "n": 22,
+          "median": 1348.0
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 447
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 32,
+          "median": 1348.0
+        },
+        "reflection_statement": {
+          "n": 17,
+          "median": 1546
+        },
+        "none": {
+          "n": 1,
+          "median": 1527
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "comment_question_plus_action"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 26,
+          "median": 1418.0
+        },
+        "boy": {
+          "n": 24,
+          "median": 1474.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "boy",
+      "weaker": "girl"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 25,
+          "median": 1421
+        },
+        "06:00-09:00": {
+          "n": 25,
+          "median": 1527
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "06:00-09:00",
+      "weaker": "18:00-21:00"
+    },
+    {
+      "platform": "instagram",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 8,
+          "median": 1304.0
+        },
+        "Thursday": {
+          "n": 8,
+          "median": 1250.0
+        },
+        "Wednesday": {
+          "n": 8,
+          "median": 935.0
+        },
+        "Tuesday": {
+          "n": 8,
+          "median": 1866.5
+        },
+        "Monday": {
+          "n": 8,
+          "median": 1585.0
+        },
+        "Sunday": {
+          "n": 4,
+          "median": 1866.0
+        },
+        "Saturday": {
+          "n": 6,
+          "median": 1465.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Tuesday",
+      "weaker": "Wednesday"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 41,
+          "median": 0
+        },
+        "confession_statement": {
+          "n": 28,
+          "median": 2.5
+        },
+        "statement": {
+          "n": 11,
+          "median": 2
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "confession_statement",
+      "weaker": "question"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 49,
+          "median": 2
+        },
+        "angry": {
+          "n": 5,
+          "median": 0
+        },
+        "hopeful": {
+          "n": 4,
+          "median": 0.0
+        },
+        "neutral": {
+          "n": 6,
+          "median": 1.5
+        },
+        "crying": {
+          "n": 6,
+          "median": 1.0
+        },
+        "happy": {
+          "n": 2,
+          "median": 1.5
+        },
+        "worried": {
+          "n": 7,
+          "median": 0
+        },
+        "heartbroken": {
+          "n": 1,
+          "median": 0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "sad",
+      "weaker": "angry"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 31,
+          "median": 2
+        },
+        "full_arc_two_pushbacks": {
+          "n": 48,
+          "median": 1.0
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 10
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 44,
+          "median": 2.0
+        },
+        "reflection_statement": {
+          "n": 20,
+          "median": 2.0
+        },
+        "none": {
+          "n": 11,
+          "median": 0
+        },
+        "comment_question": {
+          "n": 5,
+          "median": 0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "comment_question_plus_action",
+      "weaker": "none"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 40,
+          "median": 1.0
+        },
+        "boy": {
+          "n": 40,
+          "median": 2.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "boy",
+      "weaker": "girl"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 39,
+          "median": 2
+        },
+        "06:00-09:00": {
+          "n": 32,
+          "median": 2.0
+        },
+        "21:00-24:00": {
+          "n": 7,
+          "median": 0
+        },
+        "09:00-12:00": {
+          "n": 2,
+          "median": 0.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "18:00-21:00",
+      "weaker": "21:00-24:00"
+    },
+    {
+      "platform": "youtube",
+      "objective": "comments",
+      "metric": "comments",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 10,
+          "median": 0.5
+        },
+        "Thursday": {
+          "n": 14,
+          "median": 0.0
+        },
+        "Wednesday": {
+          "n": 14,
+          "median": 2.5
+        },
+        "Tuesday": {
+          "n": 14,
+          "median": 1.0
+        },
+        "Monday": {
+          "n": 11,
+          "median": 2
+        },
+        "Sunday": {
+          "n": 7,
+          "median": 2
+        },
+        "Saturday": {
+          "n": 10,
+          "median": 2.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Wednesday",
+      "weaker": "Thursday"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 41,
+          "median": 48
+        },
+        "confession_statement": {
+          "n": 28,
+          "median": 244.5
+        },
+        "statement": {
+          "n": 11,
+          "median": 235
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "confession_statement",
+      "weaker": "question"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 49,
+          "median": 184
+        },
+        "angry": {
+          "n": 5,
+          "median": 145
+        },
+        "hopeful": {
+          "n": 4,
+          "median": 85.5
+        },
+        "neutral": {
+          "n": 6,
+          "median": 52.5
+        },
+        "crying": {
+          "n": 6,
+          "median": 82.5
+        },
+        "happy": {
+          "n": 2,
+          "median": 169.5
+        },
+        "worried": {
+          "n": 7,
+          "median": 17
+        },
+        "heartbroken": {
+          "n": 1,
+          "median": 3
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "sad",
+      "weaker": "worried"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 31,
+          "median": 178
+        },
+        "full_arc_two_pushbacks": {
+          "n": 48,
+          "median": 66.0
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 412
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 44,
+          "median": 138.0
+        },
+        "reflection_statement": {
+          "n": 20,
+          "median": 193.5
+        },
+        "none": {
+          "n": 11,
+          "median": 33
+        },
+        "comment_question": {
+          "n": 5,
+          "median": 132
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "none"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 40,
+          "median": 78.0
+        },
+        "boy": {
+          "n": 40,
+          "median": 166.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "boy",
+      "weaker": "girl"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 39,
+          "median": 89
+        },
+        "06:00-09:00": {
+          "n": 32,
+          "median": 209.5
+        },
+        "21:00-24:00": {
+          "n": 7,
+          "median": 18
+        },
+        "09:00-12:00": {
+          "n": 2,
+          "median": 46.5
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "06:00-09:00",
+      "weaker": "21:00-24:00"
+    },
+    {
+      "platform": "youtube",
+      "objective": "likes",
+      "metric": "reactions",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 10,
+          "median": 203.5
+        },
+        "Thursday": {
+          "n": 14,
+          "median": 75.0
+        },
+        "Wednesday": {
+          "n": 14,
+          "median": 110.0
+        },
+        "Tuesday": {
+          "n": 14,
+          "median": 88.0
+        },
+        "Monday": {
+          "n": 11,
+          "median": 151
+        },
+        "Sunday": {
+          "n": 7,
+          "median": 212
+        },
+        "Saturday": {
+          "n": 10,
+          "median": 166.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Sunday",
+      "weaker": "Thursday"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "hook_type",
+      "groups": {
+        "question": {
+          "n": 41,
+          "median": 338
+        },
+        "confession_statement": {
+          "n": 28,
+          "median": 1537.5
+        },
+        "statement": {
+          "n": 11,
+          "median": 1340
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "confession_statement",
+      "weaker": "question"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "emotion",
+      "groups": {
+        "sad": {
+          "n": 49,
+          "median": 1192
+        },
+        "angry": {
+          "n": 5,
+          "median": 839
+        },
+        "hopeful": {
+          "n": 4,
+          "median": 642.0
+        },
+        "neutral": {
+          "n": 6,
+          "median": 360.0
+        },
+        "crying": {
+          "n": 6,
+          "median": 658.5
+        },
+        "happy": {
+          "n": 2,
+          "median": 849.0
+        },
+        "worried": {
+          "n": 7,
+          "median": 133
+        },
+        "heartbroken": {
+          "n": 1,
+          "median": 19
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "sad",
+      "weaker": "worried"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "story_type",
+      "groups": {
+        "one_pushback": {
+          "n": 31,
+          "median": 1205
+        },
+        "full_arc_two_pushbacks": {
+          "n": 48,
+          "median": 526.5
+        },
+        "direct_answer": {
+          "n": 1,
+          "median": 3707
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "one_pushback",
+      "weaker": "full_arc_two_pushbacks"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "cta_type",
+      "groups": {
+        "comment_question_plus_action": {
+          "n": 44,
+          "median": 1049.0
+        },
+        "reflection_statement": {
+          "n": 20,
+          "median": 1298.0
+        },
+        "none": {
+          "n": 11,
+          "median": 316
+        },
+        "comment_question": {
+          "n": 5,
+          "median": 839
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "reflection_statement",
+      "weaker": "none"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "character",
+      "groups": {
+        "girl": {
+          "n": 40,
+          "median": 659.5
+        },
+        "boy": {
+          "n": 40,
+          "median": 1127.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "boy",
+      "weaker": "girl"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "slot_window",
+      "groups": {
+        "18:00-21:00": {
+          "n": 39,
+          "median": 726
+        },
+        "06:00-09:00": {
+          "n": 32,
+          "median": 1209.5
+        },
+        "21:00-24:00": {
+          "n": 7,
+          "median": 119
+        },
+        "09:00-12:00": {
+          "n": 2,
+          "median": 443.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "06:00-09:00",
+      "weaker": "21:00-24:00"
+    },
+    {
+      "platform": "youtube",
+      "objective": "views",
+      "metric": "views",
+      "dimension": "weekday",
+      "groups": {
+        "Friday": {
+          "n": 10,
+          "median": 1131.5
+        },
+        "Thursday": {
+          "n": 14,
+          "median": 454.5
+        },
+        "Wednesday": {
+          "n": 14,
+          "median": 821.0
+        },
+        "Tuesday": {
+          "n": 14,
+          "median": 1074.5
+        },
+        "Monday": {
+          "n": 11,
+          "median": 1513
+        },
+        "Sunday": {
+          "n": 7,
+          "median": 1106
+        },
+        "Saturday": {
+          "n": 10,
+          "median": 1084.0
+        }
+      },
+      "finding": "pattern (low n, confounded by topic)",
+      "stronger": "Monday",
+      "weaker": "Thursday"
+    }
+  ],
+  "weak_patterns": [
+    {
+      "platform": "instagram",
+      "dimension": "hook_type",
+      "weaker": "confession_statement",
+      "metric": "reach"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "story_type",
+      "weaker": "full_arc_two_pushbacks",
+      "metric": "reach"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "cta_type",
+      "weaker": "comment_question_plus_action",
+      "metric": "reach"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "character",
+      "weaker": "girl",
+      "metric": "reach"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "slot_window",
+      "weaker": "18:00-21:00",
+      "metric": "reach"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "weekday",
+      "weaker": "Wednesday",
+      "metric": "reach"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "hook_type",
+      "weaker": "confession_statement",
+      "metric": "averageTimeWatched"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "story_type",
+      "weaker": "one_pushback",
+      "metric": "averageTimeWatched"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "cta_type",
+      "weaker": "comment_question_plus_action",
+      "metric": "averageTimeWatched"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "character",
+      "weaker": "girl",
+      "metric": "averageTimeWatched"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "slot_window",
+      "weaker": "18:00-21:00",
+      "metric": "averageTimeWatched"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "weekday",
+      "weaker": "Sunday",
+      "metric": "averageTimeWatched"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "hook_type",
+      "weaker": "confession_statement",
+      "metric": "shares"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "story_type",
+      "weaker": "one_pushback",
+      "metric": "shares"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "cta_type",
+      "weaker": "comment_question_plus_action",
+      "metric": "shares"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "slot_window",
+      "weaker": "18:00-21:00",
+      "metric": "shares"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "weekday",
+      "weaker": "Wednesday",
+      "metric": "shares"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "hook_type",
+      "weaker": "statement",
+      "metric": "saves"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "story_type",
+      "weaker": "full_arc_two_pushbacks",
+      "metric": "saves"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "cta_type",
+      "weaker": "comment_question_plus_action",
+      "metric": "saves"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "character",
+      "weaker": "boy",
+      "metric": "saves"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "slot_window",
+      "weaker": "06:00-09:00",
+      "metric": "saves"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "weekday",
+      "weaker": "Thursday",
+      "metric": "saves"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "hook_type",
+      "weaker": "confession_statement",
+      "metric": "reactions"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "story_type",
+      "weaker": "full_arc_two_pushbacks",
+      "metric": "reactions"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "cta_type",
+      "weaker": "comment_question_plus_action",
+      "metric": "reactions"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "slot_window",
+      "weaker": "06:00-09:00",
+      "metric": "reactions"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "weekday",
+      "weaker": "Wednesday",
+      "metric": "reactions"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "hook_type",
+      "weaker": "confession_statement",
+      "metric": "views"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "story_type",
+      "weaker": "full_arc_two_pushbacks",
+      "metric": "views"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "cta_type",
+      "weaker": "comment_question_plus_action",
+      "metric": "views"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "character",
+      "weaker": "girl",
+      "metric": "views"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "slot_window",
+      "weaker": "18:00-21:00",
+      "metric": "views"
+    },
+    {
+      "platform": "instagram",
+      "dimension": "weekday",
+      "weaker": "Wednesday",
+      "metric": "views"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "hook_type",
+      "weaker": "question",
+      "metric": "comments"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "emotion",
+      "weaker": "angry",
+      "metric": "comments"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "story_type",
+      "weaker": "full_arc_two_pushbacks",
+      "metric": "comments"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "cta_type",
+      "weaker": "none",
+      "metric": "comments"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "character",
+      "weaker": "girl",
+      "metric": "comments"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "slot_window",
+      "weaker": "21:00-24:00",
+      "metric": "comments"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "weekday",
+      "weaker": "Thursday",
+      "metric": "comments"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "hook_type",
+      "weaker": "question",
+      "metric": "reactions"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "emotion",
+      "weaker": "worried",
+      "metric": "reactions"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "story_type",
+      "weaker": "full_arc_two_pushbacks",
+      "metric": "reactions"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "cta_type",
+      "weaker": "none",
+      "metric": "reactions"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "character",
+      "weaker": "girl",
+      "metric": "reactions"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "slot_window",
+      "weaker": "21:00-24:00",
+      "metric": "reactions"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "weekday",
+      "weaker": "Thursday",
+      "metric": "reactions"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "hook_type",
+      "weaker": "question",
+      "metric": "views"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "emotion",
+      "weaker": "worried",
+      "metric": "views"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "story_type",
+      "weaker": "full_arc_two_pushbacks",
+      "metric": "views"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "cta_type",
+      "weaker": "none",
+      "metric": "views"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "character",
+      "weaker": "girl",
+      "metric": "views"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "slot_window",
+      "weaker": "21:00-24:00",
+      "metric": "views"
+    },
+    {
+      "platform": "youtube",
+      "dimension": "weekday",
+      "weaker": "Thursday",
+      "metric": "views"
+    }
+  ],
+  "timing_observations": "see weekly-content-plan.json timing.hypotheses",
+  "content_gaps": "see research file opportunities",
+  "NEXT_WEEK_RECOMMENDATIONS": [
+    "instagram reach (reach): 'statement' beat 'confession_statement' on hook_type (n=10 vs 25). Generalise the pattern, do not copy the story.",
+    "instagram reach (reach): 'one_pushback' beat 'full_arc_two_pushbacks' on story_type (n=27 vs 22). Generalise the pattern, do not copy the story.",
+    "instagram reach (reach): 'reflection_statement' beat 'comment_question_plus_action' on cta_type (n=17 vs 32). Generalise the pattern, do not copy the story.",
+    "instagram reach (reach): 'boy' beat 'girl' on character (n=24 vs 26). Generalise the pattern, do not copy the story.",
+    "instagram reach (reach): '06:00-09:00' beat '18:00-21:00' on slot_window (n=25 vs 25). Generalise the pattern, do not copy the story.",
+    "instagram reach (reach): 'Sunday' beat 'Wednesday' on weekday (n=4 vs 8). Generalise the pattern, do not copy the story.",
+    "Keep at most two variables under test (hook type, slot); hold emotion, CTA and duration steady."
+  ]
+}

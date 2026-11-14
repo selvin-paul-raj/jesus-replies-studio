@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0104",
+  "theme": "she is the person everyone brings their problems to, and she has nowhere to put her own",
+  "emotion": "hopeful",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I'm the strong one. Nobody ever asks me. 🪨",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "she is the person everyone brings their problems to, and she has nowhere to put her own",
+  "bible_theme": "Isaiah 43:19",
+  "bible_book": "Isaiah",
+  "cta_type": "reflection_statement",
+  "duration": 59.52,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0104/JR-0104.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

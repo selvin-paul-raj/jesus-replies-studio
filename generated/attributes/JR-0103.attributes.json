@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0103",
+  "theme": "she reads her Bible every morning and forgets it by lunch, and feels like a bad Christian",
+  "emotion": "worried",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I read the chapter. By noon it's gone. 📖",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "she reads her Bible every morning and forgets it by lunch, and feels like a bad Christian",
+  "bible_theme": "Psalm 119:11",
+  "bible_book": "Psalm",
+  "cta_type": "reflection_statement",
+  "duration": 56.09,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0103/JR-0103.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

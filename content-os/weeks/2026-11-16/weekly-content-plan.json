@@ -1,0 +1,667 @@
+{
+  "plan_version": 1,
+  "week_start": "2026-11-16",
+  "week_end": "2026-11-22",
+  "timezone": "Asia/Kolkata",
+  "generated_at": "2026-11-14T18:20:33.000Z",
+  "status": "PROPOSED",
+  "requires_authorization": false,
+  "targets": {
+    "unique_videos": 14,
+    "instagram": 14,
+    "youtube": 14,
+    "platform_publications": 28
+  },
+  "generation_needed": 6,
+  "carry_over_ready": [],
+  "inventory_counts": {
+    "UNUSED": 10,
+    "PUBLISHED": 88,
+    "SCHEDULED": 7,
+    "READY": 8
+  },
+  "analytics_summary": {
+    "instagram": {
+      "jr_posts_sent": 56,
+      "dimensions": {
+        "reach": {
+          "metric": "reach",
+          "n": 55,
+          "median": 1256,
+          "max": 11968
+        },
+        "retention": {
+          "metric": "averageTimeWatched",
+          "n": 55,
+          "median": 9.83,
+          "max": 18.55
+        },
+        "shares": {
+          "metric": "shares",
+          "n": 55,
+          "median": 4,
+          "max": 180
+        },
+        "saves": {
+          "metric": "saves",
+          "n": 55,
+          "median": 9,
+          "max": 371
+        },
+        "comments": {
+          "metric": "comments",
+          "n": 55,
+          "median": 0,
+          "max": 4
+        },
+        "follows": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "likes": {
+          "metric": "reactions",
+          "n": 55,
+          "median": 86,
+          "max": 763
+        },
+        "views": {
+          "metric": "views",
+          "n": 55,
+          "median": 1410,
+          "max": 13735
+        }
+      }
+    },
+    "youtube": {
+      "jr_posts_sent": 86,
+      "dimensions": {
+        "reach": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "retention": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "shares": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "saves": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "comments": {
+          "metric": "comments",
+          "n": 86,
+          "median": 1.0,
+          "max": 13
+        },
+        "follows": {
+          "metric": null,
+          "status": "UNAVAILABLE"
+        },
+        "likes": {
+          "metric": "reactions",
+          "n": 86,
+          "median": 114.5,
+          "max": 1439
+        },
+        "views": {
+          "metric": "views",
+          "n": 86,
+          "median": 1002.0,
+          "max": 3822
+        }
+      }
+    }
+  },
+  "timing": {
+    "hypotheses": [
+      {
+        "platform": "instagram",
+        "window": "06:00-09:00",
+        "median": 1395,
+        "n": 21,
+        "metric": "reach",
+        "confidence": "medium"
+      },
+      {
+        "platform": "youtube",
+        "window": "06:00-09:00",
+        "median": 205.0,
+        "n": 28,
+        "metric": "reactions",
+        "confidence": "medium"
+      }
+    ],
+    "caveats": [
+      "metrics are cumulative and confounded by topic, hook and account momentum",
+      "Buffer reports no audience-activity-by-hour; Instagram/YouTube native insights are not wired",
+      "only posts at least 7 days old are compared so totals are roughly comparable"
+    ],
+    "coordination": "same_slot"
+  },
+  "research_ref": "content-os/research/2026-11-16.research.json",
+  "research_opportunities": [],
+  "experiments_active": [
+    "EXP-004",
+    "EXP-005"
+  ],
+  "slots": [
+    {
+      "episode_id": "JR-0113",
+      "date": "2026-11-16",
+      "weekday": "Monday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-16T02:30:00.000Z",
+        "youtube": "2026-11-16T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "Aunty at the wedding says 'you've put on weight' in front of everyone; she laughs it off and stops eating.",
+      "hook_strategy": "confession",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": "1 Samuel 16:7",
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "weekly series lane 'family-pressure' (DEC-JR-017): Aunty at the wedding says 'you've put on weight' in front of everyone; she laughs it off and stops eating. Verse 1 Samuel 16:7 (context-checked, R10). Goes through every normal gate before it is scheduled."
+      ],
+      "series": "family-pressure"
+    },
+    {
+      "episode_id": "JR-0105",
+      "date": "2026-11-16",
+      "weekday": "Monday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-16T14:00:00.000Z",
+        "youtube": "2026-11-16T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "she is in a long low season and every post telling her to count her blessings makes the dark feel worse",
+      "hook_strategy": "statement",
+      "hook": "Jesus... every reel tonight said count your blessings. 😔",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Isaiah 9:2",
+      "story_type": "one_pushback",
+      "cta_type": "reflection_statement",
+      "duration_s": 58.62,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 58.62s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0106",
+      "date": "2026-11-17",
+      "weekday": "Tuesday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-17T02:30:00.000Z",
+        "youtube": "2026-11-17T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "his visa was rejected a second time and he can't tell if he's still waiting on a door or banging on a wall",
+      "hook_strategy": "statement",
+      "hook": "Jesus... the visa got rejected again. ✈️",
+      "emotional_angle": "worried",
+      "character": "boy",
+      "bible_reference": "Isaiah 40:31",
+      "story_type": "one_pushback",
+      "cta_type": "reflection_statement",
+      "duration_s": 56.96,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 56.96s)",
+        "emotion 'worried' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0107",
+      "date": "2026-11-17",
+      "weekday": "Tuesday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-17T14:00:00.000Z",
+        "youtube": "2026-11-17T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "she found her two-year-old prayer journal and the still-blank pages nearly made her stop hoping",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I found my old prayer journal tonight. 📔",
+      "emotional_angle": "hopeful",
+      "character": "girl",
+      "bible_reference": "Jeremiah 33:14",
+      "story_type": "one_pushback",
+      "cta_type": "reflection_statement",
+      "duration_s": 58.71,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 58.71s)",
+        "emotion 'hopeful' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0109",
+      "date": "2026-11-18",
+      "weekday": "Wednesday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-18T02:30:00.000Z",
+        "youtube": "2026-11-18T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "he scrolls his phone till 2 AM every night chasing a quiet he never finds, and wakes up ashamed of the hours he lost",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... I scroll till 2 AM and wake up hating it. 📱",
+      "emotional_angle": "sad",
+      "character": "boy",
+      "bible_reference": "Psalms 119:37",
+      "story_type": "one_pushback",
+      "cta_type": "reflection_statement",
+      "duration_s": 53.08,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 53.08s)",
+        "emotion 'sad' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0112",
+      "date": "2026-11-18",
+      "weekday": "Wednesday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-18T14:00:00.000Z",
+        "youtube": "2026-11-18T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "she must choose between two job offers in two cities and every voice around her is louder than the peace she is praying for",
+      "hook_strategy": "statement",
+      "hook": "Jesus... two doors are open and I can't hear You. 🚪",
+      "emotional_angle": "hopeful",
+      "character": "girl",
+      "bible_reference": "Proverbs 3:5-6",
+      "story_type": "one_pushback",
+      "cta_type": "reflection_statement",
+      "duration_s": 56.92,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 56.92s)",
+        "emotion 'hopeful' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0111",
+      "date": "2026-11-19",
+      "weekday": "Thursday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-19T02:30:00.000Z",
+        "youtube": "2026-11-19T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "at thirty he is restarting his career from the bottom and calls the fresh start an admission of failure",
+      "hook_strategy": "statement",
+      "hook": "Jesus... starting over at 30 feels like admitting I failed. 🌱",
+      "emotional_angle": "worried",
+      "character": "boy",
+      "bible_reference": "2 Corinthians 5:17",
+      "story_type": "one_pushback",
+      "cta_type": "reflection_statement",
+      "duration_s": 52.16,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 52.16s)",
+        "emotion 'worried' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0110",
+      "date": "2026-11-19",
+      "weekday": "Thursday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-19T14:00:00.000Z",
+        "youtube": "2026-11-19T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "she loves her family but they cannot read what she is carrying, so she gives Amma half the story and feels loneliest at home",
+      "hook_strategy": "confession_statement",
+      "hook": "Jesus... my family loves me, but they don't understand me. 💔",
+      "emotional_angle": "sad",
+      "character": "girl",
+      "bible_reference": "Matthew 12:50",
+      "story_type": "one_pushback",
+      "cta_type": "reflection_statement",
+      "duration_s": 54.83,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 54.83s)",
+        "emotion 'sad' and character 'girl' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0108",
+      "date": "2026-11-20",
+      "weekday": "Friday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-20T02:30:00.000Z",
+        "youtube": "2026-11-20T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": "his small shop hasn't turned a profit in a year and he can't tell hope apart from stubbornness",
+      "hook_strategy": "statement",
+      "hook": "Jesus... the shop hasn't made a profit in a year. 🏪",
+      "emotional_angle": "hopeful",
+      "character": "boy",
+      "bible_reference": "Romans 15:13",
+      "story_type": "one_pushback",
+      "cta_type": "reflection_statement",
+      "duration_s": 57.81,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "READY",
+      "experiments": [],
+      "rationale": [
+        "ready inventory (hosted, QA PASS, 57.81s)",
+        "emotion 'hopeful' and character 'boy' differ from the previous slot where inventory allowed"
+      ]
+    },
+    {
+      "episode_id": "JR-0114",
+      "date": "2026-11-20",
+      "weekday": "Friday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-20T14:00:00.000Z",
+        "youtube": "2026-11-20T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "statement",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0115",
+      "date": "2026-11-21",
+      "weekday": "Saturday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-21T02:30:00.000Z",
+        "youtube": "2026-11-21T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "confession",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0116",
+      "date": "2026-11-21",
+      "weekday": "Saturday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-21T14:00:00.000Z",
+        "youtube": "2026-11-21T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "statement",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0117",
+      "date": "2026-11-22",
+      "weekday": "Sunday",
+      "slot": 1,
+      "time": "08:00",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "08:00",
+        "youtube": "08:00"
+      },
+      "due_at": {
+        "instagram": "2026-11-22T02:30:00.000Z",
+        "youtube": "2026-11-22T02:30:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "confession",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    },
+    {
+      "episode_id": "JR-0118",
+      "date": "2026-11-22",
+      "weekday": "Sunday",
+      "slot": 2,
+      "time": "19:30",
+      "timezone": "Asia/Kolkata",
+      "platform_times": {
+        "instagram": "19:30",
+        "youtube": "19:30"
+      },
+      "due_at": {
+        "instagram": "2026-11-22T14:00:00.000Z",
+        "youtube": "2026-11-22T14:00:00.000Z"
+      },
+      "slot_confidence": "medium",
+      "slot_status": "evidence_informed",
+      "theme": null,
+      "hook_strategy": "statement",
+      "hook": null,
+      "emotional_angle": null,
+      "character": null,
+      "bible_reference": null,
+      "story_type": null,
+      "cta_type": null,
+      "duration_s": null,
+      "platforms": [
+        "instagram",
+        "youtube"
+      ],
+      "status": "NEEDS_GENERATION",
+      "experiments": [],
+      "rationale": [
+        "inventory exhausted; Fo Brain generates from research gaps, then the daily pipeline validates"
+      ]
+    }
+  ],
+  "plan_sha256": "b177c40d5e11602ec55a488952d001815d68e39b0120d69eb744a5c05584afc4"
+}

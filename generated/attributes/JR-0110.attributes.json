@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0110",
+  "theme": "she loves her family but they cannot read what she is carrying, so she gives Amma half the story and feels loneliest at home",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... my family loves me, but they don't understand me. 💔",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "she loves her family but they cannot read what she is carrying, so she gives Amma half the story and feels loneliest at home",
+  "bible_theme": "Matthew 12:50",
+  "bible_book": "Matthew",
+  "cta_type": "reflection_statement",
+  "duration": 54.83,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0110/JR-0110.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}
