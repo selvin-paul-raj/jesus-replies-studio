@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-09T22:16:44.466107+00:00",
+  "as_of": "2026-11-15T18:47:02.669281+00:00",
   "slots": [
     "08:00",
     "19:30"
@@ -12,17 +12,84 @@
   "platforms": {
     "instagram": {
       "n_7d": {
-        "08:00": 21,
-        "19:30": 5
+        "08:00": 27,
+        "19:30": 11
       },
-      "verdict": "insufficient data"
+      "medians_7d": {
+        "reach": {
+          "08:00": 1209,
+          "19:30": 1271
+        },
+        "views": {
+          "08:00": 1310,
+          "19:30": 1427
+        },
+        "watch_time_avg": {
+          "08:00": 9.885,
+          "19:30": 8.15
+        },
+        "shares": {
+          "08:00": 4,
+          "19:30": 3
+        },
+        "saves": {
+          "08:00": 9,
+          "19:30": 11
+        },
+        "comments": {
+          "08:00": 0,
+          "19:30": 0
+        },
+        "likes": {
+          "08:00": 75,
+          "19:30": 91
+        },
+        "engagement_rate": {
+          "08:00": 7.35,
+          "19:30": 7.45
+        }
+      },
+      "ahead_on": {
+        "reach": "19:30",
+        "views": "19:30",
+        "watch_time_avg": "08:00",
+        "shares": "08:00",
+        "saves": "19:30",
+        "likes": "19:30",
+        "engagement_rate": "19:30"
+      },
+      "verdict": "current evidence suggests 19:30 ahead on reach, 19:30 ahead on views, 08:00 ahead on watch_time_avg, 08:00 ahead on shares, 19:30 ahead on saves, 19:30 ahead on likes, 19:30 ahead on engagement_rate"
     },
     "youtube": {
       "n_7d": {
-        "08:00": 28,
-        "19:30": 6
+        "08:00": 34,
+        "19:30": 12
       },
-      "verdict": "insufficient data"
+      "medians_7d": {
+        "views": {
+          "08:00": 1204.5,
+          "19:30": 686.0
+        },
+        "comments": {
+          "08:00": 1.0,
+          "19:30": 2.0
+        },
+        "likes": {
+          "08:00": 203.0,
+          "19:30": 120.5
+        },
+        "engagement_rate": {
+          "08:00": 16.235,
+          "19:30": 19.755
+        }
+      },
+      "ahead_on": {
+        "views": "08:00",
+        "comments": "19:30",
+        "likes": "08:00",
+        "engagement_rate": "19:30"
+      },
+      "verdict": "current evidence suggests 08:00 ahead on views, 19:30 ahead on comments, 08:00 ahead on likes, 19:30 ahead on engagement_rate"
     }
   },
   "review_notes": [

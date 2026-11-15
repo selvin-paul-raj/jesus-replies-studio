@@ -163,29 +163,29 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-15T06:20Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-15T18:47Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=42, median views 1416, best 13735, saves per 1k reach 7.0, stalled 1 (excluded)
-- **youtube**: n=44, median views 1290, best 3822, saves per 1k reach None, stalled 0 (excluded)
-- **episodes scored** (IG + YT percentile): 44, 42 with both platforms
+- **instagram**: n=48, median views 1427, best 14116, saves per 1k reach 7.3, stalled 2 (excluded)
+- **youtube**: n=50, median views 1274, best 3832, saves per 1k reach None, stalled 0 (excluded)
+- **episodes scored** (IG + YT percentile): 50, 48 with both platforms
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
 
 **Avoid / de-emphasise:**
-- duration=56-60s (episode score 0.36 vs 0.53, n=13, IG+YT percentile)
+- duration=56-60s (episode score 0.36 vs 0.54, n=17, IG+YT percentile)
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
-- JR-0063 score 0.89 (instagram 1917, youtube 3822 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔
-- JR-0070 score 0.85 (instagram 2204, youtube 1656 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌
-- JR-0084 score 0.84 (instagram 2283, youtube 1587 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨
-- JR-0082 score 0.81 (instagram 1867, youtube 1773 views): Jesus... I eat lunch on the office staircase every day. 🍱
-- JR-0083 score 0.79 (instagram 2117, youtube 1513 views): Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔
+- JR-0063 score 0.88 (instagram 1919, youtube 3832 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔
+- JR-0070 score 0.84 (instagram 2204, youtube 1660 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌
+- JR-0084 score 0.82 (instagram 2285, youtube 1589 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨
+- JR-0082 score 0.81 (instagram 1868, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱
+- JR-0061 score 0.78 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1302 (n=22), night (18-24 IST) 1424 (n=20)
-- youtube slot medians: morning (06-12 IST) 1198 (n=22), night (18-24 IST) 1327 (n=22)
-- instagram: 1 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061
+- instagram slot medians: morning (06-12 IST) 1465 (n=25), night (18-24 IST) 1427 (n=23)
+- youtube slot medians: morning (06-12 IST) 1195 (n=25), night (18-24 IST) 1333 (n=25)
+- instagram: 2 of 50 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099, JR-0061
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->

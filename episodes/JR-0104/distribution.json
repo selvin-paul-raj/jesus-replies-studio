@@ -2,11 +2,11 @@
   "episode_id": "JR-0104",
   "platforms": {
     "instagram": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6af0057b9214322f6832dfd7",
       "due_at": "2026-11-12T02:30:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-11-12T02:34:08.372Z",
+      "external_link": "https://www.instagram.com/reel/Dfn_TUtj25y/",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -24,6 +24,20 @@
           "to": "SCHEDULED",
           "run": "42553456088",
           "evidence": "schedule_draft read back: scheduled 2026-11-12T02:30:00.000Z"
+        },
+        {
+          "at": "2026-11-15T18:47:02.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "43748675372",
+          "evidence": "read 6af0057b9214322f6832dfd7: status sent at 2026-11-12T02:34:08.372Z"
+        },
+        {
+          "at": "2026-11-15T18:47:02.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "43748675372",
+          "evidence": "permalink http=200 metricsUpdatedAt=2026-11-15T07:36:34.010Z"
         }
       ],
       "last_read_error": {
@@ -32,11 +46,11 @@
       }
     },
     "youtube": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6af0058f9214322f6832e259",
       "due_at": "2026-11-12T02:30:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-11-12T02:30:40.849Z",
+      "external_link": "https://www.youtube.com/shorts/qh_HVqx9NWQ",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -47,6 +61,20 @@
           "to": "SCHEDULED",
           "run": "42449883068",
           "evidence": "create_scheduled read back: scheduled 2026-11-12T02:30:00.000Z"
+        },
+        {
+          "at": "2026-11-15T18:47:02.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "43748675372",
+          "evidence": "read 6af0058f9214322f6832e259: status sent at 2026-11-12T02:30:40.849Z"
+        },
+        {
+          "at": "2026-11-15T18:47:02.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "43748675372",
+          "evidence": "permalink http=200"
         }
       ],
       "last_read_error": {

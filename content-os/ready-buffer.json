@@ -1,7 +1,10 @@
 {
-  "as_of": "2026-11-14T13:29:16.012473+00:00",
+  "as_of": "2026-11-15T18:47:02.669281+00:00",
   "target": 6,
   "ready_unscheduled": [
+    "JR-0115"
+  ],
+  "scheduled_not_yet_published": [
     "JR-0105",
     "JR-0106",
     "JR-0107",
@@ -9,23 +12,21 @@
     "JR-0109",
     "JR-0110",
     "JR-0111",
-    "JR-0112"
+    "JR-0112",
+    "JR-0113",
+    "JR-0114"
   ],
-  "scheduled_not_yet_published": [
-    "JR-0097",
-    "JR-0098",
-    "JR-0099",
-    "JR-0100",
-    "JR-0102",
-    "JR-0103",
-    "JR-0104"
+  "authored_in_pipeline": [
+    "JR-0116"
   ],
-  "authored_in_pipeline": [],
-  "upcoming_slots_unauthored": [],
-  "ready_buffer": 15,
+  "upcoming_slots_unauthored": [
+    "JR-0117",
+    "JR-0118"
+  ],
+  "ready_buffer": 11,
   "scheduled_by_platform": {
-    "instagram": 7,
-    "youtube": 7
+    "instagram": 8,
+    "youtube": 10
   },
   "parked_drafts_by_platform": {
     "instagram": [
@@ -37,7 +38,14 @@
       "JR-0078"
     ]
   },
-  "authoring_needed": [],
+  "authoring_needed": [
+    "JR-0117",
+    "JR-0118",
+    "JR-0119",
+    "JR-0120",
+    "JR-0121",
+    "JR-0122"
+  ],
   "lane_gaps": [
     {
       "lane": "comment-replies",

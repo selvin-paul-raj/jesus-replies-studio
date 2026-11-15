@@ -1,0 +1,43 @@
+{
+  "episode_id": "JR-0106",
+  "platforms": {
+    "instagram": {
+      "state": "SCHEDULED",
+      "post_id": "6af9fe2f55ad64be504f208c",
+      "due_at": "2026-11-17T02:30:00.000Z",
+      "sent_at": null,
+      "external_link": null,
+      "pending_mutation": null,
+      "attempts": 1,
+      "error": null,
+      "history": [
+        {
+          "at": "2026-11-15T18:47:02.000Z",
+          "from": "NONE",
+          "to": "SCHEDULED",
+          "run": "43748675372",
+          "evidence": "create_scheduled read back: scheduled 2026-11-17T02:30:00.000Z"
+        }
+      ]
+    },
+    "youtube": {
+      "state": "SCHEDULED",
+      "post_id": "6af9fe30e5a113497a080309",
+      "due_at": "2026-11-17T02:30:00.000Z",
+      "sent_at": null,
+      "external_link": null,
+      "pending_mutation": null,
+      "attempts": 1,
+      "error": null,
+      "history": [
+        {
+          "at": "2026-11-15T18:47:02.000Z",
+          "from": "NONE",
+          "to": "SCHEDULED",
+          "run": "43748675372",
+          "evidence": "create_scheduled read back: scheduled 2026-11-17T02:30:00.000Z"
+        }
+      ]
+    }
+  }
+}
