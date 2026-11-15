@@ -1,7 +1,7 @@
 {
   "episode_id": "JR-0113",
-  "state": "VALIDATION_FAILED",
-  "updated_at": "2026-11-15T04:48:30Z",
+  "state": "GENERATED",
+  "updated_at": "2026-11-15T04:58:48Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
@@ -53,6 +53,13 @@
       "to": "VALIDATION_FAILED",
       "run": "43678313166",
       "evidence": "schema validator: [validate] FAIL [\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"lines\",\n      5,\n      \"text\"\n    ],\n    \"message\": \"Invalid input: expected string, received null\"\n  }\n]"
+    },
+    {
+      "at": "2026-11-15T04:58:48Z",
+      "from": "VALIDATION_FAILED",
+      "to": "GENERATED",
+      "run": "fo-supply-20261115",
+      "evidence": "reopen: validation fixed: bible_verse line text key removed to match schema; re-validate from GENERATED"
     }
   ],
   "heal": {
