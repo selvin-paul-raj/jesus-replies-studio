@@ -986,5 +986,18 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0113",
+    "created_at": "2026-11-15T04:48:30Z",
+    "title": "Jesus... I Keep Waiting To Feel Ready To Start. ⏳",
+    "slot": null,
+    "target_date": null,
+    "state": "VALIDATION_FAILED",
+    "asset_url": null,
+    "buffer_post_id": null,
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]
