@@ -1,47 +1,47 @@
 {
- "id": "JR-0114",
- "title": "Jesus... I Laugh Loudest In The Group Chat And Cry After. 😅",
- "character": "boy",
- "topic": "he is the loudest laugh in the group chat and the quietest cry in his room, and he thinks admitting it makes him the sad friend",
- "emotion": "sad",
- "bible": {
-  "book": "Psalms",
-  "chapter": 42,
-  "verse": 11,
-  "version": "KJV",
-  "text": "Why art thou cast down, O my soul? and why art thou disquieted within me? hope thou in God: for I shall yet praise him, who is the health of my countenance, and my God."
- },
- "lines": [
-  {
-   "speaker": "person",
-   "text": "Jesus... I laugh the loudest in the group chat. Then I cry after."
+  "id": "JR-0114",
+  "title": "Jesus... I Laugh Loudest In The Group Chat And Cry After. 😅",
+  "character": "boy",
+  "topic": "he is the loudest laugh in the group chat and the quietest cry in his room, and he thinks admitting it makes him the sad friend",
+  "emotion": "sad",
+  "bible": {
+    "book": "Psalms",
+    "chapter": 42,
+    "verse": 11,
+    "version": "KJV",
+    "text": "Why art thou cast down, O my soul? and why art thou disquieted within me? hope thou in God: for I shall yet praise him, who is the health of my countenance, and my God."
   },
-  {
-   "speaker": "person",
-   "text": "Sent three memes tonight. Then sat on the floor of my room and didn't know why."
-  },
-  {
-   "speaker": "jesus",
-   "text": "You've made laughter your shield. It works. And it's heavy."
-  },
-  {
-   "speaker": "person",
-   "text": "If I tell them I'm not okay, I become the sad friend. I hate being the sad friend."
-  },
-  {
-   "speaker": "jesus",
-   "text": "You were never the funny one to Me. You were the loved one first. Put the shield down with Me for a minute."
-  },
-  {
-   "speaker": "bible_verse"
-  },
-  {
-   "speaker": "jesus",
-   "text": "Ask your soul why it's cast down. It's allowed to answer."
-  },
-  {
-   "speaker": "engagement",
-   "text": "Send this to the friend who always has a joke ready. 😅"
-  }
- ]
+  "lines": [
+    {
+      "speaker": "person",
+      "text": "Jesus... I laugh the loudest in the group chat. Then I cry after."
+    },
+    {
+      "speaker": "person",
+      "text": "Sent three memes. Then sat on my floor and didn't know why."
+    },
+    {
+      "speaker": "jesus",
+      "text": "You made laughter your shield. It's heavy."
+    },
+    {
+      "speaker": "person",
+      "text": "If I say I'm not okay, I stop being the funny one."
+    },
+    {
+      "speaker": "jesus",
+      "text": "You were never the funny one to Me. You were loved first. Put the shield down."
+    },
+    {
+      "speaker": "bible_verse"
+    },
+    {
+      "speaker": "jesus",
+      "text": "Ask your soul why it's cast down. It's allowed to answer."
+    },
+    {
+      "speaker": "engagement",
+      "text": "Send this to the friend with the joke always ready. 😅"
+    }
+  ]
 }
