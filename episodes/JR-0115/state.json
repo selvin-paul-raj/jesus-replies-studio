@@ -1,7 +1,7 @@
 {
   "episode_id": "JR-0115",
-  "state": "BLOCKED",
-  "updated_at": "2026-11-16T04:49:03Z",
+  "state": "ASSET_HOSTED",
+  "updated_at": "2026-11-16T05:00:00Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
@@ -31,7 +31,7 @@
     "due_at": null,
     "sent_at": null,
     "pending_mutation": null,
-    "create_attempts": 2
+    "create_attempts": 0
   },
   "approval": {
     "status": "NOT_REQUESTED",
@@ -165,21 +165,23 @@
       "to": "BLOCKED",
       "run": "43806221228",
       "evidence": "draft creation already failed twice; human review needed"
+    },
+    {
+      "at": "2026-11-16T05:00:00Z",
+      "from": "BLOCKED",
+      "to": "ASSET_HOSTED",
+      "run": "fo-supply-20261116",
+      "evidence": "Buffer 429 cleared (0113/0114 drafts created OK this morning); IG draft still missing, one more create attempt under standing authorization"
     }
   ],
   "heal": {
     "attempts": 0,
-    "exhausted": true,
+    "exhausted": false,
     "log": [
       {
-        "at": "2026-11-16T04:50:00Z",
+        "at": "2026-11-16T05:00:00Z",
         "run": "fo-supply-20261116",
-        "action": "manual unblock: validated, rendered and hosted with QA PASS; only blocker was the transient Buffer 429, cleared (JR-0116 draft created OK 03:00Z); heal exhaustion cleared and state reset to ASSET_HOSTED for draft creation"
-      },
-      {
-        "at": "2026-11-16T04:49:03Z",
-        "run": "43806221228",
-        "action": "not auto-repairable: BLOCKED: draft creation already failed twice; human review needed"
+        "action": "manual unblock: validated, rendered, hosted QA PASS; both draft failures were the transient Buffer 429, cleared; create_attempts reset for one more draft attempt"
       }
     ]
   }
