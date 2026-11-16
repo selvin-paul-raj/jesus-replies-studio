@@ -139,23 +139,23 @@
   ],
   "strategy": {
     "source": "content-os/learnings.json + content-os/STRATEGY.md",
-    "as_of": "2026-11-15T05:03:41.397013+00:00",
+    "as_of": "2026-11-16T04:45:49.119637+00:00",
     "lean_towards": [],
     "avoid": [
-      "duration=56-60s (episode score 0.36 vs 0.53, n=13, IG+YT percentile)"
+      "duration=56-60s (episode score 0.35 vs 0.54, n=17, IG+YT percentile)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1302 (n=22), night (18-24 IST) 1424 (n=20)",
-      "youtube slot medians: morning (06-12 IST) 1198 (n=22), night (18-24 IST) 1327 (n=22)",
-      "instagram: 1 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0061",
+      "instagram slot medians: morning (06-12 IST) 1473 (n=24), night (18-24 IST) 1427 (n=23)",
+      "youtube slot medians: morning (06-12 IST) 1152 (n=24), night (18-24 IST) 1333 (n=25)",
+      "instagram: 2 of 49 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099, JR-0061",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0063 score 0.89 (instagram 1917, youtube 3822 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
-      "JR-0070 score 0.85 (instagram 2204, youtube 1656 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
-      "JR-0084 score 0.84 (instagram 2283, youtube 1587 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
-      "JR-0082 score 0.81 (instagram 1867, youtube 1773 views): Jesus... I eat lunch on the office staircase every day. 🍱",
-      "JR-0083 score 0.79 (instagram 2117, youtube 1513 views): Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔"
+      "JR-0063 score 0.88 (instagram 1919, youtube 3832 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
+      "JR-0070 score 0.85 (instagram 2204, youtube 1660 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
+      "JR-0084 score 0.83 (instagram 2285, youtube 1589 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+      "JR-0082 score 0.82 (instagram 1868, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱",
+      "JR-0061 score 0.79 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔"
     ]
   },
   "review_rules": {
