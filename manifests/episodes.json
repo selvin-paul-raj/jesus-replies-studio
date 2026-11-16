@@ -1051,5 +1051,18 @@
     "scheduled_at": null,
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
+  },
+  {
+    "episode_id": "JR-0118",
+    "created_at": "2026-11-16T05:02:02Z",
+    "title": "Jesus... I Keep Rehearsing Arguments That Never Happen. 🎭",
+    "slot": null,
+    "target_date": null,
+    "state": "APPROVED",
+    "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0118/JR-0118.mp4",
+    "buffer_post_id": "6afa8eb9a869c35e5bbb7583",
+    "scheduled_at": null,
+    "published_at": null,
+    "verification_status": "NOT_VERIFIED"
   }
 ]
