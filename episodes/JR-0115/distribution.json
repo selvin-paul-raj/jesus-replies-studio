@@ -2,15 +2,23 @@
   "episode_id": "JR-0115",
   "platforms": {
     "instagram": {
-      "state": "NONE",
-      "post_id": null,
-      "due_at": null,
+      "state": "DRAFT",
+      "post_id": "6afa8c3eff465c57dad3007c",
+      "due_at": "2026-12-31T00:00:00.000Z",
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
       "attempts": 0,
       "error": null,
-      "history": []
+      "history": [
+        {
+          "at": "2026-11-16T04:53:29.000Z",
+          "from": "NONE",
+          "to": "DRAFT",
+          "run": "43806687040",
+          "evidence": "adopted existing 6afa8c3eff465c57dad3007c: Buffer status draft"
+        }
+      ]
     },
     "youtube": {
       "state": "SCHEDULED",
