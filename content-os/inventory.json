@@ -1,14 +1,15 @@
 {
   "counts": {
-    "UNUSED": 18,
+    "UNUSED": 19,
     "PUBLISHED": 88,
     "SCHEDULED": 10,
-    "READY": 1
+    "READY": 2
   },
   "next_ready": [
-    "JR-0116"
+    "JR-0116",
+    "JR-0117"
   ],
-  "ready_total": 1,
+  "ready_total": 2,
   "items": [
     {
       "episode_id": "JR-0001",
@@ -679,7 +680,6 @@
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-fix-2026-10-16-c/JR-0049.mp4",
       "duration_s": 45.61,
       "published_on": [
-        "instagram",
         "youtube"
       ]
     },
@@ -1639,7 +1639,31 @@
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0116/JR-0116.mp4",
       "duration_s": 57.32,
       "published_on": []
+    },
+    {
+      "episode_id": "JR-0117",
+      "status": "READY",
+      "why": "instagram=DRAFT, youtube=NONE",
+      "platforms": {
+        "instagram": "DRAFT",
+        "youtube": "NONE"
+      },
+      "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0117/JR-0117.mp4",
+      "duration_s": 55.13,
+      "published_on": []
+    },
+    {
+      "episode_id": "JR-0118",
+      "status": "UNUSED",
+      "why": "no hosted QA-passed asset",
+      "platforms": {
+        "instagram": "NONE",
+        "youtube": "NONE"
+      },
+      "asset_url": null,
+      "duration_s": null,
+      "published_on": []
     }
   ],
-  "as_of": "2026-11-16T04:53:29.598762+00:00"
+  "as_of": "2026-11-16T05:00:26.143149+00:00"
 }
