@@ -2,13 +2,13 @@
   "episode_id": "JR-0114",
   "platforms": {
     "instagram": {
-      "state": "DRAFT",
+      "state": "SCHEDULED",
       "post_id": "6afa8b3fa869c35e5bba5f9a",
-      "due_at": "2026-12-31T00:00:00.000Z",
+      "due_at": "2026-11-20T14:00:00.000Z",
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
-      "attempts": 0,
+      "attempts": 1,
       "error": null,
       "history": [
         {
@@ -17,6 +17,13 @@
           "to": "DRAFT",
           "run": "43806221228",
           "evidence": "adopted existing 6afa8b3fa869c35e5bba5f9a: Buffer status draft"
+        },
+        {
+          "at": "2026-11-16T21:57:13.000Z",
+          "from": "DRAFT",
+          "to": "SCHEDULED",
+          "run": "43965200009",
+          "evidence": "schedule_draft read back: scheduled 2026-11-20T14:00:00.000Z"
         }
       ]
     },
