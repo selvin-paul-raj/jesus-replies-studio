@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-11-15T18:47:02.669281+00:00",
+  "as_of": "2026-11-16T03:00:31.475849+00:00",
   "target": 6,
   "ready_unscheduled": [
-    "JR-0115"
+    "JR-0116"
   ],
   "scheduled_not_yet_published": [
     "JR-0105",
@@ -13,12 +13,10 @@
     "JR-0110",
     "JR-0111",
     "JR-0112",
-    "JR-0113",
-    "JR-0114"
+    "JR-0114",
+    "JR-0115"
   ],
-  "authored_in_pipeline": [
-    "JR-0116"
-  ],
+  "authored_in_pipeline": [],
   "upcoming_slots_unauthored": [
     "JR-0117",
     "JR-0118"
@@ -31,7 +29,8 @@
   "parked_drafts_by_platform": {
     "instagram": [
       "JR-0076",
-      "JR-0078"
+      "JR-0078",
+      "JR-0116"
     ],
     "youtube": [
       "JR-0076",
@@ -44,7 +43,8 @@
     "JR-0119",
     "JR-0120",
     "JR-0121",
-    "JR-0122"
+    "JR-0122",
+    "JR-0123"
   ],
   "lane_gaps": [
     {
@@ -53,13 +53,28 @@
       "file": "content-os/series/comment-replies.json"
     },
     {
+      "lane": "comment-replies",
+      "week_start": "2026-11-23",
+      "file": "content-os/series/comment-replies.json"
+    },
+    {
       "lane": "subtitles-hi",
       "week_start": "2026-11-16",
       "file": "content-os/series/subtitles-hi.json"
     },
     {
+      "lane": "subtitles-hi",
+      "week_start": "2026-11-23",
+      "file": "content-os/series/subtitles-hi.json"
+    },
+    {
       "lane": "subtitles-ta",
       "week_start": "2026-11-16",
+      "file": "content-os/series/subtitles-ta.json"
+    },
+    {
+      "lane": "subtitles-ta",
+      "week_start": "2026-11-23",
       "file": "content-os/series/subtitles-ta.json"
     }
   ],
