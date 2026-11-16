@@ -1,0 +1,154 @@
+{
+  "episode_id": "JR-0116",
+  "state": "APPROVED",
+  "updated_at": "2026-11-16T03:00:17Z",
+  "slot": null,
+  "target_date": null,
+  "generation": "PASS",
+  "validation": "PASS",
+  "render": "PASS",
+  "render_qa": "PASS",
+  "package": "PASS",
+  "package_qa": "PASS",
+  "asset_hosting": "VERIFIED",
+  "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0116/JR-0116.mp4",
+  "render_facts": {
+    "estimated_seconds": 57.27,
+    "command": "npm run jr -- render generated/JR-0116.json --out-dir output",
+    "exit": 0,
+    "path": "output/videos/JR-0116.mp4",
+    "size_bytes": 6474173,
+    "how": "RENDERED",
+    "duration_s": 57.32,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "resolution": "1080x1920",
+    "warnings": [
+      "duration 57.32s above target [45, 55] but under ceiling"
+    ]
+  },
+  "buffer": {
+    "post_id": "6afa71c160a910801c646090",
+    "status": "draft",
+    "due_at": "2026-12-31T00:00:00.000Z",
+    "sent_at": null,
+    "pending_mutation": null,
+    "create_attempts": 1
+  },
+  "approval": {
+    "status": "APPROVED",
+    "approved_at": "2026-11-16T03:00:17Z",
+    "approved_by": "standing authorization",
+    "slot_local": null,
+    "due_at": null,
+    "evidence": "2026-10-11 20:48 IST, Selvin in chat: dont stop it continus complete automous running system i wnat it bi-weelky review it and enhance the content and enagament , qually and follow ups and crack chnaging algorthim of thsoe social medias build life long running system self correction , feeadbackloop "
+  },
+  "verification": {
+    "status": "NOT_VERIFIED",
+    "verified_at": null
+  },
+  "errors": [
+    {
+      "at": "2026-11-16T02:58:27Z",
+      "state": "VALIDATION_FAILED",
+      "detail": "scripture Philippians 3:13 text does not match KJV source"
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-11-16T02:58:26Z",
+      "from": "NEW",
+      "to": "GENERATED",
+      "run": "43795254872",
+      "evidence": "generated/JR-0116.json present (1416 B)"
+    },
+    {
+      "at": "2026-11-16T02:58:27Z",
+      "from": "GENERATED",
+      "to": "VALIDATION_FAILED",
+      "run": "43795254872",
+      "evidence": "scripture Philippians 3:13 text does not match KJV source"
+    },
+    {
+      "at": "2026-11-16T02:58:27Z",
+      "from": "VALIDATION_FAILED",
+      "to": "GENERATED",
+      "run": "43795254872",
+      "evidence": "reopen: heal: scripture text for Philippians 3:13 replaced with the KJV source wording (episode + package)"
+    },
+    {
+      "at": "2026-11-16T02:58:27Z",
+      "from": "GENERATED",
+      "to": "VALIDATED",
+      "run": "43795254872",
+      "evidence": "schema PASS, originality PASS, KJV Philippians 3:13 verbatim match"
+    },
+    {
+      "at": "2026-11-16T03:00:12Z",
+      "from": "VALIDATED",
+      "to": "RENDERED",
+      "run": "43795254872",
+      "evidence": "RENDERED JR-0116.mp4 6474173 B"
+    },
+    {
+      "at": "2026-11-16T03:00:12Z",
+      "from": "RENDERED",
+      "to": "RENDER_QA_PASSED",
+      "run": "43795254872",
+      "evidence": "57.32s 1080x1920 h264/aac duration 57.32s above target [45, 55] but under ceiling"
+    },
+    {
+      "at": "2026-11-16T03:00:12Z",
+      "from": "RENDER_QA_PASSED",
+      "to": "PACKAGED",
+      "run": "43795254872",
+      "evidence": "JR-0116.package.json present"
+    },
+    {
+      "at": "2026-11-16T03:00:12Z",
+      "from": "PACKAGED",
+      "to": "PACKAGE_QA_PASSED",
+      "run": "43795254872",
+      "evidence": "caption 850 chars, 5 hashtags, title 90, thumbnail JR-0116-thumb.png, honesty line OK"
+    },
+    {
+      "at": "2026-11-16T03:00:16Z",
+      "from": "PACKAGE_QA_PASSED",
+      "to": "ASSET_HOSTED",
+      "run": "43795254872",
+      "evidence": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0116/JR-0116.mp4 http=206 ftyp=True bytes=6474173/6474173"
+    },
+    {
+      "at": "2026-11-16T03:00:17Z",
+      "from": "ASSET_HOSTED",
+      "to": "BUFFER_DRAFT",
+      "run": "43795254872",
+      "evidence": "draft 6afa71c160a910801c646090 read back: status draft, asset, caption, duration, channel OK"
+    },
+    {
+      "at": "2026-11-16T03:00:17Z",
+      "from": "BUFFER_DRAFT",
+      "to": "WAITING_FOR_USER",
+      "run": "43795254872",
+      "evidence": "approval required: episode, date, time, timezone"
+    },
+    {
+      "at": "2026-11-16T03:00:17Z",
+      "from": "WAITING_FOR_USER",
+      "to": "APPROVED",
+      "run": "43795254872",
+      "evidence": "auto-approved after all QA gates under standing authorization 2026-10-11 20:48 IST, Selvin in chat; slot time comes from the weekly plan"
+    }
+  ],
+  "heal": {
+    "attempts": 1,
+    "exhausted": false,
+    "log": [
+      {
+        "at": "2026-11-16T02:58:27Z",
+        "run": "43795254872",
+        "action": "scripture text for Philippians 3:13 replaced with the KJV source wording (episode + package)"
+      }
+    ]
+  }
+}
