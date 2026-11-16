@@ -1,7 +1,7 @@
 {
   "episode_id": "JR-0115",
-  "state": "BLOCKED",
-  "updated_at": "2026-11-15T05:07:05Z",
+  "state": "ASSET_HOSTED",
+  "updated_at": "2026-11-16T04:50:00Z",
   "slot": null,
   "target_date": null,
   "generation": "PASS",
@@ -146,21 +146,23 @@
       "to": "BLOCKED",
       "run": "43679503315",
       "evidence": "draft creation already failed twice; human review needed"
+    },
+    {
+      "at": "2026-11-16T04:50:00Z",
+      "from": "BLOCKED",
+      "to": "ASSET_HOSTED",
+      "run": "fo-supply-20261116",
+      "evidence": "Buffer 429 wall lifted (JR-0116 draft OK at 03:00Z); draft creation retried under standing authorization"
     }
   ],
   "heal": {
-    "attempts": 2,
+    "attempts": 0,
     "exhausted": false,
     "log": [
       {
-        "at": "2026-11-15T05:07:05Z",
-        "run": "43679503315",
-        "action": "transient step failure; retrying the same step"
-      },
-      {
-        "at": "2026-11-15T05:07:05Z",
-        "run": "43679503315",
-        "action": "transient step failure; retrying the same step"
+        "at": "2026-11-16T04:50:00Z",
+        "run": "fo-supply-20261116",
+        "action": "manual unblock: validated, rendered and hosted with QA PASS; only blocker was the transient Buffer 429, cleared (JR-0116 draft created OK 03:00Z); heal exhaustion cleared and state reset to ASSET_HOSTED for draft creation"
       }
     ]
   }
