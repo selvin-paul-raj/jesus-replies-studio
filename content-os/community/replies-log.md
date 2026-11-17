@@ -25,3 +25,14 @@
 ## 2026-11-05 (Buffer Community)
 - YouTube: 7 replied (support: ericlarson4325 x2, LeoPearson-zv3vc, tinawilliams2995, AnicaIvankovic-cx4dt x2, elijahpiere5324). Skipped: emoji-only, song-name ask, "I am kehlani", davidmunoz7385, church/Halloween thread (s.r.8564, amaldavid3886).
 - Instagram: 1 replied (amitha.doria.p). Skipped 3 "send me this post" spam, emoji-only.
+- 2026-11-17 IG itz_manju_854: Amen
+- 2026-11-17 YT ElizabethLindsey-u2f: Amen thanks
+- 2026-11-17 YT s.r.8564: Halloween/trunk-or-treat conviction, gracious reply
+- 2026-11-17 YT brianacaldwell214: Amen
+- 2026-11-17 YT dobrinmicu92: song name ask
+- 2026-11-17 YT davidmunoz7385: conversations evolve
+- 2026-11-17 YT AfraYeboah-u3y: testimony
+- 2026-11-17 YT marinaovalle3738: Amen
+- 2026-11-17 YT Ok86743: Amen
+- 2026-11-17 YT paulrajpremkumar8859: Amen
+- 2026-11-17 YT eliwright7021: Amen
