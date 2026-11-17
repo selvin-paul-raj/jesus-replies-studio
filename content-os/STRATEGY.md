@@ -163,11 +163,11 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-16T21:57Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-17T05:11Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=47, median views 1428, best 14160, saves per 1k reach 7.5, stalled 2 (excluded)
-- **youtube**: n=49, median views 1206, best 3832, saves per 1k reach None, stalled 0 (excluded)
-- **episodes scored** (IG + YT percentile): 49, 47 with both platforms
+- **instagram**: n=46, median views 1449, best 14184, saves per 1k reach 7.4, stalled 2 (excluded)
+- **youtube**: n=48, median views 1200, best 3832, saves per 1k reach None, stalled 0 (excluded)
+- **episodes scored** (IG + YT percentile): 48, 46 with both platforms
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
@@ -177,15 +177,15 @@ _Last computed 2026-11-16T21:57Z from Buffer analytics, last 28 days, posts at l
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
 - JR-0063 score 0.88 (instagram 1919, youtube 3832 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔
-- JR-0070 score 0.86 (instagram 2204, youtube 1660 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌
-- JR-0084 score 0.84 (instagram 2285, youtube 1589 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨
+- JR-0070 score 0.87 (instagram 2204, youtube 1660 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌
+- JR-0084 score 0.85 (instagram 2285, youtube 1589 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨
 - JR-0082 score 0.83 (instagram 1868, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱
-- JR-0061 score 0.81 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔
+- JR-0061 score 0.83 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1473 (n=24), night (18-24 IST) 1427 (n=23)
-- youtube slot medians: morning (06-12 IST) 1152 (n=24), night (18-24 IST) 1331 (n=25)
-- instagram: 2 of 49 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099, JR-0061
+- instagram slot medians: morning (06-12 IST) 1478 (n=23), night (18-24 IST) 1427 (n=23)
+- youtube slot medians: morning (06-12 IST) 1109 (n=23), night (18-24 IST) 1331 (n=25)
+- instagram: 2 of 48 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099, JR-0061
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->
