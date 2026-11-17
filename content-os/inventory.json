@@ -1,14 +1,11 @@
 {
   "counts": {
     "UNUSED": 20,
-    "PUBLISHED": 88,
-    "SCHEDULED": 10,
-    "READY": 1
+    "PUBLISHED": 89,
+    "SCHEDULED": 10
   },
-  "next_ready": [
-    "JR-0118"
-  ],
-  "ready_total": 1,
+  "next_ready": [],
+  "ready_total": 0,
   "items": [
     {
       "episode_id": "JR-0001",
@@ -1519,15 +1516,18 @@
     },
     {
       "episode_id": "JR-0107",
-      "status": "SCHEDULED",
-      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
+      "status": "PUBLISHED",
+      "why": "all platforms",
       "platforms": {
-        "instagram": "SCHEDULED",
-        "youtube": "SCHEDULED"
+        "instagram": "PUBLISHED_VERIFIED",
+        "youtube": "PUBLISHED_VERIFIED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0107/JR-0107.mp4",
       "duration_s": 58.71,
-      "published_on": []
+      "published_on": [
+        "instagram",
+        "youtube"
+      ]
     },
     {
       "episode_id": "JR-0108",
@@ -1631,9 +1631,9 @@
     {
       "episode_id": "JR-0116",
       "status": "SCHEDULED",
-      "why": "instagram=DRAFT, youtube=SCHEDULED",
+      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
       "platforms": {
-        "instagram": "DRAFT",
+        "instagram": "SCHEDULED",
         "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0116/JR-0116.mp4",
@@ -1654,16 +1654,16 @@
     },
     {
       "episode_id": "JR-0118",
-      "status": "READY",
-      "why": "instagram=DRAFT, youtube=NONE",
+      "status": "SCHEDULED",
+      "why": "instagram=DRAFT, youtube=SCHEDULED",
       "platforms": {
         "instagram": "DRAFT",
-        "youtube": "NONE"
+        "youtube": "SCHEDULED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0118/JR-0118.mp4",
       "duration_s": 56.04,
       "published_on": []
     }
   ],
-  "as_of": "2026-11-17T07:49:01.439575+00:00"
+  "as_of": "2026-11-17T20:50:23.220609+00:00"
 }
