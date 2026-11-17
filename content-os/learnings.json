@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-17T05:11:56.780051+00:00",
+  "as_of": "2026-11-17T07:49:01.439575+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -12,7 +12,7 @@
       ],
       "stall_rate": 0.04,
       "median_views": 1449.0,
-      "max_views": 14184,
+      "max_views": 14193,
       "saves_per_1k_reach_median": 7.4,
       "avg_watch_time_available": true,
       "by_dimension": {
@@ -30,7 +30,7 @@
       "top": [
         {
           "episode_id": "JR-0060",
-          "views": 14184,
+          "views": 14193,
           "saves": 386,
           "shares": 189,
           "theme": "relatives asking when it is her turn at a family wedding",
@@ -425,7 +425,7 @@
         "episode_id": "JR-0063",
         "score": 0.878,
         "views": {
-          "instagram": 1919,
+          "instagram": 1920,
           "youtube": 3832
         },
         "hook": "Jesus... I stopped texting first for a day. Nobody checked on me. 💔"
@@ -479,7 +479,7 @@
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0063 score 0.88 (instagram 1919, youtube 3832 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
+      "JR-0063 score 0.88 (instagram 1920, youtube 3832 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
       "JR-0070 score 0.87 (instagram 2204, youtube 1660 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
       "JR-0084 score 0.85 (instagram 2285, youtube 1589 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
       "JR-0082 score 0.83 (instagram 1868, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱",
