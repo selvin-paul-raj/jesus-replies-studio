@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-18T07:19:46.864142+00:00",
+  "as_of": "2026-11-18T20:26:20.552806+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -13,7 +13,7 @@
       "stall_rate": 0.04,
       "median_views": 1470,
       "max_views": 14242,
-      "saves_per_1k_reach_median": 7.5,
+      "saves_per_1k_reach_median": 7.3,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
@@ -23,7 +23,7 @@
           },
           "night (18-24 IST)": {
             "n": 22,
-            "median_views": 1424.0
+            "median_views": 1416.0
           }
         }
       },
@@ -86,6 +86,15 @@
       ],
       "bottom": [
         {
+          "episode_id": "JR-0105",
+          "views": 189,
+          "theme": "she is in a long low season and every post telling her to count her blessings makes the dark feel worse",
+          "emotion": "sad",
+          "hook": "Jesus... every reel tonight said count your blessings. 😔",
+          "slot": "night (18-24 IST)",
+          "duration": "56-60s"
+        },
+        {
           "episode_id": "JR-0098",
           "views": 206,
           "theme": "a viewer's comment: she forgave someone close but cannot trust her again, and feels hollow",
@@ -120,15 +129,6 @@
           "hook": "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
           "slot": "night (18-24 IST)",
           "duration": "<=55s"
-        },
-        {
-          "episode_id": "JR-0087",
-          "views": 374,
-          "theme": "her Bible app says it has been 412 days since she last read, and she swiped the reminder away in shame",
-          "emotion": "sad",
-          "hook": "Jesus... my Bible app says 412 days since I last read. I swiped the reminder away. 📖",
-          "slot": "night (18-24 IST)",
-          "duration": "<=55s"
         }
       ]
     },
@@ -137,7 +137,7 @@
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 1195,
+      "median_views": 1109,
       "max_views": 3832,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
@@ -149,7 +149,7 @@
           },
           "night (18-24 IST)": {
             "n": 24,
-            "median_views": 1332.0
+            "median_views": 1219.5
           }
         }
       },
@@ -167,7 +167,7 @@
         },
         {
           "episode_id": "JR-0081",
-          "views": 1984,
+          "views": 1985,
           "saves": null,
           "shares": null,
           "theme": "she'd rather carry her struggles alone than risk being a burden, even when she's close to breaking",
@@ -200,7 +200,7 @@
         },
         {
           "episode_id": "JR-0058",
-          "views": 1756,
+          "views": 1757,
           "saves": null,
           "shares": null,
           "theme": "said she forgave him but the hurt keeps returning every night",
@@ -213,7 +213,7 @@
       "bottom": [
         {
           "episode_id": "JR-0113",
-          "views": 98,
+          "views": 108,
           "theme": "she keeps waiting to feel ready to start the project she has planned for weeks, one more tutorial instead of the first try",
           "emotion": "worried",
           "hook": "Jesus... I keep waiting to feel ready before I start.",
@@ -271,12 +271,12 @@
   "content": {
     "n_episodes": 47,
     "both_platforms": 45,
-    "median_score": 0.55,
+    "median_score": 0.536,
     "by_dimension": {
       "emotion": {
         "angry": {
           "n": 2,
-          "median_score": 0.603
+          "median_score": 0.6145
         },
         "crying": {
           "n": 2,
@@ -288,15 +288,15 @@
         },
         "hopeful": {
           "n": 6,
-          "median_score": 0.359
+          "median_score": 0.376
         },
         "neutral": {
           "n": 3,
-          "median_score": 0.408
+          "median_score": 0.43
         },
         "sad": {
           "n": 31,
-          "median_score": 0.575
+          "median_score": 0.579
         },
         "worried": {
           "n": 2,
@@ -306,17 +306,17 @@
       "character": {
         "boy": {
           "n": 19,
-          "median_score": 0.605
+          "median_score": 0.616
         },
         "girl": {
           "n": 28,
-          "median_score": 0.386
+          "median_score": 0.361
         }
       },
       "hook_type": {
         "confession_statement": {
           "n": 27,
-          "median_score": 0.413
+          "median_score": 0.43
         },
         "question": {
           "n": 9,
@@ -329,18 +329,18 @@
       },
       "duration": {
         "56-60s": {
-          "n": 18,
-          "median_score": 0.349
+          "n": 19,
+          "median_score": 0.36
         },
         "<=55s": {
-          "n": 29,
-          "median_score": 0.575
+          "n": 28,
+          "median_score": 0.585
         }
       },
       "bible_book": {
         "1 Thessalonians": {
           "n": 1,
-          "median_score": 0.214
+          "median_score": 0.225
         },
         "2 Corinthians": {
           "n": 1,
@@ -352,35 +352,35 @@
         },
         "Ecclesiastes": {
           "n": 2,
-          "median_score": 0.2095
+          "median_score": 0.21549999999999997
         },
         "Ephesians": {
           "n": 2,
-          "median_score": 0.1385
+          "median_score": 0.1495
         },
         "Exodus": {
           "n": 1,
-          "median_score": 0.714
+          "median_score": 0.725
         },
         "Galatians": {
           "n": 2,
-          "median_score": 0.6545
+          "median_score": 0.6655
         },
         "Hebrews": {
           "n": 2,
-          "median_score": 0.2935
+          "median_score": 0.3105
         },
         "Isaiah": {
-          "n": 5,
-          "median_score": 0.262
+          "n": 6,
+          "median_score": 0.235
         },
         "James": {
           "n": 1,
           "median_score": 0.673
         },
         "John": {
-          "n": 2,
-          "median_score": 0.3535
+          "n": 1,
+          "median_score": 0.144
         },
         "Lamentations": {
           "n": 2,
@@ -396,15 +396,15 @@
         },
         "Matthew": {
           "n": 6,
-          "median_score": 0.5940000000000001
+          "median_score": 0.5995
         },
         "Philippians": {
           "n": 1,
-          "median_score": 0.727
+          "median_score": 0.738
         },
         "Proverbs": {
           "n": 3,
-          "median_score": 0.605
+          "median_score": 0.616
         },
         "Psalm": {
           "n": 1,
@@ -412,11 +412,11 @@
         },
         "Psalms": {
           "n": 10,
-          "median_score": 0.574
+          "median_score": 0.585
         },
         "Romans": {
           "n": 2,
-          "median_score": 0.251
+          "median_score": 0.2565
         }
       }
     },
@@ -470,12 +470,12 @@
   "authoring_guidance": {
     "lean_towards": [],
     "avoid": [
-      "character=girl (episode score 0.39 vs 0.55, n=28, IG+YT percentile)",
-      "duration=56-60s (episode score 0.35 vs 0.55, n=18, IG+YT percentile)"
+      "character=girl (episode score 0.36 vs 0.54, n=28, IG+YT percentile)",
+      "duration=56-60s (episode score 0.36 vs 0.54, n=19, IG+YT percentile)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1555 (n=23), night (18-24 IST) 1424 (n=22)",
-      "youtube slot medians: morning (06-12 IST) 1109 (n=23), night (18-24 IST) 1332 (n=24)",
+      "instagram slot medians: morning (06-12 IST) 1555 (n=23), night (18-24 IST) 1416 (n=22)",
+      "youtube slot medians: morning (06-12 IST) 1109 (n=23), night (18-24 IST) 1220 (n=24)",
       "instagram: 2 of 47 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099, JR-0061",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
