@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-17T20:50:23.220609+00:00",
+  "as_of": "2026-11-18T04:39:40.075155+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -11,15 +11,15 @@
         "JR-0061"
       ],
       "stall_rate": 0.04,
-      "median_views": 1428,
-      "max_views": 14193,
-      "saves_per_1k_reach_median": 7.3,
+      "median_views": 1470,
+      "max_views": 14242,
+      "saves_per_1k_reach_median": 7.5,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 23,
-            "median_views": 1478
+            "median_views": 1555
           },
           "night (18-24 IST)": {
             "n": 22,
@@ -30,9 +30,9 @@
       "top": [
         {
           "episode_id": "JR-0060",
-          "views": 14193,
-          "saves": 386,
-          "shares": 189,
+          "views": 14242,
+          "saves": 389,
+          "shares": 190,
           "theme": "relatives asking when it is her turn at a family wedding",
           "emotion": "sad",
           "hook": "Jesus... four aunties asked when it's my turn. I smiled at the wedding and cried in the car. 💍",
@@ -52,7 +52,7 @@
         },
         {
           "episode_id": "JR-0097",
-          "views": 4958,
+          "views": 4962,
           "saves": 70,
           "shares": 23,
           "theme": "part 2: at the next family lunch she finally answers the aunty who keeps asking when she will marry, gently and without shame",
@@ -87,7 +87,7 @@
       "bottom": [
         {
           "episode_id": "JR-0098",
-          "views": 205,
+          "views": 206,
           "theme": "a viewer's comment: she forgave someone close but cannot trust her again, and feels hollow",
           "emotion": "sad",
           "hook": "Jesus... I forgave her. I just can't let her back in. 🥀",
@@ -114,7 +114,7 @@
         },
         {
           "episode_id": "JR-0100",
-          "views": 369,
+          "views": 370,
           "theme": "exhausted after a third late night, he fell asleep in the office washroom and told his manager he was on a call",
           "emotion": "neutral",
           "hook": "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
@@ -212,6 +212,15 @@
       ],
       "bottom": [
         {
+          "episode_id": "JR-0113",
+          "views": 98,
+          "theme": "she keeps waiting to feel ready to start the project she has planned for weeks, one more tutorial instead of the first try",
+          "emotion": "worried",
+          "hook": "Jesus... I keep waiting to feel ready before I start.",
+          "slot": "morning (06-12 IST)",
+          "duration": "56-60s"
+        },
+        {
           "episode_id": "JR-0099",
           "views": 203,
           "theme": "she always texts first and wonders if anyone would notice if she stopped",
@@ -246,15 +255,6 @@
           "hook": "Jesus... I thanked You early. And it felt fake. 🙏",
           "slot": "night (18-24 IST)",
           "duration": "56-60s"
-        },
-        {
-          "episode_id": "JR-0075",
-          "views": 266,
-          "theme": "she told her athai her Diwali gift is her favourite when it is not, and the small lie is eating at her",
-          "emotion": "sad",
-          "hook": "Jesus... Athai's Diwali gift. Why did I call it my favourite? 🎁",
-          "slot": "morning (06-12 IST)",
-          "duration": "<=55s"
         }
       ]
     }
@@ -271,7 +271,7 @@
   "content": {
     "n_episodes": 47,
     "both_platforms": 45,
-    "median_score": 0.539,
+    "median_score": 0.55,
     "by_dimension": {
       "emotion": {
         "angry": {
@@ -280,61 +280,61 @@
         },
         "crying": {
           "n": 2,
-          "median_score": 0.5975
+          "median_score": 0.6085
         },
         "happy": {
           "n": 1,
-          "median_score": 0.685
+          "median_score": 0.673
         },
         "hopeful": {
           "n": 6,
-          "median_score": 0.35950000000000004
+          "median_score": 0.359
         },
         "neutral": {
           "n": 3,
           "median_score": 0.408
         },
         "sad": {
-          "n": 32,
-          "median_score": 0.574
+          "n": 31,
+          "median_score": 0.575
         },
         "worried": {
-          "n": 1,
-          "median_score": 0.36
+          "n": 2,
+          "median_score": 0.3215
         }
       },
       "character": {
         "boy": {
-          "n": 20,
-          "median_score": 0.608
+          "n": 19,
+          "median_score": 0.605
         },
         "girl": {
-          "n": 27,
-          "median_score": 0.404
+          "n": 28,
+          "median_score": 0.386
         }
       },
       "hook_type": {
         "confession_statement": {
           "n": 27,
-          "median_score": 0.414
+          "median_score": 0.413
         },
         "question": {
           "n": 9,
-          "median_score": 0.412
+          "median_score": 0.426
         },
         "statement": {
           "n": 11,
-          "median_score": 0.611
+          "median_score": 0.619
         }
       },
       "duration": {
         "56-60s": {
-          "n": 17,
-          "median_score": 0.36
+          "n": 18,
+          "median_score": 0.349
         },
         "<=55s": {
-          "n": 30,
-          "median_score": 0.574
+          "n": 29,
+          "median_score": 0.575
         }
       },
       "bible_book": {
@@ -344,19 +344,19 @@
         },
         "2 Corinthians": {
           "n": 1,
-          "median_score": 0.539
+          "median_score": 0.55
         },
         "Colossians": {
           "n": 1,
-          "median_score": 0.608
+          "median_score": 0.619
         },
         "Ecclesiastes": {
-          "n": 1,
-          "median_score": 0.125
+          "n": 2,
+          "median_score": 0.2095
         },
         "Ephesians": {
           "n": 2,
-          "median_score": 0.1275
+          "median_score": 0.1385
         },
         "Exodus": {
           "n": 1,
@@ -364,11 +364,11 @@
         },
         "Galatians": {
           "n": 2,
-          "median_score": 0.6599999999999999
+          "median_score": 0.6545
         },
         "Hebrews": {
           "n": 2,
-          "median_score": 0.29400000000000004
+          "median_score": 0.2935
         },
         "Isaiah": {
           "n": 5,
@@ -376,11 +376,11 @@
         },
         "James": {
           "n": 1,
-          "median_score": 0.685
+          "median_score": 0.673
         },
         "John": {
           "n": 2,
-          "median_score": 0.354
+          "median_score": 0.3535
         },
         "Lamentations": {
           "n": 2,
@@ -396,19 +396,19 @@
         },
         "Matthew": {
           "n": 6,
-          "median_score": 0.5885
+          "median_score": 0.5940000000000001
         },
         "Philippians": {
           "n": 1,
           "median_score": 0.727
         },
         "Proverbs": {
-          "n": 4,
-          "median_score": 0.5325
+          "n": 3,
+          "median_score": 0.605
         },
         "Psalm": {
           "n": 1,
-          "median_score": 0.36
+          "median_score": 0.359
         },
         "Psalms": {
           "n": 10,
@@ -416,7 +416,7 @@
         },
         "Romans": {
           "n": 2,
-          "median_score": 0.23450000000000001
+          "median_score": 0.251
         }
       }
     },
@@ -470,10 +470,11 @@
   "authoring_guidance": {
     "lean_towards": [],
     "avoid": [
-      "duration=56-60s (episode score 0.36 vs 0.54, n=17, IG+YT percentile)"
+      "character=girl (episode score 0.39 vs 0.55, n=28, IG+YT percentile)",
+      "duration=56-60s (episode score 0.35 vs 0.55, n=18, IG+YT percentile)"
     ],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1478 (n=23), night (18-24 IST) 1424 (n=22)",
+      "instagram slot medians: morning (06-12 IST) 1555 (n=23), night (18-24 IST) 1424 (n=22)",
       "youtube slot medians: morning (06-12 IST) 1109 (n=23), night (18-24 IST) 1332 (n=24)",
       "instagram: 2 of 47 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099, JR-0061",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"

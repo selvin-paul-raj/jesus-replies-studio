@@ -163,9 +163,9 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-17T20:50Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-18T04:39Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=45, median views 1428, best 14193, saves per 1k reach 7.3, stalled 2 (excluded)
+- **instagram**: n=45, median views 1470, best 14242, saves per 1k reach 7.5, stalled 2 (excluded)
 - **youtube**: n=47, median views 1195, best 3832, saves per 1k reach None, stalled 0 (excluded)
 - **episodes scored** (IG + YT percentile): 47, 45 with both platforms
 
@@ -173,7 +173,8 @@ _Last computed 2026-11-17T20:50Z from Buffer analytics, last 28 days, posts at l
 - not enough evidence yet
 
 **Avoid / de-emphasise:**
-- duration=56-60s (episode score 0.36 vs 0.54, n=17, IG+YT percentile)
+- character=girl (episode score 0.39 vs 0.55, n=28, IG+YT percentile)
+- duration=56-60s (episode score 0.35 vs 0.55, n=18, IG+YT percentile)
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
 - JR-0063 score 0.88 (instagram 1920, youtube 3832 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔
@@ -183,7 +184,7 @@ _Last computed 2026-11-17T20:50Z from Buffer analytics, last 28 days, posts at l
 - JR-0061 score 0.83 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1478 (n=23), night (18-24 IST) 1424 (n=22)
+- instagram slot medians: morning (06-12 IST) 1555 (n=23), night (18-24 IST) 1424 (n=22)
 - youtube slot medians: morning (06-12 IST) 1109 (n=23), night (18-24 IST) 1332 (n=24)
 - instagram: 2 of 47 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099, JR-0061
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
