@@ -2,11 +2,11 @@
   "episode_id": "JR-0111",
   "platforms": {
     "instagram": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6af9fe36c5b364e06275c041",
       "due_at": "2026-11-19T02:30:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-11-19T02:31:01.578Z",
+      "external_link": "https://www.instagram.com/reel/Df6Av30FLYw/",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -17,18 +17,32 @@
           "to": "SCHEDULED",
           "run": "43748675372",
           "evidence": "create_scheduled read back: scheduled 2026-11-19T02:30:00.000Z"
+        },
+        {
+          "at": "2026-11-19T04:24:48.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "44458062584",
+          "evidence": "read 6af9fe36c5b364e06275c041: status sent at 2026-11-19T02:31:01.578Z"
+        },
+        {
+          "at": "2026-11-19T04:24:48.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "44458062584",
+          "evidence": "permalink http=200 metricsUpdatedAt=2026-11-19T03:37:15.297Z"
         }
       ]
     },
     "youtube": {
-      "state": "SCHEDULED",
+      "state": "FAILED",
       "post_id": "6af9fe3755ad64be504f221e",
       "due_at": "2026-11-19T02:30:00.000Z",
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
       "attempts": 1,
-      "error": null,
+      "error": "Buffer status error",
       "history": [
         {
           "at": "2026-11-15T18:47:02.000Z",
@@ -36,6 +50,13 @@
           "to": "SCHEDULED",
           "run": "43748675372",
           "evidence": "create_scheduled read back: scheduled 2026-11-19T02:30:00.000Z"
+        },
+        {
+          "at": "2026-11-19T04:24:48.000Z",
+          "from": "SCHEDULED",
+          "to": "FAILED",
+          "run": "44458062584",
+          "evidence": "read 6af9fe3755ad64be504f221e: Buffer status error"
         }
       ]
     }
