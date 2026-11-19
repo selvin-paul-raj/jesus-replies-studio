@@ -18,3 +18,4 @@ _2026-11-05: the six family-pressure ideas above are now the weekly lane backlog
 
 _2026-11-05 (DEC-JR-018): the 2026-10-29 "I forgave her but I can't let her back in" comment is the first "Jesus replies to your comment" episode, JR-0098 (Romans 12:18, Thu 2026-11-12 19:30 IST), handle hidden._
 - 2026-11-17 Repeated: viewers ask for song name (YT); church/Halloween-Easter convictions
+- 'Send me this post' requests recur on old blessing image posts (3 in Oct); IG deleted 2 of them
