@@ -17,9 +17,6 @@
     "Self-harm, suicide or abuse stories are held for Selvin's review before publishing and their caption and description must also carry: \"If you are in danger, please reach a local crisis line: US 988 (call or text), UK & Ireland Samaritans 116 123, India Tele-MANAS 14416.\". Prefer other themes for the daily slots."
   ],
   "avoid_titles": [
-    "Jesus, I'm Tired Of Being Told To Be Grateful 😔",
-    "Jesus, The Visa Got Rejected Again ✈️",
-    "Jesus, I Found My Old Prayer Journal 📔",
     "Jesus, The Shop Hasn't Made A Profit In A Year 🏪",
     "Jesus... I Scroll Till 2 AM And Wake Up Hating It. 📱",
     "Jesus... My Family Loves Me But Doesn't Understand Me. 💔",
@@ -30,12 +27,12 @@
     "Jesus... My Two-Year Plan Fell Apart In One Email. 🗺️",
     "Jesus... I've Restarted The Same Habit Four Times This Month. 🔁",
     "Jesus... I'm Scared To Rest Because Everything Might Fall Apart. 🛋️",
-    "Jesus... I Keep Rehearsing Arguments That Never Happen. 🎭"
+    "Jesus... I Keep Rehearsing Arguments That Never Happen. 🎭",
+    "Jesus... I Skipped My Prayer Tonight. Nothing Is Moving. 🕯️",
+    "Jesus... I Turned My Hope Off So It Can't Hurt Me. 🛡️",
+    "Jesus... It's 3 AM And My Heart Is Counting. 🌙"
   ],
   "avoid_scripture": [
-    "Isaiah 9:2",
-    "Isaiah 40:31",
-    "Jeremiah 33:14",
     "Romans 15:13",
     "Psalms 119:37",
     "Matthew 12:50",
@@ -46,12 +43,12 @@
     "Proverbs 16:9",
     "Philippians 3:13",
     "Psalm 127:2",
-    "Psalm 94:19"
+    "Psalm 94:19",
+    "Mark 13:33",
+    "Titus 2:13",
+    "Psalm 130:5"
   ],
   "avoid_hooks": [
-    "Jesus... every reel tonight said count your blessings. 😔",
-    "Jesus... the visa got rejected again. ✈️",
-    "Jesus... I found my old prayer journal tonight. 📔",
     "Jesus... the shop hasn't made a profit in a year. 🏪",
     "Jesus... I scroll till 2 AM and wake up hating it. 📱",
     "Jesus... my family loves me, but they don't understand me. 💔",
@@ -62,12 +59,12 @@
     "Jesus... my two-year plan fell apart in one email.",
     "Jesus... I've restarted the same habit four times this month.",
     "Jesus... I'm scared to rest because everything might fall apart.",
-    "Jesus... I keep rehearsing arguments that never happen."
+    "Jesus... I keep rehearsing arguments that never happen.",
+    "Jesus... I skipped my prayer tonight. First time in months. 🕯️",
+    "Jesus... I turned my hope off so it couldn't hurt me again. 🛡️",
+    "Jesus... it's 3 AM again and my heart is counting everything I don't have. 🌙"
   ],
   "recent_topics": [
-    "she is in a long low season and every post telling her to count her blessings makes the dark feel worse",
-    "his visa was rejected a second time and he can't tell if he's still waiting on a door or banging on a wall",
-    "she found her two-year-old prayer journal and the still-blank pages nearly made her stop hoping",
     "his small shop hasn't turned a profit in a year and he can't tell hope apart from stubbornness",
     "he scrolls his phone till 2 AM every night chasing a quiet he never finds, and wakes up ashamed of the hours he lost",
     "she loves her family but they cannot read what she is carrying, so she gives Amma half the story and feels loneliest at home",
@@ -78,12 +75,12 @@
     "the two-year plan she built her future on collapsed in one email and she is grieving the person she thought she'd become",
     "he has restarted the same habit four times this month and day one has started to feel like home",
     "she is afraid to rest because she believes everything would fall apart without her effort",
-    "he keeps rehearsing full arguments against people who never said a word and calls it being prepared"
+    "he keeps rehearsing full arguments against people who never said a word and calls it being prepared",
+    "he quietly skipped his nightly prayer for the first time in months because the long silence has drained his faith that watching changes anything",
+    "he switched his hope off after too many letdowns and now protects himself by expecting nothing, so hoping again feels like a setup",
+    "she keeps waking at 3 AM with her heart counting what she doesn't have, waiting through the dark hours as if morning has forgotten her"
   ],
   "recent_emotions": [
-    "sad",
-    "worried",
-    "hopeful",
     "hopeful",
     "sad",
     "sad",
@@ -94,7 +91,10 @@
     "sad",
     "hopeful",
     "worried",
-    "worried"
+    "worried",
+    "worried",
+    "sad",
+    "sad"
   ],
   "duration_target_seconds": [
     45,
@@ -139,7 +139,7 @@
   ],
   "strategy": {
     "source": "content-os/learnings.json + content-os/STRATEGY.md",
-    "as_of": "2026-11-19T04:24:48.653292+00:00",
+    "as_of": "2026-11-19T05:01:29.550138+00:00",
     "lean_towards": [
       "hook_type=statement (episode score 0.63 vs 0.48, n=11, IG+YT percentile)"
     ],
