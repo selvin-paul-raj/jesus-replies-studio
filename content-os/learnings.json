@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-21T06:58:57.015790+00:00",
+  "as_of": "2026-11-21T19:09:16.642104+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -13,7 +13,7 @@
       "stall_rate": 0.04,
       "median_views": 1484,
       "max_views": 14353,
-      "saves_per_1k_reach_median": 7.7,
+      "saves_per_1k_reach_median": 7.9,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
@@ -113,13 +113,13 @@
           "duration": "<=55s"
         },
         {
-          "episode_id": "JR-0067",
-          "views": 341,
-          "theme": "she promises one more reel at 2 a.m. every night and hides her exhaustion at work",
+          "episode_id": "JR-0110",
+          "views": 302,
+          "theme": "she loves her family but they cannot read what she is carrying, so she gives Amma half the story and feels loneliest at home",
           "emotion": "sad",
-          "hook": "Jesus... it's 2 a.m. again. I said one more reel an hour ago, and I'll smile at work anyway. 📱",
+          "hook": "Jesus... my family loves me, but they don't understand me. 💔",
           "slot": "night (18-24 IST)",
-          "duration": "56-60s"
+          "duration": "<=55s"
         },
         {
           "episode_id": "JR-0087",
@@ -137,8 +137,8 @@
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 1065.0,
-      "max_views": 3833,
+      "median_views": 1054.0,
+      "max_views": 3834,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
@@ -149,14 +149,14 @@
           },
           "night (18-24 IST)": {
             "n": 24,
-            "median_views": 1078.0
+            "median_views": 930.0
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0063",
-          "views": 3833,
+          "views": 3834,
           "saves": null,
           "shares": null,
           "theme": "she always texts first and wonders if anyone would notice if she stopped",
@@ -271,7 +271,7 @@
   "content": {
     "n_episodes": 47,
     "both_platforms": 44,
-    "median_score": 0.452,
+    "median_score": 0.463,
     "by_dimension": {
       "emotion": {
         "angry": {
@@ -280,7 +280,7 @@
         },
         "crying": {
           "n": 2,
-          "median_score": 0.622
+          "median_score": 0.6275000000000001
         },
         "happy": {
           "n": 1,
@@ -292,15 +292,15 @@
         },
         "neutral": {
           "n": 3,
-          "median_score": 0.47
+          "median_score": 0.481
         },
         "sad": {
           "n": 27,
-          "median_score": 0.563
+          "median_score": 0.574
         },
         "worried": {
           "n": 4,
-          "median_score": 0.3305
+          "median_score": 0.336
         }
       },
       "character": {
@@ -310,31 +310,31 @@
         },
         "girl": {
           "n": 28,
-          "median_score": 0.381
+          "median_score": 0.377
         }
       },
       "hook_type": {
         "confession_statement": {
-          "n": 25,
-          "median_score": 0.383
+          "n": 26,
+          "median_score": 0.399
         },
         "question": {
           "n": 9,
-          "median_score": 0.449
+          "median_score": 0.46
         },
         "statement": {
-          "n": 13,
-          "median_score": 0.618
+          "n": 12,
+          "median_score": 0.6475
         }
       },
       "duration": {
         "56-60s": {
-          "n": 21,
-          "median_score": 0.383
+          "n": 20,
+          "median_score": 0.4285
         },
         "<=55s": {
-          "n": 26,
-          "median_score": 0.475
+          "n": 27,
+          "median_score": 0.48
         }
       },
       "bible_book": {
@@ -356,11 +356,11 @@
         },
         "Ephesians": {
           "n": 2,
-          "median_score": 0.174
+          "median_score": 0.1795
         },
         "Exodus": {
           "n": 1,
-          "median_score": 0.754
+          "median_score": 0.765
         },
         "Galatians": {
           "n": 2,
@@ -368,11 +368,11 @@
         },
         "Hebrews": {
           "n": 2,
-          "median_score": 0.34199999999999997
+          "median_score": 0.34750000000000003
         },
         "Isaiah": {
           "n": 7,
-          "median_score": 0.346
+          "median_score": 0.357
         },
         "James": {
           "n": 1,
@@ -399,8 +399,8 @@
           "median_score": 0.35
         },
         "Matthew": {
-          "n": 6,
-          "median_score": 0.637
+          "n": 7,
+          "median_score": 0.574
         },
         "Proverbs": {
           "n": 3,
@@ -408,15 +408,15 @@
         },
         "Psalm": {
           "n": 1,
-          "median_score": 0.383
+          "median_score": 0.394
         },
         "Psalms": {
-          "n": 8,
-          "median_score": 0.534
+          "n": 7,
+          "median_score": 0.629
         },
         "Romans": {
           "n": 2,
-          "median_score": 0.2725
+          "median_score": 0.278
         }
       }
     },
@@ -435,7 +435,7 @@
         "score": 0.875,
         "views": {
           "instagram": 1920,
-          "youtube": 3833
+          "youtube": 3834
         },
         "hook": "Jesus... I stopped texting first for a day. Nobody checked on me. 💔"
       },
@@ -469,18 +469,18 @@
   },
   "authoring_guidance": {
     "lean_towards": [
-      "hook_type=statement (episode score 0.62 vs 0.45, n=13, IG+YT percentile)"
+      "hook_type=statement (episode score 0.65 vs 0.46, n=12, IG+YT percentile)"
     ],
     "avoid": [],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1484 (n=23), night (18-24 IST) 1478 (n=22)",
-      "youtube slot medians: morning (06-12 IST) 1065 (n=22), night (18-24 IST) 1078 (n=24)",
+      "youtube slot medians: morning (06-12 IST) 1065 (n=22), night (18-24 IST) 930 (n=24)",
       "instagram: 2 of 47 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099, JR-0061",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
       "JR-0070 score 0.89 (instagram 2204, youtube 1660 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌",
-      "JR-0063 score 0.88 (instagram 1920, youtube 3833 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
+      "JR-0063 score 0.88 (instagram 1920, youtube 3834 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
       "JR-0061 score 0.87 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔",
       "JR-0084 score 0.87 (instagram 2285, youtube 1589 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
       "JR-0082 score 0.83 (instagram 1868, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱"
