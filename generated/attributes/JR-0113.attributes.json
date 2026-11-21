@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0113",
+  "theme": "she keeps waiting to feel ready to start the project she has planned for weeks, one more tutorial instead of the first try",
+  "emotion": "worried",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I keep waiting to feel ready before I start.",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "she keeps waiting to feel ready to start the project she has planned for weeks, one more tutorial instead of the first try",
+  "bible_theme": "Ecclesiastes 11:4",
+  "bible_book": "Ecclesiastes",
+  "cta_type": "reflection_statement",
+  "duration": 57.81,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0113/JR-0113.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

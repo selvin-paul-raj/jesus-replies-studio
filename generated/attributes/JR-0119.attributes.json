@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0119",
+  "theme": "he quietly skipped his nightly prayer for the first time in months because the long silence has drained his faith that watching changes anything",
+  "emotion": "worried",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I skipped my prayer tonight. First time in months. 🕯️",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "he quietly skipped his nightly prayer for the first time in months because the long silence has drained his faith that watching changes anything",
+  "bible_theme": "Mark 13:33",
+  "bible_book": "Mark",
+  "cta_type": "reflection_statement",
+  "duration": 53.48,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0119/JR-0119.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

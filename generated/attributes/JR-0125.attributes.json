@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0125",
+  "theme": "she buried her hope this year and stopped asking, convinced the grief of it was the end of the story",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I buried my hope this year. 🪦",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "she buried her hope this year and stopped asking, convinced the grief of it was the end of the story",
+  "bible_theme": "1 Peter 1:3",
+  "bible_book": "1 Peter",
+  "cta_type": "reflection_statement",
+  "duration": 49.05,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0125/JR-0125.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

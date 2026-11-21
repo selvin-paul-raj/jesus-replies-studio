@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0124",
+  "theme": "his dream went quiet so long ago that he now tells it like an old story instead of expecting it",
+  "emotion": "hopeful",
+  "character": "boy",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... my dream stopped feeling like a promise. 📖",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "his dream went quiet so long ago that he now tells it like an old story instead of expecting it",
+  "bible_theme": "Micah 5:2",
+  "bible_book": "Micah",
+  "cta_type": "reflection_statement",
+  "duration": 51.63,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0124/JR-0124.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0123",
+  "theme": "she feels like the extra in everyone else's story, seated at every table but talked around instead of to",
+  "emotion": "sad",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I feel like the extra in everyone else's story. 🎬",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "she feels like the extra in everyone else's story, seated at every table but talked around instead of to",
+  "bible_theme": "Zephaniah 3:17",
+  "bible_book": "Zephaniah",
+  "cta_type": "reflection_statement",
+  "duration": 50.71,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0123/JR-0123.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "episode_id": "JR-0117",
+  "theme": "she is afraid to rest because she believes everything would fall apart without her effort",
+  "emotion": "worried",
+  "character": "girl",
+  "hook_type": "confession_statement",
+  "hook": "Jesus... I'm scared to rest because everything might fall apart.",
+  "series": null,
+  "story_type": "one_pushback",
+  "audience_problem": "she is afraid to rest because she believes everything would fall apart without her effort",
+  "bible_theme": "Psalm 127:2",
+  "bible_book": "Psalm",
+  "cta_type": "reflection_statement",
+  "duration": 55.13,
+  "platforms": [
+    "instagram",
+    "youtube"
+  ],
+  "has_package": true,
+  "hosted_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0117/JR-0117.mp4",
+  "derived_by": "content_os.episodes.derive_attributes v1",
+  "inferred_fields": [
+    "hook_type",
+    "story_type",
+    "cta_type",
+    "audience_problem"
+  ]
+}
