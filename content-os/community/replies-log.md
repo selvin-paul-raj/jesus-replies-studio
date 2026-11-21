@@ -39,3 +39,6 @@
 - 2026-11-19 YT litup365: Amen -> short thanks
 - 2026-11-19 YT RahmaDanilubis-b9o: gibberish+😢 -> hug, invite to share
 - 2026-11-19 IG heal_.unity: send me this post -> thanks, use share button
+- 2026-11-21 YT guadalupe8666: Spanish blessing -> warm Spanish reply
+- 2026-11-21 YT guadalupe8666: Amen -> Amén
+- 2026-11-21 YT bevmoody61: Amen x2 (Nov 18, Nov 20 posts) -> short thanks
