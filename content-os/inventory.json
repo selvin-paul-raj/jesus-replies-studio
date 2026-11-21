@@ -1,9 +1,9 @@
 {
   "counts": {
     "UNUSED": 21,
-    "PUBLISHED": 92,
+    "PUBLISHED": 93,
     "FAILED": 2,
-    "SCHEDULED": 4,
+    "SCHEDULED": 3,
     "READY": 8
   },
   "next_ready": [
@@ -1636,15 +1636,18 @@
     },
     {
       "episode_id": "JR-0115",
-      "status": "SCHEDULED",
-      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
+      "status": "PUBLISHED",
+      "why": "all platforms",
       "platforms": {
-        "instagram": "SCHEDULED",
-        "youtube": "SCHEDULED"
+        "instagram": "PUBLISHED_VERIFIED",
+        "youtube": "PUBLISHED_VERIFIED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0115/JR-0115.mp4",
       "duration_s": 52.12,
-      "published_on": []
+      "published_on": [
+        "instagram",
+        "youtube"
+      ]
     },
     {
       "episode_id": "JR-0116",
@@ -1779,5 +1782,5 @@
       "published_on": []
     }
   ],
-  "as_of": "2026-11-20T20:06:20.069755+00:00"
+  "as_of": "2026-11-21T04:12:11.507264+00:00"
 }
