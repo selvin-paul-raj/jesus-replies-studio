@@ -11485,6 +11485,21 @@
         },
         "observed_age_hours": 25.7,
         "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      },
+      "72h": {
+        "metrics": {
+          "reactions": 91,
+          "comments": 0,
+          "engagementRate": 10,
+          "views": 1195,
+          "shares": 4,
+          "saves": 14,
+          "totalTimeWatched": 129.16,
+          "averageTimeWatched": 7.05,
+          "reach": 1090
+        },
+        "observed_age_hours": 72.9,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
       }
     }
   },
@@ -11665,7 +11680,18 @@
     "episode_id": "JR-0115",
     "platform": "youtube",
     "sent_at": "2026-11-21T02:30:31.373Z",
-    "checkpoints": {}
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 19,
+          "comments": 0,
+          "engagementRate": 0,
+          "views": 187
+        },
+        "observed_age_hours": 24.9,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
   },
   "instagram:6b016d2a5e993799d86c39cf": {
     "episode_id": null,
@@ -11677,6 +11703,40 @@
     "episode_id": "JR-0116",
     "platform": "youtube",
     "sent_at": "2026-11-21T14:03:09.779Z",
+    "checkpoints": {}
+  },
+  "instagram:6afa8c3eff465c57dad3007c": {
+    "episode_id": "JR-0115",
+    "platform": "instagram",
+    "sent_at": "2026-11-21T02:31:48.597Z",
+    "checkpoints": {
+      "24h": {
+        "metrics": {
+          "reactions": 9,
+          "comments": 0,
+          "engagementRate": 13.04,
+          "views": 85,
+          "shares": 0,
+          "saves": 0,
+          "totalTimeWatched": 8.91,
+          "averageTimeWatched": 7.75,
+          "reach": 69
+        },
+        "observed_age_hours": 24.9,
+        "note": "first snapshot after the checkpoint; exact-time capture not possible"
+      }
+    }
+  },
+  "instagram:6afa71c160a910801c646090": {
+    "episode_id": "JR-0116",
+    "platform": "instagram",
+    "sent_at": "2026-11-21T14:06:48.980Z",
+    "checkpoints": {}
+  },
+  "youtube:6afbe224f83aaca8f3af045f": {
+    "episode_id": "JR-0117",
+    "platform": "youtube",
+    "sent_at": "2026-11-22T02:30:38.448Z",
     "checkpoints": {}
   }
 }

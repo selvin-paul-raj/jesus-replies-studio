@@ -163,14 +163,14 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-21T19:09Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-22T03:23Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=45, median views 1484, best 14353, saves per 1k reach 7.9, stalled 2 (excluded)
-- **youtube**: n=46, median views 1054, best 3834, saves per 1k reach None, stalled 0 (excluded)
+- **instagram**: n=45, median views 1475, best 14400, saves per 1k reach 7.9, stalled 2 (excluded)
+- **youtube**: n=46, median views 992, best 3834, saves per 1k reach None, stalled 0 (excluded)
 - **episodes scored** (IG + YT percentile): 47, 44 with both platforms
 
 **Lean towards** (authoring reads this):
-- hook_type=statement (episode score 0.65 vs 0.46, n=12, IG+YT percentile)
+- hook_type=statement (episode score 0.64 vs 0.48, n=13, IG+YT percentile)
 
 **Avoid / de-emphasise:**
 - nothing with enough evidence
@@ -183,8 +183,8 @@ _Last computed 2026-11-21T19:09Z from Buffer analytics, last 28 days, posts at l
 - JR-0082 score 0.83 (instagram 1868, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1484 (n=23), night (18-24 IST) 1478 (n=22)
-- youtube slot medians: morning (06-12 IST) 1065 (n=22), night (18-24 IST) 930 (n=24)
+- instagram slot medians: morning (06-12 IST) 1475 (n=23), night (18-24 IST) 1478 (n=22)
+- youtube slot medians: morning (06-12 IST) 1000 (n=22), night (18-24 IST) 930 (n=24)
 - instagram: 2 of 47 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099, JR-0061
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)

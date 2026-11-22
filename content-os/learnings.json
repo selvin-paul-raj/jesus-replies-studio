@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-21T19:09:16.642104+00:00",
+  "as_of": "2026-11-22T03:23:20.172361+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -11,15 +11,15 @@
         "JR-0061"
       ],
       "stall_rate": 0.04,
-      "median_views": 1484,
-      "max_views": 14353,
+      "median_views": 1475,
+      "max_views": 14400,
       "saves_per_1k_reach_median": 7.9,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 23,
-            "median_views": 1484
+            "median_views": 1475
           },
           "night (18-24 IST)": {
             "n": 22,
@@ -30,9 +30,9 @@
       "top": [
         {
           "episode_id": "JR-0060",
-          "views": 14353,
-          "saves": 390,
-          "shares": 193,
+          "views": 14400,
+          "saves": 391,
+          "shares": 194,
           "theme": "relatives asking when it is her turn at a family wedding",
           "emotion": "sad",
           "hook": "Jesus... four aunties asked when it's my turn. I smiled at the wedding and cried in the car. 💍",
@@ -41,7 +41,7 @@
         },
         {
           "episode_id": "JR-0071",
-          "views": 5396,
+          "views": 5403,
           "saves": 65,
           "shares": 25,
           "theme": "relatives asking salary questions at the Diwali table while her job hunt is still going nowhere",
@@ -52,7 +52,7 @@
         },
         {
           "episode_id": "JR-0097",
-          "views": 4973,
+          "views": 4974,
           "saves": 70,
           "shares": 23,
           "theme": "part 2: at the next family lunch she finally answers the aunty who keeps asking when she will marry, gently and without shame",
@@ -63,7 +63,7 @@
         },
         {
           "episode_id": "JR-0106",
-          "views": 2427,
+          "views": 2431,
           "saves": 45,
           "shares": 29,
           "theme": "his visa was rejected a second time and he can't tell if he's still waiting on a door or banging on a wall",
@@ -114,7 +114,7 @@
         },
         {
           "episode_id": "JR-0110",
-          "views": 302,
+          "views": 308,
           "theme": "she loves her family but they cannot read what she is carrying, so she gives Amma half the story and feels loneliest at home",
           "emotion": "sad",
           "hook": "Jesus... my family loves me, but they don't understand me. 💔",
@@ -137,7 +137,7 @@
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 1054.0,
+      "median_views": 991.5,
       "max_views": 3834,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
@@ -145,7 +145,7 @@
         "slot": {
           "morning (06-12 IST)": {
             "n": 22,
-            "median_views": 1065.0
+            "median_views": 1000.5
           },
           "night (18-24 IST)": {
             "n": 24,
@@ -212,6 +212,15 @@
       ],
       "bottom": [
         {
+          "episode_id": "JR-0108",
+          "views": 6,
+          "theme": "his small shop hasn't turned a profit in a year and he can't tell hope apart from stubbornness",
+          "emotion": "hopeful",
+          "hook": "Jesus... the shop hasn't made a profit in a year. 🏪",
+          "slot": "morning (06-12 IST)",
+          "duration": "56-60s"
+        },
+        {
           "episode_id": "JR-0113",
           "views": 109,
           "theme": "she keeps waiting to feel ready to start the project she has planned for weeks, one more tutorial instead of the first try",
@@ -246,15 +255,6 @@
           "hook": "Jesus... why does an empty room feel this loud? 😔",
           "slot": "night (18-24 IST)",
           "duration": "<=55s"
-        },
-        {
-          "episode_id": "JR-0107",
-          "views": 218,
-          "theme": "she found her two-year-old prayer journal and the still-blank pages nearly made her stop hoping",
-          "emotion": "hopeful",
-          "hook": "Jesus... I found my old prayer journal tonight. 📔",
-          "slot": "night (18-24 IST)",
-          "duration": "56-60s"
         }
       ]
     }
@@ -271,7 +271,7 @@
   "content": {
     "n_episodes": 47,
     "both_platforms": 44,
-    "median_score": 0.463,
+    "median_score": 0.483,
     "by_dimension": {
       "emotion": {
         "angry": {
@@ -280,83 +280,83 @@
         },
         "crying": {
           "n": 2,
-          "median_score": 0.6275000000000001
+          "median_score": 0.636
         },
         "happy": {
           "n": 1,
-          "median_score": 0.683
+          "median_score": 0.694
         },
         "hopeful": {
-          "n": 8,
-          "median_score": 0.39749999999999996
+          "n": 9,
+          "median_score": 0.382
         },
         "neutral": {
           "n": 3,
-          "median_score": 0.481
+          "median_score": 0.492
         },
         "sad": {
-          "n": 27,
-          "median_score": 0.574
+          "n": 26,
+          "median_score": 0.5395
         },
         "worried": {
           "n": 4,
-          "median_score": 0.336
+          "median_score": 0.362
         }
       },
       "character": {
         "boy": {
-          "n": 19,
-          "median_score": 0.598
+          "n": 20,
+          "median_score": 0.5505
         },
         "girl": {
-          "n": 28,
-          "median_score": 0.377
+          "n": 27,
+          "median_score": 0.382
         }
       },
       "hook_type": {
         "confession_statement": {
-          "n": 26,
-          "median_score": 0.399
+          "n": 25,
+          "median_score": 0.417
         },
         "question": {
           "n": 9,
-          "median_score": 0.46
+          "median_score": 0.483
         },
         "statement": {
-          "n": 12,
-          "median_score": 0.6475
+          "n": 13,
+          "median_score": 0.64
         }
       },
       "duration": {
         "56-60s": {
-          "n": 20,
-          "median_score": 0.4285
+          "n": 21,
+          "median_score": 0.417
         },
         "<=55s": {
-          "n": 27,
-          "median_score": 0.48
+          "n": 26,
+          "median_score": 0.483
         }
       },
       "bible_book": {
         "1 Thessalonians": {
           "n": 1,
-          "median_score": 0.237
+          "median_score": 0.26
         },
         "2 Corinthians": {
           "n": 2,
-          "median_score": 0.4125
+          "median_score": 0.4295
         },
         "Colossians": {
           "n": 1,
-          "median_score": 0.666
+          "median_score": 0.677
         },
         "Ecclesiastes": {
           "n": 2,
-          "median_score": 0.21800000000000003
+          "median_score": 0.244
         },
         "Ephesians": {
           "n": 2,
-          "median_score": 0.1795
+          "median_score": 0.196
         },
         "Exodus": {
           "n": 1,
@@ -364,11 +364,11 @@
         },
         "Galatians": {
           "n": 2,
-          "median_score": 0.6595
+          "median_score": 0.671
         },
         "Hebrews": {
           "n": 2,
-          "median_score": 0.34750000000000003
+          "median_score": 0.364
         },
         "Isaiah": {
           "n": 7,
@@ -376,15 +376,15 @@
         },
         "James": {
           "n": 1,
-          "median_score": 0.683
+          "median_score": 0.694
         },
         "Jeremiah": {
           "n": 1,
-          "median_score": 0.34
+          "median_score": 0.362
         },
         "John": {
           "n": 1,
-          "median_score": 0.157
+          "median_score": 0.168
         },
         "Lamentations": {
           "n": 2,
@@ -396,27 +396,27 @@
         },
         "Mark": {
           "n": 1,
-          "median_score": 0.35
+          "median_score": 0.373
         },
         "Matthew": {
           "n": 7,
-          "median_score": 0.574
+          "median_score": 0.596
         },
         "Proverbs": {
           "n": 3,
-          "median_score": 0.48
+          "median_score": 0.485
         },
         "Psalm": {
           "n": 1,
-          "median_score": 0.394
+          "median_score": 0.417
         },
         "Psalms": {
-          "n": 7,
-          "median_score": 0.629
+          "n": 6,
+          "median_score": 0.5615
         },
         "Romans": {
-          "n": 2,
-          "median_score": 0.278
+          "n": 3,
+          "median_score": 0.122
         }
       }
     },
@@ -469,12 +469,12 @@
   },
   "authoring_guidance": {
     "lean_towards": [
-      "hook_type=statement (episode score 0.65 vs 0.46, n=12, IG+YT percentile)"
+      "hook_type=statement (episode score 0.64 vs 0.48, n=13, IG+YT percentile)"
     ],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1484 (n=23), night (18-24 IST) 1478 (n=22)",
-      "youtube slot medians: morning (06-12 IST) 1065 (n=22), night (18-24 IST) 930 (n=24)",
+      "instagram slot medians: morning (06-12 IST) 1475 (n=23), night (18-24 IST) 1478 (n=22)",
+      "youtube slot medians: morning (06-12 IST) 1000 (n=22), night (18-24 IST) 930 (n=24)",
       "instagram: 2 of 47 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099, JR-0061",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
