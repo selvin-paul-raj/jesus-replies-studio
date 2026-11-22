@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-22T03:23:20.172361+00:00",
+  "as_of": "2026-11-22T04:44:34.762015+00:00",
   "slots": [
     "08:00",
     "19:30"
@@ -12,41 +12,41 @@
   "platforms": {
     "instagram": {
       "n_7d": {
-        "08:00": 21,
-        "19:30": 16
+        "08:00": 19,
+        "19:30": 15
       },
       "medians_7d": {
         "reach": {
-          "08:00": 1335,
-          "19:30": 1202.5
+          "08:00": 1316,
+          "19:30": 1271
         },
         "views": {
-          "08:00": 1480,
-          "19:30": 1355.5
+          "08:00": 1470,
+          "19:30": 1410
         },
         "watch_time_avg": {
           "08:00": 9.44,
-          "19:30": 8.275
+          "19:30": 8.4
         },
         "shares": {
-          "08:00": 5,
-          "19:30": 3.0
+          "08:00": 4,
+          "19:30": 3
         },
         "saves": {
-          "08:00": 10,
-          "19:30": 9.0
+          "08:00": 9,
+          "19:30": 9
         },
         "comments": {
           "08:00": 0,
-          "19:30": 0.0
+          "19:30": 0
         },
         "likes": {
-          "08:00": 76,
-          "19:30": 89.0
+          "08:00": 75,
+          "19:30": 91
         },
         "engagement_rate": {
-          "08:00": 7,
-          "19:30": 7.38
+          "08:00": 6.93,
+          "19:30": 7.45
         }
       },
       "ahead_on": {
@@ -54,11 +54,10 @@
         "views": "08:00",
         "watch_time_avg": "08:00",
         "shares": "08:00",
-        "saves": "08:00",
         "likes": "19:30",
         "engagement_rate": "19:30"
       },
-      "verdict": "current evidence suggests 08:00 ahead on reach, 08:00 ahead on views, 08:00 ahead on watch_time_avg, 08:00 ahead on shares, 08:00 ahead on saves, 19:30 ahead on likes, 19:30 ahead on engagement_rate"
+      "verdict": "current evidence suggests 08:00 ahead on reach, 08:00 ahead on views, 08:00 ahead on watch_time_avg, 08:00 ahead on shares, 19:30 ahead on likes, 19:30 ahead on engagement_rate"
     },
     "youtube": {
       "n_7d": {
