@@ -1,0 +1,39 @@
+{
+  "as_of": "2026-11-22T20:41:01.098707+00:00",
+  "iso_week": 48,
+  "platforms": {
+    "instagram": {
+      "n": 42,
+      "median_views": 1422.0,
+      "max_views": 5403,
+      "saves_per_1k_reach_median": 7.8
+    },
+    "youtube": {
+      "n": 45,
+      "median_views": 938,
+      "max_views": 3834,
+      "saves_per_1k_reach_median": null
+    }
+  },
+  "actions": [
+    {
+      "type": "experiment_reading",
+      "experiment": "EXP-002",
+      "detail": "instagram: night (18-24 IST) median 1433 vs morning (06-12 IST) 1384 (n=21/21)"
+    },
+    {
+      "type": "experiment_reading",
+      "experiment": "EXP-002",
+      "detail": "youtube: morning (06-12 IST) median 1000 vs night (18-24 IST) 815 (n=22/23)"
+    },
+    {
+      "type": "authoring_emphasis",
+      "detail": {
+        "lean_towards": [],
+        "avoid": []
+      },
+      "applied": "STRATEGY.md auto block + every new brief"
+    }
+  ],
+  "slot_policy": "slot times change only when both platforms agree with n>=7 per arm (EXP-002 rule); otherwise recorded as a reading"
+}
