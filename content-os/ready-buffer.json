@@ -1,13 +1,11 @@
 {
-  "as_of": "2026-11-23T07:27:47.933261+00:00",
+  "as_of": "2026-11-23T23:49:02.292733+00:00",
   "target": 6,
   "ready_unscheduled": [
-    "JR-0130",
     "JR-0131",
     "JR-0132"
   ],
   "scheduled_not_yet_published": [
-    "JR-0119",
     "JR-0120",
     "JR-0121",
     "JR-0122",
@@ -16,11 +14,12 @@
     "JR-0125",
     "JR-0126",
     "JR-0128",
-    "JR-0129"
+    "JR-0129",
+    "JR-0130"
   ],
   "authored_in_pipeline": [],
   "upcoming_slots_unauthored": [],
-  "ready_buffer": 13,
+  "ready_buffer": 12,
   "scheduled_by_platform": {
     "instagram": 8,
     "youtube": 10
@@ -29,7 +28,6 @@
     "instagram": [
       "JR-0076",
       "JR-0078",
-      "JR-0128",
       "JR-0129",
       "JR-0130",
       "JR-0131",
@@ -43,7 +41,8 @@
   "authoring_needed": [
     "JR-0133",
     "JR-0134",
-    "JR-0135"
+    "JR-0135",
+    "JR-0136"
   ],
   "lane_gaps": [
     {

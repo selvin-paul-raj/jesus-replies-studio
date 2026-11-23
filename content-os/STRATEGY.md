@@ -163,10 +163,10 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-23T07:27Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-23T23:49Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=41, median views 1411, best 5408, saves per 1k reach 7.9, stalled 2 (excluded)
-- **youtube**: n=45, median views 863, best 3834, saves per 1k reach None, stalled 0 (excluded)
+- **instagram**: n=41, median views 1386, best 5412, saves per 1k reach 8.3, stalled 2 (excluded)
+- **youtube**: n=45, median views 855, best 3834, saves per 1k reach None, stalled 0 (excluded)
 - **episodes scored** (IG + YT percentile): 47, 39 with both platforms
 
 **Lean towards** (authoring reads this):
@@ -177,14 +177,14 @@ _Last computed 2026-11-23T07:27Z from Buffer analytics, last 28 days, posts at l
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
 - JR-0063 score 1.00 (youtube 3834 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔
-- JR-0070 score 0.89 (instagram 2204, youtube 1660 views): Jesus... I shouted at my little sister over a charger. I laughed it off. She's still not talking. 🔌
-- JR-0084 score 0.87 (instagram 2285, youtube 1589 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨
-- JR-0061 score 0.86 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔
-- JR-0082 score 0.85 (instagram 1868, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱
+- JR-0061 score 0.89 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔
+- JR-0084 score 0.88 (instagram 2286, youtube 1589 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨
+- JR-0082 score 0.86 (instagram 1869, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱
+- JR-0083 score 0.84 (instagram 2124, youtube 1518 views): Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1351 (n=20), night (18-24 IST) 1433 (n=21)
-- youtube slot medians: morning (06-12 IST) 900 (n=22), night (18-24 IST) 815 (n=23)
+- instagram slot medians: morning (06-12 IST) 1351 (n=20), night (18-24 IST) 1411 (n=21)
+- youtube slot medians: morning (06-12 IST) 900 (n=22), night (18-24 IST) 675 (n=23)
 - instagram: 2 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0115, JR-0099
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
