@@ -163,11 +163,11 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-22T20:41Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-23T03:55Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=42, median views 1422, best 5403, saves per 1k reach 7.8, stalled 1 (excluded)
-- **youtube**: n=45, median views 938, best 3834, saves per 1k reach None, stalled 0 (excluded)
-- **episodes scored** (IG + YT percentile): 47, 40 with both platforms
+- **instagram**: n=41, median views 1411, best 5408, saves per 1k reach 7.9, stalled 2 (excluded)
+- **youtube**: n=45, median views 863, best 3834, saves per 1k reach None, stalled 0 (excluded)
+- **episodes scored** (IG + YT percentile): 47, 39 with both platforms
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
@@ -183,9 +183,9 @@ _Last computed 2026-11-22T20:41Z from Buffer analytics, last 28 days, posts at l
 - JR-0082 score 0.85 (instagram 1868, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1384 (n=21), night (18-24 IST) 1433 (n=21)
-- youtube slot medians: morning (06-12 IST) 1000 (n=22), night (18-24 IST) 815 (n=23)
-- instagram: 1 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099
+- instagram slot medians: morning (06-12 IST) 1351 (n=20), night (18-24 IST) 1433 (n=21)
+- youtube slot medians: morning (06-12 IST) 900 (n=22), night (18-24 IST) 815 (n=23)
+- instagram: 2 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0115, JR-0099
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->
