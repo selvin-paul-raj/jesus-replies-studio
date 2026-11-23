@@ -42,3 +42,8 @@
 - 2026-11-21 YT guadalupe8666: Spanish blessing -> warm Spanish reply
 - 2026-11-21 YT guadalupe8666: Amen -> Amén
 - 2026-11-21 YT bevmoody61: Amen x2 (Nov 18, Nov 20 posts) -> short thanks
+- 2026-11-23 YT litup365: strength to open the door -> gentle prayer reply
+- 2026-11-23 YT AnneBartsch-v2n: "when do I get to die" (hopeless) -> care + trusted person/988 helpline
+- 2026-11-23 YT ELMES_RBLX x2, litup365, Antonia_Marilet-z1k, NayeliPortillo-x4m, bevmoody61: Amen -> short thanks
+- 2026-11-23 IG _kamal_x08: Amen -> short thanks
+- 2026-11-23 skipped: amaldavid3886 (not addressed to channel), nicolec4106 ("I am kehlani")
