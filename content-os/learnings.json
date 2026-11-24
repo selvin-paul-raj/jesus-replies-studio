@@ -1,36 +1,35 @@
 {
-  "as_of": "2026-11-24T09:48:06.855903+00:00",
+  "as_of": "2026-11-24T22:21:03.393902+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
     "instagram": {
-      "n": 41,
-      "n_stalled": 2,
+      "n": 42,
+      "n_stalled": 1,
       "stalled": [
-        "JR-0115",
         "JR-0099"
       ],
-      "stall_rate": 0.05,
-      "median_views": 1316,
-      "max_views": 4977,
-      "saves_per_1k_reach_median": 8.3,
+      "stall_rate": 0.02,
+      "median_views": 1310.5,
+      "max_views": 4979,
+      "saves_per_1k_reach_median": 8.4,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
-            "n": 20,
-            "median_views": 1312.5
+            "n": 21,
+            "median_views": 1317
           },
           "night (18-24 IST)": {
             "n": 21,
-            "median_views": 1411
+            "median_views": 1304
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0097",
-          "views": 4977,
+          "views": 4979,
           "saves": 70,
           "shares": 23,
           "theme": "part 2: at the next family lunch she finally answers the aunty who keeps asking when she will marry, gently and without shame",
@@ -41,7 +40,7 @@
         },
         {
           "episode_id": "JR-0106",
-          "views": 2436,
+          "views": 2438,
           "saves": 45,
           "shares": 29,
           "theme": "his visa was rejected a second time and he can't tell if he's still waiting on a door or banging on a wall",
@@ -52,7 +51,7 @@
         },
         {
           "episode_id": "JR-0084",
-          "views": 2286,
+          "views": 2288,
           "saves": 15,
           "shares": 3,
           "theme": "exhausted after a third late night, he fell asleep in the office washroom and told his manager he was on a call",
@@ -63,7 +62,7 @@
         },
         {
           "episode_id": "JR-0083",
-          "views": 2124,
+          "views": 2125,
           "saves": 27,
           "shares": 9,
           "theme": "her ex posted a photo with his new girlfriend and she liked it so he would think she is fine",
@@ -73,21 +72,30 @@
           "duration": "<=55s"
         },
         {
-          "episode_id": "JR-0072",
-          "views": 2107,
-          "saves": 5,
-          "shares": 3,
-          "theme": "told his mother he is too busy to come home for Diwali when really he does not want her to see how his year went",
-          "emotion": "sad",
-          "hook": "Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱",
+          "episode_id": "JR-0085",
+          "views": 2075,
+          "saves": 11,
+          "shares": 6,
+          "theme": "her best friend at work got the promotion she trained her for, and she clapped first while envy ate at her",
+          "emotion": "angry",
+          "hook": "Jesus... my best friend got the promotion I trained her for. I clapped first. 👏",
           "slot": "night (18-24 IST)",
-          "duration": "56-60s"
+          "duration": "<=55s"
         }
       ],
       "bottom": [
         {
+          "episode_id": "JR-0115",
+          "views": 107,
+          "theme": "the two-year plan she built her future on collapsed in one email and she is grieving the person she thought she'd become",
+          "emotion": "sad",
+          "hook": "Jesus... my two-year plan fell apart in one email.",
+          "slot": "morning (06-12 IST)",
+          "duration": "<=55s"
+        },
+        {
           "episode_id": "JR-0105",
-          "views": 197,
+          "views": 198,
           "theme": "she is in a long low season and every post telling her to count her blessings makes the dark feel worse",
           "emotion": "sad",
           "hook": "Jesus... every reel tonight said count your blessings. 😔",
@@ -96,7 +104,7 @@
         },
         {
           "episode_id": "JR-0098",
-          "views": 218,
+          "views": 219,
           "theme": "a viewer's comment: she forgave someone close but cannot trust her again, and feels hollow",
           "emotion": "sad",
           "hook": "Jesus... I forgave her. I just can't let her back in. 🥀",
@@ -114,49 +122,40 @@
         },
         {
           "episode_id": "JR-0110",
-          "views": 309,
+          "views": 311,
           "theme": "she loves her family but they cannot read what she is carrying, so she gives Amma half the story and feels loneliest at home",
           "emotion": "sad",
           "hook": "Jesus... my family loves me, but they don't understand me. 💔",
-          "slot": "night (18-24 IST)",
-          "duration": "<=55s"
-        },
-        {
-          "episode_id": "JR-0087",
-          "views": 374,
-          "theme": "her Bible app says it has been 412 days since she last read, and she swiped the reminder away in shame",
-          "emotion": "sad",
-          "hook": "Jesus... my Bible app says 412 days since I last read. I swiped the reminder away. 📖",
           "slot": "night (18-24 IST)",
           "duration": "<=55s"
         }
       ]
     },
     "youtube": {
-      "n": 45,
+      "n": 44,
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 815,
-      "max_views": 3834,
+      "median_views": 814.5,
+      "max_views": 3835,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 22,
-            "median_views": 858.5
+            "median_views": 859.5
           },
           "night (18-24 IST)": {
-            "n": 23,
-            "median_views": 675
+            "n": 22,
+            "median_views": 637.0
           }
         }
       },
       "top": [
         {
           "episode_id": "JR-0063",
-          "views": 3834,
+          "views": 3835,
           "saves": null,
           "shares": null,
           "theme": "she always texts first and wonders if anyone would notice if she stopped",
@@ -200,7 +199,7 @@
         },
         {
           "episode_id": "JR-0095",
-          "views": 1689,
+          "views": 1690,
           "saves": null,
           "shares": null,
           "theme": "good things finally arrived for him and he cannot enjoy any of it, always waiting for the catch",
@@ -213,7 +212,7 @@
       "bottom": [
         {
           "episode_id": "JR-0108",
-          "views": 6,
+          "views": 8,
           "theme": "his small shop hasn't turned a profit in a year and he can't tell hope apart from stubbornness",
           "emotion": "hopeful",
           "hook": "Jesus... the shop hasn't made a profit in a year. 🏪",
@@ -222,7 +221,7 @@
         },
         {
           "episode_id": "JR-0113",
-          "views": 109,
+          "views": 110,
           "theme": "she keeps waiting to feel ready to start the project she has planned for weeks, one more tutorial instead of the first try",
           "emotion": "worried",
           "hook": "Jesus... I keep waiting to feel ready before I start.",
@@ -231,7 +230,7 @@
         },
         {
           "episode_id": "JR-0106",
-          "views": 147,
+          "views": 148,
           "theme": "his visa was rejected a second time and he can't tell if he's still waiting on a door or banging on a wall",
           "emotion": "worried",
           "hook": "Jesus... the visa got rejected again. ✈️",
@@ -271,156 +270,152 @@
   "content": {
     "n_episodes": 47,
     "both_platforms": 39,
-    "median_score": 0.494,
+    "median_score": 0.489,
     "by_dimension": {
       "emotion": {
         "angry": {
           "n": 2,
-          "median_score": 0.655
+          "median_score": 0.6639999999999999
         },
         "crying": {
           "n": 2,
-          "median_score": 0.7010000000000001
+          "median_score": 0.705
         },
         "happy": {
           "n": 1,
-          "median_score": 0.742
+          "median_score": 0.758
         },
         "hopeful": {
           "n": 10,
-          "median_score": 0.435
+          "median_score": 0.447
         },
         "neutral": {
           "n": 3,
-          "median_score": 0.528
+          "median_score": 0.556
         },
         "sad": {
-          "n": 24,
-          "median_score": 0.481
+          "n": 23,
+          "median_score": 0.446
         },
         "worried": {
-          "n": 5,
-          "median_score": 0.442
+          "n": 6,
+          "median_score": 0.433
         }
       },
       "character": {
         "boy": {
           "n": 19,
-          "median_score": 0.528
+          "median_score": 0.511
         },
         "girl": {
           "n": 28,
-          "median_score": 0.4345
+          "median_score": 0.4675
         }
       },
       "hook_type": {
         "confession_statement": {
-          "n": 28,
-          "median_score": 0.4305
+          "n": 29,
+          "median_score": 0.436
         },
         "question": {
           "n": 7,
-          "median_score": 0.553
+          "median_score": 0.563
         },
         "statement": {
-          "n": 12,
-          "median_score": 0.5860000000000001
+          "n": 11,
+          "median_score": 0.565
         }
       },
       "duration": {
         "56-60s": {
           "n": 23,
-          "median_score": 0.442
+          "median_score": 0.446
         },
         "<=55s": {
           "n": 24,
-          "median_score": 0.5315000000000001
+          "median_score": 0.558
         }
       },
       "bible_book": {
         "1 Thessalonians": {
           "n": 1,
-          "median_score": 0.305
+          "median_score": 0.325
         },
         "2 Corinthians": {
           "n": 2,
-          "median_score": 0.47500000000000003
+          "median_score": 0.506
         },
         "Colossians": {
           "n": 1,
-          "median_score": 0.739
+          "median_score": 0.744
         },
         "Ecclesiastes": {
           "n": 2,
-          "median_score": 0.2815
+          "median_score": 0.3
         },
         "Ephesians": {
           "n": 2,
-          "median_score": 0.217
-        },
-        "Exodus": {
-          "n": 1,
-          "median_score": 0.802
+          "median_score": 0.237
         },
         "Galatians": {
           "n": 2,
-          "median_score": 0.7150000000000001
+          "median_score": 0.7330000000000001
         },
         "Hebrews": {
           "n": 2,
-          "median_score": 0.4235
+          "median_score": 0.4385
         },
         "Isaiah": {
           "n": 7,
-          "median_score": 0.381
+          "median_score": 0.399
         },
         "James": {
           "n": 1,
-          "median_score": 0.742
+          "median_score": 0.758
         },
         "Jeremiah": {
           "n": 1,
-          "median_score": 0.419
+          "median_score": 0.436
         },
         "John": {
           "n": 1,
-          "median_score": 0.175
+          "median_score": 0.189
         },
         "Lamentations": {
           "n": 1,
-          "median_score": 0.844
+          "median_score": 0.857
         },
         "Luke": {
           "n": 1,
-          "median_score": 0.818
+          "median_score": 0.814
         },
         "Mark": {
           "n": 1,
-          "median_score": 0.427
+          "median_score": 0.446
         },
         "Matthew": {
           "n": 5,
-          "median_score": 0.659
+          "median_score": 0.681
         },
         "Philippians": {
           "n": 1,
-          "median_score": 0.36
+          "median_score": 0.406
         },
         "Proverbs": {
           "n": 4,
-          "median_score": 0.528
+          "median_score": 0.5349999999999999
         },
         "Psalm": {
-          "n": 2,
-          "median_score": 0.46799999999999997
+          "n": 3,
+          "median_score": 0.489
         },
         "Psalms": {
           "n": 6,
-          "median_score": 0.548
+          "median_score": 0.5725
         },
         "Romans": {
           "n": 3,
-          "median_score": 0.126
+          "median_score": 0.141
         }
       }
     },
@@ -429,44 +424,44 @@
         "episode_id": "JR-0063",
         "score": 1.0,
         "views": {
-          "youtube": 3834
+          "youtube": 3835
         },
         "hook": "Jesus... I stopped texting first for a day. Nobody checked on me. 💔"
       },
       {
         "episode_id": "JR-0084",
-        "score": 0.895,
+        "score": 0.894,
         "views": {
-          "instagram": 2286,
-          "youtube": 1589
+          "instagram": 2288,
+          "youtube": 1590
         },
         "hook": "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨"
       },
       {
+        "episode_id": "JR-0082",
+        "score": 0.891,
+        "views": {
+          "instagram": 1870,
+          "youtube": 1779
+        },
+        "hook": "Jesus... I eat lunch on the office staircase every day. 🍱"
+      },
+      {
         "episode_id": "JR-0061",
-        "score": 0.886,
+        "score": 0.884,
         "views": {
           "youtube": 1620
         },
         "hook": "Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔"
       },
       {
-        "episode_id": "JR-0082",
-        "score": 0.877,
+        "episode_id": "JR-0102",
+        "score": 0.857,
         "views": {
-          "instagram": 1869,
-          "youtube": 1779
+          "instagram": 1954,
+          "youtube": 1606
         },
-        "hook": "Jesus... I eat lunch on the office staircase every day. 🍱"
-      },
-      {
-        "episode_id": "JR-0083",
-        "score": 0.849,
-        "views": {
-          "instagram": 2124,
-          "youtube": 1518
-        },
-        "hook": "Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔"
+        "hook": "Jesus... Two years. The same prayer. Nothing has moved. 🕯️"
       }
     ]
   },
@@ -474,17 +469,17 @@
     "lean_towards": [],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1312 (n=20), night (18-24 IST) 1411 (n=21)",
-      "youtube slot medians: morning (06-12 IST) 858 (n=22), night (18-24 IST) 675 (n=23)",
-      "instagram: 2 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0115, JR-0099",
+      "instagram slot medians: morning (06-12 IST) 1317 (n=21), night (18-24 IST) 1304 (n=21)",
+      "youtube slot medians: morning (06-12 IST) 860 (n=22), night (18-24 IST) 637 (n=22)",
+      "instagram: 1 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
-      "JR-0063 score 1.00 (youtube 3834 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
-      "JR-0084 score 0.90 (instagram 2286, youtube 1589 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
-      "JR-0061 score 0.89 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔",
-      "JR-0082 score 0.88 (instagram 1869, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱",
-      "JR-0083 score 0.85 (instagram 2124, youtube 1518 views): Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔"
+      "JR-0063 score 1.00 (youtube 3835 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
+      "JR-0084 score 0.89 (instagram 2288, youtube 1590 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+      "JR-0082 score 0.89 (instagram 1870, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱",
+      "JR-0061 score 0.88 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔",
+      "JR-0102 score 0.86 (instagram 1954, youtube 1606 views): Jesus... Two years. The same prayer. Nothing has moved. 🕯️"
     ]
   }
 }
