@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-23T23:49:02.292733+00:00",
+  "as_of": "2026-11-24T07:02:32.524585+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -11,15 +11,15 @@
         "JR-0099"
       ],
       "stall_rate": 0.05,
-      "median_views": 1386,
-      "max_views": 5412,
+      "median_views": 1316,
+      "max_views": 4977,
       "saves_per_1k_reach_median": 8.3,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
           "morning (06-12 IST)": {
             "n": 20,
-            "median_views": 1351.0
+            "median_views": 1312.5
           },
           "night (18-24 IST)": {
             "n": 21,
@@ -28,17 +28,6 @@
         }
       },
       "top": [
-        {
-          "episode_id": "JR-0071",
-          "views": 5412,
-          "saves": 66,
-          "shares": 25,
-          "theme": "relatives asking salary questions at the Diwali table while her job hunt is still going nowhere",
-          "emotion": "sad",
-          "hook": "Jesus... every aunty at Diwali asked what I earn. What do I even say? 😔",
-          "slot": "morning (06-12 IST)",
-          "duration": "<=55s"
-        },
         {
           "episode_id": "JR-0097",
           "views": 4977,
@@ -52,7 +41,7 @@
         },
         {
           "episode_id": "JR-0106",
-          "views": 2435,
+          "views": 2436,
           "saves": 45,
           "shares": 29,
           "theme": "his visa was rejected a second time and he can't tell if he's still waiting on a door or banging on a wall",
@@ -82,6 +71,17 @@
           "hook": "Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔",
           "slot": "night (18-24 IST)",
           "duration": "<=55s"
+        },
+        {
+          "episode_id": "JR-0072",
+          "views": 2107,
+          "saves": 5,
+          "shares": 3,
+          "theme": "told his mother he is too busy to come home for Diwali when really he does not want her to see how his year went",
+          "emotion": "sad",
+          "hook": "Jesus... Amma asked me to come home for Diwali. I said I’m busy. I’m not. 📱",
+          "slot": "night (18-24 IST)",
+          "duration": "56-60s"
         }
       ],
       "bottom": [
@@ -137,7 +137,7 @@
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 855,
+      "median_views": 815,
       "max_views": 3834,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
@@ -145,7 +145,7 @@
         "slot": {
           "morning (06-12 IST)": {
             "n": 22,
-            "median_views": 900.0
+            "median_views": 858.5
           },
           "night (18-24 IST)": {
             "n": 23,
@@ -271,70 +271,70 @@
   "content": {
     "n_episodes": 47,
     "both_platforms": 39,
-    "median_score": 0.498,
+    "median_score": 0.494,
     "by_dimension": {
       "emotion": {
         "angry": {
           "n": 2,
-          "median_score": 0.649
+          "median_score": 0.655
         },
         "crying": {
           "n": 2,
-          "median_score": 0.683
+          "median_score": 0.7010000000000001
         },
         "happy": {
           "n": 1,
-          "median_score": 0.73
+          "median_score": 0.742
         },
         "hopeful": {
           "n": 10,
-          "median_score": 0.429
+          "median_score": 0.435
         },
         "neutral": {
           "n": 3,
           "median_score": 0.528
         },
         "sad": {
-          "n": 25,
-          "median_score": 0.511
+          "n": 24,
+          "median_score": 0.481
         },
         "worried": {
-          "n": 4,
-          "median_score": 0.4155
+          "n": 5,
+          "median_score": 0.442
         }
       },
       "character": {
         "boy": {
           "n": 19,
-          "median_score": 0.511
+          "median_score": 0.528
         },
         "girl": {
           "n": 28,
-          "median_score": 0.434
+          "median_score": 0.4345
         }
       },
       "hook_type": {
         "confession_statement": {
-          "n": 27,
-          "median_score": 0.407
+          "n": 28,
+          "median_score": 0.4305
         },
         "question": {
-          "n": 8,
-          "median_score": 0.5885
+          "n": 7,
+          "median_score": 0.553
         },
         "statement": {
           "n": 12,
-          "median_score": 0.5795
+          "median_score": 0.5860000000000001
         }
       },
       "duration": {
         "56-60s": {
-          "n": 22,
-          "median_score": 0.434
+          "n": 23,
+          "median_score": 0.442
         },
         "<=55s": {
-          "n": 25,
-          "median_score": 0.528
+          "n": 24,
+          "median_score": 0.5315000000000001
         }
       },
       "bible_book": {
@@ -344,15 +344,15 @@
         },
         "2 Corinthians": {
           "n": 2,
-          "median_score": 0.463
+          "median_score": 0.47500000000000003
         },
         "Colossians": {
           "n": 1,
-          "median_score": 0.715
+          "median_score": 0.739
         },
         "Ecclesiastes": {
           "n": 2,
-          "median_score": 0.27549999999999997
+          "median_score": 0.2815
         },
         "Ephesians": {
           "n": 2,
@@ -360,15 +360,15 @@
         },
         "Exodus": {
           "n": 1,
-          "median_score": 0.79
+          "median_score": 0.802
         },
         "Galatians": {
           "n": 2,
-          "median_score": 0.7085
+          "median_score": 0.7150000000000001
         },
         "Hebrews": {
           "n": 2,
-          "median_score": 0.4115
+          "median_score": 0.4235
         },
         "Isaiah": {
           "n": 7,
@@ -376,11 +376,11 @@
         },
         "James": {
           "n": 1,
-          "median_score": 0.73
+          "median_score": 0.742
         },
         "Jeremiah": {
           "n": 1,
-          "median_score": 0.407
+          "median_score": 0.419
         },
         "John": {
           "n": 1,
@@ -388,7 +388,7 @@
         },
         "Lamentations": {
           "n": 1,
-          "median_score": 0.832
+          "median_score": 0.844
         },
         "Luke": {
           "n": 1,
@@ -396,11 +396,11 @@
         },
         "Mark": {
           "n": 1,
-          "median_score": 0.415
+          "median_score": 0.427
         },
         "Matthew": {
-          "n": 6,
-          "median_score": 0.71
+          "n": 5,
+          "median_score": 0.659
         },
         "Philippians": {
           "n": 1,
@@ -408,15 +408,15 @@
         },
         "Proverbs": {
           "n": 4,
-          "median_score": 0.5215000000000001
+          "median_score": 0.528
         },
         "Psalm": {
-          "n": 1,
-          "median_score": 0.482
+          "n": 2,
+          "median_score": 0.46799999999999997
         },
         "Psalms": {
           "n": 6,
-          "median_score": 0.524
+          "median_score": 0.548
         },
         "Romans": {
           "n": 3,
@@ -434,6 +434,15 @@
         "hook": "Jesus... I stopped texting first for a day. Nobody checked on me. 💔"
       },
       {
+        "episode_id": "JR-0084",
+        "score": 0.895,
+        "views": {
+          "instagram": 2286,
+          "youtube": 1589
+        },
+        "hook": "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨"
+      },
+      {
         "episode_id": "JR-0061",
         "score": 0.886,
         "views": {
@@ -442,17 +451,8 @@
         "hook": "Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔"
       },
       {
-        "episode_id": "JR-0084",
-        "score": 0.883,
-        "views": {
-          "instagram": 2286,
-          "youtube": 1589
-        },
-        "hook": "Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨"
-      },
-      {
         "episode_id": "JR-0082",
-        "score": 0.865,
+        "score": 0.877,
         "views": {
           "instagram": 1869,
           "youtube": 1779
@@ -461,7 +461,7 @@
       },
       {
         "episode_id": "JR-0083",
-        "score": 0.836,
+        "score": 0.849,
         "views": {
           "instagram": 2124,
           "youtube": 1518
@@ -474,17 +474,17 @@
     "lean_towards": [],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1351 (n=20), night (18-24 IST) 1411 (n=21)",
-      "youtube slot medians: morning (06-12 IST) 900 (n=22), night (18-24 IST) 675 (n=23)",
+      "instagram slot medians: morning (06-12 IST) 1312 (n=20), night (18-24 IST) 1411 (n=21)",
+      "youtube slot medians: morning (06-12 IST) 858 (n=22), night (18-24 IST) 675 (n=23)",
       "instagram: 2 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0115, JR-0099",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
       "JR-0063 score 1.00 (youtube 3834 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
+      "JR-0084 score 0.90 (instagram 2286, youtube 1589 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
       "JR-0061 score 0.89 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔",
-      "JR-0084 score 0.88 (instagram 2286, youtube 1589 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
-      "JR-0082 score 0.86 (instagram 1869, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱",
-      "JR-0083 score 0.84 (instagram 2124, youtube 1518 views): Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔"
+      "JR-0082 score 0.88 (instagram 1869, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱",
+      "JR-0083 score 0.85 (instagram 2124, youtube 1518 views): Jesus... he posted a photo with her today. I liked it so he'd think I'm fine. 💔"
     ]
   }
 }
