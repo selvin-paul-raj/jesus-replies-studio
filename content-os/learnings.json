@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-25T08:23:23.662973+00:00",
+  "as_of": "2026-11-25T21:37:18.637546+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -40,7 +40,7 @@
         },
         {
           "episode_id": "JR-0106",
-          "views": 2438,
+          "views": 2442,
           "saves": 45,
           "shares": 29,
           "theme": "his visa was rejected a second time and he can't tell if he's still waiting on a door or banging on a wall",
@@ -86,7 +86,7 @@
       "bottom": [
         {
           "episode_id": "JR-0115",
-          "views": 107,
+          "views": 113,
           "theme": "the two-year plan she built her future on collapsed in one email and she is grieving the person she thought she'd become",
           "emotion": "sad",
           "hook": "Jesus... my two-year plan fell apart in one email.",
@@ -95,7 +95,7 @@
         },
         {
           "episode_id": "JR-0105",
-          "views": 198,
+          "views": 200,
           "theme": "she is in a long low season and every post telling her to count her blessings makes the dark feel worse",
           "emotion": "sad",
           "hook": "Jesus... every reel tonight said count your blessings. 😔",
@@ -104,7 +104,7 @@
         },
         {
           "episode_id": "JR-0098",
-          "views": 219,
+          "views": 222,
           "theme": "a viewer's comment: she forgave someone close but cannot trust her again, and feels hollow",
           "emotion": "sad",
           "hook": "Jesus... I forgave her. I just can't let her back in. 🥀",
@@ -122,7 +122,7 @@
         },
         {
           "episode_id": "JR-0110",
-          "views": 311,
+          "views": 314,
           "theme": "she loves her family but they cannot read what she is carrying, so she gives Amma half the story and feels loneliest at home",
           "emotion": "sad",
           "hook": "Jesus... my family loves me, but they don't understand me. 💔",
@@ -136,7 +136,7 @@
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 814.5,
+      "median_views": 811.5,
       "max_views": 3835,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
@@ -144,7 +144,7 @@
         "slot": {
           "morning (06-12 IST)": {
             "n": 22,
-            "median_views": 854.0
+            "median_views": 859.5
           },
           "night (18-24 IST)": {
             "n": 22,
@@ -177,7 +177,7 @@
         },
         {
           "episode_id": "JR-0082",
-          "views": 1779,
+          "views": 1780,
           "saves": null,
           "shares": null,
           "theme": "he eats lunch on the office staircase every day and calls it a choice, but really no one ever asked him to join",
@@ -270,7 +270,7 @@
   "content": {
     "n_episodes": 47,
     "both_platforms": 39,
-    "median_score": 0.489,
+    "median_score": 0.5,
     "by_dimension": {
       "emotion": {
         "angry": {
@@ -279,61 +279,61 @@
         },
         "crying": {
           "n": 2,
-          "median_score": 0.711
+          "median_score": 0.717
         },
         "happy": {
           "n": 1,
-          "median_score": 0.77
+          "median_score": 0.782
         },
         "hopeful": {
           "n": 10,
-          "median_score": 0.45299999999999996
+          "median_score": 0.45899999999999996
         },
         "neutral": {
           "n": 3,
-          "median_score": 0.568
+          "median_score": 0.556
         },
         "sad": {
-          "n": 23,
-          "median_score": 0.446
+          "n": 22,
+          "median_score": 0.4285
         },
         "worried": {
-          "n": 6,
-          "median_score": 0.433
+          "n": 7,
+          "median_score": 0.489
         }
       },
       "character": {
         "boy": {
           "n": 20,
-          "median_score": 0.514
+          "median_score": 0.512
         },
         "girl": {
           "n": 27,
-          "median_score": 0.446
+          "median_score": 0.458
         }
       },
       "hook_type": {
         "confession_statement": {
-          "n": 29,
-          "median_score": 0.436
+          "n": 30,
+          "median_score": 0.4685
         },
         "question": {
-          "n": 7,
-          "median_score": 0.563
+          "n": 6,
+          "median_score": 0.5165
         },
         "statement": {
           "n": 11,
-          "median_score": 0.565
+          "median_score": 0.577
         }
       },
       "duration": {
         "56-60s": {
-          "n": 22,
-          "median_score": 0.441
+          "n": 21,
+          "median_score": 0.448
         },
         "<=55s": {
-          "n": 25,
-          "median_score": 0.563
+          "n": 26,
+          "median_score": 0.5365
         }
       },
       "bible_book": {
@@ -342,16 +342,16 @@
           "median_score": 0.325
         },
         "2 Corinthians": {
-          "n": 2,
-          "median_score": 0.506
+          "n": 1,
+          "median_score": 0.317
         },
         "Colossians": {
           "n": 1,
-          "median_score": 0.744
+          "median_score": 0.756
         },
         "Ecclesiastes": {
           "n": 2,
-          "median_score": 0.3
+          "median_score": 0.3035
         },
         "Ephesians": {
           "n": 2,
@@ -359,11 +359,11 @@
         },
         "Galatians": {
           "n": 1,
-          "median_score": 0.781
+          "median_score": 0.793
         },
         "Hebrews": {
           "n": 2,
-          "median_score": 0.444
+          "median_score": 0.4495
         },
         "Isaiah": {
           "n": 7,
@@ -371,11 +371,11 @@
         },
         "James": {
           "n": 1,
-          "median_score": 0.77
+          "median_score": 0.782
         },
         "Jeremiah": {
           "n": 1,
-          "median_score": 0.436
+          "median_score": 0.448
         },
         "John": {
           "n": 1,
@@ -383,19 +383,19 @@
         },
         "Lamentations": {
           "n": 1,
-          "median_score": 0.869
+          "median_score": 0.881
         },
         "Luke": {
           "n": 1,
           "median_score": 0.837
         },
         "Mark": {
-          "n": 1,
-          "median_score": 0.446
+          "n": 2,
+          "median_score": 0.48550000000000004
         },
         "Matthew": {
           "n": 5,
-          "median_score": 0.693
+          "median_score": 0.705
         },
         "Philippians": {
           "n": 1,
@@ -403,7 +403,7 @@
         },
         "Proverbs": {
           "n": 4,
-          "median_score": 0.5409999999999999
+          "median_score": 0.5469999999999999
         },
         "Psalm": {
           "n": 3,
@@ -411,11 +411,11 @@
         },
         "Psalms": {
           "n": 6,
-          "median_score": 0.5834999999999999
+          "median_score": 0.5845
         },
         "Revelation": {
           "n": 1,
-          "median_score": 0.487
+          "median_score": 0.51
         },
         "Romans": {
           "n": 3,
@@ -451,16 +451,16 @@
       },
       {
         "episode_id": "JR-0082",
-        "score": 0.891,
+        "score": 0.904,
         "views": {
           "instagram": 1870,
-          "youtube": 1779
+          "youtube": 1780
         },
         "hook": "Jesus... I eat lunch on the office staircase every day. 🍱"
       },
       {
         "episode_id": "JR-0102",
-        "score": 0.869,
+        "score": 0.881,
         "views": {
           "instagram": 1954,
           "youtube": 1606
@@ -474,7 +474,7 @@
     "avoid": [],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1317 (n=21), night (18-24 IST) 1304 (n=21)",
-      "youtube slot medians: morning (06-12 IST) 854 (n=22), night (18-24 IST) 637 (n=22)",
+      "youtube slot medians: morning (06-12 IST) 860 (n=22), night (18-24 IST) 637 (n=22)",
       "instagram: 1 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
@@ -482,8 +482,8 @@
       "JR-0063 score 1.00 (youtube 3835 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
       "JR-0061 score 0.91 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔",
       "JR-0084 score 0.91 (instagram 2288, youtube 1590 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
-      "JR-0082 score 0.89 (instagram 1870, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱",
-      "JR-0102 score 0.87 (instagram 1954, youtube 1606 views): Jesus... Two years. The same prayer. Nothing has moved. 🕯️"
+      "JR-0082 score 0.90 (instagram 1870, youtube 1780 views): Jesus... I eat lunch on the office staircase every day. 🍱",
+      "JR-0102 score 0.88 (instagram 1954, youtube 1606 views): Jesus... Two years. The same prayer. Nothing has moved. 🕯️"
     ]
   }
 }
