@@ -2,11 +2,11 @@
   "episode_id": "JR-0124",
   "platforms": {
     "instagram": {
-      "state": "SCHEDULED",
+      "state": "PUBLISHED_VERIFIED",
       "post_id": "6affd25b738ce4635f898b99",
       "due_at": "2026-11-25T02:30:00.000Z",
-      "sent_at": null,
-      "external_link": null,
+      "sent_at": "2026-11-25T02:31:34.999Z",
+      "external_link": "https://www.instagram.com/reel/DgJdiW7twRc/",
       "pending_mutation": null,
       "attempts": 1,
       "error": null,
@@ -24,18 +24,32 @@
           "to": "SCHEDULED",
           "run": "44941497347",
           "evidence": "schedule_draft read back: scheduled 2026-11-25T02:30:00.000Z"
+        },
+        {
+          "at": "2026-11-25T05:36:55.000Z",
+          "from": "SCHEDULED",
+          "to": "PUBLISHED",
+          "run": "45554714296",
+          "evidence": "read 6affd25b738ce4635f898b99: status sent at 2026-11-25T02:31:34.999Z"
+        },
+        {
+          "at": "2026-11-25T05:36:55.000Z",
+          "from": "PUBLISHED",
+          "to": "PUBLISHED_VERIFIED",
+          "run": "45554714296",
+          "evidence": "permalink http=200 metricsUpdatedAt=2026-11-20T04:53:47.312Z"
         }
       ]
     },
     "youtube": {
-      "state": "SCHEDULED",
+      "state": "FAILED",
       "post_id": "6b01f1ec142c9575193b773e",
       "due_at": "2026-11-25T02:30:00.000Z",
       "sent_at": null,
       "external_link": null,
       "pending_mutation": null,
       "attempts": 1,
-      "error": null,
+      "error": "Buffer status error",
       "history": [
         {
           "at": "2026-11-21T19:32:50.000Z",
@@ -43,6 +57,13 @@
           "to": "SCHEDULED",
           "run": "44941497347",
           "evidence": "create_scheduled read back: scheduled 2026-11-25T02:30:00.000Z"
+        },
+        {
+          "at": "2026-11-25T05:36:55.000Z",
+          "from": "SCHEDULED",
+          "to": "FAILED",
+          "run": "45554714296",
+          "evidence": "read 6b01f1ec142c9575193b773e: Buffer status error"
         }
       ]
     }

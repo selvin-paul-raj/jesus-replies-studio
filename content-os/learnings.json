@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-24T22:21:03.393902+00:00",
+  "as_of": "2026-11-25T05:36:55.017992+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -12,7 +12,7 @@
       "stall_rate": 0.02,
       "median_views": 1310.5,
       "max_views": 4979,
-      "saves_per_1k_reach_median": 8.4,
+      "saves_per_1k_reach_median": 8.5,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
@@ -144,7 +144,7 @@
         "slot": {
           "morning (06-12 IST)": {
             "n": 22,
-            "median_views": 859.5
+            "median_views": 854.0
           },
           "night (18-24 IST)": {
             "n": 22,
@@ -187,17 +187,6 @@
           "duration": "<=55s"
         },
         {
-          "episode_id": "JR-0073",
-          "views": 1769,
-          "saves": null,
-          "shares": null,
-          "theme": "spent three days decorating the house for Diwali and nobody noticed her effort",
-          "emotion": "sad",
-          "hook": "Jesus... I strung every light on our house for Diwali. Amma praised my sister’s rangoli. ✨",
-          "slot": "morning (06-12 IST)",
-          "duration": "56-60s"
-        },
-        {
           "episode_id": "JR-0095",
           "views": 1690,
           "saves": null,
@@ -205,6 +194,17 @@
           "theme": "good things finally arrived for him and he cannot enjoy any of it, always waiting for the catch",
           "emotion": "happy",
           "hook": "Jesus... good news came. I can't enjoy it. 🙂",
+          "slot": "night (18-24 IST)",
+          "duration": "56-60s"
+        },
+        {
+          "episode_id": "JR-0061",
+          "views": 1620,
+          "saves": null,
+          "shares": null,
+          "theme": "no time for himself anymore, everything is for others",
+          "emotion": "sad",
+          "hook": "Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔",
           "slot": "night (18-24 IST)",
           "duration": "56-60s"
         }
@@ -275,23 +275,23 @@
       "emotion": {
         "angry": {
           "n": 2,
-          "median_score": 0.6639999999999999
+          "median_score": 0.6759999999999999
         },
         "crying": {
           "n": 2,
-          "median_score": 0.705
+          "median_score": 0.711
         },
         "happy": {
           "n": 1,
-          "median_score": 0.758
+          "median_score": 0.77
         },
         "hopeful": {
           "n": 10,
-          "median_score": 0.447
+          "median_score": 0.45299999999999996
         },
         "neutral": {
           "n": 3,
-          "median_score": 0.556
+          "median_score": 0.568
         },
         "sad": {
           "n": 23,
@@ -304,12 +304,12 @@
       },
       "character": {
         "boy": {
-          "n": 19,
-          "median_score": 0.511
+          "n": 20,
+          "median_score": 0.514
         },
         "girl": {
-          "n": 28,
-          "median_score": 0.4675
+          "n": 27,
+          "median_score": 0.446
         }
       },
       "hook_type": {
@@ -328,12 +328,12 @@
       },
       "duration": {
         "56-60s": {
-          "n": 23,
-          "median_score": 0.446
+          "n": 22,
+          "median_score": 0.441
         },
         "<=55s": {
-          "n": 24,
-          "median_score": 0.558
+          "n": 25,
+          "median_score": 0.563
         }
       },
       "bible_book": {
@@ -358,20 +358,20 @@
           "median_score": 0.237
         },
         "Galatians": {
-          "n": 2,
-          "median_score": 0.7330000000000001
+          "n": 1,
+          "median_score": 0.781
         },
         "Hebrews": {
           "n": 2,
-          "median_score": 0.4385
+          "median_score": 0.444
         },
         "Isaiah": {
           "n": 7,
-          "median_score": 0.399
+          "median_score": 0.41
         },
         "James": {
           "n": 1,
-          "median_score": 0.758
+          "median_score": 0.77
         },
         "Jeremiah": {
           "n": 1,
@@ -383,11 +383,11 @@
         },
         "Lamentations": {
           "n": 1,
-          "median_score": 0.857
+          "median_score": 0.869
         },
         "Luke": {
           "n": 1,
-          "median_score": 0.814
+          "median_score": 0.837
         },
         "Mark": {
           "n": 1,
@@ -395,7 +395,7 @@
         },
         "Matthew": {
           "n": 5,
-          "median_score": 0.681
+          "median_score": 0.693
         },
         "Philippians": {
           "n": 1,
@@ -403,7 +403,7 @@
         },
         "Proverbs": {
           "n": 4,
-          "median_score": 0.5349999999999999
+          "median_score": 0.5409999999999999
         },
         "Psalm": {
           "n": 3,
@@ -411,7 +411,11 @@
         },
         "Psalms": {
           "n": 6,
-          "median_score": 0.5725
+          "median_score": 0.5834999999999999
+        },
+        "Revelation": {
+          "n": 1,
+          "median_score": 0.487
         },
         "Romans": {
           "n": 3,
@@ -429,8 +433,16 @@
         "hook": "Jesus... I stopped texting first for a day. Nobody checked on me. 💔"
       },
       {
+        "episode_id": "JR-0061",
+        "score": 0.907,
+        "views": {
+          "youtube": 1620
+        },
+        "hook": "Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔"
+      },
+      {
         "episode_id": "JR-0084",
-        "score": 0.894,
+        "score": 0.906,
         "views": {
           "instagram": 2288,
           "youtube": 1590
@@ -447,16 +459,8 @@
         "hook": "Jesus... I eat lunch on the office staircase every day. 🍱"
       },
       {
-        "episode_id": "JR-0061",
-        "score": 0.884,
-        "views": {
-          "youtube": 1620
-        },
-        "hook": "Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔"
-      },
-      {
         "episode_id": "JR-0102",
-        "score": 0.857,
+        "score": 0.869,
         "views": {
           "instagram": 1954,
           "youtube": 1606
@@ -470,16 +474,16 @@
     "avoid": [],
     "evidence_notes": [
       "instagram slot medians: morning (06-12 IST) 1317 (n=21), night (18-24 IST) 1304 (n=21)",
-      "youtube slot medians: morning (06-12 IST) 860 (n=22), night (18-24 IST) 637 (n=22)",
+      "youtube slot medians: morning (06-12 IST) 854 (n=22), night (18-24 IST) 637 (n=22)",
       "instagram: 1 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
       "JR-0063 score 1.00 (youtube 3835 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
-      "JR-0084 score 0.89 (instagram 2288, youtube 1590 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+      "JR-0061 score 0.91 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔",
+      "JR-0084 score 0.91 (instagram 2288, youtube 1590 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
       "JR-0082 score 0.89 (instagram 1870, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱",
-      "JR-0061 score 0.88 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔",
-      "JR-0102 score 0.86 (instagram 1954, youtube 1606 views): Jesus... Two years. The same prayer. Nothing has moved. 🕯️"
+      "JR-0102 score 0.87 (instagram 1954, youtube 1606 views): Jesus... Two years. The same prayer. Nothing has moved. 🕯️"
     ]
   }
 }

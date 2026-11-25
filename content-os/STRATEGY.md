@@ -163,9 +163,9 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-24T22:21Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-25T05:36Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=42, median views 1310, best 4979, saves per 1k reach 8.4, stalled 1 (excluded)
+- **instagram**: n=42, median views 1310, best 4979, saves per 1k reach 8.5, stalled 1 (excluded)
 - **youtube**: n=44, median views 814, best 3835, saves per 1k reach None, stalled 0 (excluded)
 - **episodes scored** (IG + YT percentile): 47, 39 with both platforms
 
@@ -177,14 +177,14 @@ _Last computed 2026-11-24T22:21Z from Buffer analytics, last 28 days, posts at l
 
 **Hooks that travelled furthest (learn the shape, never copy the story):**
 - JR-0063 score 1.00 (youtube 3835 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔
-- JR-0084 score 0.89 (instagram 2288, youtube 1590 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨
+- JR-0061 score 0.91 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔
+- JR-0084 score 0.91 (instagram 2288, youtube 1590 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨
 - JR-0082 score 0.89 (instagram 1870, youtube 1779 views): Jesus... I eat lunch on the office staircase every day. 🍱
-- JR-0061 score 0.88 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔
-- JR-0102 score 0.86 (instagram 1954, youtube 1606 views): Jesus... Two years. The same prayer. Nothing has moved. 🕯️
+- JR-0102 score 0.87 (instagram 1954, youtube 1606 views): Jesus... Two years. The same prayer. Nothing has moved. 🕯️
 
 **Evidence notes:**
 - instagram slot medians: morning (06-12 IST) 1317 (n=21), night (18-24 IST) 1304 (n=21)
-- youtube slot medians: morning (06-12 IST) 860 (n=22), night (18-24 IST) 637 (n=22)
+- youtube slot medians: morning (06-12 IST) 854 (n=22), night (18-24 IST) 637 (n=22)
 - instagram: 1 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)

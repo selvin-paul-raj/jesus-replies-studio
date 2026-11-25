@@ -1136,12 +1136,12 @@
     "title": "Jesus... My Dream Stopped Feeling Like A Promise. 📖",
     "slot": null,
     "target_date": null,
-    "state": "SCHEDULED",
+    "state": "PUBLISHED_VERIFIED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0124/JR-0124.mp4",
     "buffer_post_id": "6affd25b738ce4635f898b99",
     "scheduled_at": "2026-11-25T02:30:00.000Z",
-    "published_at": null,
-    "verification_status": "NOT_VERIFIED"
+    "published_at": "2026-11-25T02:31:34.999Z",
+    "verification_status": "PUBLISHED_VERIFIED"
   },
   {
     "episode_id": "JR-0125",
@@ -1227,10 +1227,10 @@
     "title": "Jesus... The Ache Never Fully Left. 🩹",
     "slot": null,
     "target_date": null,
-    "state": "APPROVED",
+    "state": "SCHEDULED",
     "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0131/JR-0131.mp4",
     "buffer_post_id": "6b03c4b5a6de38de9ebc4eec",
-    "scheduled_at": null,
+    "scheduled_at": "2026-11-29T02:30:00.000Z",
     "published_at": null,
     "verification_status": "NOT_VERIFIED"
   },
