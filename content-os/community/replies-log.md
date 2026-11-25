@@ -47,3 +47,5 @@
 - 2026-11-23 YT ELMES_RBLX x2, litup365, Antonia_Marilet-z1k, NayeliPortillo-x4m, bevmoody61: Amen -> short thanks
 - 2026-11-23 IG _kamal_x08: Amen -> short thanks
 - 2026-11-23 skipped: amaldavid3886 (not addressed to channel), nicolec4106 ("I am kehlani")
+- 2026-11-25 YT Antonia_Marilet-z1k, kishanraphael: Amen -> short thanks (Buffer)
+- 2026-11-25 skipped: amaldavid3886, nicolec4106 (as before); IG 3 emoji-only
