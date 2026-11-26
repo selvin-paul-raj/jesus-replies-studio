@@ -163,9 +163,9 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-26T08:08Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-26T21:26Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=42, median views 1310, best 4979, saves per 1k reach 8.5, stalled 1 (excluded)
+- **instagram**: n=42, median views 1286, best 4979, saves per 1k reach 8.7, stalled 1 (excluded)
 - **youtube**: n=44, median views 812, best 3835, saves per 1k reach None, stalled 0 (excluded)
 - **episodes scored** (IG + YT percentile): 47, 39 with both platforms
 
@@ -183,7 +183,7 @@ _Last computed 2026-11-26T08:08Z from Buffer analytics, last 28 days, posts at l
 - JR-0102 score 0.88 (instagram 1954, youtube 1606 views): Jesus... Two years. The same prayer. Nothing has moved. 🕯️
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1317 (n=21), night (18-24 IST) 1304 (n=21)
+- instagram slot medians: morning (06-12 IST) 1317 (n=21), night (18-24 IST) 1267 (n=21)
 - youtube slot medians: morning (06-12 IST) 860 (n=22), night (18-24 IST) 637 (n=22)
 - instagram: 1 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099
 - rules need n>=8 episodes per bucket; smaller buckets are reported only

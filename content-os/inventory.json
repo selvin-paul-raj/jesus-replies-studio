@@ -1,9 +1,9 @@
 {
   "counts": {
     "UNUSED": 26,
-    "PUBLISHED": 96,
+    "PUBLISHED": 97,
     "FAILED": 4,
-    "SCHEDULED": 7
+    "SCHEDULED": 6
   },
   "next_ready": [],
   "ready_total": 0,
@@ -875,7 +875,6 @@
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0066/JR-0066.mp4",
       "duration_s": 51.71,
       "published_on": [
-        "instagram",
         "youtube"
       ]
     },
@@ -1709,15 +1708,18 @@
     },
     {
       "episode_id": "JR-0123",
-      "status": "SCHEDULED",
-      "why": "instagram=SCHEDULED, youtube=SCHEDULED",
+      "status": "PUBLISHED",
+      "why": "all platforms",
       "platforms": {
-        "instagram": "SCHEDULED",
-        "youtube": "SCHEDULED"
+        "instagram": "PUBLISHED_VERIFIED",
+        "youtube": "PUBLISHED_VERIFIED"
       },
       "asset_url": "https://github.com/selvin-paul-raj/jesus-replies-studio/releases/download/jr-ep-JR-0123/JR-0123.mp4",
       "duration_s": 50.71,
-      "published_on": []
+      "published_on": [
+        "instagram",
+        "youtube"
+      ]
     },
     {
       "episode_id": "JR-0124",
@@ -1836,5 +1838,5 @@
       "published_on": []
     }
   ],
-  "as_of": "2026-11-26T08:08:19.659007+00:00"
+  "as_of": "2026-11-26T21:26:28.374882+00:00"
 }

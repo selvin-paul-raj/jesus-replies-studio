@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-26T08:08:19.659007+00:00",
+  "as_of": "2026-11-26T21:26:28.374882+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -10,9 +10,9 @@
         "JR-0099"
       ],
       "stall_rate": 0.02,
-      "median_views": 1310.5,
+      "median_views": 1285.5,
       "max_views": 4979,
-      "saves_per_1k_reach_median": 8.5,
+      "saves_per_1k_reach_median": 8.7,
       "avg_watch_time_available": true,
       "by_dimension": {
         "slot": {
@@ -22,7 +22,7 @@
           },
           "night (18-24 IST)": {
             "n": 21,
-            "median_views": 1304
+            "median_views": 1267
           }
         }
       },
@@ -40,7 +40,7 @@
         },
         {
           "episode_id": "JR-0106",
-          "views": 2442,
+          "views": 2443,
           "saves": 45,
           "shares": 29,
           "theme": "his visa was rejected a second time and he can't tell if he's still waiting on a door or banging on a wall",
@@ -113,7 +113,7 @@
         },
         {
           "episode_id": "JR-0110",
-          "views": 314,
+          "views": 315,
           "theme": "she loves her family but they cannot read what she is carrying, so she gives Amma half the story and feels loneliest at home",
           "emotion": "sad",
           "hook": "Jesus... my family loves me, but they don't understand me. 💔",
@@ -212,7 +212,7 @@
       "bottom": [
         {
           "episode_id": "JR-0108",
-          "views": 8,
+          "views": 9,
           "theme": "his small shop hasn't turned a profit in a year and he can't tell hope apart from stubbornness",
           "emotion": "hopeful",
           "hook": "Jesus... the shop hasn't made a profit in a year. 🏪",
@@ -270,7 +270,7 @@
   "content": {
     "n_episodes": 47,
     "both_platforms": 39,
-    "median_score": 0.5,
+    "median_score": 0.511,
     "by_dimension": {
       "emotion": {
         "angry": {
@@ -283,7 +283,7 @@
         },
         "happy": {
           "n": 1,
-          "median_score": 0.782
+          "median_score": 0.794
         },
         "hopeful": {
           "n": 11,
@@ -291,35 +291,35 @@
         },
         "neutral": {
           "n": 3,
-          "median_score": 0.556
+          "median_score": 0.568
         },
         "sad": {
           "n": 21,
-          "median_score": 0.447
+          "median_score": 0.39
         },
         "worried": {
           "n": 7,
-          "median_score": 0.489
+          "median_score": 0.501
         }
       },
       "character": {
         "boy": {
-          "n": 20,
-          "median_score": 0.512
+          "n": 21,
+          "median_score": 0.517
         },
         "girl": {
-          "n": 27,
-          "median_score": 0.448
+          "n": 26,
+          "median_score": 0.47450000000000003
         }
       },
       "hook_type": {
         "confession_statement": {
-          "n": 31,
-          "median_score": 0.448
+          "n": 32,
+          "median_score": 0.43
         },
         "question": {
-          "n": 5,
-          "median_score": 0.575
+          "n": 4,
+          "median_score": 0.6399999999999999
         },
         "statement": {
           "n": 11,
@@ -328,22 +328,22 @@
       },
       "duration": {
         "56-60s": {
-          "n": 22,
-          "median_score": 0.4265
+          "n": 21,
+          "median_score": 0.412
         },
         "<=55s": {
-          "n": 25,
-          "median_score": 0.556
+          "n": 26,
+          "median_score": 0.5485
         }
       },
       "bible_book": {
         "1 Thessalonians": {
           "n": 1,
-          "median_score": 0.325
+          "median_score": 0.337
         },
         "2 Corinthians": {
           "n": 1,
-          "median_score": 0.317
+          "median_score": 0.341
         },
         "Colossians": {
           "n": 1,
@@ -351,7 +351,7 @@
         },
         "Ecclesiastes": {
           "n": 2,
-          "median_score": 0.3035
+          "median_score": 0.3095
         },
         "Ephesians": {
           "n": 1,
@@ -359,11 +359,11 @@
         },
         "Galatians": {
           "n": 1,
-          "median_score": 0.793
+          "median_score": 0.805
         },
         "Hebrews": {
           "n": 2,
-          "median_score": 0.4435
+          "median_score": 0.4495
         },
         "Isaiah": {
           "n": 7,
@@ -371,7 +371,7 @@
         },
         "James": {
           "n": 1,
-          "median_score": 0.782
+          "median_score": 0.794
         },
         "Jeremiah": {
           "n": 1,
@@ -379,7 +379,7 @@
         },
         "John": {
           "n": 1,
-          "median_score": 0.165
+          "median_score": 0.153
         },
         "Lamentations": {
           "n": 1,
@@ -387,11 +387,11 @@
         },
         "Luke": {
           "n": 2,
-          "median_score": 0.5369999999999999
+          "median_score": 0.531
         },
         "Mark": {
-          "n": 2,
-          "median_score": 0.48
+          "n": 1,
+          "median_score": 0.525
         },
         "Matthew": {
           "n": 5,
@@ -399,7 +399,7 @@
         },
         "Philippians": {
           "n": 1,
-          "median_score": 0.406
+          "median_score": 0.412
         },
         "Proverbs": {
           "n": 4,
@@ -407,19 +407,23 @@
         },
         "Psalm": {
           "n": 3,
-          "median_score": 0.489
+          "median_score": 0.501
         },
         "Psalms": {
           "n": 6,
-          "median_score": 0.5845
+          "median_score": 0.5965
         },
         "Revelation": {
           "n": 1,
-          "median_score": 0.51
+          "median_score": 0.529
         },
         "Romans": {
           "n": 3,
-          "median_score": 0.129
+          "median_score": 0.122
+        },
+        "Titus": {
+          "n": 1,
+          "median_score": 0.298
         }
       }
     },
@@ -473,7 +477,7 @@
     "lean_towards": [],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1317 (n=21), night (18-24 IST) 1304 (n=21)",
+      "instagram slot medians: morning (06-12 IST) 1317 (n=21), night (18-24 IST) 1267 (n=21)",
       "youtube slot medians: morning (06-12 IST) 860 (n=22), night (18-24 IST) 637 (n=22)",
       "instagram: 1 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
