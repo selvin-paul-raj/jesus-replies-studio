@@ -49,3 +49,10 @@ YouTube (n=64):
 **Rules:** R1-R15 unchanged; nothing official contradicts them.
 
 **Timing (EXP-005 interim, n<10):** IG 19:30 1,466 (n=8) = 1.08x the 20:30 control; IG 08:00 1,804.5 (n=8). YT 19:30 1,463 (n=7) = 2.39x control and above YT 08:00 1,260 (n=8). Keep 08:00 + 19:30 on both. No 13:00 test; the 05:00 YouTube idea is not supported. Next read 2026-11-26.
+
+## Review 2026-11-26
+- 2026-11-17 Instagram "content protection" expanded to detect unauthorized reposts and AI-modified copies of original Reels (https://techcrunch.com/2026/11/17/instagrams-new-tool-for-creators-targets-unauthorized-reposts-and-ai-modified-videos/). Helps original channels; no rule change.
+- 2026-11-17 Meta India recommendation guideline update (https://about.fb.com/news/2026/11/an-update-on-the-content-we-recommend-on-instagram-in-india). Detection tightening only; no rule change.
+- 2026-11-18 Instagram hashtag search API top_media changes from 2027-02-16 (https://developers.facebook.com/documentation/instagram-platform/changelog). Not relevant to ranking.
+- 2026-11-13 YouTube Studio: Research tab and revamped Insights (https://support.google.com/youtube/blog/476500653). Idea tool only.
+- No official change contradicts R1-R15.
