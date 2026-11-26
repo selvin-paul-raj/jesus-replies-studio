@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-25T21:37:18.637546+00:00",
+  "as_of": "2026-11-26T05:19:43.894805+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -112,20 +112,20 @@
           "duration": "<=55s"
         },
         {
-          "episode_id": "JR-0075",
-          "views": 233,
-          "theme": "she told her athai her Diwali gift is her favourite when it is not, and the small lie is eating at her",
-          "emotion": "sad",
-          "hook": "Jesus... Athai's Diwali gift. Why did I call it my favourite? 🎁",
-          "slot": "morning (06-12 IST)",
-          "duration": "<=55s"
-        },
-        {
           "episode_id": "JR-0110",
           "views": 314,
           "theme": "she loves her family but they cannot read what she is carrying, so she gives Amma half the story and feels loneliest at home",
           "emotion": "sad",
           "hook": "Jesus... my family loves me, but they don't understand me. 💔",
+          "slot": "night (18-24 IST)",
+          "duration": "<=55s"
+        },
+        {
+          "episode_id": "JR-0087",
+          "views": 375,
+          "theme": "her Bible app says it has been 412 days since she last read, and she swiped the reminder away in shame",
+          "emotion": "sad",
+          "hook": "Jesus... my Bible app says 412 days since I last read. I swiped the reminder away. 📖",
           "slot": "night (18-24 IST)",
           "duration": "<=55s"
         }
@@ -286,16 +286,16 @@
           "median_score": 0.782
         },
         "hopeful": {
-          "n": 10,
-          "median_score": 0.45899999999999996
+          "n": 11,
+          "median_score": 0.448
         },
         "neutral": {
           "n": 3,
           "median_score": 0.556
         },
         "sad": {
-          "n": 22,
-          "median_score": 0.4285
+          "n": 21,
+          "median_score": 0.447
         },
         "worried": {
           "n": 7,
@@ -309,17 +309,17 @@
         },
         "girl": {
           "n": 27,
-          "median_score": 0.458
+          "median_score": 0.448
         }
       },
       "hook_type": {
         "confession_statement": {
-          "n": 30,
-          "median_score": 0.4685
+          "n": 31,
+          "median_score": 0.448
         },
         "question": {
-          "n": 6,
-          "median_score": 0.5165
+          "n": 5,
+          "median_score": 0.575
         },
         "statement": {
           "n": 11,
@@ -328,12 +328,12 @@
       },
       "duration": {
         "56-60s": {
-          "n": 21,
-          "median_score": 0.448
+          "n": 22,
+          "median_score": 0.4265
         },
         "<=55s": {
-          "n": 26,
-          "median_score": 0.5365
+          "n": 25,
+          "median_score": 0.556
         }
       },
       "bible_book": {
@@ -354,8 +354,8 @@
           "median_score": 0.3035
         },
         "Ephesians": {
-          "n": 2,
-          "median_score": 0.237
+          "n": 1,
+          "median_score": 0.344
         },
         "Galatians": {
           "n": 1,
@@ -363,11 +363,11 @@
         },
         "Hebrews": {
           "n": 2,
-          "median_score": 0.4495
+          "median_score": 0.4435
         },
         "Isaiah": {
           "n": 7,
-          "median_score": 0.41
+          "median_score": 0.398
         },
         "James": {
           "n": 1,
@@ -379,19 +379,19 @@
         },
         "John": {
           "n": 1,
-          "median_score": 0.189
+          "median_score": 0.165
         },
         "Lamentations": {
           "n": 1,
           "median_score": 0.881
         },
         "Luke": {
-          "n": 1,
-          "median_score": 0.837
+          "n": 2,
+          "median_score": 0.5369999999999999
         },
         "Mark": {
           "n": 2,
-          "median_score": 0.48550000000000004
+          "median_score": 0.48
         },
         "Matthew": {
           "n": 5,
@@ -419,7 +419,7 @@
         },
         "Romans": {
           "n": 3,
-          "median_score": 0.141
+          "median_score": 0.129
         }
       }
     },
