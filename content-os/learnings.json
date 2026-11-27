@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-27T08:18:29.444743+00:00",
+  "as_of": "2026-11-27T21:10:18.797522+00:00",
   "window_days": 28,
   "min_n": 8,
   "platforms": {
@@ -10,7 +10,7 @@
         "JR-0099"
       ],
       "stall_rate": 0.02,
-      "median_views": 1267.0,
+      "median_views": 1266.0,
       "max_views": 4979,
       "saves_per_1k_reach_median": 8.7,
       "avg_watch_time_available": true,
@@ -22,7 +22,7 @@
           },
           "night (18-24 IST)": {
             "n": 21,
-            "median_views": 1267
+            "median_views": 1265
           }
         }
       },
@@ -40,7 +40,7 @@
         },
         {
           "episode_id": "JR-0106",
-          "views": 2443,
+          "views": 2446,
           "saves": 45,
           "shares": 29,
           "theme": "his visa was rejected a second time and he can't tell if he's still waiting on a door or banging on a wall",
@@ -136,7 +136,7 @@
       "n_stalled": 0,
       "stalled": [],
       "stall_rate": 0.0,
-      "median_views": 809,
+      "median_views": 791,
       "max_views": 3835,
       "saves_per_1k_reach_median": null,
       "avg_watch_time_available": false,
@@ -161,17 +161,6 @@
           "theme": "she always texts first and wonders if anyone would notice if she stopped",
           "emotion": "sad",
           "hook": "Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
-          "slot": "night (18-24 IST)",
-          "duration": "<=55s"
-        },
-        {
-          "episode_id": "JR-0081",
-          "views": 1986,
-          "saves": null,
-          "shares": null,
-          "theme": "she'd rather carry her struggles alone than risk being a burden, even when she's close to breaking",
-          "emotion": "sad",
-          "hook": "Jesus... why can't I ask anyone for help even when I'm drowning? 😔",
           "slot": "night (18-24 IST)",
           "duration": "<=55s"
         },
@@ -205,6 +194,17 @@
           "theme": "no time for himself anymore, everything is for others",
           "emotion": "sad",
           "hook": "Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔",
+          "slot": "night (18-24 IST)",
+          "duration": "56-60s"
+        },
+        {
+          "episode_id": "JR-0102",
+          "views": 1607,
+          "saves": null,
+          "shares": null,
+          "theme": "he has prayed the same prayer for two years with no change and wonders if God is tired of hearing it",
+          "emotion": "hopeful",
+          "hook": "Jesus... Two years. The same prayer. Nothing has moved. 🕯️",
           "slot": "night (18-24 IST)",
           "duration": "56-60s"
         }
@@ -270,32 +270,32 @@
   "content": {
     "n_episodes": 47,
     "both_platforms": 38,
-    "median_score": 0.512,
+    "median_score": 0.479,
     "by_dimension": {
       "emotion": {
         "angry": {
           "n": 2,
-          "median_score": 0.6795
+          "median_score": 0.6915
         },
         "crying": {
           "n": 2,
-          "median_score": 0.724
+          "median_score": 0.73
         },
         "happy": {
           "n": 1,
-          "median_score": 0.806
+          "median_score": 0.818
         },
         "hopeful": {
           "n": 12,
-          "median_score": 0.4455
+          "median_score": 0.4515
         },
         "neutral": {
           "n": 3,
-          "median_score": 0.577
+          "median_score": 0.589
         },
         "sad": {
           "n": 20,
-          "median_score": 0.399
+          "median_score": 0.405
         },
         "worried": {
           "n": 7,
@@ -305,7 +305,7 @@
       "character": {
         "boy": {
           "n": 22,
-          "median_score": 0.5195000000000001
+          "median_score": 0.5255000000000001
         },
         "girl": {
           "n": 25,
@@ -315,31 +315,31 @@
       "hook_type": {
         "confession_statement": {
           "n": 33,
-          "median_score": 0.429
+          "median_score": 0.441
         },
         "question": {
-          "n": 3,
-          "median_score": 0.592
+          "n": 2,
+          "median_score": 0.4175
         },
         "statement": {
-          "n": 11,
-          "median_score": 0.581
+          "n": 12,
+          "median_score": 0.5465
         }
       },
       "duration": {
         "56-60s": {
-          "n": 21,
-          "median_score": 0.429
+          "n": 22,
+          "median_score": 0.4515
         },
         "<=55s": {
-          "n": 26,
-          "median_score": 0.5455000000000001
+          "n": 25,
+          "median_score": 0.567
         }
       },
       "bible_book": {
         "1 Thessalonians": {
           "n": 1,
-          "median_score": 0.352
+          "median_score": 0.364
         },
         "2 Corinthians": {
           "n": 1,
@@ -347,7 +347,7 @@
         },
         "Colossians": {
           "n": 1,
-          "median_score": 0.762
+          "median_score": 0.774
         },
         "Ecclesiastes": {
           "n": 2,
@@ -357,21 +357,17 @@
           "n": 1,
           "median_score": 0.361
         },
-        "Galatians": {
-          "n": 1,
-          "median_score": 0.817
-        },
         "Hebrews": {
           "n": 2,
-          "median_score": 0.4565
+          "median_score": 0.47500000000000003
         },
         "Isaiah": {
           "n": 7,
-          "median_score": 0.394
+          "median_score": 0.406
         },
         "James": {
           "n": 1,
-          "median_score": 0.806
+          "median_score": 0.818
         },
         "Jeremiah": {
           "n": 1,
@@ -383,19 +379,19 @@
         },
         "Lamentations": {
           "n": 1,
-          "median_score": 0.88
+          "median_score": 0.891
         },
         "Luke": {
           "n": 2,
-          "median_score": 0.5369999999999999
+          "median_score": 0.5489999999999999
         },
         "Mark": {
           "n": 1,
-          "median_score": 0.543
+          "median_score": 0.567
         },
         "Matthew": {
           "n": 4,
-          "median_score": 0.74
+          "median_score": 0.752
         },
         "Micah": {
           "n": 1,
@@ -403,23 +399,23 @@
         },
         "Philippians": {
           "n": 1,
-          "median_score": 0.429
+          "median_score": 0.441
         },
         "Proverbs": {
           "n": 4,
-          "median_score": 0.554
+          "median_score": 0.56
         },
         "Psalm": {
-          "n": 3,
-          "median_score": 0.519
+          "n": 4,
+          "median_score": 0.5065
         },
         "Psalms": {
           "n": 6,
-          "median_score": 0.615
+          "median_score": 0.633
         },
         "Revelation": {
           "n": 1,
-          "median_score": 0.548
+          "median_score": 0.572
         },
         "Romans": {
           "n": 3,
@@ -442,7 +438,7 @@
       },
       {
         "episode_id": "JR-0061",
-        "score": 0.905,
+        "score": 0.929,
         "views": {
           "youtube": 1620
         },
@@ -450,7 +446,7 @@
       },
       {
         "episode_id": "JR-0084",
-        "score": 0.904,
+        "score": 0.916,
         "views": {
           "instagram": 2288,
           "youtube": 1590
@@ -459,7 +455,7 @@
       },
       {
         "episode_id": "JR-0082",
-        "score": 0.903,
+        "score": 0.915,
         "views": {
           "instagram": 1870,
           "youtube": 1780
@@ -468,10 +464,10 @@
       },
       {
         "episode_id": "JR-0102",
-        "score": 0.88,
+        "score": 0.891,
         "views": {
           "instagram": 1954,
-          "youtube": 1606
+          "youtube": 1607
         },
         "hook": "Jesus... Two years. The same prayer. Nothing has moved. 🕯️"
       }
@@ -481,17 +477,17 @@
     "lean_towards": [],
     "avoid": [],
     "evidence_notes": [
-      "instagram slot medians: morning (06-12 IST) 1267 (n=21), night (18-24 IST) 1267 (n=21)",
+      "instagram slot medians: morning (06-12 IST) 1267 (n=21), night (18-24 IST) 1265 (n=21)",
       "youtube slot medians: morning (06-12 IST) 856 (n=21), night (18-24 IST) 637 (n=22)",
       "instagram: 1 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099",
       "rules need n>=8 episodes per bucket; smaller buckets are reported only"
     ],
     "top_hooks_to_learn_from": [
       "JR-0063 score 1.00 (youtube 3835 views): Jesus... I stopped texting first for a day. Nobody checked on me. 💔",
-      "JR-0061 score 0.91 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔",
-      "JR-0084 score 0.90 (instagram 2288, youtube 1590 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
-      "JR-0082 score 0.90 (instagram 1870, youtube 1780 views): Jesus... I eat lunch on the office staircase every day. 🍱",
-      "JR-0102 score 0.88 (instagram 1954, youtube 1606 views): Jesus... Two years. The same prayer. Nothing has moved. 🕯️"
+      "JR-0061 score 0.93 (youtube 1620 views): Jesus... I gave away my Sunday, my evenings, even my lunch break. Nothing was mine. 😔",
+      "JR-0084 score 0.92 (instagram 2288, youtube 1590 views): Jesus... I fell asleep in the office washroom for ten minutes. I told my manager I was on a call. 😮‍💨",
+      "JR-0082 score 0.92 (instagram 1870, youtube 1780 views): Jesus... I eat lunch on the office staircase every day. 🍱",
+      "JR-0102 score 0.89 (instagram 1954, youtube 1607 views): Jesus... Two years. The same prayer. Nothing has moved. 🕯️"
     ]
   }
 }
