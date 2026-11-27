@@ -49,3 +49,5 @@
 - 2026-11-23 skipped: amaldavid3886 (not addressed to channel), nicolec4106 ("I am kehlani")
 - 2026-11-25 YT Antonia_Marilet-z1k, kishanraphael: Amen -> short thanks (Buffer)
 - 2026-11-25 skipped: amaldavid3886, nicolec4106 (as before); IG 3 emoji-only
+- 2026-11-27 YT Antonia_Marilet-z1k: Amen -> short thanks; WilliamWebster-o8p: kind prayer for channel -> thanks (Buffer)
+- 2026-11-27 skipped: amaldavid3886, nicolec4106; 16 emoji-only (3 IG, 13 YT)
