@@ -163,11 +163,11 @@ engaged today. I smiled in every photo" — IG 2,251 views, 67 saves, 16 shares 
 ## Auto-computed learnings
 
 <!-- AUTO:START (rewritten by scripts/content_os/strategy.py) -->
-_Last computed 2026-11-27T21:10Z from Buffer analytics, last 28 days, posts at least 48h old._
+_Last computed 2026-11-28T04:53Z from Buffer analytics, last 28 days, posts at least 48h old._
 
-- **instagram**: n=42, median views 1266, best 4979, saves per 1k reach 8.7, stalled 1 (excluded)
-- **youtube**: n=43, median views 791, best 3835, saves per 1k reach None, stalled 0 (excluded)
-- **episodes scored** (IG + YT percentile): 47, 38 with both platforms
+- **instagram**: n=43, median views 1266, best 4979, saves per 1k reach 8.7, stalled 1 (excluded)
+- **youtube**: n=43, median views 721, best 3835, saves per 1k reach None, stalled 0 (excluded)
+- **episodes scored** (IG + YT percentile): 47, 39 with both platforms
 
 **Lean towards** (authoring reads this):
 - not enough evidence yet
@@ -183,9 +183,9 @@ _Last computed 2026-11-27T21:10Z from Buffer analytics, last 28 days, posts at l
 - JR-0102 score 0.89 (instagram 1954, youtube 1607 views): Jesus... Two years. The same prayer. Nothing has moved. 🕯️
 
 **Evidence notes:**
-- instagram slot medians: morning (06-12 IST) 1267 (n=21), night (18-24 IST) 1265 (n=21)
-- youtube slot medians: morning (06-12 IST) 856 (n=21), night (18-24 IST) 637 (n=22)
-- instagram: 1 of 43 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099
+- instagram slot medians: morning (06-12 IST) 1258 (n=22), night (18-24 IST) 1266 (n=21)
+- youtube slot medians: morning (06-12 IST) 814 (n=21), night (18-24 IST) 637 (n=22)
+- instagram: 1 of 44 Reels stalled (reach under 88 followers) and were left out of content learning: JR-0099
 - rules need n>=8 episodes per bucket; smaller buckets are reported only
 - excluded 2026-09-20..2026-10-01: account-wide reach collapse: every JR post on both platforms (JR-0013..JR-0019) got under 120 views regardless of content; treated as a distribution anomaly, not a content signal (inferred 2026-10-11)
 <!-- AUTO:END -->

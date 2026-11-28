@@ -1,19 +1,18 @@
 {
-  "as_of": "2026-11-27T21:10:18.797522+00:00",
+  "as_of": "2026-11-28T04:53:46.714306+00:00",
   "target": 6,
   "ready_unscheduled": [],
   "scheduled_not_yet_published": [
-    "JR-0129",
     "JR-0130",
     "JR-0131",
     "JR-0132"
   ],
   "authored_in_pipeline": [],
   "upcoming_slots_unauthored": [],
-  "ready_buffer": 4,
+  "ready_buffer": 3,
   "scheduled_by_platform": {
-    "instagram": 4,
-    "youtube": 4
+    "instagram": 3,
+    "youtube": 3
   },
   "parked_drafts_by_platform": {
     "instagram": [
